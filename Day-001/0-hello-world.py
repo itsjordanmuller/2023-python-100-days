@@ -1,3 +1,5 @@
 # print("Hello World!\nHello World!\nHello World!")
 # print("Hello" + " " + "Jordan")
-print("Hello " + input("What is your name? "))
+# print("Hello " + input("What is your name? "))
+name = input("What is your name? ")
+print(name)
