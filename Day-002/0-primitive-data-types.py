@@ -23,3 +23,9 @@ print(type(a))
 print(70 + float("100.5"))
 
 print(str(70) + str(100))
+
+print(3 + 5)
+print(7 - 4)
+print(3 * 2)
+print(6 / 3)
+print(2**3)
