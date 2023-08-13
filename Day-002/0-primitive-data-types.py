@@ -35,3 +35,6 @@ print(2**3)
 # **
 # * /
 # + -
+
+print(int(8 / 3))
+print(round(8 / 3))
