@@ -8,3 +8,4 @@
 # Write your code below this line 👇
 
 total_bill = float(input("What was the total bill? $"))
+print(total_bill)
