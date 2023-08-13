@@ -16,3 +16,6 @@ tip_percent = (
 )
 
 num_people = int(input("How many people to split the bill? "))
+
+cost_per_person = round(((total_bill / num_people) * tip_percent), 2)
+print(f"Each person should pay: ${cost_per_person}")
