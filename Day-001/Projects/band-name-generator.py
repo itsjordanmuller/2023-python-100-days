@@ -1,5 +1,9 @@
 # 1. Create a greeting for your program.
 
+print(
+    "Welcome to the Automatic Band Name Generator\nA state of the art Band Name Generation Utility\nBuilt with Python!\n"
+)
+
 # 2. Ask the user for the city that they grew up in.
 
 # 3. Ask the user for the name of a pet.
