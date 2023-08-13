@@ -9,3 +9,7 @@
 
 total_bill = float(input("What was the total bill? $"))
 print(total_bill)
+tip_percent = (
+    float("1" + input("What percentage tip would you like to give? 10, 12, or 15? "))
+    / 100
+)
