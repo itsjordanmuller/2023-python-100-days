@@ -8,3 +8,7 @@ years_remaining = 90 - age_int
 months_remaining = 12 * years_remaining
 weeks_remaining = 52 * years_remaining
 days_remaining = 365 * years_remaining
+
+print(
+    f"YOu have {days_remaining} days, {weeks_remaining} weeks, and {months_remaining} months left."
+)
