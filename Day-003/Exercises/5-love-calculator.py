@@ -5,3 +5,4 @@ name2 = input("What is their name? \n")
 # 🚨 Don't change the code above 👆
 
 # Write your code below this line 👇
+combined_name = name1 + name2
