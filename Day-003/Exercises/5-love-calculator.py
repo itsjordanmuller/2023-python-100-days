@@ -7,3 +7,13 @@ name2 = input("What is their name? \n")
 # Write your code below this line 👇
 combined_name = name1 + name2
 lower_name = combined_name.lower()
+
+t = lower_name.count("t")
+r = lower_name.count("r")
+u = lower_name.count("u")
+e = lower_name.count("e")
+
+l = lower_name.count("l")
+o = lower_name.count("o")
+v = lower_name.count("v")
+e = lower_name.count("e")
