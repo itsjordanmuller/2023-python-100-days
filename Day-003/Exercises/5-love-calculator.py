@@ -13,7 +13,13 @@ r = lower_name.count("r")
 u = lower_name.count("u")
 e = lower_name.count("e")
 
+true = t + r + u + e
+
 l = lower_name.count("l")
 o = lower_name.count("o")
 v = lower_name.count("v")
 e = lower_name.count("e")
+
+love = l + o + v + e
+
+love_score = int(str(true) + str(love))
