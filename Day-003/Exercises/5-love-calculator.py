@@ -6,3 +6,4 @@ name2 = input("What is their name? \n")
 
 # Write your code below this line 👇
 combined_name = name1 + name2
+lower_name = combined_name.lower()
