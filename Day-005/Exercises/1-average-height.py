@@ -16,3 +16,6 @@ for height in student_heights:
 for student in student_heights:
     student_count += 1
     print(student_count)
+
+average_height = round(total_height / student_count)
+print(average_height)
