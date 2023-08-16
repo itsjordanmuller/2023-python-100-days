@@ -6,3 +6,4 @@ for n in range(0, len(student_heights)):
 
 
 # Write your code below this row 👇
+total_height = 0
