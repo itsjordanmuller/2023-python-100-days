@@ -7,3 +7,7 @@ for n in range(0, len(student_heights)):
 
 # Write your code below this row 👇
 total_height = 0
+
+for height in student_heights:
+    total_height += int(height)
+    print(total_height)
