@@ -73,10 +73,23 @@ print(states_of_america[-1])
 # states_of_america.extend(["Jordanland", "Codingland"])
 print(states_of_america)
 
-dirty_dozen = [
+# dirty_dozen = [
+#     "Strawberries",
+#     "Spinach",
+#     "Kale",
+#     "Nectarines",
+#     "Apples",
+#     "Grapes",
+#     "Peaches",
+#     "Cherries",
+#     "Pears",
+#     "Tomatoes",
+#     "Celery",
+#     "Potatoes",
+# ]
+
+fruits = [
     "Strawberries",
-    "Spinach",
-    "Kale",
     "Nectarines",
     "Apples",
     "Grapes",
@@ -84,6 +97,10 @@ dirty_dozen = [
     "Cherries",
     "Pears",
     "Tomatoes",
-    "Celery",
-    "Potatoes",
 ]
+
+vegetables = ["Spinach", "Kale", "Celery", "Potatoes"]
+
+dirty_dozen = [fruits, vegetables]
+
+print(dirty_dozen)
