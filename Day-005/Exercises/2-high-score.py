@@ -7,3 +7,5 @@ print(student_scores)
 
 # Write your code below this row 👇
 high_score = 0
+
+print(f"The highest score in the class is: {high_score}")
