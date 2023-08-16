@@ -69,4 +69,7 @@ for num in range(1, num_letters + 1):
 for num in range(1, num_symbols + 1):
     password = password + symbols[random.randint(1, len(symbols) - 1)]
 
+for num in range(1, num_numbers + 1):
+    password = password + numbers[random.randint(1, len(numbers) - 1)]
+
 print(password)
