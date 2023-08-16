@@ -65,3 +65,5 @@ states_of_america = [
     "Alaska",
     "Hawaii",
 ]
+
+print(states_of_america)
