@@ -8,6 +8,8 @@ position = input("Where do you want to put the treasure? ")
 # 🚨 Don't change the code above 👆
 
 # Write your code below this row 👇
+column_pick = int(position[0]) - 1
+row_pick = int(position[1])
 
 # Write your code above this row 👆
 
