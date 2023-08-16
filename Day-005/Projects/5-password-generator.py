@@ -63,3 +63,7 @@ num_symbols = int(input("How many symbols would you like?\n"))
 num_numbers = int(input("How many numbers would you like?\n"))
 
 password = ""
+for num in range(1, num_letters + 1):
+    password = password + letters[random.randint(1, len(letters) - 1)]
+
+print(password)
