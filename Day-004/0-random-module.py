@@ -70,5 +70,20 @@ print(states_of_america[0])
 print(states_of_america[-1])
 
 # states_of_america[1] = "Pencilvania"
-states_of_america.extend(["Jordanland", "Codingland"])
+# states_of_america.extend(["Jordanland", "Codingland"])
 print(states_of_america)
+
+dirty_dozen = [
+    "Strawberries",
+    "Spinach",
+    "Kale",
+    "Nectarines",
+    "Apples",
+    "Grapes",
+    "Peaches",
+    "Cherries",
+    "Pears",
+    "Tomatoes",
+    "Celery",
+    "Potatoes",
+]
