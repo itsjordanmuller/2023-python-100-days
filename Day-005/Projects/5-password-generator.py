@@ -58,6 +58,6 @@ numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 symbols = ["!", "#", "$", "%", "&", "(", ")", "*", "+"]
 
 print("Welcome to the PyPassword Generator!")
-num_letters = input("How many letters would you like in your password?\n")
-num_symbols = input("How many symbols would you like?\n")
-num_numbers = input("How many numbers would you like?\n")
+num_letters = int(input("How many letters would you like in your password?\n"))
+num_symbols = int(input("How many symbols would you like?\n"))
+num_numbers = int(input("How many numbers would you like?\n"))
