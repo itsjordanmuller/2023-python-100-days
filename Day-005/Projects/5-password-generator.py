@@ -72,7 +72,18 @@ for num in range(1, num_symbols + 1):
 for num in range(1, num_numbers + 1):
     password = password + numbers[random.randint(1, len(numbers) - 1)] + " "
 
-# print(password)
 pass_list = password.split()
 
-print(pass_list)
+simple_pass = ""
+complex_pass = ""
+
+for char in pass_list:
+    simple_pass = simple_pass + char
+
+shuffle_list = random.shuffle(pass_list)
+
+for char in pass_list:
+    complex_pass = complex_pass + char
+
+print(simple_pass)
+print(complex_pass)
