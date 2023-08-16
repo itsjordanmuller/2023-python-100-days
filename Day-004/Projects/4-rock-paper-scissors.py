@@ -26,3 +26,5 @@ scissors = """
       (____)
 ---.__(___)
 """
+
+rock_paper_scissors = [rock, paper, scissors]
