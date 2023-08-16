@@ -12,3 +12,7 @@ student_count = 0
 for height in student_heights:
     total_height += int(height)
     print(total_height)
+
+for student in student_heights:
+    student_count += 1
+    print(student_count)
