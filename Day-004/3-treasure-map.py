@@ -11,6 +11,13 @@ position = input("Where do you want to put the treasure? ")
 column_pick = int(position[0]) - 1
 row_pick = int(position[1])
 
+if row_pick == 1:
+    row1[column_pick] = "X"
+elif row_pick == 2:
+    row2[column_pick] = "X"
+else:
+    row3[column_pick] = "X"
+
 # Write your code above this row 👆
 
 # 🚨 Don't change the code below 👇
