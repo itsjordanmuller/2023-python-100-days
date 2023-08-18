@@ -2,6 +2,38 @@
 
 import random
 
+result = [
+    """
+     ___
+   _/   \_
+ _/ \___/ \_
+ \  /   \  /
+  \/_____\/
+      
+ YOU FELL DOWN
+
+  YOU  LOSE
+
+      O
+     /|\ 
+     / \ 
+
+==============
+""",
+    """
+
+ YOU MADE IT
+ DOWN SAFELY
+
+   YOU WIN
+
+      O
+     /|\ 
+     / \ 
+==============
+""",
+]
+
 stages = [
     """
      ___
