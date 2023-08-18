@@ -137,12 +137,20 @@ lives = 6
 
 # TODO-2: - If guess is not a letter in the chosen_word, Then reduce 'lives' by 1. If lives goes down to 0 then the game should stop and it should print "You lose."
 
-while "_" in display:
+while "_" in display and lives > 0:
+    print(stages[6 - (lives)])
     guess = input("Choose a single letter: ").lower()
+    if guess not in chosen_word:
+        lives -= 1
+        print(f"You have {lives} lives left.")
     for i, letter in enumerate(chosen_word):
         if letter == guess:
             display[i] = letter
     print(display)
-print("Game over, you won!")
+
+if lives == 0:
+    print(result[0])
+else:
+    print(result[1])
 
 # TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
