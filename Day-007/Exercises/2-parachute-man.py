@@ -18,10 +18,10 @@ print(display)
 
 # TODO-4: - Use a while loop to let the user guess again. The loop should only stop once the user has guessed all the letters in the chosen_word and 'display' has no more blanks ("_"). Then you can tell the user they've won.
 
-guess = input("Choose a single letter: ").lower()
-
-for letter in chosen_word:
-    if letter == guess:
-        print(guess)
-    else:
-        print("?")
+while "_" in display:
+    guess = input("Choose a single letter: ").lower()
+    for i, letter in enumerate(chosen_word):
+        if letter == guess:
+            display[i] = letter
+    print(display)
+print("Game over, you won!")
