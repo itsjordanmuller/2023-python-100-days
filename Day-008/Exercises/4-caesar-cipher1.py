@@ -52,3 +52,5 @@ alphabet = [
     "y",
     "z",
 ]
+
+text = input("Type your message:\n").lower()
