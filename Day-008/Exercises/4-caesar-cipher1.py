@@ -67,3 +67,6 @@ def encrypt(text, shift):
         new_letter = alphabet[new_position]
         cipher_text += new_letter
     print(f"The encoded text is: {cipher_text}")
+
+
+encrypt(text, shift)
