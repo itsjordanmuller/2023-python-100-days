@@ -54,3 +54,6 @@ alphabet = [
 ]
 
 text = input("Type your message:\n").lower()
+
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+shift = int(input("Type the shift number:\n"))
