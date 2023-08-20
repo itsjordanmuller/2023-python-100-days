@@ -12,3 +12,7 @@ programming_dictionary["Loop"] = "The action of doing something over and over ag
 
 print(programming_dictionary["Loop"])
 print(programming_dictionary)
+
+for key in programming_dictionary:
+    print(key)
+    print(programming_dictionary[key])
