@@ -9,3 +9,6 @@ print(programming_dictionary["Function"])
 print(programming_dictionary)
 
 programming_dictionary["Loop"] = "The action of doing something over and over again."
+
+print(programming_dictionary["Loop"])
+print(programming_dictionary)
