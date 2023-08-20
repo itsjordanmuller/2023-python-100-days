@@ -19,3 +19,5 @@ while bidding == "y":
     bidding = input("Are there any other bidders? Type 'y' or 'n': ")
     if bidding == "y":
         clear()
+
+winner = max(bidders, key=lambda x: x["bid"])
