@@ -5,3 +5,5 @@ student_scores = {
     "Draco": 74,
     "Neville": 62,
 }
+
+student_grades = {}
