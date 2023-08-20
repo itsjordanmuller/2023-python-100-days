@@ -21,3 +21,4 @@ while bidding == "y":
         clear()
 
 winner = max(bidders, key=lambda x: x["bid"])
+print("The winner is", winner["name"], "with a bid of $" + str(winner["bid"]))
