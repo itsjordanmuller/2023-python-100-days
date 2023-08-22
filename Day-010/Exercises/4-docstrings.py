@@ -14,3 +14,5 @@ print(
         input("What is your last name? "),
     )
 )
+
+format_name()
