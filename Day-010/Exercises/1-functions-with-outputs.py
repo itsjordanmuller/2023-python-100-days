@@ -14,3 +14,5 @@ def format_name(f_name, l_name):
 
 formatted_string = format_name("JoRdAn", "MULLER")
 print(formatted_string)
+
+print(format_name("JoRdAn", "MULLER"))
