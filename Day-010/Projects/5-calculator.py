@@ -24,3 +24,10 @@ def subtract(n1, n2):
 
 
 operators = {"*": multiply, "/": divide, "+": add, "-": subtract}
+
+
+def calculator():
+    num1 = float(input("What's the first number?: "))
+    for operator in operators:
+        print(operator)
+    calculating = True
