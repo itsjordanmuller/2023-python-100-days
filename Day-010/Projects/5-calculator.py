@@ -45,3 +45,6 @@ def calculator():
         else:
             calculating = False
             calculator()
+
+
+calculator()
