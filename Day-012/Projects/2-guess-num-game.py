@@ -20,7 +20,7 @@ while attempts > 0:
     print(f"You have {attempts} attempts remaining to guess the number.")
     guess = int(input("Make a guess: "))
     if guess == secret_number:
-        "You got it! The answer was {guess}."
+        print(f"You got it! The answer was {guess}.")
     elif guess < secret_number:
         print("Too low.\nGuess again.")
         attempts -= 1
