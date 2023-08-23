@@ -36,3 +36,4 @@ def compare(player_score, computer_score):
 
 computer_wins = 0
 player_wins = 0
+round_number = 1
