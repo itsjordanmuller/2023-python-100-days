@@ -1,15 +1,15 @@
 ################### Scope ####################
 
-enemies = 1
+# enemies = 1
 
 
-def increase_enemies():
-    enemies = 2
-    print(f"enemies inside function: {enemies}")
+# def increase_enemies():
+#     enemies = 2
+#     print(f"enemies inside function: {enemies}")
 
 
-increase_enemies()
-print(f"enemies outside function: {enemies}")
+# increase_enemies()
+# print(f"enemies outside function: {enemies}")
 
 # Local Scope
 
@@ -23,12 +23,17 @@ print(f"enemies outside function: {enemies}")
 # print(potion_strength)
 
 # Global Scope
-player_health = 10
+# player_health = 10
 
 
-def game():
-    def drink_potion():
-        potion_strength = 2
-        print(player_health)
+# def game():
+#     def drink_potion():
+#         potion_strength = 2
+#         print(player_health)
 
-    drink_potion()
+#     drink_potion()
+
+
+# There is no Block Scope
+if 3 > 2:
+    a_variable = 10
