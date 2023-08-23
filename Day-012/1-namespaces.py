@@ -21,6 +21,8 @@
 # Global Constants
 
 PI = 3.14159
+URL = "https://www.google.com"
+USER_NAME = "@itsjordanmuller"
 
 
 # def calc():
