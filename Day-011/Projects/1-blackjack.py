@@ -38,3 +38,4 @@ computer_wins = 0
 player_wins = 0
 round_number = 1
 play_again = "y"
+print(logo)
