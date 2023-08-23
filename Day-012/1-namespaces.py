@@ -3,20 +3,29 @@
 # Modifying Global Scope
 
 # enemies = "Skeleton"
-enemies = 1
+# enemies = 1
 
 
-def increase_enemies():
-    # enemies = "Zombie"
-    # enemies = 0
-    # global enemies
-    # enemies += 1
-    print(f"enemies inside function: {enemies}")
-    return enemies + 1
+# def increase_enemies():
+#     # enemies = "Zombie"
+#     # enemies = 0
+#     # global enemies
+#     # enemies += 1
+#     print(f"enemies inside function: {enemies}")
+#     return enemies + 1
 
 
-enemies = increase_enemies()
-print(f"enemies outside function: {enemies}")
+# enemies = increase_enemies()
+# print(f"enemies outside function: {enemies}")
+
+# Global Constants
+
+pi = 3.14159
+
+
+def calc():
+    pi
+
 
 # Local Scope
 
