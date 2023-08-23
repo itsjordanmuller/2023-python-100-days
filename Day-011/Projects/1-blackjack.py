@@ -39,3 +39,6 @@ player_wins = 0
 round_number = 1
 play_again = "y"
 print(logo)
+print(
+    "------------------  HOUSE RULES  ------------------\n1. The deck is unlimited in size.\n2. There are no jokers.\n3. The Jack/Queen/King all count as 10.\n4. The the Ace can count as 11 or 1.\n5. Cards are not removed from the deck as they are drawn.\n6. The computer is the dealer.\n---------------------  START  ---------------------"
+)
