@@ -8,7 +8,8 @@ enemies = 1
 
 def increase_enemies():
     # enemies = "Zombie"
-    enemies = 0
+    # enemies = 0
+    global enemies
     enemies += 1
     print(f"enemies inside function: {enemies}")
 
