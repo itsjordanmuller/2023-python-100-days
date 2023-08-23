@@ -4,7 +4,12 @@ from art import logo
 print(logo)
 print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
-difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ")
+
+difficulty = ""
+while difficulty not in ["easy", "hard"]:
+    difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ")
+    if difficulty not in ["easy", "hard"]:
+        print("Error, please input 'easy' or 'hard'")
 
 secret_number = random.randint(1, 100)
 print(f"Psst! The number is {secret_number}")
@@ -13,8 +18,6 @@ if difficulty == "easy":
     attempts = 10
 elif difficulty == "hard":
     attempts = 5
-else:
-    print("Error, please input 'easy' or 'hard'")
 
 while attempts > 0:
     print(f"You have {attempts} attempts remaining to guess the number.")
