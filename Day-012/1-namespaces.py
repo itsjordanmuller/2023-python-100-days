@@ -9,12 +9,13 @@ enemies = 1
 def increase_enemies():
     # enemies = "Zombie"
     # enemies = 0
-    global enemies
-    enemies += 1
+    # global enemies
+    # enemies += 1
     print(f"enemies inside function: {enemies}")
+    return enemies + 1
 
 
-increase_enemies()
+enemies = increase_enemies()
 print(f"enemies outside function: {enemies}")
 
 # Local Scope
