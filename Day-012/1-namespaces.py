@@ -20,11 +20,11 @@
 
 # Global Constants
 
-pi = 3.14159
+PI = 3.14159
 
 
-def calc():
-    pi
+# def calc():
+#     pi
 
 
 # Local Scope
