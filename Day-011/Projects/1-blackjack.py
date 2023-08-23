@@ -32,3 +32,7 @@ def compare(player_score, computer_score):
         return "You win!"
     else:
         return "You lose."
+
+
+computer_wins = 0
+player_wins = 0
