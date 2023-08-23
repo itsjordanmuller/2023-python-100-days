@@ -2,11 +2,14 @@
 
 # Modifying Global Scope
 
-enemies = "Skeleton"
+# enemies = "Skeleton"
+enemies = 1
 
 
 def increase_enemies():
-    enemies = "Zombie"
+    # enemies = "Zombie"
+    enemies = 0
+    enemies += 1
     print(f"enemies inside function: {enemies}")
 
 
