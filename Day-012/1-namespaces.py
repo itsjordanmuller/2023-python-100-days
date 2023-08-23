@@ -35,5 +35,13 @@
 
 
 # There is no Block Scope
-if 3 > 2:
-    a_variable = 10
+# if 3 > 2:
+#     a_variable = 10
+
+
+game_level = 3
+enemies = ["Skeleton", "Zombie", "Alien"]
+if game_level < 5:
+    new_enemy = enemies[0]
+
+print(new_enemy)
