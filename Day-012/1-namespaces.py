@@ -1,15 +1,15 @@
 ################### Scope ####################
 
-# enemies = 1
+enemies = 1
 
 
-# def increase_enemies():
-#     enemies = 2
-#     print(f"enemies inside function: {enemies}")
+def increase_enemies():
+    enemies = 2
+    print(f"enemies inside function: {enemies}")
 
 
-# increase_enemies()
-# print(f"enemies outside function: {enemies}")
+increase_enemies()
+print(f"enemies outside function: {enemies}")
 
 # Local Scope
 
@@ -39,14 +39,14 @@
 #     a_variable = 10
 
 
-game_level = 3
+# game_level = 3
 
 
-def create_enemy():
-    enemies = ["Skeleton", "Zombie", "Alien"]
-    if game_level < 5:
-        new_enemy = enemies[0]
-    print(new_enemy)
+# def create_enemy():
+#     enemies = ["Skeleton", "Zombie", "Alien"]
+#     if game_level < 5:
+#         new_enemy = enemies[0]
+#     print(new_enemy)
 
 
 # print(new_enemy)
