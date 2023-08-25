@@ -18,4 +18,5 @@ person_b_name = person_b["name"]
 person_a_followers = person_a["follower_count"]
 person_b_followers = person_b["follower_count"]
 
-print(f"A: {person_a_name}{vs}\nB: {person_b_name}")
+print(f"A: {person_a_name}{vs}\nB: {person_b_name}\n")
+guess = input("Who has more followers? A or B?: ")
