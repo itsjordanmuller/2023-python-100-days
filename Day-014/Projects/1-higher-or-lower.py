@@ -13,6 +13,10 @@ random_entry = random.choice(data)
 
 person_a = random.choice(data)
 person_b = random.choice(data)
+
+while person_b == person_a:
+    person_b = random.choice(data)
+
 person_a_name = person_a["name"]
 person_b_name = person_b["name"]
 person_a_followers = person_a["follower_count"]
