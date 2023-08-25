@@ -13,32 +13,42 @@ random_entry = random.choice(data)
 
 person_a = random.choice(data)
 person_b = random.choice(data)
-
 while person_b == person_a:
     person_b = random.choice(data)
-
-person_a_name = person_a["name"]
-person_b_name = person_b["name"]
-person_a_followers = person_a["follower_count"]
-person_b_followers = person_b["follower_count"]
 
 score = 0
 continue_game = 1
 
-print(f"A: {person_a_name}{vs}\nB: {person_b_name}\n")
-guess = input("Who has more followers? A or B?: ")
+while continue_game:
+    person_a_name = person_a["name"]
+    person_b_name = person_b["name"]
+    person_a_followers = person_a["follower_count"]
+    person_b_followers = person_b["follower_count"]
 
-if guess == "A":
-    if person_a_followers > person_b_followers:
-        score += 1
+    print(f"A: {person_a_name}{vs}\nB: {person_b_name}\n")
+    guess = input("Who has more followers? A or B?: ")
+
+    if guess == "A":
+        if person_a_followers > person_b_followers:
+            score += 1
+            print(f"Correct! Your score is: {score}")
+            person_a = person_b
+            person_b = random.choice(data)
+            while person_b == person_a:
+                person_b = random.choice(data)
+        else:
+            print(f"Sorry, that's wrong! Your final score is: {score}")
+            continue_game = 0
+    elif guess == "B":
+        if person_b_followers > person_a_followers:
+            score += 1
+            print(f"Correct! Your score is: {score}")
+            person_a = person_b
+            person_b = random.choice(data)
+            while person_b == person_a:
+                person_b = random.choice(data)
+        else:
+            print(f"Sorry, that's wrong! Your final score is: {score}")
+            continue_game = 0
     else:
-        continue_game = 0
-elif guess == "B":
-    if person_b_followers > person_a_followers:
-        score += 1
-    else:
-        continue_game = 0
-else:
-    print("Input Error, please type 'A' or 'B'")
-print(score)
-print(continue_game)
+        print("Input Error, please type 'A' or 'B'")
