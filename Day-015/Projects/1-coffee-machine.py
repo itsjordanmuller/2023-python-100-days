@@ -5,3 +5,8 @@
 # Cappuccino $3.0 | Recipe: 250ml Water, 24g Coffee, 100ml Milk
 
 # Coffee Machine Resources: (300ml Water, 200ml Milk, 100g Coffee)
+
+# Penny $0.01
+# Nickel $0.05
+# Dime $0.10
+# Quarter $0.25
