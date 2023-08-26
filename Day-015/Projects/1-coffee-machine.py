@@ -52,3 +52,19 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
+
+operation = ""
+status = "on"
+
+while status == "on":
+    operation = input("What would you like? (espresso/latte/cappuccino): ")
+    if operation == "off":
+        status = "off"
+    elif operation == "espresso":
+        print(f"You'd like to make a {operation}")
+    elif operation == "latte":
+        print(f"You'd like to make a {operation}")
+    elif operation == "cappuccino":
+        print(f"You'd like to make a {operation}")
+    elif operation == "report":
+        print(f"You'd like to get a {operation}")
