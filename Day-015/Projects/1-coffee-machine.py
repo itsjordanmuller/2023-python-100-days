@@ -18,3 +18,5 @@
 # Money: $x.xx
 
 # Allow the user to keep ordering more, but if there's not enough of a certain resource, tell them which resource there is not enough of
+
+# Process the coins inserted into the machine, calculating the excess and returning any money not used for the coffee, checking to make sure the transaction was successful and the user paid enough. If the transaction is successful, deduct the money from the total input and return the change.
