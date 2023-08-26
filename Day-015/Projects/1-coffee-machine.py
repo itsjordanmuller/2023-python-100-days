@@ -21,10 +21,19 @@
 
 # Process the coins inserted into the machine, calculating the excess and returning any money not used for the coffee, checking to make sure the transaction was successful and the user paid enough. If the transaction is successful, deduct the money from the total input and return the change.
 
+
+def print_report():
+    """Prints the current resource report."""
+    print(
+        f"--- Resource Report ---\nWater: {resources['water']}ml\nMilk: {resources['milk']}ml\nCoffee: {resources['coffee']}g\nMoney: ${resources['money']:.2f}"
+    )
+
+
 MENU = {
     "espresso": {
         "ingredients": {
             "water": 50,
+            "milk": 0,
             "coffee": 18,
         },
         "cost": 1.5,
@@ -51,6 +60,7 @@ resources = {
     "water": 300,
     "milk": 200,
     "coffee": 100,
+    "money": 0,
 }
 
 operation = ""
@@ -68,7 +78,4 @@ while status == "on":
     elif operation == "cappuccino":
         print(f"You'd like to make a {operation}")
     elif operation == "report":
-        # print(f"You'd like to get a {operation}")
-        print(
-            f"--- Resource Report ---\nWater: {resources['water']}ml\nMilk: {resources['milk']}ml\nCoffee: {resources['coffee']}g"
-        )
+        print_report()
