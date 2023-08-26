@@ -16,3 +16,5 @@
 # Milk: (x)ml
 # Coffee: (x)g
 # Money: $x.xx
+
+# Allow the user to keep ordering more, but if there's not enough of a certain resource, tell them which resource there is not enough of
