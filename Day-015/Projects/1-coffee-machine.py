@@ -29,6 +29,18 @@ def print_report():
     )
 
 
+def get_money():
+    """Asks the user to input their values of each coin, and adds up all of the coins to determine the total input value"""
+    quarters = int(input("How many quarters? "))
+    dimes = int(input("How many dimes? "))
+    nickels = int(input("How many nickels? "))
+    pennies = int(input("How many pennies? "))
+    total_input = (
+        (quarters * 0.25) + (dimes * 0.10) + (nickels * 0.05) + (pennies * 0.01)
+    )
+    print(f"Total: ${total_input}")
+
+
 MENU = {
     "espresso": {
         "ingredients": {
@@ -65,6 +77,8 @@ resources = {
 
 operation = ""
 status = "on"
+
+get_money()
 
 while status == "on":
     operation = input("What would you like? (espresso/latte/cappuccino): ")
