@@ -10,3 +10,9 @@
 # Nickel $0.05
 # Dime $0.10
 # Quarter $0.25
+
+# Typing 'report' should give a report of the resources & money in the coffee machine
+# Water: (x)ml
+# Milk: (x)ml
+# Coffee: (x)g
+# Money: $x.xx
