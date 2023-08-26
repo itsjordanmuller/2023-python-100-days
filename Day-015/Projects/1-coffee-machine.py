@@ -41,6 +41,18 @@ def get_money():
     print(f"Total: ${total_input}")
 
 
+def check_resources(drink):
+    """
+    Returns True if resources are sufficient for the chosen drink. Otherwise, returns False and
+    prints which ingredient is insufficient.
+    """
+    for ingredient, amount in MENU[drink]["ingredients"].items():
+        if resources[ingredient] < amount:
+            print(f"Sorry, there's not enough {ingredient}.")
+            return False
+    return True
+
+
 MENU = {
     "espresso": {
         "ingredients": {
@@ -85,11 +97,10 @@ while status == "on":
     if operation == "off":
         print("Shutting down machine.")
         status = "off"
-    elif operation == "espresso":
-        print(f"You'd like to make a {operation}")
-    elif operation == "latte":
-        print(f"You'd like to make a {operation}")
-    elif operation == "cappuccino":
-        print(f"You'd like to make a {operation}")
+    elif operation in ["espresso", "latte", "cappuccino"]:
+        if check_resources(operation):
+            print(f"You'd like to make a {operation}")
+        else:
+            print(f"Sorry, we can't make a {operation} right now.")
     elif operation == "report":
         print_report()
