@@ -59,6 +59,7 @@ status = "on"
 while status == "on":
     operation = input("What would you like? (espresso/latte/cappuccino): ")
     if operation == "off":
+        print("Shutting down machine.")
         status = "off"
     elif operation == "espresso":
         print(f"You'd like to make a {operation}")
@@ -67,4 +68,7 @@ while status == "on":
     elif operation == "cappuccino":
         print(f"You'd like to make a {operation}")
     elif operation == "report":
-        print(f"You'd like to get a {operation}")
+        # print(f"You'd like to get a {operation}")
+        print(
+            f"--- Resource Report ---\nWater: {resources['water']}ml\nMilk: {resources['milk']}ml\nCoffee: {resources['coffee']}g"
+        )
