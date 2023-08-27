@@ -1,1 +1,1 @@
-print(another_module.another_variable)
+timmy.forward(100)
