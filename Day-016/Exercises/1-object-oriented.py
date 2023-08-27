@@ -5,3 +5,4 @@ from turtle import Turtle
 
 # print(another_module.another_variable)
 timmy = Turtle()
+print(timmy)
