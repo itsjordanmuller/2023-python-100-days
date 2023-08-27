@@ -1,1 +1,1 @@
-tle.Turtle()
+print(another_module.another_variable)
