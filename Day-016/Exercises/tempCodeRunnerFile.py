@@ -1,1 +1,1 @@
-timmy.forward(100)
+import prettytable
