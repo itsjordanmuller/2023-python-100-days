@@ -11,17 +11,19 @@ class User:
         self.id = user_id
         self.username = username
         self.followers = 0
+        self.following = 0
 
-    def increment_followers(self):
-        self.followers += 1
+    def follow(self, user):
+        user.followers += 1
+        self.following += 1
 
 
 user_1 = User("001", "Jordan")
+user_2 = User("002", "Angela")
 # user_1.id = "001"
 # user_1.username = "Jordan"
 
-user_1.increment_followers()
-print(user_1.id, user_1.username, user_1.followers)
+user_1.follow(user_2)
 
-user_2 = User("002", "Angela")
-print(user_2.id, user_2.username, user_2.followers)
+print(user_1.id, user_1.username, user_1.followers, user_1.following)
+print(user_2.id, user_2.username, user_2.followers, user_2.following)
