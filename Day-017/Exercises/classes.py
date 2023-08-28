@@ -12,11 +12,15 @@ class User:
         self.username = username
         self.followers = 0
 
+    def increment_followers(self):
+        self.followers += 1
+
 
 user_1 = User("001", "Jordan")
 # user_1.id = "001"
 # user_1.username = "Jordan"
 
+user_1.increment_followers()
 print(user_1.id, user_1.username, user_1.followers)
 
 user_2 = User("002", "Angela")
