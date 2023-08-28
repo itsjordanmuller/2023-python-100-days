@@ -17,3 +17,6 @@ user_1 = User("001", "Jordan")
 # user_1.username = "Jordan"
 
 print(user_1.id, user_1.username)
+
+user_2 = User()
+print(user_2.id, user_2.username)
