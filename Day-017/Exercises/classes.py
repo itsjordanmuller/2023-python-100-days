@@ -5,7 +5,9 @@
 
 
 class User:
-    pass
+    # pass
+    def __init__(self):
+        print("New user being created...")
 
 
 user_1 = User()
