@@ -6,12 +6,14 @@
 
 class User:
     # pass
-    def __init__(self):
+    def __init__(self, user_id, username):
         print("New user being created...")
+        self.id = user_id
+        self.username = username
 
 
-user_1 = User()
-user_1.id = "001"
-user_1.username = "Jordan"
+user_1 = User("001", "Jordan")
+# user_1.id = "001"
+# user_1.username = "Jordan"
 
 print(user_1.id, user_1.username)
