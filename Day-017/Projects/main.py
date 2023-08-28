@@ -1,5 +1,5 @@
-from question_model import Question
 from data import question_data
+from question_model import Question
 from quiz_brain import QuizBrain
 
 # question_1 = Question(question_data[0]["text"], question_data[0]["answer"])
@@ -15,4 +15,5 @@ for question in question_data:
 
 # print(question_bank)
 
-QuizBrain.next_question()
+quiz = QuizBrain(question_bank)
+quiz.next_question()
