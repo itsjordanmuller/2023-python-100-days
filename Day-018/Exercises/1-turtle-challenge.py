@@ -35,6 +35,13 @@ def calc_exterior_angles(n):
     return angle
 
 
+def random_angle():
+    """Returns a random angle in multiples of 90 degrees, options include: (0deg, 90deg, 180deg, 270deg, 360deg)"""
+    turns = random.randint(0, 4)
+    turn_angle = turns * 90
+    return turn_angle
+
+
 # Leave the screen/exit on click settings at the end of code
 screen = Screen()
 
@@ -47,6 +54,18 @@ screen.colormode(255)
 #     for step in range(0, sides):
 #         tim.forward(100)
 #         tim.right(current_angle)
+
+tim.pensize(5)
+tim.speed(10)
+
+for i in range(1, 501):
+    tim.color(random_color())
+    direction = random.randint(0, 1)
+    if direction == 0:
+        tim.left(random_angle())
+    else:
+        tim.right(random_angle())
+    tim.forward(10)
 
 
 screen.exitonclick()
