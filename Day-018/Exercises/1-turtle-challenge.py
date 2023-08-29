@@ -47,6 +47,8 @@ screen = Screen()
 
 screen.colormode(255)
 
+# Draw Shapes with 3 Sides to 10 Sides Challenge
+
 # for sides in range(3, 11):
 #     tim.color(random_color())
 #     current_angle = calc_exterior_angles(sides)
@@ -55,17 +57,21 @@ screen.colormode(255)
 #         tim.forward(100)
 #         tim.right(current_angle)
 
-tim.pensize(5)
-tim.speed(10)
+# Random Walk Challenge
 
-for i in range(1, 501):
-    tim.color(random_color())
-    direction = random.randint(0, 1)
-    if direction == 0:
-        tim.left(random_angle())
-    else:
-        tim.right(random_angle())
-    tim.forward(10)
+# tim.pensize(5)
+# tim.speed(10)
+
+# for i in range(1, 501):
+#     tim.color(random_color())
+#     direction = random.randint(0, 1)
+#     if direction == 0:
+#         tim.left(random_angle())
+#     else:
+#         tim.right(random_angle())
+#     tim.forward(10)
+
+# Spirograph Challenge
 
 
 screen.exitonclick()
