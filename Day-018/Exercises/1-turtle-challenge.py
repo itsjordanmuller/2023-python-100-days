@@ -36,8 +36,8 @@ def calc_exterior_angles(n):
 
 
 def random_angle():
-    """Returns a random angle in multiples of 90 degrees, options include: (0deg, 90deg, 180deg, 270deg)"""
-    turns = random.randint(0, 3)
+    """Returns a random angle in multiples of 90 degrees, options include: (90deg, 180deg, 270deg)"""
+    turns = random.randint(1, 3)
     turn_angle = turns * 90
     return turn_angle
 
