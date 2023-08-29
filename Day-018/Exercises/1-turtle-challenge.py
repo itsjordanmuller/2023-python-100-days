@@ -73,5 +73,13 @@ screen.colormode(255)
 
 # Spirograph Challenge
 
+tim.speed(10)
+circle = 0
+
+while circle < 360:
+    tim.color(random_color())
+    tim.circle(100)
+    tim.right(10)
+    circle += 10
 
 screen.exitonclick()
