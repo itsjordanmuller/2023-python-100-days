@@ -3,7 +3,7 @@ import random
 
 tim = Turtle()
 tim.shape("turtle")
-tim.color("firebrick1")
+# tim.color("firebrick1")
 
 # tim.forward(100)
 # tim.right(90)
@@ -40,13 +40,13 @@ screen = Screen()
 
 screen.colormode(255)
 
-for sides in range(3, 11):
-    tim.color(random_color())
-    current_angle = calc_exterior_angles(sides)
+# for sides in range(3, 11):
+#     tim.color(random_color())
+#     current_angle = calc_exterior_angles(sides)
 
-    for step in range(0, sides):
-        tim.forward(100)
-        tim.right(current_angle)
+#     for step in range(0, sides):
+#         tim.forward(100)
+#         tim.right(current_angle)
 
 
 screen.exitonclick()
