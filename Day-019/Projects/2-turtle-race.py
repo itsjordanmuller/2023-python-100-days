@@ -24,7 +24,9 @@ for i, color in enumerate(colors):
     turtle.goto(x=-240, y=starting_y - i * space_between)
     turtles.append(turtle)
 
-race_on = True
+if user_bet:
+    race_on = True
+
 while race_on:
     for turtle in turtles:
         turtle.forward(random.randint(1, 10))
