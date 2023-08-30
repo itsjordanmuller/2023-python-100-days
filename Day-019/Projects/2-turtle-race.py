@@ -2,6 +2,8 @@ from turtle import Turtle, Screen
 
 screen = Screen()
 
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+
 screen.setup(width=500, height=400)
 user_bet = screen.textinput(
     title="Make your bet!",
