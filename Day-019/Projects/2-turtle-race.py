@@ -11,8 +11,13 @@ user_bet = screen.textinput(
 )
 print(f"You bet on {user_bet}!")
 
-red = Turtle(shape="turtle")
-red.penup()
-red.goto(x=-240, y=0)
+space_between = 40
+starting_y = space_between * (len(colors) - 1) / 2
+
+turtles = []
+
+# red = Turtle(shape="turtle")
+# red.penup()
+# red.goto(x=-240, y=0)
 
 screen.exitonclick()
