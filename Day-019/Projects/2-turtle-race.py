@@ -1,4 +1,5 @@
 from turtle import Turtle, Screen
+import random
 
 screen = Screen()
 
@@ -23,8 +24,16 @@ for i, color in enumerate(colors):
     turtle.goto(x=-240, y=starting_y - i * space_between)
     turtles.append(turtle)
 
-# red = Turtle(shape="turtle")
-# red.penup()
-# red.goto(x=-240, y=0)
+race_on = True
+while race_on:
+    for turtle in turtles:
+        turtle.forward(random.randint(1, 10))
+
+        if turtle.xcor() >= 250:
+            race_on = False
+            winning_color = turtle.pencolor()
+            print(f"The {winning_color} turtle is the winner!")
+            break
+
 
 screen.exitonclick()
