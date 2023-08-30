@@ -39,3 +39,8 @@ while race_on:
 
 
 screen.exitonclick()
+
+if user_bet.lower() == winning_color:
+    print(f"You win! You picked {user_bet} and {winning_color} won!")
+else:
+    print(f"You lose. You picked {user_bet}, but {winning_color} won.")
