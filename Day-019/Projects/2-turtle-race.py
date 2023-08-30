@@ -16,6 +16,13 @@ starting_y = space_between * (len(colors) - 1) / 2
 
 turtles = []
 
+for i, color in enumerate(colors):
+    turtle = Turtle(shape="turtle")
+    turtle.color(color)
+    turtle.penup()
+    turtle.goto(x=-240, y=starting_y - i * space_between)
+    turtles.append(turtle)
+
 # red = Turtle(shape="turtle")
 # red.penup()
 # red.goto(x=-240, y=0)
