@@ -1,5 +1,14 @@
 from turtle import Turtle, Screen
 
+
+def create_segment(x, y):
+    segment = Turtle("square")
+    segment.color("white")
+    segment.penup()
+    segment.goto(x, y)
+    return segment
+
+
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
