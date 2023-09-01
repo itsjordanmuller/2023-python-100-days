@@ -16,3 +16,5 @@ class Fish(Animal):
 
 nemo = Fish()
 nemo.swim()
+nemo.breathe()
+print(nemo.num_eyes)
