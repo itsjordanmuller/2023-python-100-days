@@ -32,4 +32,13 @@ while game_is_on:
         scoreboard.increase_score()
         print(f"Pieces eaten: {scoreboard.score}")
 
+    if (
+        snake.head.xcor() > 300
+        or snake.head.xcor() < -300
+        or snake.head.ycor() > 300
+        or snake.head.ycor() < -300
+    ):
+        game_is_on = False
+        print(f"Game over. You got a final score of: {scoreboard.score}")
+
 screen.exitonclick()
