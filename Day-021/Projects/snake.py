@@ -20,6 +20,10 @@ class Snake:
         segment.goto(x, y)
         self.segments.append(segment)
 
+    def extend(self):
+        x, y = self.segments[-1].position()
+        self.add_segment(x, y)
+
     def move(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):
             x = self.segments[seg_num - 1].xcor()
