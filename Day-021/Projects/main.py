@@ -39,6 +39,7 @@ while game_is_on:
         or snake.head.ycor() < -300
     ):
         game_is_on = False
+        scoreboard.game_over()
         print(f"Game over. You got a final score of: {scoreboard.score}")
 
 screen.exitonclick()
