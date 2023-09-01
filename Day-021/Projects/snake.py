@@ -6,6 +6,7 @@ class Snake:
         self.segments = []
         self.create_snake()
         self.direction = "right"
+        self.head = self.segments[0]
 
     def create_snake(self):
         for i in range(3):
