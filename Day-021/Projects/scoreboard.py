@@ -9,4 +9,8 @@ class Scoreboard(Turtle):
         self.penup()
         self.hideturtle()
         self.goto(0, 265)
-        self.write("Score: 0", align="center", font=("Arial", 20, "normal"))
+        self.update_score()
+
+    def update_score(self):
+        self.clear()
+        self.write(f"Score: {self.score}", align="center", font=("Arial", 20, "normal"))
