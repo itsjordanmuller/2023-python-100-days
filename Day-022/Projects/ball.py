@@ -15,6 +15,9 @@ class Ball(Turtle):
     def move(self, right_paddle, left_paddle):
         self.forward(10)
 
+        if self.ycor() > 250 or self.ycor() < -250:
+            self.bounce_wall()
+
         if (
             self.xcor() > right_paddle.xcor() - 10
             and self.xcor() < right_paddle.xcor() + 10
@@ -34,4 +37,9 @@ class Ball(Turtle):
     def bounce(self, paddle):
         offset = self.ycor() - paddle.ycor()
         new_angle = 180 - self.heading() + offset * 0.5
+        self.setheading(new_angle)
+
+    def bounce_wall(self):
+        current_angle = self.heading()
+        new_angle = 360 - current_angle
         self.setheading(new_angle)
