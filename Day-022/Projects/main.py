@@ -2,6 +2,7 @@ from turtle import Screen
 from paddle import Paddle
 from ball import Ball
 from score import Scoreboard
+from field import DashedLine
 import time
 
 screen = Screen()
@@ -12,6 +13,9 @@ screen.tracer(0)
 
 right_paddle = Paddle((410, 0))
 left_paddle = Paddle((-415, 0))
+
+dashed_line = DashedLine()
+dashed_line.draw()
 
 ball = Ball()
 score = Scoreboard()
