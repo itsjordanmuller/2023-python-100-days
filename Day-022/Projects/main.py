@@ -27,5 +27,7 @@ while game_is_on:
     ball.move(right_paddle, left_paddle, score)
     screen.update()
     time.sleep(0.05)
+    if score.game_is_over:
+        game_is_on = False
 
 screen.exitonclick()

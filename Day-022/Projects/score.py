@@ -14,6 +14,7 @@ class Scoreboard(Turtle):
         self.penup()
         self.hideturtle()
         self.update_score()
+        self.game_is_over = False
 
     def update_score(self):
         self.clear()
@@ -31,7 +32,19 @@ class Scoreboard(Turtle):
     def increase_left_score(self):
         self.left_score += 1
         self.update_score()
+        if self.left_score == 5:
+            self.game_over("Left Player")
 
     def increase_right_score(self):
         self.right_score += 1
         self.update_score()
+        if self.right_score == 5:
+            self.game_over("Right Player")
+
+    def game_over(self, winner):
+        self.game_is_over = True
+        self.goto(0, 0)
+        self.color("red")
+        self.write("GAME OVER!", align=ALIGNMENT, font=BIG_FONT)
+        self.goto(0, -50)
+        self.write(f"{winner} Wins!", align=ALIGNMENT, font=FONT)
