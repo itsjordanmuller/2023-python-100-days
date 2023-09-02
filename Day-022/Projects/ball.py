@@ -33,6 +33,7 @@ class Ball(Turtle):
             and self.ycor() < right_paddle.ycor() + 90
             and self.ycor() > right_paddle.ycor() - 90
         ):
+            self.backward(10)
             self.bounce(right_paddle)
 
         if (
@@ -41,6 +42,7 @@ class Ball(Turtle):
             and self.ycor() < left_paddle.ycor() + 90
             and self.ycor() > left_paddle.ycor() - 90
         ):
+            self.backward(10)
             self.bounce(left_paddle)
 
     def bounce(self, paddle):
