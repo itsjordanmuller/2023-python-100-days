@@ -22,12 +22,12 @@ class Scoreboard(Turtle):
         self.display_right_score()
 
     def display_left_score(self):
-        self.goto(-100, 200)
-        self.write(self.left_score, align=ALIGNMENT, font=FONT)
+        self.goto(-200, 180)
+        self.write(self.left_score, align=ALIGNMENT, font=BIG_FONT)
 
     def display_right_score(self):
-        self.goto(100, 200)
-        self.write(self.right_score, align=ALIGNMENT, font=FONT)
+        self.goto(200, 180)
+        self.write(self.right_score, align=ALIGNMENT, font=BIG_FONT)
 
     def increase_left_score(self):
         self.left_score += 1
@@ -45,6 +45,6 @@ class Scoreboard(Turtle):
         self.game_is_over = True
         self.goto(0, 0)
         self.color("red")
-        self.write("GAME OVER!", align=ALIGNMENT, font=BIG_FONT)
+        self.write("GAME OVER", align=ALIGNMENT, font=BIG_FONT)
         self.goto(0, -50)
         self.write(f"{winner} Wins!", align=ALIGNMENT, font=FONT)
