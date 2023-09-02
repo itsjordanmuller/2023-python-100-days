@@ -1,5 +1,6 @@
 from turtle import Screen
 from paddle import Paddle
+from ball import Ball
 
 screen = Screen()
 screen.setup(width=858, height=525)
@@ -8,6 +9,8 @@ screen.title("Pong Game")
 
 right_paddle = Paddle((410, 0))
 left_paddle = Paddle((-415, 0))
+
+ball = Ball()
 
 screen.listen()
 screen.onkey(fun=right_paddle.move_up, key="Up")
