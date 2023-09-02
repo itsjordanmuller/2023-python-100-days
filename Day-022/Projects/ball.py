@@ -9,14 +9,21 @@ class Ball(Turtle):
         self.color("yellow")
         self.shapesize(stretch_wid=0.75, stretch_len=0.75)
         self.penup()
-        self.angle = random.choice([random.randint(-25, 25), random.randint(155, 205)])
-        self.setheading(self.angle)
+        self.set_new_angle()
 
     def move(self, right_paddle, left_paddle):
         self.forward(10)
 
         if self.ycor() > 250 or self.ycor() < -250:
             self.bounce_wall()
+
+        if self.xcor() > 429:
+            self.reset_position()
+            print("Hit the right wall!")
+
+        if self.xcor() < -429:
+            self.reset_position()
+            print("Hit the left wall!")
 
         if (
             self.xcor() > right_paddle.xcor() - 10
@@ -43,3 +50,12 @@ class Ball(Turtle):
         current_angle = self.heading()
         new_angle = 360 - current_angle
         self.setheading(new_angle)
+
+    def reset_position(self):
+        self.goto(0, 0)
+        self.set_new_angle()
+        self.bounce_wall()
+
+    def set_new_angle(self):
+        self.angle = random.choice([random.randint(-25, 25), random.randint(155, 205)])
+        self.setheading(self.angle)
