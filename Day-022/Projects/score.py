@@ -27,3 +27,11 @@ class Scoreboard(Turtle):
     def display_right_score(self):
         self.goto(100, 200)
         self.write(self.right_score, align=ALIGNMENT, font=FONT)
+
+    def increase_left_score(self):
+        self.left_score += 1
+        self.update_score()
+
+    def increase_right_score(self):
+        self.right_score += 1
+        self.update_score()

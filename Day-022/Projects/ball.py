@@ -11,7 +11,7 @@ class Ball(Turtle):
         self.penup()
         self.set_new_angle()
 
-    def move(self, right_paddle, left_paddle):
+    def move(self, right_paddle, left_paddle, scoreboard):
         self.forward(10)
 
         if self.ycor() > 250 or self.ycor() < -250:
@@ -19,11 +19,13 @@ class Ball(Turtle):
 
         if self.xcor() > 429:
             self.reset_position()
-            print("Hit the right wall!")
+            scoreboard.increase_left_score()
+            print("Hit the right wall! Left scores!")
 
         if self.xcor() < -429:
             self.reset_position()
-            print("Hit the left wall!")
+            scoreboard.increase_right_score()
+            print("Hit the left wall! Right scores!")
 
         if (
             self.xcor() > right_paddle.xcor() - 10
