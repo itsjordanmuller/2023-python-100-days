@@ -21,7 +21,7 @@ class Ball(Turtle):
             and self.ycor() < right_paddle.ycor() + 90
             and self.ycor() > right_paddle.ycor() - 90
         ):
-            self.bounce()
+            self.bounce(right_paddle)
 
         if (
             self.xcor() < left_paddle.xcor() + 10
@@ -29,9 +29,9 @@ class Ball(Turtle):
             and self.ycor() < left_paddle.ycor() + 90
             and self.ycor() > left_paddle.ycor() - 90
         ):
-            self.bounce()
+            self.bounce(left_paddle)
 
-    def bounce(self):
-        current_angle = self.heading()
-        new_angle = 180 - current_angle
+    def bounce(self, paddle):
+        offset = self.ycor() - paddle.ycor()
+        new_angle = 180 - self.heading() + offset * 0.5
         self.setheading(new_angle)
