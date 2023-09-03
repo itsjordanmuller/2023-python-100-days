@@ -1,6 +1,6 @@
 import time
 from turtle import Screen
-from player import Player
+from player import Player, FINISH_LINE_Y
 from car_manager import CarManager
 from scoreboard import Scoreboard
 
@@ -27,5 +27,8 @@ while game_is_on:
 
     screen.update()
 
+    if player.ycor() >= FINISH_LINE_Y:
+        player.reset_position()
+        score.increase_level()
 
 screen.exitonclick()
