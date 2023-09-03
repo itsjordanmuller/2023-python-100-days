@@ -14,3 +14,7 @@ class CarManager(Turtle):
         self.shapesize(stretch_wid=1, stretch_len=2)
         self.penup()
         self.goto(300, random.randint(-260, 260))
+
+    def move_across(self):
+        move_x = self.xcor() - STARTING_MOVE_DISTANCE
+        self.goto(move_x, self.ycor())
