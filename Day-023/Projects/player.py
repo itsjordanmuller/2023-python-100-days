@@ -20,3 +20,13 @@ class Player(Turtle):
 
     def reset_position(self):
         self.goto(STARTING_POSITION)
+
+    def boundaries(self):
+        left = self.xcor() - 10
+        right = self.xcor() + 10
+        top = self.ycor() + 10
+        bottom = self.ycor() - 10
+        return left, right, top, bottom
+
+    def collided_with(self, car):
+        return self.distance(car) < 25

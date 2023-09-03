@@ -28,3 +28,10 @@ class CarManager:
 
     def level_up(self):
         self.car_speed += MOVE_INCREMENT
+
+    def car_boundaries(self, car):
+        left = car.xcor() - 20
+        right = car.xcor() + 20
+        top = car.ycor() + 10
+        bottom = car.ycor() - 10
+        return left, right, top, bottom
