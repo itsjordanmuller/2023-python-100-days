@@ -10,6 +10,8 @@ screen.tracer(0)
 
 player = Player()
 
+car = CarManager()
+
 screen.listen()
 screen.onkey(fun=player.move, key="Up")
 
