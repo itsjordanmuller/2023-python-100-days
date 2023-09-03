@@ -12,12 +12,15 @@ player = Player()
 
 car = CarManager()
 
+score = Scoreboard()
+
 screen.listen()
 screen.onkey(fun=player.move_up, key="Up")
 
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
+    car.move_across()
     screen.update()
 
 
