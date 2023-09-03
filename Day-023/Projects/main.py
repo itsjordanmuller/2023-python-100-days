@@ -13,7 +13,6 @@ player = Player()
 car = CarManager()
 
 score = Scoreboard()
-# score.increase_level()
 
 screen.listen()
 screen.onkey(fun=player.move_up, key="Up")
@@ -30,5 +29,6 @@ while game_is_on:
     if player.ycor() >= FINISH_LINE_Y:
         player.reset_position()
         score.increase_level()
+        car.level_up()
 
 screen.exitonclick()
