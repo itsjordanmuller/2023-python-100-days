@@ -41,10 +41,12 @@ while game_is_on:
         car_bounds = car.car_boundaries(each_car)
         if check_collision(player_bounds, car_bounds):
             game_is_on = False
-            score.game_over()
+            break
 
     screen.update()
-    # score.game_over()
+
+    if not game_is_on:
+        score.game_over()
 
     if player.ycor() >= FINISH_LINE_Y:
         player.reset_position()
