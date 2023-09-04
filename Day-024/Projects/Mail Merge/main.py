@@ -8,8 +8,12 @@
 # Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
 
 with open("Input/Letters/starting_letter.txt") as file:
-    contents = file.readlines()
-    print(contents)
+    starting_contents = file.readlines()
+    # print(starting_contents)
 
-with open("Output/ReadyToSend/test.txt", mode="w") as file:
-    file.write("".join(contents))
+with open("Input/Names/invited_names.txt") as file:
+    name_contents = file.readlines()
+    print(name_contents[0])
+
+# with open("Output/ReadyToSend/test.txt", mode="w") as file:
+#     file.write("".join(contents))
