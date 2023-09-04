@@ -8,7 +8,7 @@
 # Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
 
 with open("Input/Letters/starting_letter.txt") as file:
-    starting_contents = file.readlines()
+    starting_contents = file.read()
     # print(starting_contents)
 
 with open("Input/Names/invited_names.txt") as file:
@@ -18,6 +18,12 @@ with open("Input/Names/invited_names.txt") as file:
         stripped_name = name.strip()
         names.append(stripped_name)
     print(names)
+
+for name in names:
+    personalized_letter = starting_contents.replace("[name]", name)
+
+    with open(f"Output/ReadyToSend/{name}.txt", mode="w") as file:
+        file.write(personalized_letter)
 
 # with open("Output/ReadyToSend/test.txt", mode="w") as file:
 #     file.write("".join(contents))
