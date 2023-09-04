@@ -39,17 +39,19 @@ while game_is_on:
         or snake.head.ycor() > 300
         or snake.head.ycor() < -300
     ):
-        game_is_on = False
-        scoreboard.game_over()
-        print(f"Game over. You got a final score of: {scoreboard.score}")
+        scoreboard.reset()
+        # game_is_on = False
+        # scoreboard.game_over()
+        # print(f"Game over. You got a final score of: {scoreboard.score}")
 
     for segment in snake.segments[1:]:
         # if segment == snake.head:
         #     pass
         # elif snake.head.distance(segment[1:]) < 10:
         if snake.head.distance(segment) < 10:
-            game_is_on = False
-            scoreboard.game_over()
-            print(f"Game over. You got a final score of: {scoreboard.score}")
+            scoreboard.reset()
+            # game_is_on = False
+            # scoreboard.game_over()
+            # print(f"Game over. You got a final score of: {scoreboard.score}")
 
 screen.exitonclick()
