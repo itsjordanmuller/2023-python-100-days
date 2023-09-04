@@ -13,7 +13,13 @@ with open("Input/Letters/starting_letter.txt") as file:
 
 with open("Input/Names/invited_names.txt") as file:
     name_contents = file.readlines()
-    print(name_contents[0])
+    i = 0
+    names = []
+    for name in name_contents:
+        print(name_contents[i])
+        names.append(name_contents[i])
+        i += 1
+    print(names)
 
 # with open("Output/ReadyToSend/test.txt", mode="w") as file:
 #     file.write("".join(contents))
