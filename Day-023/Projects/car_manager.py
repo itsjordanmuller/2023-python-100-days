@@ -4,6 +4,7 @@ import random
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
+MAX_DIFFICULTY = 7
 
 
 class CarManager:
@@ -13,7 +14,7 @@ class CarManager:
         self.difficulty = 0
 
     def create_car(self):
-        chance = random.randint(1, 10 - self.difficulty)
+        chance = random.randint(1, 3 - self.difficulty)
         if chance == 1:
             new_car = Turtle()
             new_car.shape("square")
@@ -29,7 +30,8 @@ class CarManager:
 
     def level_up(self):
         self.car_speed += MOVE_INCREMENT
-        self.difficulty += 1
+        if self.difficulty < MAX_DIFFICULTY:
+            self.difficulty += 1
 
     def car_boundaries(self, car):
         left = car.xcor() - 20
