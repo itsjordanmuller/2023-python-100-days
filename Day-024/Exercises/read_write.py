@@ -1,6 +1,9 @@
 with open("data.txt", mode="w") as file:
     file.write("New line of text!")
 
+with open("data.txt", mode="a") as file:
+    file.write("\nAnother line of text!")
+
 # file = open("data.txt")
 with open("data.txt") as file:
     contents = file.read()
