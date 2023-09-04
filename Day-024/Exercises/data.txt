@@ -1,2 +1,1 @@
-Hello sample data!
-Here's another line!
+New line of text!
