@@ -24,10 +24,11 @@ print(data_dict)
 temp_list = data["temp"].to_list()
 print(temp_list)
 
+average_temp = data["temp"].mean()
 
-def Average(list):
-    return sum(list) / len(list)
+# def Average(list):
+#     return sum(list) / len(list)
 
 
-average_temp = Average(temp_list)
+# average_temp = Average(temp_list)
 print(average_temp)
