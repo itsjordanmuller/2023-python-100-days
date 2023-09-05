@@ -35,5 +35,9 @@ data = pandas.read_csv("weather_data.csv")
 # print(average_temp)
 # print(max_temp)
 
-print(data["condition"])
-print(data.condition)
+# Get Data in Columns
+# print(data["condition"])
+# print(data.condition)
+
+# Get Data in Rows
+print(data[data.day == "Monday"])
