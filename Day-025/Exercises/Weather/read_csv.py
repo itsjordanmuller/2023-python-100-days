@@ -44,9 +44,14 @@ data = pandas.read_csv("weather_data.csv")
 # print(data[data.temp == data.temp.max()])
 
 
-def CelsiusToFahrenheit(temp):
-    return (temp * 9 / 5) + 32
+# def CelsiusToFahrenheit(temp):
+#     return (temp * 9 / 5) + 32
 
 
-monday = data[data.day == "Monday"]
-print(CelsiusToFahrenheit(monday.temp[0]))
+# monday = data[data.day == "Monday"]
+# print(CelsiusToFahrenheit(monday.temp[0]))
+
+# Create a data frame from scratch
+data_dict = {"students": ["Amy", "James", "Jordan"], "scores": [76, 56, 65]}
+dataFrame = pandas.DataFrame(data_dict)
+print(dataFrame)
