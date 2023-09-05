@@ -13,7 +13,7 @@ data = pandas.read_csv("50_states.csv")
 # print(data["state"])
 
 df = pandas.DataFrame(data)
-print(df)
+# print(df)
 
 # 1. Get a Guess and Convert to Title Case
 answer_state = (
@@ -23,6 +23,10 @@ answer_state = (
 ).title()
 
 # 2. Check if Guess is Among the 50 States
+if answer_state in df["state"].values:
+    print(f"{answer_state} is a valid US state!")
+else:
+    print(f"{answer_state} is not a valid US state!")
 
 # def get_mouse_click_coor(x, y):
 #     print(x, y)
