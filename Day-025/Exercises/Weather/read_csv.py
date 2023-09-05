@@ -6,4 +6,5 @@ import csv
 
 with open("weather_data.csv") as file:
     data = csv.reader(file)
-    print(data)
+    for row in data:
+        print(row)
