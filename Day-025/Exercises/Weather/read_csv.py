@@ -6,5 +6,10 @@ import csv
 
 with open("weather_data.csv") as file:
     data = csv.reader(file)
+    temperatures = []
     for row in data:
-        print(row)
+        if row[1] == "temp":
+            pass
+        else:
+            temperatures.append(int(row[1]))
+    print(temperatures)
