@@ -25,10 +25,12 @@ temp_list = data["temp"].to_list()
 print(temp_list)
 
 average_temp = data["temp"].mean()
+max_temp = data["temp"].max()
 
 # def Average(list):
 #     return sum(list) / len(list)
 
 
 # average_temp = Average(temp_list)
-print(average_temp)
+# print(average_temp)
+print(max_temp)
