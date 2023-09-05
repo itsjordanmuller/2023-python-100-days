@@ -41,4 +41,12 @@ data = pandas.read_csv("weather_data.csv")
 
 # Get Data in Rows
 # print(data[data.day == "Monday"])
-print(data[data.temp == data.temp.max()])
+# print(data[data.temp == data.temp.max()])
+
+
+def CelsiusToFahrenheit(temp):
+    return (temp * 9 / 5) + 32
+
+
+monday = data[data.day == "Monday"]
+print(CelsiusToFahrenheit(monday.temp[0]))
