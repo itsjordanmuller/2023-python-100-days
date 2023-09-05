@@ -55,3 +55,4 @@ data = pandas.read_csv("weather_data.csv")
 data_dict = {"students": ["Amy", "James", "Jordan"], "scores": [76, 56, 65]}
 dataFrame = pandas.DataFrame(data_dict)
 print(dataFrame)
+dataFrame.to_csv("score_data.csv")
