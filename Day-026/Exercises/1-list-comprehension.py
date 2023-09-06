@@ -13,3 +13,5 @@ print(range_list)
 names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
 names_list = [name for name in names if len(name) <= 4]
 print(names_list)
+upper_names_list = [name.upper() for name in names if len(name) >= 5]
+print(upper_names_list)
