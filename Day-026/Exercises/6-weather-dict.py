@@ -10,11 +10,13 @@ weather_c = {
 # 🚨 Don't change code above 👆
 
 
+# Write your code 👇 below:
+
+
 def CelsiusToFahrenheit(temp):
     return (temp * 9 / 5) + 32
 
 
-# Write your code 👇 below:
+weather_f = {day: CelsiusToFahrenheit(temp) for (day, temp) in weather_c.items()}
 
-
-# print(weather_f)
+print(weather_f)
