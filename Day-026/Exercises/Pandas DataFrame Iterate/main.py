@@ -7,4 +7,10 @@ student_dict = {"student": ["Jordan", "James", "Lily"], "score": [56, 76, 98]}
 #     print(value)
 
 student_data_frame = pandas.DataFrame(student_dict)
-print(student_data_frame)
+# print(student_data_frame)
+
+# Loop Through Rows of a Data Frame
+for index, row in student_data_frame.iterrows():
+    print(row.student, row.score)
+    # if row.student == "Jordan":
+    #     print(row.score)
