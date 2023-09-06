@@ -18,3 +18,10 @@ print("Welcome to the NATO Phonetic Conversion Tool")
 user_input = input("What word would you like to convert to the NATO Alphabet?\n")
 letter_list = [letter for letter in user_input]
 print(letter_list)
+
+converted_list = [
+    phonetic_dict[letter.upper()]
+    for letter in letter_list
+    if letter.upper() in phonetic_dict
+]
+print(converted_list)
