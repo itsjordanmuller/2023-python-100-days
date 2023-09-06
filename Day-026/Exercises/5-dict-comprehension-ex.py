@@ -4,6 +4,8 @@ sentence = "What is the Airspeed Velocity of an Unladen Swallow?"
 # Write your code below:
 
 word_list = sentence.split()
-print(word_list)
+# print(word_list)
 
-# print(result)
+result = {word: len(word) for word in word_list}
+
+print(result)
