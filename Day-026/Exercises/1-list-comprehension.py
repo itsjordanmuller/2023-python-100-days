@@ -5,3 +5,7 @@ print(new_numbers)
 name = "Jordan"
 letter_list = [letter for letter in name]
 print(letter_list)
+
+range_nums = range(1, 5)
+range_list = [n * 2 for n in range_nums]
+print(range_list)
