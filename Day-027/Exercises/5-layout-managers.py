@@ -24,15 +24,19 @@ window.minsize(width=500, height=400)
 # Label
 my_label = Label(text="I am a label!", font=("Arial", 24, "bold"))
 my_label["text"] = "New Label Text!"
-my_label.pack(side="left")
+# my_label.pack(side="left")
+my_label.place(
+    x=10,
+    y=10,
+)
 
 # Button
 button = Button(text="Button!", command=input_label)
-button.pack(side="left")
+# button.pack(side="left")
 
 # Entry
 input = Entry(width=10)
-input.pack(side="left")
+# input.pack(side="left")
 
 
 window.mainloop()
