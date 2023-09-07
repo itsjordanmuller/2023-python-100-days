@@ -20,7 +20,12 @@ def button_clicked():
     my_label["text"] = f"Button Clicked {i} Times!"
 
 
-button = Button(text="Button!", command=button_clicked)
+def input_label():
+    input_value = input.get()
+    my_label["text"] = input_value
+
+
+button = Button(text="Button!", command=input_label)
 button.pack()
 
 input = Entry(width=10)
