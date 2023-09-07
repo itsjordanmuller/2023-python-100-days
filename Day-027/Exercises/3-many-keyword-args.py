@@ -17,7 +17,11 @@ class Car:
     def __init__(self, **kw) -> None:
         self.make = kw.get("make")
         self.model = kw.get("model")
+        self.color = kw.get("color")
+        self.seats = kw.get("seats")
 
 
-my_car = Car(make="Nissan")
-print(f"Make: {my_car.make} | Model: {my_car.model}")
+my_car = Car(make="Nissan", seats=4, color="White")
+print(
+    f"Make: {my_car.make} | Model: {my_car.model}\nColor: {my_car.color} | Seats: {my_car.seats}"
+)
