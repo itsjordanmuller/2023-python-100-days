@@ -15,9 +15,9 @@ def calculate(n, **kwargs):
 
 class Car:
     def __init__(self, **kw) -> None:
-        self.make = kw["make"]
-        self.model = kw["model"]
+        self.make = kw.get("make")
+        self.model = kw.get("model")
 
 
-my_car = Car(make="Nissan", model="GT-R")
+my_car = Car(make="Nissan")
 print(f"Make: {my_car.make} | Model: {my_car.model}")
