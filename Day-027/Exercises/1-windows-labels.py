@@ -23,4 +23,8 @@ def button_clicked():
 button = Button(text="Button!", command=button_clicked)
 button.pack()
 
+input = Entry(width=10)
+input.pack()
+
+
 window.mainloop()
