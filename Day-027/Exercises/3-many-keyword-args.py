@@ -10,4 +10,14 @@ def calculate(n, **kwargs):
     print(n)
 
 
-calculate(2, add=3, multiply=5)
+# calculate(2, add=3, multiply=5)
+
+
+class Car:
+    def __init__(self, **kw) -> None:
+        self.make = kw["make"]
+        self.model = kw["model"]
+
+
+my_car = Car(make="Nissan", model="GT-R")
+print(f"Make: {my_car.make} | Model: {my_car.model}")
