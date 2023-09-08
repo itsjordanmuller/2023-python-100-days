@@ -11,6 +11,8 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 
+reps = 0
+
 # TIMER RESET
 
 # TIMER MECHANISM
@@ -36,7 +38,21 @@ def timer_countdown(count):
 
 
 def start_timer():
-    timer_countdown(5 * 60)
+    global reps
+    reps += 1
+
+    work_seconds = WORK_MIN * 60
+    short_break_seconds = SHORT_BREAK_MIN * 60
+    long_break_seconds = LONG_BREAK_MIN * 60
+
+    if reps % 8 == 0:
+        timer_countdown(long_break_seconds)
+    elif reps % 2 == 0:
+        timer_countdown(short_break_seconds)
+    else:
+        timer_countdown(work_seconds)
+
+    # timer_countdown(5 * 60)
 
 
 # UI SETUP
