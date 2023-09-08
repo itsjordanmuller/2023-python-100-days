@@ -21,8 +21,6 @@ reps = 0
 
 
 def timer_countdown(count):
-    # print(count)
-
     count_minutes = math.floor(count / 60)
     count_seconds = count % 60
 
@@ -43,18 +41,19 @@ def start_timer():
     global reps
     reps += 1
 
-    work_seconds = WORK_MIN * 60
-    short_break_seconds = SHORT_BREAK_MIN * 60
-    long_break_seconds = LONG_BREAK_MIN * 60
+    work_seconds = WORK_MIN * 25
+    short_break_seconds = SHORT_BREAK_MIN * 25
+    long_break_seconds = LONG_BREAK_MIN * 25
 
     if reps % 8 == 0:
+        timer_label.config(text="Break", fg=GREEN)
         timer_countdown(long_break_seconds)
     elif reps % 2 == 0:
+        timer_label.config(text="Break", fg=PINK)
         timer_countdown(short_break_seconds)
     else:
+        timer_label.config(text="Work", fg=RED)
         timer_countdown(work_seconds)
-
-    # timer_countdown(5 * 60)
 
 
 # UI SETUP
