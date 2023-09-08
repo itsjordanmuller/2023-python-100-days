@@ -11,17 +11,13 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 
+# VARIABLES
 reps = 0
 marks = ""
 timer = None
 
-# TIMER RESET
-
-# TIMER MECHANISM
 
 # COUNTDOWN MECHANISM
-
-
 def timer_countdown(count):
     global timer
 
@@ -41,6 +37,7 @@ def timer_countdown(count):
         start_timer()
 
 
+# TIMER MECHANISM
 def start_timer():
     global reps, marks
     reps += 1
@@ -64,6 +61,7 @@ def start_timer():
         timer_countdown(work_seconds)
 
 
+# TIMER RESET
 def reset_timer():
     global reps, marks, timer
 
@@ -101,5 +99,6 @@ reset_button.grid(column=2, row=2)
 
 check_label = Label(text="", bg=TAN, fg=GREEN, font=(FONT_NAME, 18, "bold"))
 check_label.grid(column=1, row=3)
+
 
 window.mainloop()
