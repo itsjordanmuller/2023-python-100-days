@@ -1,5 +1,6 @@
+from tkinter import *
 
-# ---------------------------- CONSTANTS ------------------------------- #
+# CONSTANTS
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
@@ -9,10 +10,16 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 
-# ---------------------------- TIMER RESET ------------------------------- # 
+# TIMER RESET
 
-# ---------------------------- TIMER MECHANISM ------------------------------- # 
+# TIMER MECHANISM
 
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
+# COUNTDOWN MECHANISM
 
-# ---------------------------- UI SETUP ------------------------------- #
+# UI SETUP
+window = Tk()
+window.title("Pomodoro Timer")
+window.minsize(width=500, height=400)
+
+
+window.mainloop()
