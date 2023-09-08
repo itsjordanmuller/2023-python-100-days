@@ -19,9 +19,10 @@ LONG_BREAK_MIN = 20
 # UI SETUP
 window = Tk()
 window.title("Pomodoro Timer")
-window.config(padx=100, pady=50)
+window.config(padx=100, pady=50, bg="#ffebcd")
 
 canvas = Canvas(width=202, height=224)
+canvas.config(bg="#ffebcd", highlightthickness=0)
 img = PhotoImage(file="tomato.png")
 canvas.create_image(101, 112, image=img)
 canvas.pack(expand=True)
