@@ -12,6 +12,7 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 
 reps = 0
+marks = ""
 
 # TIMER RESET
 
@@ -38,19 +39,23 @@ def timer_countdown(count):
 
 
 def start_timer():
-    global reps
+    global reps, marks
     reps += 1
 
-    work_seconds = WORK_MIN * 25
-    short_break_seconds = SHORT_BREAK_MIN * 25
-    long_break_seconds = LONG_BREAK_MIN * 25
+    work_seconds = WORK_MIN * 60
+    short_break_seconds = SHORT_BREAK_MIN * 60
+    long_break_seconds = LONG_BREAK_MIN * 60
 
     if reps % 8 == 0:
         timer_label.config(text="Break", fg=GREEN)
         timer_countdown(long_break_seconds)
+        marks += "✓\n"
+        check_label.config(text=marks)
     elif reps % 2 == 0:
         timer_label.config(text="Break", fg=PINK)
         timer_countdown(short_break_seconds)
+        marks += "✓"
+        check_label.config(text=marks)
     else:
         timer_label.config(text="Work", fg=RED)
         timer_countdown(work_seconds)
@@ -78,7 +83,7 @@ start_button.grid(column=0, row=2)
 reset_button = Button(text="Reset", bg="white")
 reset_button.grid(column=2, row=2)
 
-check_label = Label(text="✓", bg=TAN, fg=GREEN, font=(FONT_NAME, 18, "bold"))
+check_label = Label(text="", bg=TAN, fg=GREEN, font=(FONT_NAME, 18, "bold"))
 check_label.grid(column=1, row=3)
 
 window.mainloop()
