@@ -13,6 +13,7 @@ LONG_BREAK_MIN = 20
 
 reps = 0
 marks = ""
+timer = None
 
 # TIMER RESET
 
@@ -22,6 +23,8 @@ marks = ""
 
 
 def timer_countdown(count):
+    global timer
+
     count_minutes = math.floor(count / 60)
     count_seconds = count % 60
 
@@ -33,7 +36,7 @@ def timer_countdown(count):
 
     canvas.itemconfig(timer_text, text=f"{count_minutes}:{count_seconds}")
     if count > 0:
-        window.after(1000, timer_countdown, count - 1)
+        timer = window.after(10, timer_countdown, count - 1)
     else:
         start_timer()
 
@@ -61,6 +64,19 @@ def start_timer():
         timer_countdown(work_seconds)
 
 
+def reset_timer():
+    global reps, marks, timer
+
+    window.after_cancel(timer)
+
+    reps = 0
+    marks = ""
+
+    canvas.itemconfig(timer_text, text="00:00")
+    timer_label.config(text="Timer", fg=GREEN)
+    check_label.config(text="")
+
+
 # UI SETUP
 window = Tk()
 window.title("Pomodoro Timer")
@@ -80,7 +96,7 @@ canvas.grid(column=1, row=1, padx=20, pady=10)
 start_button = Button(text="Start", bg="white", command=start_timer)
 start_button.grid(column=0, row=2)
 
-reset_button = Button(text="Reset", bg="white")
+reset_button = Button(text="Reset", bg="white", command=reset_timer)
 reset_button.grid(column=2, row=2)
 
 check_label = Label(text="", bg=TAN, fg=GREEN, font=(FONT_NAME, 18, "bold"))
