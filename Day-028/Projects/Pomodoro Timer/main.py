@@ -1,4 +1,5 @@
 from tkinter import *
+import math
 
 # CONSTANTS
 PINK = "#e2979c"
@@ -19,13 +20,23 @@ LONG_BREAK_MIN = 20
 
 def timer_countdown(count):
     # print(count)
-    canvas.itemconfig(timer_text, text=count)
+
+    count_minutes = math.floor(count / 60)
+    count_seconds = count % 60
+
+    if count_seconds < 10:
+        count_seconds = f"0{count_seconds}"
+
+    if count_minutes < 10:
+        count_minutes = f"0{count_minutes}"
+
+    canvas.itemconfig(timer_text, text=f"{count_minutes}:{count_seconds}")
     if count > 0:
         window.after(1000, timer_countdown, count - 1)
 
 
 def start_timer():
-    timer_countdown(5)
+    timer_countdown(5 * 60)
 
 
 # UI SETUP
