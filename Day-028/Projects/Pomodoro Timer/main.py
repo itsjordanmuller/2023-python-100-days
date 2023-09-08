@@ -16,10 +16,19 @@ LONG_BREAK_MIN = 20
 
 # COUNTDOWN MECHANISM
 
+
+def timer_countdown(count):
+    print(count)
+    if count > 0:
+        window.after(1000, timer_countdown, count - 1)
+
+
 # UI SETUP
 window = Tk()
 window.title("Pomodoro Timer")
 window.config(padx=100, pady=50, bg=TAN)
+
+timer_countdown(5)
 
 timer_label = Label(text="Timer", bg=TAN, fg=GREEN, font=(FONT_NAME, 40, "bold"))
 timer_label.grid(column=1, row=0)
