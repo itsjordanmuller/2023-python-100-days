@@ -24,6 +24,10 @@ def timer_countdown(count):
         window.after(1000, timer_countdown, count - 1)
 
 
+def start_timer():
+    timer_countdown(5)
+
+
 # UI SETUP
 window = Tk()
 window.title("Pomodoro Timer")
@@ -40,9 +44,7 @@ timer_text = canvas.create_text(
 )
 canvas.grid(column=1, row=1, padx=20, pady=10)
 
-timer_countdown(5)
-
-start_button = Button(text="Start", bg="white")
+start_button = Button(text="Start", bg="white", command=start_timer)
 start_button.grid(column=0, row=2)
 
 reset_button = Button(text="Reset", bg="white")
