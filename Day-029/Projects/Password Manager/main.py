@@ -19,6 +19,7 @@ website_label.grid(column=0, row=1, sticky="E")
 
 website_entry = Entry()
 website_entry.grid(column=1, row=1, columnspan=2, sticky="EW")
+website_entry.focus()
 
 user_email_label = Label(text="Email/Username:")
 user_email_label.grid(column=0, row=2, sticky="E")
