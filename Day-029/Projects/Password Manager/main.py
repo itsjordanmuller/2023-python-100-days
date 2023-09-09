@@ -26,6 +26,7 @@ user_email_label.grid(column=0, row=2, sticky="E")
 
 user_email_entry = Entry()
 user_email_entry.grid(column=1, row=2, columnspan=2, sticky="EW")
+user_email_entry.insert(0, "itsjordanmuller@gmail.com")
 
 password_label = Label(text="Password:")
 password_label.grid(column=0, row=3, sticky="E")
