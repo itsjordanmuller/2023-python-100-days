@@ -18,3 +18,8 @@
 # Except: Do this if there was an exception
 # Else: Do this if there were no exceptions
 # Finally: Do this no matter what happens
+
+try:
+    file = open("a_file.txt")
+except:
+    print("There was an error")
