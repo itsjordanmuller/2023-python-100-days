@@ -110,6 +110,23 @@ def read_data():
     except json.JSONDecodeError:
         messagebox.showinfo(title="Error", message="Error reading the data file.")
 
+# SEARCH PASSWORD
+def search_data():
+    website = website_entry.get()
+    try:
+        with open("data.json", "r") as file:
+            data = json.load(file)
+            if website in data:
+                email = data[website]["email/username"]
+                password = data[website]["password"]
+                messagebox.showinfo(title=website, message=f"Email/Username: {email}\nPassword: {password}")
+            else:
+                messagebox.showerror(title="Error", message=f"No details for the website {website} found.")
+    except FileNotFoundError:
+        messagebox.showerror(title="Error", message="No Data File Found.")
+    except json.JSONDecodeError:
+        messagebox.showinfo(title="Error", message="Error reading the data file.")
+
 
 # SAVE PASSWORD
 def save_data():
@@ -186,8 +203,11 @@ website_label = Label(text="Website:")
 website_label.grid(column=0, row=1, sticky="E")
 
 website_entry = Entry()
-website_entry.grid(column=1, row=1, columnspan=2, sticky="EW")
+website_entry.grid(column=1, row=1, sticky="EW")
 website_entry.focus()
+
+search_button = Button(text="Search", pady=0, command=search_data)
+search_button.grid(column=2, row=1, sticky="EW")
 
 user_email_label = Label(text="Email/Username:")
 user_email_label.grid(column=0, row=2, sticky="E")
