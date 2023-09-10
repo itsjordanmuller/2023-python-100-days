@@ -9,3 +9,7 @@
 # Index Error
 # fruit_list = ["Apple", "Banana", "Pear"]
 # fruit = fruit_list[3]
+
+# Type Error
+# text = "abc"
+# print(text + 5)
