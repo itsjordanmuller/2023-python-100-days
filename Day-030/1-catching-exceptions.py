@@ -21,5 +21,8 @@
 
 try:
     file = open("a_file.txt")
-except:
-    print("There was an error")
+    a_dictionary = {"key": "value"}
+    print(a_dictionary["non-existent-key"])
+except FileNotFoundError:
+    file = open("a_file.txt", "w")
+    file.write("Something")
