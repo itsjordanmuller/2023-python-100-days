@@ -1,6 +1,8 @@
+import json
+import random
 from tkinter import *
 from tkinter import messagebox
-import random
+
 import pyperclip
 
 # PASSWORD GENERATOR
@@ -106,6 +108,12 @@ def save_data():
         "email/username": user_email_entry.get(),
         "password": password_entry.get(),
     }
+    new_data = {
+        details["website"]: {
+            "email/username": details["email/username"],
+            "password": details["password"],
+        }
+    }
 
     missing_fields = [key for key, value in details.items() if not value]
 
@@ -131,16 +139,17 @@ def save_data():
                 title="Missing Details", message="Please enter a password."
             )
     else:
-        is_ok = messagebox.askokcancel(
-            title=f"Save {details['website']} Password",
-            message=f"Here's the login details:\n\nEmail: {details['email/username']}\nPassword: {details['password']}\n\nIs it okay to save?",
-        )
+        # is_ok = messagebox.askokcancel(
+        #     title=f"Save {details['website']} Password",
+        #     message=f"Here's the login details:\n\nEmail: {details['email/username']}\nPassword: {details['password']}\n\nIs it okay to save?",
+        # )
 
-        if is_ok:
-            with open("login_data.txt", "a") as file:
-                file.write(
-                    f"{details['website']} | {details['email/username']} | {details['password']}\n"
-                )
+        # if is_ok:
+        with open("data.json", "w") as file:
+            json.dump(new_data, file, indent=4)
+            # file.write(
+            #     f"{details['website']} | {details['email/username']} | {details['password']}\n"
+            # )
 
             website_entry.delete(0, END)
             password_entry.delete(0, END)
