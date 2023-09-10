@@ -4,6 +4,19 @@ from tkinter import *
 
 # SAVE PASSWORD
 
+
+def save_data():
+    website = website_entry.get()
+    email = user_email_entry.get()
+    password = password_entry.get()
+
+    with open("login_data.txt", "a") as file:
+        file.write(f"{website} | {email} | {password}\n")
+
+    website_entry.delete(0, END)
+    password_entry.delete(0, END)
+
+
 # UI SETUP
 window = Tk()
 window.title("Password Manager")
@@ -37,7 +50,7 @@ password_entry.grid(column=1, row=3, sticky="EW")
 gen_password_button = Button(text="Generate Password", pady=0)
 gen_password_button.grid(column=2, row=3, sticky="EW")
 
-add_password_button = Button(text="Add", width=32)
+add_password_button = Button(text="Add", width=32, command=save_data)
 add_password_button.grid(column=1, row=4, columnspan=2, sticky="EW")
 
 
