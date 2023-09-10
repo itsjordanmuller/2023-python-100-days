@@ -13,3 +13,8 @@
 # Type Error
 # text = "abc"
 # print(text + 5)
+
+# Try: Something that might cause an exception
+# Except: Do this if there was an exception
+# Else: Do this if there were no exceptions
+# Finally: Do this no matter what happens
