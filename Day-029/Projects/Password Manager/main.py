@@ -99,9 +99,19 @@ def gen_password():
     pyperclip.copy(password)
 
 
+# READ PASSWORD
+def read_data():
+    try:
+        with open("data.json", "r") as file:
+            data = json.load(file)
+            print(data)
+    except FileNotFoundError:
+        messagebox.showinfo(title="Error", message="No Data File Found.")
+    except json.JSONDecodeError:
+        messagebox.showinfo(title="Error", message="Error reading the data file.")
+
+
 # SAVE PASSWORD
-
-
 def save_data():
     details = {
         "website": website_entry.get(),
@@ -139,6 +149,13 @@ def save_data():
                 title="Missing Details", message="Please enter a password."
             )
     else:
+        try:
+            with open("data.json", "r") as file:
+                data = json.load(file)
+        except FileNotFoundError:
+            data = {}
+
+        data.update(new_data)
         # is_ok = messagebox.askokcancel(
         #     title=f"Save {details['website']} Password",
         #     message=f"Here's the login details:\n\nEmail: {details['email/username']}\nPassword: {details['password']}\n\nIs it okay to save?",
@@ -146,13 +163,13 @@ def save_data():
 
         # if is_ok:
         with open("data.json", "w") as file:
-            json.dump(new_data, file, indent=4)
+            json.dump(data, file, indent=4)
             # file.write(
             #     f"{details['website']} | {details['email/username']} | {details['password']}\n"
             # )
 
-            website_entry.delete(0, END)
-            password_entry.delete(0, END)
+        website_entry.delete(0, END)
+        password_entry.delete(0, END)
 
 
 # UI SETUP
