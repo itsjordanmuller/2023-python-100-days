@@ -7,21 +7,49 @@ from tkinter import messagebox
 
 
 def save_data():
-    website = website_entry.get()
-    email = user_email_entry.get()
-    password = password_entry.get()
+    details = {
+        "website": website_entry.get(),
+        "email/username": user_email_entry.get(),
+        "password": password_entry.get(),
+    }
 
-    is_ok = messagebox.askokcancel(
-        title=f"Save {website} Password",
-        message=f"Here's the login details:\n\nEmail: {email}\nPassword: {password}\n\nIs it okay to save?",
-    )
+    missing_fields = [key for key, value in details.items() if not value]
 
-    if is_ok:
-        with open("login_data.txt", "a") as file:
-            file.write(f"{website} | {email} | {password}\n")
+    if missing_fields:
+        if len(missing_fields) > 1:
+            missing_fields_str = (
+                ", ".join(missing_fields[:-1]) + " and " + missing_fields[-1]
+            )
+            messagebox.showerror(
+                title="Missing Details",
+                message=f"The {missing_fields_str} fields are missing. Please make sure to fill them out.",
+            )
+        elif "website" in missing_fields:
+            messagebox.showerror(
+                title="Missing Details", message="Please enter a website name/URL."
+            )
+        elif "email/username" in missing_fields:
+            messagebox.showerror(
+                title="Missing Details", message="Please enter a email/username."
+            )
+        elif "password" in missing_fields:
+            messagebox.showerror(
+                title="Missing Details", message="Please enter a password."
+            )
+    else:
+        is_ok = messagebox.askokcancel(
+            title=f"Save {details['website']} Password",
+            message=f"Here's the login details:\n\nEmail: {details['email/username']}\nPassword: {details['password']}\n\nIs it okay to save?",
+        )
 
-        website_entry.delete(0, END)
-        password_entry.delete(0, END)
+        if is_ok:
+            with open("login_data.txt", "a") as file:
+                file.write(
+                    f"{details['website']} | {details['email']} | {details['password']}\n"
+                )
+
+            website_entry.delete(0, END)
+            password_entry.delete(0, END)
 
 
 # UI SETUP
