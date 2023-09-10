@@ -60,34 +60,39 @@ letters = [
 numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 symbols = ["!", "#", "$", "%", "&", "(", ")", "*", "+"]
 
-nr_letters = random.randint(8, 10)
-nr_symbols = random.randint(2, 4)
-nr_numbers = random.randint(2, 4)
 
-password_list = []
+def gen_password():
+    nr_letters = random.randint(8, 10)
+    nr_symbols = random.randint(2, 4)
+    nr_numbers = random.randint(2, 4)
 
-# for char in range(nr_letters):
-#     password_list.append(random.choice(letters))
+    password_list = []
 
-# for char in range(nr_symbols):
-#     password_list += random.choice(symbols)
+    # for char in range(nr_letters):
+    #     password_list.append(random.choice(letters))
 
-# for char in range(nr_numbers):
-#     password_list += random.choice(numbers)
+    # for char in range(nr_symbols):
+    #     password_list += random.choice(symbols)
 
-password_letters = [random.choice(letters) for _ in range(nr_letters)]
-password_symbols = [random.choice(symbols) for _ in range(nr_symbols)]
-password_numbers = [random.choice(numbers) for _ in range(nr_numbers)]
+    # for char in range(nr_numbers):
+    #     password_list += random.choice(numbers)
 
-password_list = password_letters + password_symbols + password_numbers
-random.shuffle(password_list)
+    password_letters = [random.choice(letters) for _ in range(nr_letters)]
+    password_symbols = [random.choice(symbols) for _ in range(nr_symbols)]
+    password_numbers = [random.choice(numbers) for _ in range(nr_numbers)]
 
-# password = ""
-# for char in password_list:
-#     password += char
+    password_list = password_letters + password_symbols + password_numbers
+    random.shuffle(password_list)
 
-password = ''.join(password_list)
-print(f"Your password is: {password}")
+    # password = ""
+    # for char in password_list:
+    #     password += char
+
+    password = "".join(password_list)
+    # print(f"Your password is: {password}")
+
+    password_entry.delete(0, END)
+    password_entry.insert(0, password)
 
 
 # SAVE PASSWORD
@@ -169,7 +174,7 @@ password_label.grid(column=0, row=3, sticky="E")
 password_entry = Entry()
 password_entry.grid(column=1, row=3, sticky="EW")
 
-gen_password_button = Button(text="Generate Password", pady=0)
+gen_password_button = Button(text="Generate Password", pady=0, command=gen_password)
 gen_password_button.grid(column=2, row=3, sticky="EW")
 
 add_password_button = Button(text="Add", width=32, command=save_data)
