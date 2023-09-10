@@ -139,7 +139,7 @@ def save_data():
         if is_ok:
             with open("login_data.txt", "a") as file:
                 file.write(
-                    f"{details['website']} | {details['email']} | {details['password']}\n"
+                    f"{details['website']} | {details['email/username']} | {details['password']}\n"
                 )
 
             website_entry.delete(0, END)
