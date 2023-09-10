@@ -15,13 +15,22 @@ phonetic_dict = {row["letter"]: row["code"] for (index, row) in df.iterrows()}
 # TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 
 print("Welcome to the NATO Phonetic Conversion Tool")
-user_input = input("What word would you like to convert to the NATO Alphabet?\n")
-letter_list = [letter for letter in user_input]
-print(letter_list)
 
-converted_list = [
-    phonetic_dict[letter.upper()]
-    for letter in letter_list
-    if letter.upper() in phonetic_dict
-]
-print(converted_list)
+while True:
+    user_input = input("What word would you like to convert to the NATO Alphabet?\n")
+    letter_list = [letter for letter in user_input]
+
+    try:
+        converted_list = [
+            phonetic_dict[letter.upper()]
+            for letter in letter_list
+            if letter.upper() in phonetic_dict
+        ]
+
+        if len(converted_list) == len(letter_list):
+            print(" ".join(converted_list))
+            break
+        else:
+            print("Sorry, only letters in the alphabet please.")
+    except KeyError:
+        print("Sorry, only letters in the alphabet please.")
