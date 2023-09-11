@@ -1,12 +1,25 @@
+import random
 from tkinter import *
+
 import pandas
+
 
 # CONSTANTS
 BACKGROUND_COLOR = "#B1DDC6"
 
+
 # DATA SETUP
 df = pandas.read_csv("./data/french_words.csv")
 print(df)
+
+
+def get_random_word():
+    row = df.sample().iloc[0]
+    return row["French"], row["English"]
+
+
+french_word, english_word = get_random_word()
+
 
 # UI SETUP
 window = Tk()
@@ -21,7 +34,7 @@ wrong_img = PhotoImage(file="./images/wrong.png")
 
 canvas.create_image(400, 263, image=card_front_img)
 
-title_text = canvas.create_text(400, 150, text="Title", font=("Arial", 30, "italic"))
+title_text = canvas.create_text(400, 150, text="Language", font=("Arial", 30, "italic"))
 word_text = canvas.create_text(400, 263, text="Word", font=("Arial", 50, "bold"))
 
 canvas.grid(column=0, row=0, columnspan=2)
@@ -29,10 +42,18 @@ canvas.grid(column=0, row=0, columnspan=2)
 
 def wrong_click():
     print("Wrong button clicked!")
+    change_word()
 
 
 def right_click():
     print("Right button clicked!")
+    change_word()
+
+
+def change_word():
+    french_word, english_word = get_random_word()
+    canvas.itemconfig(title_text, text="French")
+    canvas.itemconfig(word_text, text=french_word)
 
 
 wrong_button = Button(
@@ -55,5 +76,6 @@ right_button = Button(
 )
 right_button.grid(column=1, row=1)
 
+change_word()
 
 window.mainloop()
