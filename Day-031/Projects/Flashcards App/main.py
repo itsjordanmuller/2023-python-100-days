@@ -1,7 +1,9 @@
-import random
 from tkinter import *
-
+from tkinter import messagebox
+import random
 import pandas
+import os
+
 
 # CONSTANTS
 BACKGROUND_COLOR = "#B1DDC6"
@@ -10,15 +12,31 @@ FLIP_TIME = 3000
 
 # DATA SETUP
 df = pandas.read_csv("./data/french_words.csv")
-print(df)
+# print(df)
+if not os.path.exists("./data/words_to_learn.csv"):
+    df.to_csv("./data/words_to_learn.csv", index=False)
+else:
+    df = pandas.read_csv("./data/words_to_learn.csv")
 
 
 def get_random_word():
-    row = df.sample().iloc[0]
-    return row["French"], row["English"]
+    global df
 
-
-french_word, english_word = get_random_word()
+    if df.empty:
+        answer = messagebox.askokcancel(
+            title="Reset Words",
+            message="Congrats!\nAll words learned!\nWould you like to reset the words?\nThis will add all of the words you've already learned back to the list, resetting your progress.",
+        )
+        if answer:  # If user clicked 'Ok'
+            df = pandas.read_csv("./data/french_words.csv")
+            df.to_csv("./data/words_to_learn.csv", index=False)
+            row = df.sample().iloc[0]
+            return row["French"], row["English"]
+        else:
+            return None, None
+    else:
+        row = df.sample().iloc[0]
+        return row["French"], row["English"]
 
 
 # UI SETUP
@@ -47,7 +65,14 @@ def wrong_click():
 
 def right_click():
     print("Right button clicked!")
+    remove_word_from_learn_list(french_word, english_word)
     change_word()
+
+
+def remove_word_from_learn_list(french, english):
+    global df
+    df = df[(df.French != french) & (df.English != english)]
+    df.to_csv("./data/words_to_learn.csv", index=False)
 
 
 after_event = None
@@ -62,6 +87,9 @@ def change_word():
     if card_state == "back":
         flip_card()
     french_word, english_word = get_random_word()
+    if french_word is None and english_word is None:
+        print("Congrats!\nAll words learned!")
+        return
     canvas.itemconfig(title_text, text="French")
     canvas.itemconfig(word_text, text=french_word)
     after_event = window.after(FLIP_TIME, flip_card)
@@ -104,6 +132,9 @@ right_button = Button(
 )
 right_button.grid(column=1, row=1)
 
-change_word()
+if df.empty:
+    print("Congrats!\nAll words learned!")
+else:
+    change_word()
 
 window.mainloop()
