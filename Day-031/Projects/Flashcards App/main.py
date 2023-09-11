@@ -3,9 +3,9 @@ from tkinter import *
 
 import pandas
 
-
 # CONSTANTS
 BACKGROUND_COLOR = "#B1DDC6"
+FLIP_TIME = 3000
 
 
 # DATA SETUP
@@ -32,7 +32,7 @@ card_back_img = PhotoImage(file="./images/card_back.png")
 right_img = PhotoImage(file="./images/right.png")
 wrong_img = PhotoImage(file="./images/wrong.png")
 
-canvas.create_image(400, 263, image=card_front_img)
+canvas_img = canvas.create_image(400, 263, image=card_front_img)
 
 title_text = canvas.create_text(400, 150, text="Language", font=("Arial", 30, "italic"))
 word_text = canvas.create_text(400, 263, text="Word", font=("Arial", 50, "bold"))
@@ -50,10 +50,38 @@ def right_click():
     change_word()
 
 
+after_event = None
+
+
 def change_word():
+    global card_state, after_event, french_word, english_word
+
+    if after_event:
+        window.after_cancel(after_event)
+
+    if card_state == "back":
+        flip_card()
     french_word, english_word = get_random_word()
     canvas.itemconfig(title_text, text="French")
     canvas.itemconfig(word_text, text=french_word)
+    after_event = window.after(FLIP_TIME, flip_card)
+
+
+card_state = "front"
+
+
+def flip_card():
+    global card_state, french_word, english_word
+    if card_state == "front":
+        canvas.itemconfig(canvas_img, image=card_back_img)
+        canvas.itemconfig(title_text, text="English", fill="white")
+        canvas.itemconfig(word_text, text=english_word, fill="white")
+        card_state = "back"
+    else:
+        canvas.itemconfig(canvas_img, image=card_front_img)
+        canvas.itemconfig(title_text, text="French", fill="black")
+        canvas.itemconfig(word_text, text=french_word, fill="black")
+        card_state = "front"
 
 
 wrong_button = Button(
