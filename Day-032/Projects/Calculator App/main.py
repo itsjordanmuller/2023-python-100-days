@@ -118,7 +118,10 @@ def handle_equal_button():
     try:
         result = eval(calculation_str)
         if isinstance(result, float):
-            result = round(result, 10)
+            if result.is_integer():
+                result = int(result)
+            else:
+                result = round(result, 10)
     except Exception as e:
         result = "Error"
 
