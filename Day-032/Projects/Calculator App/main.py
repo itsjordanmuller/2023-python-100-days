@@ -61,6 +61,15 @@ def handle_div_button():
     update_display()
 
 
+# MODULUS BUTTON
+def handle_mod_button():
+    global current_input, full_calculation
+    full_calculation.append(current_input)
+    full_calculation.append("%")
+    current_input = ""
+    update_display()
+
+
 # CALCULATE/EQUAL BUTTON FUNCTIONS
 def handle_equal_button():
     global current_input, full_calculation
@@ -156,7 +165,7 @@ ac_button.grid(column=0, row=5, sticky="EW")
 pos_neg_button = Button(text="±", width=2)
 pos_neg_button.grid(column=1, row=5, sticky="EW")
 
-mod_button = Button(text="%", width=2)
+mod_button = Button(text="%", width=2, command=handle_mod_button)
 mod_button.grid(column=2, row=5, sticky="EW")
 
 div_button = Button(text="÷", width=2, command=handle_div_button)
