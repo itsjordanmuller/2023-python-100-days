@@ -120,8 +120,8 @@ minus_button.grid(column=3, row=7, sticky="EW")
 plus_button = Button(text="+")
 plus_button.grid(column=3, row=8, sticky="EW")
 
-comma_button = Button(text=",")
-comma_button.grid(column=1, row=9, sticky="EW")
+dec_button = Button(text=".")
+dec_button.grid(column=1, row=9, sticky="EW")
 
 equal_button = Button(text="=", command=handle_equal_button)
 equal_button.grid(column=2, row=9, columnspan=2, sticky="EW")
