@@ -72,6 +72,15 @@ def handle_mod_button():
     update_display()
 
 
+# DECIMAL BUTTON
+def handle_dec_button():
+    global current_input
+
+    if "." not in current_input:
+        current_input += "."
+        update_display()
+
+
 # POSITIVE/NEGATIVE BUTTON
 def handle_pos_neg_button():
     global current_input, full_calculation
@@ -108,6 +117,8 @@ def handle_equal_button():
 
     try:
         result = eval(calculation_str)
+        if isinstance(result, float):
+            result = round(result, 10)
     except Exception as e:
         result = "Error"
 
@@ -207,7 +218,7 @@ minus_button.grid(column=3, row=7, sticky="EW")
 plus_button = Button(text="+", command=handle_plus_button)
 plus_button.grid(column=3, row=8, sticky="EW")
 
-dec_button = Button(text=".")
+dec_button = Button(text=".", command=handle_dec_button)
 dec_button.grid(column=1, row=9, sticky="EW")
 
 equal_button = Button(text="=", command=handle_equal_button)
