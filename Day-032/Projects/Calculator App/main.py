@@ -123,6 +123,7 @@ def handle_equal_button():
         text=last_calc_display,
         anchor="se",
         font=("TkDefaultFont", 14),
+        fill="white",
     )
 
     full_calculation = []
@@ -144,6 +145,7 @@ def update_display():
         text=display_text,
         anchor="se",
         font=("TkDefaultFont", font_size),
+        fill="white",
     )
 
 
@@ -164,89 +166,123 @@ def dynamic_font_size(display_text):
 
 window = Tk()
 window.title("EasyCalc")
-window.config(padx=25, pady=25)
+window.config(padx=25, pady=25, bg="#7f8c8d")
 
 
 # CANVAS AREAS
-last_calc_canvas = Canvas(width=200, height=75, highlightthickness=0, bg="blue")
+last_calc_canvas = Canvas(width=200, height=75, highlightthickness=0, bg="#34495e")
 last_calc_canvas.create_text(
     200 - CANVAS_PADDING,
     75 - CANVAS_PADDING,
-    text="3 x 9",
+    text="",
     anchor="se",
     font=("TkDefaultFont", 14),
+    fill="white",
 )
 last_calc_canvas.grid(column=0, row=0, columnspan=4, rowspan=2)
 
-result_canvas = Canvas(width=200, height=75, highlightthickness=0, bg="red")
+result_canvas = Canvas(width=200, height=75, highlightthickness=0, bg="#2c3e50")
 result_canvas.create_text(
     200 - CANVAS_PADDING,
     75 - CANVAS_PADDING,
-    text="27",
+    text="",
     anchor="se",
     font=("TkDefaultFont", 32),
+    fill="white",
 )
 result_canvas.grid(column=0, row=2, columnspan=4, rowspan=2)
 
 
 # OPERATION/SPECIAL BUTTONS
-ac_button = Button(text="AC", width=2, command=handle_ac_button)
+ac_button = Button(
+    text="AC", width=2, command=handle_ac_button, bg="#2980b9", borderwidth=0
+)
 ac_button.grid(column=0, row=5, sticky="EW")
 
-pos_neg_button = Button(text="±", width=2, command=handle_pos_neg_button)
+pos_neg_button = Button(
+    text="±", width=2, command=handle_pos_neg_button, bg="#2980b9", borderwidth=0
+)
 pos_neg_button.grid(column=1, row=5, sticky="EW")
 
-mod_button = Button(text="%", width=2, command=handle_mod_button)
+mod_button = Button(
+    text="%", width=2, command=handle_mod_button, bg="#2980b9", borderwidth=0
+)
 mod_button.grid(column=2, row=5, sticky="EW")
 
-div_button = Button(text="÷", width=2, command=handle_div_button)
+div_button = Button(
+    text="÷", width=2, command=handle_div_button, bg="#3498db", borderwidth=0
+)
 div_button.grid(column=3, row=5, sticky="EW")
 
-mul_button = Button(text="x", command=handle_mul_button)
+mul_button = Button(text="x", command=handle_mul_button, bg="#3498db", borderwidth=0)
 mul_button.grid(column=3, row=6, sticky="EW")
 
-minus_button = Button(text="-", command=handle_minus_button)
+minus_button = Button(
+    text="-", command=handle_minus_button, bg="#3498db", borderwidth=0
+)
 minus_button.grid(column=3, row=7, sticky="EW")
 
-plus_button = Button(text="+", command=handle_plus_button)
+plus_button = Button(text="+", command=handle_plus_button, bg="#3498db", borderwidth=0)
 plus_button.grid(column=3, row=8, sticky="EW")
 
-dec_button = Button(text=".", command=handle_dec_button)
+dec_button = Button(text=".", command=handle_dec_button, bg="#2980b9", borderwidth=0)
 dec_button.grid(column=1, row=9, sticky="EW")
 
-equal_button = Button(text="=", command=handle_equal_button)
+equal_button = Button(
+    text="=", command=handle_equal_button, bg="#9b59b6", borderwidth=0
+)
 equal_button.grid(column=2, row=9, columnspan=2, sticky="EW")
 
 
 # NUMBER BUTTONS
-zero_button = Button(text="0", command=lambda: number_clicked(0))
+zero_button = Button(
+    text="0", command=lambda: number_clicked(0), bg="#bdc3c7", borderwidth=0
+)
 zero_button.grid(column=0, row=9, sticky="EW")
 
-one_button = Button(text="1", command=lambda: number_clicked(1))
+one_button = Button(
+    text="1", command=lambda: number_clicked(1), bg="#bdc3c7", borderwidth=0
+)
 one_button.grid(column=0, row=8, sticky="EW")
 
-two_button = Button(text="2", command=lambda: number_clicked(2))
+two_button = Button(
+    text="2", command=lambda: number_clicked(2), bg="#bdc3c7", borderwidth=0
+)
 two_button.grid(column=1, row=8, sticky="EW")
 
-three_button = Button(text="3", command=lambda: number_clicked(3))
+three_button = Button(
+    text="3", command=lambda: number_clicked(3), bg="#bdc3c7", borderwidth=0
+)
 three_button.grid(column=2, row=8, sticky="EW")
 
-four_button = Button(text="4", command=lambda: number_clicked(4))
+four_button = Button(
+    text="4", command=lambda: number_clicked(4), bg="#bdc3c7", borderwidth=0
+)
 four_button.grid(column=0, row=7, sticky="EW")
 
-five_button = Button(text="5", command=lambda: number_clicked(5))
+five_button = Button(
+    text="5", command=lambda: number_clicked(5), bg="#bdc3c7", borderwidth=0
+)
 five_button.grid(column=1, row=7, sticky="EW")
 
-six_button = Button(text="6", command=lambda: number_clicked(6))
+six_button = Button(
+    text="6", command=lambda: number_clicked(6), bg="#bdc3c7", borderwidth=0
+)
 six_button.grid(column=2, row=7, sticky="EW")
 
-seven_button = Button(text="7", command=lambda: number_clicked(7))
+seven_button = Button(
+    text="7", command=lambda: number_clicked(7), bg="#bdc3c7", borderwidth=0
+)
 seven_button.grid(column=0, row=6, sticky="EW")
 
-eight_button = Button(text="8", command=lambda: number_clicked(8))
+eight_button = Button(
+    text="8", command=lambda: number_clicked(8), bg="#bdc3c7", borderwidth=0
+)
 eight_button.grid(column=1, row=6, sticky="EW")
 
-nine_button = Button(text="9", command=lambda: number_clicked(9))
+nine_button = Button(
+    text="9", command=lambda: number_clicked(9), bg="#bdc3c7", borderwidth=0
+)
 nine_button.grid(column=2, row=6, sticky="EW")
 
 
