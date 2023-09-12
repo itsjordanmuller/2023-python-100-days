@@ -25,11 +25,20 @@ def handle_ac_button():
 # OPERATIONS
 
 
-# ADDITION BUTTON
+# PLUS BUTTON
 def handle_plus_button():
     global current_input, full_calculation
     full_calculation.append(current_input)
     full_calculation.append("+")
+    current_input = ""
+    update_display()
+
+
+# MINUS BUTTON
+def handle_minus_button():
+    global current_input, full_calculation
+    full_calculation.append(current_input)
+    full_calculation.append("-")
     current_input = ""
     update_display()
 
@@ -134,7 +143,7 @@ div_button.grid(column=3, row=5, sticky="EW")
 mul_button = Button(text="x")
 mul_button.grid(column=3, row=6, sticky="EW")
 
-minus_button = Button(text="-")
+minus_button = Button(text="-", command=handle_minus_button)
 minus_button.grid(column=3, row=7, sticky="EW")
 
 plus_button = Button(text="+", command=handle_plus_button)
