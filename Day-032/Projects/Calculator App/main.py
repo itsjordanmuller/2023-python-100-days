@@ -43,6 +43,15 @@ def handle_minus_button():
     update_display()
 
 
+# MULTIPLY BUTTON
+def handle_mul_button():
+    global current_input, full_calculation
+    full_calculation.append(current_input)
+    full_calculation.append("*")
+    current_input = ""
+    update_display()
+
+
 # CALCULATE/EQUAL BUTTON FUNCTIONS
 def handle_equal_button():
     global current_input, full_calculation
@@ -50,16 +59,19 @@ def handle_equal_button():
     full_calculation.append(current_input)
 
     calculation_str = "".join(full_calculation)
+    calculation_str = calculation_str.replace(" x ", "*")
+
     try:
         result = eval(calculation_str)
     except Exception as e:
         result = "Error"
 
+    last_calc_display = calculation_str.replace("*", " x ")
     last_calc_canvas.delete("all")
     last_calc_canvas.create_text(
         200 - CANVAS_PADDING,
         75 - CANVAS_PADDING,
-        text=calculation_str,
+        text=last_calc_display,
         anchor="se",
         font=("TkDefaultFont", 14),
     )
@@ -74,6 +86,7 @@ def handle_equal_button():
 def update_display():
     global current_input, full_calculation
     display_text = "".join(full_calculation) + current_input
+    display_text = display_text.replace("*", " x ")
     font_size = dynamic_font_size(display_text)
     result_canvas.delete("all")
     result_canvas.create_text(
@@ -140,7 +153,7 @@ mod_button.grid(column=2, row=5, sticky="EW")
 div_button = Button(text="÷", width=2)
 div_button.grid(column=3, row=5, sticky="EW")
 
-mul_button = Button(text="x")
+mul_button = Button(text="x", command=handle_mul_button)
 mul_button.grid(column=3, row=6, sticky="EW")
 
 minus_button = Button(text="-", command=handle_minus_button)
