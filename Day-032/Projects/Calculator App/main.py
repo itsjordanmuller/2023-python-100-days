@@ -17,8 +17,10 @@ def number_clicked(number):
 
 # CLEAR INPUTS
 def handle_ac_button():
-    global current_input
+    global current_input, full_calculation
     current_input = ""
+    full_calculation = []
+    last_calc_canvas.delete("all")
     update_display()
 
 
