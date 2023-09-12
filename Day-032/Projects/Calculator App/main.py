@@ -74,15 +74,25 @@ def handle_mod_button():
 
 # POSITIVE/NEGATIVE BUTTON
 def handle_pos_neg_button():
-    global current_input
+    global current_input, full_calculation
 
     if not current_input:
         return
 
-    if current_input[0] == "-":
-        current_input = current_input[1:]
+    if full_calculation and full_calculation[-1] in ["+", "-"]:
+        if current_input[0] != "-":
+            if full_calculation[-1] == "+":
+                full_calculation[-1] = "-"
+            elif full_calculation[-1] == "-":
+                full_calculation[-1] = "+"
+        else:
+            current_input = current_input[1:]
+
     else:
-        current_input = "-" + current_input
+        if current_input[0] == "-":
+            current_input = current_input[1:]
+        else:
+            current_input = "-" + current_input
 
     update_display()
 
