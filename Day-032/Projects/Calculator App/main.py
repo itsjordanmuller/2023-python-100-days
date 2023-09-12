@@ -16,9 +16,28 @@ def number_clicked(number):
 
 
 # CLEAR INPUTS
-def clear_input():
+def handle_ac_button():
     global current_input
     current_input = ""
+    update_display()
+
+
+# CALCULATE/EQUAL BUTTON FUNCTIONS
+def handle_equal_button():
+    global current_input, full_calculation
+    calculation = full_calculation + current_input
+
+    last_calc_canvas.delete("all")
+    last_calc_canvas.create_text(
+        200 - CANVAS_PADDING,
+        75 - CANVAS_PADDING,
+        text=calculation,
+        anchor="se",
+        font=("TkDefaultFont", 14),
+    )
+
+    current_input = ""
+
     update_display()
 
 
@@ -80,7 +99,7 @@ result_canvas.grid(column=0, row=2, columnspan=4, rowspan=2)
 
 
 # OPERATION/SPECIAL BUTTONS
-ac_button = Button(text="AC", width=2, command=clear_input)
+ac_button = Button(text="AC", width=2, command=handle_ac_button)
 ac_button.grid(column=0, row=5, sticky="EW")
 
 pos_neg_button = Button(text="±", width=2)
@@ -104,7 +123,7 @@ plus_button.grid(column=3, row=8, sticky="EW")
 comma_button = Button(text=",")
 comma_button.grid(column=1, row=9, sticky="EW")
 
-equal_button = Button(text="=")
+equal_button = Button(text="=", command=handle_equal_button)
 equal_button.grid(column=2, row=9, columnspan=2, sticky="EW")
 
 
