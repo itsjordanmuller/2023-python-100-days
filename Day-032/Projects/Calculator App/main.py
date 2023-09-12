@@ -5,7 +5,7 @@ CANVAS_PADDING = 10
 
 # VARIABLES
 current_input = ""
-full_calculation = ""
+full_calculation = []
 
 
 # NUMBER TYPING
@@ -22,21 +22,41 @@ def handle_ac_button():
     update_display()
 
 
+# OPERATIONS
+
+
+# ADDITION BUTTON
+def handle_plus_button():
+    global current_input, full_calculation
+    full_calculation.append(current_input)
+    full_calculation.append("+")
+    current_input = ""
+    update_display()
+
+
 # CALCULATE/EQUAL BUTTON FUNCTIONS
 def handle_equal_button():
     global current_input, full_calculation
-    calculation = full_calculation + current_input
+
+    full_calculation.append(current_input)
+
+    calculation_str = "".join(full_calculation)
+    try:
+        result = eval(calculation_str)
+    except Exception as e:
+        result = "Error"
 
     last_calc_canvas.delete("all")
     last_calc_canvas.create_text(
         200 - CANVAS_PADDING,
         75 - CANVAS_PADDING,
-        text=calculation,
+        text=calculation_str,
         anchor="se",
         font=("TkDefaultFont", 14),
     )
 
-    current_input = ""
+    full_calculation = []
+    current_input = str(result)
 
     update_display()
 
@@ -44,8 +64,8 @@ def handle_equal_button():
 # UPDATE DISPLAY
 def update_display():
     global current_input, full_calculation
-    display_text = full_calculation + current_input
-    font_size = dynamic_font_size()
+    display_text = "".join(full_calculation) + current_input
+    font_size = dynamic_font_size(display_text)
     result_canvas.delete("all")
     result_canvas.create_text(
         200 - CANVAS_PADDING,
@@ -57,12 +77,12 @@ def update_display():
 
 
 # ADJUST FONT SIZES DYNAMICALLY
-def dynamic_font_size():
+def dynamic_font_size(display_text):
     size_mapping = {7: 32, 8: 28, 9: 24, 10: 20, 11: 18, 12: 16, 13: 14}
     default_size = 10
 
     for length, size in size_mapping.items():
-        if len(current_input) <= length:
+        if len(display_text) <= length:
             return size
     return default_size
 
@@ -117,7 +137,7 @@ mul_button.grid(column=3, row=6, sticky="EW")
 minus_button = Button(text="-")
 minus_button.grid(column=3, row=7, sticky="EW")
 
-plus_button = Button(text="+")
+plus_button = Button(text="+", command=handle_plus_button)
 plus_button.grid(column=3, row=8, sticky="EW")
 
 dec_button = Button(text=".")
