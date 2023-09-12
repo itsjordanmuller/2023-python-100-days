@@ -1,14 +1,34 @@
 from tkinter import *
 
+# CONSTANTS
+CANVAS_PADDING = 10
+
 # UI SETUP
+# Layout inspired by Maciej on Dribbble:
+# https://dribbble.com/shots/17536429-Calculator-DailyUI
+
 window = Tk()
 window.title("EasyCalc")
 window.config(padx=50, pady=50)
 
 last_calc_canvas = Canvas(width=200, height=75, highlightthickness=0, bg="blue")
+last_calc_canvas.create_text(
+    200 - CANVAS_PADDING,
+    75 - CANVAS_PADDING,
+    text="3 x 9",
+    anchor="se",
+    font=("TkDefaultFont", 14),
+)
 last_calc_canvas.grid(column=0, row=0, columnspan=4, rowspan=2)
 
 result_canvas = Canvas(width=200, height=75, highlightthickness=0, bg="red")
+result_canvas.create_text(
+    200 - CANVAS_PADDING,
+    75 - CANVAS_PADDING,
+    text="27",
+    anchor="se",
+    font=("TkDefaultFont", 32),
+)
 result_canvas.grid(column=0, row=2, columnspan=4, rowspan=2)
 
 ac_button = Button(text="AC")
