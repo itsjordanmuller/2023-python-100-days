@@ -3,6 +3,35 @@ from tkinter import *
 # CONSTANTS
 CANVAS_PADDING = 10
 
+# VARIABLES
+current_input = ""
+full_calculation = ""
+
+# NUMBER TYPING
+
+
+def number_clicked(number):
+    global current_input
+    current_input += str(number)
+    update_display()
+
+
+# UPDATE DISPLAY
+
+
+def update_display():
+    global current_input, full_calculation
+    display_text = full_calculation + current_input
+    result_canvas.delete("all")
+    result_canvas.create_text(
+        200 - CANVAS_PADDING,
+        75 - CANVAS_PADDING,
+        text=display_text,
+        anchor="se",
+        font=("TkDefaultFont", 32),
+    )
+
+
 # UI SETUP
 # Layout inspired by Maciej on Dribbble:
 # https://dribbble.com/shots/17536429-Calculator-DailyUI
@@ -63,34 +92,34 @@ equal_button = Button(text="=")
 equal_button.grid(column=2, row=9, columnspan=2, sticky="EW")
 
 # NUMBER BUTTONS
-zero_button = Button(text="0")
+zero_button = Button(text="0", command=lambda: number_clicked(0))
 zero_button.grid(column=0, row=9, sticky="EW")
 
-one_button = Button(text="1")
+one_button = Button(text="1", command=lambda: number_clicked(1))
 one_button.grid(column=0, row=8, sticky="EW")
 
-two_button = Button(text="2")
+two_button = Button(text="2", command=lambda: number_clicked(2))
 two_button.grid(column=1, row=8, sticky="EW")
 
-three_button = Button(text="3")
+three_button = Button(text="3", command=lambda: number_clicked(3))
 three_button.grid(column=2, row=8, sticky="EW")
 
-four_button = Button(text="4")
+four_button = Button(text="4", command=lambda: number_clicked(4))
 four_button.grid(column=0, row=7, sticky="EW")
 
-five_button = Button(text="5")
+five_button = Button(text="5", command=lambda: number_clicked(5))
 five_button.grid(column=1, row=7, sticky="EW")
 
-six_button = Button(text="6")
+six_button = Button(text="6", command=lambda: number_clicked(6))
 six_button.grid(column=2, row=7, sticky="EW")
 
-seven_button = Button(text="7")
+seven_button = Button(text="7", command=lambda: number_clicked(7))
 seven_button.grid(column=0, row=6, sticky="EW")
 
-eight_button = Button(text="8")
+eight_button = Button(text="8", command=lambda: number_clicked(8))
 eight_button.grid(column=1, row=6, sticky="EW")
 
-nine_button = Button(text="9")
+nine_button = Button(text="9", command=lambda: number_clicked(9))
 nine_button.grid(column=2, row=6, sticky="EW")
 
 
