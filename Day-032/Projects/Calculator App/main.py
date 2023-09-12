@@ -15,6 +15,13 @@ def number_clicked(number):
     update_display()
 
 
+# CLEAR INPUTS
+def clear_input():
+    global current_input
+    current_input = ""
+    update_display()
+
+
 # UPDATE DISPLAY
 def update_display():
     global current_input, full_calculation
@@ -73,7 +80,7 @@ result_canvas.grid(column=0, row=2, columnspan=4, rowspan=2)
 
 
 # OPERATION/SPECIAL BUTTONS
-ac_button = Button(text="AC", width=2)
+ac_button = Button(text="AC", width=2, command=clear_input)
 ac_button.grid(column=0, row=5, sticky="EW")
 
 pos_neg_button = Button(text="±", width=2)
@@ -99,6 +106,7 @@ comma_button.grid(column=1, row=9, sticky="EW")
 
 equal_button = Button(text="=")
 equal_button.grid(column=2, row=9, columnspan=2, sticky="EW")
+
 
 # NUMBER BUTTONS
 zero_button = Button(text="0", command=lambda: number_clicked(0))
