@@ -70,6 +70,21 @@ def handle_mod_button():
     update_display()
 
 
+# POSITIVE/NEGATIVE BUTTON
+def handle_pos_neg_button():
+    global current_input
+
+    if not current_input:
+        return
+
+    if current_input[0] == "-":
+        current_input = current_input[1:]
+    else:
+        current_input = "-" + current_input
+
+    update_display()
+
+
 # CALCULATE/EQUAL BUTTON FUNCTIONS
 def handle_equal_button():
     global current_input, full_calculation
@@ -162,7 +177,7 @@ result_canvas.grid(column=0, row=2, columnspan=4, rowspan=2)
 ac_button = Button(text="AC", width=2, command=handle_ac_button)
 ac_button.grid(column=0, row=5, sticky="EW")
 
-pos_neg_button = Button(text="±", width=2)
+pos_neg_button = Button(text="±", width=2, command=handle_pos_neg_button)
 pos_neg_button.grid(column=1, row=5, sticky="EW")
 
 mod_button = Button(text="%", width=2, command=handle_mod_button)
