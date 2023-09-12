@@ -7,9 +7,8 @@ CANVAS_PADDING = 10
 current_input = ""
 full_calculation = ""
 
+
 # NUMBER TYPING
-
-
 def number_clicked(number):
     global current_input
     current_input += str(number)
@@ -17,19 +16,29 @@ def number_clicked(number):
 
 
 # UPDATE DISPLAY
-
-
 def update_display():
     global current_input, full_calculation
     display_text = full_calculation + current_input
+    font_size = dynamic_font_size()
     result_canvas.delete("all")
     result_canvas.create_text(
         200 - CANVAS_PADDING,
         75 - CANVAS_PADDING,
         text=display_text,
         anchor="se",
-        font=("TkDefaultFont", 32),
+        font=("TkDefaultFont", font_size),
     )
+
+
+# ADJUST FONT SIZES DYNAMICALLY
+def dynamic_font_size():
+    size_mapping = {7: 32, 8: 28, 9: 24, 10: 20, 11: 18, 12: 16, 13: 14}
+    default_size = 10
+
+    for length, size in size_mapping.items():
+        if len(current_input) <= length:
+            return size
+    return default_size
 
 
 # UI SETUP
