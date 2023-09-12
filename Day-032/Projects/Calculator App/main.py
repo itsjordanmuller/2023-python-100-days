@@ -9,8 +9,10 @@ CANVAS_PADDING = 10
 
 window = Tk()
 window.title("EasyCalc")
-window.config(padx=50, pady=50)
+window.config(padx=25, pady=25)
 
+
+# CANVAS AREAS
 last_calc_canvas = Canvas(width=200, height=75, highlightthickness=0, bg="blue")
 last_calc_canvas.create_text(
     200 - CANVAS_PADDING,
@@ -31,16 +33,18 @@ result_canvas.create_text(
 )
 result_canvas.grid(column=0, row=2, columnspan=4, rowspan=2)
 
-ac_button = Button(text="AC")
+
+# OPERATION/SPECIAL BUTTONS
+ac_button = Button(text="AC", width=2)
 ac_button.grid(column=0, row=5, sticky="EW")
 
-pos_neg_button = Button(text="±")
+pos_neg_button = Button(text="±", width=2)
 pos_neg_button.grid(column=1, row=5, sticky="EW")
 
-mod_button = Button(text="%")
+mod_button = Button(text="%", width=2)
 mod_button.grid(column=2, row=5, sticky="EW")
 
-div_button = Button(text="÷")
+div_button = Button(text="÷", width=2)
 div_button.grid(column=3, row=5, sticky="EW")
 
 mul_button = Button(text="x")
@@ -57,6 +61,37 @@ comma_button.grid(column=1, row=9, sticky="EW")
 
 equal_button = Button(text="=")
 equal_button.grid(column=2, row=9, columnspan=2, sticky="EW")
+
+# NUMBER BUTTONS
+zero_button = Button(text="0")
+zero_button.grid(column=0, row=9, sticky="EW")
+
+one_button = Button(text="1")
+one_button.grid(column=0, row=8, sticky="EW")
+
+two_button = Button(text="2")
+two_button.grid(column=1, row=8, sticky="EW")
+
+three_button = Button(text="3")
+three_button.grid(column=2, row=8, sticky="EW")
+
+four_button = Button(text="4")
+four_button.grid(column=0, row=7, sticky="EW")
+
+five_button = Button(text="5")
+five_button.grid(column=1, row=7, sticky="EW")
+
+six_button = Button(text="6")
+six_button.grid(column=2, row=7, sticky="EW")
+
+seven_button = Button(text="7")
+seven_button.grid(column=0, row=6, sticky="EW")
+
+eight_button = Button(text="8")
+eight_button.grid(column=1, row=6, sticky="EW")
+
+nine_button = Button(text="9")
+nine_button.grid(column=2, row=6, sticky="EW")
 
 
 window.mainloop()
