@@ -15,60 +15,21 @@ def number_clicked(number):
     update_display()
 
 
+# OPERATIONS
+def handle_operation(operation_symbol):
+    global current_input, full_calculation
+    full_calculation.append(current_input)
+    full_calculation.append(operation_symbol)
+    current_input = ""
+    update_display()
+
+
 # CLEAR INPUTS
 def handle_ac_button():
     global current_input, full_calculation
     current_input = ""
     full_calculation = []
     last_calc_canvas.delete("all")
-    update_display()
-
-
-# OPERATIONS
-
-
-# PLUS BUTTON
-def handle_plus_button():
-    global current_input, full_calculation
-    full_calculation.append(current_input)
-    full_calculation.append("+")
-    current_input = ""
-    update_display()
-
-
-# MINUS BUTTON
-def handle_minus_button():
-    global current_input, full_calculation
-    full_calculation.append(current_input)
-    full_calculation.append("-")
-    current_input = ""
-    update_display()
-
-
-# MULTIPLY BUTTON
-def handle_mul_button():
-    global current_input, full_calculation
-    full_calculation.append(current_input)
-    full_calculation.append("*")
-    current_input = ""
-    update_display()
-
-
-# DIVISION BUTTON
-def handle_div_button():
-    global current_input, full_calculation
-    full_calculation.append(current_input)
-    full_calculation.append("/")
-    current_input = ""
-    update_display()
-
-
-# MODULUS BUTTON
-def handle_mod_button():
-    global current_input, full_calculation
-    full_calculation.append(current_input)
-    full_calculation.append("%")
-    current_input = ""
     update_display()
 
 
@@ -213,11 +174,11 @@ operation_buttons_config = {
     "!": ("#bdc3c7", (3, 5)),
     "AC": ("#2980b9", (0, 6), handle_ac_button),
     "±": ("#2980b9", (1, 6), handle_pos_neg_button),
-    "%": ("#2980b9", (2, 6), handle_mod_button),
-    "÷": ("#3498db", (3, 6), handle_div_button),
-    "x": ("#3498db", (3, 7), handle_mul_button),
-    "-": ("#3498db", (3, 8), handle_minus_button),
-    "+": ("#3498db", (3, 9), handle_plus_button),
+    "%": ("#2980b9", (2, 6), lambda: handle_operation("%")),
+    "÷": ("#3498db", (3, 6), lambda: handle_operation("/")),
+    "x": ("#3498db", (3, 7), lambda: handle_operation("*")),
+    "-": ("#3498db", (3, 8), lambda: handle_operation("-")),
+    "+": ("#3498db", (3, 9), lambda: handle_operation("+")),
     ".": ("#2980b9", (1, 10), handle_dec_button),
     "=": ("#9b59b6", (2, 10, 2), handle_equal_button),
 }
@@ -249,11 +210,11 @@ def on_key_press(event):
         handle_dec_button()
     elif event.char in ["+", "-", "*", "/", "%"]:
         operations = {
-            "+": handle_plus_button,
-            "-": handle_minus_button,
-            "*": handle_mul_button,
-            "/": handle_div_button,
-            "%": handle_mod_button,
+            "+": lambda: handle_operation("+"),
+            "-": lambda: handle_operation("-"),
+            "*": lambda: handle_operation("*"),
+            "/": lambda: handle_operation("/"),
+            "%": lambda: handle_operation("%"),
         }
         operations[event.char]()
     elif event.keysym == "Return":
