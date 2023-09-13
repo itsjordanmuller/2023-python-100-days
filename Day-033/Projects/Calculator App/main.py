@@ -286,4 +286,27 @@ nine_button = Button(
 nine_button.grid(column=2, row=6, sticky="EW")
 
 
+# Handle Keyboard Inputs
+def on_key_press(event):
+    if event.char.isdigit():
+        number_clicked(event.char)
+    elif event.char == ".":
+        handle_dec_button()
+    elif event.char in ["+", "-", "*", "/", "%"]:
+        operations = {
+            "+": handle_plus_button,
+            "-": handle_minus_button,
+            "*": handle_mul_button,
+            "/": handle_div_button,
+            "%": handle_mod_button
+        }
+        operations[event.char]()
+    elif event.keysym == "Return":
+        handle_equal_button()
+    elif event.keysym == "Escape":
+        handle_ac_button()
+
+window.bind("<Key>", on_key_press)
+
+
 window.mainloop()
