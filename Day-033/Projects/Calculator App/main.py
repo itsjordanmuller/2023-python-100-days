@@ -194,96 +194,116 @@ result_canvas.grid(column=0, row=2, columnspan=4, rowspan=2)
 
 
 # OPERATION/SPECIAL BUTTONS
+expand_button = Button(
+    text="⇱", width=2, bg="#bdc3c7", borderwidth=0
+)
+expand_button.grid(column=0, row=5, sticky="EW")
+
+sqrt_button = Button(
+    text="√", width=2, bg="#bdc3c7", borderwidth=0
+)
+sqrt_button.grid(column=1, row=5, sticky="EW")
+
+exp_button = Button(
+    text="^", width=2, bg="#bdc3c7", borderwidth=0
+)
+exp_button.grid(column=2, row=5, sticky="EW")
+
+fact_button = Button(
+    text="!", width=2, bg="#bdc3c7", borderwidth=0
+)
+fact_button.grid(column=3, row=5, sticky="EW")
+
 ac_button = Button(
     text="AC", width=2, command=handle_ac_button, bg="#2980b9", borderwidth=0
 )
-ac_button.grid(column=0, row=5, sticky="EW")
+ac_button.grid(column=0, row=6, sticky="EW")
 
 pos_neg_button = Button(
     text="±", width=2, command=handle_pos_neg_button, bg="#2980b9", borderwidth=0
 )
-pos_neg_button.grid(column=1, row=5, sticky="EW")
+pos_neg_button.grid(column=1, row=6, sticky="EW")
 
 mod_button = Button(
     text="%", width=2, command=handle_mod_button, bg="#2980b9", borderwidth=0
 )
-mod_button.grid(column=2, row=5, sticky="EW")
+mod_button.grid(column=2, row=6, sticky="EW")
 
 div_button = Button(
     text="÷", width=2, command=handle_div_button, bg="#3498db", borderwidth=0
 )
-div_button.grid(column=3, row=5, sticky="EW")
+div_button.grid(column=3, row=6, sticky="EW")
 
 mul_button = Button(text="x", command=handle_mul_button, bg="#3498db", borderwidth=0)
-mul_button.grid(column=3, row=6, sticky="EW")
+mul_button.grid(column=3, row=7, sticky="EW")
 
 minus_button = Button(
     text="-", command=handle_minus_button, bg="#3498db", borderwidth=0
 )
-minus_button.grid(column=3, row=7, sticky="EW")
+minus_button.grid(column=3, row=8, sticky="EW")
 
 plus_button = Button(text="+", command=handle_plus_button, bg="#3498db", borderwidth=0)
-plus_button.grid(column=3, row=8, sticky="EW")
+plus_button.grid(column=3, row=9, sticky="EW")
 
 dec_button = Button(text=".", command=handle_dec_button, bg="#2980b9", borderwidth=0)
-dec_button.grid(column=1, row=9, sticky="EW")
+dec_button.grid(column=1, row=10, sticky="EW")
 
 equal_button = Button(
     text="=", command=handle_equal_button, bg="#9b59b6", borderwidth=0
 )
-equal_button.grid(column=2, row=9, columnspan=2, sticky="EW")
+equal_button.grid(column=2, row=10, columnspan=2, sticky="EW")
 
 
 # NUMBER BUTTONS
 zero_button = Button(
     text="0", command=lambda: number_clicked(0), bg="#bdc3c7", borderwidth=0
 )
-zero_button.grid(column=0, row=9, sticky="EW")
+zero_button.grid(column=0, row=10, sticky="EW")
 
 one_button = Button(
     text="1", command=lambda: number_clicked(1), bg="#bdc3c7", borderwidth=0
 )
-one_button.grid(column=0, row=8, sticky="EW")
+one_button.grid(column=0, row=9, sticky="EW")
 
 two_button = Button(
     text="2", command=lambda: number_clicked(2), bg="#bdc3c7", borderwidth=0
 )
-two_button.grid(column=1, row=8, sticky="EW")
+two_button.grid(column=1, row=9, sticky="EW")
 
 three_button = Button(
     text="3", command=lambda: number_clicked(3), bg="#bdc3c7", borderwidth=0
 )
-three_button.grid(column=2, row=8, sticky="EW")
+three_button.grid(column=2, row=9, sticky="EW")
 
 four_button = Button(
     text="4", command=lambda: number_clicked(4), bg="#bdc3c7", borderwidth=0
 )
-four_button.grid(column=0, row=7, sticky="EW")
+four_button.grid(column=0, row=8, sticky="EW")
 
 five_button = Button(
     text="5", command=lambda: number_clicked(5), bg="#bdc3c7", borderwidth=0
 )
-five_button.grid(column=1, row=7, sticky="EW")
+five_button.grid(column=1, row=8, sticky="EW")
 
 six_button = Button(
     text="6", command=lambda: number_clicked(6), bg="#bdc3c7", borderwidth=0
 )
-six_button.grid(column=2, row=7, sticky="EW")
+six_button.grid(column=2, row=8, sticky="EW")
 
 seven_button = Button(
     text="7", command=lambda: number_clicked(7), bg="#bdc3c7", borderwidth=0
 )
-seven_button.grid(column=0, row=6, sticky="EW")
+seven_button.grid(column=0, row=7, sticky="EW")
 
 eight_button = Button(
     text="8", command=lambda: number_clicked(8), bg="#bdc3c7", borderwidth=0
 )
-eight_button.grid(column=1, row=6, sticky="EW")
+eight_button.grid(column=1, row=7, sticky="EW")
 
 nine_button = Button(
     text="9", command=lambda: number_clicked(9), bg="#bdc3c7", borderwidth=0
 )
-nine_button.grid(column=2, row=6, sticky="EW")
+nine_button.grid(column=2, row=7, sticky="EW")
 
 
 # Handle Keyboard Inputs
@@ -298,13 +318,14 @@ def on_key_press(event):
             "-": handle_minus_button,
             "*": handle_mul_button,
             "/": handle_div_button,
-            "%": handle_mod_button
+            "%": handle_mod_button,
         }
         operations[event.char]()
     elif event.keysym == "Return":
         handle_equal_button()
     elif event.keysym == "Escape":
         handle_ac_button()
+
 
 window.bind("<Key>", on_key_press)
 
