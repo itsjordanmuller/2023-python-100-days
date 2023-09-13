@@ -1,4 +1,5 @@
 from tkinter import *
+import math
 
 # CONSTANTS
 CANVAS_PADDING = 10
@@ -54,7 +55,7 @@ theme_index = theme_names.index(current_theme)
 def cycle_theme():
     global theme_index, DARK_COLOR, LIGHT_COLOR, ACCENT_COLOR
     theme_index = (theme_index + 1) % len(theme_names)
-    
+
     apply_theme(theme_names[theme_index])
 
     for symbol, config in operation_buttons_config.items():
@@ -66,7 +67,7 @@ def cycle_theme():
             config_color = ACCENT_COLOR
         else:
             config_color = NORMAL_BUTTON_COLOR
-        
+
         if symbol in button_objects:
             button_objects[symbol].config(bg=config_color)
 
@@ -75,6 +76,7 @@ def cycle_theme():
 current_input = ""
 full_calculation = []
 button_objects = {}
+is_expanded = False
 
 
 # NUMBER TYPING
@@ -124,6 +126,44 @@ def handle_pos_neg_button():
         current_input = "-" + current_input
 
     update_display()
+
+# EXPAND BUTTON
+def handle_expand_button():
+    global is_expanded
+    new_width = 400 if not is_expanded else 200
+    last_calc_canvas.config(width=new_width)
+    result_canvas.config(width=new_width)
+    is_expanded = not is_expanded
+
+
+# SQUARE ROOT BUTTON
+def handle_sqrt_button():
+    global current_input
+    try:
+        current_input = str(math.sqrt(float(current_input)))
+        update_display()
+    except ValueError:
+        current_input = "Error"
+        update_display()
+
+
+# EXPONENT BUTTON
+def handle_exp_button():
+    global current_input
+    if current_input:
+        current_input += "**2"
+        handle_equal_button()
+
+
+# FACTORIAL BUTTON
+def handle_fact_button():
+    global current_input
+    try:
+        current_input = str(math.factorial(int(current_input)))
+        update_display()
+    except (ValueError, OverflowError):
+        current_input = "Error"
+        update_display()
 
 
 # CALCULATE/EQUAL BUTTON FUNCTIONS
@@ -244,10 +284,10 @@ result_canvas.grid(column=0, row=2, columnspan=4, rowspan=2)
 
 # OPERATION/SPECIAL BUTTONS
 operation_buttons_config = {
-    "⇱": (NORMAL_BUTTON_COLOR, (0, 5)),
-    "√": (NORMAL_BUTTON_COLOR, (1, 5)),
-    "^": (NORMAL_BUTTON_COLOR, (2, 5)),
-    "!": (NORMAL_BUTTON_COLOR, (3, 5)),
+    "⇱": (NORMAL_BUTTON_COLOR, (0, 5), handle_expand_button),
+    "√": (NORMAL_BUTTON_COLOR, (1, 5), handle_sqrt_button),
+    "^": (NORMAL_BUTTON_COLOR, (2, 5), handle_exp_button),
+    "!": (NORMAL_BUTTON_COLOR, (3, 5), handle_fact_button),
     "AC": (DARK_COLOR, (0, 6), handle_ac_button),
     "±": (DARK_COLOR, (1, 6), handle_pos_neg_button),
     "%": (DARK_COLOR, (2, 6), lambda: handle_operation("%")),
