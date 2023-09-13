@@ -7,24 +7,74 @@ TOP_CANVAS_COLOR = "#34495e"
 BOTTOM_CANVAS_COLOR = "#2c3e50"
 NORMAL_BUTTON_COLOR = "#bdc3c7"
 
-# BLUE & PURPLE THEME
-# DARK_COLOR = "#2980b9"
-# LIGHT_COLOR = "#3498db"
-# ACCENT_COLOR = "#9b59b6"
 
-# RED & ORANGE THEME
-# DARK_COLOR = "#b33939"
-# LIGHT_COLOR = "#ff5252"
-# ACCENT_COLOR = "#ff793f"
+# THEMES
+THEMES = {
+    "blue_purple": {
+        "DARK_COLOR": "#2980b9",
+        "LIGHT_COLOR": "#3498db",
+        "ACCENT_COLOR": "#9b59b6",
+    },
+    "red_orange": {
+        "DARK_COLOR": "#b33939",
+        "LIGHT_COLOR": "#ff5252",
+        "ACCENT_COLOR": "#ff793f",
+    },
+    "green_blue": {
+        "DARK_COLOR": "#218c74",
+        "LIGHT_COLOR": "#33d9b2",
+        "ACCENT_COLOR": "#706fd3",
+    },
+}
 
-# GREEN & BLUE THEME
-DARK_COLOR = "#218c74"
-LIGHT_COLOR = "#33d9b2"
-ACCENT_COLOR = "#706fd3"
+current_theme = "red_orange"
+
+
+def apply_theme(theme_name):
+    global DARK_COLOR, LIGHT_COLOR, ACCENT_COLOR
+
+    if theme_name in THEMES:
+        theme = THEMES[theme_name]
+        DARK_COLOR = theme["DARK_COLOR"]
+        LIGHT_COLOR = theme["LIGHT_COLOR"]
+        ACCENT_COLOR = theme["ACCENT_COLOR"]
+    else:
+        DARK_COLOR = "#2c3e50"
+        LIGHT_COLOR = "#34495e"
+        ACCENT_COLOR = "#7f8c8d"
+
+
+apply_theme(current_theme)
+
+theme_names = list(THEMES.keys())
+
+theme_index = theme_names.index(current_theme)
+
+
+def cycle_theme():
+    global theme_index, DARK_COLOR, LIGHT_COLOR, ACCENT_COLOR
+    theme_index = (theme_index + 1) % len(theme_names)
+    
+    apply_theme(theme_names[theme_index])
+
+    for symbol, config in operation_buttons_config.items():
+        if symbol in ["AC", "±", "%"]:
+            config_color = DARK_COLOR
+        elif symbol in ["÷", "x", "-", "+"]:
+            config_color = LIGHT_COLOR
+        elif symbol == "=":
+            config_color = ACCENT_COLOR
+        else:
+            config_color = NORMAL_BUTTON_COLOR
+        
+        if symbol in button_objects:
+            button_objects[symbol].config(bg=config_color)
+
 
 # VARIABLES
 current_input = ""
 full_calculation = []
+button_objects = {}
 
 
 # NUMBER TYPING
@@ -149,6 +199,9 @@ def create_button(window, text, command, bg_color, grid_position):
         sticky="EW",
         columnspan=grid_position[2] if len(grid_position) > 2 else 1,
     )
+
+    button_objects[text] = button
+
     return button
 
 
@@ -233,6 +286,8 @@ for number in range(10):
 def on_key_press(event):
     if event.char.isdigit():
         number_clicked(event.char)
+    elif event.char.upper() == "T":
+        cycle_theme()
     elif event.char == ".":
         handle_dec_button()
     elif event.char in ["+", "-", "*", "/", "%"]:
