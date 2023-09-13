@@ -1,5 +1,5 @@
-from tkinter import *
 import math
+from tkinter import *
 
 # CONSTANTS
 CANVAS_PADDING = 10
@@ -77,6 +77,7 @@ current_input = ""
 full_calculation = []
 button_objects = {}
 is_expanded = False
+expanded_buttons = []
 
 
 # NUMBER TYPING
@@ -127,13 +128,45 @@ def handle_pos_neg_button():
 
     update_display()
 
+
 # EXPAND BUTTON
 def handle_expand_button():
     global is_expanded
     new_width = 400 if not is_expanded else 200
+    new_colspan = 8 if not is_expanded else 4
+
     last_calc_canvas.config(width=new_width)
     result_canvas.config(width=new_width)
+
+    last_calc_canvas.grid(columnspan=new_colspan)
+    result_canvas.grid(columnspan=new_colspan)
+
+    if not is_expanded:
+        fill_empty_spaces()
+    else:
+        remove_expanded_buttons()
+
     is_expanded = not is_expanded
+    update_last_calc_display()
+    update_display()
+
+
+def get_canvas_width():
+    return 400 if is_expanded else 200
+
+
+def fill_empty_spaces():
+    for row in range(5, 11):
+        for col in range(4, 8):
+            blank_button = Button(text="", bg=NORMAL_BUTTON_COLOR, borderwidth=0)
+            blank_button.grid(column=col, row=row, sticky="EW")
+            expanded_buttons.append(blank_button)
+
+
+def remove_expanded_buttons():
+    for button in expanded_buttons:
+        button.destroy()
+    expanded_buttons.clear()
 
 
 # SQUARE ROOT BUTTON
@@ -188,7 +221,7 @@ def handle_equal_button():
     last_calc_display = calculation_str.replace("*", "x")
     last_calc_canvas.delete("all")
     last_calc_canvas.create_text(
-        200 - CANVAS_PADDING,
+        get_canvas_width() - CANVAS_PADDING,
         75 - CANVAS_PADDING,
         text=last_calc_display,
         anchor="se",
@@ -210,11 +243,24 @@ def update_display():
     font_size = dynamic_font_size(display_text)
     result_canvas.delete("all")
     result_canvas.create_text(
-        200 - CANVAS_PADDING,
+        get_canvas_width() - CANVAS_PADDING,
         75 - CANVAS_PADDING,
         text=display_text,
         anchor="se",
         font=("TkDefaultFont", font_size),
+        fill="white",
+    )
+
+
+def update_last_calc_display():
+    last_calc_display = "".join(full_calculation).replace("*", "x")
+    last_calc_canvas.delete("all")
+    last_calc_canvas.create_text(
+        get_canvas_width() - CANVAS_PADDING,
+        75 - CANVAS_PADDING,
+        text=last_calc_display,
+        anchor="se",
+        font=("TkDefaultFont", 14),
         fill="white",
     )
 
@@ -259,7 +305,7 @@ last_calc_canvas = Canvas(
     width=200, height=75, highlightthickness=0, bg=TOP_CANVAS_COLOR
 )
 last_calc_canvas.create_text(
-    200 - CANVAS_PADDING,
+    get_canvas_width() - CANVAS_PADDING,
     75 - CANVAS_PADDING,
     text="",
     anchor="se",
@@ -272,7 +318,7 @@ result_canvas = Canvas(
     width=200, height=75, highlightthickness=0, bg=BOTTOM_CANVAS_COLOR
 )
 result_canvas.create_text(
-    200 - CANVAS_PADDING,
+    get_canvas_width() - CANVAS_PADDING,
     75 - CANVAS_PADDING,
     text="",
     anchor="se",
