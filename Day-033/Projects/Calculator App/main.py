@@ -2,6 +2,13 @@ from tkinter import *
 
 # CONSTANTS
 CANVAS_PADDING = 10
+WINDOW_COLOR = "#7f8c8d"
+TOP_CANVAS_COLOR = "#34495e"
+BOTTOM_CANVAS_COLOR = "#2c3e50"
+NORMAL_BUTTON_COLOR = "#bdc3c7"
+DARK_COLOR = "#2980b9"
+LIGHT_COLOR = "#3498db"
+ACCENT_COLOR = "#9b59b6"
 
 # VARIABLES
 current_input = ""
@@ -139,11 +146,13 @@ def create_button(window, text, command, bg_color, grid_position):
 
 window = Tk()
 window.title("EasyCalc")
-window.config(padx=25, pady=25, bg="#7f8c8d")
+window.config(padx=25, pady=25, bg=WINDOW_COLOR)
 
 
 # CANVAS AREAS
-last_calc_canvas = Canvas(width=200, height=75, highlightthickness=0, bg="#34495e")
+last_calc_canvas = Canvas(
+    width=200, height=75, highlightthickness=0, bg=TOP_CANVAS_COLOR
+)
 last_calc_canvas.create_text(
     200 - CANVAS_PADDING,
     75 - CANVAS_PADDING,
@@ -154,7 +163,9 @@ last_calc_canvas.create_text(
 )
 last_calc_canvas.grid(column=0, row=0, columnspan=4, rowspan=2)
 
-result_canvas = Canvas(width=200, height=75, highlightthickness=0, bg="#2c3e50")
+result_canvas = Canvas(
+    width=200, height=75, highlightthickness=0, bg=BOTTOM_CANVAS_COLOR
+)
 result_canvas.create_text(
     200 - CANVAS_PADDING,
     75 - CANVAS_PADDING,
@@ -168,19 +179,19 @@ result_canvas.grid(column=0, row=2, columnspan=4, rowspan=2)
 
 # OPERATION/SPECIAL BUTTONS
 operation_buttons_config = {
-    "⇱": ("#bdc3c7", (0, 5)),
-    "√": ("#bdc3c7", (1, 5)),
-    "^": ("#bdc3c7", (2, 5)),
-    "!": ("#bdc3c7", (3, 5)),
-    "AC": ("#2980b9", (0, 6), handle_ac_button),
-    "±": ("#2980b9", (1, 6), handle_pos_neg_button),
-    "%": ("#2980b9", (2, 6), lambda: handle_operation("%")),
-    "÷": ("#3498db", (3, 6), lambda: handle_operation("/")),
-    "x": ("#3498db", (3, 7), lambda: handle_operation("*")),
-    "-": ("#3498db", (3, 8), lambda: handle_operation("-")),
-    "+": ("#3498db", (3, 9), lambda: handle_operation("+")),
-    ".": ("#2980b9", (1, 10), handle_dec_button),
-    "=": ("#9b59b6", (2, 10, 2), handle_equal_button),
+    "⇱": (NORMAL_BUTTON_COLOR, (0, 5)),
+    "√": (NORMAL_BUTTON_COLOR, (1, 5)),
+    "^": (NORMAL_BUTTON_COLOR, (2, 5)),
+    "!": (NORMAL_BUTTON_COLOR, (3, 5)),
+    "AC": (DARK_COLOR, (0, 6), handle_ac_button),
+    "±": (DARK_COLOR, (1, 6), handle_pos_neg_button),
+    "%": (DARK_COLOR, (2, 6), lambda: handle_operation("%")),
+    "÷": (LIGHT_COLOR, (3, 6), lambda: handle_operation("/")),
+    "x": (LIGHT_COLOR, (3, 7), lambda: handle_operation("*")),
+    "-": (LIGHT_COLOR, (3, 8), lambda: handle_operation("-")),
+    "+": (LIGHT_COLOR, (3, 9), lambda: handle_operation("+")),
+    ".": (DARK_COLOR, (1, 10), handle_dec_button),
+    "=": (ACCENT_COLOR, (2, 10, 2), handle_equal_button),
 }
 
 for symbol, config in operation_buttons_config.items():
@@ -198,7 +209,11 @@ for number in range(10):
         row = 9 - (number - 1) // 3
         col = (number - 1) % 3
     create_button(
-        window, str(number), lambda n=number: number_clicked(n), "#bdc3c7", (col, row)
+        window,
+        str(number),
+        lambda n=number: number_clicked(n),
+        NORMAL_BUTTON_COLOR,
+        (col, row),
     )
 
 
