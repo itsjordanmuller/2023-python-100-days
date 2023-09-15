@@ -11,7 +11,7 @@ def get_categories():
 
 
 def get_question_data(difficulty="medium", category_id=None):
-    difficulties = ["hard"]
+    difficulties = ["hard", "medium", "easy", None]
 
     start_index = difficulties.index(difficulty)
     for level in difficulties[start_index:]:
