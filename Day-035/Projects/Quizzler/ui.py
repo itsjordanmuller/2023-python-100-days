@@ -4,6 +4,35 @@ from quiz_brain import QuizBrain
 THEME_COLOR = "#375362"
 
 
+class DifficultySelector:
+    def __init__(self):
+        self.window = Tk()
+        self.window.title("Select Difficulty")
+
+        self.difficulty = StringVar()
+        self.difficulty.set("medium")
+
+        options = ["easy", "medium", "hard"]
+        for idx, option in enumerate(options):
+            Radiobutton(
+                self.window,
+                text=option.capitalize(),
+                variable=self.difficulty,
+                value=option,
+            ).pack(anchor=W)
+
+        Button(self.window, text="Start", command=self.start_quiz).pack()
+
+        self.window.mainloop()
+
+    def start_quiz(self):
+        self.selected_difficulty = self.difficulty.get()
+        self.window.destroy()
+
+    def get_difficulty(self):
+        return self.selected_difficulty
+
+
 class QuizInterface:
     def __init__(self, quiz_brain: QuizBrain):
         self.quiz = quiz_brain

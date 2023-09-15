@@ -1,7 +1,12 @@
+from data import get_question_data
 from question_model import Question
-from data import question_data
 from quiz_brain import QuizBrain
-from ui import QuizInterface
+from ui import DifficultySelector, QuizInterface
+
+selector = DifficultySelector()
+difficulty = selector.get_difficulty()
+
+question_data = get_question_data(difficulty)
 
 question_bank = []
 for question in question_data:
