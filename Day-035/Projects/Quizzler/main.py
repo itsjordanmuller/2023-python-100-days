@@ -6,11 +6,18 @@ from ui import DifficultySelector, CategorySelector, QuizInterface
 selector = DifficultySelector()
 difficulty = selector.get_difficulty()
 
-category_data = get_categories()
-category_selector = CategorySelector(category_data)
-selected_category_id = category_selector.get_category_id()
+question_data = None
+while not question_data:
+    category_data = get_categories()
+    category_selector = CategorySelector(category_data)
+    selected_category_id = category_selector.get_category_id()
 
-question_data = get_question_data(difficulty, selected_category_id)
+    question_data = get_question_data(difficulty, selected_category_id)
+
+    if not question_data:
+        print(
+            "Sorry, no questions available for the selected category. Please choose a different category."
+        )
 
 question_bank = []
 for question in question_data:

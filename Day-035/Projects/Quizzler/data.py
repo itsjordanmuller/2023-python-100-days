@@ -11,7 +11,7 @@ def get_categories():
 
 
 def get_question_data(difficulty="medium", category_id=None):
-    difficulties = ["hard", "medium", "easy", None]
+    difficulties = ["hard"]
 
     start_index = difficulties.index(difficulty)
     for level in difficulties[start_index:]:
@@ -31,4 +31,4 @@ def get_question_data(difficulty="medium", category_id=None):
         if data["response_code"] == 0:
             return data["results"]
 
-    return []
+    return None
