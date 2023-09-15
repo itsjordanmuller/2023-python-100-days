@@ -1,7 +1,44 @@
 from tkinter import *
+from tkinter import ttk
 from quiz_brain import QuizBrain
 
 THEME_COLOR = "#375362"
+
+
+class CategorySelector:
+    def __init__(self, categories):
+        self.window = Tk()
+        self.window.title("Select Category")
+
+        self.label = Label(
+            self.window, text="Choose a category:", bg=THEME_COLOR, fg="white"
+        )
+        self.label.pack(pady=10)
+
+        self.categories = categories
+        self.category_name = StringVar()
+
+        self.dropdown = ttk.Combobox(
+            self.window,
+            textvariable=self.category_name,
+            values=["Any Category"] + list(categories.keys()),
+        )
+        self.dropdown.pack(pady=20)
+        self.dropdown.set("Any Category")
+
+        Button(self.window, text="Select", command=self.select_category).pack()
+
+        self.window.mainloop()
+
+    def select_category(self):
+        if self.category_name.get() == "Any Category":
+            self.selected_category_id = None
+        else:
+            self.selected_category_id = self.categories[self.category_name.get()]
+        self.window.destroy()
+
+    def get_category_id(self):
+        return self.selected_category_id
 
 
 class DifficultySelector:
