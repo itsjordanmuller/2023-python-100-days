@@ -11,15 +11,22 @@ def get_categories():
 
 
 def get_question_data(difficulty="medium", category_id=None):
-    parameters = {"amount": 10, "type": "boolean", "difficulty": difficulty}
-    if category_id:
-        parameters["category"] = category_id
+    difficulties = ["hard", "medium", "easy"]
 
-    response = requests.get("https://opentdb.com/api.php", params=parameters)
-    response.raise_for_status()
+    start_index = difficulties.index(difficulty)
+    for level in difficulties[start_index:]:
+        parameters = {"amount": 10, "type": "boolean", "difficulty": level}
+        if category_id:
+            parameters["category"] = category_id
 
-    print(f"API Request URL: {response.url}")
+        response = requests.get("https://opentdb.com/api.php", params=parameters)
+        response.raise_for_status()
 
-    data = response.json()
+        print(f"API Request URL: {response.url}")
 
-    return data["results"]
+        data = response.json()
+
+        if data["response_code"] == 0:
+            return data["results"]
+
+    return []
