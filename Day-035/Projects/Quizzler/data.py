@@ -11,11 +11,13 @@ def get_categories():
 
 
 def get_question_data(difficulty="medium", category_id=None):
-    difficulties = ["hard", "medium", "easy"]
+    difficulties = ["hard", "medium", "easy", None]
 
     start_index = difficulties.index(difficulty)
     for level in difficulties[start_index:]:
-        parameters = {"amount": 10, "type": "boolean", "difficulty": level}
+        parameters = {"amount": 10, "type": "boolean"}
+        if level:
+            parameters["difficulty"] = level
         if category_id:
             parameters["category"] = category_id
 
