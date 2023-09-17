@@ -17,9 +17,21 @@ user_params = {
 }
 
 # response = requests.post(url=pixela_endpoint, json=user_params)
-# print(response.text)
 
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
+
+graph_config = {
+    "id": "testhabittracker",
+    "name": "Test Habit Tracker",
+    "unit": "successes",
+    "type": "int",
+    "color": "ajisai",
+}
+
+headers = {"X-USER-TOKEN": TOKEN_KEY}
+
+response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+print(response.text)
 
 # API Key Storage Test
 # api_key = os.getenv("MY_TEST_KEY")
