@@ -147,3 +147,26 @@ class UserInterface:
         for canvas in self.canvases:
             canvas.unbind("<Button-1>")
             canvas.unbind("<Button-3>")
+
+        self.create_replay_button()
+
+    def create_replay_button(self):
+        self.replay_button = Button(
+            self.window,
+            text="REPLAY",
+            command=self.reset_game,
+            font=("TkFixedFont", 24),
+        )
+        self.replay_button.grid(row=4, column=0, columnspan=3, sticky="EW")
+
+    def reset_game(self):
+        for i, j in self.canvas_states:
+            self.canvas_states[(i, j)] = "Empty"
+        for canvas in self.canvases:
+            canvas.delete('all')
+            canvas.configure(bg="white")
+            canvas.bind("<Button-1>", self.place_x)
+            canvas.bind("<Button-3>", self.place_o)
+        self.current_turn = random.choice(["X", "O"])
+        self.update_turn()
+        self.replay_button.grid_forget()
