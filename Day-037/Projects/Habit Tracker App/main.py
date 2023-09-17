@@ -37,15 +37,20 @@ headers = {"X-USER-TOKEN": TOKEN_KEY}
 
 test_graph_endpoint = f"{graph_endpoint}/{TEST_GRAPH_ID}"
 
+today = datetime.now().strftime("%Y%m%d")
+# print(today)
+
 pixel_config = {
-    "date": "20230917",
+    "date": today,
     "quantity": "1",
 }
 
 # response = requests.post(url=test_graph_endpoint, json=pixel_config, headers=headers)
 
-today = datetime.now()
-print(today)
+today_test_graph_pixels = f"{test_graph_endpoint}/{today}"
+
+response = requests.delete(url=today_test_graph_pixels, headers=headers)
+print(response.text)
 
 # API Key Storage Test
 # api_key = os.getenv("MY_TEST_KEY")
