@@ -34,39 +34,60 @@ class UserInterface:
                 canvas.bind("<Button-3>", self.place_o)
                 self.canvases.append(canvas)
 
-                self.canvas_states[canvas] = "Empty"
+                self.canvas_states[(i, j)] = "Empty"
 
         self.window.mainloop()
 
+    def get_canvas_position(self, canvas):
+        return next(
+            (
+                position
+                for position, c in zip(self.canvas_states.keys(), self.canvases)
+                if c == canvas
+            ),
+            None,
+        )
+
     def place_x(self, event):
         canvas = event.widget
+        position = self.get_canvas_position(canvas)
 
-        if self.current_turn == "X" and self.canvas_states[canvas] == "Empty":
+        if (
+            position
+            and self.current_turn == "X"
+            and self.canvas_states[position] == "Empty"
+        ):
             canvas_width = canvas.winfo_width()
             canvas_height = canvas.winfo_height()
 
             canvas.create_image(canvas_width // 2, canvas_height // 2, image=self.x_img)
             canvas.configure(bg="red")
 
-            self.canvas_states[canvas] = "X"
+            self.canvas_states[position] = "X"
             self.current_turn = "O"
             self.update_turn()
 
     def place_o(self, event):
         canvas = event.widget
+        position = self.get_canvas_position(canvas)
 
-        if self.current_turn == "O" and self.canvas_states[canvas] == "Empty":
+        if (
+            position
+            and self.current_turn == "O"
+            and self.canvas_states[position] == "Empty"
+        ):
             canvas_width = canvas.winfo_width()
             canvas_height = canvas.winfo_height()
 
             canvas.create_image(canvas_width // 2, canvas_height // 2, image=self.o_img)
             canvas.configure(bg="blue")
 
-            self.canvas_states[canvas] = "O"
+            self.canvas_states[position] = "O"
             self.current_turn = "X"
             self.update_turn()
 
     def update_turn(self):
+        self.print_canvas_states()
         if self.current_turn == "X":
             self.turn_label.config(text="X Goes", bg="red")
             self.window.config(bg="red")
