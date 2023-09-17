@@ -15,7 +15,8 @@ user_params = {
     "notMinor": "yes",
 }
 
-# requests.post()
+response = requests.post(url=pixela_endpoint, json=user_params)
+print(response.text)
 
 # API Key Storage Test
 # api_key = os.getenv("MY_TEST_KEY")
