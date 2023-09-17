@@ -53,10 +53,9 @@ today_test_graph_pixels = f"{test_graph_endpoint}/{today}"
 
 update_config = {"date": today, "quantity": "2"}
 
-response = requests.put(
-    url=today_test_graph_pixels, json=update_config, headers=headers
-)
-print(response.text)
+# response = requests.put(
+#     url=today_test_graph_pixels, json=update_config, headers=headers
+# )
 
 # API Key Storage Test
 # api_key = os.getenv("MY_TEST_KEY")
