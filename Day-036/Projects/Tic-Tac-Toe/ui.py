@@ -9,6 +9,9 @@ class UserInterface:
         self.canvas_size = 128
         self.canvases = []
 
+        self.x_img = PhotoImage(file="./images/x.png")
+        self.o_img = PhotoImage(file="./images/o.png")
+
         for i in range(3):
             for j in range(3):
                 canvas = Canvas(
