@@ -49,7 +49,13 @@ pixel_config = {
 
 today_test_graph_pixels = f"{test_graph_endpoint}/{today}"
 
-response = requests.delete(url=today_test_graph_pixels, headers=headers)
+# response = requests.delete(url=today_test_graph_pixels, headers=headers)
+
+update_config = {"date": today, "quantity": "2"}
+
+response = requests.put(
+    url=today_test_graph_pixels, json=update_config, headers=headers
+)
 print(response.text)
 
 # API Key Storage Test
