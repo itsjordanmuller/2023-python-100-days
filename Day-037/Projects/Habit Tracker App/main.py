@@ -1,4 +1,6 @@
 import os
+from datetime import datetime
+
 import requests
 from dotenv import load_dotenv
 
@@ -40,8 +42,10 @@ pixel_config = {
     "quantity": "1",
 }
 
-response = requests.post(url=test_graph_endpoint, json=pixel_config, headers=headers)
-print(response.text)
+# response = requests.post(url=test_graph_endpoint, json=pixel_config, headers=headers)
+
+today = datetime.now()
+print(today)
 
 # API Key Storage Test
 # api_key = os.getenv("MY_TEST_KEY")
