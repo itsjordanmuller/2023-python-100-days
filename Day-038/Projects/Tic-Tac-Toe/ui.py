@@ -46,6 +46,14 @@ class UserInterface:
             320, 104, text="(Right Click)", font=("TkFixedFont", 10), justify="center"
         )
 
+        self.score_canvas.create_text(
+            192, 48, text="Scores", font=("TkFixedFont", 24), justify="center"
+        )
+
+        self.score_canvas.create_text(
+            192, 80, text="Round: 1", font=("TkFixedFont", 16), justify="center"
+        )
+
         self.score_canvas.grid(row=0, column=0, columnspan=3, sticky="EW")
 
         self.turn_label = Label(text="X Goes", bg="red", font=("TkFixedFont", 24))
