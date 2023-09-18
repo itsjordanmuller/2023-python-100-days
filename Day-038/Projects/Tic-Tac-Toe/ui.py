@@ -12,6 +12,9 @@ class UserInterface:
 
         self.canvas_states = {}
 
+        self.x_score = 0
+        self.o_score = 0
+
         self.score_canvas = Canvas(width=384, height=128)
 
         self.score_canvas.create_rectangle(28, 36, 100, 92, fill="red")
@@ -23,11 +26,11 @@ class UserInterface:
         self.score_canvas.create_rectangle(294, 46, 346, 82, fill="black")
 
         self.score_canvas.create_text(
-            64, 64, text="99", font=("TkFixedFont", 20), justify="center", fill="white"
+            64, 64, text="99", font=("TkFixedFont", 20), justify="center", fill="white", tags="xScore"
         )
 
         self.score_canvas.create_text(
-            320, 64, text="99", font=("TkFixedFont", 20), justify="center", fill="white"
+            320, 64, text="99", font=("TkFixedFont", 20), justify="center", fill="white", tags="oScore"
         )
 
         self.score_canvas.create_text(
@@ -79,6 +82,8 @@ class UserInterface:
                 self.canvases.append(canvas)
 
                 self.canvas_states[(i, j)] = "Empty"
+
+        self.update_score_display()
 
         self.window.mainloop()
 
@@ -188,20 +193,26 @@ class UserInterface:
         self.turn_label.config(text=f"{winner} Wins!", bg="green")
         self.window.config(bg="green")
 
+        if winner == "X":
+            self.x_score += 1
+        elif winner == "O":
+            self.o_score += 1
+        self.update_score_display()
+
         for canvas in self.canvases:
             canvas.unbind("<Button-1>")
             canvas.unbind("<Button-3>")
 
-        self.create_replay_button()
+        self.create_next_round_button()
 
-    def create_replay_button(self):
-        self.replay_button = Button(
+    def create_next_round_button(self):
+        self.next_round_button = Button(
             self.window,
-            text="REPLAY",
+            text="Next Round",
             command=self.reset_game,
             font=("TkFixedFont", 24),
         )
-        self.replay_button.grid(row=5, column=0, columnspan=3, sticky="EW")
+        self.next_round_button.grid(row=5, column=0, columnspan=3, sticky="EW")
 
     def reset_game(self):
         for i, j in self.canvas_states:
@@ -213,4 +224,26 @@ class UserInterface:
             canvas.bind("<Button-3>", self.place_o)
         self.current_turn = random.choice(["X", "O"])
         self.update_turn()
-        self.replay_button.grid_forget()
+        self.next_round_button.grid_forget()
+
+    def update_score_display(self):
+        self.score_canvas.delete("xScore")
+        self.score_canvas.delete("oScore")
+        self.score_canvas.create_text(
+            64,
+            64,
+            text=str(self.x_score),
+            font=("TkFixedFont", 20),
+            justify="center",
+            fill="white",
+            tags="xScore",
+        )
+        self.score_canvas.create_text(
+            320,
+            64,
+            text=str(self.o_score),
+            font=("TkFixedFont", 20),
+            justify="center",
+            fill="white",
+            tags="oScore",
+        )
