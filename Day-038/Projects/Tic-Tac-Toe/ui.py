@@ -12,8 +12,24 @@ class UserInterface:
 
         self.canvas_states = {}
 
+        self.score_canvas = Canvas(width=384, height=128)
+
+        self.score_canvas.create_rectangle(28, 36, 100, 92, fill="red")
+        self.score_canvas.create_rectangle(284, 36, 356, 92, fill="blue")
+
+        self.score_canvas.create_rectangle(38, 46, 90, 82, fill="black")
+        self.score_canvas.create_rectangle(294, 46, 346, 82, fill="black")
+
+        self.score_canvas.create_text(
+            64, 64, text="99", font=("TkFixedFont", 20), justify="center", fill="white"
+        )
+        self.score_canvas.create_text(
+            320, 64, text="99", font=("TkFixedFont", 20), justify="center", fill="white"
+        )
+        self.score_canvas.grid(row=0, column=0, columnspan=3, sticky="EW")
+
         self.turn_label = Label(text="X Goes", bg="red", font=("TkFixedFont", 24))
-        self.turn_label.grid(row=3, column=0, columnspan=3)
+        self.turn_label.grid(row=4, column=0, columnspan=3)
 
         self.current_turn = random.choice(["X", "O"])
         self.update_turn()
@@ -29,7 +45,7 @@ class UserInterface:
                     height=self.canvas_size,
                     bg="white",
                 )
-                canvas.grid(row=i, column=j)
+                canvas.grid(row=i + 1, column=j)
                 canvas.bind("<Button-1>", self.place_x)
                 canvas.bind("<Button-3>", self.place_o)
                 self.canvases.append(canvas)
@@ -157,13 +173,13 @@ class UserInterface:
             command=self.reset_game,
             font=("TkFixedFont", 24),
         )
-        self.replay_button.grid(row=4, column=0, columnspan=3, sticky="EW")
+        self.replay_button.grid(row=5, column=0, columnspan=3, sticky="EW")
 
     def reset_game(self):
         for i, j in self.canvas_states:
             self.canvas_states[(i, j)] = "Empty"
         for canvas in self.canvases:
-            canvas.delete('all')
+            canvas.delete("all")
             canvas.configure(bg="white")
             canvas.bind("<Button-1>", self.place_x)
             canvas.bind("<Button-3>", self.place_o)
