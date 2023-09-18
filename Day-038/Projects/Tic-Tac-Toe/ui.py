@@ -213,7 +213,7 @@ class UserInterface:
 
     def check_draw(self):
         return all(val != "Empty" for val in self.canvas_states.values())
-    
+
     def end_draw_game(self):
         self.turn_label.config(text="Draw!", bg="yellow")
         self.window.config(bg="yellow")
@@ -223,6 +223,7 @@ class UserInterface:
             canvas.unbind("<Button-3>")
 
         self.create_next_round_button()
+        self.check_game_over()
 
     def end_game(self, winner):
         self.turn_label.config(text=f"{winner} Wins!", bg="green")
@@ -239,6 +240,7 @@ class UserInterface:
             canvas.unbind("<Button-3>")
 
         self.create_next_round_button()
+        self.check_game_over()
 
     def create_next_round_button(self):
         self.next_round_button = Button(
@@ -295,3 +297,35 @@ class UserInterface:
             justify="center",
             tags="round",
         )
+
+    def check_game_over(self):
+        if self.x_score + self.o_score == 3:
+            if self.x_score == 2:
+                self.end_whole_game("X")
+            elif self.o_score == 2:
+                self.end_whole_game("O")
+
+    def end_whole_game(self, winner):
+        self.turn_label.config(text=f"{winner} Wins!", bg="green")
+        self.window.config(bg="green")
+        for canvas in self.canvases:
+            canvas.unbind("<Button-1>")
+            canvas.unbind("<Button-3>")
+        self.next_round_button.config(text="Restart Game", command=self.restart_game)
+
+    def restart_game(self):
+        self.x_score = 0
+        self.o_score = 0
+        self.round = 1
+        self.update_score_display()
+        self.update_round_display()
+        for i, j in self.canvas_states:
+            self.canvas_states[(i, j)] = "Empty"
+        for canvas in self.canvases:
+            canvas.delete("all")
+            canvas.configure(bg="white")
+            canvas.bind("<Button-1>", self.place_x)
+            canvas.bind("<Button-3>", self.place_o)
+        self.current_turn = random.choice(["X", "O"])
+        self.update_turn()
+        self.next_round_button.grid_forget()
