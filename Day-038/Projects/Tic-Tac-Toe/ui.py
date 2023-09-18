@@ -14,6 +14,7 @@ class UserInterface:
 
         self.x_score = 0
         self.o_score = 0
+        self.round = 1
 
         self.score_canvas = Canvas(width=384, height=128)
 
@@ -26,11 +27,23 @@ class UserInterface:
         self.score_canvas.create_rectangle(294, 46, 346, 82, fill="black")
 
         self.score_canvas.create_text(
-            64, 64, text="99", font=("TkFixedFont", 20), justify="center", fill="white", tags="xScore"
+            64,
+            64,
+            text="99",
+            font=("TkFixedFont", 20),
+            justify="center",
+            fill="white",
+            tags="xScore",
         )
 
         self.score_canvas.create_text(
-            320, 64, text="99", font=("TkFixedFont", 20), justify="center", fill="white", tags="oScore"
+            320,
+            64,
+            text="99",
+            font=("TkFixedFont", 20),
+            justify="center",
+            fill="white",
+            tags="oScore",
         )
 
         self.score_canvas.create_text(
@@ -54,7 +67,12 @@ class UserInterface:
         )
 
         self.score_canvas.create_text(
-            192, 80, text="Round: 1", font=("TkFixedFont", 16), justify="center"
+            192,
+            80,
+            text="Round: 1",
+            font=("TkFixedFont", 16),
+            justify="center",
+            tags="round",
         )
 
         self.score_canvas.grid(row=0, column=0, columnspan=3, sticky="EW")
@@ -197,6 +215,7 @@ class UserInterface:
             self.x_score += 1
         elif winner == "O":
             self.o_score += 1
+        self.round += 1
         self.update_score_display()
 
         for canvas in self.canvases:
@@ -224,6 +243,7 @@ class UserInterface:
             canvas.bind("<Button-3>", self.place_o)
         self.current_turn = random.choice(["X", "O"])
         self.update_turn()
+        self.update_round_display()
         self.next_round_button.grid_forget()
 
     def update_score_display(self):
@@ -246,4 +266,15 @@ class UserInterface:
             justify="center",
             fill="white",
             tags="oScore",
+        )
+
+    def update_round_display(self):
+        self.score_canvas.delete("round")
+        self.score_canvas.create_text(
+            192,
+            80,
+            text=f"Round: {self.round}",
+            font=("TkFixedFont", 16),
+            justify="center",
+            tags="round",
         )
