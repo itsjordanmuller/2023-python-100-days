@@ -137,6 +137,8 @@ class UserInterface:
             winner = self.check_win()
             if winner:
                 self.end_game(winner)
+            elif self.check_draw():
+                self.end_draw_game()
 
     def place_o(self, event):
         canvas = event.widget
@@ -160,6 +162,8 @@ class UserInterface:
             winner = self.check_win()
             if winner:
                 self.end_game(winner)
+            elif self.check_draw():
+                self.end_draw_game()
 
     def update_turn(self):
         if self.current_turn == "X":
@@ -207,6 +211,19 @@ class UserInterface:
 
         return None
 
+    def check_draw(self):
+        return all(val != "Empty" for val in self.canvas_states.values())
+    
+    def end_draw_game(self):
+        self.turn_label.config(text="Draw!", bg="yellow")
+        self.window.config(bg="yellow")
+
+        for canvas in self.canvases:
+            canvas.unbind("<Button-1>")
+            canvas.unbind("<Button-3>")
+
+        self.create_next_round_button()
+
     def end_game(self, winner):
         self.turn_label.config(text=f"{winner} Wins!", bg="green")
         self.window.config(bg="green")
@@ -215,7 +232,6 @@ class UserInterface:
             self.x_score += 1
         elif winner == "O":
             self.o_score += 1
-        self.round += 1
         self.update_score_display()
 
         for canvas in self.canvases:
@@ -243,6 +259,7 @@ class UserInterface:
             canvas.bind("<Button-3>", self.place_o)
         self.current_turn = random.choice(["X", "O"])
         self.update_turn()
+        self.round += 1
         self.update_round_display()
         self.next_round_button.grid_forget()
 
