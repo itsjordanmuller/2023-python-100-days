@@ -27,4 +27,13 @@ class UserInterface:
         )
         self.score_canvas.grid(column=0, row=0, columnspan=3)
 
+        self.game_canvas = Canvas(
+            self.window,
+            width=384,
+            height=384,
+            highlightthickness=0,
+            borderwidth=0,
+        )
+        self.game_canvas.grid(column=0, row=1, columnspan=3)
+
         self.window.mainloop()
