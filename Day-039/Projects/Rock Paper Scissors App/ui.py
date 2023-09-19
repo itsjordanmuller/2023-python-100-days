@@ -1,10 +1,12 @@
 from tkinter import *
+from game import Game
 
 
 class UserInterface:
     def __init__(self):
         self.window = Tk()
         self.window.title("Rock Paper Scissors")
+        self.game = Game()
 
         # Paper icons created by Freepik - Flaticon
         # https://www.flaticon.com/free-icons/paper
@@ -81,20 +83,20 @@ class UserInterface:
             fill="black",
         )
 
-        self.score_canvas.create_text(
+        self.player_score_text = self.score_canvas.create_text(
             48,
             32,
             font=("TkFixedFont", 16),
-            text="99",
+            text="0",
             justify="center",
             fill="black",
         )
 
-        self.score_canvas.create_text(
+        self.computer_score_text = self.score_canvas.create_text(
             400,
             32,
             font=("TkFixedFont", 16),
-            text="99",
+            text="0",
             justify="center",
             fill="black",
         )
@@ -206,6 +208,52 @@ class UserInterface:
             lambda e: self.button_canvas.itemconfig(self.scissors_text, fill="white"),
         )
 
+        self.rock_button["command"] = lambda: self.make_player_move("rock")
+
+        self.paper_button["command"] = lambda: self.make_player_move("paper")
+
+        self.scissors_button["command"] = lambda: self.make_player_move("scissors")
+
         self.button_canvas.grid(column=0, row=2, columnspan=3)
 
         self.window.mainloop()
+
+    def make_player_move(self, choice):
+        result, player_choice, computer_choice = self.game.player_move(choice)
+        self.update_game_canvas(player_choice, computer_choice, result)
+        self.update_score_canvas()
+
+    def update_game_canvas(self, player_choice, computer_choice, result):
+        self.game_canvas.delete("all")
+
+        self.game_canvas.create_text(
+            224,
+            128,
+            font=("TkFixedFont", 20),
+            text=f"Player: {player_choice}",
+            justify="center",
+            fill="black",
+        )
+
+        self.game_canvas.create_text(
+            224,
+            196,
+            font=("TkFixedFont", 20),
+            text=f"Computer: {computer_choice}",
+            justify="center",
+            fill="black",
+        )
+
+        self.game_canvas.create_text(
+            224,
+            320,
+            font=("TkFixedFont", 20),
+            text=f"Result: {result}",
+            justify="center",
+            fill="black",
+        )
+
+    def update_score_canvas(self):
+        player_score, computer_score = self.game.get_scores()
+        self.score_canvas.itemconfig(self.player_score_text, text=str(player_score))
+        self.score_canvas.itemconfig(self.computer_score_text, text=str(computer_score))
