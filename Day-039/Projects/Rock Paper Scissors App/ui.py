@@ -24,6 +24,7 @@ class UserInterface:
             height=64,
             highlightthickness=0,
             borderwidth=0,
+            bg="red",
         )
         self.score_canvas.grid(column=0, row=0, columnspan=3)
 
@@ -33,6 +34,7 @@ class UserInterface:
             height=384,
             highlightthickness=0,
             borderwidth=0,
+            bg="orange",
         )
         self.game_canvas.grid(column=0, row=1, columnspan=3)
 
@@ -42,6 +44,7 @@ class UserInterface:
             height=192,
             highlightthickness=0,
             borderwidth=0,
+            bg="yellow",
         )
         self.button_canvas.grid(column=0, row=2, columnspan=3)
 
