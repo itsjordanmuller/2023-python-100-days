@@ -63,6 +63,24 @@ class UserInterface:
             width=0,
         )
 
+        self.score_canvas.create_text(
+            142,
+            32,
+            font=("TkFixedFont", 16),
+            text="Player",
+            justify="center",
+            fill="black",
+        )
+
+        self.score_canvas.create_text(
+            286,
+            32,
+            font=("TkFixedFont", 16),
+            text="Computer",
+            justify="center",
+            fill="black",
+        )
+
         self.score_canvas.grid(column=0, row=0, columnspan=3)
 
         self.game_canvas = Canvas(
