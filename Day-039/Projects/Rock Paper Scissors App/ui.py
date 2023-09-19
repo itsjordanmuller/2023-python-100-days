@@ -58,6 +58,17 @@ class UserInterface:
         )
         self.button_canvas.create_window(84, 80, window=self.rock_button)
 
+        self.paper_button = Button(
+            self.button_canvas,
+            image=self.paper_img,
+            borderwidth=0,
+            highlightthickness=0,
+            relief=FLAT,
+            bg="#2c3e50",
+            activebackground="#2c3e50",
+        )
+        self.button_canvas.create_window(224, 80, window=self.paper_button)
+
         self.button_canvas.grid(column=0, row=2, columnspan=3)
 
         self.window.mainloop()
