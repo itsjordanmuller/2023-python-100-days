@@ -46,18 +46,18 @@ class UserInterface:
         )
 
         self.score_canvas.create_rectangle(
+            20,
             16,
-            16,
-            80,
+            76,
             48,
             fill="white",
             width=0,
         )
 
         self.score_canvas.create_rectangle(
-            368,
+            372,
             16,
-            432,
+            428,
             48,
             fill="white",
             width=0,
@@ -77,6 +77,24 @@ class UserInterface:
             32,
             font=("TkFixedFont", 16),
             text="Computer",
+            justify="center",
+            fill="black",
+        )
+
+        self.score_canvas.create_text(
+            48,
+            32,
+            font=("TkFixedFont", 16),
+            text="99",
+            justify="center",
+            fill="black",
+        )
+
+        self.score_canvas.create_text(
+            400,
+            32,
+            font=("TkFixedFont", 16),
+            text="99",
             justify="center",
             fill="black",
         )
