@@ -80,7 +80,7 @@ class UserInterface:
         )
         self.button_canvas.create_window(364, 80, window=self.scissors_button)
 
-        self.button_canvas.create_text(
+        self.rock_text = self.button_canvas.create_text(
             84,
             152,
             font=("TkFixedFont", 16),
@@ -89,7 +89,7 @@ class UserInterface:
             fill="white",
         )
 
-        self.button_canvas.create_text(
+        self.paper_text = self.button_canvas.create_text(
             224,
             152,
             font=("TkFixedFont", 16),
@@ -98,13 +98,39 @@ class UserInterface:
             fill="white",
         )
 
-        self.button_canvas.create_text(
+        self.scissors_text = self.button_canvas.create_text(
             364,
             152,
             font=("TkFixedFont", 16),
             text="Scissors",
             justify="center",
             fill="white",
+        )
+
+        self.rock_button.bind(
+            "<Enter>",
+            lambda e: self.button_canvas.itemconfig(self.rock_text, fill="#f1c40f"),
+        )
+        self.paper_button.bind(
+            "<Enter>",
+            lambda e: self.button_canvas.itemconfig(self.paper_text, fill="#f1c40f"),
+        )
+        self.scissors_button.bind(
+            "<Enter>",
+            lambda e: self.button_canvas.itemconfig(self.scissors_text, fill="#f1c40f"),
+        )
+
+        self.rock_button.bind(
+            "<Leave>",
+            lambda e: self.button_canvas.itemconfig(self.rock_text, fill="white"),
+        )
+        self.paper_button.bind(
+            "<Leave>",
+            lambda e: self.button_canvas.itemconfig(self.paper_text, fill="white"),
+        )
+        self.scissors_button.bind(
+            "<Leave>",
+            lambda e: self.button_canvas.itemconfig(self.scissors_text, fill="white"),
         )
 
         self.button_canvas.grid(column=0, row=2, columnspan=3)
