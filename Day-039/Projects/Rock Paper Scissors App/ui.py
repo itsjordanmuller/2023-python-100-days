@@ -36,4 +36,13 @@ class UserInterface:
         )
         self.game_canvas.grid(column=0, row=1, columnspan=3)
 
+        self.button_canvas = Canvas(
+            self.window,
+            width=384,
+            height=192,
+            highlightthickness=0,
+            borderwidth=0,
+        )
+        self.button_canvas.grid(column=0, row=2, columnspan=3)
+
         self.window.mainloop()
