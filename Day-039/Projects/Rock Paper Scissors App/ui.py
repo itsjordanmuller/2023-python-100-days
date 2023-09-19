@@ -26,6 +26,43 @@ class UserInterface:
             borderwidth=0,
             bg="red",
         )
+
+        self.score_canvas.create_rectangle(
+            0,
+            0,
+            96,
+            64,
+            fill="black",
+            width=0,
+        )
+
+        self.score_canvas.create_rectangle(
+            352,
+            0,
+            448,
+            64,
+            fill="black",
+            width=0,
+        )
+
+        self.score_canvas.create_rectangle(
+            16,
+            16,
+            80,
+            48,
+            fill="white",
+            width=0,
+        )
+
+        self.score_canvas.create_rectangle(
+            368,
+            16,
+            432,
+            48,
+            fill="white",
+            width=0,
+        )
+
         self.score_canvas.grid(column=0, row=0, columnspan=3)
 
         self.game_canvas = Canvas(
