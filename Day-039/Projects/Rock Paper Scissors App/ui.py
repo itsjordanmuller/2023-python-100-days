@@ -18,4 +18,13 @@ class UserInterface:
         # https://www.flaticon.com/free-icons/scissors
         self.scissors_img = PhotoImage(file="./images/scissors.png")
 
+        self.score_canvas = Canvas(
+            self.window,
+            width=384,
+            height=64,
+            highlightthickness=0,
+            borderwidth=0,
+        )
+        self.score_canvas.grid(column=0, row=0, columnspan=3)
+
         self.window.mainloop()
