@@ -8,7 +8,7 @@ class UserInterface:
 
         # Paper icons created by Freepik - Flaticon
         # https://www.flaticon.com/free-icons/paper
-        self.paper_img = PhotoImage(file="./images/scroll.png").subsample(5, 5)
+        self.paper_img = PhotoImage(file="./images/scroll.png").subsample(6, 6)
 
         # Rock icons created by Freepik - Flaticon
         # https://www.flaticon.com/free-icons/rock
@@ -16,7 +16,7 @@ class UserInterface:
 
         # Scissors icons created by Freepik - Flaticon
         # https://www.flaticon.com/free-icons/scissors
-        self.scissors_img = PhotoImage(file="./images/scissors.png").subsample(5, 5)
+        self.scissors_img = PhotoImage(file="./images/scissors.png").subsample(6, 6)
 
         self.score_canvas = Canvas(
             self.window,
@@ -79,6 +79,33 @@ class UserInterface:
             activebackground="#2c3e50",
         )
         self.button_canvas.create_window(364, 80, window=self.scissors_button)
+
+        self.button_canvas.create_text(
+            84,
+            152,
+            font=("TkFixedFont", 16),
+            text="Rock",
+            justify="center",
+            fill="white",
+        )
+
+        self.button_canvas.create_text(
+            224,
+            152,
+            font=("TkFixedFont", 16),
+            text="Paper",
+            justify="center",
+            fill="white",
+        )
+
+        self.button_canvas.create_text(
+            364,
+            152,
+            font=("TkFixedFont", 16),
+            text="Scissors",
+            justify="center",
+            fill="white",
+        )
 
         self.button_canvas.grid(column=0, row=2, columnspan=3)
 
