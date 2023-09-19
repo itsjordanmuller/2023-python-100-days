@@ -8,19 +8,19 @@ class UserInterface:
 
         # Paper icons created by Freepik - Flaticon
         # https://www.flaticon.com/free-icons/paper
-        self.paper_img = PhotoImage(file="./images/scroll.png")
+        self.paper_img = PhotoImage(file="./images/scroll.png").subsample(5, 5)
 
         # Rock icons created by Freepik - Flaticon
         # https://www.flaticon.com/free-icons/rock
-        self.rock_img = PhotoImage(file="./images/stone.png")
+        self.rock_img = PhotoImage(file="./images/stone.png").subsample(5, 5)
 
         # Scissors icons created by Freepik - Flaticon
         # https://www.flaticon.com/free-icons/scissors
-        self.scissors_img = PhotoImage(file="./images/scissors.png")
+        self.scissors_img = PhotoImage(file="./images/scissors.png").subsample(5, 5)
 
         self.score_canvas = Canvas(
             self.window,
-            width=384,
+            width=448,
             height=64,
             highlightthickness=0,
             borderwidth=0,
@@ -30,8 +30,8 @@ class UserInterface:
 
         self.game_canvas = Canvas(
             self.window,
-            width=384,
-            height=384,
+            width=448,
+            height=448,
             highlightthickness=0,
             borderwidth=0,
             bg="orange",
@@ -40,12 +40,24 @@ class UserInterface:
 
         self.button_canvas = Canvas(
             self.window,
-            width=384,
+            width=448,
             height=192,
             highlightthickness=0,
             borderwidth=0,
-            bg="yellow",
+            bg="#2c3e50",
         )
+
+        self.rock_button = Button(
+            self.button_canvas,
+            image=self.rock_img,
+            borderwidth=0,
+            highlightthickness=0,
+            relief=FLAT,
+            bg="#2c3e50",
+            activebackground="#2c3e50",
+        )
+        self.button_canvas.create_window(84, 80, window=self.rock_button)
+
         self.button_canvas.grid(column=0, row=2, columnspan=3)
 
         self.window.mainloop()
