@@ -110,7 +110,7 @@ class UserInterface:
             height=448,
             highlightthickness=0,
             borderwidth=0,
-            bg="#485460",
+            bg="#34495e",
         )
         self.game_canvas.grid(column=0, row=1, columnspan=3)
 
@@ -230,8 +230,56 @@ class UserInterface:
         self.update_game_canvas(player_choice, computer_choice, result)
         self.update_score_canvas()
 
+    def round_rectangle(self, x1, y1, x2, y2, radius=25, **kwargs):
+        points = [
+            x1 + radius,
+            y1,
+            x1 + radius,
+            y1,
+            x2 - radius,
+            y1,
+            x2 - radius,
+            y1,
+            x2,
+            y1,
+            x2,
+            y1 + radius,
+            x2,
+            y1 + radius,
+            x2,
+            y2 - radius,
+            x2,
+            y2 - radius,
+            x2,
+            y2,
+            x2 - radius,
+            y2,
+            x2 - radius,
+            y2,
+            x1 + radius,
+            y2,
+            x1 + radius,
+            y2,
+            x1,
+            y2,
+            x1,
+            y2 - radius,
+            x1,
+            y2 - radius,
+            x1,
+            y1 + radius,
+            x1,
+            y1 + radius,
+            x1,
+            y1,
+        ]
+
+        return self.game_canvas.create_polygon(points, **kwargs, smooth=True)
+
     def update_game_canvas(self, player_choice, computer_choice, result):
         self.game_canvas.delete("all")
+        self.round_rectangle(32, 48, 416, 280, radius=25, fill="#74b9ff")
+        self.round_rectangle(60, 316, 384, 404, radius=25, fill="#b2bec3")
         circle_radius = 60
         if result == "player":
             self.game_canvas.create_oval(
