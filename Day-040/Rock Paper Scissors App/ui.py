@@ -1,4 +1,5 @@
 from tkinter import *
+
 from game import Game
 
 
@@ -109,7 +110,7 @@ class UserInterface:
             height=448,
             highlightthickness=0,
             borderwidth=0,
-            bg="orange",
+            bg="#485460",
         )
         self.game_canvas.grid(column=0, row=1, columnspan=3)
 
@@ -231,6 +232,27 @@ class UserInterface:
 
     def update_game_canvas(self, player_choice, computer_choice, result):
         self.game_canvas.delete("all")
+        circle_radius = 60
+        if result == "player":
+            self.game_canvas.create_oval(
+                112 - circle_radius,
+                130 - circle_radius,
+                112 + circle_radius,
+                130 + circle_radius,
+                outline="black",
+                fill="#c4e538",
+                width=3,
+            )
+        elif result == "computer":
+            self.game_canvas.create_oval(
+                336 - circle_radius,
+                130 - circle_radius,
+                336 + circle_radius,
+                130 + circle_radius,
+                outline="black",
+                fill="#c4e538",
+                width=3,
+            )
 
         player_image = self.choice_images[player_choice]
         self.game_canvas.create_image(112, 130, image=player_image, anchor=CENTER)
@@ -244,7 +266,7 @@ class UserInterface:
 
         self.game_canvas.create_text(
             112,
-            210,
+            230,
             font=("TkFixedFont", 14),
             text="Player\nChoice",
             justify="center",
@@ -253,7 +275,7 @@ class UserInterface:
 
         self.game_canvas.create_text(
             336,
-            210,
+            230,
             font=("TkFixedFont", 14),
             text="Computer\nChoice",
             justify="center",
@@ -271,7 +293,7 @@ class UserInterface:
 
         self.game_canvas.create_text(
             224,
-            320,
+            360,
             font=("TkFixedFont", 20),
             text=result_string,
             justify="center",
