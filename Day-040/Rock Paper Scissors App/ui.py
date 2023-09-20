@@ -54,22 +54,12 @@ class UserInterface:
             width=0,
         )
 
-        self.score_canvas.create_rectangle(
-            20,
-            16,
-            76,
-            48,
-            fill="white",
-            width=0,
+        self.round_rectangle(
+            20, 16, 76, 48, radius=10, canvas=self.score_canvas, fill="white"
         )
 
-        self.score_canvas.create_rectangle(
-            372,
-            16,
-            428,
-            48,
-            fill="white",
-            width=0,
+        self.round_rectangle(
+            372, 16, 428, 48, radius=10, canvas=self.score_canvas, fill="white"
         )
 
         self.score_canvas.create_text(
@@ -247,7 +237,10 @@ class UserInterface:
         self.update_game_canvas(player_choice, computer_choice, result)
         self.update_score_canvas()
 
-    def round_rectangle(self, x1, y1, x2, y2, radius=25, **kwargs):
+    def round_rectangle(self, x1, y1, x2, y2, radius=25, canvas=None, **kwargs):
+        if canvas is None:
+            canvas = self.game_canvas
+
         points = [
             x1 + radius,
             y1,
@@ -291,7 +284,7 @@ class UserInterface:
             y1,
         ]
 
-        return self.game_canvas.create_polygon(points, **kwargs, smooth=True)
+        return canvas.create_polygon(points, **kwargs, smooth=True)
 
     def update_game_canvas(self, player_choice, computer_choice, result):
         self.game_canvas.delete("all")
@@ -423,10 +416,10 @@ class UserInterface:
             fill="white",
             justify="center",
         )
-        
+
         self.rock_button.config(state=NORMAL)
         self.paper_button.config(state=NORMAL)
         self.scissors_button.config(state=NORMAL)
-        
+
         self.score_canvas.itemconfig(self.player_score_text, text="0")
         self.score_canvas.itemconfig(self.computer_score_text, text="0")
