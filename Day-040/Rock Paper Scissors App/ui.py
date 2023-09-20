@@ -233,14 +233,41 @@ class UserInterface:
         self.game_canvas.delete("all")
 
         player_image = self.choice_images[player_choice]
-        self.game_canvas.create_image(112, 160, image=player_image, anchor=CENTER)
+        self.game_canvas.create_image(112, 130, image=player_image, anchor=CENTER)
 
         computer_image = self.choice_images[computer_choice]
-        self.game_canvas.create_image(336, 160, image=computer_image, anchor=CENTER)
+        self.game_canvas.create_image(336, 130, image=computer_image, anchor=CENTER)
+
+        self.game_canvas.create_text(
+            112,
+            210,
+            font=("TkFixedFont", 14),
+            text="Player\nChoice",
+            justify="center",
+            fill="black",
+        )
+
+        self.game_canvas.create_text(
+            336,
+            210,
+            font=("TkFixedFont", 14),
+            text="Computer\nChoice",
+            justify="center",
+            fill="black",
+        )
 
         self.game_canvas.create_text(
             224,
-            320,
+            130,
+            font=("TkFixedFont", 18),
+            text="vs.",
+            justify="center",
+            fill="black",
+        )
+
+        self.game_canvas.create_text(
+            224,
+            330,
             font=("TkFixedFont", 20),
             text=f"Result: {result}",
             justify="center",
