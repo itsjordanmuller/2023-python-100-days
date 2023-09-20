@@ -21,6 +21,10 @@ class UserInterface:
         # https://www.flaticon.com/free-icons/scissors
         self.scissors_img = PhotoImage(file="./images/scissors.png").subsample(6, 6)
 
+        # Rock paper scissors icons created by Freepik - Flaticon
+        # https://www.flaticon.com/free-icons/rock-paper-scissors
+        self.game_img = PhotoImage(file="./images/rock-paper-scissors.png").subsample(2, 2)
+
         self.score_canvas = Canvas(
             self.window,
             width=448,
@@ -111,6 +115,17 @@ class UserInterface:
             highlightthickness=0,
             borderwidth=0,
             bg="#34495e",
+        )
+
+        self.game_canvas.create_image(224, 152, image=self.game_img, anchor=CENTER)
+
+        self.game_canvas.create_text(
+            224,
+            352,
+            font=("TkFixedFont", 28),
+            text="Click a\nButton Below!",
+            fill="white",
+            justify="center",
         )
         self.game_canvas.grid(column=0, row=1, columnspan=3)
 
