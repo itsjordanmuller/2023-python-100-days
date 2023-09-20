@@ -238,6 +238,10 @@ class UserInterface:
         computer_image = self.choice_images[computer_choice]
         self.game_canvas.create_image(336, 130, image=computer_image, anchor=CENTER)
 
+        result_string = self.generate_result_string(
+            player_choice, computer_choice, result
+        )
+
         self.game_canvas.create_text(
             112,
             210,
@@ -267,12 +271,26 @@ class UserInterface:
 
         self.game_canvas.create_text(
             224,
-            330,
+            320,
             font=("TkFixedFont", 20),
-            text=f"Result: {result}",
+            text=result_string,
             justify="center",
             fill="black",
         )
+
+    def generate_result_string(self, player_choice, computer_choice, result):
+        beats_relation = {"rock": "scissors", "scissors": "paper", "paper": "rock"}
+
+        if result == "player":
+            verb = "beats"
+            result_string = f"{player_choice.capitalize()} {verb} {computer_choice.capitalize()}\nPlayer Wins!"
+        elif result == "computer":
+            verb = "beaten by"
+            result_string = f"{player_choice.capitalize()} {verb} {computer_choice.capitalize()}\nComputer Wins!"
+        else:
+            result_string = f"It's a draw!\nBoth chose {player_choice.capitalize()}"
+
+        return result_string
 
     def update_score_canvas(self):
         player_score, computer_score = self.game.get_scores()
