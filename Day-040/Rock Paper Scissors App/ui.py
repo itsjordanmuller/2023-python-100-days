@@ -216,6 +216,12 @@ class UserInterface:
 
         self.button_canvas.grid(column=0, row=2, columnspan=3)
 
+        self.choice_images = {
+            "rock": self.rock_img,
+            "paper": self.paper_img,
+            "scissors": self.scissors_img,
+        }
+
         self.window.mainloop()
 
     def make_player_move(self, choice):
@@ -226,23 +232,11 @@ class UserInterface:
     def update_game_canvas(self, player_choice, computer_choice, result):
         self.game_canvas.delete("all")
 
-        self.game_canvas.create_text(
-            224,
-            128,
-            font=("TkFixedFont", 20),
-            text=f"Player: {player_choice}",
-            justify="center",
-            fill="black",
-        )
+        player_image = self.choice_images[player_choice]
+        self.game_canvas.create_image(112, 160, image=player_image, anchor=CENTER)
 
-        self.game_canvas.create_text(
-            224,
-            196,
-            font=("TkFixedFont", 20),
-            text=f"Computer: {computer_choice}",
-            justify="center",
-            fill="black",
-        )
+        computer_image = self.choice_images[computer_choice]
+        self.game_canvas.create_image(336, 160, image=computer_image, anchor=CENTER)
 
         self.game_canvas.create_text(
             224,
