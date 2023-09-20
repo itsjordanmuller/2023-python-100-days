@@ -398,6 +398,10 @@ class UserInterface:
             224, 186, font=("TkFixedFont", 36), text=f"{winner} Wins!", fill="white"
         )
 
+        self.rock_button.config(state=DISABLED)
+        self.paper_button.config(state=DISABLED)
+        self.scissors_button.config(state=DISABLED)
+
         replay_button = Button(
             self.game_canvas,
             text="Replay",
@@ -419,6 +423,10 @@ class UserInterface:
             fill="white",
             justify="center",
         )
-
+        
+        self.rock_button.config(state=NORMAL)
+        self.paper_button.config(state=NORMAL)
+        self.scissors_button.config(state=NORMAL)
+        
         self.score_canvas.itemconfig(self.player_score_text, text="0")
         self.score_canvas.itemconfig(self.computer_score_text, text="0")
