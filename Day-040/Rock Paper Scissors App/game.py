@@ -30,3 +30,7 @@ class Game:
 
     def get_scores(self):
         return self.player_score, self.computer_score
+
+    def reset(self):
+        self.player_score = 0
+        self.computer_score = 0

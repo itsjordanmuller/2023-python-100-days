@@ -23,7 +23,9 @@ class UserInterface:
 
         # Rock paper scissors icons created by Freepik - Flaticon
         # https://www.flaticon.com/free-icons/rock-paper-scissors
-        self.game_img = PhotoImage(file="./images/rock-paper-scissors.png").subsample(2, 2)
+        self.game_img = PhotoImage(file="./images/rock-paper-scissors.png").subsample(
+            2, 2
+        )
 
         self.score_canvas = Canvas(
             self.window,
@@ -383,3 +385,40 @@ class UserInterface:
         player_score, computer_score = self.game.get_scores()
         self.score_canvas.itemconfig(self.player_score_text, text=str(player_score))
         self.score_canvas.itemconfig(self.computer_score_text, text=str(computer_score))
+
+        if player_score == 5:
+            self.game_over("Player")
+        elif computer_score == 5:
+            self.game_over("Computer")
+
+    def game_over(self, winner):
+        self.game_canvas.delete("all")
+
+        self.game_canvas.create_text(
+            224, 186, font=("TkFixedFont", 36), text=f"{winner} Wins!", fill="white"
+        )
+
+        replay_button = Button(
+            self.game_canvas,
+            text="Replay",
+            command=self.reset_game,
+            font=("TkFixedFont", 18),
+        )
+        self.game_canvas.create_window(224, 262, window=replay_button)
+
+    def reset_game(self):
+        self.game.reset()
+
+        self.game_canvas.delete("all")
+        self.game_canvas.create_image(224, 152, image=self.game_img, anchor=CENTER)
+        self.game_canvas.create_text(
+            224,
+            352,
+            font=("TkFixedFont", 28),
+            text="Click a\nButton Below!",
+            fill="white",
+            justify="center",
+        )
+
+        self.score_canvas.itemconfig(self.player_score_text, text="0")
+        self.score_canvas.itemconfig(self.computer_score_text, text="0")
