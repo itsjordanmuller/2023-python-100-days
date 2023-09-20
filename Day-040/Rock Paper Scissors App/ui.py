@@ -31,7 +31,7 @@ class UserInterface:
             height=64,
             highlightthickness=0,
             borderwidth=0,
-            bg="red",
+            bg="#74b9ff",
         )
 
         self.score_canvas.create_rectangle(
@@ -39,7 +39,7 @@ class UserInterface:
             0,
             96,
             64,
-            fill="black",
+            fill="#b2bec3",
             width=0,
         )
 
@@ -48,7 +48,7 @@ class UserInterface:
             0,
             448,
             64,
-            fill="black",
+            fill="#b2bec3",
             width=0,
         )
 
@@ -293,15 +293,17 @@ class UserInterface:
 
     def update_game_canvas(self, player_choice, computer_choice, result):
         self.game_canvas.delete("all")
-        self.round_rectangle(32, 48, 416, 280, radius=25, fill="#74b9ff")
-        self.round_rectangle(60, 316, 384, 404, radius=25, fill="#b2bec3")
+        self.round_rectangle(32, 32, 416, 260, radius=25, fill="#74b9ff")
+        self.round_rectangle(40, 296, 404, 424, radius=25, fill="#b2bec3")
+        self.round_rectangle(60, 316, 384, 404, radius=25, fill="white")
+
         circle_radius = 60
         if result == "player":
             self.game_canvas.create_oval(
                 112 - circle_radius,
-                130 - circle_radius,
+                114 - circle_radius,
                 112 + circle_radius,
-                130 + circle_radius,
+                114 + circle_radius,
                 outline="black",
                 fill="#c4e538",
                 width=3,
@@ -309,19 +311,19 @@ class UserInterface:
         elif result == "computer":
             self.game_canvas.create_oval(
                 336 - circle_radius,
-                130 - circle_radius,
+                114 - circle_radius,
                 336 + circle_radius,
-                130 + circle_radius,
+                114 + circle_radius,
                 outline="black",
                 fill="#c4e538",
                 width=3,
             )
 
         player_image = self.choice_images[player_choice]
-        self.game_canvas.create_image(112, 130, image=player_image, anchor=CENTER)
+        self.game_canvas.create_image(112, 114, image=player_image, anchor=CENTER)
 
         computer_image = self.choice_images[computer_choice]
-        self.game_canvas.create_image(336, 130, image=computer_image, anchor=CENTER)
+        self.game_canvas.create_image(336, 114, image=computer_image, anchor=CENTER)
 
         result_string = self.generate_result_string(
             player_choice, computer_choice, result
@@ -329,7 +331,7 @@ class UserInterface:
 
         self.game_canvas.create_text(
             112,
-            230,
+            214,
             font=("TkFixedFont", 14),
             text="Player\nChoice",
             justify="center",
@@ -338,7 +340,7 @@ class UserInterface:
 
         self.game_canvas.create_text(
             336,
-            230,
+            214,
             font=("TkFixedFont", 14),
             text="Computer\nChoice",
             justify="center",
@@ -347,7 +349,7 @@ class UserInterface:
 
         self.game_canvas.create_text(
             224,
-            130,
+            114,
             font=("TkFixedFont", 18),
             text="vs.",
             justify="center",
