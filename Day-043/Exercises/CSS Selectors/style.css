@@ -16,3 +16,7 @@ p {
 #id-selector-demo {
   color: green;
 }
+
+li[value="4"] {
+  color: blue;
+}
