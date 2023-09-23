@@ -17,3 +17,7 @@ h2#green {
 h2#yellow {
   color: yellow;
 }
+
+.color-title {
+  font-weight: normal;
+}
