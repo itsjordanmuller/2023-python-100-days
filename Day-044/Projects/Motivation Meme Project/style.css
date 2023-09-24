@@ -5,6 +5,13 @@ body {
   color: #fff;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+
 img {
   border: 5px solid #fff;
 }
