@@ -5,6 +5,10 @@ body {
   color: #fff;
 }
 
+img {
+  border: 5px solid #fff;
+}
+
 h1 {
   font-family: "Libre Baskerville", sans-serif;
 }
