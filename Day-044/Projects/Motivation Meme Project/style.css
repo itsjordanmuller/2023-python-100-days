@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 
+body {
+  background-color: #000;
+  color: #fff;
+}
+
 h1 {
   font-family: "Libre Baskerville", sans-serif;
 }
