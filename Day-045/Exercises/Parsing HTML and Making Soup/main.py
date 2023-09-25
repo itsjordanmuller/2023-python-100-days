@@ -22,3 +22,6 @@ for tag in all_anchor_tags:
 
 heading = soup.find(name="h1", id="name")
 print(heading)
+
+section_heading = soup.find(name="h3", class_="heading")
+print(section_heading)
