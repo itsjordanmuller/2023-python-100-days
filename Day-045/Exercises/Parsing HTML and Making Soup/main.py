@@ -14,4 +14,7 @@ soup = BeautifulSoup(content, "html.parser")
 
 # print(soup.a)
 
-print(soup.find_all(name="a"))
+all_anchor_tags = soup.find_all(name="a")
+
+for tag in all_anchor_tags:
+    print(tag.getText())
