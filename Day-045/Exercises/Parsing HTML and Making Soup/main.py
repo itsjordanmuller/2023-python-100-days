@@ -6,6 +6,10 @@ with open("website.html") as file:
 # print(content)
 
 soup = BeautifulSoup(content, "html.parser")
+
 # print(soup.title.name)
 # print(soup.title.string)
-print(soup.prettify())
+
+# print(soup.prettify())
+
+print(soup.a)
