@@ -12,4 +12,6 @@ soup = BeautifulSoup(content, "html.parser")
 
 # print(soup.prettify())
 
-print(soup.a)
+# print(soup.a)
+
+print(soup.find_all(name="a"))
