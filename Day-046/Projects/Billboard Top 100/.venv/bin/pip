@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/itsjordanmuller/repos/2023-python-100-days/Day-045/Projects/100 Movies You Must Watch/.venv/bin/python3" "$0" "$@"
+'''exec' "/home/itsjordanmuller/repos/2023-python-100-days/Day-046/Projects/Billboard Top 100/.venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
