@@ -3,6 +3,16 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
+from dotenv import load_dotenv
+
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
+
+load_dotenv()
+
+CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
+
 BASE_DIR = "./scraped_data/"
 
 if not os.path.exists(BASE_DIR):
@@ -72,3 +82,42 @@ save_scraped_data(date_string, songs_data, "json")
 
 print(songs_data)
 print(len(songs_data))
+
+sp = spotipy.Spotify(
+    auth_manager=SpotifyOAuth(
+        client_id=CLIENT_ID,
+        client_secret=CLIENT_SECRET,
+        redirect_uri="http://localhost:8080/callback",
+        scope="playlist-modify-private",
+    )
+)
+
+
+def search_track(song, artist):
+    query = f"{song} {artist}"
+    result = sp.search(query, type="track", limit=1)
+    tracks = result.get("tracks", {}).get("items", [])
+    return tracks[0].get("id") if tracks else None
+
+
+track_ids = []
+for song_data in songs_data:
+    track_id = search_track(song_data["song"], song_data["artist"])
+    if track_id:
+        track_ids.append(track_id)
+
+
+def create_playlist(user_id, playlist_name):
+    playlist = sp.user_playlist_create(user_id, playlist_name, public=False)
+    return playlist["id"]
+
+
+user = sp.current_user()
+playlist_id = create_playlist(user["id"], f"Billboard Top 100 - {date_string}")
+
+
+def add_tracks_to_playlist(playlist_id, track_ids):
+    sp.playlist_add_items(playlist_id, track_ids)
+
+
+add_tracks_to_playlist(playlist_id, track_ids)
