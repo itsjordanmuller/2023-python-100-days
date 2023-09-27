@@ -10,7 +10,7 @@ if not os.path.exists(DATA_DIR):
 
 instructions = """-----------------------------------
 Here are your options:
-1. Check prices of existing items
+1. View all items & check prices
 2. Add a new item to track
 3. Remove or modify an item
 4. Exit the program
@@ -34,7 +34,7 @@ def add_item():
 
     item_name = input("What is the name of this item?: ")
     link = input("What is the URL for this item on Amazon?: ")
-    desired_price = input("What price do you want this item to drop to?: ")
+    desired_price = float(input("What price do you want this item to drop to?: "))
 
     item_data = {"item": item_name, "link": link, "desired_price": desired_price}
 
@@ -42,6 +42,41 @@ def add_item():
     save_items(items)
 
     print(f"Item {item_name} added successfully!")
+
+
+def view_items():
+    items = load_items()
+
+    if not items:
+        print("No items to display.")
+        return
+
+    print("Items:")
+    for index, item in enumerate(items, start=1):
+        print(
+            f"{index}. {item['item']} - Desired price: ${item['desired_price']:.2f} - {item['link']}"
+        )
+
+    selection = int(
+        input(
+            "Enter the number of the item you want to check, or 0 to check all items: "
+        )
+    )
+
+    if selection == 0:
+        check_prices(items)
+    elif 0 < selection <= len(items):
+        check_prices([items[selection - 1]])
+    else:
+        print("Invalid input.")
+
+
+def check_prices(selected_items):
+    print("Checking prices for selected items...")
+    for item in selected_items:
+        print(item)
+    print("Price checking completed.")
+    input("Press Enter when you are ready to continue.")
 
 
 def exit_program():
@@ -56,7 +91,7 @@ while True:
     selection = int(input("To choose, enter a number (1-4): "))
 
     if selection == 1:
-        pass
+        view_items()
         # check_prices()
     elif selection == 2:
         add_item()
