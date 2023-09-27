@@ -1,4 +1,12 @@
+import os
 import sys
+import json
+
+DATA_DIR = "./data/"
+ITEMS_FILE = os.path.join(DATA_DIR, "items.json")
+
+if not os.path.exists(DATA_DIR):
+    os.mkdir(DATA_DIR)
 
 instructions = """Welcome to the Amazon Price Tracker
 -----------------------------------
@@ -10,11 +18,31 @@ Here are your options:
 -----------------------------------"""
 
 
+def load_items():
+    if os.path.exists(ITEMS_FILE):
+        with open(ITEMS_FILE, "r") as file:
+            return json.load(file)
+    return []
+
+
+def save_items(items):
+    with open(ITEMS_FILE, "w") as file:
+        json.dump(items, file, indent=2)
+
+
 def add_item():
-    item = input("What is the name of this item?: ")
+    items = load_items()
+
+    item_name = input("What is the name of this item?: ")
     link = input("What is the URL for this item on Amazon?: ")
     desired_price = input("What price do you want this item to drop to?: ")
-    print(item, link, desired_price)
+
+    item_data = {"item": item_name, "link": link, "desired_price": desired_price}
+
+    items.append(item_data)
+    save_items(items)
+
+    print(f"Item {item_name} added successfully!")
 
 
 def exit_program():
