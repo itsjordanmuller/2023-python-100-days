@@ -8,8 +8,7 @@ ITEMS_FILE = os.path.join(DATA_DIR, "items.json")
 if not os.path.exists(DATA_DIR):
     os.mkdir(DATA_DIR)
 
-instructions = """Welcome to the Amazon Price Tracker
------------------------------------
+instructions = """-----------------------------------
 Here are your options:
 1. Check prices of existing items
 2. Add a new item to track
@@ -50,18 +49,21 @@ def exit_program():
     sys.exit()
 
 
-print(instructions)
-selection = int(input("To choose, enter a number (1-4): "))
+print("Welcome to the Amazon Price Tracker!")
 
-if selection == 1:
-    pass
-    # check_prices()
-elif selection == 2:
-    add_item()
-elif selection == 3:
-    pass
-    # modify_item()
-elif selection == 4:
-    exit_program()
-else:
-    print("Invalid input, please pick a number between 1 and 4.")
+while True:
+    print(instructions)
+    selection = int(input("To choose, enter a number (1-4): "))
+
+    if selection == 1:
+        pass
+        # check_prices()
+    elif selection == 2:
+        add_item()
+    elif selection == 3:
+        pass
+        # modify_item()
+    elif selection == 4:
+        exit_program()
+    else:
+        print("Invalid input, please pick a number between 1 and 4.")
