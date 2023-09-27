@@ -1,4 +1,13 @@
-instructions = "Welcome to the Amazon Price Tracker\n-----------------------------------\nHere are your options:\n1. Check prices of existing items\n2. Add a new item to track\n3. Remove or modify an item\n4. Exit the program\n-----------------------------------"
+import sys
+
+instructions = """Welcome to the Amazon Price Tracker
+-----------------------------------
+Here are your options:
+1. Check prices of existing items
+2. Add a new item to track
+3. Remove or modify an item
+4. Exit the program
+-----------------------------------"""
 
 
 def add_item():
@@ -6,6 +15,11 @@ def add_item():
     link = input("What is the URL for this item on Amazon?: ")
     desired_price = input("What price do you want this item to drop to?: ")
     print(item, link, desired_price)
+
+
+def exit_program():
+    print("Thank you for using the Amazon Price Tracker. Goodbye!")
+    sys.exit()
 
 
 print(instructions)
@@ -20,5 +34,4 @@ elif selection == 3:
     pass
     # modify_item()
 else:
-    pass
-    # exit_program()
+    exit_program()
