@@ -80,8 +80,9 @@ for song, artist in zip(all_songs, all_artists):
 
 save_scraped_data(date_string, songs_data, "json")
 
-print(songs_data)
-print(len(songs_data))
+# print(songs_data)
+# print(len(songs_data))
+print("Searching for Songs, Please Wait...")
 
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
@@ -112,12 +113,17 @@ def create_playlist(user_id, playlist_name):
     return playlist["id"]
 
 
-user = sp.current_user()
-playlist_id = create_playlist(user["id"], f"Billboard Top 100 - {date_string}")
+user_confirmation = input(
+    "Would you like to create the playlist on Spotify? (yes/no): "
+)
 
+if user_confirmation.lower() == "yes":
+    user = sp.current_user()
+    playlist_id = create_playlist(user["id"], f"Billboard Top 100 - {date_string}")
 
-def add_tracks_to_playlist(playlist_id, track_ids):
-    sp.playlist_add_items(playlist_id, track_ids)
+    def add_tracks_to_playlist(playlist_id, track_ids):
+        sp.playlist_add_items(playlist_id, track_ids)
 
-
-add_tracks_to_playlist(playlist_id, track_ids)
+    add_tracks_to_playlist(playlist_id, track_ids)
+else:
+    print("Playlist creation aborted.")
