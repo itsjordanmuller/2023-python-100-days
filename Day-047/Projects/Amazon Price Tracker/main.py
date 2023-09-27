@@ -12,7 +12,7 @@ instructions = """-----------------------------------
 Here are your options:
 1. View all items & check prices
 2. Add a new item to track
-3. Remove or modify an item
+3. Modify or remove an item
 4. Exit the program
 -----------------------------------"""
 
@@ -79,6 +79,81 @@ def check_prices(selected_items):
     input("Press Enter when you are ready to continue.")
 
 
+def modify_item():
+    items = load_items()
+
+    if not items:
+        print("No items to modify.")
+        return
+
+    print("Items:")
+    for index, item in enumerate(items, start=1):
+        print(
+            f"{index}. {item['item']} - Desired price: ${item['desired_price']:.2f} - {item['link']}"
+        )
+
+    selection = int(input("Enter the number of the item you want to modify: "))
+
+    if 0 < selection <= len(items):
+        selected_item = items[selection - 1]
+
+        action = input(
+            f"Do you want to modify or delete {selected_item['item']}? (modify/delete): "
+        ).lower()
+
+        if action == "modify":
+            print("What do you want to modify?")
+            print("1. Name")
+            print("2. Link")
+            print("3. Desired price")
+            print("4. All")
+
+            choice = int(input("Enter your choice (1-4): "))
+
+            if choice == 1:
+                selected_item["item"] = input("Enter the new name: ")
+            elif choice == 2:
+                selected_item["link"] = input("Enter the new link: ")
+            elif choice == 3:
+                selected_item["desired_price"] = float(
+                    input("Enter the new desired price: ")
+                )
+            elif choice == 4:
+                selected_item["item"] = input("Enter the new name: ")
+                selected_item["link"] = input("Enter the new link: ")
+                selected_item["desired_price"] = float(
+                    input("Enter the new desired price: ")
+                )
+            else:
+                print("Invalid choice.")
+                return
+
+            print(f"Item {selected_item['item']} updated successfully!")
+
+        elif action == "delete":
+            confirm = input(
+                f"Are you sure you want to delete {selected_item['item']}? (yes/no): "
+            ).lower()
+            if confirm == "yes":
+                items.remove(selected_item)
+                print(f"Item {selected_item['item']} deleted successfully!")
+            elif confirm == "no":
+                print("Operation cancelled.")
+                return
+            else:
+                print("Invalid choice.")
+                return
+        else:
+            print("Invalid action.")
+            return
+
+        save_items(items)
+
+    else:
+        print("Invalid selection.")
+        return
+
+
 def exit_program():
     print("Thank you for using the Amazon Price Tracker. Goodbye!")
     sys.exit()
@@ -96,8 +171,7 @@ while True:
     elif selection == 2:
         add_item()
     elif selection == 3:
-        pass
-        # modify_item()
+        modify_item()
     elif selection == 4:
         exit_program()
     else:
