@@ -33,5 +33,7 @@ elif selection == 2:
 elif selection == 3:
     pass
     # modify_item()
-else:
+elif selection == 4:
     exit_program()
+else:
+    print("Invalid input, please pick a number between 1 and 4.")
