@@ -5,7 +5,7 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("detach", True)
 
 driver = webdriver.Chrome(options=chrome_options)
-driver.get("https://www.google.com/")
+driver.get("https://store.google.com/us/product/pixel_buds_pro?hl=en-US")
 
 # Close a Tab
 # driver.close()
