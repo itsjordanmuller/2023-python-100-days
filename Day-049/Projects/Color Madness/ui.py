@@ -19,10 +19,18 @@ class UserInterface:
 
         self.title_canvas.create_text(
             540,
-            50,
+            30,
             text="COLOR MADNESS",
             fill="black",
             font=("TkFixedFont", 36, "bold"),
+        )
+
+        self.title_canvas.create_text(
+            540,
+            75,
+            text="Select Which Color Best Describes the Color in the Circle",
+            fill="black",
+            font=("TkFixedFont", 18, "bold"),
         )
 
         self.game_canvas = Canvas(
