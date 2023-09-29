@@ -42,7 +42,7 @@ class UserInterface:
 
         self.draw_circle(475, "#525252")
         self.draw_circle(450, "#fff")
-        self.draw_circle(400, "blue")
+        self.draw_circle(400, get_random_color())
 
         self.control_canvas = Canvas(
             self.window, width=1080, height=100, bg="#e5e5e5", highlightthickness=0
@@ -88,3 +88,10 @@ class UserInterface:
         y2 = y1 + size
 
         self.game_canvas.create_oval(x1, y1, x2, y2, fill=color, outline=color)
+
+
+def get_random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return "#{:02x}{:02x}{:02x}".format(r, g, b)
