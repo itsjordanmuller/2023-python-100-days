@@ -10,20 +10,24 @@ driver.get("https://orteil.dashnet.org/experiments/cookie/")
 
 cookie = driver.find_element(By.ID, "cookie")
 money = 0
-goal = 100
+# goal = 100
 
-milliseconds_between_clicks = 10
+milliseconds_between_clicks = 1
 
 while True:
     cookie.click()
 
     time.sleep(milliseconds_between_clicks / 1000)
 
+    store_items = driver.find_elements(By.CSS_SELECTOR, "#store div:not(.grayed)")
+    for item in store_items:
+        try:
+            item.click()
+        except Exception as e:
+            print(f"Could not click the item: {e}")
+            pass
+
     money_element = driver.find_element(By.CSS_SELECTOR, "div#money")
     money = float(money_element.text.replace(",", "").split()[0])
-
-    if money >= (goal - 1):
-        print("Money reached 100 or more. Stopping the clicks.")
-        break
 
 print(f"Final Money: {money}")
