@@ -119,7 +119,7 @@ class UserInterface:
         self.save_color_data(color_data)
         self.color_counter += 1
 
-        if self.color_counter % 5 == 0 and color_data:
+        if self.color_counter % 2 == 0 and color_data:
             old_colors = list(color_data.keys())
             next_color = random.choice(old_colors)
         else:
