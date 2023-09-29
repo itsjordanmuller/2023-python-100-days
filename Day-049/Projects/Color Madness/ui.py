@@ -42,6 +42,33 @@ class UserInterface:
         self.draw_circle(550, "#fff")
         self.draw_circle(500, get_random_color())
 
+        initial_color = self.game_canvas.itemcget(self.circle, "fill")
+        closest_colors = sorted(
+            color_dict.values(), key=lambda x: self.color_distance(x, initial_color)
+        )[:2]
+
+        self.left_suggestive_button = Button(
+            self.window,
+            bg=closest_colors[0],
+            text="",
+            font=("TkFixedFont", 16, "bold"),
+            borderwidth=0,
+            highlightthickness=0,
+            width=5,
+        )
+        self.left_suggestive_button.grid(column=0, row=1, sticky=NSEW)
+
+        self.right_suggestive_button = Button(
+            self.window,
+            bg=closest_colors[1],
+            text="",
+            font=("TkFixedFont", 16, "bold"),
+            borderwidth=0,
+            highlightthickness=0,
+            width=5,
+        )
+        self.right_suggestive_button.grid(column=10, row=1, sticky=NSEW)
+
         self.control_canvas = Canvas(
             self.window, width=1080, height=100, bg="#e5e5e5", highlightthickness=0
         )
@@ -98,6 +125,12 @@ class UserInterface:
         else:
             next_color = get_random_color()
 
+        closest_colors = sorted(
+            color_dict.values(), key=lambda x: self.color_distance(x, next_color)
+        )[:2]
+
+        self.update_suggestive_buttons(closest_colors)
+
         self.game_canvas.itemconfig(self.circle, fill=next_color)
 
     def load_color_data(self):
@@ -122,4 +155,25 @@ class UserInterface:
 
         self.circle = self.game_canvas.create_oval(
             x1, y1, x2, y2, fill=color, outline=color
+        )
+
+    def color_distance(self, color1, color2):
+        r1, g1, b1 = int(color1[1:3], 16), int(color1[3:5], 16), int(color1[5:7], 16)
+        r2, g2, b2 = int(color2[1:3], 16), int(color2[3:5], 16), int(color2[5:7], 16)
+
+        return ((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2) ** 0.5
+
+    def update_suggestive_buttons(self, colors):
+        self.left_suggestive_button.config(
+            bg=colors[0],
+            command=lambda: self.log_color_choice(self.get_color_name(colors[0])),
+        )
+        self.right_suggestive_button.config(
+            bg=colors[1],
+            command=lambda: self.log_color_choice(self.get_color_name(colors[1])),
+        )
+
+    def get_color_name(self, hex_color):
+        return next(
+            (name for name, hex in color_dict.items() if hex == hex_color), "Unknown"
         )
