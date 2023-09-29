@@ -22,6 +22,12 @@ maintainer_texts = [
     maintainer.text for maintainer in maintainers[: len(maintainers) // 2]
 ]
 
+copy_btn = driver.find_element(
+    By.CSS_SELECTOR, ".package-header__pip-instructions button"
+)
+
+copy_btn.click()
+
 print(f"NAME\t{package_name.text}")
 print(f"CMD\t{pip_install_cmd.text}")
 print(f"DATE\t{release_date.text}")
