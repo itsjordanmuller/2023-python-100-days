@@ -1,6 +1,7 @@
 from tkinter import *
 from colors import color_list, get_random_color
 import json
+import random
 
 
 class UserInterface:
@@ -8,6 +9,8 @@ class UserInterface:
         self.window = Tk()
         self.window.title("Color Madness")
         self.window.config(width=900, height=900)
+
+        self.color_counter = 0
 
         self.title_canvas = Canvas(
             self.window, width=1080, height=100, bg="#e5e5e5", highlightthickness=0
@@ -79,8 +82,15 @@ class UserInterface:
             color_data[current_color][color] = 1
 
         self.save_color_data(color_data)
+        self.color_counter += 1
 
-        self.game_canvas.itemconfig(self.circle, fill=get_random_color())
+        if self.color_counter % 5 == 0 and color_data:
+            old_colors = list(color_data.keys())
+            next_color = random.choice(old_colors)
+        else:
+            next_color = get_random_color()
+
+        self.game_canvas.itemconfig(self.circle, fill=next_color)
 
     def load_color_data(self):
         try:
