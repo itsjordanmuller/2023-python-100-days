@@ -9,9 +9,11 @@ driver.get("https://pypi.org/project/selenium/")
 
 pip_install_cmd = driver.find_element(By.CSS_SELECTOR, "span#pip-command")
 package_desc = driver.find_element(By.CSS_SELECTOR, "section#introduction p")
+release_date = driver.find_element(By.CSS_SELECTOR, ".package-header__date")
 
-print(pip_install_cmd.text)
-print(package_desc.text)
+print(f"CMD\t{pip_install_cmd.text}")
+print(f"DESC\t{package_desc.text}")
+print(f"DATE\t{release_date.text}")
 
 # Close a Tab
 # driver.close()
