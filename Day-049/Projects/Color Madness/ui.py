@@ -1,5 +1,6 @@
 from tkinter import *
 from colors import color_list, get_random_color
+import json
 
 
 class UserInterface:
@@ -46,6 +47,7 @@ class UserInterface:
                 borderwidth=0,
                 highlightthickness=0,
                 width=5,
+                command=lambda c=color: self.log_color_choice(c),
             )
             button.grid(column=index, row=2, sticky=NSEW)
 
@@ -64,6 +66,33 @@ class UserInterface:
     def black_on_leave(self, e):
         e.widget.config(fg="white")
 
+    def log_color_choice(self, color):
+        color_data = self.load_color_data()
+        current_color = self.game_canvas.itemcget(self.circle, "fill")
+
+        if current_color not in color_data:
+            color_data[current_color] = {}
+
+        if color in color_data[current_color]:
+            color_data[current_color][color] += 1
+        else:
+            color_data[current_color][color] = 1
+
+        self.save_color_data(color_data)
+
+        self.game_canvas.itemconfig(self.circle, fill=get_random_color())
+
+    def load_color_data(self):
+        try:
+            with open("color_data.json", "r") as file:
+                return json.load(file)
+        except (FileNotFoundError, json.JSONDecodeError):
+            return {}
+
+    def save_color_data(self, color_data):
+        with open("color_data.json", "w") as file:
+            json.dump(color_data, file, indent=2)
+
     def draw_circle(self, size, color):
         canvas_width = self.game_canvas.winfo_reqwidth()
         canvas_height = self.game_canvas.winfo_reqheight()
@@ -73,4 +102,6 @@ class UserInterface:
         x2 = x1 + size
         y2 = y1 + size
 
-        self.game_canvas.create_oval(x1, y1, x2, y2, fill=color, outline=color)
+        self.circle = self.game_canvas.create_oval(
+            x1, y1, x2, y2, fill=color, outline=color
+        )
