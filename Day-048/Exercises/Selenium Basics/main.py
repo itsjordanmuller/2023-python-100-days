@@ -14,11 +14,19 @@ package_name = driver.find_element(By.CSS_SELECTOR, ".package-header__name")
 pip_install_cmd = driver.find_element(By.CSS_SELECTOR, "#pip-command")
 release_date = driver.find_element(By.CSS_SELECTOR, ".package-header__date")
 package_desc = driver.find_element(By.CSS_SELECTOR, ".package-description__summary")
+maintainers = driver.find_elements(
+    By.CSS_SELECTOR, "span.sidebar-section__user-gravatar-text"
+)
+
+maintainer_texts = [
+    maintainer.text for maintainer in maintainers[: len(maintainers) // 2]
+]
 
 print(f"NAME\t{package_name.text}")
 print(f"CMD\t{pip_install_cmd.text}")
 print(f"DATE\t{release_date.text}")
 print(f"DESC\t{package_desc.text}")
+print(f"PPL\t{', '.join(maintainer_texts)}")
 
 # Close a Tab
 # driver.close()
