@@ -1,5 +1,5 @@
 from tkinter import *
-from colors import color_list, get_random_color
+from colors import color_dict, get_random_color
 import json
 import random
 
@@ -22,7 +22,7 @@ class UserInterface:
             50,
             text="COLOR MADNESS",
             fill="black",
-            font=("TkFixedFont", 30, "bold"),
+            font=("TkFixedFont", 36, "bold"),
         )
 
         self.game_canvas = Canvas(
@@ -30,9 +30,9 @@ class UserInterface:
         )
         self.game_canvas.grid(column=0, row=1, columnspan=11)
 
-        self.draw_circle(475, "#525252")
-        self.draw_circle(450, "#fff")
-        self.draw_circle(400, get_random_color())
+        self.draw_circle(575, "#525252")
+        self.draw_circle(550, "#fff")
+        self.draw_circle(500, get_random_color())
 
         self.control_canvas = Canvas(
             self.window, width=1080, height=100, bg="#e5e5e5", highlightthickness=0
@@ -41,20 +41,20 @@ class UserInterface:
 
         self.color_canvases = []
 
-        for index, color in enumerate(color_list):
+        for index, (color_name, hex_code) in enumerate(color_dict.items()):
             button = Button(
                 self.window,
-                bg=color,
-                text=color,
+                bg=hex_code,
+                text=color_name,
                 font=("TkFixedFont", 16, "bold"),
                 borderwidth=0,
                 highlightthickness=0,
                 width=5,
-                command=lambda c=color: self.log_color_choice(c),
+                command=lambda c=color_name: self.log_color_choice(c),
             )
             button.grid(column=index, row=2, sticky=NSEW)
 
-            if color == "Black":
+            if color_name == "Black":
                 button.config(fg="white")
                 button.bind("<Enter>", self.black_on_enter)
                 button.bind("<Leave>", self.black_on_leave)

@@ -1,18 +1,18 @@
 import random
 
-color_list = [
-    "White",
-    "Pink",
-    "Red",
-    "Brown",
-    "Orange",
-    "Yellow",
-    "Green",
-    "Blue",
-    "Purple",
-    "Grey",
-    "Black",
-]
+color_dict = {
+    "White": "#FFFFFF",
+    "Pink": "#FFC0CB",
+    "Red": "#FF0000",
+    "Brown": "#7B3F00",
+    "Orange": "#FFA500",
+    "Yellow": "#FFFF00",
+    "Green": "#228B22",
+    "Blue": "#0096FF",
+    "Purple": "#800080",
+    "Grey": "#808080",
+    "Black": "#000000",
+}
 
 
 def get_random_color():
