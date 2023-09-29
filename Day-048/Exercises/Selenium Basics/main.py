@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("detach", True)
@@ -27,6 +28,10 @@ copy_btn = driver.find_element(
 )
 
 copy_btn.click()
+
+search = driver.find_element(By.CSS_SELECTOR, "input#search")
+search.send_keys({package_name.text})
+search.send_keys(Keys.ENTER)
 
 print(f"NAME\t{package_name.text}")
 print(f"CMD\t{pip_install_cmd.text}")
