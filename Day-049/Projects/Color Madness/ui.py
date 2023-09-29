@@ -8,10 +8,24 @@ class UserInterface:
         self.window.title("Color Madness")
         self.window.config(width=900, height=900)
 
+        colors = [
+            "White",
+            "Pink",
+            "Red",
+            "Brown",
+            "Orange",
+            "Yellow",
+            "Green",
+            "Blue",
+            "Purple",
+            "Grey",
+            "Black",
+        ]
+
         self.title_canvas = Canvas(
             self.window, width=1080, height=100, bg="#e5e5e5", highlightthickness=0
         )
-        self.title_canvas.grid(column=0, row=0)
+        self.title_canvas.grid(column=0, row=0, columnspan=11)
 
         self.title_canvas.create_text(
             540,
@@ -22,20 +36,47 @@ class UserInterface:
         )
 
         self.game_canvas = Canvas(
-            self.window, width=1080, height=600, bg="#d4d4d4", highlightthickness=0
+            self.window, width=1080, height=700, bg="#d4d4d4", highlightthickness=0
         )
-        self.game_canvas.grid(column=0, row=1)
+        self.game_canvas.grid(column=0, row=1, columnspan=11)
 
         self.draw_circle(475, "#525252")
         self.draw_circle(450, "#fff")
         self.draw_circle(400, "blue")
 
         self.control_canvas = Canvas(
-            self.window, width=1080, height=200, bg="#e5e5e5", highlightthickness=0
+            self.window, width=1080, height=100, bg="#e5e5e5", highlightthickness=0
         )
-        self.control_canvas.grid(column=0, row=2)
+        self.control_canvas.grid(column=0, row=2, columnspan=11)
+
+        self.color_canvases = []
+
+        for index, color in enumerate(colors):
+            button = Button(
+                self.window,
+                bg=color,
+                text=color,
+                font=("TkFixedFont", 16, "bold"),
+                borderwidth=0,
+                highlightthickness=0,
+                width=5,
+            )
+            button.grid(column=index, row=2, sticky=NSEW)
+
+            if color == "Black":
+                button.config(fg="white")
+                button.bind("<Enter>", self.black_on_enter)
+                button.bind("<Leave>", self.black_on_leave)
+
+            self.color_canvases.append(button)
 
         self.window.mainloop()
+
+    def black_on_enter(self, e):
+        e.widget.config(fg="black")
+
+    def black_on_leave(self, e):
+        e.widget.config(fg="white")
 
     def draw_circle(self, size, color):
         canvas_width = self.game_canvas.winfo_reqwidth()
