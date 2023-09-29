@@ -1,5 +1,5 @@
 from tkinter import *
-import random
+from colors import color_list, get_random_color
 
 
 class UserInterface:
@@ -7,20 +7,6 @@ class UserInterface:
         self.window = Tk()
         self.window.title("Color Madness")
         self.window.config(width=900, height=900)
-
-        colors = [
-            "White",
-            "Pink",
-            "Red",
-            "Brown",
-            "Orange",
-            "Yellow",
-            "Green",
-            "Blue",
-            "Purple",
-            "Grey",
-            "Black",
-        ]
 
         self.title_canvas = Canvas(
             self.window, width=1080, height=100, bg="#e5e5e5", highlightthickness=0
@@ -51,7 +37,7 @@ class UserInterface:
 
         self.color_canvases = []
 
-        for index, color in enumerate(colors):
+        for index, color in enumerate(color_list):
             button = Button(
                 self.window,
                 bg=color,
@@ -88,10 +74,3 @@ class UserInterface:
         y2 = y1 + size
 
         self.game_canvas.create_oval(x1, y1, x2, y2, fill=color, outline=color)
-
-
-def get_random_color():
-    r = random.randint(0, 255)
-    g = random.randint(0, 255)
-    b = random.randint(0, 255)
-    return "#{:02x}{:02x}{:02x}".format(r, g, b)
