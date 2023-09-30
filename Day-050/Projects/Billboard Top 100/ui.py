@@ -77,7 +77,7 @@ class UserInterface:
 
         self.search_button = Button(
             self.control_canvas,
-            text="Search",
+            text="Search Songs",
             command=self.search,
             bg="#E20A17",
             fg="white",
@@ -87,7 +87,7 @@ class UserInterface:
 
         self.another_button = Button(
             self.control_canvas,
-            text="Another Button",
+            text="Create Playlist",
             command=self.search,
             bg="green",
             fg="white",
