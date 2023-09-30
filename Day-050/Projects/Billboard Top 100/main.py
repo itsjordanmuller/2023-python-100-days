@@ -1,12 +1,13 @@
 import os
 import requests
 import json
-from bs4 import BeautifulSoup
-
-from dotenv import load_dotenv
-
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+from ui import UserInterface
+
+ui = UserInterface()
 
 load_dotenv()
 
