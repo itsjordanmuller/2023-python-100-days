@@ -27,11 +27,6 @@ class UserInterface:
             420, 50, text="Billboard Hot 100", font=("TkFixedFont", 40, "bold")
         )
 
-        self.date_canvas = Canvas(
-            self.window, height=400, width=350, bg="#FFFFFF", highlightthickness=0
-        )
-        self.date_canvas.grid(column=1, row=1)
-
         self.calendar_canvas = Canvas(
             self.window, height=400, width=350, bg="#0082D6", highlightthickness=0
         )
@@ -69,6 +64,47 @@ class UserInterface:
 
         self.calendar.bind("<<CalendarSelected>>", self.on_date_selected)
 
+        self.control_canvas = Canvas(
+            self.window, height=400, width=350, bg="#FFFFFF", highlightthickness=0
+        )
+        self.control_canvas.grid(column=1, row=1)
+        self.control_canvas.grid_propagate(False)
+
+        for i in range(2):
+            self.control_canvas.grid_rowconfigure(i, weight=1)
+
+        self.control_canvas.grid_columnconfigure(0, weight=1)
+
+        self.search_button = Button(
+            self.control_canvas,
+            text="Search",
+            command=self.search,
+            bg="#E20A17",
+            fg="white",
+            font=("TkFixedFont", 16, "bold"),
+        )
+        self.search_button.grid(column=0, row=0)
+
+        self.another_button = Button(
+            self.control_canvas,
+            text="Another Button",
+            command=self.search,
+            bg="green",
+            fg="white",
+            font=("TkFixedFont", 16, "bold"),
+        )
+        self.another_button.grid(column=0, row=1)
+
+        # self.yet_another_button = Button(
+        #     self.control_canvas,
+        #     text="Another Button",
+        #     command=self.search,
+        #     bg="green",
+        #     fg="white",
+        #     font=("TkFixedFont", 16, "bold"),
+        # )
+        # self.yet_another_button.grid(column=0, row=2)
+
         self.window.mainloop()
 
     def on_date_selected(self, event):
@@ -77,3 +113,7 @@ class UserInterface:
     def update_selected_date_label(self):
         selected_date = self.calendar.get_date()
         self.selected_date_label.config(text=f"{selected_date}")
+
+    def search(self):
+        selected_date = self.calendar.get_date()
+        print("Searching for Songs, Please Wait...")
