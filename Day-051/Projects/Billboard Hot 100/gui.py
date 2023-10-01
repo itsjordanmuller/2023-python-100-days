@@ -15,4 +15,16 @@ class GUI:
         self.year_entry = Entry()
         self.year_entry.grid(column=1, row=1)
 
+        self.month_label = Label(text="Month: ")
+        self.month_label.grid(column=0, row=2)
+
+        self.month_entry = Entry()
+        self.month_entry.grid(column=1, row=2)
+
+        self.day_label = Label(text="Day: ")
+        self.day_label.grid(column=0, row=3)
+
+        self.day_entry = Entry()
+        self.day_entry.grid(column=1, row=3)
+
         self.window.mainloop()
