@@ -1,5 +1,8 @@
+import os
+import json
 from tkinter import *
-from scrape import Scraper
+from tkinter import messagebox
+from scrape import Scraper, BASE_DIR
 
 
 class GUI:
@@ -60,10 +63,26 @@ class GUI:
         self.date_select_status.config(text="Date Set", fg="green")
 
     def search_songs(self):
-        self.search_songs_status.config(text="Searching for songs...", fg="orange")
         year = self.year_entry.get()
         month = self.month_entry.get()
         day = self.day_entry.get()
+        file_path = os.path.join(BASE_DIR, f"{year}-{month}-{day}.json")
+
+        if os.path.exists(file_path):
+            use_existing_data = messagebox.askyesno(
+                "Data Exists",
+                "Data for this date already exists. Do you want to use the existing data?",
+            )
+            if use_existing_data:
+                with open(file_path, "r", encoding="utf-8") as file:
+                    self.songs_data = json.load(file)
+                self.search_songs_status.config(
+                    text=f"{len(self.songs_data)} songs in existing data",
+                    fg="green",
+                )
+                return
+
+        self.search_songs_status.config(text="Searching for songs...", fg="orange")
 
         self.scraper = Scraper(year, month, day)
         songs = self.scraper.scrape()
