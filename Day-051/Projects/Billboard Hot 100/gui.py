@@ -9,27 +9,28 @@ class GUI:
     def __init__(self):
         self.window = Tk()
         self.window.title("Billboard Hot 100 Playlist Creator")
+        self.window.config(padx=15, pady=15)
 
         self.title_label = Label(text="Billboard Hot 100")
-        self.title_label.grid(column=0, row=0, columnspan=2)
+        self.title_label.grid(column=0, row=0, columnspan=2, pady=15)
 
         self.year_label = Label(text="Year: ")
         self.year_label.grid(column=0, row=1)
 
         self.year_entry = Entry()
-        self.year_entry.grid(column=1, row=1)
+        self.year_entry.grid(column=1, row=1, pady=15)
 
         self.month_label = Label(text="Month: ")
         self.month_label.grid(column=0, row=2)
 
         self.month_entry = Entry()
-        self.month_entry.grid(column=1, row=2)
+        self.month_entry.grid(column=1, row=2, pady=15)
 
         self.day_label = Label(text="Day: ")
         self.day_label.grid(column=0, row=3)
 
         self.day_entry = Entry()
-        self.day_entry.grid(column=1, row=3)
+        self.day_entry.grid(column=1, row=3, pady=15)
 
         self.date_select_button = Button(text="Search Date", command=self.search_date)
         self.date_select_button.grid(column=0, row=4, columnspan=2)
