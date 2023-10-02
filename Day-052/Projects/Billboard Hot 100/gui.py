@@ -3,12 +3,16 @@ import json
 from tkinter import *
 from tkinter import messagebox
 from scrape import Scraper, BASE_DIR
+from tkcalendar import Calendar
+from datetime import datetime
 
 
 class GUI:
     def __init__(self):
         self.window = Tk()
         self.window.title("Billboard Hot 100 Playlist Creator")
+
+        self.today = datetime.today()
 
         self.header_canvas = Canvas(
             self.window, width=600, height=100, bg="#E20A17", highlightthickness=0
@@ -36,35 +40,64 @@ class GUI:
         self.date_canvas.grid(column=0, row=1)
         self.date_canvas.create_rectangle(25, 25, 275, 375, fill="#fff", width=0)
 
+        self.selected_date_label = Label(
+            self.date_canvas,
+            text=self.today.strftime("%m/%d/%Y"),
+            font=("TkFixedFont", 32, "bold"),
+        )
+        self.selected_date_label_window = self.date_canvas.create_window(
+            150, 65, window=self.selected_date_label
+        )
+
         self.year_label = Label(self.date_canvas, text="Year: ", width=7)
         self.year_label_window = self.date_canvas.create_window(
-            100, 100, window=self.year_label
+            100, 120, window=self.year_label
         )
 
         self.year_entry = Entry(self.date_canvas, width=10)
         self.year_entry_window = self.date_canvas.create_window(
-            185, 100, window=self.year_entry
+            185, 120, window=self.year_entry
         )
 
         self.month_label = Label(self.date_canvas, text="Month: ", width=7)
         self.month_label_window = self.date_canvas.create_window(
-            100, 130, window=self.month_label
+            100, 150, window=self.month_label
         )
 
         self.month_entry = Entry(self.date_canvas, width=10)
         self.month_entry_window = self.date_canvas.create_window(
-            185, 130, window=self.month_entry
+            185, 150, window=self.month_entry
         )
 
         self.day_label = Label(self.date_canvas, text="Day: ", width=7)
         self.day_label_window = self.date_canvas.create_window(
-            100, 160, window=self.day_label
+            100, 180, window=self.day_label
         )
 
         self.day_entry = Entry(self.date_canvas, width=10)
         self.day_entry_window = self.date_canvas.create_window(
-            185, 160, window=self.day_entry
+            185, 180, window=self.day_entry
         )
+
+        self.calendar = Calendar(
+            self.date_canvas,
+            selectmode="day",
+            year=self.today.year,
+            month=self.today.month,
+            day=self.today.day,
+        )
+        self.calendar_window = self.date_canvas.create_window(
+            150, 285, window=self.calendar
+        )
+
+        self.formatted_date = self.today.strftime("%m/%d/%Y")
+        self.selected_date_label.config(text=self.formatted_date)
+
+        self.year_entry.insert(0, self.today.year)
+        self.month_entry.insert(0, self.today.strftime("%m"))
+        self.day_entry.insert(0, self.today.strftime("%d"))
+
+        self.calendar.bind("<<CalendarSelected>>", self.update_date)
 
         self.button_canvas = Canvas(
             self.window, width=300, height=400, bg="#FFF100", highlightthickness=0
@@ -134,3 +167,38 @@ class GUI:
         self.create_playlist_status.config(text="Creating playlist...", fg="orange")
         playlist_url = self.scraper.create_playlist()
         self.create_playlist_status.config(text=f"Playlist Created", fg="green")
+
+    def update_date(self, event):
+        date = self.calendar.get_date()
+        month, day, year = map(int, date.split("/"))
+
+        pivot_year = 25
+
+        if year <= pivot_year:
+            year += 2000
+        else:
+            year += 1900
+
+        formatted_date = f"{month:02d}/{day:02d}/{year}"
+        self.selected_date_label.config(text=formatted_date)
+
+        self.year_entry.delete(0, END)
+        self.year_entry.insert(0, year)
+
+        self.month_entry.delete(0, END)
+        self.month_entry.insert(0, f"{month:02d}")
+
+        self.day_entry.delete(0, END)
+        self.day_entry.insert(0, f"{day:02d}")
+
+    def entry_updated(self, event):
+        try:
+            year = int(self.year_entry.get())
+            month = int(self.month_entry.get())
+            day = int(self.day_entry.get())
+            self.calendar.set_date(datetime(year, month, day))
+            self.selected_date_label.config(text=f"{month:02d}/{day:02d}/{year}")
+        except ValueError:
+            pass
+        except Exception as e:
+            pass
