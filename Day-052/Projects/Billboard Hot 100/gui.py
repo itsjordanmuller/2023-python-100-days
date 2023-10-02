@@ -9,10 +9,26 @@ class GUI:
     def __init__(self):
         self.window = Tk()
         self.window.title("Billboard Hot 100 Playlist Creator")
-        self.window.config(padx=15, pady=15)
 
-        self.title_label = Label(text="Billboard Hot 100")
-        self.title_label.grid(column=0, row=0, columnspan=2, pady=15)
+        self.header_canvas = Canvas(
+            self.window, width=600, height=100, bg="#E20A17", highlightthickness=0
+        )
+        self.header_canvas.grid(column=0, row=0, columnspan=2)
+
+        self.logo = PhotoImage(file="./images/BillboardHot100Logo.png").subsample(
+            x=4, y=4
+        )
+        self.header_canvas.create_image(10, 50, anchor=W, image=self.logo)
+        self.header_canvas.create_text(
+            590,
+            50,
+            anchor=E,
+            text="Billboard Hot 100",
+            font=("TkFixedFont", 36, "bold"),
+        )
+
+        # self.title_label = Label(text="Billboard Hot 100")
+        # self.title_label.grid(column=0, row=0, columnspan=2, pady=15)
 
         self.year_label = Label(text="Year: ")
         self.year_label.grid(column=0, row=1)
