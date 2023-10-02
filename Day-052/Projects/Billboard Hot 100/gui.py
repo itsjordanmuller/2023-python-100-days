@@ -99,6 +99,10 @@ class GUI:
 
         self.calendar.bind("<<CalendarSelected>>", self.update_date)
 
+        self.year_entry.bind("<KeyRelease>", self.entry_updated)
+        self.month_entry.bind("<KeyRelease>", self.entry_updated)
+        self.day_entry.bind("<KeyRelease>", self.entry_updated)
+
         self.button_canvas = Canvas(
             self.window, width=300, height=400, bg="#FFF100", highlightthickness=0
         )
@@ -140,28 +144,6 @@ class GUI:
         self.create_playlist_status_window = self.button_canvas.create_window(
             150, 345, window=self.create_playlist_status
         )
-
-        # self.date_select_button = Button(text="Search Date", command=self.search_date)
-        # self.date_select_button.grid(column=0, row=4, columnspan=2)
-
-        # self.date_select_status = Label(text="")
-        # self.date_select_status.grid(column=0, row=5, columnspan=2)
-
-        # self.search_songs_button = Button(
-        #     text="Search Songs", command=self.search_songs
-        # )
-        # self.search_songs_button.grid(column=0, row=6, columnspan=2)
-
-        # self.search_songs_status = Label(text="")
-        # self.search_songs_status.grid(column=0, row=7, columnspan=2)
-
-        # self.create_playlist_button = Button(
-        #     text="Create Playlist", command=self.create_playlist
-        # )
-        # self.create_playlist_button.grid(column=0, row=8, columnspan=2)
-
-        # self.create_playlist_status = Label(text="")
-        # self.create_playlist_status.grid(column=0, row=9, columnspan=2)
 
         self.window.mainloop()
 
@@ -229,12 +211,13 @@ class GUI:
 
     def entry_updated(self, event):
         try:
-            year = int(self.year_entry.get())
-            month = int(self.month_entry.get())
-            day = int(self.day_entry.get())
-            self.calendar.set_date(datetime(year, month, day))
+            year = int(self.year_entry.get(), 10)
+            month = int(self.month_entry.get(), 10)
+            day = int(self.day_entry.get(), 10)
+            new_date = datetime(year, month, day).date()
+            self.calendar.selection_set(new_date)
             self.selected_date_label.config(text=f"{month:02d}/{day:02d}/{year}")
-        except ValueError:
-            pass
+        except ValueError as ve:
+            print(f"ValueError: {ve}")
         except Exception as e:
-            pass
+            print(f"Exception: {e}")
