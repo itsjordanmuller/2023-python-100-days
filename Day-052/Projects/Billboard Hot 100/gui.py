@@ -30,45 +30,57 @@ class GUI:
         # self.title_label = Label(text="Billboard Hot 100")
         # self.title_label.grid(column=0, row=0, columnspan=2, pady=15)
 
-        self.year_label = Label(text="Year: ")
-        self.year_label.grid(column=0, row=1)
-
-        self.year_entry = Entry()
-        self.year_entry.grid(column=1, row=1, pady=15)
-
-        self.month_label = Label(text="Month: ")
-        self.month_label.grid(column=0, row=2)
-
-        self.month_entry = Entry()
-        self.month_entry.grid(column=1, row=2, pady=15)
-
-        self.day_label = Label(text="Day: ")
-        self.day_label.grid(column=0, row=3)
-
-        self.day_entry = Entry()
-        self.day_entry.grid(column=1, row=3, pady=15)
-
-        self.date_select_button = Button(text="Search Date", command=self.search_date)
-        self.date_select_button.grid(column=0, row=4, columnspan=2)
-
-        self.date_select_status = Label(text="")
-        self.date_select_status.grid(column=0, row=5, columnspan=2)
-
-        self.search_songs_button = Button(
-            text="Search Songs", command=self.search_songs
+        self.date_canvas = Canvas(
+            self.window, width=300, height=400, bg="#0082D6", highlightthickness=0
         )
-        self.search_songs_button.grid(column=0, row=6, columnspan=2)
+        self.date_canvas.grid(column=0, row=1)
+        self.date_canvas.create_rectangle(25, 25, 275, 375, fill="#fff", width=0)
 
-        self.search_songs_status = Label(text="")
-        self.search_songs_status.grid(column=0, row=7, columnspan=2)
-
-        self.create_playlist_button = Button(
-            text="Create Playlist", command=self.create_playlist
+        self.button_canvas = Canvas(
+            self.window, width=300, height=400, bg="#FFF100", highlightthickness=0
         )
-        self.create_playlist_button.grid(column=0, row=8, columnspan=2)
+        self.button_canvas.grid(column=1, row=1)
+        self.button_canvas.create_rectangle(25, 25, 275, 375, fill="#fff", width=0)
 
-        self.create_playlist_status = Label(text="")
-        self.create_playlist_status.grid(column=0, row=9, columnspan=2)
+        # self.year_label = Label(text="Year: ")
+        # self.year_label.grid(column=0, row=1)
+
+        # self.year_entry = Entry()
+        # self.year_entry.grid(column=1, row=1, pady=15)
+
+        # self.month_label = Label(text="Month: ")
+        # self.month_label.grid(column=0, row=2)
+
+        # self.month_entry = Entry()
+        # self.month_entry.grid(column=1, row=2, pady=15)
+
+        # self.day_label = Label(text="Day: ")
+        # self.day_label.grid(column=0, row=3)
+
+        # self.day_entry = Entry()
+        # self.day_entry.grid(column=1, row=3, pady=15)
+
+        # self.date_select_button = Button(text="Search Date", command=self.search_date)
+        # self.date_select_button.grid(column=0, row=4, columnspan=2)
+
+        # self.date_select_status = Label(text="")
+        # self.date_select_status.grid(column=0, row=5, columnspan=2)
+
+        # self.search_songs_button = Button(
+        #     text="Search Songs", command=self.search_songs
+        # )
+        # self.search_songs_button.grid(column=0, row=6, columnspan=2)
+
+        # self.search_songs_status = Label(text="")
+        # self.search_songs_status.grid(column=0, row=7, columnspan=2)
+
+        # self.create_playlist_button = Button(
+        #     text="Create Playlist", command=self.create_playlist
+        # )
+        # self.create_playlist_button.grid(column=0, row=8, columnspan=2)
+
+        # self.create_playlist_status = Label(text="")
+        # self.create_playlist_status.grid(column=0, row=9, columnspan=2)
 
         self.window.mainloop()
 
