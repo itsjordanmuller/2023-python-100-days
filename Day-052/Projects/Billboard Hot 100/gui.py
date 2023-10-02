@@ -36,29 +36,41 @@ class GUI:
         self.date_canvas.grid(column=0, row=1)
         self.date_canvas.create_rectangle(25, 25, 275, 375, fill="#fff", width=0)
 
+        self.year_label = Label(self.date_canvas, text="Year: ", width=7)
+        self.year_label_window = self.date_canvas.create_window(
+            100, 100, window=self.year_label
+        )
+
+        self.year_entry = Entry(self.date_canvas, width=10)
+        self.year_entry_window = self.date_canvas.create_window(
+            185, 100, window=self.year_entry
+        )
+
+        self.month_label = Label(self.date_canvas, text="Month: ", width=7)
+        self.month_label_window = self.date_canvas.create_window(
+            100, 130, window=self.month_label
+        )
+
+        self.month_entry = Entry(self.date_canvas, width=10)
+        self.month_entry_window = self.date_canvas.create_window(
+            185, 130, window=self.month_entry
+        )
+
+        self.day_label = Label(self.date_canvas, text="Day: ", width=7)
+        self.day_label_window = self.date_canvas.create_window(
+            100, 160, window=self.day_label
+        )
+
+        self.day_entry = Entry(self.date_canvas, width=10)
+        self.day_entry_window = self.date_canvas.create_window(
+            185, 160, window=self.day_entry
+        )
+
         self.button_canvas = Canvas(
             self.window, width=300, height=400, bg="#FFF100", highlightthickness=0
         )
         self.button_canvas.grid(column=1, row=1)
         self.button_canvas.create_rectangle(25, 25, 275, 375, fill="#fff", width=0)
-
-        # self.year_label = Label(text="Year: ")
-        # self.year_label.grid(column=0, row=1)
-
-        # self.year_entry = Entry()
-        # self.year_entry.grid(column=1, row=1, pady=15)
-
-        # self.month_label = Label(text="Month: ")
-        # self.month_label.grid(column=0, row=2)
-
-        # self.month_entry = Entry()
-        # self.month_entry.grid(column=1, row=2, pady=15)
-
-        # self.day_label = Label(text="Day: ")
-        # self.day_label.grid(column=0, row=3)
-
-        # self.day_entry = Entry()
-        # self.day_entry.grid(column=1, row=3, pady=15)
 
         # self.date_select_button = Button(text="Search Date", command=self.search_date)
         # self.date_select_button.grid(column=0, row=4, columnspan=2)
