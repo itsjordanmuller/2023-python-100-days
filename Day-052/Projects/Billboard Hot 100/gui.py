@@ -113,36 +113,36 @@ class GUI:
             self.button_canvas, text="Search Date", command=self.search_date
         )
         self.date_select_button_window = self.button_canvas.create_window(
-            150, 95, window=self.date_select_button
+            150, 85, window=self.date_select_button
         )
 
         self.date_select_status = Label(self.button_canvas, text="", bg="#fff")
         self.date_select_status_window = self.button_canvas.create_window(
-            150, 145, window=self.date_select_status
+            150, 115, window=self.date_select_status
         )
 
         self.search_songs_button = Button(
             self.button_canvas, text="Search Songs", command=self.search_songs
         )
         self.search_songs_button_window = self.button_canvas.create_window(
-            150, 195, window=self.search_songs_button
+            150, 185, window=self.search_songs_button
         )
 
         self.search_songs_status = Label(self.button_canvas, text="", bg="#fff")
         self.search_songs_status_window = self.button_canvas.create_window(
-            150, 245, window=self.search_songs_status
+            150, 215, window=self.search_songs_status
         )
 
         self.create_playlist_button = Button(
             self.button_canvas, text="Create Playlist", command=self.create_playlist
         )
         self.create_playlist_button_window = self.button_canvas.create_window(
-            150, 295, window=self.create_playlist_button
+            150, 285, window=self.create_playlist_button
         )
 
         self.create_playlist_status = Label(self.button_canvas, text="", bg="#fff")
         self.create_playlist_status_window = self.button_canvas.create_window(
-            150, 345, window=self.create_playlist_status
+            150, 315, window=self.create_playlist_status
         )
 
         self.window.mainloop()
