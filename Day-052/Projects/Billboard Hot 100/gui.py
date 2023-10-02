@@ -176,12 +176,15 @@ class GUI:
 
         self.search_songs_status.config(text="Searching for songs...", fg="orange")
 
-        self.scraper = Scraper(year, month, day)
-        songs = self.scraper.scrape()
-
         self.search_songs_status.config(text=f"{len(songs)} songs found", fg="green")
 
     def create_playlist(self):
+        year = self.year_entry.get()
+        month = self.month_entry.get()
+        day = self.day_entry.get()
+
+        self.scraper = Scraper(year, month, day)
+        songs = self.scraper.scrape()
         self.create_playlist_status.config(text="Creating playlist...", fg="orange")
         playlist_url = self.scraper.create_playlist()
         self.create_playlist_status.config(text=f"Playlist Created", fg="green")
