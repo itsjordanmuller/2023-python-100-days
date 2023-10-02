@@ -105,6 +105,42 @@ class GUI:
         self.button_canvas.grid(column=1, row=1)
         self.button_canvas.create_rectangle(25, 25, 275, 375, fill="#fff", width=0)
 
+        self.date_select_button = Button(
+            self.button_canvas, text="Search Date", command=self.search_date
+        )
+        self.date_select_button_window = self.button_canvas.create_window(
+            150, 95, window=self.date_select_button
+        )
+
+        self.date_select_status = Label(self.button_canvas, text="", bg="#fff")
+        self.date_select_status_window = self.button_canvas.create_window(
+            150, 145, window=self.date_select_status
+        )
+
+        self.search_songs_button = Button(
+            self.button_canvas, text="Search Songs", command=self.search_songs
+        )
+        self.search_songs_button_window = self.button_canvas.create_window(
+            150, 195, window=self.search_songs_button
+        )
+
+        self.search_songs_status = Label(self.button_canvas, text="", bg="#fff")
+        self.search_songs_status_window = self.button_canvas.create_window(
+            150, 245, window=self.search_songs_status
+        )
+
+        self.create_playlist_button = Button(
+            self.button_canvas, text="Create Playlist", command=self.create_playlist
+        )
+        self.create_playlist_button_window = self.button_canvas.create_window(
+            150, 295, window=self.create_playlist_button
+        )
+
+        self.create_playlist_status = Label(self.button_canvas, text="", bg="#fff")
+        self.create_playlist_status_window = self.button_canvas.create_window(
+            150, 345, window=self.create_playlist_status
+        )
+
         # self.date_select_button = Button(text="Search Date", command=self.search_date)
         # self.date_select_button.grid(column=0, row=4, columnspan=2)
 
