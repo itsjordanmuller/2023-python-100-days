@@ -103,5 +103,29 @@ class UI:
             self.window, width=200, height=200, bg="purple", highlightthickness=0
         )
         self.gender_canvas.grid(column=1, row=3)
+        self.gender_canvas.create_text(
+            100,
+            30,
+            text="GENDER",
+            font=("TkFixedFont", 12, "bold"),
+            fill="#353b48",
+        )
+        self.gender_canvas.create_rectangle(40, 55, 160, 130, fill="white")
+        self.gender_canvas.create_text(
+            100,
+            75,
+            text="I am",
+            font=("TkFixedFont", 12, "bold"),
+            fill="#353b48",
+        )
+        self.gender_canvas.create_text(
+            100,
+            100,
+            text="FEMALE",
+            font=("TkFixedFont", 18, "bold"),
+            fill="#353b48",
+        )
+        self.gender_canvas.create_oval(50, 140, 90, 180, fill="#718093")
+        self.gender_canvas.create_oval(150, 140, 110, 180, fill="#718093")
 
         self.window.mainloop()
