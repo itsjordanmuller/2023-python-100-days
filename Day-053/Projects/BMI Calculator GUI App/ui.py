@@ -7,9 +7,12 @@ class UI:
         self.window.title("BMI Calculator")
 
         self.header_canvas = Canvas(
-            self.window, width=400, height=100, bg="red", highlightthickness=0
+            self.window, width=400, height=50, bg="red", highlightthickness=0
         )
         self.header_canvas.grid(column=0, row=0, columnspan=2)
+        self.header_canvas.create_text(
+            200, 25, text="BMI CALCULATOR", font=("TkFixedFont", 18, "bold")
+        )
 
         self.result_canvas = Canvas(
             self.window, width=400, height=200, bg="orange", highlightthickness=0
