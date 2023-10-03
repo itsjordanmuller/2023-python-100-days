@@ -15,9 +15,27 @@ class UI:
         )
 
         self.result_canvas = Canvas(
-            self.window, width=400, height=200, bg="orange", highlightthickness=0
+            self.window, width=400, height=300, bg="orange", highlightthickness=0
         )
         self.result_canvas.grid(column=0, row=1, columnspan=2)
+        self.result_canvas.create_text(
+            200,
+            30,
+            text="BODY MASS INDEX",
+            font=("TkFixedFont", 12, "bold"),
+            fill="#353b48",
+        )
+        self.result_canvas.create_rectangle(50, 60, 350, 260, fill="white")
+        self.result_canvas.create_text(
+            200, 135, text="22.5", font=("TkFixedFont", 96, "bold")
+        )
+        self.result_canvas.create_text(
+            200,
+            220,
+            text="HEALTHY",
+            font=("TkFixedFont", 24, "bold"),
+            fill="#353b48",
+        )
 
         self.age_canvas = Canvas(
             self.window, width=200, height=200, bg="yellow", highlightthickness=0
