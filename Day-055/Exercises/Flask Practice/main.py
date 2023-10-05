@@ -13,5 +13,10 @@ def bye():
     return "<p>Bye!</p>"
 
 
+@app.route("/username/<name>")
+def greet(name):
+    return f"<p>Hello there {name}!</p>"
+
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
