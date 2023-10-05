@@ -3,6 +3,27 @@ from flask import Flask
 app = Flask(__name__)
 
 
+def make_bold(function):
+    def bold():
+        return f"<b>{function()}</b>"
+
+    return bold
+
+
+def make_emphasis(function):
+    def emphasis():
+        return f"<em>{function()}</em>"
+
+    return emphasis
+
+
+def make_underlined(function):
+    def underline():
+        return f"<u>{function()}</u>"
+
+    return underline
+
+
 @app.route("/")
 def hello_world():
     return (
@@ -13,6 +34,9 @@ def hello_world():
 
 
 @app.route("/bye")
+@make_bold
+@make_emphasis
+@make_underlined
 def bye():
     return "<p>Bye!</p>"
 
