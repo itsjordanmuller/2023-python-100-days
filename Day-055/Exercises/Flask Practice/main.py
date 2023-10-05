@@ -13,9 +13,9 @@ def bye():
     return "<p>Bye!</p>"
 
 
-@app.route("/username/<name>")
-def greet(name):
-    return f"<p>Hello there {name}!</p>"
+@app.route("/username/<name>/<int:age>")
+def greet(name, age):
+    return f"<p>Hello there {name}! You are {age} years old!</p>"
 
 
 if __name__ == "__main__":
