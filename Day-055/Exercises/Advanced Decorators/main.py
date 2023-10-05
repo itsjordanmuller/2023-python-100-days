@@ -42,5 +42,19 @@ class User:
         self.is_logged_in = False
 
 
+def is_authenticated_decorator(function):
+    def authenticate(*args, **kwargs):
+        if args[0].is_logged_in == True:
+            function(args[0])
+
+    return authenticate
+
+
+@is_authenticated_decorator
 def create_blog_post(user):
     print(f"This is {user.name}'s new blog post.")
+
+
+new_user = User("Jordan")
+new_user.is_logged_in = True
+create_blog_post(new_user)
