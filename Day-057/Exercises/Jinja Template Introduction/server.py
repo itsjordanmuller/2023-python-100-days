@@ -62,12 +62,13 @@ def guess(name):
     )
 
 
-@app.route("/blog")
-def blog():
+@app.route("/blog/<num>")
+def get_blog(num):
+    number = int(num)
     blog_url = "https://api.npoint.io/2f41322a9185c7a94a7a"
     response = requests.get(blog_url)
     all_posts = response.json()
-    return render_template("blog.html", posts=all_posts)
+    return render_template("blog.html", posts=all_posts, number=number)
 
 
 if __name__ == "__main__":

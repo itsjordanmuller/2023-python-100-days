@@ -6,6 +6,7 @@
     <title>My Website</title>
   </head>
   <body>
+    <a href="{{ url_for('get_blog', num=3) }}">Go to Blog</a>
     <h1>Hello world!</h1>
     <h2>{{ 5 * 6 }}</h2>
     <h3>Random Number: {{ num}}</h3>
