@@ -3,6 +3,7 @@ import random
 import datetime
 import requests
 import json
+import os
 
 app = Flask(__name__)
 
@@ -15,22 +16,49 @@ def hello_world():
     return render_template("index.html", num=random_number, year=year)
 
 
-@app.route("/guess/<name>")
-def guess(name):
-    nameData = name
+def get_data_from_api(name):
+    data = {}
 
-    ageResponse = requests.get(f"https://api.agify.io?name={nameData}")
+    ageResponse = requests.get(f"https://api.agify.io?name={name}")
     if ageResponse.status_code == 200:
         ageAPIData = ageResponse.json()
-        ageData = ageAPIData["age"]
+        data["age"] = ageAPIData["age"]
 
-    genderResponse = requests.get(f"https://api.genderize.io?name={nameData}")
+    genderResponse = requests.get(f"https://api.genderize.io?name={name}")
     if genderResponse.status_code == 200:
         genderAPIData = genderResponse.json()
-        genderData = genderAPIData["gender"]
+        data["gender"] = genderAPIData["gender"]
+
+    return data
+
+
+@app.route("/guess/<name>")
+def guess(name):
+    filename = "data.json"
+
+    if os.path.exists(filename):
+        with open(filename, "r") as file:
+            data = json.load(file)
+    else:
+        data = {}
+
+    if name in data:
+        print(f"Data for {name} found in JSON file")
+        ageData = data[name]["age"]
+        genderData = data[name]["gender"]
+    else:
+        print(f"Data for {name} not found in JSON file, making API call")
+        api_data = get_data_from_api(name)
+        ageData = api_data["age"]
+        genderData = api_data["gender"]
+
+        data[name] = api_data
+
+        with open(filename, "w") as file:
+            json.dump(data, file, indent=2, sort_keys=True)
 
     return render_template(
-        "demographics.html", name=nameData, gender=genderData, age=ageData
+        "demographics.html", name=name, gender=genderData, age=ageData
     )
 
 
