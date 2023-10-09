@@ -34,7 +34,8 @@ def contact_page():
 
 @app.route("/post/<num>")
 def post_page(num):
-    return render_template("post.html")
+    id = int(num) - 1
+    return render_template("post.html", posts=all_posts, postID=id)
 
 
 if __name__ == "__main__":
