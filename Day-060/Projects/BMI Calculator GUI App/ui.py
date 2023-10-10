@@ -59,6 +59,22 @@ class UI:
         self.weight_canvas.create_oval(
             150, 140, 110, 180, fill="#273c75", tags="increment_weight"
         )
+        self.weight_canvas.create_text(
+            70,
+            160,
+            text="-",
+            font=("TkFixedFont", 20, "bold"),
+            fill="white",
+            tags=("decrement_weight", "text"),
+        )
+        self.weight_canvas.create_text(
+            130,
+            160,
+            text="+",
+            font=("TkFixedFont", 20, "bold"),
+            fill="white",
+            tags=("increment_weight", "text"),
+        )
 
         self.height_canvas = Canvas(
             self.window, width=200, height=200, bg="#718093", highlightthickness=0
@@ -92,6 +108,38 @@ class UI:
         )
         self.height_canvas.create_oval(
             120, 55, 150, 85, fill="#273c75", tags="increment_inches"
+        )
+        self.height_decrement_feet_text = self.height_canvas.create_text(
+            65,
+            170,
+            text="-",
+            font=("TkFixedFont", 20, "bold"),
+            fill="white",
+            tags=("decrement_feet", "text"),
+        )
+        self.height_increment_feet_text = self.height_canvas.create_text(
+            65,
+            70,
+            text="+",
+            font=("TkFixedFont", 20, "bold"),
+            fill="white",
+            tags=("increment_feet", "text"),
+        )
+        self.height_decrement_inches_text = self.height_canvas.create_text(
+            135,
+            170,
+            text="-",
+            font=("TkFixedFont", 20, "bold"),
+            fill="white",
+            tags=("decrement_inches", "text"),
+        )
+        self.height_increment_inches_text = self.height_canvas.create_text(
+            135,
+            70,
+            text="+",
+            font=("TkFixedFont", 20, "bold"),
+            fill="white",
+            tags=("increment_inches", "text"),
         )
 
         self.weight_canvas.tag_bind(
@@ -213,11 +261,15 @@ class UI:
     def hover_enter(self, event, tag):
         if "weight" in tag:
             self.weight_canvas.itemconfig(tag, fill="#576574")
+            self.weight_canvas.itemconfig("text", fill="#fff")
         else:
             self.height_canvas.itemconfig(tag, fill="#576574")
+            self.height_canvas.itemconfig("text", fill="#fff")
 
     def hover_leave(self, event, tag):
         if "weight" in tag:
             self.weight_canvas.itemconfig(tag, fill="#273c75")
+            self.weight_canvas.itemconfig("text", fill="#fff")
         else:
             self.height_canvas.itemconfig(tag, fill="#273c75")
+            self.height_canvas.itemconfig("text", fill="#fff")
