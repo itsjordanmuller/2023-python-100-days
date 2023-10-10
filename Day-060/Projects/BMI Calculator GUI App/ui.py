@@ -87,8 +87,8 @@ class UI:
             font=("TkFixedFont", 12, "bold"),
             fill="#353b48",
         )
-        self.height_canvas.create_rectangle(40, 90, 90, 150, fill="#dcdde1", width=0)
-        self.height_canvas.create_rectangle(110, 90, 160, 150, fill="#dcdde1", width=0)
+        self.height_canvas.create_rectangle(35, 90, 95, 150, fill="#dcdde1", width=0)
+        self.height_canvas.create_rectangle(105, 90, 165, 150, fill="#dcdde1", width=0)
         self.feet_text = self.height_canvas.create_text(
             65, 112, text=str(self.height_feet), font=("TkFixedFont", 36, "bold")
         )
@@ -232,19 +232,31 @@ class UI:
         self.update_bmi()
 
     def increment_feet(self, event):
-        self.height_feet += 1
+        if self.height_feet < 10:
+            self.height_feet += 1
         self.update_bmi()
 
     def decrement_feet(self, event):
-        self.height_feet -= 1 if self.height_feet > 0 else 0
+        if self.height_feet > 1:
+            self.height_feet -= 1
+        elif self.height_feet == 0 and self.height_inches > 0:
+            self.height_inches -= 1
         self.update_bmi()
 
     def increment_inches(self, event):
         self.height_inches += 1
+        if self.height_inches >= 12:
+            self.height_inches = 0
+            if self.height_feet < 10:
+                self.height_feet += 1
         self.update_bmi()
 
     def decrement_inches(self, event):
-        self.height_inches -= 1 if self.height_inches > 0 else 0
+        if self.height_inches > 0:
+            self.height_inches -= 1
+        elif self.height_inches == 0 and self.height_feet > 0:
+            self.height_feet -= 1
+            self.height_inches = 11
         self.update_bmi()
 
     def update_bmi(self):
