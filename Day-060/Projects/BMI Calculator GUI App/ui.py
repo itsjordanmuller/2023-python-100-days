@@ -71,26 +71,48 @@ class UI:
             100, 90, text=str(self.weight), font=("TkFixedFont", 40, "bold")
         )
         self.weight_canvas.create_oval(
-            50, 140, 90, 180, fill="#273c75", tags="decrement_weight"
+            77, 150, 97, 170, fill="#273c75", tags="decrement_weight"
         )
         self.weight_canvas.create_oval(
-            150, 140, 110, 180, fill="#273c75", tags="increment_weight"
+            123, 150, 103, 170, fill="#273c75", tags="increment_weight"
+        )
+        self.weight_canvas.create_oval(
+            30, 140, 70, 180, fill="#273c75", tags="decrement_weight5"
+        )
+        self.weight_canvas.create_oval(
+            170, 140, 130, 180, fill="#273c75", tags="increment_weight5"
         )
         self.weight_canvas.create_text(
-            70,
+            87,
             160,
             text="-",
-            font=("TkFixedFont", 20, "bold"),
+            font=("TkFixedFont", 16, "bold"),
             fill="white",
             tags=("decrement_weight", "text"),
         )
         self.weight_canvas.create_text(
-            130,
+            113,
             160,
             text="+",
-            font=("TkFixedFont", 20, "bold"),
+            font=("TkFixedFont", 16, "bold"),
             fill="white",
             tags=("increment_weight", "text"),
+        )
+        self.weight_canvas.create_text(
+            50,
+            160,
+            text="-",
+            font=("TkFixedFont", 26, "bold"),
+            fill="white",
+            tags=("decrement_weight5", "text"),
+        )
+        self.weight_canvas.create_text(
+            150,
+            160,
+            text="+",
+            font=("TkFixedFont", 26, "bold"),
+            fill="white",
+            tags=("increment_weight5", "text"),
         )
 
         self.height_canvas = Canvas(
@@ -162,6 +184,8 @@ class UI:
         binds = {
             "increment_weight": {"<Button-1>": self.increment_weight},
             "decrement_weight": {"<Button-1>": self.decrement_weight},
+            "increment_weight5": {"<Button-1>": self.increment_weight5},
+            "decrement_weight5": {"<Button-1>": self.decrement_weight5},
             "increment_feet": {"<Button-1>": self.increment_feet},
             "decrement_feet": {"<Button-1>": self.decrement_feet},
             "increment_inches": {"<Button-1>": self.increment_inches},
@@ -186,6 +210,14 @@ class UI:
 
     def decrement_weight(self, event):
         self.weight -= 1 if self.weight > 0 else 0
+        self.update_bmi()
+
+    def increment_weight5(self, event):
+        self.weight += 5
+        self.update_bmi()
+
+    def decrement_weight5(self, event):
+        self.weight -= 5 if self.weight > 0 else 0
         self.update_bmi()
 
     def increment_feet(self, event):
