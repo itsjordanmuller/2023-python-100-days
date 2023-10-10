@@ -142,85 +142,25 @@ class UI:
             tags=("increment_inches", "text"),
         )
 
-        self.weight_canvas.tag_bind(
-            "increment_weight", "<Button-1>", self.increment_weight
-        )
-        self.weight_canvas.tag_bind(
-            "decrement_weight", "<Button-1>", self.decrement_weight
-        )
-        self.height_canvas.tag_bind("increment_feet", "<Button-1>", self.increment_feet)
-        self.height_canvas.tag_bind("decrement_feet", "<Button-1>", self.decrement_feet)
-        self.height_canvas.tag_bind(
-            "increment_inches", "<Button-1>", self.increment_inches
-        )
-        self.height_canvas.tag_bind(
-            "decrement_inches", "<Button-1>", self.decrement_inches
-        )
+        binds = {
+            "increment_weight": {"<Button-1>": self.increment_weight},
+            "decrement_weight": {"<Button-1>": self.decrement_weight},
+            "increment_feet": {"<Button-1>": self.increment_feet},
+            "decrement_feet": {"<Button-1>": self.decrement_feet},
+            "increment_inches": {"<Button-1>": self.increment_inches},
+            "decrement_inches": {"<Button-1>": self.decrement_inches},
+        }
 
-        self.weight_canvas.tag_bind(
-            "increment_weight",
-            "<Enter>",
-            lambda event, tag="increment_weight": self.hover_enter(event, tag),
-        )
-        self.weight_canvas.tag_bind(
-            "decrement_weight",
-            "<Enter>",
-            lambda event, tag="decrement_weight": self.hover_enter(event, tag),
-        )
-        self.height_canvas.tag_bind(
-            "increment_feet",
-            "<Enter>",
-            lambda event, tag="increment_feet": self.hover_enter(event, tag),
-        )
-        self.height_canvas.tag_bind(
-            "decrement_feet",
-            "<Enter>",
-            lambda event, tag="decrement_feet": self.hover_enter(event, tag),
-        )
-        self.height_canvas.tag_bind(
-            "increment_inches",
-            "<Enter>",
-            lambda event, tag="increment_inches": self.hover_enter(event, tag),
-        )
-        self.height_canvas.tag_bind(
-            "decrement_inches",
-            "<Enter>",
-            lambda event, tag="decrement_inches": self.hover_enter(event, tag),
-        )
+        for tag, events in binds.items():
+            canvas = self.weight_canvas if "weight" in tag else self.height_canvas
 
-        self.weight_canvas.tag_bind(
-            "increment_weight",
-            "<Leave>",
-            lambda event, tag="increment_weight": self.hover_leave(event, tag),
-        )
-        self.weight_canvas.tag_bind(
-            "decrement_weight",
-            "<Leave>",
-            lambda event, tag="decrement_weight": self.hover_leave(event, tag),
-        )
-        self.height_canvas.tag_bind(
-            "increment_feet",
-            "<Leave>",
-            lambda event, tag="increment_feet": self.hover_leave(event, tag),
-        )
-        self.height_canvas.tag_bind(
-            "decrement_feet",
-            "<Leave>",
-            lambda event, tag="decrement_feet": self.hover_leave(event, tag),
-        )
-        self.height_canvas.tag_bind(
-            "increment_inches",
-            "<Leave>",
-            lambda event, tag="increment_inches": self.hover_leave(event, tag),
-        )
-        self.height_canvas.tag_bind(
-            "decrement_inches",
-            "<Leave>",
-            lambda event, tag="decrement_inches": self.hover_leave(event, tag),
-        )
+            for event, callback in events.items():
+                canvas.tag_bind(tag, event, callback)
+
+            canvas.tag_bind(tag, "<Enter>", lambda e, t=tag: self.hover_enter(e, t))
+            canvas.tag_bind(tag, "<Leave>", lambda e, t=tag: self.hover_leave(e, t))
 
         self.update_bmi()
-
         self.window.mainloop()
 
     def increment_weight(self, event):
