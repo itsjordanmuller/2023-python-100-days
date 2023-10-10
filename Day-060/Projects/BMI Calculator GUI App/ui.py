@@ -10,6 +10,7 @@ class UI:
         self.weight = 150
         self.height_feet = 5
         self.height_inches = 8
+        self.bmi_color = "#64BA46"
 
         self.header_canvas = Canvas(
             self.window, width=400, height=50, bg="#718093", highlightthickness=0
@@ -30,7 +31,23 @@ class UI:
             font=("TkFixedFont", 12, "bold"),
             fill="#353b48",
         )
-        self.result_canvas.create_rectangle(50, 60, 350, 260, fill="#dcdde1", width=0)
+        self.result_canvas.create_rectangle(
+            45,
+            55,
+            355,
+            265,
+            fill=self.bmi_color,
+            width=0,
+            tags="bmi_rectangle",
+        )
+        self.result_canvas.create_rectangle(
+            55,
+            65,
+            345,
+            255,
+            fill="#dcdde1",
+            width=0,
+        )
         self.bmi_text = self.result_canvas.create_text(
             200, 135, text="", font=("TkFixedFont", 96, "bold")
         )
@@ -202,6 +219,16 @@ class UI:
     def update_bmi(self):
         bmi = calculate_bmi(self.weight, self.height_feet, self.height_inches)
         category = get_bmi_category(bmi)
+
+        color_map = {
+            "UNDERWEIGHT": "#59C2AD",
+            "NORMAL": "#64BA46",
+            "OVERWEIGHT": "#FAA727",
+            "OBESE": "#F36D27",
+        }
+
+        self.bmi_color = color_map.get(category, "#64BA46")
+        self.result_canvas.itemconfig("bmi_rectangle", fill=self.bmi_color)
 
         self.weight_canvas.itemconfig(self.weight_text, text=str(self.weight))
         self.height_canvas.itemconfig(self.feet_text, text=str(self.height_feet))
