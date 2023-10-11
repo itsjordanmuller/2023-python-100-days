@@ -1,8 +1,8 @@
 import os
 from dotenv import load_dotenv
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, redirect, render_template, url_for
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField
+from wtforms import PasswordField, StringField, SubmitField
 from wtforms.validators import DataRequired, ValidationError
 
 load_dotenv()
