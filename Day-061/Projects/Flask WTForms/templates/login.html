@@ -1,13 +1,26 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
-	<head>
-		<title>Login</title>
-	</head>
-	<body>
-        <div class="container">
-		<h1>Login</h1>
-        <!-- This is where our form will go. -->
-        </div>
-	</body>
+  <head>
+    <title>Login</title>
+  </head>
+  <style>
+    label {
+      display: inline-block;
+      width: 80px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <!-- This is where our form will go. -->
+      <form method="POST" action="/">
+        {{ form.csrf_token }} {{ form.email.label }} {{ form.email(size=30) }}
+        <br />
+        {{ form.password.label }} {{ form.password(size=30) }} <br />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
 </html>
