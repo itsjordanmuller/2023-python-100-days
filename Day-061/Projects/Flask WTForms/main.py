@@ -38,9 +38,12 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         if form.email.data == "test@example.com" and form.password.data == "password":
+            print(form.email.data)
             return redirect(url_for("success"))
         else:
+            print(form.email.data)
             return redirect(url_for("denied"))
+
     return render_template("login.html", form=form)
 
 
