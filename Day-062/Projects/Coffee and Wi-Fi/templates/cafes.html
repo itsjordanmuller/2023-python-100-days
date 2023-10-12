@@ -1,31 +1,32 @@
 {% extends 'base.html' %} {% block title %}Restaurants{% endblock %} {% block
 content %}
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <div class="container">
-        <h1>All Cafes</h1>
-        <table class="table">
-          <thead>
-            <tr>
-              {% for header in headers %}
-              <th scope="col">{{ header }}</th>
-              {% endfor %}
-            </tr>
-          </thead>
-          <tbody>
-            {% for row in rows %}
-            <tr>
-              {% for cell in row %}
-              <td>{{ cell }}</td>
-              {% endfor %}
-            </tr>
+      <h1>All Cafes</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            {% for header in headers %}
+            <th scope="col">{{ header }}</th>
             {% endfor %}
-          </tbody>
-        </table>
-        <p><a href="/">Return to index page</a></p>
-      </div>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in rows %}
+          <tr>
+            {% for cell in row %} {% if loop.index == 2 and
+            cell.startswith('http') %}
+            <td><a href="{{ cell }}" target="_blank">Map Link</a></td>
+            {% else %}
+            <td>{{ cell }}</td>
+            {% endif %} {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <p><a href="/">Return to index page</a></p>
     </div>
   </div>
 </div>
