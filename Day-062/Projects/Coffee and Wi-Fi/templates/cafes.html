@@ -16,12 +16,18 @@ content %}
         <tbody>
           {% for row in rows %}
           <tr>
-            {% for cell in row %} {% if loop.index == 2 and
-            cell.startswith('http') %}
-            <td><a href="{{ cell }}" target="_blank">Map Link</a></td>
-            {% else %}
-            <td>{{ cell }}</td>
-            {% endif %} {% endfor %}
+            {% for cell in row %} {% set cell_content = cell %} {% if loop.index
+            == 2 and cell.startswith('http') %} {% set cell_content = '<a
+              href="%s"
+              target="_blank"
+              >Maps Link</a
+            >'|format(cell) %} {% elif loop.index == 3 or loop.index == 4 %} {%
+            if ':' not in cell %} {% set cell_content = cell|replace('AM',
+            ':00AM') %} {% set cell_content = cell_content|replace('PM',
+            ':00PM') %} {% endif %} {% endif %}
+
+            <td>{{ cell_content|safe }}</td>
+            {% endfor %}
           </tr>
           {% endfor %}
         </tbody>
