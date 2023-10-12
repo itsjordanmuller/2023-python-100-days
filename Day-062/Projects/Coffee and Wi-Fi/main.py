@@ -71,7 +71,6 @@ class cafeForm(FlaskForm):
     submit = SubmitField("Submit")
 
 
-# all Flask routes below
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -90,8 +89,8 @@ def add_cafe():
                 [
                     form.cafeName.data,
                     form.mapLink.data,
-                    form.openTime.data.strftime("%I:%M %p"),
-                    form.closeTime.data.strftime("%I:%M %p"),
+                    form.openTime.data.strftime("%I:%M%p"),
+                    form.closeTime.data.strftime("%I:%M%p"),
                     form.coffeeRating.data,
                     form.wifiRating.data,
                     form.powerRating.data,
