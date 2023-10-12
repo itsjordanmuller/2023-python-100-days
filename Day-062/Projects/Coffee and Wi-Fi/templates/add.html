@@ -7,6 +7,8 @@
       <h1>Add a new cafe into the database</h1>
 
       <!-- This is where your WTForm will go -->
+      {% from 'bootstrap5/form.html' import render_form %} {{ render_form(form)
+      }}
 
       <p class="space-above"><a href="/cafes">See all cafes</a></p>
     </div>

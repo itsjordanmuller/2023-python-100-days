@@ -16,8 +16,14 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 bootstrap = Bootstrap5(app)
 
 
-class CafeForm(FlaskForm):
-    cafe = StringField("Cafe name", validators=[DataRequired()])
+class cafeForm(FlaskForm):
+    cafeName = StringField("Cafe Name:", validators=[DataRequired()])
+    mapLink = StringField("Google Maps Link URL:", validators=[DataRequired()])
+    openTime = StringField("Open Time:", validators=[DataRequired()])
+    closeTime = StringField("Close Time:", validators=[DataRequired()])
+    coffeeRating = StringField("Coffee Rating:", validators=[DataRequired()])
+    wifiRating = StringField("Wi-Fi Rating:", validators=[DataRequired()])
+    powerRating = StringField("Power Rating:", validators=[DataRequired()])
     submit = SubmitField("Submit")
 
 
@@ -38,7 +44,7 @@ def home():
 
 @app.route("/add")
 def add_cafe():
-    form = CafeForm()
+    form = cafeForm()
     if form.validate_on_submit():
         print("True")
     # Exercise:
