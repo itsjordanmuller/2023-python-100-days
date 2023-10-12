@@ -1,18 +1,31 @@
 {% extends 'base.html' %} {% block title %}Restaurants{% endblock %} {% block
 content %}
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-      <h1>All Cafes</h1>
-
-      <table class="table table-dark table-striped table-hover">
-        <!-- This is where you will write the code to render a Bootstrap 
-          Table that contains all the information from the 
-          cafe-data.csv file. -->
-      </table>
-
-      <p><a href="/">Return to index page</a></p>
+      <div class="container">
+        <h1>All Cafes</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              {% for header in headers %}
+              <th scope="col">{{ header }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in rows %}
+            <tr>
+              {% for cell in row %}
+              <td>{{ cell }}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <p><a href="/">Return to index page</a></p>
+      </div>
     </div>
   </div>
 </div>

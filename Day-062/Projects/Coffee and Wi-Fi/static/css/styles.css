@@ -2,12 +2,12 @@
 your web pages for the styles to be rendered. */
 
 body {
-background-color: #333;
-color: white;
+  background-color: #333;
+  color: white;
 }
 
 a {
-    color: #ffc107;
+  color: #ffc107;
 }
 
 .jumbotron {
@@ -20,6 +20,10 @@ a {
 }
 
 .space-above {
-    margin-top: 20px;
-    padding-top: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.table {
+  color: #fff;
 }
