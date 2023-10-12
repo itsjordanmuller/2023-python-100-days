@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, SelectField
+from wtforms import StringField, SubmitField, SelectField, TimeField
 from wtforms.validators import DataRequired
 
 
@@ -19,8 +19,8 @@ bootstrap = Bootstrap5(app)
 class cafeForm(FlaskForm):
     cafeName = StringField("Cafe Name:", validators=[DataRequired()])
     mapLink = StringField("Google Maps Link URL:", validators=[DataRequired()])
-    openTime = StringField("Open Time:", validators=[DataRequired()])
-    closeTime = StringField("Close Time:", validators=[DataRequired()])
+    openTime = TimeField("Open Time:", format="%I:%M%p", validators=[DataRequired()])
+    closeTime = TimeField("Close Time:", format="%I:%M%p", validators=[DataRequired()])
     coffeeRating = SelectField(
         "Coffee Rating:",
         choices=[
