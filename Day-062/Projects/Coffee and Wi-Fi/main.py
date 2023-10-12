@@ -13,7 +13,7 @@ load_dotenv()
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
-Bootstrap5(app)
+bootstrap = Bootstrap5(app)
 
 
 class CafeForm(FlaskForm):
