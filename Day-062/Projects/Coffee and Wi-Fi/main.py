@@ -1,7 +1,7 @@
 import os
 import csv
 from dotenv import load_dotenv
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField, TimeField
@@ -81,17 +81,25 @@ def home():
 def add_cafe():
     form = cafeForm()
     if form.validate_on_submit():
-        print(form.data)
-        print("Cafe Name:", form.cafeName.data)
-        print("Map Link:", form.mapLink.data)
-        print("Open Time:", form.openTime.data.strftime("%I:%M%p").lstrip("0"))
-        print("Close Time:", form.closeTime.data.strftime("%I:%M%p").lstrip("0"))
-        print("Coffee Rating:", form.coffeeRating.data)
-        print("Wi-Fi Rating:", form.wifiRating.data)
-        print("Power Rating:", form.powerRating.data)
-    # Exercise:
-    # Make the form write a new row into cafe-data.csv
-    # with   if form.validate_on_submit()
+        # print(form.data)
+
+        with open("cafe-data.csv", mode="a", newline="", encoding="utf-8") as file:
+            writer = csv.writer(file)
+
+            writer.writerow(
+                [
+                    form.cafeName.data,
+                    form.mapLink.data,
+                    form.openTime.data.strftime("%I:%M %p"),
+                    form.closeTime.data.strftime("%I:%M %p"),
+                    form.coffeeRating.data,
+                    form.wifiRating.data,
+                    form.powerRating.data,
+                ]
+            )
+
+        return redirect(url_for("cafes"))
+
     return render_template("add.html", form=form)
 
 
