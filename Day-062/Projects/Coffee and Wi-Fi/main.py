@@ -19,8 +19,8 @@ bootstrap = Bootstrap5(app)
 class cafeForm(FlaskForm):
     cafeName = StringField("Cafe Name:", validators=[DataRequired()])
     mapLink = StringField("Google Maps Link URL:", validators=[DataRequired()])
-    openTime = TimeField("Open Time:", format="%I:%M%p", validators=[DataRequired()])
-    closeTime = TimeField("Close Time:", format="%I:%M%p", validators=[DataRequired()])
+    openTime = TimeField("Open Time:", validators=[DataRequired()])
+    closeTime = TimeField("Close Time:", validators=[DataRequired()])
     coffeeRating = SelectField(
         "Coffee Rating:",
         choices=[
@@ -37,11 +37,11 @@ class cafeForm(FlaskForm):
         "Wi-Fi Rating:",
         choices=[
             ("✘", "☆☆☆☆☆"),
-            ("🛜", "★☆☆☆☆"),
-            ("🛜🛜", "★★☆☆☆"),
-            ("🛜🛜🛜", "★★★☆☆"),
-            ("🛜🛜🛜🛜", "★★★★☆"),
-            ("🛜🛜🛜🛜🛜", "★★★★★"),
+            ("📡", "★☆☆☆☆"),
+            ("📡📡", "★★☆☆☆"),
+            ("📡📡📡", "★★★☆☆"),
+            ("📡📡📡📡", "★★★★☆"),
+            ("📡📡📡📡📡", "★★★★★"),
         ],
         validators=[DataRequired()],
     )
@@ -75,11 +75,18 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/add")
+@app.route("/add", methods=["GET", "POST"])
 def add_cafe():
     form = cafeForm()
     if form.validate_on_submit():
-        print("True")
+        print(form.data)
+        print("Cafe Name:", form.cafeName.data)
+        print("Map Link:", form.mapLink.data)
+        print("Open Time:", form.openTime.data.strftime("%I:%M%p").lstrip("0"))
+        print("Close Time:", form.closeTime.data.strftime("%I:%M%p").lstrip("0"))
+        print("Coffee Rating:", form.coffeeRating.data)
+        print("Wi-Fi Rating:", form.wifiRating.data)
+        print("Power Rating:", form.powerRating.data)
     # Exercise:
     # Make the form write a new row into cafe-data.csv
     # with   if form.validate_on_submit()
