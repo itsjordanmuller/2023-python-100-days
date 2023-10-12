@@ -5,7 +5,7 @@ from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField, TimeField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, ValidationError
 
 
 load_dotenv()
@@ -16,9 +16,20 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 bootstrap = Bootstrap5(app)
 
 
+class checkLink:
+    def __init__(self, message="The URL must start with http"):
+        self.message = message
+
+    def __call__(self, form, field):
+        if not field.data.startswith("http"):
+            raise ValidationError(self.message)
+
+
 class cafeForm(FlaskForm):
     cafeName = StringField("Cafe Name:", validators=[DataRequired()])
-    mapLink = StringField("Google Maps Link URL:", validators=[DataRequired()])
+    mapLink = StringField(
+        "Google Maps Link URL:", validators=[DataRequired(), checkLink()]
+    )
     openTime = TimeField("Open Time:", validators=[DataRequired()])
     closeTime = TimeField("Close Time:", validators=[DataRequired()])
     coffeeRating = SelectField(
@@ -38,10 +49,10 @@ class cafeForm(FlaskForm):
         choices=[
             ("✘", "☆☆☆☆☆"),
             ("📡", "★☆☆☆☆"),
-            ("📡📡", "★★☆☆☆"),
-            ("📡📡📡", "★★★☆☆"),
-            ("📡📡📡📡", "★★★★☆"),
-            ("📡📡📡📡📡", "★★★★★"),
+            ("📡", "★★☆☆☆"),
+            ("📡", "★★★☆☆"),
+            ("📡", "★★★★☆"),
+            ("📡", "★★★★★"),
         ],
         validators=[DataRequired()],
     )
