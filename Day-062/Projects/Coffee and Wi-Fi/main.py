@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired
 
 
@@ -21,9 +21,42 @@ class cafeForm(FlaskForm):
     mapLink = StringField("Google Maps Link URL:", validators=[DataRequired()])
     openTime = StringField("Open Time:", validators=[DataRequired()])
     closeTime = StringField("Close Time:", validators=[DataRequired()])
-    coffeeRating = StringField("Coffee Rating:", validators=[DataRequired()])
-    wifiRating = StringField("Wi-Fi Rating:", validators=[DataRequired()])
-    powerRating = StringField("Power Rating:", validators=[DataRequired()])
+    coffeeRating = SelectField(
+        "Coffee Rating:",
+        choices=[
+            ("✘", "☆☆☆☆☆"),
+            ("☕️", "★☆☆☆☆"),
+            ("☕️☕️", "★★☆☆☆"),
+            ("☕️☕️☕️", "★★★☆☆"),
+            ("☕️☕️☕️☕️", "★★★★☆"),
+            ("☕️☕️☕️☕️☕️", "★★★★★"),
+        ],
+        validators=[DataRequired()],
+    )
+    wifiRating = SelectField(
+        "Wi-Fi Rating:",
+        choices=[
+            ("✘", "☆☆☆☆☆"),
+            ("🛜", "★☆☆☆☆"),
+            ("🛜🛜", "★★☆☆☆"),
+            ("🛜🛜🛜", "★★★☆☆"),
+            ("🛜🛜🛜🛜", "★★★★☆"),
+            ("🛜🛜🛜🛜🛜", "★★★★★"),
+        ],
+        validators=[DataRequired()],
+    )
+    powerRating = SelectField(
+        "Power Rating:",
+        choices=[
+            ("✘", "☆☆☆☆☆"),
+            ("🔌", "★☆☆☆☆"),
+            ("🔌🔌", "★★☆☆☆"),
+            ("🔌🔌🔌", "★★★☆☆"),
+            ("🔌🔌🔌🔌", "★★★★☆"),
+            ("🔌🔌🔌🔌🔌", "★★★★★"),
+        ],
+        validators=[DataRequired()],
+    )
     submit = SubmitField("Submit")
 
 
