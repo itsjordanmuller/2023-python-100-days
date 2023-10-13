@@ -10,7 +10,9 @@
       {% if books|length == 0 %}
       <li>Library is empty.</li>
       {% else %} {% for book in books %}
-      <li>{{ book.name }} by {{ book.author }} - Rating: {{ book.rating }}</li>
+      <li>
+        {{ book.title }} - {{ book.author }} - Rating: {{ book.rating }}/10
+      </li>
       {% endfor %} {% endif %}
     </ul>
 

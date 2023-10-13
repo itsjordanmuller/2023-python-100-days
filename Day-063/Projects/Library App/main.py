@@ -3,8 +3,6 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-all_books = []
-
 db = SQLAlchemy()
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///books-collection.db"
 db.init_app(app)
@@ -23,6 +21,7 @@ with app.app_context():
 
 @app.route("/")
 def home():
+    all_books = Book.query.all()
     return render_template("index.html", books=all_books)
 
 
