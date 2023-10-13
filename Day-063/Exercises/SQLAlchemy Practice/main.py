@@ -22,3 +22,11 @@ class Book(db.Model):
 # Create table schema in the database. Requires application context.
 with app.app_context():
     db.create_all()
+
+# CREATE RECORD
+with app.app_context():
+    new_book = Book(
+        id=1, title="The Sixth Extinction", author="Elizabeth Kolbert", rating=9.8
+    )
+    db.session.add(new_book)
+    db.session.commit()
