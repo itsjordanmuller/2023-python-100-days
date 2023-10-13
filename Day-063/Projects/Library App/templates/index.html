@@ -7,7 +7,9 @@
   <body>
     <h1>My Library</h1>
     <ul>
-      <!-- <li></li> -->
+      {% for book in books %}
+      <li>{{ book.name }} by {{ book.author }} - Rating: {{ book.rating }}</li>
+      {% endfor %}
     </ul>
 
     <a href="/add">Add New Book</a>
