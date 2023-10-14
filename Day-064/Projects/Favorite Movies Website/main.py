@@ -12,7 +12,27 @@ load_dotenv()
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
+
+db = SQLAlchemy()
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///movies-collection.db"
+db.init_app(app)
+
 Bootstrap5(app)
+
+
+class Movie(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(250), unique=True, nullable=False)
+    year = db.Column(db.Integer, nullable=False)
+    description = db.Column(db.Text, nullable=True)
+    rating = db.Column(db.Float, nullable=True)
+    ranking = db.Column(db.Integer, nullable=True)
+    review = db.Column(db.Text, nullable=True)
+    img_url = db.Column(db.String(500), nullable=True)
+
+
+with app.app_context():
+    db.create_all()
 
 
 @app.route("/")
