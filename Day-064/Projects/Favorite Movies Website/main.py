@@ -4,7 +4,7 @@ from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap5
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import StringField, SubmitField, FloatField
 from wtforms.validators import DataRequired
 import requests
 
@@ -29,6 +29,14 @@ class Movie(db.Model):
     ranking = db.Column(db.Integer, nullable=True)
     review = db.Column(db.Text, nullable=True)
     img_url = db.Column(db.String(500), nullable=True)
+
+
+class movieForm(FlaskForm):
+    rating = FloatField(
+        "Your Rating Out of 10 (e.g. 7.5):", validators=[DataRequired()]
+    )
+    review = StringField("Your Short Text Review: ", validators=[DataRequired()])
+    submit = SubmitField("Submit")
 
 
 with app.app_context():
@@ -68,6 +76,27 @@ def add():
             db.session.commit()
         return redirect(url_for("home"))
     return render_template("add.html")
+
+
+@app.route("/edit/<int:movie_id>", methods=["GET", "POST"])
+def edit(movie_id):
+    movie = Movie.query.get(movie_id)
+    if movie is None:
+        return redirect(url_for("home"))
+
+    form = movieForm()
+
+    if form.validate_on_submit():
+        movie.rating = form.rating.data
+        movie.review = form.review.data
+        db.session.commit()
+        print("Movie Updated!")
+        return redirect(url_for("home"))
+
+    form.rating.data = movie.rating
+    form.review.data = movie.review
+
+    return render_template("edit.html", form=form, movie=movie)
 
 
 if __name__ == "__main__":
