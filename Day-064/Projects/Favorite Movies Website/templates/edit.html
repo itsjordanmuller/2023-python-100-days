@@ -6,6 +6,7 @@ content %}
   <form method="POST" action="{{ url_for('edit', movie_id=movie.id) }}">
     {{ form.hidden_tag() }}
     <div>{{ form.rating.label }} {{ form.rating() }}</div>
+    <div>{{ form.ranking.label }} {{ form.ranking() }}</div>
     <div>{{ form.review.label }} {{ form.review() }}</div>
     <div>
       <input type="submit" value="Update" />

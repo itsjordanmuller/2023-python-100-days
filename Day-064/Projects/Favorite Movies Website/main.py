@@ -1,10 +1,11 @@
 import os
+import json
 from dotenv import load_dotenv
 from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap5
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, FloatField
+from wtforms import StringField, SubmitField, FloatField, IntegerField
 from wtforms.validators import DataRequired
 import requests
 
@@ -35,8 +36,14 @@ class movieForm(FlaskForm):
     rating = FloatField(
         "Your Rating Out of 10 (e.g. 7.5):", validators=[DataRequired()]
     )
+    ranking = IntegerField("Your Ranking (1-10):", validators=[DataRequired()])
     review = StringField("Your Short Text Review: ", validators=[DataRequired()])
     submit = SubmitField("Submit")
+
+
+class SearchForm(FlaskForm):
+    title = StringField("Movie Title", validators=[DataRequired()])
+    submit = SubmitField("Search")
 
 
 with app.app_context():
@@ -89,12 +96,14 @@ def edit(movie_id):
     if form.validate_on_submit():
         movie.rating = form.rating.data
         movie.review = form.review.data
+        movie.ranking = form.ranking.data
         db.session.commit()
         print("Movie Updated!")
         return redirect(url_for("home"))
 
     form.rating.data = movie.rating
     form.review.data = movie.review
+    form.ranking.data = movie.ranking
 
     return render_template("edit.html", form=form, movie=movie)
 
@@ -107,6 +116,40 @@ def delete(movie_id):
         db.session.commit()
         print(f"Movie ID {movie_id} Deleted!")
     return redirect(url_for("home"))
+
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    form = SearchForm()
+    movies = []
+    if form.validate_on_submit():
+        url = f"https://api.themoviedb.org/3/search/movie?api_key={os.getenv('TMDB_KEY')}&query={form.title.data}"
+        response = requests.get(url)
+        data = response.json()
+        movies = data["results"]
+
+    return render_template("search.html", form=form, movies=movies)
+
+
+@app.route("/select/<int:movie_id>")
+def select(movie_id):
+    url = (
+        f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={os.getenv('TMDB_KEY')}"
+    )
+    response = requests.get(url)
+    data = response.json()
+
+    new_movie = Movie(
+        title=data["title"],
+        year=data["release_date"][:4],
+        description=data["overview"],
+        img_url=f"https://image.tmdb.org/t/p/w500{data['poster_path']}",
+    )
+
+    db.session.add(new_movie)
+    db.session.commit()
+
+    return redirect(url_for("edit", movie_id=new_movie.id))
 
 
 if __name__ == "__main__":
