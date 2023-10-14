@@ -40,5 +40,34 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/add", methods=["GET", "POST"])
+def add():
+    if request.method == "POST":
+        movie_details = {
+            "title": request.form.get("title"),
+            "year": request.form.get("year"),
+            "description": request.form.get("description"),
+            "rating": request.form.get("rating"),
+            "ranking": request.form.get("ranking"),
+            "review": request.form.get("review"),
+            "imageURL": request.form.get("imageURL"),
+        }
+        with app.app_context():
+            new_movie = Movie(
+                title=movie_details["title"],
+                year=movie_details["year"],
+                description=movie_details["description"],
+                rating=movie_details["rating"],
+                ranking=movie_details["ranking"],
+                review=movie_details["review"],
+                img_url=movie_details["imageURL"],
+            )
+            db.session.add(new_movie)
+            print("Movie Added!")
+            db.session.commit()
+        return redirect(url_for("home"))
+    return render_template("add.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

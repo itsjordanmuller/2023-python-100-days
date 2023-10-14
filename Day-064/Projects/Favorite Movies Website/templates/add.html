@@ -1,9 +1,24 @@
-{% extends 'base.html' %}
-
-{% block title %}Add Movie{% endblock %}
-
-{% block content %}
+{% extends 'base.html' %} {% block title %}Add Movie{% endblock %} {% block
+content %}
 <div class="content">
-    <h1 class="heading">Add a Movie</h1>
+  <h1 class="heading">Add a Movie</h1>
+  <form action="{{ url_for('add') }}" method="POST">
+    <label>Movie Title</label>
+    <input type="text" name="title" />
+    <label>Year</label>
+    <input type="number" name="year" min="1850" step="1" placeholder="2000" />
+    <label>Description</label>
+    <textarea id="description" name="description" rows="5" cols="35"></textarea>
+    <label>Rating (0.0-10.0)</label>
+    <input type="number" name="rating" min="1" max="10" step="0.1" />
+    <label>Ranking (1-10)</label>
+    <input type="number" name="ranking" min="1" max="10" />
+    <label>Review (Short Text Review)</label>
+    <input type="text" name="review" />
+    <label>Image URL</label>
+    <input type="text" name="imageURL" />
+    <br />
+    <button type="submit">Add Movie</button>
+  </form>
 </div>
 {% endblock %}
