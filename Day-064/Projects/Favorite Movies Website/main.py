@@ -37,7 +37,8 @@ with app.app_context():
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    movies = Movie.query.all()
+    return render_template("index.html", movies=movies)
 
 
 @app.route("/add", methods=["GET", "POST"])
