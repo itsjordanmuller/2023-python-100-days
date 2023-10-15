@@ -94,7 +94,6 @@ window.title("Notes App")
 window.config(bg="#2f3640", padx=10, pady=10)
 
 style = ttk.Style()
-style.configure("TButton", font=("Arial", 12), padding=5)
 style.configure("TLabel", font=("Arial", 12))
 style.configure("TEntry", font=("Arial", 12), padding=5)
 
@@ -128,16 +127,22 @@ txt_note = scrolledtext.ScrolledText(edit_frame, wrap=tk.WORD, width=52, height=
 txt_note.grid(column=0, row=3, padx=5, pady=5, sticky="nw")
 
 buttons_frame = tk.Frame(notes_frame)
-buttons_frame.grid(column=0, row=3, padx=5, pady=5, sticky="sw", columnspan=2)
+buttons_frame.grid(column=0, row=3, padx=5, pady=5, sticky="nsew", columnspan=2)
 
-btn_save = ttk.Button(buttons_frame, text="Save Note", command=save_note)
-btn_save.grid(column=0, row=0, padx=5)
+btn_save = tk.Button(
+    buttons_frame, text="Save Note", command=save_note, bg="green", fg="black"
+)
+btn_save.grid(column=0, row=0, padx=4)
 
-btn_update = ttk.Button(buttons_frame, text="Update Note", command=update_note)
-btn_update.grid(column=1, row=0, padx=5)
+btn_update = tk.Button(
+    buttons_frame, text="Update Note", command=update_note, bg="orange", fg="black"
+)
+btn_update.grid(column=1, row=0, padx=4)
 
-btn_delete = ttk.Button(buttons_frame, text="Delete Note", command=delete_note)
-btn_delete.grid(column=2, row=0, padx=5)
+btn_delete = tk.Button(
+    buttons_frame, text="Delete Note", command=delete_note, bg="red", fg="black"
+)
+btn_delete.grid(column=2, row=0, padx=4)
 
 window.grid_columnconfigure(0, weight=1)
 window.grid_columnconfigure(1, weight=2)
