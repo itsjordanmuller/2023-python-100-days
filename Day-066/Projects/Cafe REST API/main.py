@@ -1,7 +1,12 @@
+import os
+from dotenv import load_dotenv
 import random
 from flask import Flask, jsonify, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 
 app = Flask(__name__)
 
@@ -193,6 +198,35 @@ def update_price(cafe_id):
 
 
 ## HTTP DELETE - Delete Record
+@app.route("/report-closed/<int:cafe_id>", methods=["DELETE"])
+def report_closed(cafe_id):
+    api_key = request.args.get("api_key")
+    if api_key == API_KEY:
+        cafe = Cafe.query.get(cafe_id)
+        if cafe:
+            db.session.delete(cafe)
+            db.session.commit()
+            return (
+                jsonify(
+                    response={
+                        "status": "success",
+                        "message": f"Cafe {cafe.name} successfully deleted.",
+                    }
+                ),
+                200,
+            )
+        else:
+            return (
+                jsonify(error={"error": "Cafe not found."}),
+                404,
+            )
+    else:
+        return (
+            jsonify(
+                error={"error": "Unauthorized request. Please provide a valid API key."}
+            ),
+            401,
+        )
 
 
 if __name__ == "__main__":
