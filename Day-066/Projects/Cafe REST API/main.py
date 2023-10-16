@@ -62,6 +62,31 @@ def random_cafe():
 
 
 ## HTTP GET - Read Record
+@app.route("/all")
+def all_cafes():
+    result = db.session.execute(db.select(Cafe))
+    all_cafes = result.scalars().all()
+    cafes_list = []
+    for cafe in all_cafes:
+        cafe_data = {
+            "id": cafe.id,
+            "name": cafe.name,
+            "map_url": cafe.map_url,
+            "img_url": cafe.img_url,
+            "location": cafe.location,
+            "amenities": {
+                "seats": cafe.seats,
+                "has_toilet": cafe.has_toilet,
+                "has_wifi": cafe.has_wifi,
+                "has_sockets": cafe.has_sockets,
+                "can_take_calls": cafe.can_take_calls,
+                "coffee_price": cafe.coffee_price,
+            },
+        }
+        cafes_list.append(cafe_data)
+
+    return jsonify(cafes=cafes_list)
+
 
 ## HTTP POST - Create Record
 
