@@ -35,6 +35,9 @@ def home():
     return render_template("index.html")
 
 
+## HTTP GET - Read Record
+
+
 # @app.route("/random", methods=["GET"])
 # GET is allowed by Default on All Routes
 @app.route("/random")
@@ -61,7 +64,6 @@ def random_cafe():
     )
 
 
-## HTTP GET - Read Record
 @app.route("/all")
 def all_cafes():
     result = db.session.execute(db.select(Cafe))
@@ -86,6 +88,52 @@ def all_cafes():
         cafes_list.append(cafe_data)
 
     return jsonify(cafes=cafes_list)
+
+
+@app.route("/search")
+def search_cafes():
+    loc = request.args.get("loc")
+    if loc:
+        cafes = Cafe.query.filter(Cafe.location.ilike(f"%{loc}%")).all()
+        if cafes:
+            cafes_list = []
+            for cafe in cafes:
+                cafe_data = {
+                    "id": cafe.id,
+                    "name": cafe.name,
+                    "map_url": cafe.map_url,
+                    "img_url": cafe.img_url,
+                    "location": cafe.location,
+                    "amenities": {
+                        "seats": cafe.seats,
+                        "has_toilet": cafe.has_toilet,
+                        "has_wifi": cafe.has_wifi,
+                        "has_sockets": cafe.has_sockets,
+                        "can_take_calls": cafe.can_take_calls,
+                        "coffee_price": cafe.coffee_price,
+                    },
+                }
+                cafes_list.append(cafe_data)
+
+            return jsonify(cafes=cafes_list)
+        else:
+            return (
+                jsonify(
+                    error={
+                        "error": "Sorry, we couldn't find any cafes at that location."
+                    }
+                ),
+                404,
+            )
+    else:
+        return (
+            jsonify(
+                error={
+                    "error": "Please provide the location parameter /search?loc=<location>"
+                }
+            ),
+            400,
+        )
 
 
 ## HTTP POST - Create Record
