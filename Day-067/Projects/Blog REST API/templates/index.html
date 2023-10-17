@@ -24,10 +24,17 @@
       {% for post in all_posts %}
       <div class="post-preview">
         <a href="{{ url_for('show_post', post_id=post.id) }}">
-          <h2 class="post-title">{{ post.title }}</h2>
+          <div class="post-controls">
+            <h2 class="post-title">{{ post.title }}</h2>
+            <!-- Button to delete posts -->
+            <a
+              class="delete-btn"
+              href="{{ url_for('delete_post', post_id=post.id)}}"
+              >❌</a
+            >
+          </div>
           <h3 class="post-subtitle">{{ post.subtitle }}</h3>
         </a>
-        <!-- TODO: Add code to delete posts below -->
         <p class="post-meta">
           Posted by
           <a href="#">{{post.author}}</a>
