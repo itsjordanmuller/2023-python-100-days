@@ -43,7 +43,7 @@ class NewPost(FlaskForm):
     author = StringField("Your Name", validators=[DataRequired()])
     img_url = StringField("Blog Image URL", validators=[DataRequired()])
     body = CKEditorField("Body Content", validators=[DataRequired()])
-    submit = SubmitField("Search")
+    submit = SubmitField("Add Post")
 
 
 with app.app_context():
@@ -69,6 +69,18 @@ def show_post(post_id):
 @app.route("/new-post", methods=["GET", "POST"])
 def new_post():
     form = NewPost()
+    if form.validate_on_submit():
+        new_blog_post = BlogPost(
+            title=form.title.data,
+            subtitle=form.subtitle.data,
+            date=date.today().strftime("%B %d, %Y"),
+            body=form.body.data,
+            author=form.author.data,
+            img_url=form.img_url.data,
+        )
+        db.session.add(new_blog_post)
+        db.session.commit()
+        return redirect(url_for("get_all_posts"))
     return render_template("make-post.html", form=form)
 
 
