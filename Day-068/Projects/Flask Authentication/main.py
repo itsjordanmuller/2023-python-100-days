@@ -31,8 +31,17 @@ db = SQLAlchemy()
 db.init_app(app)
 
 
+login_manager = LoginManager()
+login_manager.init_app(app)
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
+
 # CREATE TABLE IN DB
-class User(db.Model):
+class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(100))
@@ -48,8 +57,30 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/register")
+@app.route("/register", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        email = request.form.get("email")
+        name = request.form.get("name")
+        password = request.form.get("password")
+
+        user = User.query.filter_by(email=email).first()
+
+        if user:
+            flash("Email already exists. Login or choose another one.")
+            return redirect(url_for("register"))
+
+        hashed_password = generate_password_hash(
+            password, method="pbkdf2:sha256", salt_length=8
+        )
+
+        new_user = User(email=email, name=name, password=hashed_password)
+        db.session.add(new_user)
+        db.session.commit()
+
+        login_user(new_user)
+        return redirect(url_for("secrets"))
+
     return render_template("register.html")
 
 
