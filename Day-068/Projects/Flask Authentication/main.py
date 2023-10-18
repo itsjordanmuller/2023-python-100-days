@@ -84,8 +84,20 @@ def register():
     return render_template("register.html")
 
 
-@app.route("/login")
+@app.route("/login", methods=["GET", "POST"])
 def login():
+    if request.method == "POST":
+        email = request.form.get("email")
+        password = request.form.get("password")
+
+        user = User.query.filter_by(email=email).first()
+
+        if user and check_password_hash(user.password, password):
+            login_user(user)
+            return redirect(url_for("secrets"))
+        else:
+            flash("Invalid email or password. Please try again.")
+
     return render_template("login.html")
 
 
@@ -96,8 +108,11 @@ def secrets():
 
 
 @app.route("/logout")
+@login_required
 def logout():
-    pass
+    logout_user()
+    flash("You have been logged out.")
+    return redirect(url_for("home"))
 
 
 @app.route("/download")
