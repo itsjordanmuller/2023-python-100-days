@@ -1,25 +1,27 @@
 import os
+
+import bcrypt
 from dotenv import load_dotenv
 from flask import (
     Flask,
+    abort,
+    flash,
+    redirect,
     render_template,
     request,
-    url_for,
-    redirect,
-    flash,
     send_from_directory,
-    abort,
+    url_for,
 )
-from werkzeug.security import generate_password_hash, check_password_hash
-from flask_sqlalchemy import SQLAlchemy
 from flask_login import (
-    UserMixin,
-    login_user,
     LoginManager,
-    login_required,
+    UserMixin,
     current_user,
+    login_required,
+    login_user,
     logout_user,
 )
+from flask_sqlalchemy import SQLAlchemy
+from werkzeug.security import check_password_hash, generate_password_hash
 
 load_dotenv()
 
@@ -28,6 +30,7 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 # CONNECT TO DB
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("SQL_DB_URI")
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy()
 db.init_app(app)
 
@@ -63,7 +66,7 @@ def register():
     if request.method == "POST":
         email = request.form.get("email")
         name = request.form.get("name")
-        password = request.form.get("password")
+        password = request.form.get("password").encode("utf-8")
 
         user = User.query.filter_by(email=email).first()
 
@@ -71,9 +74,7 @@ def register():
             flash("Email already exists. Login or choose another one.")
             return redirect(url_for("register"))
 
-        hashed_password = generate_password_hash(
-            password, method="pbkdf2:sha256", salt_length=8
-        )
+        hashed_password = bcrypt.hashpw(password, bcrypt.gensalt()).decode("utf-8")
 
         new_user = User(email=email, name=name, password=hashed_password)
         db.session.add(new_user)
@@ -89,11 +90,11 @@ def register():
 def login():
     if request.method == "POST":
         email = request.form.get("email")
-        password = request.form.get("password")
+        password = request.form.get("password").encode("utf-8")
 
         user = User.query.filter_by(email=email).first()
 
-        if user and check_password_hash(user.password, password):
+        if user and bcrypt.checkpw(password, user.password.encode("utf-8")):
             login_user(user)
             return redirect(url_for("secrets"))
         else:
