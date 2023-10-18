@@ -8,6 +8,7 @@ from flask import (
     redirect,
     flash,
     send_from_directory,
+    abort,
 )
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
@@ -116,8 +117,16 @@ def logout():
 
 
 @app.route("/download")
+@login_required
 def download():
-    pass
+    try:
+        return send_from_directory(
+            os.path.join(app.root_path, "static", "files"),
+            "cheat_sheet.pdf",
+            as_attachment=True,
+        )
+    except FileNotFoundError:
+        abort(404)
 
 
 if __name__ == "__main__":
