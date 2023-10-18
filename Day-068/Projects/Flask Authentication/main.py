@@ -90,6 +90,7 @@ def login():
 
 
 @app.route("/secrets")
+@login_required
 def secrets():
     return render_template("secrets.html")
 
