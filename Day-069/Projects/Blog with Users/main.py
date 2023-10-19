@@ -11,7 +11,7 @@ from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy.orm import relationship
 from bleach import clean
-from bleach.sanitizer import ALLOWED_TAGS, ALLOWED_ATTRIBUTES, ALLOWED_STYLES
+from bleach.sanitizer import ALLOWED_TAGS, ALLOWED_ATTRIBUTES
 
 # Import your forms from the forms.py
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
@@ -75,6 +75,18 @@ class Comment(db.Model):
 
 with app.app_context():
     db.create_all()
+
+
+gravatar = Gravatar(
+    app,
+    size=100,
+    rating="g",
+    default="retro",
+    force_default=False,
+    force_lower=False,
+    use_ssl=True,
+    base_url=None,
+)
 
 
 def admin_only(f):
@@ -159,7 +171,6 @@ def show_post(post_id):
             form.comment.data,
             tags=ALLOWED_TAGS,
             attributes=ALLOWED_ATTRIBUTES,
-            styles=ALLOWED_STYLES,
             strip=True,
         )
 
@@ -171,8 +182,17 @@ def show_post(post_id):
         flash("Comment submitted!", "success")
         return redirect(url_for("show_post", post_id=post_id))
     comments = Comment.query.filter_by(post_id=post_id).all()
+
+    comment_gravatars = {
+        comment.id: gravatar(comment.comment_author.email) for comment in comments
+    }
+
     return render_template(
-        "post.html", post=requested_post, form=form, comments=comments
+        "post.html",
+        post=requested_post,
+        form=form,
+        comments=comments,
+        gravatars=comment_gravatars,
     )
 
 

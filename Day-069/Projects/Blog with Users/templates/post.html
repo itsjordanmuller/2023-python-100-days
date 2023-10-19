@@ -64,7 +64,7 @@
             {% for comment in comments %}
             <li>
               <div class="commenterImage">
-                <img src="../static/assets/img/default-profile.jpg" />
+                <img src="{{ gravatars[comment.id] }}" />
               </div>
               <div class="commentText">
                 <p>{{ comment.text|safe }}</p>
