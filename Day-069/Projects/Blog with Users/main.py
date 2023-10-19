@@ -12,7 +12,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy.orm import relationship
 
 # Import your forms from the forms.py
-from forms import CreatePostForm
+from forms import CreatePostForm, RegisterForm
 
 load_dotenv()
 
@@ -50,9 +50,13 @@ with app.app_context():
 
 
 # TODO: Use Werkzeug to hash the user's password when creating a new user.
-@app.route("/register")
+@app.route("/register", methods=["GET", "POST"])
 def register():
-    return render_template("register.html")
+    form = RegisterForm()
+    if form.validate_on_submit():
+        flash("Account created successfully!", "success")
+        return redirect(url_for("login"))
+    return render_template("register.html", form=form)
 
 
 # TODO: Retrieve a user from the database based on their email.
