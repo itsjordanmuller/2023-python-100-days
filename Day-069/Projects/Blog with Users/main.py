@@ -93,12 +93,15 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
-        if user and check_password_hash(user.password, form.password.data):
+        if user is None:
+            flash("This email is not registered. Please register first.", "error")
+            return redirect(url_for("register"))
+        elif check_password_hash(user.password, form.password.data):
             login_user(user)
-            # flash("Logged in successfully.", "success")
+            flash("Logged in successfully.", "success")
             return redirect(url_for("get_all_posts"))
         else:
-            flash("Login Unsuccessful. Please check email and password", "error")
+            flash("Incorrect login details. Please try again.", "error")
     return render_template("login.html", title="Login", form=form)
 
 
