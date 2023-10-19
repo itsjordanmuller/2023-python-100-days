@@ -46,8 +46,9 @@ class BlogPost(db.Model):
     subtitle = db.Column(db.String(250), nullable=False)
     date = db.Column(db.String(250), nullable=False)
     body = db.Column(db.Text, nullable=False)
-    author = db.Column(db.String(250), nullable=False)
     img_url = db.Column(db.String(250), nullable=False)
+    author_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    author = db.relationship("User", back_populates="posts")
 
 
 # User table for all registered users
@@ -56,6 +57,7 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(250), unique=True, nullable=False)
     password = db.Column(db.String(250), nullable=False)
     name = db.Column(db.String(250), nullable=False)
+    posts = db.relationship("BlogPost", back_populates="author")
 
 
 with app.app_context():
