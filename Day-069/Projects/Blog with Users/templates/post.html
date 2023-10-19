@@ -1,4 +1,4 @@
-{% include "header.html" %}
+{% from "bootstrap5/form.html" import render_form %} {% include "header.html" %}
 
 <!-- Page Header-->
 <header class="masthead" style="background-image: url('{{post.img_url}}')">
@@ -34,8 +34,18 @@
           >
         </div>
 
+        <!-- CKEditor Comment Form Area -->
+        <div class="comment-form-area">
+          {{ ckeditor.load() }}
+          <!-- Load CKEditor -->
+          {{ ckeditor.config(name='comment') }}
+          <!-- Config CKEditor -->
+          {{ render_form(form, novalidate=True, button_map={"submit":
+          "primary"}) }}
+          <!-- Render Comment Form -->
+        </div>
+
         <!-- Comments Area -->
-        <!-- TODO: Add a CKEditor for commenting below -->
         <div class="comment">
           <!-- TODO: Show all the comments on a post -->
           <ul class="commentList">

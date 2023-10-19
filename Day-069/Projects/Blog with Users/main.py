@@ -12,7 +12,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy.orm import relationship
 
 # Import your forms from the forms.py
-from forms import CreatePostForm, RegisterForm, LoginForm
+from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 
 load_dotenv()
 
@@ -131,11 +131,16 @@ def get_all_posts():
     return render_template("index.html", all_posts=posts)
 
 
-# TODO: Allow logged-in users to comment on posts
-@app.route("/post/<int:post_id>")
+# Allow logged-in users to comment on posts
+@app.route("/post/<int:post_id>", methods=["GET", "POST"])
 def show_post(post_id):
-    requested_post = db.get_or_404(BlogPost, post_id)
-    return render_template("post.html", post=requested_post)
+    requested_post = BlogPost.query.get_or_404(post_id)
+    form = CommentForm()
+    if form.validate_on_submit():
+        # TODO: Process the submitted comment (save to database, etc.)
+        flash("Comment submitted!", "success")
+        return redirect(url_for("show_post", post_id=post_id))
+    return render_template("post.html", post=requested_post, form=form)
 
 
 @app.route("/new-post", methods=["GET", "POST"])
