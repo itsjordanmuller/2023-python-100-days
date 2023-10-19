@@ -23,9 +23,17 @@ include "header.html" %}
     <div class="row">
       <!-- Flash message here for users registering twice -->
       {% with messages = get_flashed_messages(with_categories=true) %} {% if
-      messages %} {% for category, message in messages %}
-      <p class="flash {{ category }}">{{ message }}</p>
-      {% endfor %} {% endif %} {% endwith %}
+      messages %}
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          {% for category, message in messages %}
+          <div class="alert alert-{{ category }}" role="alert">
+            {{ message }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %} {% endwith %}
       <div class="col-lg-8 col-md-10 mx-auto">
         <!--Render login form -->
         {{ render_form(form) }}

@@ -38,5 +38,13 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Core theme JS-->
       <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+      <!-- Flash message timeout JS -->
+      <script type="text/javascript">
+        $(document).ready(function () {
+          setTimeout(function () {
+            $(".alert").fadeOut("slow");
+          }, 5000);
+        });
+      </script>
   </body>
 </html>
