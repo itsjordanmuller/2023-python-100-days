@@ -12,7 +12,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy.orm import relationship
 
 # Import your forms from the forms.py
-from forms import CreatePostForm, RegisterForm
+from forms import CreatePostForm, RegisterForm, LoginForm
 
 load_dotenv()
 
@@ -21,7 +21,15 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
-# TODO: Configure Flask-Login
+# Flask-Login Configuration
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = "login"
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
 
 # CONNECT TO DB
@@ -79,10 +87,19 @@ def register():
     return render_template("register.html", form=form)
 
 
-# TODO: Retrieve a user from the database based on their email.
-@app.route("/login")
+# Retrieve a user from the database based on their email.
+@app.route("/login", methods=["GET", "POST"])
 def login():
-    return render_template("login.html")
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data).first()
+        if user and check_password_hash(user.password, form.password.data):
+            login_user(user)
+            flash("Logged in successfully.", "success")
+            return redirect(url_for("get_all_posts"))
+        else:
+            flash("Login Unsuccessful. Please check email and password", "error")
+    return render_template("login.html", title="Login", form=form)
 
 
 @app.route("/logout")
