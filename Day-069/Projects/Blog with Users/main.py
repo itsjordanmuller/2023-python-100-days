@@ -148,6 +148,9 @@ def show_post(post_id):
     requested_post = BlogPost.query.get_or_404(post_id)
     form = CommentForm()
     if form.validate_on_submit():
+        if not current_user.is_authenticated:
+            flash("To be able to comment on posts, please login.", "error")
+            return redirect(url_for("login"))
         new_comment = Comment(
             text=form.comment.data, comment_author=current_user, post=requested_post
         )
