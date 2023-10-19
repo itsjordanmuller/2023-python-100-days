@@ -10,6 +10,8 @@ from flask_sqlalchemy import SQLAlchemy
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy.orm import relationship
+from bleach import clean
+from bleach.sanitizer import ALLOWED_TAGS, ALLOWED_ATTRIBUTES, ALLOWED_STYLES
 
 # Import your forms from the forms.py
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
@@ -151,8 +153,18 @@ def show_post(post_id):
         if not current_user.is_authenticated:
             flash("To be able to comment on posts, please login.", "error")
             return redirect(url_for("login"))
+
+        # Sanitize User Comments
+        clean_comment = clean(
+            form.comment.data,
+            tags=ALLOWED_TAGS,
+            attributes=ALLOWED_ATTRIBUTES,
+            styles=ALLOWED_STYLES,
+            strip=True,
+        )
+
         new_comment = Comment(
-            text=form.comment.data, comment_author=current_user, post=requested_post
+            text=clean_comment, comment_author=current_user, post=requested_post
         )
         db.session.add(new_comment)
         db.session.commit()
