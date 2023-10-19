@@ -68,12 +68,9 @@ def register():
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user:
-            flash(
-                "That email is already taken. Please choose a different one.", "error"
-            )
-            return redirect(url_for("register"))
+            flash("Email already exists. Please log in instead.", "error")
+            return redirect(url_for("login"))
 
-        # Hash the user's password when creating a new user.
         hashed_password = generate_password_hash(
             form.password.data, method="pbkdf2:sha256", salt_length=8
         )
@@ -82,8 +79,11 @@ def register():
         )
         db.session.add(new_user)
         db.session.commit()
-        flash("Account created successfully!", "success")
-        return redirect(url_for("login"))
+
+        login_user(new_user)
+
+        # flash("Account created and logged in successfully!", "success")
+        return redirect(url_for("get_all_posts"))
     return render_template("register.html", form=form)
 
 
@@ -95,7 +95,7 @@ def login():
         user = User.query.filter_by(email=form.email.data).first()
         if user and check_password_hash(user.password, form.password.data):
             login_user(user)
-            flash("Logged in successfully.", "success")
+            # flash("Logged in successfully.", "success")
             return redirect(url_for("get_all_posts"))
         else:
             flash("Login Unsuccessful. Please check email and password", "error")
