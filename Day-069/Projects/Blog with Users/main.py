@@ -49,6 +49,7 @@ class BlogPost(db.Model):
     img_url = db.Column(db.String(250), nullable=False)
     author_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
     author = db.relationship("User", back_populates="posts")
+    comments = db.relationship("Comment", back_populates="post")
 
 
 # User table for all registered users
@@ -58,6 +59,16 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(250), nullable=False)
     name = db.Column(db.String(250), nullable=False)
     posts = db.relationship("BlogPost", back_populates="author")
+    comments = db.relationship("Comment", back_populates="comment_author")
+
+
+class Comment(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    text = db.Column(db.Text, nullable=False)
+    author_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    comment_author = db.relationship("User", back_populates="comments")
+    post_id = db.Column(db.Integer, db.ForeignKey("blog_posts.id"), nullable=False)
+    post = db.relationship("BlogPost", back_populates="comments")
 
 
 with app.app_context():
@@ -137,10 +148,17 @@ def show_post(post_id):
     requested_post = BlogPost.query.get_or_404(post_id)
     form = CommentForm()
     if form.validate_on_submit():
-        # TODO: Process the submitted comment (save to database, etc.)
+        new_comment = Comment(
+            text=form.comment.data, comment_author=current_user, post=requested_post
+        )
+        db.session.add(new_comment)
+        db.session.commit()
         flash("Comment submitted!", "success")
         return redirect(url_for("show_post", post_id=post_id))
-    return render_template("post.html", post=requested_post, form=form)
+    comments = Comment.query.filter_by(post_id=post_id).all()
+    return render_template(
+        "post.html", post=requested_post, form=form, comments=comments
+    )
 
 
 @app.route("/new-post", methods=["GET", "POST"])
