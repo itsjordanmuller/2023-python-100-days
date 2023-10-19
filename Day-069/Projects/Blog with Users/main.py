@@ -42,18 +42,38 @@ class BlogPost(db.Model):
     img_url = db.Column(db.String(250), nullable=False)
 
 
-# TODO: Create a User table for all your registered users.
+# User table for all registered users
+class User(UserMixin, db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(250), unique=True, nullable=False)
+    password = db.Column(db.String(250), nullable=False)
+    name = db.Column(db.String(250), nullable=False)
 
 
 with app.app_context():
     db.create_all()
 
 
-# TODO: Use Werkzeug to hash the user's password when creating a new user.
 @app.route("/register", methods=["GET", "POST"])
 def register():
     form = RegisterForm()
     if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data).first()
+        if user:
+            flash(
+                "That email is already taken. Please choose a different one.", "error"
+            )
+            return redirect(url_for("register"))
+
+        # Hash the user's password when creating a new user.
+        hashed_password = generate_password_hash(
+            form.password.data, method="pbkdf2:sha256", salt_length=8
+        )
+        new_user = User(
+            email=form.email.data, password=hashed_password, name=form.name.data
+        )
+        db.session.add(new_user)
+        db.session.commit()
         flash("Account created successfully!", "success")
         return redirect(url_for("login"))
     return render_template("register.html", form=form)
