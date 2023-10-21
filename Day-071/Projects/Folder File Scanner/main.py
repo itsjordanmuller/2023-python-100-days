@@ -1,56 +1,10 @@
 import os
 import tkinter as tk
 from tkinter import ttk, filedialog
-import matplotlib.pyplot as plt
-from collections import Counter
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-
-
-def count_lines(file_path):
-    with open(file_path, "r", encoding="utf-8", errors="ignore") as file:
-        return sum(1 for line in file)
-
-
-def scan_folder(folder_path):
-    file_types = []
-    lines_count = []
-
-    for root, dirs, files in os.walk(folder_path):
-        for file in files:
-            file_path = os.path.join(root, file)
-            file_extension = os.path.splitext(file)[-1].lower()
-
-            try:
-                lines = count_lines(file_path)
-                file_types.append(file_extension)
-                lines_count.append(lines)
-            except Exception as e:
-                print(f"Could not read file {file_path}: {e}")
-
-    return file_types, lines_count
-
-
-def update_chart(folder_path):
-    file_types, lines_count = scan_folder(folder_path)
-    type_lines_counter = Counter()
-
-    for file_type, lines in zip(file_types, lines_count):
-        type_lines_counter[file_type] += lines
-
-    labels = list(type_lines_counter.keys())
-    sizes = list(type_lines_counter.values())
-
-    ax.clear()
-    ax.axis("off")
-    ax.pie(
-        sizes,
-        labels=labels,
-        autopct=lambda p: f"{p:.1f}%\n({int(p*sum(sizes)/100)} lines)",
-        startangle=90,
-    )
-    ax.axis("equal")
-
-    canvas.draw()
+import matplotlib.pyplot as plt
+from file_utils import count_lines, scan_folder
+from chart_utils import update_chart
 
 
 def on_closing():
@@ -61,7 +15,7 @@ def on_closing():
 def on_button_click():
     folder_path = folder_path_entry.get()
     if os.path.isdir(folder_path):
-        update_chart(folder_path)
+        update_chart(folder_path, ax, canvas, scan_folder)
     else:
         print("Please enter a valid folder path")
 
@@ -77,6 +31,7 @@ def browse_folder():
     folder_path_entry.insert(0, folder_selected)
 
 
+# GUI setup
 root = tk.Tk()
 root.title("File Types in Folder")
 
