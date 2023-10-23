@@ -10,3 +10,6 @@ print(df.shape)
 
 # Print Index of Column Names
 print(df.columns)
+
+# Check for NaN Values
+print(df.isna())
