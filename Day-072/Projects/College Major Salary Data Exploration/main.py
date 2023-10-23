@@ -22,7 +22,11 @@ clean_df = df.dropna()
 # Show Last 5 Rows of Data Cleared of NaN Values
 print(clean_df.tail())
 
-print("----- Highest Starting Median Salary -----")
+print("\n----- Highest Starting Median Salary -----")
 # print(clean_df["Starting Median Salary"].idxmax())
 # print(clean_df["Undergraduate Major"].loc[43])
 print(clean_df.loc[43])
+
+print("\n----- Highest Mid-Career Median Salary -----")
+# print(clean_df["Mid-Career Median Salary"].idxmax())
+print(clean_df.loc[8])
