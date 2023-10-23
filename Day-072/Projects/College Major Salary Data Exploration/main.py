@@ -39,6 +39,7 @@ print("\n----- Lowest Mid-Career Median Salary -----")
 # print(clean_df["Mid-Career Median Salary"].idxmin())
 print(clean_df.loc[18])
 
+# Lowest Risk - Small Difference Between Lowest & Highest Salaries (10th and 90th Percentile)
 spread_col = (
     clean_df["Mid-Career 90th Percentile Salary"]
     - clean_df["Mid-Career 10th Percentile Salary"]
@@ -47,4 +48,10 @@ clean_df.insert(1, "Spread", spread_col)
 clean_df.head()
 
 low_risk = clean_df.sort_values("Spread")
+print("\n----- Lowest Risk Majors -----")
 print(low_risk[["Undergraduate Major", "Spread"]].head())
+
+# Highest Risk - Large Difference Between Lowest & Highest Salaries (10th and 90th Percentile)
+high_risk = clean_df.sort_values("Spread", ascending=False)
+print("\n----- Highest Risk Majors -----")
+print(high_risk[["Undergraduate Major", "Spread"]].head())
