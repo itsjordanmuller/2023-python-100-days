@@ -30,3 +30,7 @@ print(clean_df.loc[43])
 print("\n----- Highest Mid-Career Median Salary -----")
 # print(clean_df["Mid-Career Median Salary"].idxmax())
 print(clean_df.loc[8])
+
+print("\n----- Lowest Starting Median Salary -----")
+# print(clean_df["Starting Median Salary"].idxmin())
+print(clean_df.loc[49])
