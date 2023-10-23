@@ -13,3 +13,6 @@ print(df.columns)
 
 # Check for NaN Values
 print(df.isna())
+
+# Peek at the Last 5 Rows of Data Frame
+print(df.tail())
