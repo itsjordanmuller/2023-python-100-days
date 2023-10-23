@@ -16,3 +16,8 @@ print(df.isna())
 
 # Peek at the Last 5 Rows of Data Frame
 print(df.tail())
+
+# Drop Any/All NaN Values from Data
+clean_df = df.dropna()
+# Show Last 5 Rows of Data Cleared of NaN Values
+print(clean_df.tail())
