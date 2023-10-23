@@ -34,3 +34,7 @@ print(clean_df.loc[8])
 print("\n----- Lowest Starting Median Salary -----")
 # print(clean_df["Starting Median Salary"].idxmin())
 print(clean_df.loc[49])
+
+print("\n----- Lowest Mid-Career Median Salary -----")
+# print(clean_df["Mid-Career Median Salary"].idxmin())
+print(clean_df.loc[18])
