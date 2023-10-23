@@ -55,3 +55,6 @@ print(low_risk[["Undergraduate Major", "Spread"]].head())
 high_risk = clean_df.sort_values("Spread", ascending=False)
 print("\n----- Highest Risk Majors -----")
 print(high_risk[["Undergraduate Major", "Spread"]].head())
+
+# Count of Majors in Each Category
+print(clean_df.groupby("Group").count())
