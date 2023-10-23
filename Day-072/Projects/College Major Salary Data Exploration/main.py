@@ -38,3 +38,13 @@ print(clean_df.loc[49])
 print("\n----- Lowest Mid-Career Median Salary -----")
 # print(clean_df["Mid-Career Median Salary"].idxmin())
 print(clean_df.loc[18])
+
+spread_col = (
+    clean_df["Mid-Career 90th Percentile Salary"]
+    - clean_df["Mid-Career 10th Percentile Salary"]
+)
+clean_df.insert(1, "Spread", spread_col)
+clean_df.head()
+
+low_risk = clean_df.sort_values("Spread")
+print(low_risk[["Undergraduate Major", "Spread"]].head())
