@@ -7,3 +7,6 @@ print(df.head())
 
 # Check Number of Rows and Columns
 print(df.shape)
+
+# Print Index of Column Names
+print(df.columns)
