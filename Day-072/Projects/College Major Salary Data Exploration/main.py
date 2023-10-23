@@ -58,3 +58,6 @@ print(high_risk[["Undergraduate Major", "Spread"]].head())
 
 # Count of Majors in Each Category
 print(clean_df.groupby("Group").count())
+
+# Average Salaries of Each Category of Major
+print(clean_df.groupby("Group").mean())
