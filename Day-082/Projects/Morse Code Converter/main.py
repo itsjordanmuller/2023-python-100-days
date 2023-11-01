@@ -53,3 +53,21 @@ def encrypt(text):
         else:
             cipher += MORSE_CODE_DICT[letter] + " "
     return cipher
+
+
+def decrypt(morse_code):
+    morse_code += " "
+    text = ""
+    morse_char = ""
+    for letter in morse_code:
+        if letter != " ":
+            morse_char += letter
+        else:
+            if morse_char:
+                text += [
+                    key for key, value in MORSE_CODE_DICT.items() if value == morse_char
+                ][0]
+                morse_char = ""
+            else:
+                text += " "
+    return text.strip()
