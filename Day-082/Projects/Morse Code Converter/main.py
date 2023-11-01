@@ -50,8 +50,10 @@ def encrypt(text):
     for letter in text.upper():
         if letter == " ":
             cipher += " "
-        else:
+        elif letter in MORSE_CODE_DICT:
             cipher += MORSE_CODE_DICT[letter] + " "
+        else:
+            return f"Error: '{letter}' is not recognized or supported."
     return cipher
 
 
@@ -64,9 +66,14 @@ def decrypt(morse_code):
             morse_char += letter
         else:
             if morse_char:
-                text += [
-                    key for key, value in MORSE_CODE_DICT.items() if value == morse_char
-                ][0]
+                if morse_char in MORSE_CODE_DICT.values():
+                    text += [
+                        key
+                        for key, value in MORSE_CODE_DICT.items()
+                        if value == morse_char
+                    ][0]
+                else:
+                    return f"Error: Morse code '{morse_char}' is not recognized or supported."
                 morse_char = ""
             else:
                 text += " "
