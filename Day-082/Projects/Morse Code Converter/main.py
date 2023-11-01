@@ -66,26 +66,26 @@ def encrypt(text):
 
 
 def decrypt(morse_code):
-    morse_code += " "
     text = ""
-    morse_char = ""
-    for letter in morse_code:
-        if letter != " ":
-            morse_char += letter
+    unrecognized_morse = set()
+    morse_chars = morse_code.split(" ")
+
+    for morse_char in morse_chars:
+        if not morse_char:
+            text += " "
+        elif morse_char in MORSE_CODE_DICT.values():
+            text += [
+                key for key, value in MORSE_CODE_DICT.items() if value == morse_char
+            ][0]
         else:
-            if morse_char:
-                if morse_char in MORSE_CODE_DICT.values():
-                    text += [
-                        key
-                        for key, value in MORSE_CODE_DICT.items()
-                        if value == morse_char
-                    ][0]
-                else:
-                    return f"Error: Morse code '{morse_char}' is not recognized or supported."
-                morse_char = ""
-            else:
-                text += " "
-    return text.strip()
+            unrecognized_morse.add(morse_char)
+
+    error_msg = (
+        f"Error: {' '.join(unrecognized_morse)} are not recognized or supported Morse codes."
+        if unrecognized_morse
+        else ""
+    )
+    return text.strip(), error_msg
 
 
 print("\n----- Morse Code Translator -----")
