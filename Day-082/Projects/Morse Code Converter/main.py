@@ -43,3 +43,13 @@ MORSE_CODE_DICT = {
     "(": "-.--.",
     ")": "-.--.-",
 }
+
+
+def encrypt(text):
+    cipher = ""
+    for letter in text.upper():
+        if letter == " ":
+            cipher += " "
+        else:
+            cipher += MORSE_CODE_DICT[letter] + " "
+    return cipher
