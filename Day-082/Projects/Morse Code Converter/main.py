@@ -98,14 +98,16 @@ while True:
 
     if choice == "1":
         text = input("\nInput text to translate to Morse Code:\n")
-        morse = encrypt(text)
+        morse, error_msg = encrypt(text)
         print(f"\n{text.upper()} in Morse: {morse}")
-        print(f"{morse} in Text: {decrypt(morse)}")
+        if error_msg:
+            print(error_msg)
     elif choice == "2":
         morse = input("\nInput Morse Code to translate to Text:\n")
-        text = decrypt(morse)
+        text, error_msg = decrypt(morse)
         print(f"\n{morse} in Text: {text.upper()}")
-        print(f"{text.upper()} in Morse: {encrypt(text)}")
+        if error_msg:
+            print(error_msg)
     elif choice == "0":
         print("Goodbye!")
         break
