@@ -47,14 +47,22 @@ MORSE_CODE_DICT = {
 
 def encrypt(text):
     cipher = ""
+    unrecognized_chars = set()
+
     for letter in text.upper():
         if letter == " ":
-            cipher += " "
+            cipher += "   "
         elif letter in MORSE_CODE_DICT:
             cipher += MORSE_CODE_DICT[letter] + " "
         else:
-            return f"Error: '{letter}' is not recognized or supported."
-    return cipher
+            unrecognized_chars.add(letter)
+
+    error_msg = (
+        f"Error: {''.join(unrecognized_chars)} are not recognized or supported."
+        if unrecognized_chars
+        else ""
+    )
+    return cipher, error_msg
 
 
 def decrypt(morse_code):
