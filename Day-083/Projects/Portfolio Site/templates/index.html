@@ -1,6 +1,11 @@
 {% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content
 %}
-<main></main>
+<main>
+  <section class="hero">{% include "hero.html" %}</section>
+  <section id="about">{% include "about.html" %}</section>
+  <section id="projects">{% include "projects.html" %}</section>
+  <section id="contact">{% include "contact.html" %}</section>
+</main>
 {% include "footer.html" %}
 <a href="#">
   <button class="top-btn">
