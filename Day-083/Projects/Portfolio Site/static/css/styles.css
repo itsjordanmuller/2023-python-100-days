@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+footer,
+main,
+nav {
+  margin: auto 3rem;
+}
+
+nav {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  color: #2d50c4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: orange;
+}
+
+.hero-title {
+  font-size: 5rem;
+  text-align: center;
+  color: purple;
+}
+
+.hero-subtitle {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero {
+  margin: 5rem 0;
+}
+
+.purple-span {
+  color: purple;
+}
+
+.top-btn {
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.top-btn:hover {
+  background-color: #909090;
+}
+
+.top-btn i {
+  color: purple;
+}
+
+.projects {
+  display: flex;
+  padding: auto;
+  justify-content: space-between;
+}
+
+.project {
+  max-width: 30%;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
