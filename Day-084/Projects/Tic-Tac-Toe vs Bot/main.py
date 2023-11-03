@@ -45,3 +45,24 @@ class TicTacToeCLI:
 
     def check_draw(self):
         return " " not in self.board
+
+    def place_mark(self, position):
+        if self.board[position] == " ":
+            self.board[position] = self.current_turn
+            if self.check_win(self.current_turn):
+                print(f"{self.current_turn} wins!")
+                if self.current_turn == "X":
+                    self.x_score += 1
+                else:
+                    self.o_score += 1
+                self.game_over = True
+            elif self.check_draw():
+                print("It's a draw!")
+                self.game_over = True
+            self.current_turn = "O" if self.current_turn == "X" else "X"
+        else:
+            print("Position already taken. Choose another one.")
+
+    def reset_board(self):
+        self.board = [" " for _ in range(9)]
+        self.game_over = False
