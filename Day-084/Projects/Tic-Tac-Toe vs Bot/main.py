@@ -4,13 +4,22 @@ import random
 class TicTacToeCLI:
     def __init__(self):
         self.board = [" " for _ in range(9)]
-        self.current_turn = "X"
+        self.players = {"Player": "", "Bot": ""}
+        self.current_turn = ""
         self.game_over = False
-        self.x_score = 0
-        self.o_score = 0
+        self.scores = {"Player": 0, "Bot": 0}
         self.round = 1
 
+        marks = ["X", "O"]
+        random.shuffle(marks)
+        self.players["Player"], self.players["Bot"] = marks
+
+        self.current_turn = (
+            "Player" if random.choice(marks) == self.players["Player"] else "Bot"
+        )
+
     def print_board(self):
+        print("\n")
         for i in range(3):
             row = ""
             for j in range(3):
@@ -67,36 +76,67 @@ class TicTacToeCLI:
         self.board = [" " for _ in range(9)]
         self.game_over = False
 
+    def bot_move(self):
+        available_positions = [i for i, spot in enumerate(self.board) if spot == " "]
+        position = random.choice(available_positions)
+        self.place_mark(position)
+
+    def place_mark(self, position):
+        mark = self.players[self.current_turn]
+        self.board[position] = mark
+        if self.check_win(mark):
+            print(f"{self.current_turn} wins!")
+            self.scores[self.current_turn] += 1
+            self.game_over = True
+        elif self.check_draw():
+            print("It's a draw!")
+            self.game_over = True
+        self.current_turn = "Bot" if self.current_turn == "Player" else "Player"
+
     def play_round(self):
         self.reset_board()
         while not self.game_over:
             self.print_board()
-            try:
-                position = (
-                    int(input(f"Player {self.current_turn}, enter your move (1-9): "))
-                    - 1
-                )
-                if 0 <= position <= 8:
-                    self.place_mark(position)
-                else:
-                    print("Invalid move. Choose a number from 1 to 9.")
-            except ValueError:
-                print("Invalid input. Please enter a number.")
+            if self.current_turn == "Player":
+                try:
+                    position = (
+                        int(
+                            input(
+                                f"\nPlayer ({self.players['Player']}), enter your move (1-9): "
+                            )
+                        )
+                        - 1
+                    )
+                    if 0 <= position <= 8 and self.board[position] == " ":
+                        self.place_mark(position)
+                    else:
+                        print("Invalid move. Choose a number from 1 to 9.")
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+            else:
+                print("\nBot is making a move...")
+                self.bot_move()
 
     def play_game(self):
         while True:
+            print(f"\nRound {self.round}")
             print(
-                f"\nRound {self.round}\nScores: X - {self.x_score}, O - {self.o_score}"
+                f"Scores: Player ({self.players['Player']}) - {self.scores['Player']}, Bot ({self.players['Bot']}) - {self.scores['Bot']}"
             )
             self.play_round()
             play_again = input("Do you want to play another round? (y/n): ").lower()
             if play_again == "y":
                 self.round += 1
+                self.current_turn = (
+                    "Player"
+                    if random.choice(["X", "O"]) == self.players["Player"]
+                    else "Bot"
+                )
                 continue
             else:
                 print("Final Scores:")
-                print(f"X: {self.x_score}")
-                print(f"O: {self.o_score}")
+                print(f"Player ({self.players['Player']}): {self.scores['Player']}")
+                print(f"Bot ({self.players['Bot']}): {self.scores['Bot']}")
                 print("Thanks for playing!")
                 break
 
