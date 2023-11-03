@@ -1,4 +1,5 @@
 import random
+import time
 
 
 class TicTacToeCLI:
@@ -89,6 +90,9 @@ class TicTacToeCLI:
         self.game_over = False
 
     def bot_move(self):
+        print("\nBot is thinking...", end="", flush=True)
+        time.sleep(random.randint(0, 2))
+        print("\r", end="")
         available_positions = [i for i, spot in enumerate(self.board) if spot == " "]
         position = random.choice(available_positions)
         self.place_mark(position)
