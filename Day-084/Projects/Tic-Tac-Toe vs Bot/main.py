@@ -19,19 +19,31 @@ class TicTacToeCLI:
         )
 
     def print_board(self):
-        print("\n")
+        top_border = f"/-----------\\"
+        bottom_border = f"\\-----------/"
+        internal_border = "|---+---+---|"
+
+        print("\n Positions Key:\t\tCurrent Board:")
         for i in range(3):
-            row = ""
+            key_row = ""
+            game_row = ""
             for j in range(3):
-                if self.board[i * 3 + j] == " ":
-                    row += str(i * 3 + j + 1)
-                else:
-                    row += self.board[i * 3 + j]
-                if j < 2:
-                    row += " | "
-            print(row)
-            if i < 2:
-                print("---------")
+                key_row += "| " + str(i * 3 + j + 1) + " "
+                game_row += (
+                    "| "
+                    + (self.board[i * 3 + j] if self.board[i * 3 + j] != " " else " ")
+                    + " "
+                )
+            key_row += "|"
+            game_row += "|"
+
+            if i == 0:
+                print(top_border + "\t\t" + top_border)
+            print(key_row + "\t\t" + game_row)
+            if i == 2:
+                print(bottom_border + "\t\t" + bottom_border)
+            else:
+                print(internal_border + "\t\t" + internal_border)
 
     def check_win(self, mark):
         win_conditions = [
