@@ -66,3 +66,41 @@ class TicTacToeCLI:
     def reset_board(self):
         self.board = [" " for _ in range(9)]
         self.game_over = False
+
+    def play_round(self):
+        self.reset_board()
+        while not self.game_over:
+            self.print_board()
+            try:
+                position = (
+                    int(input(f"Player {self.current_turn}, enter your move (1-9): "))
+                    - 1
+                )
+                if 0 <= position <= 8:
+                    self.place_mark(position)
+                else:
+                    print("Invalid move. Choose a number from 1 to 9.")
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+
+    def play_game(self):
+        while True:
+            print(
+                f"\nRound {self.round}\nScores: X - {self.x_score}, O - {self.o_score}"
+            )
+            self.play_round()
+            play_again = input("Do you want to play another round? (y/n): ").lower()
+            if play_again == "y":
+                self.round += 1
+                continue
+            else:
+                print("Final Scores:")
+                print(f"X: {self.x_score}")
+                print(f"O: {self.o_score}")
+                print("Thanks for playing!")
+                break
+
+
+if __name__ == "__main__":
+    game = TicTacToeCLI()
+    game.play_game()
