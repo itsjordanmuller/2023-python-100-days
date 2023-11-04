@@ -19,7 +19,3 @@ class UI:
         self.controls_canvas.grid(column=0, row=2)
 
         self.window.mainloop()
-
-
-if __name__ == "__main__":
-    ui = UI()
