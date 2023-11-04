@@ -1,3 +1,4 @@
+import os
 from tkinter import *
 from tkinter import Tk, Canvas, filedialog, Scale
 from PIL import Image, ImageTk
@@ -7,6 +8,7 @@ class UI:
     def __init__(self):
         self.window = Tk()
         self.window.title("Image Watermarker")
+        self.load_default_image()
 
         self.header_canvas = Canvas(self.window, width=800, height=50, bg="#bdc3c7")
         self.header_canvas.grid(column=0, row=0)
@@ -68,3 +70,11 @@ class UI:
             image = self.original_image
         self.tk_image = ImageTk.PhotoImage(image)
         self.image_canvas.create_image(400, 300, image=self.tk_image)
+
+    def load_default_image(self):
+        default_image_path = "defaultImage.jpg"
+        if os.path.isfile(default_image_path):
+            self.original_image = Image.open(default_image_path)
+            self.display_image()
+        else:
+            print(f"Error: The file '{default_image_path}' does not exist.")
