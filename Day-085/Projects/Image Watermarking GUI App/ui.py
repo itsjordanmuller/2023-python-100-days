@@ -209,3 +209,72 @@ class UI:
             self.set_canvas_loading(False)
         else:
             print(f"Error: The file '{default_image_path}' does not exist.")
+
+    def update_opacity(self, val):
+        self.watermark_opacity.set(val)
+        if self.original_image:
+            self.apply_watermark()
+            self.display_image(zoom=self.zoom_slider.get())
+
+    def apply_watermark(self):
+        if self.original_image and self.watermark_text.get():
+            self.watermarked_image = self.original_image.copy()
+
+            watermark_text = self.watermark_text.get()
+            position = self.watermark_position.get()
+            opacity = self.watermark_opacity.get() / 100.0
+            font_size = self.watermark_font_size.get() * 8
+            color = self.watermark_color.get()
+            rgba_color = tuple(int(color[i : i + 2], 16) for i in (1, 3, 5)) + (
+                int(255 * opacity),
+            )
+
+            watermark_draw = ImageDraw.Draw(self.watermarked_image)
+            width, height = self.watermarked_image.size
+
+            try:
+                font = ImageFont.truetype("arial.ttf", font_size)
+            except IOError:
+                print("Font file not found, using default font.")
+                font = ImageFont.load_default()
+
+            text_width, text_height = watermark_draw.textbbox(
+                (0, 0), watermark_text, font=font
+            )[2:]
+
+            positions = {
+                "top left": (10, 10),
+                "top right": (width - text_width - 10, 10),
+                "bottom left": (10, height - text_height - 10),
+                "bottom right": (width - text_width - 10, height - text_height - 10),
+                "center": ((width - text_width) / 2, (height - text_height) / 2),
+            }
+            position = positions.get(position, positions["bottom right"])
+
+            watermark_draw.text(
+                position,
+                watermark_text,
+                fill=rgba_color,
+                font=font,
+            )
+
+            self.display_image(zoom=self.zoom_slider.get())
+
+    def save_watermarked_image(self):
+        if self.watermarked_image:
+            file_path = filedialog.asksaveasfilename(
+                defaultextension=".png",
+                filetypes=[
+                    ("PNG files", "*.png"),
+                    ("JPEG files", "*.jpg"),
+                    ("All files", "*.*"),
+                ],
+            )
+            if file_path:
+                self.watermarked_image.save(file_path)
+                print(f"Image saved: {file_path}")
+
+    def choose_color(self):
+        color_code = colorchooser.askcolor(title="Choose color")
+        if color_code[1] is not None:
+            self.watermark_color.set(color_code[1])
