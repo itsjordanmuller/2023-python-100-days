@@ -1,5 +1,5 @@
-from tkinter import Tk, Canvas
-from tkinter import filedialog
+from tkinter import *
+from tkinter import Tk, Canvas, filedialog, Scale
 from PIL import Image, ImageTk
 
 
@@ -31,6 +31,16 @@ class UI:
         )
         self.upload_button.pack(side=LEFT, padx=10)
 
+        self.zoom_slider = Scale(
+            self.controls_canvas,
+            from_=10,
+            to=200,
+            orient=HORIZONTAL,
+            label="Zoom",
+            command=self.update_zoom,
+        )
+        self.zoom_slider.pack()
+
         self.window.mainloop()
 
     def upload_image(self):
@@ -44,4 +54,17 @@ class UI:
 
     def display_image(self):
         self.tk_image = ImageTk.PhotoImage(self.original_image)
+        self.image_canvas.create_image(400, 300, image=self.tk_image)
+
+    def update_zoom(self, val):
+        zoom = int(val) / 100.0
+        width, height = self.original_image.size
+        new_size = (int(width * zoom), int(height * zoom))
+        resized_image = self.original_image.resize(new_size, Image.ANTIALIAS)
+        self.display_image(resized_image)
+
+    def display_image(self, image=None):
+        if image is None:
+            image = self.original_image
+        self.tk_image = ImageTk.PhotoImage(image)
         self.image_canvas.create_image(400, 300, image=self.tk_image)
