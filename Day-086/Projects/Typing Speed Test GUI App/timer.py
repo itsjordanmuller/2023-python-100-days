@@ -3,7 +3,7 @@ import time
 
 
 class Timer:
-    def __init__(self, window, width=800, height=150):
+    def __init__(self, window, width=600, height=150):
         self.window = window
         self.timer_canvas = Canvas(
             window, width=width, height=height, highlightthickness=0

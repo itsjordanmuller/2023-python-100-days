@@ -14,10 +14,10 @@ class TextManager:
         return "".join(alphabets)
 
     def display_shuffled_text(self):
-        x_offset = 272 - (len(self.shuffled_text) * 7)
+        x_offset = 230 - (len(self.shuffled_text) * 7)
         for index, letter in enumerate(self.shuffled_text):
             letter_id = self.canvas.create_text(
-                x_offset + (index * 25),
+                x_offset + (index * 20),
                 100,
                 text=letter,
                 font=self.font,
