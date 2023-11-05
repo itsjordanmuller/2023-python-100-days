@@ -1,6 +1,7 @@
-from tkinter import Tk, Canvas, Entry
+from tkinter import Tk, Canvas, Entry, Button
 from text_manager import TextManager
 from timer import Timer
+import time
 
 
 class UI:
@@ -12,7 +13,7 @@ class UI:
             self.window, width=800, height=100, highlightthickness=0
         )
         self.header_canvas.pack(fill="x")
-        self.header_canvas.create_text(
+        self.header_text = self.header_canvas.create_text(
             400, 50, text="Typing Speed Test", font=("TkFixedFont", 32, "bold")
         )
 
@@ -30,8 +31,27 @@ class UI:
 
         self.timer = Timer(self.window)
 
+        self.start_button = Button(self.window, text="Start", command=self.start_test)
+        self.start_button.pack(pady=20)
+
         self.window.mainloop()
+
+    def start_test(self):
+        self.start_button.config(state="disabled")
+        self.countdown(3)
+
+    def countdown(self, count):
+        if count > 0:
+            self.header_canvas.itemconfig(self.header_text, text=str(count))
+            self.window.after(1000, self.countdown, count - 1)
+        else:
+            self.header_canvas.itemconfig(self.header_text, text="Go!")
+            self.text_manager.display_shuffled_text()
+            self.timer.start_timer()
 
     def on_key_release(self, event):
         typed_text = self.typing_entry.get()
         self.text_manager.update_displayed_text_color(typed_text)
+        if typed_text == self.text_manager.shuffled_text:
+            self.timer.stop_timer()
+            self.header_canvas.itemconfig(self.header_text, text="Finished!")
