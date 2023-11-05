@@ -9,7 +9,7 @@ class UI:
         self.header_canvas = Canvas(
             self.window, width=800, height=100, highlightthickness=0
         )
-        self.header_canvas.grid(column=0, row=0)
+        self.header_canvas.pack(fill="x")
         self.header_canvas.create_text(
             400, 50, text="Typing Speed Test", font=("TkFixedFont", 32, "bold")
         )
@@ -17,17 +17,15 @@ class UI:
         self.display_canvas = Canvas(
             self.window, width=800, height=300, highlightthickness=0
         )
-        self.display_canvas.grid(column=0, row=1)
+        self.display_canvas.pack(fill="x")
 
-        self.typing_canvas = Canvas(
-            self.window, width=800, height=300, highlightthickness=0
-        )
-        self.typing_canvas.grid(column=0, row=2)
+        self.typing_entry = Entry(self.window, font=("TkFixedFont", 24))
+        self.typing_entry.pack(fill="x", padx=10, pady=10)
 
         self.timer_canvas = Canvas(
             self.window, width=800, height=150, highlightthickness=0
         )
-        self.timer_canvas.grid(column=0, row=3)
+        self.timer_canvas.pack(fill="x")
         self.timer_canvas.create_text(
             400, 75, text="00:00", font=("TkFixedFont", 32, "bold")
         )
