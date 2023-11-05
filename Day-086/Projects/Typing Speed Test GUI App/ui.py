@@ -19,4 +19,9 @@ class UI:
         )
         self.display_canvas.grid(column=0, row=1)
 
+        self.typing_canvas = Canvas(
+            self.window, width=800, height=300, highlightthickness=0
+        )
+        self.typing_canvas.grid(column=0, row=2)
+
         self.window.mainloop()
