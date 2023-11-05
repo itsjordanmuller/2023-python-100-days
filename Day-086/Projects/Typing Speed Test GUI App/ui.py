@@ -24,4 +24,12 @@ class UI:
         )
         self.typing_canvas.grid(column=0, row=2)
 
+        self.timer_canvas = Canvas(
+            self.window, width=800, height=150, highlightthickness=0
+        )
+        self.timer_canvas.grid(column=0, row=3)
+        self.timer_canvas.create_text(
+            400, 75, text="00:00", font=("TkFixedFont", 32, "bold")
+        )
+
         self.window.mainloop()
