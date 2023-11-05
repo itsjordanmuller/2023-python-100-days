@@ -14,4 +14,9 @@ class UI:
             400, 50, text="Typing Speed Test", font=("TkFixedFont", 32, "bold")
         )
 
+        self.display_canvas = Canvas(
+            self.window, width=800, height=300, highlightthickness=0
+        )
+        self.display_canvas.grid(column=0, row=1)
+
         self.window.mainloop()
