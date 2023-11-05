@@ -23,7 +23,6 @@ class UI:
         self.display_canvas.pack(fill="x")
 
         self.text_manager = TextManager(self.display_canvas)
-        self.text_manager.display_shuffled_text()
 
         self.typing_entry = Entry(self.window, font=("TkFixedFont", 24))
         self.typing_entry.pack(fill="x", padx=10, pady=10)
@@ -48,6 +47,7 @@ class UI:
             self.header_canvas.itemconfig(self.header_text, text="Go!")
             self.text_manager.display_shuffled_text()
             self.timer.start_timer()
+            self.typing_entry.focus_set()
 
     def on_key_release(self, event):
         typed_text = self.typing_entry.get()
