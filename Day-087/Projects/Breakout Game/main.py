@@ -1,8 +1,9 @@
 import time
 from turtle import Screen
+
 from ball import Ball
+from bricks import BRICK_CONFIGS, create_bricks
 from paddle import Paddle
-from bricks import create_bricks, BRICK_CONFIGS
 
 screen = Screen()
 screen.setup(width=500, height=800)
@@ -50,6 +51,9 @@ while game_is_on:
     check_collision_with_walls()
     check_collision_with_paddle()
     check_collision_with_bricks()
+
+    if ball.ycor() < paddle.ycor() - 50:
+        game_is_on = False
 
     screen.update()
     time.sleep(ball.move_speed)
