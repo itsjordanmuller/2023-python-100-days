@@ -1,4 +1,5 @@
 import time
+import random
 from turtle import Screen
 
 from ball import Ball
@@ -13,7 +14,7 @@ screen.tracer(0)
 
 paddle = Paddle((0, -330))
 
-brick_size = "medium"
+brick_size = random.choice(["small", "medium", "large"])
 bricks = create_bricks(BRICK_CONFIGS[brick_size])
 
 ball = Ball()
