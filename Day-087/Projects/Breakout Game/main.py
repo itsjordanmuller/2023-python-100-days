@@ -1,7 +1,7 @@
 import time
 from turtle import Screen
 from paddle import Paddle
-from bricks import create_bricks
+from bricks import create_bricks, BRICK_CONFIGS
 
 screen = Screen()
 screen.setup(width=500, height=800)
@@ -10,7 +10,9 @@ screen.title("Breakout")
 screen.tracer(0)
 
 paddle = Paddle((0, -330))
-bricks = create_bricks()
+
+brick_size = "medium"
+bricks = create_bricks(BRICK_CONFIGS[brick_size])
 
 screen.listen()
 screen.onkey(fun=paddle.move_left, key="Left")

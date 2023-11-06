@@ -1,55 +1,68 @@
 from turtle import Turtle
 
-# SMALL BRICKS
-# BRICK_WIDTH = 20
-# BRICK_HEIGHT = 20
-# BRICK_PADDING = 5
-# BRICKS_PER_ROW = 20
-# NUMBER_OF_ROWS = 15
-# BRICK_COLOR = "blue"
-# START_X = -240
-# START_Y = 440
-# STRETCH_LEN = 1
-
-# MEDIUM BRICKS
-BRICK_WIDTH = 40
-BRICK_HEIGHT = 20
-BRICK_PADDING = 5
-BRICKS_PER_ROW = 16
-NUMBER_OF_ROWS = 15
-BRICK_COLOR = "blue"
-START_X = -230
-START_Y = 440
-STRETCH_LEN = 2
-
-# BIG BRICKS
-# BRICK_WIDTH = 60
-# BRICK_HEIGHT = 20
-# BRICK_PADDING = 9
-# BRICKS_PER_ROW = 7
-# NUMBER_OF_ROWS = 15
-# BRICK_COLOR = "blue"
-# START_X = -210
-# START_Y = 430
-# STRETCH_LEN = 3
+BRICK_CONFIGS = {
+    "small": {
+        "width": 20,
+        "height": 20,
+        "padding": 5,
+        "per_row": 20,
+        "rows": 15,
+        "color": "blue",
+        "start_x": -240,
+        "start_y": 388,
+        "stretch_len": 1,
+    },
+    "medium": {
+        "width": 40,
+        "height": 20,
+        "padding": 5,
+        "per_row": 16,
+        "rows": 15,
+        "color": "blue",
+        "start_x": -228,
+        "start_y": 388,
+        "stretch_len": 2,
+    },
+    "large": {
+        "width": 65,
+        "height": 20,
+        "padding": 6,
+        "per_row": 7,
+        "rows": 15,
+        "color": "blue",
+        "start_x": -216,
+        "start_y": 388,
+        "stretch_len": 3.25,
+    },
+}
 
 
 class Brick(Turtle):
-    def __init__(self, position):
+    def __init__(self, position, color, stretch_len):
         super().__init__()
         self.shape("square")
-        self.color(BRICK_COLOR)
-        self.shapesize(stretch_wid=1, stretch_len=STRETCH_LEN, outline=None)
+        self.color(color)
+        self.shapesize(stretch_wid=1, stretch_len=stretch_len, outline=None)
         self.penup()
         self.goto(position)
 
 
-def create_bricks():
+def create_bricks(config):
     bricks = []
-    for row in range(NUMBER_OF_ROWS):
-        for column in range(BRICKS_PER_ROW):
-            x = START_X + (BRICK_WIDTH + BRICK_PADDING) * column
-            y = START_Y - (BRICK_HEIGHT + BRICK_PADDING) * row
-            brick = Brick((x, y))
+    width = config["width"]
+    height = config["height"]
+    padding = config["padding"]
+    per_row = config["per_row"]
+    rows = config["rows"]
+    color = config["color"]
+    start_x = config["start_x"]
+    start_y = config["start_y"]
+    stretch_len = config["stretch_len"]
+
+    for row in range(rows):
+        for column in range(per_row):
+            x = start_x + (width + padding) * column
+            y = start_y - (height + padding) * row
+            brick = Brick((x, y), color, stretch_len)
             bricks.append(brick)
     return bricks
