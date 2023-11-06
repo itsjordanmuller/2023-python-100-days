@@ -46,6 +46,10 @@ class Brick(Turtle):
         self.penup()
         self.goto(position)
 
+    def destroy(self):
+        self.goto(1000, 1000)
+        self.hideturtle()
+
 
 def create_bricks(config):
     bricks = []

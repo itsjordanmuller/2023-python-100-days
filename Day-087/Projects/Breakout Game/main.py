@@ -31,6 +31,15 @@ def check_collision_with_paddle():
         ball.bounce_y()
 
 
+def check_collision_with_bricks():
+    for brick in bricks[:]:
+        if ball.distance(brick) < 20:
+            brick.destroy()
+            bricks.remove(brick)
+            ball.bounce_y()
+            break
+
+
 screen.listen()
 screen.onkey(fun=paddle.move_left, key="Left")
 screen.onkey(fun=paddle.move_right, key="Right")
@@ -40,6 +49,7 @@ while game_is_on:
     ball.move()
     check_collision_with_walls()
     check_collision_with_paddle()
+    check_collision_with_bricks()
 
     screen.update()
     time.sleep(ball.move_speed)
