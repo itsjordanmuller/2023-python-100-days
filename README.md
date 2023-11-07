@@ -1,8 +1,18 @@
 # 100 Days of Python
 
 ## Day 1
+
 ### Projects (Day 1)
+
 #### [A. Band Name Generator Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-001/Projects)
+
+### Exercises (Day 1)
+
+#### [a. Hello World](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/0-hello-world.py)
+
+#### [b. Printing](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/1-printing.py)
+
+#### [c. Debugging Practice](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/2-debugging-practice.py)
 
 ## Day 2
 
