@@ -448,6 +448,10 @@
 
 ## Day 42
 
+### Projects (Day 42)
+
+#### [42. Birthday Invite Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Projects/Birthday%20Invite%20Project)
+
 ## Day 43
 
 ## Day 44
