@@ -404,6 +404,10 @@
 
 ## Day 36
 
+### Projects (Day 36)
+
+#### [36. Tic-Tac-Toe App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-036/Projects/Tic-Tac-Toe)
+
 ## Day 37
 
 ## Day 38
