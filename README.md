@@ -352,6 +352,10 @@
 
 ## Day 28
 
+### Projects (Day 28)
+
+#### [28. Pomodoro Timer](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-028/Projects/Pomodoro%20Timer)
+
 ## Day 29
 
 ## Day 30
