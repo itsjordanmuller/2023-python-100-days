@@ -452,6 +452,18 @@
 
 #### [42. Birthday Invite Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Projects/Birthday%20Invite%20Project)
 
+### Exercises (Day 42)
+
+#### [A. Anchor Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Anchor%20Elements)
+
+#### [B. Boilerplate](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Boilerplate)
+
+#### [C. Image Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Image%20Elements)
+
+#### [D. List Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/List%20Elements)
+
+#### [E. Nesting and Indentation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Nesting%20and%20Indentation)
+
 ## Day 43
 
 ## Day 44
