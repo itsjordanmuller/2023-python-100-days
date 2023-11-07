@@ -434,6 +434,10 @@
 
 ## Day 41
 
+### Projects (Day 41)
+
+#### [41. Introduction to HTML](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Projects/Introduction%20to%20HTML)
+
 ## Day 42
 
 ## Day 43
