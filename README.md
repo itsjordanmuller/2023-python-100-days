@@ -202,6 +202,10 @@
 
 ## Day 14
 
+### Projects (Day 14)
+
+#### [1. Higher or Lower Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-014/Projects/1-higher-or-lower.py)
+
 ## Day 15
 
 ## Day 16
