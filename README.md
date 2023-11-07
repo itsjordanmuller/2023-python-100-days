@@ -180,6 +180,10 @@
 
 ## Day 12
 
+### Projects (Day 12)
+
+#### [12. Number Guessing - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-012/Projects/2-guess-num-game.py)
+
 ## Day 13
 
 ## Day 14
