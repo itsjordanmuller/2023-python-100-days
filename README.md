@@ -4,7 +4,7 @@
 
 ### Projects (Day 1)
 
-#### [1. Band Name Generator Project](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Projects/band-name-generator.py)
+#### [1. Band Name Generator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Projects/band-name-generator.py)
 
 ### Exercises (Day 1)
 
@@ -35,6 +35,10 @@
 #### [D. Life in Weeks](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/3-life-in-weeks.py)
 
 ## Day 3
+
+### Projects (Day 3)
+
+#### [3. Treasure Island - Choose Your Adventure CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Projects/treasure-island.py)
 
 ## Day 4
 
