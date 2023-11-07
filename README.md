@@ -90,6 +90,10 @@
 
 ## Day 6
 
+### Projects (Day 6)
+
+#### [6. Reeborg Maze](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Projects/5-reeborg-maze.py)
+
 ## Day 7
 
 ## Day 8
