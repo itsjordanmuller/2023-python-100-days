@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, SelectField, TimeField
+from wtforms import StringField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, ValidationError
 
 
@@ -31,44 +31,14 @@ class cafeForm(FlaskForm):
     mapLink = StringField(
         "Google Maps Link URL:", validators=[DataRequired(), checkLink()]
     )
-    openTime = TimeField("Open Time:", validators=[DataRequired()])
-    closeTime = TimeField("Close Time:", validators=[DataRequired()])
-    coffeeRating = SelectField(
-        "Coffee Rating:",
-        choices=[
-            ("✘", "☆☆☆☆☆"),
-            ("☕️", "★☆☆☆☆"),
-            ("☕️☕️", "★★☆☆☆"),
-            ("☕️☕️☕️", "★★★☆☆"),
-            ("☕️☕️☕️☕️", "★★★★☆"),
-            ("☕️☕️☕️☕️☕️", "★★★★★"),
-        ],
-        validators=[DataRequired()],
-    )
-    wifiRating = SelectField(
-        "Wi-Fi Rating:",
-        choices=[
-            ("✘", "☆☆☆☆☆"),
-            ("📡", "★☆☆☆☆"),
-            ("📡", "★★☆☆☆"),
-            ("📡", "★★★☆☆"),
-            ("📡", "★★★★☆"),
-            ("📡", "★★★★★"),
-        ],
-        validators=[DataRequired()],
-    )
-    powerRating = SelectField(
-        "Power Rating:",
-        choices=[
-            ("✘", "☆☆☆☆☆"),
-            ("🔌", "★☆☆☆☆"),
-            ("🔌🔌", "★★☆☆☆"),
-            ("🔌🔌🔌", "★★★☆☆"),
-            ("🔌🔌🔌🔌", "★★★★☆"),
-            ("🔌🔌🔌🔌🔌", "★★★★★"),
-        ],
-        validators=[DataRequired()],
-    )
+    imgLink = StringField("Image URL:", validators=[DataRequired(), checkLink()])
+    location = StringField("Location:", validators=[DataRequired()])
+    seats = StringField("Number of Seats:", validators=[DataRequired()])
+    has_toilet = BooleanField("Toilet Available:")
+    has_wifi = BooleanField("WiFi Available:")
+    has_sockets = BooleanField("Sockets Available:")
+    can_take_calls = BooleanField("Can Take Calls:")
+    coffee_price = StringField("Coffee Price:", validators=[DataRequired()])
     submit = SubmitField("Submit")
 
 
@@ -81,24 +51,26 @@ def home():
 def add_cafe():
     form = cafeForm()
     if form.validate_on_submit():
-        # print(form.data)
+        data = {
+            "name": form.cafeName.data,
+            "map_url": form.mapLink.data,
+            "img_url": form.imgLink.data,
+            "loc": form.location.data,
+            "seats": form.seats.data,
+            "toilet": form.has_toilet.data,
+            "wifi": form.has_wifi.data,
+            "sockets": form.has_sockets.data,
+            "calls": form.can_take_calls.data,
+            "coffee_price": form.coffee_price.data,
+        }
 
-        with open("cafe-data.csv", mode="a", newline="", encoding="utf-8") as file:
-            writer = csv.writer(file)
+        response = requests.post("http://localhost:5000/add", data=data)
 
-            writer.writerow(
-                [
-                    form.cafeName.data,
-                    form.mapLink.data,
-                    form.openTime.data.strftime("%I:%M%p"),
-                    form.closeTime.data.strftime("%I:%M%p"),
-                    form.coffeeRating.data,
-                    form.wifiRating.data,
-                    form.powerRating.data,
-                ]
-            )
-
-        return redirect(url_for("cafes"))
+        if response.status_code == 200:
+            return redirect(url_for("cafes"))
+        else:
+            error_message = "Failed to send data to the backend."
+            return render_template("error.html", error=error_message)
 
     return render_template("add.html", form=form)
 
