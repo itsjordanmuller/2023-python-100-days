@@ -76,6 +76,18 @@
 
 #### [5. Password Generator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Projects/5-password-generator.py)
 
+### Exercises (Day 5)
+
+#### [A. Basic Loops](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/0-basic-loops.py)
+
+#### [B. Average Height](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/1-average-height.py)
+
+#### [C. High Score](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/2-high-score.py)
+
+#### [D. Adding Even Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/3-adding-even-nums.py)
+
+#### [E. FizzBuzz](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/4-fizz-buzz.py)
+
 ## Day 6
 
 ## Day 7
