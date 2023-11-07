@@ -238,6 +238,10 @@
 
 #### [18. Damien Hirst Spots Paintings with Turtle Graphics](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-018/Projects/spots)
 
+### Exercises (Day 18)
+
+#### [A. Turtle Graphics Challenge](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/Exercises/1-turtle-challenge.py)
+
 ## Day 19
 
 ## Day 20
