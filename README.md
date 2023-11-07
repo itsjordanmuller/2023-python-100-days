@@ -40,6 +40,20 @@
 
 #### [3. Treasure Island - Choose Your Adventure CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Projects/treasure-island.py)
 
+### Exercises (Day 3)
+
+#### [A. Control Flow](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/0-control-flow.py)
+
+#### [B. Odd or Even](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/1-odd-or-even.py)
+
+#### [C. BMI Calculator V2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/2-bmi-calculator-v2.py)
+
+#### [D. Leap Year](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/3-leap-year.py)
+
+#### [E. Pizza Order](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/4-pizza-order.py)
+
+#### [F. Love Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/5-love-calculator.py)
+
 ## Day 4
 
 ## Day 5
