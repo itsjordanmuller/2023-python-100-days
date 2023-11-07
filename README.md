@@ -218,6 +218,10 @@
 
 #### [16. Coffee Machine Simulator v2 Upgrade - CLI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-016/Projects)
 
+### Exercises (Day 16)
+
+#### [A. Object Oriented Programming](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-016/Exercises)
+
 ## Day 17
 
 ## Day 18
