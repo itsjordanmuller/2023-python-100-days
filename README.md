@@ -256,6 +256,10 @@
 
 ## Day 20
 
+### Projects (Day 20)
+
+#### [20. Snake Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-020/Projects)
+
 ## Day 21
 
 ## Day 22
