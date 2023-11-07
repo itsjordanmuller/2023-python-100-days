@@ -60,6 +60,16 @@
 
 #### [4. Rock Paper Scissors - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Projects/4-rock-paper-scissors.py)
 
+### Exercises (Day 4)
+
+#### [A. Random Module](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/0-random-module.py)
+
+#### [B. Heads or Tails](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/1-heads-or-tails.py)
+
+#### [C. Banker Roulette](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/2-banker-roulette.py)
+
+#### [D. Treasure Map](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/3-treasure-map.py)
+
 ## Day 5
 
 ## Day 6
