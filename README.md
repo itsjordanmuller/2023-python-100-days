@@ -224,7 +224,13 @@
 
 ## Day 17
 
+### Projects (Day 17)
+
 #### [17. Quiz/Trivia Application - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-017/Projects)
+
+### Exercises (Day 17)
+
+#### [A. Classes](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-017/Exercises/classes.py)
 
 ## Day 18
 
