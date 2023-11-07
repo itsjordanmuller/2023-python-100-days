@@ -142,6 +142,10 @@
 
 ## Day 9
 
+### Projects (Day 9)
+
+#### [9. Blind Auction](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Projects/5-blind-auction.py)
+
 ## Day 10
 
 ## Day 11
