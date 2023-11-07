@@ -94,6 +94,18 @@
 
 #### [6. Reeborg Maze](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Projects/5-reeborg-maze.py)
 
+### Exercises (Day 6)
+
+#### [A. Functions](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/0-functions.py)
+
+#### [B. Reeborg Square](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/1-reeborg-square.py)
+
+#### [C. Reeborg Hurdles](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/2-reeborg-hurdles.py)
+
+#### [D. Reeborg Variable Width Hurdles](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/3-reeborg-width-hurdles.py)
+
+#### [E. Reeborg Variable Height Hurdles](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/4-reeborg-height-hurdles.py)
+
 ## Day 7
 
 ## Day 8
