@@ -392,6 +392,10 @@
 
 ## Day 34
 
+### Projects (Day 34)
+
+#### [34. Quizzler Quiz App - GUI Application]
+
 ## Day 35
 
 ## Day 36
