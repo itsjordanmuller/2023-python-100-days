@@ -422,6 +422,10 @@
 
 ## Day 39
 
+### Projects (Day 39)
+
+#### [39. Rock Paper Scissors - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-039/Projects/Rock%20Paper%20Scissors%20App)
+
 ## Day 40
 
 ## Day 41
