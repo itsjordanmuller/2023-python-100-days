@@ -416,6 +416,10 @@
 
 ## Day 38
 
+### Projects (Day 38)
+
+#### [38. Tic-Tac-Toe App v2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-038/Projects/Tic-Tac-Toe)
+
 ## Day 39
 
 ## Day 40
