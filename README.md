@@ -244,6 +244,12 @@
 
 ## Day 19
 
+### Projects (Day 19)
+
+#### [19a. Etch-a-Sketch](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/Projects/1-etch-a-sketch.py)
+
+#### [19b. Turtle Race](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/Projects/2-turtle-race.py)
+
 ## Day 20
 
 ## Day 21
