@@ -8,26 +8,38 @@ content %}
       <table class="table">
         <thead>
           <tr>
-            {% for header in headers %}
-            <th scope="col">{{ header }}</th>
-            {% endfor %}
+            <th scope="col">Cafe Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Image</th>
+            <th scope="col">Coffee Price</th>
+            <th scope="col">Seats</th>
+            <th scope="col">Toilet Availability</th>
+            <th scope="col">WiFi Availability</th>
+            <th scope="col">Sockets Availability</th>
+            <th scope="col">Call Taking</th>
+            <th scope="col">Map Link</th>
           </tr>
         </thead>
         <tbody>
-          {% for row in rows %}
+          {% for cafe in cafes %}
           <tr>
-            {% for cell in row %} {% set cell_content = cell %} {% if loop.index
-            == 2 and cell.startswith('http') %} {% set cell_content = '<a
-              href="%s"
-              target="_blank"
-              >Maps Link</a
-            >'|format(cell) %} {% elif loop.index == 3 or loop.index == 4 %} {%
-            if ':' not in cell %} {% set cell_content = cell|replace('AM',
-            ':00AM') %} {% set cell_content = cell_content|replace('PM',
-            ':00PM') %} {% endif %} {% endif %}
-
-            <td>{{ cell_content|safe }}</td>
-            {% endfor %}
+            <td>{{ cafe.name }}</td>
+            <td>{{ cafe.location }}</td>
+            <td>
+              <img
+                src="{{ cafe.img_url }}"
+                alt="{{ cafe.name }}"
+                style="width: 100px; height: auto"
+                loading="lazy"
+              />
+            </td>
+            <td>{{ cafe.amenities.coffee_price }}</td>
+            <td>{{ cafe.amenities.seats }}</td>
+            <td>{{ 'Yes' if cafe.amenities.has_toilet else 'No' }}</td>
+            <td>{{ 'Yes' if cafe.amenities.has_wifi else 'No' }}</td>
+            <td>{{ 'Yes' if cafe.amenities.has_sockets else 'No' }}</td>
+            <td>{{ 'Yes' if cafe.amenities.can_take_calls else 'No' }}</td>
+            <td><a href="{{ cafe.map_url }}" target="_blank">Maps Link</a></td>
           </tr>
           {% endfor %}
         </tbody>

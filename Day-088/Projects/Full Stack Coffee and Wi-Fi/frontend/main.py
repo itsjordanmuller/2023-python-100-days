@@ -1,5 +1,6 @@
 import os
 import csv
+import requests
 from dotenv import load_dotenv
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap5
@@ -104,12 +105,13 @@ def add_cafe():
 
 @app.route("/cafes")
 def cafes():
-    with open("cafe-data.csv", newline="", encoding="utf-8") as csv_file:
-        csv_data = csv.reader(csv_file, delimiter=",")
-        list_of_rows = []
-        headers = next(csv_data, None)
-        rows = [row for row in csv_data]
-    return render_template("cafes.html", headers=headers, rows=rows)
+    response = requests.get("http://localhost:5000/all")
+    if response.ok:
+        cafes_list = response.json().get("cafes", [])
+        return render_template("cafes.html", cafes=cafes_list)
+    else:
+        error_message = "Failed to fetch data from the backend."
+        return render_template("error.html", error=error_message)
 
 
 if __name__ == "__main__":
