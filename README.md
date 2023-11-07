@@ -364,6 +364,14 @@
 
 ## Day 30
 
+### Exercises (Day 30)
+
+#### [A. Catching Exceptions](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-030/Exercises/1-catching-exceptions.py)
+
+#### [B. Index Error Handling](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-030/Exercises/2-index-error-handling.py)
+
+#### [C. Key Error Handling](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-030/Exercises/3-key-error-handling.py)
+
 ## Day 31
 
 ## Day 32
