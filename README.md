@@ -470,6 +470,12 @@
 
 #### [43. Color Vocabulary Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Projects/Color%20Vocab%20Project)
 
+### Exercises (Day 43)
+
+#### [A. Adding CSS](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/Adding%20CSS)
+
+#### [B. CSS Selectors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/CSS%20Selectors)
+
 ## Day 44
 
 ## Day 45
