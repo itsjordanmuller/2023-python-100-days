@@ -410,6 +410,10 @@
 
 ## Day 37
 
+### Projects (Day 37)
+
+#### [37. Habit Tracker App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-037/Projects/Habit%20Tracker%20App)
+
 ## Day 38
 
 ## Day 39
