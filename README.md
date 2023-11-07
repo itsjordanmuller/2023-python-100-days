@@ -108,6 +108,10 @@
 
 ## Day 7
 
+### Projects (Day 7)
+
+#### [7. Parachute Man - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/Projects/4-parachute-man.py)
+
 ## Day 8
 
 ## Day 9
