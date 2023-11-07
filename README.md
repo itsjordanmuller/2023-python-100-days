@@ -292,6 +292,10 @@
 
 #### [24b. Snake Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Snake%20Game)
 
+### Exercises (Day 24)
+
+#### [A. Read & Write Methods](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/Exercises/read_write.py)
+
 ## Day 25
 
 ## Day 26
