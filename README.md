@@ -374,6 +374,10 @@
 
 ## Day 31
 
+### Projects (Day 31)
+
+#### [31. Flashcards GUI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-031/Projects/Flashcards%20App)
+
 ## Day 32
 
 ## Day 33
