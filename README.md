@@ -174,6 +174,10 @@
 
 ## Day 11
 
+### Projects (Day 11)
+
+#### [11. Blackjack - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-011/Projects/1-blackjack.py)
+
 ## Day 12
 
 ## Day 13
