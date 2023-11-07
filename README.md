@@ -250,6 +250,10 @@
 
 #### [19b. Turtle Race](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/Projects/2-turtle-race.py)
 
+### Exercises (Day 19)
+
+#### [A. Event Listeners](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/Exercises/1-event-listeners.py)
+
 ## Day 20
 
 ## Day 21
