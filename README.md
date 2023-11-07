@@ -466,6 +466,10 @@
 
 ## Day 43
 
+### Projects (Day 43)
+
+#### [43. Color Vocabulary Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Projects/Color%20Vocab%20Project)
+
 ## Day 44
 
 ## Day 45
