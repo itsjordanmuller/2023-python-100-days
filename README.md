@@ -338,6 +338,18 @@
 
 #### [27. Unit Converter App - (Miles to Kilometers)](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Projects/6-miles-km-converter.py)
 
+### Exercises (Day 27)
+
+#### [A. Windows & Labels](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/1-windows-labels.py)
+
+#### [B. Many Arguments](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/2-many-arguments.py)
+
+#### [C. Many Keyword Arguments](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/3-many-keyword-args.py)
+
+#### [D. Tkinter Widgets](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/4-tkinter-widgets.py)
+
+#### [E. Layout Managers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/5-layout-managers.py)
+
 ## Day 28
 
 ## Day 29
