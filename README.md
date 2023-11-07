@@ -126,6 +126,20 @@
 
 #### [8. Caesar Cipher](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Projects/7-caesar-cipher.py)
 
+### Exercises (Day 8)
+
+#### [A. Greet Function](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/1-greet-function.py)
+
+#### [B. Paint Area Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/2-paint-area-calculator.py)
+
+#### [C. Prime Number Check](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/3-prime-number-check.py)
+
+#### [D. Building Caesar Cipher - Part 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/4-caesar-cipher1.py)
+
+#### [E. Building Caesar Cipher - Part 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/5-caesar-cipher2.py)
+
+#### [F. Building Caesar Cipher - Part 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/6-caesar-cipher3.py)
+
 ## Day 9
 
 ## Day 10
