@@ -4,21 +4,25 @@
 
 ### Projects (Day 1)
 
-#### [A. Band Name Generator Project](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Projects/band-name-generator.py)
+#### [1. Band Name Generator Project](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Projects/band-name-generator.py)
 
 ### Exercises (Day 1)
 
-#### [a. Hello World](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/0-hello-world.py)
+#### [A. Hello World](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/0-hello-world.py)
 
-#### [b. Printing](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/1-printing.py)
+#### [B. Printing](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/1-printing.py)
 
-#### [c. Debugging Practice](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/2-debugging-practice.py)
+#### [C. Debugging Practice](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/2-debugging-practice.py)
 
-#### [d. Input Function](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/3-input-function.py)
+#### [D. Input Function](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/3-input-function.py)
 
-#### [e. Variables](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/4-variables.py)
+#### [E. Variables](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/4-variables.py)
 
 ## Day 2
+
+### Projects (Day 2)
+
+#### [2. Tip Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Projects/tip-calculator.py)
 
 ## Day 3
 
