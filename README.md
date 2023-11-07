@@ -1,6 +1,8 @@
 # 100 Days of Python
 
 ## Day 1
+### Projects (Day 1)
+#### [A. Band Name Generator Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-001/Projects)
 
 ## Day 2
 
