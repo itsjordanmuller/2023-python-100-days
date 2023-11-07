@@ -286,6 +286,12 @@
 
 ## Day 24
 
+### Projects (Day 24)
+
+#### [24a. Mail Merge](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Mail%20Merge)
+
+#### [24b. Snake Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Snake%20Game)
+
 ## Day 25
 
 ## Day 26
