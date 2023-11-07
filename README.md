@@ -302,6 +302,12 @@
 
 #### [25. United States Guessing Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Projects/US%20States%20Game)
 
+### Exercises (Day 25)
+
+#### [A. Squirrel Census Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Exercises/Squirrel%20Census)
+
+#### [B. Weather Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Exercises/Weather)
+
 ## Day 26
 
 ## Day 27
