@@ -158,6 +158,10 @@
 
 ## Day 10
 
+### Projects (Day 10)
+
+#### [10. CLI Calculator with Multiple Functions](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Projects/5-calculator.py)
+
 ## Day 11
 
 ## Day 12
