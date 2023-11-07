@@ -314,6 +314,24 @@
 
 #### [26. NATO Alphabet Translator](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Projects/NATO%20Alphabet)
 
+### Exercises (Day 26)
+
+#### [A. List Comprehension](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/1-list-comprehension.py)
+
+#### [B. Squaring Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/2-squaring-numbers.py)
+
+#### [C. Filter Even Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/3-filter-even-nums.py)
+
+#### [D. Dictionary Comprehension](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/4-dict-comprehension.py)
+
+#### [E. Word Length Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/5-word-length-dict.py)
+
+#### [F. Weather Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/6-weather-dict.py)
+
+#### [G. Data Overlap Exercise](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Data%20Overlap%20Exercise)
+
+#### [H. Pandas DataFrame Iterate](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Pandas%20DataFrame%20Iterate)
+
 ## Day 27
 
 ## Day 28
