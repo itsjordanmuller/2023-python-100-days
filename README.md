@@ -428,6 +428,10 @@
 
 ## Day 40
 
+### Projects (Day 40)
+
+#### [40. Rock Paper Scissors v2 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-040/Rock%20Paper%20Scissors%20App)
+
 ## Day 41
 
 ## Day 42
