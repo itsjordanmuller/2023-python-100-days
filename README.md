@@ -234,6 +234,10 @@
 
 ## Day 18
 
+### Projects (Day 18)
+
+#### [18. Damien Hirst Spots Paintings with Turtle Graphics](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-018/Projects/spots)
+
 ## Day 19
 
 ## Day 20
