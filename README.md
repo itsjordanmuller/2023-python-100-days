@@ -274,6 +274,10 @@
 
 ## Day 22
 
+### Projects (Day 22)
+
+#### [22. PONG Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-022/Projects)
+
 ## Day 23
 
 ## Day 24
