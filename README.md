@@ -184,6 +184,10 @@
 
 #### [12. Number Guessing - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-012/Projects/2-guess-num-game.py)
 
+### Exercises (Day 13)
+
+#### [A. Namespaces](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-012/Exercises/1-namespaces.py)
+
 ## Day 13
 
 ## Day 14
