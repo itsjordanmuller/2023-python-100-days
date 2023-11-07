@@ -262,6 +262,10 @@
 
 ## Day 21
 
+### Projects (Day 21)
+
+#### [21. Snake Game v2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-021/Projects)
+
 ## Day 22
 
 ## Day 23
