@@ -24,6 +24,16 @@
 
 #### [2. Tip Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Projects/tip-calculator.py)
 
+### Exercises (Day 2)
+
+#### [A. Primitive Data Types](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/0-primitive-data-types.py)
+
+#### [B. Data Types](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/1-data-types.py)
+
+#### [C. BMI Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/2-bmi-calculator.py)
+
+#### [D. Life in Weeks](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/3-life-in-weeks.py)
+
 ## Day 3
 
 ## Day 4
