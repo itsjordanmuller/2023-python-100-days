@@ -386,6 +386,10 @@
 
 ## Day 33
 
+### Projects (Day 33)
+
+#### [33. Calculator GUI App v2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-033/Projects/Calculator%20App)
+
 ## Day 34
 
 ## Day 35
