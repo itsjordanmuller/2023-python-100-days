@@ -72,6 +72,10 @@
 
 ## Day 5
 
+### Projects (Day 5)
+
+#### [5. Password Generator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Projects/5-password-generator.py)
+
 ## Day 6
 
 ## Day 7
