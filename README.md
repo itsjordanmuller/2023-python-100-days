@@ -334,6 +334,10 @@
 
 ## Day 27
 
+### Projects (Day 27)
+
+#### [27. Unit Converter App - (Miles to Kilometers)](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Projects/6-miles-km-converter.py)
+
 ## Day 28
 
 ## Day 29
