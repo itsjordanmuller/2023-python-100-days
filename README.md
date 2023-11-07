@@ -146,6 +146,16 @@
 
 #### [9. Blind Auction](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Projects/5-blind-auction.py)
 
+### Exercises (Day 9)
+
+#### [A. Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/1-dictionary.py)
+
+#### [B. Grading Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/2-grading-program.py)
+
+#### [C. Nesting Dictionaries](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/3-nesting-dictionaries.py)
+
+#### [D. Travel Log](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/4-travel-log.py)
+
 ## Day 10
 
 ## Day 11
