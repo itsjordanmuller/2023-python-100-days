@@ -56,6 +56,10 @@
 
 ## Day 4
 
+### Projects (Day 4)
+
+#### [4. Rock Paper Scissors - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Projects/4-rock-paper-scissors.py)
+
 ## Day 5
 
 ## Day 6
