@@ -358,6 +358,10 @@
 
 ## Day 29
 
+### Projects (Day 29)
+
+#### [29. Password Manager](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-029/Projects/Password%20Manager)
+
 ## Day 30
 
 ## Day 31
