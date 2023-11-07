@@ -310,6 +310,10 @@
 
 ## Day 26
 
+### Projects (Day 26)
+
+#### [26. NATO Alphabet Translator](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Projects/NATO%20Alphabet)
+
 ## Day 27
 
 ## Day 28
