@@ -280,6 +280,10 @@
 
 ## Day 23
 
+### Projects (Day 23)
+
+#### [23. Turtle Crossing (Frogger Game)](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-023/Projects)
+
 ## Day 24
 
 ## Day 25
