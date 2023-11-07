@@ -162,6 +162,16 @@
 
 #### [10. CLI Calculator with Multiple Functions](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Projects/5-calculator.py)
 
+### Exercises (Day 10)
+
+#### [A. Functions with Outputs](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/1-functions-with-outputs.py)
+
+#### [B. Multiple Return Values](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/2-multiple-return-values.py)
+
+#### [C. Days in Month](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/3-days-in-month.py)
+
+#### [D. Docstrings](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/4-docstrings.py)
+
 ## Day 11
 
 ## Day 12
