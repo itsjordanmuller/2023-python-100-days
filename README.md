@@ -380,6 +380,10 @@
 
 ## Day 32
 
+### Projects (Day 32)
+
+#### [32. Calculator GUI App](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/Projects/Calculator%20App/main.py)
+
 ## Day 33
 
 ## Day 34
