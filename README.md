@@ -122,6 +122,10 @@
 
 ## Day 8
 
+### Projects (Day 8)
+
+#### [8. Caesar Cipher](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Projects/7-caesar-cipher.py)
+
 ## Day 9
 
 ## Day 10
