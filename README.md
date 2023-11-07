@@ -112,6 +112,14 @@
 
 #### [7. Parachute Man - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/Projects/4-parachute-man.py)
 
+### Exercises (Day 7)
+
+#### [A. Building Parachute Man - Part 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/Exercises/1-parachute-man.py)
+
+#### [B. Building Parachute Man - Part 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/Exercises/2-parachute-man.py)
+
+#### [C. Building Parachute Man - Part 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/Exercises/3-parachute-man.py)
+
 ## Day 8
 
 ## Day 9
