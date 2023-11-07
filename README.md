@@ -208,6 +208,10 @@
 
 ## Day 15
 
+### Projects (Day 15)
+
+#### [15. Coffee Machine Simulator - CLI Application](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-015/Projects/1-coffee-machine.py)
+
 ## Day 16
 
 ## Day 17
