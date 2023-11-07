@@ -214,6 +214,10 @@
 
 ## Day 16
 
+### Projects (Day 16)
+
+#### [16. Coffee Machine Simulator v2 Upgrade - CLI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-016/Projects)
+
 ## Day 17
 
 ## Day 18
