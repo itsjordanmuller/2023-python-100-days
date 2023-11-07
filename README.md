@@ -190,6 +190,16 @@
 
 ## Day 13
 
+### Exercises (Day 13)
+
+#### [A. Beginner Debugging](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/1-beginner-debugging.py)
+
+#### [B. Debug Odd & Even Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/2-debug-odd-even.py)
+
+#### [C. Debug Leap Year Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/3-debug-leap-year.py)
+
+#### [D. Debug FizzBuzz Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/4-debug-fizzbuzz.py)
+
 ## Day 14
 
 ## Day 15
