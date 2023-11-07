@@ -438,6 +438,14 @@
 
 #### [41. Introduction to HTML](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Projects/Introduction%20to%20HTML)
 
+### Exercises (Day 41)
+
+#### [A. Heading Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Heading%20Element)
+
+#### [B. Paragraph Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Paragraph%20Element)
+
+#### [C. Void Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Void%20Elements)
+
 ## Day 42
 
 ## Day 43
