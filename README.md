@@ -394,9 +394,13 @@
 
 ### Projects (Day 34)
 
-#### [34. Quizzler Quiz App - GUI Application]
+#### [34. Quizzler Quiz App - GUI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-034/Projects/Quizzler)
 
 ## Day 35
+
+### Projects (Day 35)
+
+#### [35. Quizzler Quiz App v2 Upgrade - GUI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-035/Projects/Quizzler)
 
 ## Day 36
 
