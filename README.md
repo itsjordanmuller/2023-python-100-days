@@ -4,7 +4,7 @@
 
 ### Projects (Day 1)
 
-#### [A. Band Name Generator Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-001/Projects)
+#### [A. Band Name Generator Project](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Projects/band-name-generator.py)
 
 ### Exercises (Day 1)
 
@@ -13,6 +13,10 @@
 #### [b. Printing](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/1-printing.py)
 
 #### [c. Debugging Practice](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/2-debugging-practice.py)
+
+#### [d. Input Function](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/3-input-function.py)
+
+#### [e. Variables](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/4-variables.py)
 
 ## Day 2
 
