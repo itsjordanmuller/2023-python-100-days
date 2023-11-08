@@ -644,6 +644,12 @@
 
 #### [63. Library App - Accessing SQLite DB](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-063/Projects/Library%20App)
 
+### Exercises (Day 63)
+
+#### [A. SQLite Practice](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-063/Exercises/SQLite%20Practice)
+
+#### [B. SQLAlchemy Practice](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-063/Exercises/SQLAlchemy%20Practice)
+
 ## Day 64
 
 ## Day 65
