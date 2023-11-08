@@ -634,6 +634,10 @@
 
 ## Day 62
 
+### Projects (Day 62)
+
+#### [62. Coffee & Wi-Fi Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-062/Projects/Coffee%20and%20Wi-Fi)
+
 ## Day 63
 
 ## Day 64
