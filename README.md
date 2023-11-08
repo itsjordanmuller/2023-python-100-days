@@ -550,6 +550,10 @@
 
 ## Day 53
 
+### Projects (Day 53)
+
+#### [53. BMI Calculator v3 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-053/Projects/BMI%20Calculator%20GUI%20App)
+
 ## Day 54
 
 ## Day 55
