@@ -658,6 +658,10 @@
 
 ## Day 65
 
+### Projects (Day 65)
+
+#### [65. Notes GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-065/Projects/Notes%20GUI%20App)
+
 ## Day 66
 
 ## Day 67
