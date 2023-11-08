@@ -13,6 +13,7 @@ content %}
         <th>Description</th>
         <th>Difficulty</th>
         <th>Edit Task</th>
+        <th>Delete Task</th>
       </tr>
     </thead>
     <tbody>
@@ -23,6 +24,9 @@ content %}
         <td>{{ task[2] }}</td>
         <td>
           <a href="{{ url_for('edit', task_id=loop.index0) }}">Edit</a>
+        </td>
+        <td>
+          <a href="{{ url_for('delete', task_id=loop.index0) }}">Delete</a>
         </td>
       </tr>
       {% else %}

@@ -100,6 +100,19 @@ def edit(task_id):
     return render_template("edit.html", form=form, task_id=task_id)
 
 
+@app.route("/delete/<int:task_id>", methods=["GET", "POST"])
+def delete(task_id):
+    tasks = read_tasks_from_csv()
+    try:
+        tasks.pop(task_id)
+        write_tasks_to_csv(tasks)
+        flash("Task deleted successfully!", "success")
+    except IndexError:
+        flash("Task not found.", "error")
+
+    return redirect(url_for("home"))
+
+
 check_and_create_csv()
 
 if __name__ == "__main__":
