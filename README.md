@@ -604,6 +604,10 @@
 
 ## Day 58
 
+### Projects (Day 58)
+
+#### [58. TinDog App Landing Page](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-058/Projects/TinDog%20Project)
+
 ## Day 59
 
 ## Day 60
