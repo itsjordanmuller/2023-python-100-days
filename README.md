@@ -570,6 +570,10 @@
 
 ## Day 55
 
+### Projects (Day 55)
+
+#### [55. Higher or Lower Dynamic Routes/URLs](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-055/Projects/Higher%20or%20Lower%20URLs)
+
 ## Day 56
 
 ## Day 57
