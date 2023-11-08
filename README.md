@@ -544,6 +544,10 @@
 
 ## Day 52
 
+### Projects (Day 52)
+
+#### [52. Billboard Hot 100 Playlist Creator v4 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-052/Projects/Billboard%20Hot%20100)
+
 ## Day 53
 
 ## Day 54
