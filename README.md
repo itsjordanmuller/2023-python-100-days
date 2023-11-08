@@ -682,6 +682,10 @@
 
 ## Day 69
 
+### Projects (Day 69)
+
+#### [69. Blog with Users & Authentication](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-069/Projects/Blog%20with%20Users)
+
 ## Day 70
 
 ## Day 71
