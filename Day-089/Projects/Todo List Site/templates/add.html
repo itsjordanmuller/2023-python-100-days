@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block title %}Add a Task{% endblock %} {% block
+content %}
+<main>
+  <h1>Add a New Task</h1>
+  {% from 'bootstrap5/form.html' import render_form %} {{ render_form(form) }}
+</main>
+{% endblock %}
