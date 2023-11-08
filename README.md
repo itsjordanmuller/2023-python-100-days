@@ -636,9 +636,13 @@
 
 ### Projects (Day 62)
 
-#### [62. Coffee & Wi-Fi Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-062/Projects/Coffee%20and%20Wi-Fi)
+#### [62. Coffee & Wi-Fi Website - Accessing CSV](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-062/Projects/Coffee%20and%20Wi-Fi)
 
 ## Day 63
+
+### Projects (Day 63)
+
+#### [63. Library App - Accessing SQLite DB](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-063/Projects/Library%20App)
 
 ## Day 64
 
