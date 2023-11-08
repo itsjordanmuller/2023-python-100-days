@@ -628,6 +628,10 @@
 
 ## Day 61
 
+### Projects (Day 61)
+
+#### [61. Flask WTForms](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-061/Projects/Flask%20WTForms)
+
 ## Day 62
 
 ## Day 63
