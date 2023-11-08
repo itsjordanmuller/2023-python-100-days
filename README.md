@@ -664,6 +664,10 @@
 
 ## Day 66
 
+### Projects (Day 66)
+
+#### [66. Cafe API - Flask REST API](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-066/Projects/Cafe%20REST%20API)
+
 ## Day 67
 
 ## Day 68
