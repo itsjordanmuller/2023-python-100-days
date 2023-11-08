@@ -482,6 +482,14 @@
 
 #### [44. Motivational Meme Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Projects/Motivation%20Meme%20Project)
 
+### Exercises (Day 44)
+
+#### [A. CSS Box Model](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS%20Box%20Model)
+
+#### [B. CSS Colors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS%20Colors)
+
+#### [C. Font Properties](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/Font%20Properties)
+
 ## Day 45
 
 ## Day 46
