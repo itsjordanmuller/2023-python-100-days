@@ -622,6 +622,10 @@
 
 ## Day 60
 
+### Projects (Day 60)
+
+#### [60. BMI Calculator v4 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-060/Projects/BMI%20Calculator%20GUI%20App)
+
 ## Day 61
 
 ## Day 62
