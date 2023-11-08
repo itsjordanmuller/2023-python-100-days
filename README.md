@@ -582,6 +582,10 @@
 
 ## Day 56
 
+### Project (Day 56)
+
+#### [56. Name Card Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Projects/Name%20Card%20Website)
+
 ## Day 57
 
 ## Day 58
