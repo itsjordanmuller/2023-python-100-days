@@ -492,6 +492,10 @@
 
 ## Day 45
 
+### Projects (Day 45)
+
+#### [45. 100 Movies You Must Watch](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Projects/100%20Movies%20You%20Must%20Watch)
+
 ## Day 46
 
 ## Day 47
