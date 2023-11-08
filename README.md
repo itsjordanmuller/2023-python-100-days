@@ -594,6 +594,10 @@
 
 ## Day 57
 
+### Project (Day 57)
+
+#### [57. Blog Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-057/Projects/Blog%20Site)
+
 ## Day 58
 
 ## Day 59
