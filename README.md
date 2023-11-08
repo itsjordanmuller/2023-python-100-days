@@ -1,5 +1,9 @@
 # 100 Days of Python
 
+Self-Paced Learning Sandbox for Python
+
+![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white)
+
 ## Day 1
 
 ### Projects (Day 1)
