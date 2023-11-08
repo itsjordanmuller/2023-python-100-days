@@ -1,6 +1,6 @@
 # 100 Days of Python
 
-Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matplotlib, Plotly, scikit-learn, SQLite, SQLAlchemy, Environment Variables, PyPi, Virtual Environments, ESLint, Prettier, Black Formatter, Git & GitHub
+Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matplotlib, Plotly, scikit-learn, SQLite, SQLAlchemy, Environment Variables, PyPi, Virtual Environments, ESLint, Prettier, Black Formatter, Visual Studio Code, Git & GitHub
 
 ![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)
@@ -17,6 +17,7 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3.svg?style=for-the-badge&logo=ESLint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E.svg?style=for-the-badge&logo=Prettier&logoColor=black)
 ![Black](https://img.shields.io/badge/Black-000000.svg?style=for-the-badge&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC.svg?style=for-the-badge&logo=Visual-Studio-Code&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)
 
