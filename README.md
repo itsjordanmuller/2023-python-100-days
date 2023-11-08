@@ -478,6 +478,10 @@
 
 ## Day 44
 
+### Projects (Day 44)
+
+#### [44. Motivational Meme Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Projects/Motivation%20Meme%20Project)
+
 ## Day 45
 
 ## Day 46
