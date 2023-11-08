@@ -670,6 +670,10 @@
 
 ## Day 67
 
+### Projects (Day 67)
+
+#### [67. Blog API - Flask REST API](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-067/Projects/Blog%20REST%20API)
+
 ## Day 68
 
 ## Day 69
