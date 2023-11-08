@@ -526,6 +526,10 @@
 
 ## Day 49
 
+### Projects (Day 49)
+
+#### [49. Color Madness Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-049/Projects/Color%20Madness)
+
 ## Day 50
 
 ## Day 51
