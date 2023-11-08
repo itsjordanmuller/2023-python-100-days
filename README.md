@@ -582,7 +582,7 @@
 
 ## Day 56
 
-### Project (Day 56)
+### Projects (Day 56)
 
 #### [56. Name Card Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Projects/Name%20Card%20Website)
 
@@ -594,9 +594,13 @@
 
 ## Day 57
 
-### Project (Day 57)
+### Projects (Day 57)
 
 #### [57. Blog Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-057/Projects/Blog%20Site)
+
+### Exercises (Day 57)
+
+#### [A. Jinja Template Introduction](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-057/Exercises/Jinja%20Template%20Introduction)
 
 ## Day 58
 
