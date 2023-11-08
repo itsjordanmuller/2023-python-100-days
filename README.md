@@ -586,6 +586,12 @@
 
 #### [56. Name Card Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Projects/Name%20Card%20Website)
 
+### Exercises (Day 56)
+
+#### [A. Open Source Template](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Exercises/Open%20Source%20Template)
+
+#### [B. Resume Site Template](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Exercises/Resume%20Site%20Template)
+
 ## Day 57
 
 ## Day 58
