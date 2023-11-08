@@ -520,6 +520,10 @@
 
 #### [48. Cookie Clicker Automation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-048/Projects/Cookie%20Clicker)
 
+### Exercises (Day 48)
+
+#### [A. Selenium Basics](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-048/Exercises/Selenium%20Basics)
+
 ## Day 49
 
 ## Day 50
