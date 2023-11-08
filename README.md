@@ -676,6 +676,10 @@
 
 ## Day 68
 
+### Projects (Day 68)
+
+#### [68. Flask Authentication](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-068/Projects/Flask%20Authentication)
+
 ## Day 69
 
 ## Day 70
