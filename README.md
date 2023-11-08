@@ -688,6 +688,14 @@
 
 ## Day 70
 
+### Projects (Day 70)
+
+#### [70. Using Git/GitHub](https://github.com/itsjordanmuller/2023-python-100-days/tree/main#day-70)
+
+The original purpose of this lesson was to start learning how to use Git for version control and GitHub for version control hosting. However, I started this project from Day 1 using Git/GitHub.
+
+I might come back to this at some point to make a Git helper script/application using Python, but I decided to give myself a free pass for now since I've been using Git from Day 1!
+
 ## Day 71
 
 ## Day 72
