@@ -504,6 +504,10 @@
 
 ## Day 46
 
+### Projects (Day 46)
+
+#### [46. Billboard Hot 100](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-046/Projects/Billboard%20Hot%20100)
+
 ## Day 47
 
 ## Day 48
