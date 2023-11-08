@@ -616,6 +616,10 @@
 
 ## Day 59
 
+### Projects (Day 59)
+
+#### [59. Upgraded Blog](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-059/Projects/Upgraded%20Blog)
+
 ## Day 60
 
 ## Day 61
