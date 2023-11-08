@@ -538,6 +538,10 @@
 
 ## Day 51
 
+### Projects (Day 51)
+
+#### [51. Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-051/Projects/Billboard%20Hot%20100)
+
 ## Day 52
 
 ## Day 53
