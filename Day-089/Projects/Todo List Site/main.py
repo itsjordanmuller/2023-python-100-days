@@ -39,10 +39,13 @@ def append_to_csv(task_name, task_description, task_difficulty):
 
 @app.route("/")
 def home():
-    return render_template("index.html")
-
-
-check_and_create_csv()
+    tasks = []
+    with open(csv_file_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        next(reader)
+        for row in reader:
+            tasks.append(row)
+    return render_template("index.html", tasks=tasks)
 
 
 @app.route("/add", methods=["GET", "POST"])
@@ -53,9 +56,11 @@ def add():
             form.taskName.data, form.taskDescription.data, form.taskDifficulty.data
         )
         flash("Task added successfully!", "success")
-        return redirect(url_for("add"))
+        return redirect(url_for("home"))
     return render_template("add.html", form=form)
 
+
+check_and_create_csv()
 
 if __name__ == "__main__":
     app.run(debug=True, port=3000)

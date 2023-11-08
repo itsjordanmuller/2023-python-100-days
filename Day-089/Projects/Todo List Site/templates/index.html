@@ -2,6 +2,31 @@
 content %}
 <main>
   <h1>Todo List Site</h1>
-  <a href="/add">Add a New Task</a>
+  <a href="{{ url_for('add') }}">Add a New Task</a>
+  <br />
+  <br />
+
+  <table>
+    <thead>
+      <tr>
+        <th>Task Name</th>
+        <th>Description</th>
+        <th>Difficulty</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for task in tasks %}
+      <tr>
+        <td>{{ task[0] }}</td>
+        <td>{{ task[1] }}</td>
+        <td>{{ task[2] }}</td>
+      </tr>
+      {% else %}
+      <tr>
+        <td colspan="3">No tasks found</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </main>
 {% endblock %}
