@@ -510,6 +510,10 @@
 
 ## Day 47
 
+### Projects (Day 47)
+
+#### [47. Amazon Price Tracker](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-047/Projects/Amazon%20Price%20Tracker)
+
 ## Day 48
 
 ## Day 49
