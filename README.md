@@ -1,8 +1,9 @@
 # 100 Days of Python
 
-Self-Paced Learning Sandbox for Python with NumPy, Environment Variables & Virtual Environments
+Self-Paced Learning Sandbox for Python with PyPi, NumPy, Environment Variables & Virtual Environments
 
 ![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white)
+![PyPI](https://img.shields.io/badge/PyPI-3775A9.svg?style=for-the-badge&logo=PyPI&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)
 ![.env](https://img.shields.io/badge/.ENV-ECD53F.svg?style=for-the-badge&logo=dotenv&logoColor=black)
 
