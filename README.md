@@ -560,6 +560,14 @@
 
 #### [54. Create Your Own Python Decorator](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Projects/Create%20Your%20Own%20Python%20Decorator)
 
+### Exercises (Day 54)
+
+#### [A. Introduction to Flask](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Introduction%20to%20Flask)
+
+#### [B. Python Decorators](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Python%20Decorators)
+
+#### [C. Python Functions](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Python%20Functions)
+
 ## Day 55
 
 ## Day 56
