@@ -496,6 +496,12 @@
 
 #### [45. 100 Movies You Must Watch](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Projects/100%20Movies%20You%20Must%20Watch)
 
+### Exercises (Day 45)
+
+#### [A. Parsing HTML and Making Soup](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Parsing%20HTML%20and%20Making%20Soup)
+
+#### [B. Scraping a Live Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Scraping%20a%20Live%20Site)
+
 ## Day 46
 
 ## Day 47
