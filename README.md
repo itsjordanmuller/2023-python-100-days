@@ -574,6 +574,12 @@
 
 #### [55. Higher or Lower Dynamic Routes/URLs](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-055/Projects/Higher%20or%20Lower%20URLs)
 
+### Exercises (Day 55)
+
+#### [A. Advanced Decorators](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-055/Exercises/Advanced%20Decorators)
+
+#### [B. Flask Practice](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-055/Exercises/Flask%20Practice)
+
 ## Day 56
 
 ## Day 57
