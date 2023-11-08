@@ -506,7 +506,7 @@
 
 ### Projects (Day 46)
 
-#### [46. Billboard Hot 100](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-046/Projects/Billboard%20Hot%20100)
+#### [46. Billboard Hot 100 Playlist Creator - CLI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-046/Projects/Billboard%20Hot%20100)
 
 ## Day 47
 
@@ -531,6 +531,10 @@
 #### [49. Color Madness Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-049/Projects/Color%20Madness)
 
 ## Day 50
+
+### Projects (Day 50)
+
+#### [50. Billboard Hot 100 Playlist Creator v2 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-050/Projects/Billboard%20Hot%20100)
 
 ## Day 51
 
