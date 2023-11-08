@@ -556,6 +556,10 @@
 
 ## Day 54
 
+### Projects (Day 54)
+
+#### [54. Create Your Own Python Decorator](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Projects/Create%20Your%20Own%20Python%20Decorator)
+
 ## Day 55
 
 ## Day 56
