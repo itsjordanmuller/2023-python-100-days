@@ -652,6 +652,10 @@
 
 ## Day 64
 
+### Projects (Day 64)
+
+#### [64. Favorite Movies Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-064/Projects/Favorite%20Movies%20Website)
+
 ## Day 65
 
 ## Day 66
