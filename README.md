@@ -516,6 +516,10 @@
 
 ## Day 48
 
+### Projects (Day 48)
+
+#### [48. Cookie Clicker Automation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-048/Projects/Cookie%20Clicker)
+
 ## Day 49
 
 ## Day 50
