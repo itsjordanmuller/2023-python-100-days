@@ -608,6 +608,12 @@
 
 #### [58. TinDog App Landing Page](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-058/Projects/TinDog%20Project)
 
+### Exercises (Day 58)
+
+#### [A. Bootstrap Introduction](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-058/Exercises/Bootstrap%20Introduction)
+
+#### [B. Bootstrap Components](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-058/Exercises/Bootstrap%20Components)
+
 ## Day 59
 
 ## Day 60
