@@ -12,6 +12,10 @@ class TypingApp:
         self.entry = tk.Entry(master)
         self.entry.pack(pady=20)
         self.entry.focus_set()
+        self.entry.bind("<KeyRelease>", self.update_text)
+
+    def update_text(self, event):
+        self.display_label.config(text=self.entry.get())
 
 
 if __name__ == "__main__":
