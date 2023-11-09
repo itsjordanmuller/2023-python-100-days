@@ -6,16 +6,24 @@ class TypingApp:
         self.master = master
         self.master.title("Disappearing Text App")
 
-        self.countdown_label = tk.Label(master, text="")
+        self.master.geometry("800x600")
+
+        top_frame = tk.Frame(master)
+        top_frame.pack(side=tk.TOP, expand=True, fill=tk.BOTH)
+
+        bottom_frame = tk.Frame(master)
+        bottom_frame.pack(side=tk.BOTTOM, expand=True, fill=tk.BOTH)
+
+        self.countdown_label = tk.Label(top_frame, text="", wraplength=400)
         self.countdown_label.pack()
 
-        self.display_label = tk.Label(master, text="", fg="black")
+        self.display_label = tk.Label(top_frame, text="", fg="black", wraplength=400)
         self.display_label.pack(pady=20)
 
-        self.entry = tk.Entry(master)
-        self.entry.pack(pady=20)
-        self.entry.focus_set()
-        self.entry.bind("<KeyRelease>", self.update_text)
+        self.text = tk.Text(bottom_frame, wrap="char", height=10)
+        self.text.pack(side=tk.BOTTOM, expand=True, fill=tk.BOTH, pady=20)
+        self.text.bind("<KeyRelease>", self.update_text)
+        self.text.focus_set()
 
         self.after_id = None
         self.countdown_after_ids = []
@@ -27,7 +35,8 @@ class TypingApp:
         }
 
     def update_text(self, event):
-        self.display_label.config(text=self.entry.get())
+        text_content = self.text.get("1.0", "end-1c")
+        self.display_label.config(text=text_content)
         self.reset_countdown()
 
     def reset_countdown(self):
@@ -59,7 +68,7 @@ class TypingApp:
         self.display_label.config(fg=self.fade_colors[step])
 
     def clear_text(self):
-        self.entry.delete(0, tk.END)
+        self.text.delete("1.0", tk.END)
         self.display_label.config(text="")
         self.countdown_label.config(text="")
 
