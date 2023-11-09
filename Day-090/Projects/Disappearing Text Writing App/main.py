@@ -8,11 +8,15 @@ class TypingApp:
 
         self.master.geometry("800x600")
 
+        master.grid_rowconfigure(0, weight=1)
+        master.grid_rowconfigure(1, weight=2)
+        master.grid_columnconfigure(0, weight=1)
+
         top_frame = tk.Frame(master)
-        top_frame.pack(side=tk.TOP, expand=True, fill=tk.BOTH)
+        top_frame.grid(row=0, column=0, sticky="nsew")
 
         bottom_frame = tk.Frame(master)
-        bottom_frame.pack(side=tk.BOTTOM, expand=True, fill=tk.BOTH)
+        bottom_frame.grid(row=1, column=0, sticky="nsew")
 
         self.countdown_label = tk.Label(top_frame, text="", wraplength=400)
         self.countdown_label.pack()
