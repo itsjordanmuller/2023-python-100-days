@@ -9,7 +9,7 @@ class TypingApp:
         self.countdown_label = tk.Label(master, text="")
         self.countdown_label.pack()
 
-        self.display_label = tk.Label(master, text="")
+        self.display_label = tk.Label(master, text="", fg="black")
         self.display_label.pack(pady=20)
 
         self.entry = tk.Entry(master)
@@ -19,6 +19,12 @@ class TypingApp:
 
         self.after_id = None
         self.countdown_after_ids = []
+
+        self.fade_colors = {
+            3: "#555555",
+            2: "#888888",
+            1: "#bbbbbb",
+        }
 
     def update_text(self, event):
         self.display_label.config(text=self.entry.get())
@@ -30,18 +36,27 @@ class TypingApp:
         for after_id in self.countdown_after_ids:
             self.master.after_cancel(after_id)
         self.countdown_after_ids.clear()
+        self.display_label.config(fg="black")
         self.after_id = self.master.after(1000, self.start_countdown)
         self.countdown_label.config(text="")
 
     def start_countdown(self):
         self.countdown_after_ids.clear()
+        self.update_opacity(3)
         for i in range(3, 0, -1):
-            after_id = self.master.after(1000 * (3 - i), self.update_countdown, i)
-            self.countdown_after_ids.append(after_id)
+            self.countdown_after_ids.append(
+                self.master.after(1000 * (3 - i), self.update_countdown, i)
+            )
+            self.countdown_after_ids.append(
+                self.master.after(1000 * (3 - i), self.update_opacity, i)
+            )
         self.countdown_after_ids.append(self.master.after(3000, self.clear_text))
 
     def update_countdown(self, i):
         self.countdown_label.config(text=f"{i}s...")
+
+    def update_opacity(self, step):
+        self.display_label.config(fg=self.fade_colors[step])
 
     def clear_text(self):
         self.entry.delete(0, tk.END)
