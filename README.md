@@ -34,6 +34,10 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 
 #### [A. Hello World](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/0-hello-world.py)
 
+In this exercise, I learned about handling user input, string manipulation, and outputting data. I used the `input()` function to prompt for and receive the user's name. This taught me how to interact with users and capture their responses in a program.
+
+Next, I used the `len()` function to calculate the length of the entered name, which showed me how to work with string properties and perform basic calculations. Finally, I printed both the name and its length to the console, reinforcing my understanding of how to display output in Python.
+
 #### [B. Printing](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/1-printing.py)
 
 #### [C. Debugging Practice](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/2-debugging-practice.py)
