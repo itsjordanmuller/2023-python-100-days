@@ -102,6 +102,12 @@ This task was a practical application of input handling, type conversion, arithm
 
 #### [D. Life in Weeks](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/3-life-in-weeks.py)
 
+In this exercise, I created a program to calculate the time a person has left in days, weeks, and months, assuming they live up to 90 years old. The user inputs their current age, and the program computes the remaining time.
+
+First, I converted the user's age from a string to an integer. Then, I calculated the years remaining by subtracting the user's age from 90. Using this value, I determined the months, weeks, and days left by multiplying the years remaining with the number of months, weeks, and days in a year, respectively.
+
+The final output was formatted using a Python f-string to neatly display the calculated days, weeks, and months remaining. This exercise taught me about basic arithmetic operations, type conversion, and string formatting in Python, along with providing a practical application of these skills.
+
 ## Day 3
 
 ### Projects (Day 3)
