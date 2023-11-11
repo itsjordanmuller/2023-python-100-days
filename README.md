@@ -86,6 +86,12 @@ Finally, I practiced incrementing variables and formatting strings to include mu
 
 #### [B. Data Types](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/1-data-types.py)
 
+In this exercise, I worked on manipulating and calculating with string and integer data types in Python. The challenge was to take a two-digit number as a string input, extract each digit, convert them into integers, and then sum them.
+
+After capturing the two-digit number as a string input, I extracted the first and second digits using indexing. Then, I converted these string digits into integers using the `int()` function. Finally, I added these two integer values together and printed the result.
+
+This exercise taught me about string indexing, type conversion from strings to integers, and basic arithmetic operations in Python. It was a practical application of combining several fundamental programming concepts.
+
 #### [C. BMI Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/2-bmi-calculator.py)
 
 #### [D. Life in Weeks](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/3-life-in-weeks.py)
