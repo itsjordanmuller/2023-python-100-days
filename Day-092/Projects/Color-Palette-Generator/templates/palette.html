@@ -1,5 +1,7 @@
 {% extends 'base.html' %} {% block title %}Your Color Palette{% endblock %} {%
-block content %}
+block styles %} {{ super() }}
+<style></style>
+{% endblock %} {% block content %}
 <div style="text-align: center">
   <h1>Your Color Palette</h1>
   <div style="display: inline-block">
@@ -8,15 +10,20 @@ block content %}
         display: grid;
         grid-template-columns: repeat(3, 100px);
         grid-template-rows: repeat(3, 100px);
-        gap: 10px;
+        gap: 20px;
       "
     >
       {% for color in colors %}
       <div
-        style="width: 100px; height: 100px; background-color: {{ color }}"
+        class="color-square"
+        style="background-color: {{ color }};"
+        data-color="{{ color }}"
+        onclick="copyToClipboard('{{ color }}')"
       ></div>
       {% endfor %}
     </div>
   </div>
 </div>
+{% endblock %} {% block scripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 {% endblock %}
