@@ -1,22 +1,16 @@
 {% extends 'base.html' %} {% block title %}Your Color Palette{% endblock %} {%
-block styles %} {{ super() }}
-<style></style>
-{% endblock %} {% block content %}
+block styles %} {{ super() }} {% endblock %} {% block content %}
 <div style="text-align: center">
+  <a href="/">Back to Home</a>
   <h1>Your Color Palette</h1>
   <div style="display: inline-block">
     <div
-      style="
-        display: grid;
-        grid-template-columns: repeat(3, 100px);
-        grid-template-rows: repeat(3, 100px);
-        gap: 20px;
-      "
+      style="display: grid; grid-template-columns: repeat({{ grid_size }}, 100px); gap: 20px;"
     >
       {% for color in colors %}
       <div
         class="color-square"
-        style="background-color: {{ color }};"
+        style="background-color: {{ color }}; width: 100px; height: 100px;"
         data-color="{{ color }}"
         onclick="copyToClipboard('{{ color }}')"
       ></div>

@@ -5,8 +5,25 @@
     <h1>🎨 Color Palette Generator 🖌️</h1>
     <form action="/upload" method="post" enctype="multipart/form-data">
       <input type="file" name="image" required />
+      <label for="color-range"
+        >Number of Colors: <span id="num-colors">9</span></label
+      >
+      <input
+        type="range"
+        id="color-range"
+        name="num_colors"
+        min="1"
+        max="27"
+        value="9"
+        oninput="updateColorCount(value)"
+      />
       <input type="submit" value="Generate Palette" />
     </form>
   </div>
 </div>
+<script>
+  function updateColorCount(value) {
+    document.getElementById("num-colors").textContent = value;
+  }
+</script>
 {% endblock %}

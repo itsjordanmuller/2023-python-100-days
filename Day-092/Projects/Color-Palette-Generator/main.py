@@ -36,15 +36,17 @@ def home():
 
 @app.route("/upload", methods=["POST"])
 def upload():
-    if "image" not in request.files:
+    if "image" not in request.files or "num_colors" not in request.form:
         return redirect(request.url)
 
     file = request.files["image"]
+    num_colors = int(request.form.get("num_colors", 9))
     if file:
         image = Image.open(file.stream)
-        colors = extract_colors(image, 9)
+        colors = extract_colors(image, num_colors)
 
-        return render_template("palette.html", colors=colors)
+        grid_size = int(np.ceil(np.sqrt(num_colors)))
+        return render_template("palette.html", colors=colors, grid_size=grid_size)
 
     return redirect(url_for("home"))
 
