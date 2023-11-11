@@ -40,6 +40,10 @@ Next, I used the `len()` function to calculate the length of the entered name, w
 
 #### [B. Printing](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/1-printing.py)
 
+This exercise involved printing text to the console, a fundamental skill in many language, not just Python. I learned how to structure the `print` function and the syntax for outputting strings.
+
+I printed multiple lines, each demonstrating a different aspect of the print function. Starting with a basic introduction line, I moved on to describe how the function is declared, and then displayed an example of the `print` function in action. This helped me understand the basics of displaying text in Python, a key component in many programming tasks.
+
 #### [C. Debugging Practice](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/2-debugging-practice.py)
 
 #### [D. Input Function](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/3-input-function.py)
