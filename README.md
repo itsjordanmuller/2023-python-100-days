@@ -78,6 +78,12 @@ The final output then reflected the swapped values, demonstrating successful var
 
 #### [A. Primitive Data Types](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/0-primitive-data-types.py)
 
+In this exercise, I focused on different primitive data types and their operations. I worked with strings, accessing and manipulating characters, integers and floats, performing basic arithmetic operations, and understanding the nuances of different number types.
+
+A significant part of the exercise was learning about type conversion, such as changing integers to strings or strings to floats. I used the `type()` function for identifying data types. The exercise also covered Python's order of operations (PEMDAS), including standard division, floor division, and rounding numbers.
+
+Finally, I practiced incrementing variables and formatting strings to include multiple variables, enhancing my understanding of Python's data handling and string formatting capabilities.
+
 #### [B. Data Types](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/1-data-types.py)
 
 #### [C. BMI Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/2-bmi-calculator.py)
