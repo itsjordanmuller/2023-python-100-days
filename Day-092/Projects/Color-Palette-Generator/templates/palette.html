@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block title %}Your Color Palette{% endblock %} {%
+block content %}
+<div style="text-align: center">
+  <h1>Your Color Palette</h1>
+  <div style="display: inline-block">
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 10px;
+      "
+    >
+      {% for color in colors %}
+      <div
+        style="width: 100px; height: 100px; background-color: {{ color }}"
+      ></div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

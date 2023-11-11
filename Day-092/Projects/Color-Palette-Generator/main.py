@@ -34,5 +34,20 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/upload", methods=["POST"])
+def upload():
+    if "image" not in request.files:
+        return redirect(request.url)
+
+    file = request.files["image"]
+    if file:
+        image = Image.open(file.stream)
+        colors = extract_colors(image, 9)
+
+        return render_template("palette.html", colors=colors)
+
+    return redirect(url_for("home"))
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=3000)
