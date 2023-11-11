@@ -46,6 +46,10 @@ I printed multiple lines, each demonstrating a different aspect of the print fun
 
 #### [C. Debugging Practice](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/2-debugging-practice.py)
 
+In this exercise, I focused on debugging Python code, specifically addressing syntax errors in string manipulation and print statements. I encountered issues like a missing quotation mark, inconsistent use of single and double quotes, and an indentation error.
+
+By correcting these errors, I practiced paying close attention to syntax details, the nuances between single and double quotes, and how proper indentation is crucial. This task was a practical lesson in troubleshooting and refining my understanding of Python syntax, particularly in relation to string handling and output formatting.
+
 #### [D. Input Function](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/3-input-function.py)
 
 #### [E. Variables](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/4-variables.py)
