@@ -94,6 +94,12 @@ This exercise taught me about string indexing, type conversion from strings to i
 
 #### [C. BMI Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/2-bmi-calculator.py)
 
+In this exercise, I developed a basic BMI (Body Mass Index) calculator in Python. The program begins by asking the user to input their height in meters and weight in kilograms.
+
+To calculate the BMI, I first converted the height and weight inputs from strings to floats using the `float()` function. Then, I applied the BMI formula, which is weight divided by height squared. Finally, I converted the resulting BMI value to an integer using the `int()` function for a cleaner output and printed the result.
+
+This task was a practical application of input handling, type conversion, arithmetic operations, and output formatting in Python. It demonstrated how to build a simple yet functional tool using basic programming concepts.
+
 #### [D. Life in Weeks](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/3-life-in-weeks.py)
 
 ## Day 3
