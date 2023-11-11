@@ -52,6 +52,12 @@ By correcting these errors, I practiced paying close attention to syntax details
 
 #### [D. Input Function](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/3-input-function.py)
 
+In this exercise, I learned to use the `input()` function to capture user input and the `len()` function to calculate the length of a string.
+
+The program first prompts the user to enter their name, storing the response in variable `a`. Then, it calculates and prints the length of the inputted name using `len(a)`.
+
+This demonstrated how to interact with users and process their input, as well as basic string manipulation.
+
 #### [E. Variables](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/4-variables.py)
 
 ## Day 2
