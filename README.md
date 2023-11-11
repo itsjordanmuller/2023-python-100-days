@@ -60,6 +60,14 @@ This demonstrated how to interact with users and process their input, as well as
 
 #### [E. Variables](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/4-variables.py)
 
+The challenge of this exercise was to swap the values of two variables without altering the given input and output code sections.
+
+Initially, the program collected user inputs for variables `a` and `b`. My task was to write code in the designated area to swap the values of these two variables.
+
+To achieve this, I introduced two new variables, `export_a` and `export_b`, to temporarily hold the values of `a` and `b`. Then, I reassigned the values of a and b by swapping them using the temporary variables.
+
+The final output then reflected the swapped values, demonstrating successful variable manipulation. Through this exercise, I learned a practical application of variables.
+
 ## Day 2
 
 ### Projects (Day 2)
