@@ -165,6 +165,24 @@ Key changes and learnings in this version include:
 
 #### [D. Leap Year](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/3-leap-year.py)
 
+In this exercise, I developed a program in Python to determine whether a given year is a leap year. The program employs nested conditional statements to apply the rules that define a leap year.
+
+The process begins with prompting the user to input a year, which is then converted into an integer using the `int()` function.
+
+The rules for determining a leap year are as follows:
+1. **Divisible by 4**: The year must be evenly divisible by 4.
+2. **Century Years**: If the year is a century (divisible by 100), it must also be divisible by 400 to be a leap year.
+
+The program's logic is structured as:
+- First, it checks if the year is divisible by 4. If not, it's not a leap year.
+- If the year is divisible by 4, it then checks if it's a century year (divisible by 100). 
+  - If it is a century year, it must also pass the check of being divisible by 400 to be considered a leap year.
+  - If it's not a century year, it is a leap year.
+
+This arrangement of `if-else` statements within each other, known as nested conditional statements, effectively applies these rules. Based on these checks, the program prints either "Leap year." or "Not leap year." accordingly.
+
+This exercise was an excellent demonstration of how nested conditional statements can be used to solve problems that require multiple layers of decision-making. It covered concepts like input handling, arithmetic operations with the modulus operator, and complex conditional logic in Python.
+
 #### [E. Pizza Order](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/4-pizza-order.py)
 
 #### [F. Love Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/5-love-calculator.py)
