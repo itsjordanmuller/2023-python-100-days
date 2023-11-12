@@ -325,6 +325,14 @@ This exercise effectively demonstrates how to manipulate lists and use indexing 
 
 #### [A. Basic Loops](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/0-basic-loops.py)
 
+In this exercise, I explored the use of basic loops in Python, focusing on the `for` loop with two distinct examples.
+
+The first part of the exercise involved iterating over a list of fruits. I defined a list named `fruits` containing "Apple", "Peach", and "Pear". Using a `for` loop, I iterated through each item in the list. For each fruit, the loop printed the fruit's name and then the fruit's name followed by " Pie". This demonstrated how to access and manipulate list elements within a loop, a fundamental skill in Python for working with collections of data.
+
+The second part of the exercise demonstrated the use of the `range` function with a `for` loop. I initialized a variable `total_number` to 0 and used a `for` loop to iterate over a range of numbers from 1 to 100. In each iteration, the loop added the current number to `total_number`. This section illustrated how `range` can be used for numeric iteration and how to accumulate a sum within a loop. The final print statement displayed the total sum of numbers from 1 to 100.
+
+Overall, these examples served as an introduction to `for` loops in Python. They showed how loops can be used for iterating over lists and performing repeated calculations. Such techniques are essential in Python for automating tasks, processing data, and carrying out calculations over sequences.
+
 #### [B. Average Height](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/1-average-height.py)
 
 #### [C. High Score](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/2-high-score.py)
