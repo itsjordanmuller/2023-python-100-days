@@ -45,6 +45,12 @@ def scrape_and_save_tables(url):
 
 
 if __name__ == "__main__":
-    print("Enter the URL of the Wikipedia page to scrape:")
-    url = input().strip()
-    scrape_and_save_tables(url)
+    while True:
+        print("\nEnter the URL of the Wikipedia page to scrape or type '0' to exit:\n")
+        url = input().strip()
+
+        if url == "0":
+            print("\nExiting the program.")
+            break
+
+        scrape_and_save_tables(url)
