@@ -200,6 +200,26 @@ This exercise was a practical application of using `if-elif-else` statements to 
 
 #### [F. Love Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/5-love-calculator.py)
 
+In this exercise, I created a playful "Love Calculator" program in Python, which combines string manipulation, arithmetic operations, and conditional logic. The program calculates a "love score" based on the names of two individuals.
+
+The program starts by welcoming the user to the Love Calculator and prompts them to input two names. The logic of the program is as follows:
+
+1. **Combine and Lowercase Names**: The entered names are concatenated and converted to lowercase. This is to ensure that the counting of letters is not case-sensitive.
+
+2. **Counting Specific Letters for 'TRUE' and 'LOVE'**:
+   - It counts the occurrences of each letter in 'TRUE' (t, r, u, e) within the combined string.
+   - Similarly, it counts the occurrences of each letter in 'LOVE' (l, o, v, e) within the combined string.
+   - The counts for each set of letters are then summed to form two numbers.
+
+3. **Calculating the Love Score**: The love score is formed by concatenating the sums of 'TRUE' and 'LOVE' counts and converting this string back to an integer.
+
+4. **Conditional Statements for Output**:
+   - If the love score is less than 10 or greater than 90, a humorous message is printed, indicating a volatile combination.
+   - If the love score is between 40 and 50, it prints a message suggesting moderate compatibility.
+   - For all other scores, the love score is simply printed.
+
+This exercise was a fun and creative way to apply various Python programming concepts & excellent for understanding basic programming concepts in a light-hearted context. It involved string concatenation, the use of the `count()` method for strings, arithmetic operations, type conversions, and implementing conditional logic based on calculated values.
+
 ## Day 4
 
 ### Projects (Day 4)
