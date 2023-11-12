@@ -517,6 +517,22 @@ Finally, I printed the `student_grades` dictionary to display the assigned grade
 
 #### [C. Nesting Dictionaries](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/3-nesting-dictionaries.py)
 
+In this exercise, I worked with nesting dictionaries in Python, a useful technique for creating structured and hierarchical data models. The exercise involved two different approaches to structuring a travel log.
+
+1. **Dictionary of Dictionaries:**
+
+   The first `travel_log` is a dictionary where each key is a country name, and the value is another dictionary containing details about travels to that country. For instance, the key "France" maps to a dictionary with keys "cities_visited" (a list of cities) and "total_visits" (an integer indicating the total number of visits).
+
+   This structure is useful when you need to access information about travels to a specific country quickly. You can directly access the details by using the country name as a key.
+
+2. **List of Dictionaries:**
+
+   The second `travel_log` is a list, with each element being a dictionary that contains information about travels to a particular country. Each dictionary includes keys like "country", "cities_visited", and "total_visits".
+
+   This structure is more suitable when you need to iterate over all travel records, as it stores each record as a separate dictionary within a list. This makes it easy to loop through all travel entries.
+
+Both methods showcase different ways of using nested structures in Python. The first method is efficient for direct access using a key, while the second is better for sequential processing of all records.
+
 #### [D. Travel Log](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/4-travel-log.py)
 
 ## Day 10
