@@ -269,6 +269,25 @@ The program works as follows:
 
 #### [C. Banker Roulette](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/2-banker-roulette.py)
 
+In the "Banker Roulette" exercise, I implemented a program in Python that randomly selects a person from a list to "buy the meal today." This exercise demonstrates string manipulation, list handling, and the use of the `random` module for generating random numbers.
+
+The program's workflow is as follows:
+
+1. **Input and String Splitting**:
+   - The program starts by asking the user to input a string of names separated by commas.
+   - It then uses the `split(", ")` method on the input string to create a list of names. This method splits the string at every comma followed by a space, effectively turning a single string into a list of individual names.
+
+2. **Importing and Using the Random Module**:
+   - The `random` module is imported at the beginning of the program.
+   - To select a random name, the program first calculates the length of the names list and adjusts it to align with Python's zero-based indexing (hence `len(names) - 1`).
+
+3. **Random Selection**:
+   - `random.randint(0, name_len)` is used to generate a random index between 0 and the last index of the names list.
+   - The program then uses this index to select a random name from the list.
+
+4. **Output**:
+   - Finally, the program prints out a message stating which name (person) is selected to buy the meal.
+
 #### [D. Treasure Map](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/3-treasure-map.py)
 
 ## Day 5
