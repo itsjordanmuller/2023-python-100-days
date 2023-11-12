@@ -118,6 +118,20 @@ The final output was formatted using a Python f-string to neatly display the cal
 
 #### [A. Control Flow](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/0-control-flow.py)
 
+In this exercise, I learned about implementing control flow in Python using conditional statements. The program simulates a rollercoaster ticketing system that determines eligibility and ticket pricing based on the user's height and age.
+
+The program starts by welcoming the user and asking for their height in centimeters. It then initializes a variable `bill` to 0, which will later be used to calculate the total ticket cost.
+
+The first `if` statement checks if the user is tall enough to ride the rollercoaster (height >= 120 cm). If so, it proceeds to ask for the user's age to determine the ticket price:
+- If the user is under 12 years old, they are charged $5.
+- If the user is between 12 and 18 years old, they are charged $7.
+- If the user is between 45 and 55 years old, they ride for free.
+- All other ages are considered adults and are charged $12.
+
+Next, the program asks if the user wants a photo taken. If the answer is "Y" for yes, an additional $3 is added to the bill.
+
+Finally, the total bill is calculated and displayed. If the user is not tall enough to ride, the program prints a message indicating they cannot ride the rollercoaster.
+
 #### [B. Odd or Even](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/1-odd-or-even.py)
 
 #### [C. BMI Calculator V2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/2-bmi-calculator-v2.py)
