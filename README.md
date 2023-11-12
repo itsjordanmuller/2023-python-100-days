@@ -134,6 +134,16 @@ Finally, the total bill is calculated and displayed. If the user is not tall eno
 
 #### [B. Odd or Even](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/1-odd-or-even.py)
 
+In this exercise, I focused on creating a simple program in Python to determine if a number is odd or even. The program begins by prompting the user to input a number, which is then converted to an integer using the `int()` function.
+
+The core of this program lies in the use of the modulus operator (`%`) to check if the number is odd or even. The modulus operator returns the remainder of a division operation. In this case, it checks the remainder of the number divided by 2.
+
+The `if` statement checks if the remainder of the number divided by 2 is equal to 1 (`number % 2 == 1`):
+- If true, it means the number is odd, and the program prints "This is an odd number."
+- If false (i.e., the remainder is 0), it means the number is even, and the program prints "This is an even number."
+
+This exercise was a straightforward yet effective demonstration of using the modulus operator to perform a common mathematical check in programming and covered essential concepts like input handling, type conversion, conditional statements, and basic arithmetic operations in Python. 
+
 #### [C. BMI Calculator V2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/2-bmi-calculator-v2.py)
 
 #### [D. Leap Year](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/3-leap-year.py)
