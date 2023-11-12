@@ -255,6 +255,18 @@ This exercise provided a broad overview of different Python features, from rando
 
 #### [B. Heads or Tails](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/1-heads-or-tails.py)
 
+In this exercise, I created a simple "Heads or Tails" program using Python's `random` module. This exercise demonstrates the use of random number generation and basic conditional logic.
+
+The program works as follows:
+
+1. **Import the Random Module**: The first step is importing the `random` module, which provides functions for generating random numbers.
+
+2. **Generate a Random Integer**: The program uses `random.randint(0, 1)` to generate a random integer that's either 0 or 1. This simulates the two possible outcomes of a coin flip.
+
+3. **Conditional Logic to Determine the Outcome**:
+   - An `if` statement checks the value of `face_value`. If it equals 0, the program prints "Tails". Otherwise, it prints "Heads".
+   - This binary choice effectively simulates the flipping of a coin.
+
 #### [C. Banker Roulette](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/2-banker-roulette.py)
 
 #### [D. Treasure Map](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/3-treasure-map.py)
