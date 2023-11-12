@@ -290,6 +290,31 @@ The program's workflow is as follows:
 
 #### [D. Treasure Map](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/3-treasure-map.py)
 
+In the "Treasure Map" exercise, I developed a program in Python that simulates placing a treasure mark on a simple grid map. This exercise is a great example of using lists, indexing, and conditional logic in Python.
+
+1. **Creating the Map**:
+   - The map is represented by a list of lists (`map`), where each sublist (`row1`, `row2`, `row3`) represents a row in the map.
+   - Each row contains square symbols (`"⬜️"`) to represent empty spaces.
+
+2. **Displaying the Initial Map**:
+   - The initial state of the map is printed using formatted strings, showing the three rows of the map.
+
+3. **User Input for Treasure Location**:
+   - The program asks the user to input the position for placing the treasure. This position input is expected to be a two-digit number where the first digit represents the column and the second digit represents the row.
+
+4. **Parsing the Input**:
+   - The input string is processed to determine the specific row and column. The first digit (column) is adjusted by subtracting 1 to align with Python's zero-based indexing.
+   - The second digit is used directly to identify the row as the input is in a user-friendly format (starting from 1).
+
+5. **Updating the Map**:
+   - Conditional statements (`if-elif-else`) determine which row to update based on the user's input.
+   - The appropriate row is then updated by replacing the corresponding square symbol with an "X" to mark the treasure's location.
+
+6. **Printing the Updated Map**:
+   - Finally, the updated map is printed, showing the new position of the treasure.
+
+This exercise effectively demonstrates how to manipulate lists and use indexing in Python. It also provides a clear example of how user input can be taken and processed to interact with data structures, in this case, updating a list based on the input.
+
 ## Day 5
 
 ### Projects (Day 5)
