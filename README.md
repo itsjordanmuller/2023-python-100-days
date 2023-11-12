@@ -495,6 +495,14 @@ This part of the exercise demonstrates the use of modular arithmetic in programm
 
 #### [A. Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/1-dictionary.py)
 
+In this exercise, I demonstrated the use of dictionaries in Python, a powerful data structure for storing key-value pairs. The exercise covered creating a dictionary, adding to it, accessing its elements, and iterating through it.
+
+I created a `programming_dictionary` with initial entries for "Bug" and "Function," each paired with their definitions. I accessed and printed individual definitions using their keys and also displayed the entire dictionary to show its contents.
+
+Next, I expanded the dictionary by adding a new entry for "Loop" and its definition. This step highlighted how to dynamically add new key-value pairs to a dictionary.
+
+Finally, I used a `for` loop to iterate over each key in the dictionary, printing both the key and its associated value. This part of the exercise showcased how to efficiently traverse a dictionary and access its contents.
+
 #### [B. Grading Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/2-grading-program.py)
 
 #### [C. Nesting Dictionaries](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/3-nesting-dictionaries.py)
