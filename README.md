@@ -469,6 +469,12 @@ This part of the exercise demonstrates the basics of string manipulation, use of
 
 #### [E. Building Caesar Cipher - Part 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/5-caesar-cipher2.py)
 
+In the second part of the Caesar Cipher exercise, I expanded the functionality to include decryption. The initial setup remains the same with an `alphabet` list and user input for text, direction (encode or decode), and shift amount.
+
+Two functions are defined in this part: `encrypt` (similar to Part 1) and `decrypt`. The `decrypt` function reverses the encryption process. It takes the encrypted text and the shift value, then for each letter in the encrypted text, finds its position in the `alphabet` list. It then shifts the position backwards by the shift amount to retrieve the original letter and constructs the decrypted message.
+
+The program checks the user input for direction and calls the appropriate function (either `encrypt` or `decrypt`). This part of the exercise illustrates how to add more functionality to a program, specifically how to reverse an algorithm's effect, a common requirement in encryption and decryption scenarios.
+
 #### [F. Building Caesar Cipher - Part 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/6-caesar-cipher3.py)
 
 ## Day 9
