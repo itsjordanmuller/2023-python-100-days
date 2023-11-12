@@ -535,6 +535,18 @@ Both methods showcase different ways of using nested structures in Python. The f
 
 #### [D. Travel Log](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/4-travel-log.py)
 
+In this exercise, I worked on expanding a Python program that maintains a travel log using a list of dictionaries. The program demonstrates the use of functions for data manipulation within complex data structures.
+
+I started with a `travel_log` list containing dictionaries, where each dictionary represents a record of visits to a country. Each dictionary has three keys: "country" (the name of the country visited), "visits" (the number of visits to that country), and "cities" (a list of cities visited in that country).
+
+The core functionality of this exercise was the addition of a new function, `add_new_country`, which allows for the addition of new travel records to the `travel_log`. The function takes three parameters: `country_visited` (the name of the country visited), `times_visited` (the number of times visited), and `cities_visited` (a list of cities visited in that country).
+
+Inside the function, a new dictionary `new_country` is created and populated with the provided information. This new dictionary is then appended to the `travel_log` list, effectively updating the travel log with the new travel record.
+
+After defining the function, I tested it by adding a new record for "Russia" with 2 visits and cities ["Moscow", "Saint Petersburg"]. Finally, I printed the updated `travel_log` to verify the addition.
+
+This exercise demonstrates how functions can be used to manage and update complex data structures like lists of dictionaries in Python. It's a practical example of how Python can be used to organize and modify data in a structured and readable format.
+
 ## Day 10
 
 ### Projects (Day 10)
