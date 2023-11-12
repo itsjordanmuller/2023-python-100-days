@@ -461,6 +461,12 @@ This exercise is a good example of how Python can be used to solve mathematical 
 
 #### [D. Building Caesar Cipher - Part 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/4-caesar-cipher1.py)
 
+In the first part of building a Caesar Cipher in Python, I focused on creating a basic encryption function. The program starts with a list called `alphabet`, which contains all the lowercase letters of the alphabet, repeated twice to facilitate letter shifting for encryption.
+
+The user is prompted to input a message and the number of positions to shift each letter in the message (the shift value). The `encrypt` function is then defined to perform the encryption. It takes the text and the shift value as arguments. Inside the function, for each letter in the input text, its position in the `alphabet` list is found. This position is then shifted by the specified shift amount to find the new letter. The new letter is added to a string `cipher_text`, which accumulates the encrypted message. After processing all letters, the encrypted message is printed.
+
+This part of the exercise demonstrates the basics of string manipulation, use of lists, and iteration with `for` loops in Python, forming the foundation for a simple Caesar Cipher encryption tool.
+
 #### [E. Building Caesar Cipher - Part 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/5-caesar-cipher2.py)
 
 #### [F. Building Caesar Cipher - Part 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/6-caesar-cipher3.py)
