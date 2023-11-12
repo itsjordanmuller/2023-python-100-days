@@ -19,14 +19,18 @@ def save_to_csv(data, filename):
         writer.writerows(data)
 
 
-url = "https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)"
-r = requests.get(url)
-soup = BeautifulSoup(r.content, "html.parser")
+def scrape_and_save_tables(url):
+    r = requests.get(url)
+    soup = BeautifulSoup(r.content, "html.parser")
+    tables = soup.find_all("table")
+    for index, table in enumerate(tables):
+        table_data = extract_table_data(table)
+        filename = f"table_{index}.csv"
+        save_to_csv(table_data, filename)
+        print(f"Saved {filename}")
 
-tables = soup.find_all("table")
 
-for index, table in enumerate(tables):
-    table_data = extract_table_data(table)
-    filename = f"table_{index}.csv"
-    save_to_csv(table_data, filename)
-    print(f"Saved {filename}")
+if __name__ == "__main__":
+    print("Enter the URL of the Wikipedia page to scrape:")
+    url = input().strip()
+    scrape_and_save_tables(url)
