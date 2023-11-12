@@ -1,3 +1,4 @@
+import csv
 import requests
 from bs4 import BeautifulSoup
 
@@ -5,7 +6,11 @@ r = requests.get(
     "https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)"
 )
 
-print(r)
+# print(r)
 
 soup = BeautifulSoup(r.content, "html.parser")
-print(soup.prettify())
+# print(soup.prettify())
+
+tables = soup.findAll("table")
+
+print(tables)
