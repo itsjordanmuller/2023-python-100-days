@@ -345,6 +345,14 @@ Finally, the average height is calculated by dividing the `total_height` by `stu
 
 #### [C. High Score](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/2-high-score.py)
 
+In this Python exercise, I developed a program to find the highest score in a list of student scores. The exercise emphasized the use of loops, conditional statements, and handling user input.
+
+The program starts by requesting the user to input a list of student scores as a space-separated string. This string is then split into a list of individual score strings using the `.split()` method. A `for` loop is then employed to iterate through this list, converting each string score to an integer. This conversion is essential for the comparison operations that follow.
+
+Once the scores are converted into integers, the code aims to identify the highest score. To achieve this, a variable `high_score` is initialized to 0. The program then iterates over each score in the `student_scores` list using a `for` loop. Within this loop, a conditional statement checks if the current score is greater than the value stored in `high_score`. If it is, `high_score` is updated with this new value. This loop-and-check mechanism ensures that at the end of the iteration, `high_score` holds the maximum score from the list.
+
+The final step is to print the highest score. The program outputs this information in a formatted string, clearly indicating the highest score found in the class.
+
 #### [D. Adding Even Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/3-adding-even-nums.py)
 
 #### [E. FizzBuzz](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/4-fizz-buzz.py)
