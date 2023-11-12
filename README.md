@@ -445,6 +445,20 @@ Finally, the `paint_calc` function is called with the user-provided height and w
 
 #### [C. Prime Number Check](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/3-prime-number-check.py)
 
+In this exercise, I developed a Python program to check whether a given number is a prime number, demonstrating the use of functions, loops, and conditional statements.
+
+The program defines a function named `prime_checker` which takes one parameter: `number`. This function is responsible for determining whether the provided number is a prime number. A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+The function first checks if the number is greater than 1, as prime numbers are by definition greater than 1. If the number is not greater than 1, it immediately prints that it's not a prime number.
+
+For numbers greater than 1, the function uses a `for` loop to check for factors other than 1 and the number itself. It iterates through numbers starting from 2 up to, but not including, the number in question. For each number `i` in this range, the function checks if the `number` is divisible by `i` (`number % i == 0`). If any such division is found (indicating the number is divisible by a number other than 1 and itself), the function prints that it's not a prime number and exits the loop using `break`.
+
+If the loop completes without finding any factors, the `else` block corresponding to the `for` loop is executed, indicating that no divisors were found and the number is a prime. The function then prints that it's a prime number.
+
+To use this function, the program prompts the user to input a number. This input is captured using `input()`, converted to an integer, and stored in variable `n`. The `prime_checker` function is then called with `n` as its argument.
+
+This exercise is a good example of how Python can be used to solve mathematical problems and demonstrates the practical application of functions, loops, and conditional logic in programming.
+
 #### [D. Building Caesar Cipher - Part 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/4-caesar-cipher1.py)
 
 #### [E. Building Caesar Cipher - Part 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/5-caesar-cipher2.py)
