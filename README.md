@@ -477,6 +477,14 @@ The program checks the user input for direction and calls the appropriate functi
 
 #### [F. Building Caesar Cipher - Part 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/6-caesar-cipher3.py)
 
+In the final part of the Caesar Cipher exercise, the code is optimized by combining the encryption and decryption functionalities into a single function called `caesar`. The program still starts with the `alphabet` list and takes user inputs for the direction of the operation (encode or decode), the message, and the shift value.
+
+The `caesar` function is designed to handle both encryption and decryption based on the direction specified. It uses modular arithmetic (`% 52`, where 52 is twice the length of the alphabet list) to ensure the new position of each letter wraps around the alphabet list correctly. This is crucial as it deals with the issue of the shift operation moving beyond the end of the list.
+
+For encoding, each letter's position is found and shifted forward; for decoding, the process is reversed by shifting backward. The resulting letters are concatenated to form the encoded or decoded message, which is then printed.
+
+This part of the exercise demonstrates the use of modular arithmetic in programming to create more robust and error-resistant applications. It shows the importance of optimizing code by combining similar functionalities and the practical use of functions to simplify complex tasks.
+
 ## Day 9
 
 ### Projects (Day 9)
