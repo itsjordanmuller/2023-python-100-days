@@ -355,6 +355,14 @@ The final step is to print the highest score. The program outputs this informati
 
 #### [D. Adding Even Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/3-adding-even-nums.py)
 
+In this exercise, I implemented a Python program to calculate the sum of all even numbers from 1 to 100, demonstrating the use of loops, conditional statements, and arithmetic operations.
+
+The program defines a variable `total_number` initialized to 0. This variable is used to accumulate the sum of even numbers. A `for` loop is then used to iterate over a range of numbers from 1 to 100. The `range(1, 101)` function generates a sequence of numbers starting from 1 and ending at 100.
+
+Within the loop, a conditional statement checks whether each number is even. This is done using the modulus operator (`%`), which returns the remainder of a division. If a number divided by 2 has a remainder of 0 (`number % 2 == 0`), it is an even number. When an even number is identified, it is added to `total_number`.
+
+After the loop completes, the program prints `total_number`, which by then contains the sum of all even numbers from 1 to 100.
+
 #### [E. FizzBuzz](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/4-fizz-buzz.py)
 
 ## Day 6
