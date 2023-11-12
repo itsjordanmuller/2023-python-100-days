@@ -4,8 +4,11 @@ from bs4 import BeautifulSoup
 
 
 def extract_table_data(table):
+    caption = table.find("caption")
+    caption_text = [caption.get_text(strip=True)] if caption else ["No Caption"]
+
     rows = table.find_all("tr")
-    table_data = []
+    table_data = [caption_text, []]
     for row in rows:
         cells = row.find_all(["th", "td"])
         cells_text = [cell.get_text(strip=True) for cell in cells]
