@@ -365,6 +365,20 @@ After the loop completes, the program prints `total_number`, which by then conta
 
 #### [E. FizzBuzz](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/4-fizz-buzz.py)
 
+In this exercise, I implemented the classic "FizzBuzz" program in Python, a common test used in programming interviews. The task was to print each number from 1 to 100, but for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz". This exercise highlighted the use of loops, conditional statements, and modulo operations.
+
+The program utilizes a `for` loop to iterate over a range of numbers from 1 to 100. For each number in this range, a series of conditional checks are performed:
+
+1. The first `if` statement checks if the number is divisible by both 3 and 5 (`num % 3 == 0 and num % 5 == 0`). If true, "FizzBuzz" is printed. This check is important to perform first to ensure that numbers like 15, which are divisible by both, are correctly identified as "FizzBuzz" rather than just "Fizz" or "Buzz".
+
+2. The `elif` (else if) statement then checks if the number is divisible by 3 (`num % 3 == 0`). If true, it prints "Fizz".
+
+3. Another `elif` statement checks if the number is divisible by 5 (`num % 5 == 0`). If true, it prints "Buzz".
+
+4. Finally, the `else` statement covers all other cases where the number is neither divisible by 3 nor 5. In these cases, the number itself is printed.
+
+This exercise demonstrates the practical application of loops for iterating over a range, the use of modulo operator to check divisibility, and the implementation of conditional logic to determine what to print based on these divisibility checks.
+
 ## Day 6
 
 ### Projects (Day 6)
