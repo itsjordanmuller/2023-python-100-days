@@ -185,6 +185,19 @@ This exercise was an excellent demonstration of how nested conditional statement
 
 #### [E. Pizza Order](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/4-pizza-order.py)
 
+In this exercise, I created a simple pizza order calculator in Python to demonstrate conditional logic and basic arithmetic operations. The program simulates a pizza ordering process, calculating the total cost based on the customer's choices.
+
+The program begins by welcoming the user to "Python Pizza Deliveries" and prompts them to choose the size of the pizza (Small, Medium, or Large), whether they want pepperoni, and if they desire extra cheese.
+
+The logic of the program is structured as follows:
+1. **Base Price for Pizza Size**: The program first checks the size of the pizza. Depending on whether it's Small (S), Medium (M), or Large (L), a base price is set (15, 20, or 25 dollars respectively).
+2. **Adding Cost for Pepperoni**: If the user opts for pepperoni, an additional cost is added. This cost varies based on the size of the pizza (2 dollars for Small, 3 dollars for Medium and Large).
+3. **Extra Cheese Addition**: Independently of the size and pepperoni choice, if the user wants extra cheese, an additional 1 dollar is added to the total price.
+
+After considering all these choices, the final bill is calculated and printed to the user.
+
+This exercise was a practical application of using `if-elif-else` statements to handle multiple conditions and update a variable based on these conditions. It also demonstrated string comparison in conditional statements and basic arithmetic operations for calculating the total price.
+
 #### [F. Love Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/5-love-calculator.py)
 
 ## Day 4
