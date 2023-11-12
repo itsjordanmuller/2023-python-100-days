@@ -431,6 +431,18 @@ Finally, the `greet` function is called with `name` and `location` as arguments.
 
 #### [B. Paint Area Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/2-paint-area-calculator.py)
 
+In this exercise, I created a Python program to calculate the number of cans of paint needed to paint a wall, showcasing the use of functions, arithmetic operations, and external libraries.
+
+The program begins by importing the `math` module, which provides access to various mathematical functions. One of these functions, `math.ceil()`, is used later in the code to round up to the nearest whole number.
+
+The core functionality of the program is encapsulated within the `paint_calc` function. This function takes three parameters: `height`, `width`, and `cover`. The `height` and `width` parameters represent the dimensions of the wall to be painted, while `cover` represents the coverage of a single can of paint (in square units).
+
+Inside the function, the total number of cans needed is calculated by dividing the area of the wall (`height * width`) by the coverage per can (`cover`). Since it's not practical to buy a fraction of a can, the result is rounded up to the nearest whole number using `math.ceil()`. This ensures that there is enough paint to cover the entire wall. The function then prints out the number of cans needed.
+
+To use this function, the program prompts the user to input the height and width of the wall. These inputs are captured using `input()` and converted to integers. The variable `coverage` is set to 5, representing the area that a single can of paint can cover.
+
+Finally, the `paint_calc` function is called with the user-provided height and width, along with the predefined coverage. The function calculates and displays the number of paint cans required.
+
 #### [C. Prime Number Check](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/3-prime-number-check.py)
 
 #### [D. Building Caesar Cipher - Part 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/4-caesar-cipher1.py)
