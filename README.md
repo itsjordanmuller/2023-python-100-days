@@ -230,6 +230,29 @@ This exercise was a fun and creative way to apply various Python programming con
 
 #### [A. Random Module](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/0-random-module.py)
 
+In this exercise, I explored various aspects of Python programming, including the use of the `random` module, list manipulation, and commenting out code. The program is a collection of small snippets demonstrating different concepts.
+
+1. **Using the `random` Module**:
+   - The program starts by importing the `random` module, which provides functions for generating random numbers.
+   - `random.randint(1, 10)` generates a random integer between 1 and 10.
+   - `random.random() * 5` generates a random floating-point number between 0 and 5.
+
+2. **Generating a Random Love Score**:
+   - The program uses `random.randint(1, 100)` to simulate a random love score between 1 and 100, showcasing a practical application of generating random numbers. This is just as scientific as the first method used (neither is scientific in any way).
+
+3. **List Manipulation and Access**:
+   - A list named `states_of_america` is created, containing names of U.S. states.
+   - The program demonstrates accessing the first and last elements of the list using index `0` and `-1` respectively.
+   - Although there are commented lines for modifying the list (like changing an element and extending the list), they are not executed in the current version.
+
+4. **Nested Lists and List Concatenation**:
+   - The `dirty_dozen` list is created by concatenating two lists, `fruits` and `vegetables`, into a nested list. This illustrates how lists can store other lists, allowing for complex data structures.
+
+5. **Commenting Out Code**:
+   - Several lines in the script are commented out (e.g., `import my_module`, modifications to `states_of_america`, and the original `dirty_dozen` list). This demonstrates how to temporarily disable code in Python without deleting it, useful for testing and debugging.
+
+This exercise provided a broad overview of different Python features, from random number generation and list manipulation to commenting and basic data structures.
+
 #### [B. Heads or Tails](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/1-heads-or-tails.py)
 
 #### [C. Banker Roulette](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/2-banker-roulette.py)
