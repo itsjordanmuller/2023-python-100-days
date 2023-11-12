@@ -335,6 +335,14 @@ Overall, these examples served as an introduction to `for` loops in Python. They
 
 #### [B. Average Height](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/1-average-height.py)
 
+In this exercise, I created a program to calculate the average height from a list of student heights in Python, demonstrating basic data collection, type conversion, and arithmetic operations.
+
+The program begins by prompting the user to input a list of student heights, which are entered as a space-separated string. This string is then split into a list of individual height strings using `.split()`. The `for` loop that follows converts each string in the list to an integer, updating the `student_heights` list with these integer values. This conversion is crucial for the arithmetic operations that follow.
+
+The next part of the code involves calculating the total height and counting the number of students. Two separate `for` loops are used for this purpose. The first loop iterates over each height in the `student_heights` list, adding the heights to the `total_height` variable. The second loop counts the number of students by incrementing `student_count` for each element in the `student_heights` list.
+
+Finally, the average height is calculated by dividing the `total_height` by `student_count` and rounding the result to the nearest whole number. This average is then printed out. This exercise effectively demonstrates handling user input, iterating over lists, basic arithmetic operations, and type conversion in Python. It's a practical example of how Python can be used to process and analyze data inputs.
+
 #### [C. High Score](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/2-high-score.py)
 
 #### [D. Adding Even Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/3-adding-even-nums.py)
