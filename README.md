@@ -421,6 +421,14 @@ This exercise demonstrates the practical application of loops for iterating over
 
 #### [A. Greet Function](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/1-greet-function.py)
 
+In this exercise, I developed a Python program that demonstrates the use of functions, specifically focusing on creating a custom function for greeting a user. The task involved obtaining user input for a name and location, and then using these inputs in a personalized greeting.
+
+The program starts by asking the user two questions: the name of the person they are greeting and where that person lives. These inputs are captured using the `input()` function and stored in the variables `name` and `location`, respectively.
+
+Following this, a function named `greet` is defined. This function takes two parameters: `name` and `location`. Inside the function, three print statements are used to generate a personalized greeting. The first print statement says hello to the person, the second asks about the location they are in, and the third makes a remark about the day being lovely, addressing the person by name again. This use of parameters within the function allows for dynamic and reusable code.
+
+Finally, the `greet` function is called with `name` and `location` as arguments. This call executes the function with the specific inputs provided by the user, displaying the customized greeting messages.
+
 #### [B. Paint Area Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/2-paint-area-calculator.py)
 
 #### [C. Prime Number Check](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/3-prime-number-check.py)
