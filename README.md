@@ -505,6 +505,16 @@ Finally, I used a `for` loop to iterate over each key in the dictionary, printin
 
 #### [B. Grading Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/2-grading-program.py)
 
+In this exercise, I implemented a grading program in Python using dictionaries. The program assigned grades to students based on their scores, demonstrating the use of conditional statements and iterating through dictionary items.
+
+I started with a `student_scores` dictionary containing names of students as keys and their scores as values. Then, I created an empty dictionary `student_grades` to store the grades for each student.
+
+Using a `for` loop, I iterated over each key (student's name) in `student_scores`. Within the loop, I used a series of `if-elif` statements to assign grades based on each student's score. The grading criteria were as follows: scores 91 and above were graded as "Outstanding", scores between 81 and 90 as "Exceeds Expectations", scores between 71 and 80 as "Acceptable", and scores 70 or below as "Fail".
+
+After determining the appropriate grade for each student, I added a new key-value pair to `student_grades`, with the student's name as the key and their assigned grade as the value.
+
+Finally, I printed the `student_grades` dictionary to display the assigned grades for each student.
+
 #### [C. Nesting Dictionaries](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/3-nesting-dictionaries.py)
 
 #### [D. Travel Log](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/4-travel-log.py)
