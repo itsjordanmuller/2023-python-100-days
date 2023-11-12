@@ -19,18 +19,11 @@ def save_to_csv(data, filename):
         writer.writerows(data)
 
 
-r = requests.get(
-    "https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)"
-)
-
-# print(r)
-
+url = "https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)"
+r = requests.get(url)
 soup = BeautifulSoup(r.content, "html.parser")
-# print(soup.prettify())
 
-tables = soup.findAll("table")
-
-# print(tables)
+tables = soup.find_all("table")
 
 for index, table in enumerate(tables):
     table_data = extract_table_data(table)
