@@ -146,6 +146,23 @@ This exercise was a straightforward yet effective demonstration of using the mod
 
 #### [C. BMI Calculator V2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/2-bmi-calculator-v2.py)
 
+In this exercise, I progressed to an advanced version of the BMI (Body Mass Index) Calculator (version 2), enhancing the functionality to provide more detailed feedback based on the BMI value. Compared to version 1, this version includes conditional statements to categorize the BMI result into different health categories.
+
+Key changes and learnings in this version include:
+
+1. **Immediate Type Conversion of Inputs**: Unlike version 1 where the height and weight inputs were initially taken as strings and then converted to floats, version 2 directly converts the user inputs to floats. This streamlines the code.
+
+2. **Rounded BMI Calculation**: The BMI is calculated using the same formula as in version 1 (weight divided by height squared). However, in version 2, the `round()` function is used to round the BMI to the nearest whole number, providing a more user-friendly output.
+
+3. **Conditional Statements for Health Categories**: The program uses a series of `if-elif-else` statements to categorize the BMI value:
+    - A BMI less than 18.5 is categorized as underweight.
+    - A BMI from 18.5 to less than 25 is considered normal weight.
+    - A BMI from 25 to less than 30 is categorized as slightly overweight.
+    - A BMI from 30 to less than 35 is considered obese.
+    - A BMI of 35 or more is categorized as clinically obese.
+
+    Each category triggers a specific print statement, providing the user with both their BMI value and the corresponding health category.
+
 #### [D. Leap Year](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/3-leap-year.py)
 
 #### [E. Pizza Order](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/4-pizza-order.py)
