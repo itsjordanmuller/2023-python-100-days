@@ -1132,6 +1132,12 @@ When printed, `squared_numbers` displayed the squared value of each number from 
 
 #### [C. Filter Even Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/3-filter-even-nums.py)
 
+In this exercise, I focused on filtering elements in a list using a list comprehension in Python, specifically to extract even numbers from a given list.
+
+Given the list `numbers`, which contained a series of integers, I wrote a one-liner list comprehension to create a new list, `result`, containing only the even numbers from the original list. The code for this was `[num for num in numbers if num % 2 == 0]`. This expression iterates through each number in `numbers`, and includes it in `result` if it satisfies the condition `num % 2 == 0` (which checks if the number is even).
+
+Upon executing the code and printing `result`, the output was a list of all even numbers from the original `numbers` list.
+
 #### [D. Dictionary Comprehension](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/4-dict-comprehension.py)
 
 #### [E. Word Length Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/5-word-length-dict.py)
