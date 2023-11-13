@@ -1242,6 +1242,20 @@ Through this task, I learned about using `*args` for variable-length argument li
 
 #### [C. Many Keyword Arguments](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/3-many-keyword-args.py)
 
+In this exercise, I delved into the use of `**kwargs` in Python, which enables a function to accept an arbitrary number of keyword arguments. This was demonstrated through two examples: a `calculate` function and the creation of a `Car` class.
+
+##### The `calculate` Function:
+- The `calculate` function accepts a standard argument `n` and any number of keyword arguments (`**kwargs`).
+- Initially, I printed the `kwargs` to see how Python stores these keyword arguments as a dictionary.
+- The function then modifies `n` by adding and multiplying it with values associated with the 'add' and 'multiply' keys in `kwargs`. This showcases how to access and use the values from the `kwargs` dictionary.
+- Testing this function with `calculate(2, add=3, multiply=5)` showed how it dynamically adjusts its behavior based on the provided keyword arguments.
+
+##### The `Car` Class:
+- I then created a `Car` class where the constructor (`__init__`) uses `**kw` to accept various attributes of a car.
+- The class uses the `get` method on the `kw` dictionary to safely assign values to the car's attributes like `make`, `model`, `color`, and `seats`. This method avoids errors if certain attributes are not provided.
+- By creating an instance of `Car` with specific attributes, I demonstrated how flexible and adaptable the class is to different sets of data.
+- Finally, I printed the attributes of `my_car` to confirm that the class correctly assigns and stores the provided information.
+
 #### [D. Tkinter Widgets](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/4-tkinter-widgets.py)
 
 #### [E. Layout Managers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/5-layout-managers.py)
