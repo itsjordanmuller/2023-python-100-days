@@ -1084,6 +1084,22 @@ Through this task, I learned to read, process, and group data using pandas, whic
 
 #### [B. Weather Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Exercises/Weather)
 
+In this Python exercise, I delved into exploring and manipulating weather data using the pandas library. The exercise involved various tasks, from reading CSV files to data manipulation and creating new data frames.
+
+Initially, I experimented with basic file reading and CSV reading methods. I commented out the code where I read the "weather_data.csv" file line by line using `open()` and `readlines()`, and also the section where I read the same file using the `csv` module to extract temperature data.
+
+Then, I shifted to using pandas, which is a more powerful and convenient tool for data analysis. I imported the pandas library and read the "weather_data.csv" file into a DataFrame using `pandas.read_csv()`. I explored the types of data structures returned by pandas, like DataFrames and Series, by checking the type of `data` and `data["temp"]`.
+
+I converted the entire DataFrame and the temperature column into a dictionary and a list, respectively, using `to_dict()` and `to_list()`. These operations demonstrated different ways of viewing and manipulating data in pandas.
+
+I then calculated the mean and the maximum temperature directly from the DataFrame without needing to manually convert the temperatures into a list, showcasing pandas' built-in statistical functions.
+
+Additionally, I extracted data based on specific conditions. For instance, I retrieved rows where the day was "Monday" and where the temperature was the maximum in the dataset. This part of the exercise highlighted how to filter and access specific rows in a DataFrame.
+
+I also implemented a custom function `CelsiusToFahrenheit` to convert temperature from Celsius to Fahrenheit. I applied this function to the temperature of Monday, demonstrating how to perform custom operations on DataFrame values.
+
+Lastly, I created a new DataFrame from scratch using a dictionary. This new DataFrame contained student names and their scores. I then exported this DataFrame to a new CSV file named "score_data.csv", illustrating how to create and write DataFrames to CSV files.
+
 ## Day 26
 
 ### Projects (Day 26)
