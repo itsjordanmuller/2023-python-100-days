@@ -1606,6 +1606,21 @@ In this HTML and CSS exercise, I explored the CSS Box Model, a fundamental conce
 
 #### [B. CSS Colors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS%20Colors)
 
+In this exercise, I learned about applying different color styles using CSS. The exercise involved styling the background of the webpage and the text and background colors of headings (`<h1>` and `<h2>`).
+
+1. **Webpage Background Color**:
+   - The background of the entire webpage was set to "antiquewhite" using `body { background-color: antiquewhite; }`. This changes the background color of the entire page.
+
+2. **Heading (`<h1>`) Styles**:
+   - The `<h1>` element was styled with two color properties: `color: whitesmoke;` for the text color and `background-color: darkseagreen;` for the background color of the heading.
+
+3. **Heading (`<h2>`) Styles**:
+   - The `<h2>` element received a similar treatment with different colors: `color: #faf8f1;` for the text color (using a hex color code) and `background-color: #c58940;` for the background color.
+
+These styles were directly applied within a `<style>` tag in the head of the HTML document, demonstrating how CSS can be used to enhance the visual presentation of web content.
+
+This exercise was particularly useful for understanding how to use CSS for coloring and how different color formats (like named colors, hex codes) can be applied in web design. It highlighted the importance of color in creating visually appealing and accessible web pages.
+
 #### [C. Font Properties](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/Font%20Properties)
 
 ## Day 45
