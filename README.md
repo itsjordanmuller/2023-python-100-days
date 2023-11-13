@@ -733,6 +733,53 @@ else:
 
 #### [C. Debug Leap Year Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/3-debug-leap-year.py)
 
+In this exercise, I identified and fixed a bug in a Python program designed to determine whether a given year is a leap year.
+
+##### Original Code with Bug:
+The original code snippet had a type-related error:
+
+```python
+year = input("Which year do you want to check?")
+
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year.")
+        else:
+            print("Not leap year.")
+    else:
+        print("Leap year.")
+else:
+    print("Not leap year.")
+```
+
+The issue here was that the `input()` function returns a string, but the program requires an integer to perform the modulus operation.
+
+##### Debugged Code:
+To fix the issue, I converted the input to an integer using `int()`:
+
+```python
+year = int(input("Which year do you want to check?"))
+
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year.")
+        else:
+            print("Not leap year.")
+    else:
+        print("Leap year.")
+else:
+    print("Not leap year.")
+```
+
+##### Explanation:
+- The program begins by prompting the user to enter a year. The input is then converted to an integer.
+- The first `if` statement checks if the year is divisible by 4 (`year % 4 == 0`). This is the first condition for a leap year.
+- If the year is divisible by 4, the program then checks if it is also divisible by 100. If it is (`year % 100 == 0`), the program further checks for divisibility by 400.
+- For a year to be a leap year, if it is divisible by 100, it must also be divisible by 400 (`year % 400 == 0`). If it is, the program prints "Leap year." Otherwise, it prints "Not leap year."
+- If the year is divisible by 4 but not by 100, it's also considered a leap year.
+
 #### [D. Debug FizzBuzz Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/4-debug-fizzbuzz.py)
 
 ## Day 14
