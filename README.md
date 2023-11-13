@@ -1554,6 +1554,28 @@ This exercise was instrumental in understanding the different ways to apply CSS 
 
 #### [B. CSS Selectors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/CSS%20Selectors)
 
+In this exercise, I learned about different types of CSS selectors and how they are used to apply styles to HTML elements. The HTML document `index.html` provided the structure to demonstrate each selector type, and the corresponding CSS in `style.css` applied specific styles based on these selectors.
+
+1. **Element Selector**: 
+   - Targets elements based on their HTML tag name.
+   - Example: `p { color: red; }` applies red color to all paragraph (`<p>`) elements.
+
+2. **Class Selector**: 
+   - Targets elements based on the value of their `class` attribute.
+   - Example: `.note { font-size: 20px; }` sets the font size to 20px for all elements with a class of "note".
+
+3. **ID Selector**: 
+   - Targets an element based on the value of its `id` attribute.
+   - Example: `#id-selector-demo { color: green; }` applies green color to the element with the id "id-selector-demo".
+
+4. **Attribute Selector**:
+   - Targets elements based on their attributes and values.
+   - Example: `li[value="4"] { color: blue; }` applies blue color to `<li>` elements that have the `value` attribute set to "4".
+
+5. **Universal Selector**:
+   - Targets all elements.
+   - Example: `* { text-align: center; }` centers the text of all elements on the page.
+
 ## Day 44
 
 ### Projects (Day 44)
