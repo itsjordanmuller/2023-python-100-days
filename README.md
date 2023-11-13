@@ -1124,6 +1124,12 @@ In this exercise, I learned about list comprehensions in Python, a concise way t
 
 #### [B. Squaring Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/2-squaring-numbers.py)
 
+In this exercise, I practiced using list comprehensions to square each number in a given list. The objective was to transform a list of numbers by squaring each element, all in a single line of code.
+
+The original list, `numbers`, contained a sequence of integers. To achieve the task, I wrote the following list comprehension: `squared_numbers = [num**2 for num in numbers]`. This line of code iterates over each element `num` in the `numbers` list and applies the squaring operation (`num**2`).
+
+When printed, `squared_numbers` displayed the squared value of each number from the original list. This was a straightforward yet effective exercise to understand how list comprehensions can be used for mathematical operations on list elements, showcasing the elegance and power of Python for such operations. It also reinforced the concept that list comprehensions are an efficient way to create new lists by applying an expression to each item in an existing list.
+
 #### [C. Filter Even Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/3-filter-even-nums.py)
 
 #### [D. Dictionary Comprehension](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/4-dict-comprehension.py)
