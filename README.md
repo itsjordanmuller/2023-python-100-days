@@ -1711,6 +1711,26 @@ This exercise was an excellent practice in live web scraping, particularly in us
 
 #### [A. Selenium Basics](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-048/Exercises/Selenium%20Basics)
 
+In this exercise, I learned the basics of web automation using Selenium, a powerful tool for controlling web browsers through programs. The task involved interacting with the PyPI (Python Package Index) website to extract information about a specified Python package.
+
+Here's what I did:
+
+1. **Setting Up Selenium WebDriver**: I imported necessary modules from Selenium and set up Chrome WebDriver with certain options, including `chrome_options.add_experimental_option("detach", True)` to keep the browser window open after the script execution.
+
+2. **User Input for Package Name**: I used `input()` to prompt for and capture the name of a Python package from the user. 
+
+3. **Navigating to the Package Page**: Using `driver.get()`, I navigated to the specific page for the user-specified package on PyPI by appending the package name to the base URL.
+
+4. **Extracting Package Information**: I used `driver.find_element()` with various CSS selectors to locate and extract information from the web page. This included the package's name, pip install command, release date, description, and maintainers. For maintainers, I used `driver.find_elements()` to gather multiple elements and then processed them into a list of maintainer names.
+
+5. **Interacting with Elements**: I demonstrated how to interact with a button on the page (`copy_btn.click()`) and how to use the search function by sending keys to the search input field, including simulating an Enter key press with `Keys.ENTER`.
+
+6. **Printing Extracted Data**: I formatted and printed the extracted data to the console, showing details like the package name, installation command, release date, description, and maintainers.
+
+7. **Browser Control**: Although commented out, the code included options to either close the current tab (`driver.close()`) or the entire browser instance (`driver.quit()`).
+
+Through this exercise, I gained hands-on experience in using Selenium for web scraping and automation. I learned how to navigate web pages, select elements based on their attributes, interact with page elements like buttons and input fields, and extract text data from a website. This is highly useful for tasks that require automation of browser activities, such as testing web applications, automating repetitive web tasks, or scraping data from websites that require interaction.
+
 ## Day 49
 
 ### Projects (Day 49)
