@@ -1007,6 +1007,21 @@ Through this exercise, I gained a deeper understanding of how inheritance allows
 
 #### [B. Slicing](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/Exercises/2-slicing.py)
 
+In this exercise, I delved into the concept of slicing in Python, which is a technique used to access a subset of elements from a list or a similar sequence type. I worked with a list named `piano_keys`, representing the keys of a piano.
+
+1. **Understanding the Basic Slice Notation:**
+   - The slice notation in Python follows the format `[start:stop:step]`, where `start` is the index where the slice starts, `stop` is the index where the slice ends, and `step` is the interval between each element in the slice.
+
+2. **Slicing Examples and Outputs:**
+   - `piano_keys[2:5]`: This slice starts at index 2 and goes up to, but not including, index 5. The output is `['c', 'd', 'e']`.
+   - `piano_keys[2:]`: Here, the slice starts at index 2 and goes to the end of the list. The output is `['c', 'd', 'e', 'f', 'g']`.
+   - `piano_keys[:5]`: This slice includes elements from the beginning of the list up to, but not including, index 5. The output is `['a', 'b', 'c', 'd', 'e']`.
+   - `piano_keys[1:6:2]`: This slice starts at index 1, ends at index 6, and takes every 2nd element. The output is `['b', 'd', 'f']`.
+   - `piano_keys[::2]`: This slice includes the entire list, taking every 2nd element. The output is `['a', 'c', 'e', 'g']`.
+   - `piano_keys[::-1]`: This is a special case that reverses the list. It starts from the end towards the first element with a step of -1. The output is `['g', 'f', 'e', 'd', 'c', 'b', 'a']`.
+
+Through this task, I learned how slicing is a powerful tool for accessing parts of a sequence in Python. It can be used to extract elements, create sub-lists, and even reverse a list, all with concise and readable syntax. This concept is widely used in Python for various applications, including data manipulation and string handling.
+
 ## Day 22
 
 ### Projects (Day 22)
