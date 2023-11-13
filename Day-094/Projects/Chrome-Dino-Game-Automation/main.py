@@ -22,3 +22,20 @@ def jump():
     pyautogui.keyUp("space")
 
     pyautogui.keyDown("down")
+
+
+def checkBox():
+    box = (
+        coordinates.dinosaur[0] + 30,
+        coordinates.dinosaur[1],
+        coordinates.dinosaur[0] + 130,
+        coordinates.dinosaur[1] + 30,
+    )
+
+    image = ImageGrab.grab(box)
+    grayImage = ImageOps.grayscale(image)
+
+    array = np.array(grayImage.getcolors())
+
+    print(array.sum())
+    return array.sum()
