@@ -1068,6 +1068,20 @@ This task taught me how to handle files in Python, including creating, writing, 
 
 #### [A. Squirrel Census Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Exercises/Squirrel%20Census)
 
+In this Python exercise, I worked on exploring and processing data from the "2018 Central Park Squirrel Census" using the pandas library.
+
+First, I imported the pandas library to handle the dataset. I read the data from "2018_Central_Park_Squirrel_Census.csv" into a DataFrame using `pandas.read_csv()`. This CSV file contained various details about each squirrel sighting, including their fur color.
+
+My focus was on the "Primary Fur Color" column. I grouped the data by this column and used the `size()` function to count the number of squirrels of each fur color. This operation provided me with a Series object where the index was the fur color, and the values were the counts.
+
+I then converted this Series into a DataFrame for better readability and manipulation. The DataFrame had two columns: "Primary Fur Color" and "Count", representing the fur color and the respective count.
+
+Next, I sorted this DataFrame by the "Count" column in descending order to see which fur color was the most common. After sorting, I reset the index of the DataFrame with `reset_index(drop=True)` to have a clean, ordered index.
+
+Finally, I saved this processed data into a new CSV file named "squirrel_count.csv" using `df.to_csv()`. This file succinctly summarized the count of squirrels by their primary fur color observed during the census.
+
+Through this task, I learned to read, process, and group data using pandas, which is a powerful tool for data analysis in Python. It also demonstrated how to perform basic data manipulation operations like sorting and resetting indexes. The exercise was a practical application of pandas for real-world data exploration and summarization.
+
 #### [B. Weather Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Exercises/Weather)
 
 ## Day 26
