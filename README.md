@@ -949,6 +949,24 @@ Through this exercise, I learned how to use Turtle Graphics in Python for creati
 
 #### [A. Event Listeners](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/Exercises/1-event-listeners.py)
 
+In this exercise, I explored the use of event listeners in Python, particularly within the context of the Turtle Graphics library. The primary focus was to understand how to respond to keyboard events and control the turtle using these inputs.
+
+1. **Setting Up Turtle Graphics:**
+   - I started by importing `Turtle` and `Screen` from the turtle module. 
+   - I created a turtle object named `tim` and a screen object called `screen` to interact with.
+
+2. **Defining Movement Function:**
+   - I defined a function `move_forwards` that instructs the turtle to move forward by 10 units. This function serves as the event handler for a specific keyboard event.
+
+3. **Setting Up Event Listener:**
+   - I activated the screen's ability to listen for events using `screen.listen()`.
+   - I then linked the pressing of the "space" key to the `move_forwards` function using `screen.onkey(fun=move_forwards, key="space")`. This means that whenever the space key is pressed, the `move_forwards` function will be called, causing the turtle to move forward.
+
+4. **Screen Exit on Click:**
+   - Finally, I used `screen.exitonclick()` to keep the turtle graphics window open until a mouse click event occurs. This allows for continuous interaction with the turtle until the user decides to close the window.
+
+Through this task, I learned how to make Python programs interactive using event listeners. This is a fundamental concept in many graphical user interfaces and interactive applications.
+
 ## Day 20
 
 ### Projects (Day 20)
