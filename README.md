@@ -912,6 +912,31 @@ Finally, I printed the details of both users to observe the changes in their `fo
 
 #### [A. Turtle Graphics Challenge](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/Exercises/1-turtle-challenge.py)
 
+In this exercise, I delved into the creative and graphical aspect of Python programming using the Turtle Graphics library. This exercise was divided into multiple challenges, each aimed at exploring different functionalities of the Turtle module.
+
+1. **Setting Up Turtle Graphics:**
+   - I started by importing `Turtle` and `Screen` from the turtle module and `random` for generating random values. 
+   - I created a turtle object named `tim` and set its shape to "turtle". I initially commented out lines to set the turtle's color and make it move in a square pattern.
+
+2. **Creating Helper Functions:**
+   - `random_color`: This function generates random colors by randomly selecting RGB values.
+   - `calc_exterior_angles`: It calculates the exterior angles of a regular polygon based on the number of sides.
+   - `random_angle`: This function returns a random angle in multiples of 90 degrees, useful for random movements.
+
+3. **Drawing Shapes Challenge:**
+   - I have commented out this challenge. The idea was to use a loop to draw regular polygons with sides ranging from 3 to 10. The `calc_exterior_angles` function would be used to calculate the turning angle for each side of these polygons, and `random_color` would give each shape a unique color.
+
+4. **Random Walk Challenge:**
+   - Also commented out, this challenge would have the turtle move randomly in straight lines, changing direction at random intervals. The direction changes would be multiples of 90 degrees, and each segment of the walk would be a different random color.
+
+5. **Spirograph Challenge:**
+   - This was the main focus of my code. Here, I set the turtle's speed to 10 for smoother animation. I used a while loop to draw a series of overlapping circles, each slightly rotated from the last, creating a spirograph-like pattern. For each circle, I changed the turtle's color using `random_color` and rotated it slightly to the right before drawing the next circle.
+
+6. **Screen Settings:**
+   - I set the screen's color mode to 255 to accommodate RGB color values. The `screen.exitonclick()` command was used to keep the window open until a click event, allowing observation of the final drawing.
+
+Through this exercise, I learned how to use Turtle Graphics in Python for creating simple animations and drawings. It was a fun and visually engaging way to understand loops, functions, and the basics of computer graphics.
+
 ## Day 19
 
 ### Projects (Day 19)
