@@ -847,6 +847,41 @@ for number in range(1, 101):
 
 #### [A. Object Oriented Programming](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-016/Exercises)
 
+In this exercise, I analyzed two Python scripts that demonstrate basic concepts in Object-Oriented Programming (OOP) and module usage.
+
+##### Script 1: Object-Oriented Concepts with Turtle Module
+
+The first script, `1-object-oriented.py`, initially contains commented-out code that illustrates the use of the `turtle` module, a popular tool for basic graphics in Python. However, the active portion of the script focuses on using the `prettytable` module.
+
+###### Commented-out Turtle Code:
+- The script imports `Turtle` and `Screen` classes from the `turtle` module, along with another custom module `another_module`.
+- It prints a variable from `another_module`.
+- An instance of `Turtle` named `timmy` is created. This object is then used to draw on the screen, demonstrating basic features of the Turtle class like shape, color, and movement.
+- A `Screen` object is created to control the window. The script prints the canvas height and width and uses `exitonclick()` to close the window when clicked.
+
+###### Active PrettyTable Code:
+- The script imports `PrettyTable` from `prettytable`.
+- It creates an instance of `PrettyTable` named `table`.
+- Two columns are added to the table with headers "Pokemon Name" and "Type", along with their respective values.
+- The alignment of the table is set to left.
+- Finally, the table is printed, showcasing a formatted table with the specified columns and rows.
+
+##### Script 2: another_module.py
+
+This script, named `another_module.py`, simply defines a variable:
+
+```python
+another_variable = 12
+```
+
+- This module is meant to be imported by other scripts. In the commented-out part of the first script, `another_module.another_variable` is printed, demonstrating how to access variables from imported modules.
+
+##### Key Learnings:
+- **Object-Oriented Programming**: The Turtle part of the script shows how to create and manipulate objects, a fundamental concept in OOP.
+- **Module Usage**: Both parts of the script illustrate how to import and use modules and classes in Python.
+- **PrettyTable Library**: The PrettyTable code demonstrates how third-party libraries can be used to enhance the functionality of Python scripts, in this case for data presentation.
+- **Modular Programming**: By separating the variable into `another_module.py`, the script exemplifies the modular programming approach, promoting code reusability and organization.
+
 ## Day 17
 
 ### Projects (Day 17)
