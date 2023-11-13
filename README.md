@@ -1586,6 +1586,24 @@ In this exercise, I learned about different types of CSS selectors and how they 
 
 #### [A. CSS Box Model](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS%20Box%20Model)
 
+In this HTML and CSS exercise, I explored the CSS Box Model, a fundamental concept in web design that defines how different parts of a webpage's layout work together. The exercise involved creating three boxes with different styles to understand how padding, borders, and margins interact.
+
+1. **Box Creation and Sizing**:
+   - Three `<div>` elements with the class `.box` were created, each set to a height and width of 200px.
+
+2. **Styling and Background Colors**:
+   - Each box was given a distinct background color (`cadetblue`, `gold`, and `indianred`).
+
+3. **Padding and Border**:
+   - The first box (`.green`) was styled with 20px padding and a 10px solid black border.
+   - The paragraph inside the first box had its margin set to 0 to remove any default spacing.
+
+4. **Different Border Sizes**:
+   - The second box (`.yellow`) had a varying border thickness, with 20px on the top and bottom, and 10px on the left and right sides.
+
+5. **Margin Adjustment**:
+   - Margins were adjusted to ensure the corners of each box touched. The `.yellow` box was shifted to the right by setting its left margin to 260px, and the `.red` box was slightly shifted by setting its left margin to 40px.
+
 #### [B. CSS Colors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS%20Colors)
 
 #### [C. Font Properties](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/Font%20Properties)
