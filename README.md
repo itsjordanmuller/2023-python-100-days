@@ -1490,6 +1490,17 @@ In this exercise, I learned about the basic structure of an HTML document, often
 
 #### [C. Image Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Image%20Elements)
 
+In this HTML exercise, I learned how to incorporate image elements into a webpage and use basic CSS for layout styling. The exercise focused on displaying two images, one of a kitten and one of a puppy, in a two-column layout.
+
+1. **Image Elements**: The `<img>` tag is used to embed images. Each image element has a `src` attribute specifying the URL of the image and an `alt` attribute providing alternative text for screen readers or in cases where the image cannot be displayed. For example, `<img src="URL" alt="Description">`.
+
+2. **CSS Styling**: The `<style>` tag in the head section contains CSS to style the webpage. 
+   - The `.two-columns` class applies a flexbox layout to display content in two columns.
+   - The `.column` class ensures each column has equal width and margin.
+   - The `img` selector styles all images to have a maximum width of 100% of their container and automatic height to maintain aspect ratio.
+
+This exercise was an excellent introduction to adding and styling images in HTML, demonstrating the use of the `<img>` tag and basic CSS. It highlighted the importance of responsive images in web design and provided practical experience in creating visually appealing and accessible web content.
+
 #### [D. List Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/List%20Elements)
 
 #### [E. Nesting and Indentation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Nesting%20and%20Indentation)
