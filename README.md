@@ -1046,6 +1046,18 @@ Through this task, I learned how slicing is a powerful tool for accessing parts 
 
 #### [A. Read & Write Methods](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/Exercises/read_write.py)
 
+In this exercise, I explored various methods to read from and write to files in Python, using the `open()` function with different modes and the `write()` and `read()` methods.
+
+First, I used the `open()` function with the mode `"w"` for writing. This mode creates a new file or overwrites an existing file. I wrote a line of text to "data.txt" using `file.write("New line of text!")`.
+
+Next, I appended another line to the same file using mode `"a"`, which stands for append. This mode adds content to the end of the file without deleting its existing content. I added "\nAnother line of text!" to "data.txt".
+
+Then, I created a new file named "new_data.txt" by opening it in write mode. Since the file didn't exist, Python created it for me. I wrote two lines of text into this new file.
+
+Lastly, I read the contents of "data.txt" using the default read mode, which is simply `open("data.txt")`. After reading the contents with `file.read()`, I printed them to the console.
+
+This task taught me how to handle files in Python, including creating, writing, appending, and reading files. It demonstrated the importance of understanding file modes and the convenience of Python's context manager (`with` statement) for safe file handling, as it automatically closes the file after the block of code is executed, preventing potential file corruption or leaks.
+
 ## Day 25
 
 ### Projects (Day 25)
