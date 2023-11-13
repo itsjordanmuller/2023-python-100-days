@@ -1152,6 +1152,14 @@ In this exercise, I learned about dictionary comprehensions, a powerful way to c
 
 #### [E. Word Length Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/5-word-length-dict.py)
 
+In this exercise, I created a program to generate a dictionary that maps words in a sentence to their respective lengths. The task involved string manipulation and comprehension in Python.
+
+The program starts with a predefined sentence: "What is the Airspeed Velocity of an Unladen Swallow?". Using the `split()` method on this string, I broke it into a list of words, stored in `word_list`. This method splits a string into a list where each word is an item, based on spaces.
+
+Next, I utilized a dictionary comprehension to create a dictionary, `result`, where each key-value pair consists of a word from `word_list` and its corresponding length. The comprehension iterates over each word in `word_list`, using the `len()` function to get the length of each word.
+
+Finally, the program prints the `result` dictionary. This displays each word from the original sentence alongside the number of characters it contains.
+
 #### [F. Weather Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/6-weather-dict.py)
 
 #### [G. Data Overlap Exercise](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Data%20Overlap%20Exercise)
