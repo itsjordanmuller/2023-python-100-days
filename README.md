@@ -1771,6 +1771,20 @@ Through this exercise, I gained hands-on experience in using Selenium for web sc
 
 #### [A. Introduction to Flask](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Introduction%20to%20Flask)
 
+In this exercise, I got an introduction to Flask, a lightweight and powerful web framework for Python. Flask is widely used for creating web applications due to its simplicity and flexibility. Here's a summary of what I did and learned:
+
+1. **Setting Up Flask**: I started by importing Flask from the flask module. This is the main class in Flask and is the backbone of any Flask application.
+
+2. **Creating a Flask App Instance**: I created an instance of the Flask class. `__name__` is a special variable in Python that is used as an argument in the Flask class. It represents the name of the current Python module, which Flask uses to find resources, templates, and static files.
+
+3. **Defining a Route**: I used the `@app.route("/")` decorator to tell Flask what URL should trigger the function that follows. In this case, the function `hello_world` is linked to the root URL ("/"). This is known as defining a route.
+
+4. **Creating a View Function**: The `hello_world` function is a view function. When this route is accessed through a web browser or a HTTP request, this function gets executed. It returns a simple HTML string: `"<p>Hello, World!</p>"`.
+
+5. **Running the App**: Finally, I used `app.run()` within the `if __name__ == "__main__":` block. This is a Python idiom that checks whether the script is executed as the main program and ensures that the Flask application runs only if the script is executed directly, not if it's imported as a module.
+
+Through this exercise, I learned how to set up a basic Flask application. This included creating a Flask instance, defining routes with view functions, and running a simple web server. This is the foundation of web development with Flask, demonstrating how to serve web pages and handle routing in a Python application.
+
 #### [B. Python Decorators](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Python%20Decorators)
 
 #### [C. Python Functions](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Python%20Functions)
