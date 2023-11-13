@@ -1623,6 +1623,27 @@ This exercise was particularly useful for understanding how to use CSS for color
 
 #### [C. Font Properties](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/Font%20Properties)
 
+In these exercises, I learned about various font properties in CSS, how to apply them, and their effects on the appearance of text in a webpage. The exercises were divided into two parts: exploring different font sizes and experimenting with various font families.
+
+1. **Font Properties (index.html)**:
+   - **Color**: The `color` property was used to change the text color of a paragraph to coral.
+   - **Size**: The `font-size` property, using `rem` units, was applied to change the size of the text to twice the root font size.
+   - **Weight**: The `font-weight` property was set to 900, making the text bold.
+   - **Family**: The `font-family` property was used to apply the Google font "Caveat" to a paragraph.
+   - **Align**: The `text-align` property was used to right-align a paragraph.
+
+2. **Font Size (font-size.html)**:
+   - This part of the exercise involved using different units for font sizes, including pixels (`px`), points (`pt`), `em`, and `rem`.
+   - The `font-size` property was applied to various paragraphs to demonstrate how each unit influences the size of the text.
+
+3. **Font Family (font-family.html)**:
+   - This exercise demonstrated the use of various font families, including Helvetica, Arial, serif, sans-serif, cursive, monospace, and fantasy.
+   - Each paragraph was styled with a different `font-family` value to showcase the appearance of these font styles.
+
+Through these exercises, I gained a practical understanding of how different CSS font properties and units can be used to control the appearance of text on a webpage.
+
+I learned about the significance of choosing the right font size, weight, and family for enhancing readability and the aesthetic appeal of web content. Additionally, it provided insight into how different units like pixels, points, em, and rem are used in defining font sizes and how they relate to each other and the parent or root elements.
+
 ## Day 45
 
 ### Projects (Day 45)
