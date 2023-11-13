@@ -1162,6 +1162,18 @@ Finally, the program prints the `result` dictionary. This displays each word fro
 
 #### [F. Weather Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/6-weather-dict.py)
 
+In this exercise, I created a Python program to convert temperatures from Celsius to Fahrenheit for a weekly weather report. This task involved writing a function for the conversion and applying it to a dictionary using comprehension.
+
+The program starts with a predefined dictionary, `weather_c`, containing days of the week as keys and their corresponding temperatures in Celsius as values. My task was to convert these temperatures to Fahrenheit.
+
+I wrote a function named `CelsiusToFahrenheit` that takes a temperature in Celsius as its argument. The function applies the formula for converting Celsius to Fahrenheit: `(Celsius temperature * 9/5) + 32`.
+
+Next, I used a dictionary comprehension to create a new dictionary, `weather_f`. This comprehension iterates over each key-value pair in `weather_c` (representing day and Celsius temperature). It applies the `CelsiusToFahrenheit` function to each temperature value and pairs it with the corresponding day.
+
+Finally, the program prints `weather_f`, displaying the days of the week with their temperatures in Fahrenheit.
+
+This exercise demonstrated practical uses of functions, dictionary comprehensions, and the concept of iterating over key-value pairs in a dictionary. It also reinforced the application of mathematical formulas in programming.
+
 #### [G. Data Overlap Exercise](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Data%20Overlap%20Exercise)
 
 #### [H. Pandas DataFrame Iterate](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Pandas%20DataFrame%20Iterate)
