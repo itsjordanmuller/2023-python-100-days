@@ -1192,6 +1192,18 @@ This exercise showcased practical applications of file reading, data type conver
 
 #### [H. Pandas DataFrame Iterate](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Pandas%20DataFrame%20Iterate)
 
+In this exercise, I explored how to iterate over rows in a Pandas DataFrame in Python. This task was centered around creating a DataFrame from a dictionary and then using a loop to access and print specific data from it.
+
+The program starts by importing the Pandas library, essential for data manipulation and analysis in Python. I then created a dictionary named `student_dict` with two keys: "student" and "score". Each key maps to a list of values representing student names and their corresponding scores.
+
+Next, I used this dictionary to create a Pandas DataFrame called `student_data_frame`. A DataFrame is a two-dimensional, size-mutable, and potentially heterogeneous tabular data structure with labeled axes (rows and columns). It's a fundamental component in Pandas and is useful for representing and manipulating structured data.
+
+The core part of this exercise was to loop through each row in the DataFrame. I used `student_data_frame.iterrows()`, a function that provides an iterator yielding index and row data for each row. In each iteration, `index` represents the index of the row, and `row` is a series containing the row data.
+
+Inside the loop, I printed the values of `row.student` and `row.score`. This demonstrated how to access specific columns in each row of a DataFrame. The commented-out code, which checks if the student's name is "Jordan" and then prints their score, illustrated conditional data access within the DataFrame.
+
+Through this exercise, I learned about data manipulation using Pandas, particularly the creation of DataFrames from dictionaries and iterating over DataFrame rows. It was a practical demonstration of handling tabular data, accessing specific data points, and conditional logic in the context of data analysis.
+
 ## Day 27
 
 ### Projects (Day 27)
