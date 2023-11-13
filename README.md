@@ -1214,6 +1214,20 @@ Through this exercise, I learned about data manipulation using Pandas, particula
 
 #### [A. Windows & Labels](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/1-windows-labels.py)
 
+In this exercise, I created a basic Graphical User Interface (GUI) application using Python's Tkinter library. This program demonstrates the creation of a window, adding widgets like labels and buttons, and updating the label text dynamically based on user interaction.
+
+The program begins by importing the Tkinter library, which is a standard Python interface to the Tk GUI toolkit. I then created a main window for the application using `Tk()`, setting its title to "Python GUI Program" and minimum size to 500x400 pixels.
+
+A label widget, `my_label`, is created with the initial text "I am a label!", using the Arial font at size 24 and bold style. This label is then packed into the window, which means it is added to the window and displayed. The text of the label is changed twice, first to "New Label Text!" and then to "Yet Another Label!" using different methods (`my_label["text"]` and `my_label.config(text=...)`).
+
+Two functions are defined: `button_clicked()` and `input_label()`. `button_clicked()` is designed to update the label text to indicate the number of times a button has been clicked, but it's not used in this program. `input_label()`, on the other hand, updates the label text with the value entered in an input field.
+
+A button widget, `button`, is created with the label "Button!" and is configured to call `input_label()` when clicked. This button is packed into the window below the label. An input field (Entry widget) is also created and packed into the window.
+
+The `window.mainloop()` at the end of the script keeps the window open, allowing for user interaction. Whenever the button is clicked, the text in the input field is used to update the label's text.
+
+Through this exercise, I learned about the basics of creating a GUI in Python using Tkinter, including window creation, adding and configuring widgets, and handling user events and interactions. This program provided a practical introduction to building interactive applications with graphical elements.
+
 #### [B. Many Arguments](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/2-many-arguments.py)
 
 #### [C. Many Keyword Arguments](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/3-many-keyword-args.py)
