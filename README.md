@@ -595,6 +595,27 @@ In this exercise, the `format_name` function is enhanced to handle multiple retu
 
 #### [C. Days in Month](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/3-days-in-month.py)
 
+This Python exercise consists of two functions: one to determine if a year is a leap year (`is_leap`), and another to find out the number of days in a given month of a specific year (`days_in_month`).
+
+- The user is prompted to enter a year and a month.
+- The `days_in_month` function is then called with these inputs to determine and print the number of days in that month of the specified year.
+
+1. **Leap Year Function: `is_leap(year)`**
+   - **Purpose:** Determines whether a given year is a leap year.
+   - **Logic:**
+     - A year is a leap year if it is divisible by 4.
+     - However, if the year is also divisible by 100, it must also be divisible by 400 to be a leap year.
+   - **Return Value:** Returns `True` if the year is a leap year, and `False` otherwise.
+
+2. **Days in Month Function: `days_in_month(year, month)`**
+   - **Purpose:** Calculates the number of days in a specific month of a given year.
+   - **Parameters:** Two parameters - `year` and `month`.
+   - **Process:**
+     - The function uses a list `month_days` to store the number of days in each month, assuming a non-leap year.
+     - It then checks if the year is a leap year and if the month is February (month 2). If both conditions are met, it returns 29 (for February in a leap year).
+     - Otherwise, it returns the number of days from the `month_days` list corresponding to the given month.
+   - **Return Value:** Number of days in the specified month of the given year.
+
 #### [D. Docstrings](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/4-docstrings.py)
 
 ## Day 11
