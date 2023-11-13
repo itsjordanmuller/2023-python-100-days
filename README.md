@@ -1447,6 +1447,16 @@ Through this task, I gained practical experience in formatting text content on a
 
 #### [C. Void Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Void%20Elements)
 
+In this HTML exercise, I learned about void elements, which are special HTML elements that do not require a closing tag. The exercise focused on two such elements: `<br>` and `<hr>`.
+
+The document structure follows the standard HTML5 template, including the DOCTYPE declaration, language attribute, character encoding, and viewport settings for responsiveness. The content is organized within the `<body>` tag, starting with a `<h1>` heading for the title "William Blake."
+
+The first key learning was the use of the `<br>` (break) element within a paragraph. This element is used to create a line break in the text, which I applied in an address format. By inserting `<br>` tags after each line of the address, I was able to format the address properly, with each part starting on a new line.
+
+The second key element was the `<hr>` (horizontal rule) tag, which creates a thematic break or a horizontal line in the document. I used it to visually separate the address from the biographical paragraph about William Blake, enhancing the readability and aesthetic appeal of the page.
+
+Through this exercise, I gained a practical understanding of how void elements work in HTML and how they can be used to format content effectively. It highlighted the importance of these elements in controlling the layout and flow of text on a webpage, contributing to a better user experience and content presentation.
+
 ## Day 42
 
 ### Projects (Day 42)
