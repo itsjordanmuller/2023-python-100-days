@@ -892,6 +892,16 @@ another_variable = 12
 
 #### [A. Classes](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-017/Exercises/classes.py)
 
+In this exercise, I explored the fundamental concepts of classes and objects in Python, specifically focusing on how to create and interact with class instances.
+
+I started by defining a class named `User` using PascalCase, as is the convention for class names in Python. Inside the class, I defined an `__init__` method to initialize new `User` objects with attributes like `user_id`, `username`, `followers`, and `following`. The `followers` and `following` attributes were initialized to 0, assuming new users have no followers or are following anyone initially.
+
+I also implemented a method called `follow`, which simulates one user following another. This method increases the `followers` count of the user being followed and the `following` count of the user who is following.
+
+Next, I created two instances of the `User` class, `user_1` and `user_2`, with unique IDs and usernames. Then, I used the `follow` method to simulate `user_1` following `user_2`. This action increased `user_1`'s `following` count and `user_2`'s `followers` count by 1.
+
+Finally, I printed the details of both users to observe the changes in their `followers` and `following` counts.
+
 ## Day 18
 
 ### Projects (Day 18)
