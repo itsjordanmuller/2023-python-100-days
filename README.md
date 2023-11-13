@@ -1804,6 +1804,22 @@ In this exercise, I delved into the concept of Python decorators, which are a po
 
 #### [C. Python Functions](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Python%20Functions)
 
+In this lesson on Python functions, I learned the following key concepts:
+
+1. **Functions can have inputs, functionality, and outputs**:
+   - Functions like `add`, `subtract`, `multiply`, and `divide` were defined with parameters (`n1` and `n2`) to accept input values. Each function performs a specific operation and returns the result using the `return` statement.
+
+2. **Functions are first-class objects**:
+   - Functions in Python are treated as first-class objects, which means they can be assigned to variables, passed as arguments to other functions, and returned from other functions. In the example, the `calculate` function takes another function as an argument, demonstrating how functions can be passed around.
+
+3. **Nesting functions**:
+   - Functions can be nested within other functions. In the `outer_function`, there is a nested `nested_function`. When `outer_function` is called, it prints "I'm outer" and then calls `nested_function`, which prints "I'm inner." This illustrates the concept of function nesting.
+
+4. **Functions can be returned from other functions**:
+   - The `outer_function` also demonstrates that functions can be returned from other functions. In this case, `outer_function` returns the `nested_function`, and it can be assigned to a variable (`inner_function`) and subsequently called.
+
+Overall, this lesson introduced me to the versatility of functions in Python, showcasing their ability to accept inputs, perform operations, be passed as arguments, be nested, and even be returned from other functions. This understanding is fundamental for building modular and reusable code in Python.
+
 ## Day 55
 
 ### Projects (Day 55)
