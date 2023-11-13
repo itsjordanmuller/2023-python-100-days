@@ -557,6 +557,26 @@ This exercise demonstrates how functions can be used to manage and update comple
 
 #### [A. Functions with Outputs](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/1-functions-with-outputs.py)
 
+This exercise explores functions with outputs, focusing on how to define functions, return values, and utilize those returned values.
+
+1. **Simple Multiplication Function:**
+   - **Function:** `my_function`
+   - **Purpose:** This function performs a simple calculation (3 multiplied by 2) and returns the result.
+   - **Return Value:** The function returns the calculated value (6) but does not print it. The result is computed and returned but not used, as there's no print statement or variable assignment to capture the output when `my_function()` is called.
+
+2. **Name Formatting Function:**
+   - **Function:** `format_name`
+   - **Parameters:** Two parameters, `f_name` for the first name and `l_name` for the last name.
+   - **Process:**
+     - It formats both the first and last names to title case (first letter capitalized and the rest in lowercase) using the `title()` string method.
+     - The formatted names are then concatenated with a space in between.
+   - **Return Value:** Returns the formatted full name as a string.
+   - **Usage Examples:**
+     - `formatted_string = format_name("JoRdAn", "MULLER")` assigns the formatted name "Jordan Muller" to `formatted_string` and then prints it.
+     - `print(format_name("JoRdAn", "MULLER"))` directly prints the formatted name "Jordan Muller".
+
+This lesson demonstrates the creation and use of functions with return values, emphasizing on returning processed data and then using it, either by printing it directly or by storing it in a variable for further use. It shows the versatility of functions in handling data and the convenience of separating logic (function definition) from execution (calling the function).
+
 #### [B. Multiple Return Values](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/2-multiple-return-values.py)
 
 #### [C. Days in Month](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/3-days-in-month.py)
