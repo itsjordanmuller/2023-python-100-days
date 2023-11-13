@@ -1110,6 +1110,18 @@ Lastly, I created a new DataFrame from scratch using a dictionary. This new Data
 
 #### [A. List Comprehension](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/1-list-comprehension.py)
 
+In this exercise, I learned about list comprehensions in Python, a concise way to create lists. The concept involves constructing a list by iterating over an iterable and optionally applying a condition or operation.
+
+1. First, I created a new list, `new_numbers`, by adding 1 to each element in the original list `numbers`. This was done using the list comprehension `[num + 1 for num in numbers]`.
+
+2. Next, I converted each letter in the string `name` into a list of letters using `[letter for letter in name]`. This demonstrated how list comprehensions can be used with strings.
+
+3. I then worked with a range object, `range_nums`. I created `range_list`, where each number in the range is multiplied by 2, through the comprehension `[n * 2 for n in range_nums]`.
+
+4. In a more complex example, I filtered and transformed elements from a list of names. For `names_list`, I used a condition to include only names with 4 or fewer characters `[name for name in names if len(name) <= 4]`.
+
+5. Finally, I created `upper_names_list` by converting names longer than 4 characters to uppercase. This was done using `[name.upper() for name in names if len(name) >= 5]`.
+
 #### [B. Squaring Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/2-squaring-numbers.py)
 
 #### [C. Filter Even Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/3-filter-even-nums.py)
