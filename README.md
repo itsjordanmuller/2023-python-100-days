@@ -1337,6 +1337,16 @@ Overall, this task highlighted the importance of anticipating and managing error
 
 #### [B. Index Error Handling](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-030/Exercises/2-index-error-handling.py)
 
+In this exercise, I learned how to handle IndexError exceptions in Python, specifically in the context of accessing list elements. The task involved modifying a function, `make_pie`, to catch and handle an IndexError when an invalid index is passed to it.
+
+1. **Understanding IndexError**: Initially, the `make_pie` function attempted to access an element in the `fruits` list using a provided index. However, if the index was out of range (like 4 in this case, where the list has only three elements), an IndexError would occur. This is a common error when working with lists or arrays.
+
+2. **Adding Exception Handling**: To prevent the program from crashing due to an IndexError, I added a `try` block around the code that might cause the exception. In the `except` block, I caught the IndexError and implemented an alternative action: printing "Fruit pie" and returning this string. This way, the program continues to run smoothly even when an invalid index is used.
+
+3. **Testing the Function**: After modifying `make_pie`, I tested it by calling it with an index that I knew would cause an IndexError (4). The exception handling worked as expected, printing "Fruit pie" instead of causing a crash.
+
+4. **Redundant Outer Try-Except Block**: The outer `try` and `except` blocks around the `make_pie(4)` call became redundant after adding the exception handling inside the `make_pie` function. Since the function already handles the IndexError internally, there is no need for additional error handling outside the function.
+
 #### [C. Key Error Handling](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-030/Exercises/3-key-error-handling.py)
 
 ## Day 31
