@@ -1787,6 +1787,21 @@ Through this exercise, I learned how to set up a basic Flask application. This i
 
 #### [B. Python Decorators](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Python%20Decorators)
 
+In this exercise, I delved into the concept of Python decorators, which are a powerful and versatile feature in Python programming. Decorators allow for the modification or enhancement of functions without changing their actual code. Here’s a summary of what I did and learned:
+
+1. **Defining a Decorator Function**: I created a decorator function named `delay_decorator`. This function takes another function as its argument (`function`) and defines a nested function inside it, called `wrapper_function`. 
+
+2. **Functionality of the Decorator**: Inside `wrapper_function`, I added a delay of 2 seconds before calling the passed function, using `time.sleep(2)`. The passed function is then executed twice, demonstrating how decorators can modify the behavior of functions.
+
+3. **Returning the Wrapper Function**: The `delay_decorator` function returns `wrapper_function` without executing it. This is key to how decorators work: they replace the original function with the wrapper function, which can then add additional behavior before or after the original function's execution.
+
+4. **Applying the Decorator**: I used the decorator on three different functions (`say_hello`, `say_bye`, and `say_greeting`) to modify their behavior. The `@delay_decorator` syntax is a syntactic sugar in Python that simplifies the application of decorators.
+
+   - For `say_hello` and `say_bye`, I applied the decorator directly using the `@` syntax.
+   - For `say_greeting`, I demonstrated the decorator's use without the syntactic sugar by manually passing the function to `delay_decorator` and storing the returned function in `decorated_function`. This was then called like a regular function.
+
+5. **Understanding Decorators**: Through this exercise, I gained a deeper understanding of decorators as functions that take another function as an argument, return a function, and are used to modify or extend the behavior of the original function in a non-intrusive manner.
+
 #### [C. Python Functions](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Python%20Functions)
 
 ## Day 55
