@@ -1176,6 +1176,20 @@ This exercise demonstrated practical uses of functions, dictionary comprehension
 
 #### [G. Data Overlap Exercise](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Data%20Overlap%20Exercise)
 
+In this exercise, I worked on a Python program to find overlapping data between two files and then sort the results. The task involved file handling, set operations, list comprehension, and sorting.
+
+The program begins by reading the contents of two text files, `file1.txt` and `file2.txt`. Each file contains a list of numbers, one per line. I used the `with open()` statement to open and read the contents of each file, storing them in `file_1_contents` and `file_2_contents` respectively.
+
+After reading the files, I converted the contents of each file into a set using the `split()` method. This method splits the file contents into a list of strings (based on new lines), and `set()` converts these lists into sets, named `numbers_1` and `numbers_2`. The use of sets here is crucial as they automatically remove duplicates and allow for efficient comparison.
+
+Next, I used list comprehension to create a list named `result`. This list is composed of the common elements between `numbers_1` and `numbers_2`. The comprehension iterates over each element in `numbers_1`, checking if it also exists in `numbers_2`. Each common element is converted to an integer before being added to the list.
+
+Then, I sorted `result` in ascending order using the `sorted()` function with `reverse=False`. This rearranges the numbers from the smallest to the largest.
+
+Finally, the program prints the sorted list `result`, which contains the numbers that are present in both files.
+
+This exercise showcased practical applications of file reading, data type conversion, set operations for finding intersections, and sorting techniques in Python. It illustrated how to efficiently process and compare data from different sources.
+
 #### [H. Pandas DataFrame Iterate](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Pandas%20DataFrame%20Iterate)
 
 ## Day 27
