@@ -579,6 +579,20 @@ This lesson demonstrates the creation and use of functions with return values, e
 
 #### [B. Multiple Return Values](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/2-multiple-return-values.py)
 
+In this exercise, the `format_name` function is enhanced to handle multiple return scenarios, illustrating how Python functions can return different types of values based on conditional logic.
+
+**Function:** `format_name`
+- **Parameters:** Two parameters - `f_name` for the first name and `l_name` for the last name.
+- **Process:**
+  - The function begins by checking if either `f_name` or `l_name` is an empty string. This is done using an `if` statement that checks for empty input.
+  - **Empty Name Check:** If either the first name or last name is empty, the function immediately returns a message: `"Empty Name, Please Provide a Valid Name"`. This safeguard ensures that the function processes only valid names.
+  - **Name Formatting:** If both names are provided, it formats them to title case (first letter capitalized, the rest in lowercase) using the `title()` string method.
+- **Return Value:** Depending on the input, the function either returns a warning message for empty names or a formatted full name as a string.
+
+**Usage:**
+- The function is called within a `print` statement. It takes user input directly through the `input()` function for both first and last names.
+- Depending on the user input, it either displays a formatted name or a message indicating that a valid name wasn't provided.
+
 #### [C. Days in Month](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/3-days-in-month.py)
 
 #### [D. Docstrings](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/4-docstrings.py)
