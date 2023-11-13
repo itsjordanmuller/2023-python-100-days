@@ -1654,6 +1654,23 @@ I learned about the significance of choosing the right font size, weight, and fa
 
 #### [A. Parsing HTML and Making Soup](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Parsing%20HTML%20and%20Making%20Soup)
 
+In this exercise, I explored web scraping in Python using the BeautifulSoup library and requests module. The exercise was divided into two main parts.
+
+First, I used `requests.get()` to fetch the HTML content of a webpage (in this case, Hacker News). By printing `response.text`, I was able to see the HTML structure of the webpage, which is essential for scraping data.
+
+Next, the exercise focused on parsing local HTML content. This was done by reading a local HTML file named `website.html`, which contains a simple personal site structure. I used `BeautifulSoup` to parse this HTML content.
+
+Several key functionalities of BeautifulSoup were demonstrated:
+
+1. Accessing and printing the page title using `soup.title.name` and `soup.title.string`.
+2. Formatting and viewing the prettified HTML structure with `soup.prettify()`.
+3. Extracting the first anchor tag using `soup.a`.
+4. Finding and iterating over all anchor tags with `soup.find_all(name="a")` to print their href attributes.
+5. Locating specific elements by HTML tags and attributes, like `soup.find(name="h1", id="name")` for an `<h1>` tag with a specific id.
+6. Using CSS selectors to find elements, such as `soup.select_one(selector="p a")` and `soup.select(selector=".heading")`.
+
+Through this exercise, I learned how to scrape and parse web page data, manipulate HTML content, and extract specific information using BeautifulSoup's various methods. This is a foundational skill in web scraping, enabling the extraction of data from web pages for analysis or data gathering purposes.
+
 #### [B. Scraping a Live Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Scraping%20a%20Live%20Site)
 
 ## Day 46
