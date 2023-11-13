@@ -1673,6 +1673,22 @@ Through this exercise, I learned how to scrape and parse web page data, manipula
 
 #### [B. Scraping a Live Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Scraping%20a%20Live%20Site)
 
+In this exercise, I learned to scrape live website data using BeautifulSoup and requests in Python. The primary objective was to extract article titles and their corresponding links from the Hacker News website.
+
+Here's a breakdown of what I did:
+
+1. **Fetching Web Page Content**: I used `requests.get("https://news.ycombinator.com/news")` to send an HTTP request to the Hacker News website and stored the response, which is the HTML content of the page, in `yc_web_page`.
+
+2. **Creating a BeautifulSoup Object**: Next, I passed `yc_web_page` to `BeautifulSoup` with the parser `html.parser`. This created a BeautifulSoup object (`soup`) that represents the parsed HTML, making it easier to navigate and search the document structure.
+
+3. **Selecting Specific Elements**: The goal was to find all article titles and their URLs. To achieve this, I used `soup.select(selector=".titleline > a")` to select all `<a>` tags that are direct children of elements with the class `titleline`. This CSS selector effectively targeted the links of the articles.
+
+4. **Extracting Text and URLs**: I initialized two lists, `article_texts` and `article_links`, to store the titles and URLs, respectively. Then, I looped through the tags obtained in the previous step. For each tag, I used `tag.getText()` to get the article title and `tag.get("href")` to get the URL. These values were appended to the respective lists.
+
+5. **Printing the Results**: Finally, I printed `article_texts` and `article_links` to see the extracted information.
+
+This exercise was an excellent practice in live web scraping, particularly in using CSS selectors to precisely target HTML elements and extracting relevant information from a real-world website.
+
 ## Day 46
 
 ### Projects (Day 46)
