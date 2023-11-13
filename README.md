@@ -618,6 +618,14 @@ This Python exercise consists of two functions: one to determine if a year is a 
 
 #### [D. Docstrings](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/4-docstrings.py)
 
+In this exercise, I learned about creating a function with **docstrings** and implementing conditional logic in Python. The task was to define a function named `format_name` that formats a first and last name into title case.
+
+The function `format_name` takes two parameters, `f_name` and `l_name`, representing the first and last names, respectively. I included a docstring at the beginning of the function definition, which serves as documentation. This docstring explains the purpose of the function: "Take a first and last name and format it to return the title case version of the name."
+
+Inside the function, I added a conditional check to handle cases where either the first or last name is an empty string. If either `f_name` or `l_name` is empty, the function returns a message prompting for a valid name. Otherwise, the function proceeds to format both names to title case using the `.title()` method. This method capitalizes the first letter of each word while making all other letters lowercase. Finally, the function returns the formatted names concatenated with a space in between.
+
+To test the function, I used the `input()` function to capture the user's first and last names. Then, I passed these inputs to the `format_name` function and printed the result.
+
 ## Day 11
 
 ### Projects (Day 11)
