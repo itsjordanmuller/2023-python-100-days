@@ -1533,6 +1533,25 @@ This exercise was essential in understanding how nesting and indentation work in
 
 #### [A. Adding CSS](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/Adding%20CSS)
 
+In this exercise, I explored the three primary methods of adding CSS to an HTML document: inline, internal, and external styling. Each method has its own use cases and benefits.
+
+1. **Inline CSS**: 
+   - In `inline.html`, CSS is applied directly to HTML elements using the `style` attribute. 
+   - Example: `<h1 style="color: blue">Style Me in Blue!</h1>` applies a blue color to the heading.
+   - Inline CSS is useful for quick, one-off styling but lacks scalability and can lead to cluttered HTML.
+
+2. **Internal CSS**: 
+   - In `internal.html`, CSS is included within a `<style>` tag in the `<head>` section of the HTML document. 
+   - Example: `h1 { color: red; }` styles all `<h1>` elements in red.
+   - Internal CSS is good for single-page styles but doesn't promote reuse across multiple pages.
+
+3. **External CSS**: 
+   - In `external.html`, CSS is defined in a separate file (`style.css`) and linked to the HTML document using a `<link>` tag.
+   - Example: The `style.css` file contains `h1 { color: green; }`, which styles all `<h1>` elements in green.
+   - External CSS is the most efficient method for styling large websites, as it keeps HTML and CSS separate and allows for style reuse across multiple pages.
+
+This exercise was instrumental in understanding the different ways to apply CSS to HTML documents. It highlighted the importance of choosing the appropriate method based on the project's scope and the need for maintainability and scalability in web development. It also demonstrated how CSS enhances the visual presentation of web pages, making them more appealing and user-friendly.
+
 #### [B. CSS Selectors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/CSS%20Selectors)
 
 ## Day 44
