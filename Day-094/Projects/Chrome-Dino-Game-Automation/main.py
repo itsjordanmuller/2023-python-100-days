@@ -39,3 +39,13 @@ def checkBox():
 
     print(array.sum())
     return array.sum()
+
+
+restart()
+
+checkValue = checkBox()
+
+while True:
+    if checkBox() != checkValue:
+        jump()
+        time.sleep(0.05)
