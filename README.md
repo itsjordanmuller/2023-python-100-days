@@ -1331,8 +1331,6 @@ In this exercise, I learned about handling exceptions in Python, which are cruci
 
 5. **General Exception Handling Structure**: The `try` block contains code that might cause an exception, while the `except` block handles specific exceptions. The `else` block executes if no exceptions occur, and `finally` ensures some code runs no matter what (like closing a file). The exercise also included an example of intentionally raising an exception (`raise TypeError`) in the `finally` block.
 
-6. **Practical Application**: The BMI calculator not only demonstrated exception handling but also reinforced input validation. By checking if the height is reasonable before calculating BMI, the program becomes more reliable and user-friendly.
-
 Overall, this task highlighted the importance of anticipating and managing errors in Python, showcasing various scenarios where exception handling is essential. This is a fundamental skill for developing resilient and user-friendly Python applications.
 
 #### [B. Index Error Handling](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-030/Exercises/2-index-error-handling.py)
@@ -1348,6 +1346,16 @@ In this exercise, I learned how to handle IndexError exceptions in Python, speci
 4. **Redundant Outer Try-Except Block**: The outer `try` and `except` blocks around the `make_pie(4)` call became redundant after adding the exception handling inside the `make_pie` function. Since the function already handles the IndexError internally, there is no need for additional error handling outside the function.
 
 #### [C. Key Error Handling](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-030/Exercises/3-key-error-handling.py)
+
+In this exercise, I explored handling KeyError exceptions in Python, specifically while working with a list of dictionaries. The task involved iterating through `facebook_posts`, a list of dictionaries, and summing up the "Likes" from each post.
+
+1. **Understanding KeyError**: A KeyError occurs when trying to access a key in a dictionary that does not exist. In this case, some dictionaries in the `facebook_posts` list did not have the "Likes" key, which could potentially lead to a KeyError when the code tries to access `post["Likes"]`.
+
+2. **Implementing Exception Handling**: To address this, a `try` block was used around the code that could raise the KeyError (accessing `post["Likes"]`). In the `except` block, I caught the KeyError and used a `pass` statement to do nothing in cases where the "Likes" key is missing. This prevented the program from crashing and allowed it to continue iterating through the list.
+
+3. **Accumulating Likes**: The `total_likes` variable was used to accumulate the count of "Likes" from each post. If a post did not have the "Likes" key, the KeyError was caught, and the loop continued to the next post without modifying `total_likes`.
+
+4. **Result Output**: After iterating through all the posts, the total number of likes was printed out. This gave a sum of likes from posts that contained the "Likes" key, safely ignoring those that didn't.
 
 ## Day 31
 
