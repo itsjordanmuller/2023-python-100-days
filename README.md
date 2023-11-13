@@ -638,9 +638,34 @@ To test the function, I used the `input()` function to capture the user's first 
 
 #### [12. Number Guessing - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-012/Projects/2-guess-num-game.py)
 
-### Exercises (Day 13)
+### Exercises (Day 12)
 
 #### [A. Namespaces](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-012/Exercises/1-namespaces.py)
+
+In this exercise, I explored the concept of namespaces and scope in Python, focusing on the differences between local, global, and block scopes.
+
+1. **Modifying Global Scope**:
+    - Initially, the global variable `enemies` is commented out. Uncommenting and modifying this variable within a function without declaring it as global would have created a local variable inside the function, not affecting the global `enemies`.
+    - By using the `global` keyword inside `increase_enemies()`, it's possible to modify the global `enemies` variable.
+    - The exercise demonstrates that without the `global` keyword, a new local variable is created inside the function, which doesn't affect the global variable with the same name.
+
+2. **Global Constants**:
+    - Constants like `PI`, `URL`, and `USER_NAME` are defined at the top level of the script, making them globally accessible. These are typically written in uppercase to distinguish them as constants that shouldn't be changed.
+
+3. **Local Scope**:
+    - In the `drink_potion()` function, `potion_strength` is a local variable. It's only accessible within the function itself.
+    - Attempting to print `potion_strength` outside the function results in an error since it's not defined in the global scope.
+
+4. **Nested Functions and Global Scope**:
+    - In the `game()` function, there's a nested `drink_potion()` function. This nested function can access variables in the global scope (like `player_health`), but it has its own local scope for variables declared within it.
+
+5. **No Block Scope in Python**:
+    - Python does not have block scope (unlike languages like JavaScript). Variables declared inside a block (like an `if` statement) are accessible outside the block.
+
+6. **Accessing Variables Outside Their Scope**:
+    - The last part of the code attempts to print `new_enemy` outside the `create_enemy()` function. Since `new_enemy` is defined within the function, it's not accessible outside, demonstrating the concept of local scope.
+
+This exercise was an insightful exploration of how Python handles variable scopes. It showed the importance of understanding scope rules to avoid unexpected behavior in programs, especially in functions and nested structures. It highlighted that variables have different accessibility depending on where they are defined and that the `global` keyword is necessary to modify global variables within a function.
 
 ## Day 13
 
