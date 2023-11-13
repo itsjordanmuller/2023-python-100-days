@@ -1258,6 +1258,30 @@ In this exercise, I delved into the use of `**kwargs` in Python, which enables a
 
 #### [D. Tkinter Widgets](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/4-tkinter-widgets.py)
 
+In this exercise, I explored various widgets in Tkinter, a popular GUI toolkit in Python, to create an interactive window application. The exercise was a comprehensive introduction to basic GUI elements and their functionalities.
+
+1. **Window Configuration**: I started by creating a new window using `Tk()`, setting its title, and specifying minimum dimensions.
+
+2. **Labels**: I used the `Label` widget to display text. Initially, I set some text and then changed it using the `config` method.
+
+3. **Buttons**: I created a `Button` widget and linked it to a function called `action`, which executes when the button is clicked.
+
+4. **Entries**: The `Entry` widget allowed for single-line text input. I pre-populated it with some text and learned how to retrieve the input value.
+
+5. **Text**: For multi-line text entry, I used the `Text` widget. I added initial text and fetched the current text, understanding its line and character indexing system.
+
+6. **Spinbox**: This widget let users pick from a range of numbers. I connected it to a function that prints the selected value.
+
+7. **Scale**: The `Scale` widget provided a slider interface. I used a function to display the current value as it changes.
+
+8. **Checkbutton**: I created a checkbutton that toggles between two states, learning to use `IntVar` to track its state and execute a function on change.
+
+9. **Radiobuttons**: I used two `Radiobutton` widgets, each tied to the same variable but representing different values, and printed the selected option through a function.
+
+10. **Listbox**: Finally, I added a `Listbox` to display a list of items (fruits) and implemented a function to print the currently selected item.
+
+With this task, I gained hands-on experience with Tkinter's fundamental widgets, understanding how to layout a basic GUI, handle user interactions, and retrieve data from various input elements. This exercise was an excellent foundation for building more complex graphical user interfaces in Python.
+
 #### [E. Layout Managers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/5-layout-managers.py)
 
 ## Day 28
