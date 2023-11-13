@@ -782,6 +782,49 @@ else:
 
 #### [D. Debug FizzBuzz Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/4-debug-fizzbuzz.py)
 
+In this exercise, I debugged a Python program designed to implement the FizzBuzz challenge, a common exercise used in programming interviews.
+
+##### Original Code with Bug:
+The original code snippet had logical errors related to conditional statements:
+
+```python
+for number in range(1, 101):
+  if number % 3 == 0 or number % 5 == 0:
+    print("FizzBuzz")
+  if number % 3 == 0:
+    print("Fizz")
+  if number % 5 == 0:
+    print("Buzz")
+  else:
+    print([number])
+```
+
+The issues were:
+- The first `if` statement incorrectly used `or` instead of `and`, leading to "FizzBuzz" being printed for any number divisible by either 3 or 5, instead of both.
+- The use of multiple `if` statements caused numbers divisible by 3, 5, or both to print multiple outputs (e.g., a number divisible by 3 would print both "FizzBuzz" and "Fizz").
+- The `else` statement was aligned with the last `if`, causing numbers not divisible by 5 to print as a list `[number]` instead of just the number.
+
+##### Debugged Code:
+I corrected the logical errors by adjusting the conditional statements:
+
+```python
+for number in range(1, 101):
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
+```
+
+##### Explanation:
+- The loop iterates through numbers from 1 to 100.
+- The first `if` statement checks if a number is divisible by both 3 and 5 (`number % 3 == 0 and number % 5 == 0`). If true, it prints "FizzBuzz."
+- The `elif` statements ensure that only one of the conditions is checked and executed. If the number is divisible by 3 but not 5, it prints "Fizz." If divisible by 5 but not 3, it prints "Buzz."
+- If none of the above conditions are met, the `else` statement executes, printing the number.
+
 ## Day 14
 
 ### Projects (Day 14)
