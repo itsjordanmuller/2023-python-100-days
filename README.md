@@ -983,6 +983,28 @@ Through this task, I learned how to make Python programs interactive using event
 
 #### [A. Class Inheritance](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/Exercises/1-class-inheritance.py)
 
+In this exercise, I explored the concept of class inheritance in Python, which is a fundamental aspect of object-oriented programming. The task involved creating a base class `Animal` and a derived class `Fish` that inherits from `Animal`.
+
+1. **Defining the Base Class:**
+   - I started by defining the `Animal` class with a constructor (`__init__` method) initializing an attribute `num_eyes` set to 2.
+   - I also defined a method `breathe` in the `Animal` class that prints "Inhale, exhale."
+
+2. **Creating the Derived Class:**
+   - Next, I created the `Fish` class, which inherits from the `Animal` class. Inheritance is indicated by specifying the parent class `Animal` in parentheses next to the class name `Fish`.
+   - In the `Fish` class, I used `super().__init__()` in its constructor to ensure that it inherits all the properties and behaviors of the `Animal` class. This includes initializing the `num_eyes` attribute.
+
+3. **Overriding and Extending Methods:**
+   - I overrode the `breathe` method in the `Fish` class to add additional behavior. The `Fish` class's `breathe` method first calls the `breathe` method from the `Animal` class (using `super().breathe()`) to perform the basic breathing action, and then adds a print statement "Doing this underwater" to indicate its adaptation to an aquatic environment.
+   - Additionally, I introduced a new method `swim` in the `Fish` class with a print statement "Moving in water." This method is specific to the `Fish` class and represents an ability not present in the `Animal` class.
+
+4. **Creating an Instance and Testing Methods:**
+   - I then created an instance of the `Fish` class named `nemo` and tested its methods and attributes.
+   - I called `nemo.swim()`, which executed the `swim` method specific to the `Fish` class.
+   - I called `nemo.breathe()`, which demonstrated the overridden behavior in the `Fish` class, showing both the inherited breathing action and the specialized "Doing this underwater" print statement.
+   - Finally, I printed `nemo.num_eyes`, which confirmed that `nemo` inherited the `num_eyes` attribute from the `Animal` class.
+
+Through this exercise, I gained a deeper understanding of how inheritance allows a class to inherit attributes and methods from a parent class, how to override methods in the child class, and how to add new methods specific to the child class.
+
 #### [B. Slicing](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/Exercises/2-slicing.py)
 
 ## Day 22
