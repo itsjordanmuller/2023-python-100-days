@@ -673,6 +673,28 @@ This exercise was an insightful exploration of how Python handles variable scope
 
 #### [A. Beginner Debugging](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/1-beginner-debugging.py)
 
+In this exercise, I delved into the basics of debugging in Python. It covered various debugging techniques and concepts, highlighting common issues that beginners might encounter.
+
+1. **Describe Problem**:
+    - The function `my_function()` uses a `for` loop to iterate from 1 to 20. The intention is to print "You got it" when `i` equals 20. The loop correctly includes 20 in its range, ensuring the desired message is printed. No apparent issue is present in this snippet.
+
+2. **Reproduce the Bug**:
+    - The code snippet uses `randint` to simulate a dice roll. The `dice_imgs` list contains symbols for dice faces. Since lists are zero-indexed, `randint(0, 5)` correctly matches the indices of `dice_imgs`. The commented line `print(dice_imgs[6])` would cause an `IndexError` because the list has no element at index 6.
+
+3. **Play Computer**:
+    - The code asks for a year of birth and categorizes the user as a millennial or Gen Z based on the year. However, there's a logic error: years exactly equal to 1994 are not covered by any condition. Adjusting the conditions to include 1994 in one of the categories would resolve this oversight.
+
+4. **Fix the Errors**:
+    - This snippet asks for the user's age and prints a message if the age is over 18. The code correctly converts the input to an integer and compares it against 18. There are no errors in this code; it should work as intended.
+
+5. **Print is Your Friend**:
+    - The code calculates the total number of words based on the number of pages and words per page. The user inputs these values. This snippet correctly computes `total_words` by multiplying `pages` by `word_per_page`. Uncommenting the print statements for `pages` and `word_per_page` would be helpful for debugging if there were issues in the calculations.
+
+6. **Use a Debugger**:
+    - The `mutate` function takes a list, doubles each item, and appends it to a new list `b_list`. This function appears to work correctly as it iterates over each element, performs the operation, and prints the resulting list.
+
+This exercise provided a general overview of common debugging strategies: understanding the problem, reproducing bugs, stepping through the code, fixing logical errors, using print statements for inspection, and the concept of using a debugger. Each snippet represented a typical debugging scenario, emphasizing the importance of careful code review and testing in programming.
+
 #### [B. Debug Odd & Even Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/2-debug-odd-even.py)
 
 #### [C. Debug Leap Year Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/3-debug-leap-year.py)
