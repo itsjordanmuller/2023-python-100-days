@@ -697,6 +697,40 @@ This exercise provided a general overview of common debugging strategies: unders
 
 #### [B. Debug Odd & Even Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/2-debug-odd-even.py)
 
+In this exercise, I examined and debugged a Python program designed to check if a given number is odd or even.
+
+##### Original Code with Bug:
+The original code snippet had a syntax error:
+
+```python
+number = int(input("Which number do you want to check?"))
+
+if number % 2 = 0:
+  print("This is an even number.")
+else:
+  print("This is an odd number.")
+```
+
+The issue here was with the `if` statement. The code used a single equals sign (`=`) instead of a double equals sign (`==`). In Python, `=` is used for assignment, while `==` is used for comparison.
+
+##### Debugged Code:
+I corrected the syntax error by replacing `=` with `==` in the `if` statement. The fixed code looks like this:
+
+```python
+number = int(input("Which number do you want to check?"))
+
+if number % 2 == 0:
+    print("This is an even number.")
+else:
+    print("This is an odd number.")
+```
+
+##### Explanation:
+- The program starts by asking the user to input a number, which is then converted into an integer using `int()`.
+- It then checks if the number is even by using the modulus operator `%`. This operator returns the remainder of the division of `number` by 2.
+- If the remainder is 0 (`number % 2 == 0`), it means the number is even, and the program prints "This is an even number."
+- If the remainder is not 0, the `else` clause executes, and the program prints "This is an odd number."
+
 #### [C. Debug Leap Year Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/3-debug-leap-year.py)
 
 #### [D. Debug FizzBuzz Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/4-debug-fizzbuzz.py)
