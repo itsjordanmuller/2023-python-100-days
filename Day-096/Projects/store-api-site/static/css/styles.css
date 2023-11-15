@@ -105,3 +105,24 @@ meter {
 :where(dialog:modal) {
   all: revert;
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1b1464;
+}
+
+h2 {
+  font-size: 2rem;
+}
