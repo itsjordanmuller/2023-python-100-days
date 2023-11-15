@@ -2,6 +2,12 @@
 content %}
 <div>
   <h1>Store API Site</h1>
+  <h2>All Products</h2>
+  <ul>
+    {% for product in products %}
+    <li>{{ product.title }} - ${{ product.price }}</li>
+    {% endfor %}
+  </ul>
 </div>
 <script></script>
 {% endblock %}
