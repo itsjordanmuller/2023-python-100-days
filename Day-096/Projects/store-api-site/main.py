@@ -14,17 +14,25 @@ def get_all_products():
     return response.json() if response.status_code == 200 else []
 
 
-def get_categories():
+def get_all_categories():
     response = requests.get("https://fakestoreapi.com/products/categories")
+    return response.json() if response.status_code == 200 else []
+
+
+def get_all_carts():
+    response = requests.get("https://fakestoreapi.com/carts")
     return response.json() if response.status_code == 200 else []
 
 
 @app.route("/", methods=["GET"])
 def home():
     products = get_all_products()
-    categories = get_categories()
+    categories = get_all_categories()
+    carts = get_all_carts()
 
-    return render_template("index.html", products=products, categories=categories)
+    return render_template(
+        "index.html", products=products, categories=categories, carts=carts
+    )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,17 @@
+<div class="carts">
+  {% for cart in carts %}
+  <div class="cart">
+    <h3>Cart ID: {{ cart.id }}</h3>
+    <p>User ID: {{ cart.userId }}</p>
+    <p>Date: {{ cart.date }}</p>
+    <h4>Products:</h4>
+    <ul>
+      {% for product in cart.products %}
+      <li>
+        Product ID: {{ product.productId }}, Quantity: {{ product.quantity }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>
