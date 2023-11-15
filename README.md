@@ -1830,6 +1830,25 @@ Overall, this lesson introduced me to the versatility of functions in Python, sh
 
 #### [A. Advanced Decorators](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-055/Exercises/Advanced%20Decorators)
 
+In this section, I explored advanced concepts of Python decorators, furthering my understanding of this powerful feature. Decorators are used to modify or extend the functionality of functions in Python. Here's what I did and learned:
+
+1. **User Authentication Decorator**:
+   - **Purpose**: I implemented a decorator named `is_authenticated_decorator` to check if a user is authenticated before allowing certain actions (like creating a blog post).
+   - **Implementation**: This decorator takes a function as an argument and returns a nested function, `authenticate`. Inside `authenticate`, it checks if the first argument (assumed to be a user) is logged in. If so, it allows the function to execute.
+   - **Usage**: I applied this decorator to a function `create_blog_post`, demonstrating its use by creating an instance of a `User` class and toggling their `is_logged_in` status. This showcased how decorators can be used for access control in applications.
+
+2. **Logging Decorator Challenge**:
+   - **Objective**: To create a logging decorator named `logging_decorator` that logs the details of function calls.
+   - **Functionality**: This decorator wraps around a function and prints out the function's name, the arguments it was called with, and the result it returned.
+   - **Application**: I applied this decorator to `a_function`, which performs a multiplication operation. The decorator effectively logged the call details, demonstrating its utility in debugging and monitoring function usage.
+
+**Advanced Decorators - Key Learnings**:
+- **Decorator Mechanics**: Both exercises reinforced the concept that decorators are functions that return other functions, allowing for dynamic modification of function behavior.
+- **Practical Use Cases**: The user authentication decorator illustrated a practical use of decorators in managing access control, while the logging decorator highlighted their utility in logging and debugging.
+- **Flexibility and Power**: These exercises showcased the flexibility and power of decorators in Python, demonstrating how they can be applied to a wide range of scenarios to add functionality to existing code in a clean and maintainable way.
+
+Overall, these exercises deepened my understanding of decorators in Python, showing how they can be leveraged to write more efficient, cleaner, and more maintainable code.
+
 #### [B. Flask Practice](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-055/Exercises/Flask%20Practice)
 
 ## Day 56
