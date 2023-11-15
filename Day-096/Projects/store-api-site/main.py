@@ -24,14 +24,20 @@ def get_all_carts():
     return response.json() if response.status_code == 200 else []
 
 
+def get_all_users():
+    response = requests.get("https://fakestoreapi.com/users")
+    return response.json() if response.status_code == 200 else []
+
+
 @app.route("/", methods=["GET"])
 def home():
     products = get_all_products()
     categories = get_all_categories()
     carts = get_all_carts()
+    users = get_all_users()
 
     return render_template(
-        "index.html", products=products, categories=categories, carts=carts
+        "index.html", products=products, categories=categories, carts=carts, users=users
     )
 
 
