@@ -92,4 +92,18 @@ def main_menu():
                     return
 
 
+def show_game_over_message():
+    font = pygame.font.Font(None, 74)
+    text = font.render("GAME OVER", True, WHITE)
+    text_rect = text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 40))
+    screen.blit(text, text_rect)
+
+
+def show_victory_message():
+    font = pygame.font.Font(None, 74)
+    text = font.render("YOU WIN!", True, WHITE)
+    text_rect = text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 40))
+    screen.blit(text, text_rect)
+
+
 pygame.quit()
