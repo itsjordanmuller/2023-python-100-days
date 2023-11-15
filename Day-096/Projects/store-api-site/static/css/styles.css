@@ -186,3 +186,20 @@ h2 {
   background-color: #f5f5f5;
   border-radius: 4px;
 }
+
+.cart {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.cart h3,
+.cart h4 {
+  margin-top: 0;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding-left: 0;
+}
