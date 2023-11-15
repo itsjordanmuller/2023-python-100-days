@@ -49,4 +49,19 @@ class Alien:
         screen.blit(self.image, (self.x, self.y))
 
 
+class Bullet:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.speed = 7
+        self.image = pygame.Surface((5, 10))
+        self.image.fill(WHITE)
+
+    def move(self):
+        self.y -= self.speed
+
+    def draw(self):
+        screen.blit(self.image, (self.x, self.y))
+
+
 pygame.quit()
