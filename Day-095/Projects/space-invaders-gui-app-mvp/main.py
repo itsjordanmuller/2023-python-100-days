@@ -64,4 +64,32 @@ class Bullet:
         screen.blit(self.image, (self.x, self.y))
 
 
+def main_menu():
+    while True:
+        screen.fill((0, 0, 0))
+        font = pygame.font.Font(None, 74)
+        title_text = font.render("Space Invaders", True, WHITE)
+        title_rect = title_text.get_rect(
+            center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 100)
+        )
+        screen.blit(title_text, title_rect)
+
+        play_button = pygame.Rect(SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50)
+        pygame.draw.rect(screen, GREEN, play_button)
+
+        play_text = font.render("Play", True, WHITE)
+        play_rect = play_text.get_rect(center=play_button.center)
+        screen.blit(play_text, play_rect)
+
+        pygame.display.flip()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if play_button.collidepoint(event.pos):
+                    return
+
+
 pygame.quit()
