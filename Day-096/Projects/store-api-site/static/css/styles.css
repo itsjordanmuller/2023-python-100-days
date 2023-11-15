@@ -174,3 +174,15 @@ h2 {
   gap: 20px;
   padding: 20px;
 }
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-item {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
