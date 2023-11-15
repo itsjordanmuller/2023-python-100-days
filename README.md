@@ -1851,6 +1851,22 @@ Overall, these exercises deepened my understanding of decorators in Python, show
 
 #### [B. Flask Practice](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-055/Exercises/Flask%20Practice)
 
+In this exercise, I practiced using Flask, a popular micro web framework in Python, to build a simple web server with various routes and decorators for HTML text formatting.
+
+The script starts by importing `Flask` and creating a Flask app instance. Then, I defined three decorator functions, `make_bold`, `make_emphasis`, and `make_underlined`. Each of these decorators takes a function and wraps its output in HTML tags (`<b>`, `<em>`, and `<u>`, respectively) for bold, italic, and underlined text.
+
+Next, I defined three routes using the `@app.route` decorator:
+
+1. The root route (`"/"`) returns a basic HTML page with a heading, a paragraph, and an image. This route is a straightforward demonstration of serving HTML content with Flask.
+
+2. The `"/bye"` route is decorated with the previously defined decorators to apply bold, italic, and underline formatting to its output. The layered use of decorators here showcases how to combine multiple decorators to enhance a function's output.
+
+3. The `"/username/<name>/<int:age>"` route demonstrates Flask's ability to capture variable path segments. This route accepts a `name` (string) and `age` (integer) as URL parameters and displays them in a formatted string. This exemplifies how to dynamically respond to user input in URLs.
+
+Finally, the script runs the app with `debug=True`, enabling the debug mode for easier development and troubleshooting.
+
+Through this task, I continued to learn about Flask. Specifically expanding on: setting up a Flask applications, routing, dynamic URL parameters, HTML formatting in Flask, and the use of decorators to modify the behavior of functions. This exercise provided a practical foundation for web development with Flask.
+
 ## Day 56
 
 ### Projects (Day 56)
