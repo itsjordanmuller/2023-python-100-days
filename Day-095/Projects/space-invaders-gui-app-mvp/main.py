@@ -31,4 +31,22 @@ class Player:
         screen.blit(self.image, (self.x, self.y))
 
 
+class Alien:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.speed = 0.5
+        self.image = pygame.Surface((36, 24))
+        self.image.fill(RED)
+
+    def move(self):
+        self.x += self.speed
+
+    def drop_down(self):
+        self.y += 24
+
+    def draw(self):
+        screen.blit(self.image, (self.x, self.y))
+
+
 pygame.quit()
