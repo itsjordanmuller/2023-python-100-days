@@ -10,7 +10,10 @@
     - The "html" attribute is exclud, because otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
  */
 *:where(
-    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+    :not(html, iframe, canvas, img, svg, video, audio, details, summary):not(
+        svg *,
+        symbol *
+      )
   ) {
   all: unset;
   display: revert;
@@ -125,4 +128,49 @@ h1 {
 
 h2 {
   font-size: 2rem;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-info {
+  padding-top: 10px;
+}
+
+.product-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.product-description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-rating {
+  font-size: 14px;
+  color: #444;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
 }

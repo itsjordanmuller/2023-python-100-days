@@ -3,11 +3,10 @@ content %}
 <div>
   <h1>Store API Site</h1>
   <h2>All Products</h2>
-  <ul>
-    {% for product in products %}
-    <li>{{ product.title }} - ${{ product.price }}</li>
-    {% endfor %}
-  </ul>
+  <details>
+    <summary>View All Products</summary>
+    <div class="product-grid">{% include 'products.html' %}</div>
+  </details>
 </div>
 <script></script>
 {% endblock %}
