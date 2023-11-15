@@ -1877,6 +1877,20 @@ Through this task, I continued to learn about Flask. Specifically expanding on: 
 
 #### [A. Open Source Template](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Exercises/Open%20Source%20Template)
 
+In this exercise, I explored the basics of setting up a web application using Flask, a popular Python web framework, along with incorporating HTML templates and static assets. 
+
+The Python script uses Flask to create a simple web server. The `Flask` class from the `flask` module is used to initialize the app, and the `render_template` function is employed to render HTML pages.
+
+A route is defined using the `@app.route` decorator. The function `hello_world()` is linked to the root URL ("/"). When this URL is accessed, the function returns the rendered `index.html` template.
+
+The `if __name__ == "__main__"` block checks if the script is executed directly (and not imported as a module in another script). If so, `app.run(debug=True)` starts the Flask application with debug mode enabled, allowing for real-time updates and detailed error logs.
+
+The Flask application is configured to serve static assets from the `static/assets` folder, which is organized into subfolders for CSS, JavaScript, SASS, and webfonts. This structure is essential for managing various frontend components like stylesheets, scripts, and font resources.
+
+The `templates/index.html` file is an HTML document that structures the web page. It includes references to the CSS stylesheet (`main.css`) and JavaScript files stored in the `static/assets` directory. The HTML template features sections like header, navigation, main content areas, and footer, showcasing different elements like images, links, and text blocks.
+
+This setup demonstrates how to use Flask for serving dynamic web content, manage static files, and render HTML templates. It's a foundational step in web development with Python, showcasing how to structure a project, serve static assets, and create a basic web page layout.
+
 #### [B. Resume Site Template](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Exercises/Resume%20Site%20Template)
 
 ## Day 57
