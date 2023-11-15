@@ -106,4 +106,54 @@ def show_victory_message():
     screen.blit(text, text_rect)
 
 
+def game_over_screen():
+    while True:
+        show_game_over_message()
+
+        replay_button = pygame.Rect(
+            SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 + 100, 200, 50
+        )
+        pygame.draw.rect(screen, GREEN, replay_button)
+
+        font = pygame.font.Font(None, 50)
+        replay_text = font.render("Replay", True, WHITE)
+        replay_rect = replay_text.get_rect(center=replay_button.center)
+        screen.blit(replay_text, replay_rect)
+
+        pygame.display.flip()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if replay_button.collidepoint(event.pos):
+                    return
+
+
+def next_round_screen():
+    while True:
+        show_victory_message()
+
+        next_round_button = pygame.Rect(
+            SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 + 150, 200, 50
+        )
+        pygame.draw.rect(screen, GREEN, next_round_button)
+
+        font = pygame.font.Font(None, 50)
+        next_round_text = font.render("Next Round", True, WHITE)
+        next_round_rect = next_round_text.get_rect(center=next_round_button.center)
+        screen.blit(next_round_text, next_round_rect)
+
+        pygame.display.flip()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if next_round_button.collidepoint(event.pos):
+                    return
+
+
 pygame.quit()
