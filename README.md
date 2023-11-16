@@ -2036,6 +2036,40 @@ Through this exercise, I not only practiced implementing Bootstrap components bu
 
 #### [A. SQLite Practice](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-063/Exercises/SQLite%20Practice)
 
+In this exercise, I practiced using SQLite with Python to manage a simple database. SQLite is a C library that provides a lightweight disk-based database and allows for a self-contained, serverless, zero-configuration, and transactional SQL database engine.
+
+Here’s what I learned:
+
+1. **Database Connection**:
+   I started by connecting to an SQLite database named `books-collection.db` using `sqlite3.connect`. This method returns a connection object.
+
+2. **Creating a Cursor**:
+   Using the connection object, I created a cursor object by calling `db.cursor()`. The cursor is used to execute SQL commands.
+
+3. **Creating a Table**:
+   I learned to create a new table named `books` with columns for `id`, `title`, `author`, and `rating`. The `id` is set as the PRIMARY KEY, which means each value must be unique and not null. The `title` and `author` are stored as strings (`varchar(250)`) and are not nullable, with the `title` also being unique. The `rating` is a floating-point number. The SQL command for creating a table is written as a string and executed by the cursor with the `execute` method.
+
+   ```sql
+   CREATE TABLE books (id INTEGER PRIMARY KEY, title varchar(250) NOT NULL UNIQUE, author varchar(250) NOT NULL, rating FLOAT NOT NULL)
+   ```
+
+   This command was commented out after the initial run because you only need to create the table once.
+
+4. **Inserting Data**:
+   I inserted a new row into the `books` table with values for each column. The SQL command for inserting is also a string executed by the cursor.
+
+   ```sql
+   INSERT INTO books VALUES(1, 'The Sixth Extinction', 'Elizabeth Kolbert', '9.8')
+   ```
+
+5. **Committing Changes**:
+   After executing an insertion, I learned to commit the changes to the database using `db.commit()`. It's essential to commit after modifications, or the changes won't be saved.
+
+6. **Handling Unique Constraints**:
+   Since the `title` column is unique, I would need to handle exceptions if I tried to insert a book with a title that already exists in the database. This would raise an `sqlite3.IntegrityError`, which I would need to catch and handle appropriately.
+
+Through this exercise, I understood the basics of SQLite database operations in Python, including connecting to a database, creating a table, inserting data, and committing changes. This knowledge is fundamental for any application that requires data persistence.
+
 #### [B. SQLAlchemy Practice](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-063/Exercises/SQLAlchemy%20Practice)
 
 ## Day 64
