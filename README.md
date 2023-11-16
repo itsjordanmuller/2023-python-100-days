@@ -2184,6 +2184,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 75
 
+### Projects (Day 75)
+
+#### [75. Google Trends Data Analysis](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-075/Projects/Google%20Trends%20Data%20Analysis)
+
 ## Day 76
 
 ## Day 77
