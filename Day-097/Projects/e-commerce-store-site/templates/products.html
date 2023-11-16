@@ -1,15 +1,22 @@
 {% for product in products %}
 <div class="product-card">
-    <img src="{{ product.image }}" alt="{{ product.title }}" class="product-image">
-    <div class="product-info">
-        <h3 class="product-title">{{ product.title }}</h3>
-        <p class="product-price">${{ product.price }}</p>
-        <p class="product-category">{{ product.category }}</p>
-        <p class="product-description">{{ product.description }}</p>
-        <div class="product-rating">
-            <span>Rating: {{ product.rating.rate }}</span>
-            <span>({{ product.rating.count }} reviews)</span>
-        </div>
+  <img
+    src="{{ product.image }}"
+    alt="{{ product.title }}"
+    class="product-image"
+  />
+  <div class="product-info">
+    <h3 class="product-title">{{ product.title }}</h3>
+    <p class="product-price">${{ product.price }}</p>
+    <p class="product-category">{{ product.category }}</p>
+    <p class="product-description">{{ product.description }}</p>
+    <div class="product-rating">
+      <span>Rating: {{ product.rating.rate }}</span>
+      <span>({{ product.rating.count }} reviews)</span>
     </div>
+    <a href="/product/{{ product.id }}" class="product-detail-button"
+      >View Details</a
+    >
+  </div>
 </div>
 {% endfor %}

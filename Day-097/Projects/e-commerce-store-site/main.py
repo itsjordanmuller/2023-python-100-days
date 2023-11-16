@@ -14,6 +14,13 @@ def get_all_products():
     return response.json() if response.status_code == 200 else []
 
 
+@app.route("/product/<int:product_id>", methods=["GET"])
+def product_details(product_id):
+    response = requests.get(f"https://fakestoreapi.com/products/{product_id}")
+    product = response.json() if response.status_code == 200 else None
+    return render_template("details.html", product=product)
+
+
 def get_all_categories():
     response = requests.get("https://fakestoreapi.com/products/categories")
     return response.json() if response.status_code == 200 else []

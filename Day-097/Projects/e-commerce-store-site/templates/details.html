@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block title %}Store API Site{% endblock %} {% block
+content %}
+<div class="product-detail-container">
+  <h2>{{ product.title }}</h2>
+  <div class="product-detail">
+    <img
+      src="{{ product.image }}"
+      alt="{{ product.title }}"
+      class="product-detail-image"
+    />
+    <div class="product-detail-info">
+      <p class="product-detail-price">Price: ${{ product.price }}</p>
+      <p class="product-detail-category">Category: {{ product.category }}</p>
+      <p class="product-detail-description">{{ product.description }}</p>
+    </div>
+  </div>
+</div>
+<script></script>
+{% endblock %}
