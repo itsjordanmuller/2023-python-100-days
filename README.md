@@ -2196,6 +2196,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 77
 
+### Projects (Day 77)
+
+#### [77. NumPy & N-Dimensional Arrays](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-077/Projects/NumPy%20and%20N-Dimensional%20Arrays)
+
 ## Day 78
 
 ## Day 79
