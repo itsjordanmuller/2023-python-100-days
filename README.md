@@ -2250,6 +2250,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 86
 
+### Projects (Day 86)
+
+#### [86. Typing Speed Test GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-086/Projects/Typing%20Speed%20Test%20GUI%20App)
+
 ## Day 87
 
 ## Day 88
