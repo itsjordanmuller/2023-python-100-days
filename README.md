@@ -2160,6 +2160,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 71
 
+### Projects (Day 71)
+
+#### [71. Folder File Scanner](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-071/Projects/Folder%20File%20Scanner)
+
 ## Day 72
 
 ## Day 73
