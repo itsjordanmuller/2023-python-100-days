@@ -2238,6 +2238,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 84
 
+### Projects (Day 84)
+
+#### [84. Tic-Tac-Toe vs Bot](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-084/Projects/Tic-Tac-Toe%20vs%20Bot)
+
 ## Day 85
 
 ## Day 86
