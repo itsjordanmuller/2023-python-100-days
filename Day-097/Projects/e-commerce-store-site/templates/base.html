@@ -20,20 +20,24 @@
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/products">Products</a></li>
-        <li><a href="/categories">Categories</a></li>
-        <li><a href="/carts">Carts</a></li>
-        <li><a href="/users">Users</a></li>
-      </ul>
-    </nav>
-    {% block content %}{% endblock %}
-    <footer>
-      <p>Contact us at <a href="mailto:info@store.com">info@store.com</a></p>
-      <p>Follow us on <a href="#">Social Media</a></p>
-    </footer>
+    <div id="page-container">
+      <div id="content-wrap">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/categories">Categories</a></li>
+            <li><a href="/carts">Carts</a></li>
+            <li><a href="/users">Users</a></li>
+          </ul>
+        </nav>
+        {% block content %}{% endblock %}
+      </div>
+      <footer>
+        <p>Contact us at <a href="mailto:info@store.com">info@store.com</a></p>
+        <p>Follow us on <a href="#">Social Media</a></p>
+      </footer>
+    </div>
     {% block scripts %} {% endblock%}
   </body>
 </html>
