@@ -2226,6 +2226,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 82
 
+### Projects (Day 82)
+
+#### [82. Morse Code Converter](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-082/Projects/Morse%20Code%20Converter)
+
 ## Day 83
 
 ## Day 84
