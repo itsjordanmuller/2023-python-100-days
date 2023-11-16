@@ -1921,6 +1921,30 @@ The HTML structure of the resume is simple yet effective, using headings, paragr
 
 #### [A. Jinja Template Introduction](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-057/Exercises/Jinja%20Template%20Introduction)
 
+In this exercise, I was introduced to using Jinja templates with Flask, a popular Python web framework. Jinja is a powerful template engine for Python, enabling dynamic content generation in HTML files.
+
+The `server.py` file serves as the backbone of the application. It uses Flask to create web routes and serve HTML templates. The application includes three primary routes:
+
+1. **Home Route ("/")**: This route generates a random number and the current year, passing them to `index.html` using Jinja's template syntax. The template dynamically displays these values.
+
+2. **Guess Route ("/guess/<name>")**: This route takes a name as a parameter and tries to guess the age and gender of the person. It first checks if the data is already stored in a local JSON file (`data.json`). If not, it fetches the data using external APIs (`agify.io` and `genderize.io`), stores it in the JSON file, and then passes it to `demographics.html`. This demonstrates API interaction, file handling, and dynamic content rendering using Jinja.
+
+3. **Blog Route ("/blog/<num>")**: This route fetches blog posts from an external API and displays a specific post in `blog.html` based on the passed ID. It showcases how to handle and display lists of data using Jinja.
+
+The HTML templates (`index.html`, `demographics.html`, and `blog.html`) are designed to display the data passed from the server. They use Jinja's templating syntax (e.g., `{{ variable }}`, `{% for %}`, `{% if %}`) to embed Python-like expressions and control structures into the HTML, allowing for dynamic content rendering based on the server-side data.
+
+Through this exercise, I learned how to:
+
+- Set up a basic Flask application.
+- Use routes to handle different URLs.
+- Pass data from the server to the templates.
+- Use Jinja's templating features to render dynamic content in HTML.
+- Interact with APIs and handle JSON data.
+- Perform basic file operations (read/write JSON).
+- Utilize Flask's `url_for` function for generating URLs.
+
+This was a practical introduction to web development with Flask and Jinja, highlighting how Python can be used to create dynamic, data-driven websites.
+
 ## Day 58
 
 ### Projects (Day 58)
