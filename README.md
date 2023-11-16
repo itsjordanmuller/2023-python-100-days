@@ -2262,6 +2262,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 88
 
+### Projects (Day 88)
+
+#### [88. Full Stack Coffee & Wi-Fi](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-088/Projects/Full%20Stack%20Coffee%20and%20Wi-Fi)
+
 ## Day 89
 
 ## Day 90
