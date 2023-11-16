@@ -1893,6 +1893,24 @@ This setup demonstrates how to use Flask for serving dynamic web content, manage
 
 #### [B. Resume Site Template](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Exercises/Resume%20Site%20Template)
 
+In this exercise, I created a personal resume website using Flask and HTML. The goal was to develop a web application that showcases a professional profile, including education, projects, technical skills, and contact information.
+
+The Flask setup remained straightforward, with the application initialized and a single route defined. This route, mapped to the root URL ("/"), returns the rendered HTML page `resume.html` located in a subfolder `cv` within the `templates` directory. This structure illustrates how Flask can manage templates organized in subdirectories, offering a neat way to structure larger projects.
+
+The HTML template `resume.html` is crafted as a personal resume. It begins with standard HTML document headers, including a link to a CSS stylesheet (`styles.css`) stored in the `static` folder. This CSS file presumably contains custom styles to enhance the visual appeal of the resume.
+
+The body of the `resume.html` is structured to include various sections typical of a resume:
+
+1. **Personal Information and Contact:** It starts with an image tag displaying a portrait (referenced from the `static` folder) and continues with basic contact information and social media links.
+
+2. **Education:** This section lists academic qualifications, including the institution, graduation date, degree, and relevant coursework.
+
+3. **Projects:** Several projects are detailed, each with a title, technologies used, and a brief description. This section highlights practical skills and experiences.
+
+4. **Technical Skills:** A comprehensive list of technical skills, languages, libraries, frameworks, developer tools, certifications, and hobbies is provided.
+
+The HTML structure of the resume is simple yet effective, using headings, paragraphs, lists, and divisions to organize the content. It demonstrates how to present detailed professional information in a clear, readable format on a web page.
+
 ## Day 57
 
 ### Projects (Day 57)
