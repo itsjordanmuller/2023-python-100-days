@@ -112,7 +112,6 @@ meter {
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  padding: 2rem;
 }
 
 h1,
@@ -215,4 +214,40 @@ h2 {
 
 .user h3 {
   margin-top: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
