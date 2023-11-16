@@ -2166,6 +2166,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 72
 
+### Projects (Day 72)
+
+#### [72. College Major Salary Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-072/Projects/College%20Major%20Salary%20Data%20Exploration)
+
 ## Day 73
 
 ## Day 74
