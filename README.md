@@ -2202,6 +2202,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 78
 
+### Projects (Day 78)
+
+#### [78. Linear Regressions & Seaborn](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-078/Projects/Linear%20Regressions%20and%20Seaborn)
+
 ## Day 79
 
 ## Day 80
