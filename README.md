@@ -2274,6 +2274,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 90
 
+### Projects (Day 90)
+
+#### [90. Disappearing Text Writing App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-090/Projects/Disappearing%20Text%20Writing%20App)
+
 ## Day 91
 
 ## Day 92
