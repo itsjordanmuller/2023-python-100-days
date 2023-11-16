@@ -2208,6 +2208,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 79
 
+### Projects (Day 79)
+
+#### [79. Nobel Prize Analysis](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-079/Projects/Nobel%20Prize%20Analysis)
+
 ## Day 80
 
 ## Day 81
