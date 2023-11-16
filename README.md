@@ -2190,6 +2190,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 76
 
+### Projects (Day 76)
+
+#### [76. Google Play Store App Analytics](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-076/Projects/Google%20Play%20Store%20App%20Analytics)
+
 ## Day 77
 
 ## Day 78
