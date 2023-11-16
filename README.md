@@ -2268,6 +2268,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 89
 
+### Projects (Day 89)
+
+#### [89. Todo List Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-089/Projects/Todo%20List%20Site)
+
 ## Day 90
 
 ## Day 91
