@@ -2,30 +2,9 @@
 content %}
 <div>
   <h1>Store API Site</h1>
+  <div class="categories">{% include 'categories.html' %}</div>
 
-  <h2>All Categories</h2>
-  <details>
-    <summary>View All Categories</summary>
-    <div class="categories">{% include 'categories.html' %}</div>
-  </details>
-
-  <h2>All Products</h2>
-  <details>
-    <summary>View All Products</summary>
-    <div class="product-grid">{% include 'products.html' %}</div>
-  </details>
-
-  <h2>Shopping Carts</h2>
-  <details>
-    <summary>View All Carts</summary>
-    <div class="cart-container">{% include 'carts.html' %}</div>
-  </details>
-
-  <h2>Users</h2>
-  <details>
-    <summary>View All Users</summary>
-    <div class="user-container">{% include 'users.html' %}</div>
-  </details>
+  <div class="product-grid">{% include 'products.html' %}</div>
 </div>
 <script></script>
 {% endblock %}
