@@ -230,12 +230,16 @@ h2 {
 
 .category-list {
   list-style: none;
-  padding: 0;
+  padding: 10px;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  justify-content: center;
 }
 
 .category-item {
-  margin-bottom: 10px;
   padding: 5px;
   background-color: #f5f5f5;
   border-radius: 4px;
