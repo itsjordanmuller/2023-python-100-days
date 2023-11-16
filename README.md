@@ -2072,6 +2072,46 @@ Through this exercise, I understood the basics of SQLite database operations in 
 
 #### [B. SQLAlchemy Practice](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-063/Exercises/SQLAlchemy%20Practice)
 
+In this exercise, I practiced how to use SQLAlchemy, an Object-Relational Mapping (ORM) library for Python, with a Flask application to interact with an SQLite database. Here's what I learned:
+
+**Setting Up the Environment**:
+- I initialized a Flask app and used the Flask-SQLAlchemy extension to integrate SQLAlchemy into the Flask app.
+- Configured the app to connect to an SQLite database named `new-books-collection.db`.
+
+**Creating a Database Model**:
+- Defined a `Book` class as a model that represents a table in the database. The class inherits from `db.Model`.
+- Specified columns for the table: `id`, `title`, `author`, and `rating`. Each column is an instance of `db.Column` with type and constraints (like `primary_key` and `nullable`) defined.
+
+**Creating the Table**:
+- Used the `db.create_all()` function within the Flask app's application context to create the table in the database according to the schema defined in the `Book` class.
+
+**CRUD Operations**:
+1. **Create (Commented Out)**:
+   - Created a new book record with given values and added it to the session, then committed the session to save changes to the database.
+
+2. **Read All Records (Commented Out)**:
+   - Executed a query to select all books, ordered by title, and printed the result.
+
+3. **Read a Specific Record by Query (Commented Out)**:
+   - Executed a query to find a specific book by its title.
+
+4. **Update a Record by Query (Commented Out)**:
+   - Found a book by its title, updated its rating, and committed the changes.
+
+5. **Update a Record by Primary Key (Commented Out)**:
+   - Found a book by its `id`, updated its title, and committed the changes.
+
+6. **Delete a Specific Record by Primary Key (Commented Out)**:
+   - Found a book by its `id`, deleted it from the session, and committed the changes to remove it from the database.
+
+Throughout this exercise, I learned how to:
+- Set up and integrate SQLAlchemy with a Flask app.
+- Define a model class with SQLAlchemy.
+- Perform basic CRUD (Create, Read, Update, Delete) operations using SQLAlchemy ORM.
+- Use Flask's application context to perform database operations.
+
+The use of SQLAlchemy ORM allows for writing Pythonic code that translates to SQL queries, which abstracts away the complexity of direct SQL statements and provides a more readable, maintainable codebase. This is especially helpful in larger projects where database schemas and operations can become quite complex.
+
 ## Day 64
 
 ### Projects (Day 64)
