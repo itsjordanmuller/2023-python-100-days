@@ -2232,6 +2232,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 83
 
+### Projects (Day 83)
+
+#### [83. Portfolio Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-083/Projects/Portfolio%20Site)
+
 ## Day 84
 
 ## Day 85
