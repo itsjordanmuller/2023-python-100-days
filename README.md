@@ -2256,6 +2256,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 87
 
+### Projects (Day 87)
+
+#### [87. Breakout Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-087/Projects/Breakout%20Game)
+
 ## Day 88
 
 ## Day 89
