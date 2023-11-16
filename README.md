@@ -1955,6 +1955,31 @@ This was a practical introduction to web development with Flask and Jinja, highl
 
 #### [A. Bootstrap Introduction](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-058/Exercises/Bootstrap%20Introduction)
 
+In this exercise, I've learned how to create a responsive card layout using Bootstrap, a popular CSS framework that helps design web pages quickly and efficiently. 
+
+The `index.html` file is structured with a `<!DOCTYPE html>` declaration, followed by HTML5 elements structured with a `head` and a `body`. In the `head` section, Bootstrap's CSS file is included from a CDN (Content Delivery Network), which gives me access to Bootstrap's pre-defined classes for styling and responsiveness.
+
+The style section within the `head` defines a `flex-container` class that uses Flexbox to center its contents both vertically and horizontally within the viewport height. This is a common design pattern for centering content, especially in a card-based layout.
+
+In the `body`, the `flex-container` class is applied to a `div` element, which wraps around the Bootstrap card component. The card component is constructed using `div` elements with specific Bootstrap classes:
+
+- `card`: This class defines the basic card structure.
+- `card-img-top`: This class is used for the image at the top of the card.
+- `card-body`: This class contains the content of the card, including a title (`card-title`), text content (`card-text`), and a button (`btn btn-primary`).
+
+The image displayed on the card is referenced locally from `./flower.jpg`. The card's title, text, and button are defined with placeholder text and styled using Bootstrap's classes.
+
+Finally, Bootstrap's JavaScript bundle is included just before the closing `body` tag. This bundle contains Bootstrap's JavaScript components, which can add interactive behavior to Bootstrap elements if needed.
+
+In summary, I've learned how to:
+
+- Include Bootstrap's CSS and JS files using a CDN.
+- Utilize Bootstrap classes for styling and layout, such as cards and buttons.
+- Implement Flexbox for centering content using custom CSS classes.
+- Structure HTML for a Bootstrap card component with an image, title, text, and button.
+
+By understanding these concepts, I can now create a visually appealing and responsive card layout that can be further customized as needed for web development projects.
+
 #### [B. Bootstrap Components](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-058/Exercises/Bootstrap%20Components)
 
 ## Day 59
