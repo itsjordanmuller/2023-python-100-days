@@ -2178,6 +2178,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 74
 
+### Projects (Day 74)
+
+#### [74. LEGO Data Analysis](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-074/Projects/LEGO%20Data%20Analysis)
+
 ## Day 75
 
 ## Day 76
