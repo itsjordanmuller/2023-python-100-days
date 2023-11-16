@@ -2172,6 +2172,10 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 73
 
+### Projects (Day 73)
+
+#### [73. Programming Language Analysis](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-073/Projects/Programming%20Language%20Analysis)
+
 ## Day 74
 
 ## Day 75
