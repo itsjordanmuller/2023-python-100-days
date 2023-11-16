@@ -14,13 +14,6 @@ def get_all_products():
     return response.json() if response.status_code == 200 else []
 
 
-@app.route("/product/<int:product_id>", methods=["GET"])
-def product_details(product_id):
-    response = requests.get(f"https://fakestoreapi.com/products/{product_id}")
-    product = response.json() if response.status_code == 200 else None
-    return render_template("details.html", product=product)
-
-
 def get_all_categories():
     response = requests.get("https://fakestoreapi.com/products/categories")
     return response.json() if response.status_code == 200 else []
@@ -40,11 +33,25 @@ def get_all_users():
 def home():
     products = get_all_products()
     categories = get_all_categories()
-    carts = get_all_carts()
-    users = get_all_users()
 
+    return render_template("index.html", products=products, categories=categories)
+
+
+@app.route("/product/<int:product_id>", methods=["GET"])
+def product_details(product_id):
+    response = requests.get(f"https://fakestoreapi.com/products/{product_id}")
+    product = response.json() if response.status_code == 200 else None
+    return render_template("details.html", product=product)
+
+
+@app.route("/category/<string:category_name>", methods=["GET"])
+def category(category_name):
+    response = requests.get(
+        f"https://fakestoreapi.com/products/category/{category_name}"
+    )
+    products = response.json() if response.status_code == 200 else []
     return render_template(
-        "index.html", products=products, categories=categories, carts=carts, users=users
+        "index.html", products=products, categories=get_all_categories()
     )
 
 

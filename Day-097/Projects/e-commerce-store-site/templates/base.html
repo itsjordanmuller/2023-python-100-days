@@ -41,6 +41,8 @@
         <p>Follow us on <a href="#">Social Media</a></p>
       </footer>
     </div>
-    {% block scripts %} {% endblock%}
+    {% block scripts %}
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% endblock %}
   </body>
 </html>

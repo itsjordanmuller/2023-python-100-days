@@ -1,5 +1,9 @@
 <ul class="category-list">
   {% for category in categories %}
-  <li class="category-item">{{ category }}</li>
+  <li class="category-item">
+    <button class="category-button" data-category="{{ category }}">
+      {{ category }}
+    </button>
+  </li>
   {% endfor %}
 </ul>
