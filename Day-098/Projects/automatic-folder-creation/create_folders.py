@@ -50,6 +50,45 @@ def create_readme(folder_name):
         print(f"README.md already exists in {folder_name}")
 
 
+def rename_folders():
+    """Rename folders based on CSV data."""
+    with open(csv_file, newline="") as data:
+        reader = csv.DictReader(data)
+        for row in reader:
+            original_name = row["Folder Name"]
+            new_name = row["New Name"]
+
+            if os.path.exists(original_name) and os.path.isdir(original_name):
+                os.rename(original_name, new_name)
+                print(f"Renamed folder {original_name} to {new_name}")
+            else:
+                print(f"Folder does not exist: {original_name}")
+
+
+def rename_folders_and_update_readmes():
+    """Rename folders and update README.md files."""
+    with open(csv_file, newline="") as data:
+        reader = csv.DictReader(data)
+        for row in reader:
+            original_name = row["Folder Name"]
+            new_name = row["New Name"]
+
+            if os.path.exists(original_name) and os.path.isdir(original_name):
+                os.rename(original_name, new_name)
+                print(f"Renamed folder {original_name} to {new_name}")
+
+                readme_path = os.path.join(new_name, "README.md")
+                if os.path.exists(readme_path):
+                    with open(readme_path, "r") as file:
+                        lines = file.readlines()
+                    with open(readme_path, "w") as file:
+                        lines[0] = f"# {new_name}\n"
+                        file.writelines(lines)
+                        print(f"Updated README.md in {new_name}")
+            else:
+                print(f"Folder does not exist: {original_name}")
+
+
 if os.path.exists(csv_file):
     print("\nSelect an option:")
     print("1: Create folders with README.md files.")
