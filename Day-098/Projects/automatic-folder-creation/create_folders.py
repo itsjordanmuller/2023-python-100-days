@@ -28,6 +28,16 @@ def create_folders_without_readmes():
 
 
 if os.path.exists(csv_file):
-    print(f"Found '{csv_file}' file.")
+    print("\nSelect an option:")
+    print("1: Create folders with README.md files.")
+    print("2: Create folders without README.md files.")
+    choice = input("\nEnter your choice (1 or 2): ")
+
+    if choice == "1":
+        create_folders_with_readmes()
+    elif choice == "2":
+        create_folders_without_readmes()
+    else:
+        print("Invalid input. Please enter 1 or 2.")
 else:
     print(f"No '{csv_file}' file found in the current directory.")
