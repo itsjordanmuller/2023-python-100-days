@@ -94,7 +94,9 @@ if os.path.exists(csv_file):
     print("1: Create folders with README.md files.")
     print("2: Create folders without README.md files.")
     print("3: Create README.md files in existing folders.")
-    choice = input("\nEnter your choice (1, 2, or 3): ")
+    print("4: Rename folders only.")
+    print("5: Rename folders and update README.md files.")
+    choice = input("\nEnter your choice (1, 2, 3, 4, or 5): ")
 
     if choice == "1":
         create_folders_with_readmes()
@@ -102,7 +104,11 @@ if os.path.exists(csv_file):
         create_folders_without_readmes()
     elif choice == "3":
         create_only_readmes()
+    elif choice == "4":
+        rename_folders()
+    elif choice == "5":
+        rename_folders_and_update_readmes()
     else:
-        print("Invalid input. Please enter 1, 2, or 3.")
+        print("Invalid input. Please enter 1, 2, 3, 4, or 5.")
 else:
     print(f"No '{csv_file}' file found in the current directory.")
