@@ -1,21 +1,25 @@
-# 🚨 Don't change the code below 👇
-student_heights = input("Input a list of student heights ").split()
-for n in range(0, len(student_heights)):
-    student_heights[n] = int(student_heights[n])
-# 🚨 Don't change the code above 👆
+print("\nAverage Height Calculator\n")
 
+# User input for student heights, comma-separated
+student_heights = input("Input a list of student heights (comma-separated):\n").split(
+    ","
+)
 
-# Write your code below this row 👇
+# Convert each height from string to integer
+for n in range(len(student_heights)):
+    student_heights[n] = int(
+        student_heights[n].strip()
+    )  # Added strip() to remove potential whitespace
+
+# Initialize total height and student count
 total_height = 0
-student_count = 0
+# Count number of students
+student_count = len(student_heights)
 
+# Sum up total height
 for height in student_heights:
-    total_height += int(height)
-    # print(total_height)
+    total_height += height
 
-for student in student_heights:
-    student_count += 1
-    # print(student_count)
-
+# Calculate and display average height
 average_height = round(total_height / student_count)
-print(average_height)
+print(f"\nAverage Height: {average_height}")
