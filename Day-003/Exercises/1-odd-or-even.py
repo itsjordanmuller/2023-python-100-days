@@ -1,9 +1,10 @@
-# 🚨 Don't change the code below 👇
-number = int(input("Which number do you want to check? "))
-# 🚨 Don't change the code above 👆
+print("\nOdd or Even Number Checker\n")
 
-# Write your code below this line 👇
+# Prompt the user to enter a number for checking
+number = int(input("Which number do you want to check? "))
+
+# Check if the number is odd or even and print the result
 if number % 2 == 1:
-    print("This is an odd number.")
+    print("\nThis is an odd number.")
 else:
-    print("This is an even number.")
+    print("\nThis is an even number.")
