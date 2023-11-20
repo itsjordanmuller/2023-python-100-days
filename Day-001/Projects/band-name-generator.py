@@ -1,6 +1,5 @@
-# Welcome message for Band Name Generator
 print(
-    "\nWelcome to the Automatic Band Name Generator\nA state of the art Band Name Generation Utility\nBuilt with Python by Jordan Muller!\n"
+    "\nAutomatic Band Name Generator\nA state of the art Band Name Generation Utility\nBuilt with Python by Jordan Muller!\n"
 )
 
 # Get name of user's home town/city
