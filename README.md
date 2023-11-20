@@ -371,6 +371,10 @@ This exercise effectively demonstrates how to manipulate lists and use indexing 
 
 #### [5. Password Generator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Projects/5-password-generator.py)
 
+![Password Generator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-password-generator-1.png)
+
+![Password Generator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-password-generator-2.png)
+
 ### Exercises (Day 5)
 
 #### [A. Basic Loops](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/0-basic-loops.py)
@@ -385,6 +389,10 @@ Overall, these examples served as an introduction to `for` loops in Python. They
 
 #### [B. Average Height](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/1-average-height.py)
 
+![Average Height Calculator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-average-height-1.png)
+
+![Average Height Calculator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-average-height-2.png)
+
 In this exercise, I created a program to calculate the average height from a list of student heights in Python, demonstrating basic data collection, type conversion, and arithmetic operations.
 
 The program begins by prompting the user to input a list of student heights, which are entered as a space-separated string. This string is then split into a list of individual height strings using `.split()`. The `for` loop that follows converts each string in the list to an integer, updating the `student_heights` list with these integer values. This conversion is crucial for the arithmetic operations that follow.
@@ -393,7 +401,11 @@ The next part of the code involves calculating the total height and counting the
 
 Finally, the average height is calculated by dividing the `total_height` by `student_count` and rounding the result to the nearest whole number. This average is then printed out. This exercise effectively demonstrates handling user input, iterating over lists, basic arithmetic operations, and type conversion in Python. It's a practical example of how Python can be used to process and analyze data inputs.
 
-#### [C. High Score](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/2-high-score.py)
+#### [C. High Score Checker](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/2-high-score.py)
+
+![High Score Checker - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-high-score-1.png)
+
+![High Score Checker - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-high-score-2.png)
 
 In this Python exercise, I developed a program to find the highest score in a list of student scores. The exercise emphasized the use of loops, conditional statements, and handling user input.
 
@@ -413,7 +425,11 @@ Within the loop, a conditional statement checks whether each number is even. Thi
 
 After the loop completes, the program prints `total_number`, which by then contains the sum of all even numbers from 1 to 100.
 
-#### [E. FizzBuzz](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/4-fizz-buzz.py)
+#### [E. FizzBuzz Challenge](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/Exercises/4-fizz-buzz.py)
+
+![FizzBuzz Challenge - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-fizz-buzz-1.png)
+
+![FizzBuzz Challenge - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-fizz-buzz-2.png)
 
 In this exercise, I implemented the classic "FizzBuzz" program in Python, a common test used in programming interviews. The task was to print each number from 1 to 100, but for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz". This exercise highlighted the use of loops, conditional statements, and modulo operations.
 
