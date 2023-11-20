@@ -1,13 +1,14 @@
-# 🚨 Don't change the code below 👇
-print("Welcome to the Love Calculator!")
-name1 = input("What is your name? \n")
-name2 = input("What is their name? \n")
-# 🚨 Don't change the code above 👆
+print("\nPython Love Calculator\n")
 
-# Write your code below this line 👇
+# Get names from user
+name1 = input("What is your name?: ")
+name2 = input("What is their name?: ")
+
+# Combine and convert names to lowercase
 combined_name = name1 + name2
 lower_name = combined_name.lower()
 
+# Count & total occurrences of each letter for "TRUE" & "LOVE"
 t = lower_name.count("t")
 r = lower_name.count("r")
 u = lower_name.count("u")
@@ -22,11 +23,15 @@ e = lower_name.count("e")
 
 love = l + o + v + e
 
+# Combine both parts of score
 love_score = int(str(true) + str(love))
 
-if (love_score < 10) or (love_score > 90):
-    print(f"Your score is {love_score}, you go together like coke and mentos.")
-elif (love_score >= 40) and (love_score <= 50):
-    print(f"Your score is {love_score}, you are alright together.")
+# Output compatibility message based on specific score thresholds
+if love_score <= 25:
+    print(f"\nYour score is {love_score}. You might need more sparks to fly.")
+elif love_score <= 50:
+    print(f"\nYour score is {love_score}. There's potential for something great.")
+elif love_score <= 75:
+    print(f"\nYour score is {love_score}. You two are quite compatible!")
 else:
-    print(f"Your score is {love_score}")
+    print(f"\nYour score is {love_score}. It's a perfect match!")
