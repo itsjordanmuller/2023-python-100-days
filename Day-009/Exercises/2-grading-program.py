@@ -1,3 +1,4 @@
+# Dictionary of student scores
 student_scores = {
     "Harry": 81,
     "Ron": 78,
@@ -6,8 +7,10 @@ student_scores = {
     "Neville": 62,
 }
 
+# Initialize dictionary for student grades
 student_grades = {}
 
+# Assign grades based on score ranges
 for key in student_scores:
     if student_scores[key] >= 91:
         student_grades[key] = "Outstanding"
@@ -20,4 +23,9 @@ for key in student_scores:
     else:
         print("Input Error")
 
+# Program description
+print("\nAutomatic Grading Program\n")
+print("Places students into grade categories based on score.\n")
+
+# Output student grades
 print(student_grades)
