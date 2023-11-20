@@ -1,11 +1,14 @@
-# Import the random module here
 import random
 
-# Split string method
-names_string = input("Give me everybody's names, separated by a comma. ")
-names = names_string.split(", ")
-# 🚨 Don't change the code above 👆
+print("\nBanker Roulette")
+print("The game that decides who pays for dinner!\n")
 
-# Write your code below this line 👇
+# Collect comma-separated names from user
+names_string = input("Give me everybody's names, separated by a commas:\n")
+names = names_string.split(", ")
+
+# Calculate index range for name selection
 name_len = len(names) - 1
-print(f"{names[random.randint(0, name_len)]} is going to buy the meal today!")
+
+# Randomly select and announce who will buy the meal
+print(f"\n{names[random.randint(0, name_len)]} is going to buy the meal today!")
