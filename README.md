@@ -497,6 +497,16 @@ This exercise demonstrates the practical application of loops for iterating over
 
 #### [7. Parachute Man - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/Projects/4-parachute-man.py)
 
+![Parachute Man - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/007-parachute-man-1.png)
+
+![Parachute Man - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/007-parachute-man-2.png)
+
+![Parachute Man - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/007-parachute-man-3.png)
+
+![Parachute Man - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/007-parachute-man-4.png)
+
+![Parachute Man - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/007-parachute-man-5.png)
+
 ### Exercises (Day 7)
 
 #### [A. Building Parachute Man - Part 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-007/Exercises/1-parachute-man.py)
