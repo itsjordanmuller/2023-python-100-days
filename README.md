@@ -30,6 +30,10 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 
 #### [1. Band Name Generator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Projects/band-name-generator.py)
 
+![Band Name Generator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/001-band-name-generator-1.png)
+
+![Band Name Generator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/001-band-name-generator-2.png)
+
 ### Exercises (Day 1)
 
 #### [A. Hello World](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/Exercises/0-hello-world.py)
