@@ -521,6 +521,12 @@ This exercise demonstrates the practical application of loops for iterating over
 
 #### [8. Caesar Cipher](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Projects/7-caesar-cipher.py)
 
+![Caesar Cipher - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/008-caesar-cipher-1.png)
+
+![Caesar Cipher - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/008-caesar-cipher-2.png)
+
+![Caesar Cipher - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/008-caesar-cipher-3.png)
+
 ### Exercises (Day 8)
 
 #### [A. Greet Function](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/1-greet-function.py)
@@ -534,6 +540,10 @@ Following this, a function named `greet` is defined. This function takes two par
 Finally, the `greet` function is called with `name` and `location` as arguments. This call executes the function with the specific inputs provided by the user, displaying the customized greeting messages.
 
 #### [B. Paint Area Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/Exercises/2-paint-area-calculator.py)
+
+![Paint Area Calculator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/008-paint-area-calculator-1.png)
+
+![Paint Area Calculator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-008/008-paint-area-calculator-2.png)
 
 In this exercise, I created a Python program to calculate the number of cans of paint needed to paint a wall, showcasing the use of functions, arithmetic operations, and external libraries.
 
