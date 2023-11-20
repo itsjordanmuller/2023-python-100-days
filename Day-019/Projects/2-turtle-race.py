@@ -8,7 +8,7 @@ colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 screen.setup(width=500, height=400)
 user_bet = screen.textinput(
     title="Make your bet!",
-    prompt="Type a color to place your bet on which turtle will win the race: ",
+    prompt="Type a color to place your bet on which turtle will win the race:\nOptions:(red, orange, yellow, green, blue, purple)",
 )
 print(f"You bet on {user_bet}!")
 
@@ -31,7 +31,7 @@ while race_on:
     for turtle in turtles:
         turtle.forward(random.randint(1, 10))
 
-        if turtle.xcor() >= 250:
+        if turtle.xcor() >= 232:
             race_on = False
             winning_color = turtle.pencolor()
             print(f"The {winning_color} turtle is the winner!")
