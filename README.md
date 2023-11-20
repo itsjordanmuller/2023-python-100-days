@@ -605,9 +605,19 @@ This part of the exercise demonstrates the use of modular arithmetic in programm
 
 #### [9. Blind Auction](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Projects/5-blind-auction.py)
 
+![Blind Auction - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-blind-auction-1.png)
+
+![Blind Auction - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-blind-auction-2.png)
+
+![Blind Auction - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-blind-auction-3.png)
+
+![Blind Auction - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-blind-auction-4.png)
+
 ### Exercises (Day 9)
 
 #### [A. Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/1-dictionary.py)
+
+![Dictionary - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-dictionary.png)
 
 In this exercise, I demonstrated the use of dictionaries in Python, a powerful data structure for storing key-value pairs. The exercise covered creating a dictionary, adding to it, accessing its elements, and iterating through it.
 
@@ -618,6 +628,8 @@ Next, I expanded the dictionary by adding a new entry for "Loop" and its definit
 Finally, I used a `for` loop to iterate over each key in the dictionary, printing both the key and its associated value. This part of the exercise showcased how to efficiently traverse a dictionary and access its contents.
 
 #### [B. Grading Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/2-grading-program.py)
+
+![Grading Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-grading-program.png)
 
 In this exercise, I implemented a grading program in Python using dictionaries. The program assigned grades to students based on their scores, demonstrating the use of conditional statements and iterating through dictionary items.
 
@@ -648,6 +660,8 @@ In this exercise, I worked with nesting dictionaries in Python, a useful techniq
 Both methods showcase different ways of using nested structures in Python. The first method is efficient for direct access using a key, while the second is better for sequential processing of all records.
 
 #### [D. Travel Log](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/4-travel-log.py)
+
+![Travel Log](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-travel-log.png)
 
 In this exercise, I worked on expanding a Python program that maintains a travel log using a list of dictionaries. The program demonstrates the use of functions for data manipulation within complex data structures.
 
