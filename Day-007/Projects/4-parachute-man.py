@@ -1,5 +1,7 @@
 import random
 
+print("\nParachute Man Word Guessing Game\n")
+
 result = [
     """
      ___
@@ -119,8 +121,10 @@ stages = [
 """,
 ]
 
+# Reverse the order of the hangman stages
 stages = stages[::-1]
 
+# List of Possible Words for the Game
 word_list = [
     "abruptly",
     "absurd",
@@ -337,26 +341,39 @@ word_list = [
     "zombie",
 ]
 
+# Randomly select a word from the list
 chosen_word = random.choice(word_list)
 
-
+# Initialize the display with underscores representing each letter of the chosen word
 display = ["_"] * len(chosen_word)
 print(display)
 
+# Set initial number of lives
 lives = 6
 
+# Game loops until all letters are guessed or lives run out
 while "_" in display and lives > 0:
+    # Display current stage of hangman
     print(stages[6 - lives])
+
+    # Get player's letter guess
     guess = input("Choose a single letter: ").lower()
+
+    # Decrease a life if the guess is incorrect
     if guess not in chosen_word:
         lives -= 1
         print(f"You have {lives} lives left.")
+
+    # Reveal correctly guessed letters in the display
     for i, letter in enumerate(chosen_word):
         if letter == guess:
             display[i] = letter
     print(display)
 
+# End of game messages (assuming 'result' is predefined with victory/loss messages)
 if lives == 0:
+    # Game Loss
     print(result[0])
 else:
+    # Game Won
     print(result[1])
