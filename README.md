@@ -260,6 +260,10 @@ This exercise was a fun and creative way to apply various Python programming con
 
 #### [4. Rock Paper Scissors - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Projects/4-rock-paper-scissors.py)
 
+![Rock Paper Scissors - CLI Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-rock-paper-scissors-1.png)
+
+![Rock Paper Scissors - CLI Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-rock-paper-scissors-2.png)
+
 ### Exercises (Day 4)
 
 #### [A. Random Module](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/0-random-module.py)
@@ -289,6 +293,10 @@ This exercise provided a broad overview of different Python features, from rando
 
 #### [B. Heads or Tails](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/1-heads-or-tails.py)
 
+![Heads or Tails - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-heads-or-tails-1.png)
+
+![Heads or Tails - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-heads-or-tails-2.png)
+
 In this exercise, I created a simple "Heads or Tails" program using Python's `random` module. This exercise demonstrates the use of random number generation and basic conditional logic.
 
 The program works as follows:
@@ -302,6 +310,10 @@ The program works as follows:
    - This binary choice effectively simulates the flipping of a coin.
 
 #### [C. Banker Roulette](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/2-banker-roulette.py)
+
+![Banker Roulette - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-banker-roulette-1.png)
+
+![Banker Roulette - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-banker-roulette-2.png)
 
 In the "Banker Roulette" exercise, I implemented a program in Python that randomly selects a person from a list to "buy the meal today." This exercise demonstrates string manipulation, list handling, and the use of the `random` module for generating random numbers.
 
@@ -323,6 +335,10 @@ The program's workflow is as follows:
    - Finally, the program prints out a message stating which name (person) is selected to buy the meal.
 
 #### [D. Treasure Map](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/3-treasure-map.py)
+
+![Treasure Map - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-treasure-map-1.png)
+
+![Treasure Map - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-treasure-map-2.png)
 
 In the "Treasure Map" exercise, I developed a program in Python that simulates placing a treasure mark on a simple grid map. This exercise is a great example of using lists, indexing, and conditional logic in Python.
 
