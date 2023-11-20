@@ -1,27 +1,3 @@
-# Flavors: Espresso, Latte, Cappuccino
-
-# Espresso $1.5 | Recipe: 50ml Water, 18g Coffee, 0ml Milk
-# Latte $2.5 | Recipe: 200ml Water, 24g Coffee, 150ml Milk
-# Cappuccino $3.0 | Recipe: 250ml Water, 24g Coffee, 100ml Milk
-
-# Coffee Machine Resources: (300ml Water, 200ml Milk, 100g Coffee)
-
-# Penny $0.01
-# Nickel $0.05
-# Dime $0.10
-# Quarter $0.25
-
-# Typing 'report' should give a report of the resources & money in the coffee machine
-# Water: (x)ml
-# Milk: (x)ml
-# Coffee: (x)g
-# Money: $x.xx
-
-# Allow the user to keep ordering more, but if there's not enough of a certain resource, tell them which resource there is not enough of
-
-# Process the coins inserted into the machine, calculating the excess and returning any money not used for the coffee, checking to make sure the transaction was successful and the user paid enough. If the transaction is successful, deduct the money from the total input and return the change.
-
-
 def print_report():
     """Prints the current resource report."""
     print(
@@ -50,10 +26,12 @@ def process_transaction(amount_entered, drink_cost):
     if amount_entered >= drink_cost:
         change = amount_entered - drink_cost
         resources["money"] += drink_cost
-        print(f"Transaction successful! Here is your change: ${change:.2f}")
+        print(f"\nTransaction successful! Here is your change: ${change:.2f}")
         return True
     else:
-        print(f"Sorry, that's not enough money. Money refunded: ${amount_entered:.2f}")
+        print(
+            f"\nSorry, that's not enough money. Money refunded: ${amount_entered:.2f}"
+        )
         return False
 
 
@@ -64,11 +42,12 @@ def check_resources(drink):
     """
     for ingredient, amount in MENU[drink]["ingredients"].items():
         if resources[ingredient] < amount:
-            print(f"Sorry, there's not enough {ingredient}.")
+            print(f"\nSorry, there's not enough {ingredient}.")
             return False
     return True
 
 
+# Define menu items and their requirements
 MENU = {
     "espresso": {
         "ingredients": {
@@ -96,6 +75,7 @@ MENU = {
     },
 }
 
+# Initialize resource levels
 resources = {
     "water": 300,
     "milk": 200,
@@ -103,25 +83,33 @@ resources = {
     "money": 0,
 }
 
+# Initialize Values for Status & Operation
 operation = ""
 status = "on"
 
+print("\nCoffee Machine Simulator")
+print("Type 'report' to view resources, 'off' to exit")
+
 while status == "on":
-    operation = input("What would you like? (espresso/latte/cappuccino): ")
+    operation = input("\nWhat would you like? (espresso/latte/cappuccino): ")
     if operation == "off":
-        print("Shutting down machine.")
+        # Turn off machine
+        print("\nShutting down machine.")
         status = "off"
     elif operation in ["espresso", "latte", "cappuccino"]:
+        # Process drink order if resources sufficient
         if check_resources(operation):
-            print(f"You have selected a {operation}. Please insert money.")
+            print(f"You have selected a {operation}. Please insert money.\n")
             total_money = get_money()
             if process_transaction(total_money, MENU[operation]["cost"]):
+                # Deduct used resources and serve drink
                 for ingredient, amount in MENU[operation]["ingredients"].items():
                     resources[ingredient] -= amount
                 print(f"Here's your {operation} ☕ Enjoy!")
             else:
-                print("Please try again with enough money.")
+                print("\nPlease try again with enough money.")
         else:
-            print(f"Sorry, we can't make a {operation} right now.")
+            print(f"Sorry, we can't make a {operation} right now.\n")
     elif operation == "report":
+        # Display resource report
         print_report()
