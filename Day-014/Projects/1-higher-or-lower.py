@@ -3,45 +3,47 @@ from art import logo, vs
 from game_data import data
 
 
+# Determine if user's guess is correct
 def is_guess_correct(guess, person_a_followers, person_b_followers):
-    """
-    Returns True if the guess is correct; otherwise, returns False.
-    """
     return (guess == "A" and person_a_followers > person_b_followers) or (
         guess == "B" and person_b_followers > person_a_followers
     )
 
 
+# Select a random person, different from the previous one
 def get_new_person(previous_person=None):
-    """
-    Returns a random person not equal to the previous person.
-    """
     person = random.choice(data)
     while person == previous_person:
         person = random.choice(data)
     return person
 
 
+# Game introduction
 print(logo)
 print("Welcome to Higher or Lower!")
-print(
-    "You will guess which account has more followers, by entering either 'A' or 'B' to make a guess"
-)
+print("Guess which account has more followers, by choosing 'A' or 'B'")
 print("Let's begin!\n")
 
+# Initialize score and game continuation flag
 score = 0
 continue_game = True
 
+# Initialize two persons for comparison
 person_a = get_new_person()
 person_b = get_new_person(person_a)
 
 while continue_game:
+    # Extract names and follower counts
     person_a_name, person_a_followers = person_a["name"], person_a["follower_count"]
     person_b_name, person_b_followers = person_b["name"], person_b["follower_count"]
 
+    # Display options to user
     print(f"A: {person_a_name}{vs}\nB: {person_b_name}\n")
+
+    # Get user guess
     guess = input("Who has more followers? A or B?: ").upper()
 
+    # Check guess and update game state
     if is_guess_correct(guess, person_a_followers, person_b_followers):
         score += 1
         print(f"Correct! Your score is: {score}")
