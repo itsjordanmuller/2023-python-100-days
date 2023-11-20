@@ -451,17 +451,45 @@ This exercise demonstrates the practical application of loops for iterating over
 
 #### [6. Reeborg Maze](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Projects/5-reeborg-maze.py)
 
+![Reeborg Maze - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-maze-1.png)
+
+![Reeborg Maze - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-maze-2.png)
+
+![Reeborg Maze - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-maze-3.png)
+
 ### Exercises (Day 6)
 
 #### [A. Functions](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/0-functions.py)
 
 #### [B. Reeborg Square](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/1-reeborg-square.py)
 
+![Reeborg Square - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-square-1.png)
+
+![Reeborg Square - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-square-2.png)
+
 #### [C. Reeborg Hurdles](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/2-reeborg-hurdles.py)
+
+![Reeborg Hurdles - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-hurdles-1.png)
+
+![Reeborg Hurdles - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-hurdles-2.png)
+
+![Reeborg Hurdles - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-hurdles-3.png)
 
 #### [D. Reeborg Variable Width Hurdles](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/3-reeborg-width-hurdles.py)
 
+![Reeborg Variable Width Hurdles - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-width-hurdles-1.png)
+
+![Reeborg Variable Width Hurdles - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-width-hurdles-2.png)
+
+![Reeborg Variable Width Hurdles - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-width-hurdles-3.png)
+
 #### [E. Reeborg Variable Height Hurdles](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/Exercises/4-reeborg-height-hurdles.py)
+
+![Reeborg Variable Height Hurdles - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-height-hurdles-1.png)
+
+![Reeborg Variable Height Hurdles - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-height-hurdles-2.png)
+
+![Reeborg Variable Height Hurdles - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-006/006-reeborg-height-hurdles-3.png)
 
 ## Day 7
 
