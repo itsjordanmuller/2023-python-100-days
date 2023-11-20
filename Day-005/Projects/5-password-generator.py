@@ -1,5 +1,8 @@
 import random
 
+print("\nWelcome to the PyPassword Generator!\n")
+
+# Define character sets for password generation
 letters = [
     "a",
     "b",
@@ -57,33 +60,38 @@ letters = [
 numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 symbols = ["!", "#", "$", "%", "&", "(", ")", "*", "+"]
 
-print("Welcome to the PyPassword Generator!")
+# User input for password composition
 num_letters = int(input("How many letters would you like in your password?\n"))
 num_symbols = int(input("How many symbols would you like?\n"))
 num_numbers = int(input("How many numbers would you like?\n"))
 
+# Initialize empty password
 password = ""
-for num in range(1, num_letters + 1):
-    password = password + letters[random.randint(1, len(letters) - 1)] + " "
 
-for num in range(1, num_symbols + 1):
-    password = password + symbols[random.randint(1, len(symbols) - 1)] + " "
+# Add random letters to password
+for _ in range(num_letters):
+    password += letters[random.randint(0, len(letters) - 1)] + " "
 
-for num in range(1, num_numbers + 1):
-    password = password + numbers[random.randint(1, len(numbers) - 1)] + " "
+# Add random symbols to password
+for _ in range(num_symbols):
+    password += symbols[random.randint(0, len(symbols) - 1)] + " "
 
+# Add random numbers to password
+for _ in range(num_numbers):
+    password += numbers[random.randint(0, len(numbers) - 1)] + " "
+
+# Split password into list for shuffling
 pass_list = password.split()
 
-simple_pass = ""
-complex_pass = ""
+# Generate simple (un-shuffled) password
+simple_pass = "".join(pass_list)
 
-for char in pass_list:
-    simple_pass = simple_pass + char
+# Shuffle password list for complex password
+random.shuffle(pass_list)
 
-shuffle_list = random.shuffle(pass_list)
+# Generate complex (shuffled) password
+complex_pass = "".join(pass_list)
 
-for char in pass_list:
-    complex_pass = complex_pass + char
-
-print(simple_pass)
-print(complex_pass)
+# Display simple and complex passwords
+print(f"\nSimple: {simple_pass}")
+print(f"Scrambled: {complex_pass}")
