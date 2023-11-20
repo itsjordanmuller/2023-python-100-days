@@ -1,18 +1,20 @@
-# 🚨 Don't change the code below 👇
-height = float(input("enter your height in m: "))
-weight = float(input("enter your weight in kg: "))
-# 🚨 Don't change the code above 👆
+print("\nBMI Calculator v2\n")
 
-# Write your code below this line 👇
+# Get user's height & height values
+height = float(input("Enter your height in m: "))
+weight = float(input("Enter your weight in kg: "))
+
+# Calculate BMI and round it
 bmi = round((weight) / (height**2))
 
+# Determine and display BMI category
 if bmi < 18.5:
-    print(f"Your BMI is {bmi}, you are underweight.")
+    print(f"\nYour BMI is {bmi}, you are underweight.")
 elif bmi < 25:
-    print(f"Your BMI is {bmi}, you have a normal weight.")
+    print(f"\nYour BMI is {bmi}, you have a normal weight.")
 elif bmi < 30:
-    print(f"Your BMI is {bmi}, you are slightly overweight.")
+    print(f"\nYour BMI is {bmi}, you are slightly overweight.")
 elif bmi < 35:
-    print(f"Your BMI is {bmi}, you are obese.")
+    print(f"\nYour BMI is {bmi}, you are obese.")
 else:
-    print(f"Your BMI is {bmi}, you are clincally obese.")
+    print(f"\nYour BMI is {bmi}, you are clinically obese.")
