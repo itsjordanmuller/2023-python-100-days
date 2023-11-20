@@ -2,7 +2,9 @@ from art import logo
 
 print(logo)
 
-alphabet = [
+# Define the two_alphabets list
+# Contains duplicates for wrapping around
+two_alphabets = [
     "a",
     "b",
     "c",
@@ -57,33 +59,46 @@ alphabet = [
     "z",
 ]
 
+# Main loop to keep the program running
 while True:
+    # Get the operation type (encode/decode) from the user
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-    text = input("Type your message:\n").lower()
-    shift = int(input("Type the shift number:\n"))
+    # Get the message to encode/decode
+    text = input("\nType your message:\n").lower()
+    # Get the shift number for Caesar cipher
+    shift = int(input("\nType the shift number:\n"))
 
+    # Define the Caesar cipher function
     def caesar(text, shift, direction):
+        # Handling encryption
         if direction == "encode":
             cipher_text = ""
             for letter in text:
-                position = alphabet.index(letter)
+                position = two_alphabets.index(letter)
                 new_position = position + shift
-                new_letter = alphabet[new_position % 52]
+                new_letter = two_alphabets[new_position % 52]
                 cipher_text += new_letter
             print(f"The encoded text is: {cipher_text}")
+        # Handling decryption
         elif direction == "decode":
             decoded_text = ""
             for letter in text:
-                position = alphabet.index(letter)
+                position = two_alphabets.index(letter)
+                # Wrap around two_alphabets
                 old_position = (position - shift) % 52
-                decoded_text += alphabet[old_position]
-            print(f"The decoded text is {decoded_text}")
+                decoded_text += two_alphabets[old_position]
+            print(f"\nThe decoded text is {decoded_text}")
         else:
-            print("Wrong input")
+            print("\nWrong input")
 
+    # Call the Caesar cipher function
     caesar(text, shift, direction)
+
+    # Check if the user wants to restart the process
     restart = input(
-        "Type 'yes' if you want to go again. Otherwise type 'no':\n"
+        "\nType 'yes' if you want to go again. Otherwise type 'no':\n"
     ).lower()
+    # Exit the loop if user types 'no'
     if restart == "no":
+        print("\nClosing Caesar Cipher")
         break
