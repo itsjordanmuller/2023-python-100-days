@@ -22,7 +22,7 @@
 # # Play Computer
 # year = int(input("What's your year of birth?"))
 # if year > 1980 and year <= 1994:
-#     print("You are a millenial.")
+#     print("You are a millennial.")
 # elif year > 1994:
 #     print("You are a Gen Z.")
 
@@ -51,4 +51,5 @@ def mutate(a_list):
     print(b_list)
 
 
+print("\nMutated (Doubled) List\n")
 mutate([1, 2, 3, 5, 8, 13])
