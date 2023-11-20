@@ -2,6 +2,10 @@ from turtle import Turtle
 
 
 class DashedLine(Turtle):
+    """
+    Represents the dashed line in the middle of the Pong game field.
+    """
+
     def __init__(self):
         super().__init__()
         self.shape("square")
@@ -12,6 +16,7 @@ class DashedLine(Turtle):
         self.setheading(-90)
 
     def draw(self):
+        # Draw the dashed line on the screen
         for _ in range(11):
             self.stamp()
             self.forward(45)
