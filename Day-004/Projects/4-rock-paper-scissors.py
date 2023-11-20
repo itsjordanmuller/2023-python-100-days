@@ -1,5 +1,6 @@
 import random
 
+# ASCII art for Rock
 rock = """
     _______
 ---'   ____)
@@ -9,6 +10,7 @@ rock = """
 ---.__(___)
 """
 
+# ASCII art for Paper
 paper = """
     _______
 ---'   ____)____
@@ -18,6 +20,7 @@ paper = """
 ---.__________)
 """
 
+# ASCII art for Scissors
 scissors = """
     _______
 ---'   ____)____
@@ -27,36 +30,37 @@ scissors = """
 ---.__(___)
 """
 
+# List containing rock, paper, scissors ASCII art
 rock_paper_scissors = [rock, paper, scissors]
 
-user_input = int(
-    input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors. ")
+print("\nRock Paper Scissors Game\n")
+
+# Get user's choice (adjusted for 1-based input)
+user_input = (
+    int(input("What do you choose?\n1. for Rock\n2. for Paper\n3. for Scissors.\n")) - 1
 )
 
+# Validate user input and play game
 if user_input >= 3 or user_input < 0:
     print("Error")
 else:
-    print(f"{rock_paper_scissors[int(user_input)]}Player chooses: {user_input}")
+    # Display user's choice
+    print(f"{rock_paper_scissors[user_input]}Player chooses: {user_input + 1}")
+    # Generate computer's choice
     computer_input = random.randint(0, 2)
+    # Display computer's choice
     print(
-        f"{rock_paper_scissors[int(computer_input)]}Computer chooses: {computer_input}"
+        f"{rock_paper_scissors[computer_input]}Computer chooses: {computer_input + 1}"
     )
+
+    # Determine and display game outcome
     if user_input == computer_input:
-        print("It's a tie")
-    elif user_input == 0:
-        if computer_input == 1:
-            print("Computer wins.")
-        else:
-            print("Player wins!")
-    elif user_input == 1:
-        if computer_input == 2:
-            print("Computer wins.")
-        else:
-            print("Player wins!")
-    elif user_input == 2:
-        if computer_input == 0:
-            print("Computer wins.")
-        else:
-            print("Player wins!")
+        print("\nIt's a tie")
+    elif user_input == 0 and computer_input == 1:
+        print("\nComputer wins.")
+    elif user_input == 1 and computer_input == 2:
+        print("\nComputer wins.")
+    elif user_input == 2 and computer_input == 0:
+        print("\nComputer wins.")
     else:
-        print("Error")
+        print("\nPlayer wins!")
