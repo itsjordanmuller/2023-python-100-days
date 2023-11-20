@@ -124,6 +124,10 @@ The final output was formatted using a Python f-string to neatly display the cal
 
 #### [3. Treasure Island - Choose Your Adventure CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Projects/treasure-island.py)
 
+![Treasure Island CLI Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-treasure-island-1.png)
+
+![Treasure Island CLI Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-treasure-island-2.png)
+
 ### Exercises (Day 3)
 
 #### [A. Control Flow](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/0-control-flow.py)
@@ -144,6 +148,10 @@ Finally, the total bill is calculated and displayed. If the user is not tall eno
 
 #### [B. Odd or Even](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/1-odd-or-even.py)
 
+![Odd or Even - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-odd-or-even-1.png)
+
+![Odd or Even - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-odd-or-even-2.png)
+
 In this exercise, I focused on creating a simple program in Python to determine if a number is odd or even. The program begins by prompting the user to input a number, which is then converted to an integer using the `int()` function.
 
 The core of this program lies in the use of the modulus operator (`%`) to check if the number is odd or even. The modulus operator returns the remainder of a division operation. In this case, it checks the remainder of the number divided by 2.
@@ -155,6 +163,10 @@ The `if` statement checks if the remainder of the number divided by 2 is equal t
 This exercise was a straightforward yet effective demonstration of using the modulus operator to perform a common mathematical check in programming and covered essential concepts like input handling, type conversion, conditional statements, and basic arithmetic operations in Python. 
 
 #### [C. BMI Calculator V2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/2-bmi-calculator-v2.py)
+
+![BMI Calculator V2 Upgrade - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-bmi-calculator-v2-1.png)
+
+![BMI Calculator V2 Upgrade - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-bmi-calculator-v2-2.png)
 
 In this exercise, I progressed to an advanced version of the BMI (Body Mass Index) Calculator (version 2), enhancing the functionality to provide more detailed feedback based on the BMI value. Compared to version 1, this version includes conditional statements to categorize the BMI result into different health categories.
 
@@ -173,7 +185,11 @@ Key changes and learnings in this version include:
 
     Each category triggers a specific print statement, providing the user with both their BMI value and the corresponding health category.
 
-#### [D. Leap Year](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/3-leap-year.py)
+#### [D. Leap Year Checker](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/3-leap-year.py)
+
+![Leap Year Checker - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-leap-year-1.png)
+
+![Leap Year Checker - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-leap-year-2.png)
 
 In this exercise, I developed a program in Python to determine whether a given year is a leap year. The program employs nested conditional statements to apply the rules that define a leap year.
 
@@ -193,7 +209,11 @@ This arrangement of `if-else` statements within each other, known as nested cond
 
 This exercise was an excellent demonstration of how nested conditional statements can be used to solve problems that require multiple layers of decision-making. It covered concepts like input handling, arithmetic operations with the modulus operator, and complex conditional logic in Python.
 
-#### [E. Pizza Order](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/4-pizza-order.py)
+#### [E. Pizza Order Creator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/4-pizza-order.py)
+
+![Pizza Order Creator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-pizza-order-1.png)
+
+![Pizza Order Creator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-pizza-order-2.png)
 
 In this exercise, I created a simple pizza order calculator in Python to demonstrate conditional logic and basic arithmetic operations. The program simulates a pizza ordering process, calculating the total cost based on the customer's choices.
 
@@ -209,6 +229,10 @@ After considering all these choices, the final bill is calculated and printed to
 This exercise was a practical application of using `if-elif-else` statements to handle multiple conditions and update a variable based on these conditions. It also demonstrated string comparison in conditional statements and basic arithmetic operations for calculating the total price.
 
 #### [F. Love Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/5-love-calculator.py)
+
+![Love Calculator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-love-calculator-1.png)
+
+![Love Calculator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-love-calculator-2.png)
 
 In this exercise, I created a playful "Love Calculator" program in Python, which combines string manipulation, arithmetic operations, and conditional logic. The program calculates a "love score" based on the names of two individuals.
 
