@@ -1,24 +1,30 @@
-# 🚨 Don't change the code below 👇
+print("\nTreasure Map Game\n")
+
+# Initialize the rows of the treasure map
 row1 = ["⬜️", "️⬜️", "️⬜️"]
-row2 = ["⬜️", "⬜️", "️⬜️"]
-row3 = ["⬜️️", "⬜️️", "⬜️️"]
+row2 = ["⬜️", "️⬜️", "️⬜️"]
+row3 = ["⬜️", "️⬜️", "️⬜️"]
+
+# Group rows into a map
 map = [row1, row2, row3]
+
+# Display initial map
 print(f"{row1}\n{row2}\n{row3}")
-position = input("Where do you want to put the treasure? ")
-# 🚨 Don't change the code above 👆
 
-# Write your code below this row 👇
-column_pick = int(position[0]) - 1
-row_pick = int(position[1])
+# Get user input for row and column
+column_input = input("\nEnter the column number (1-3): \n['1'] ['2'] ['3']\n\n")
+row_input = input("\nEnter the row number (1-3): \n\n['1']\n['2']\n['3']\n\n")
 
-if row_pick == 1:
-    row1[column_pick] = "X"
-elif row_pick == 2:
-    row2[column_pick] = "X"
+# Convert input to integers
+column_pick = int(column_input) - 1
+row_pick = int(row_input) - 1
+
+# Check if the inputs are within the valid range
+if 0 <= row_pick <= 2 and 0 <= column_pick <= 2:
+    # Place 'X' at the chosen location on the map
+    map[row_pick][column_pick] = "❌"
 else:
-    row3[column_pick] = "X"
+    print("\nInvalid input. Please enter row and column numbers between 1 and 3.")
 
-# Write your code above this row 👆
-
-# 🚨 Don't change the code below 👇
-print(f"{row1}\n{row2}\n{row3}")
+# Display updated map with treasure marked
+print(f"\n{row1}\n{row2}\n{row3}")
