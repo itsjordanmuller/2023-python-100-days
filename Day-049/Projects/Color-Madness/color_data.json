@@ -18,7 +18,7 @@
     "Red": 1
   },
   "#2cbc89": {
-    "Green": 1
+    "Green": 2
   },
   "#7a2dcb": {
     "Purple": 1
@@ -57,7 +57,7 @@
     "Purple": 1
   },
   "#cc66bd": {
-    "Purple": 1
+    "Purple": 2
   },
   "#a5b691": {
     "Green": 1
@@ -121,7 +121,7 @@
   },
   "#a7a278": {
     "Green": 1,
-    "Grey": 1
+    "Grey": 2
   },
   "#74bdf6": {
     "Blue": 1
@@ -173,7 +173,7 @@
     "Pink": 1
   },
   "#046dcd": {
-    "Blue": 1
+    "Blue": 2
   },
   "#636d52": {
     "Green": 1
@@ -242,14 +242,15 @@
     "Blue": 1
   },
   "#8aa2c9": {
-    "Blue": 1
+    "Blue": 1,
+    "Grey": 1
   },
   "#bc5b66": {
     "Brown": 1,
     "Pink": 2
   },
   "#beb5b3": {
-    "Grey": 1
+    "Grey": 2
   },
   "#b0018e": {
     "Purple": 1
@@ -258,7 +259,7 @@
     "Pink": 1
   },
   "#4ff31d": {
-    "Green": 3
+    "Green": 4
   },
   "#35ce61": {
     "Green": 2
@@ -306,7 +307,7 @@
     "Purple": 2
   },
   "#ae1bc7": {
-    "Purple": 1
+    "Purple": 2
   },
   "#d722ff": {
     "Purple": 1
@@ -424,7 +425,7 @@
     "Green": 1
   },
   "#2a964d": {
-    "Green": 1
+    "Green": 2
   },
   "#b2cbc0": {
     "Grey": 1
@@ -451,7 +452,8 @@
     "Purple": 2
   },
   "#6b54cb": {
-    "Blue": 1
+    "Blue": 1,
+    "Purple": 1
   },
   "#9488a0": {
     "Grey": 1
@@ -569,7 +571,7 @@
     "Purple": 1
   },
   "#4eec38": {
-    "Green": 2
+    "Green": 3
   },
   "#1c9c7a": {
     "Green": 1
@@ -590,7 +592,7 @@
     "Blue": 1
   },
   "#28f030": {
-    "Green": 1
+    "Green": 2
   },
   "#7390bb": {
     "Blue": 1
@@ -639,7 +641,7 @@
     "Yellow": 1
   },
   "#9bbe37": {
-    "Green": 2
+    "Green": 3
   },
   "#e773f2": {
     "Purple": 1
@@ -654,7 +656,7 @@
     "Green": 1
   },
   "#3cabc8": {
-    "Blue": 1
+    "Blue": 2
   },
   "#df686f": {
     "Pink": 1
@@ -720,7 +722,7 @@
     "Purple": 1
   },
   "#98095a": {
-    "Purple": 1
+    "Purple": 2
   },
   "#d4c7b5": {
     "Grey": 1
@@ -766,7 +768,7 @@
     "Green": 1
   },
   "#59904a": {
-    "Green": 1
+    "Green": 2
   },
   "#367201": {
     "Green": 1
@@ -803,7 +805,7 @@
     "Green": 1
   },
   "#a62796": {
-    "Purple": 1
+    "Purple": 2
   },
   "#f6fb15": {
     "Yellow": 1
@@ -851,6 +853,66 @@
     "Green": 1
   },
   "#3da036": {
+    "Green": 1
+  },
+  "#0b5d7b": {
+    "Blue": 1
+  },
+  "#6c4de1": {
+    "Purple": 1
+  },
+  "#223ede": {
+    "Blue": 1
+  },
+  "#c3eb6e": {
+    "Yellow": 1
+  },
+  "#77cc44": {
+    "Green": 1
+  },
+  "#b9b870": {
+    "Yellow": 1
+  },
+  "#5a8b5a": {
+    "Green": 2
+  },
+  "#13ed6b": {
+    "Green": 1
+  },
+  "#3de07b": {
+    "Green": 1
+  },
+  "#c2594f": {
+    "Brown": 1
+  },
+  "#0687b9": {
+    "Blue": 1
+  },
+  "#134792": {
+    "Blue": 1
+  },
+  "#76741c": {
+    "Green": 1
+  },
+  "#b083a6": {
+    "Purple": 1
+  },
+  "#0b463c": {
+    "Green": 1
+  },
+  "#b4be19": {
+    "Yellow": 1
+  },
+  "#93188a": {
+    "Purple": 1
+  },
+  "#400e22": {
+    "Brown": 1
+  },
+  "#78e2a2": {
+    "Green": 1
+  },
+  "#92d1d7": {
     "Green": 1
   }
 }
