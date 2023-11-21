@@ -1,36 +1,72 @@
 from tkinter import *
 
 
-def miles_to_km():
-    miles = miles_input.get()
-    kilometers = int(miles) * 1.60934
-    km_result_label["text"] = f"{kilometers}"
-    return kilometers
+# Conversion function
+def convert():
+    # Convert from miles to kilometers
+    if mode.get() == "Miles to Km":
+        miles = float(miles_input.get())
+        kilometers = miles * 1.60934
+        result_label["text"] = f"{kilometers:.4f}"
+    # Convert from kilometers to miles
+    else:
+        kilometers = float(miles_input.get())
+        miles = kilometers / 1.60934
+        result_label["text"] = f"{miles:.4f}"
 
 
+# Toggle between conversion modes
+def toggle_conversion():
+    # Switch to Km to Miles mode
+    if mode.get() == "Miles to Km":
+        mode.set("Km to Miles")
+        input_label.config(text="Km")
+        result_unit_label.config(text="Miles")
+    # Switch to Miles to Km mode
+    else:
+        mode.set("Miles to Km")
+        input_label.config(text="Miles")
+        result_unit_label.config(text="Km")
+    # Reset input and result fields
+    result_label["text"] = "0"
+    miles_input.delete(0, END)
+    miles_input.insert(END, string="0")
+
+
+# Set up GUI
 window = Tk()
-window.title("Unit Converter (miles to km)")
+window.title("Unit Converter")
 window.config(padx=30, pady=30)
 
-miles_input = Entry()
-miles_input.config(width=10)
+mode = StringVar(value="Miles to Km")
+
+# Input field for distance
+miles_input = Entry(width=10)
 miles_input.insert(END, string="0")
 miles_input.grid(column=1, row=0, padx=5, pady=5)
 
-miles_label = Label(text="miles")
-miles_label.grid(column=2, row=0, padx=5, pady=5)
+# Label for input unit
+input_label = Label(text="Miles")
+input_label.grid(column=2, row=0, padx=5, pady=5)
 
+# Label for conversion equality
 equal_to_label = Label(text="is equal to")
 equal_to_label.grid(column=0, row=1, padx=5, pady=5)
 
-km_result_label = Label(text="0")
-km_result_label.grid(column=1, row=1, padx=5, pady=5)
+# Label for conversion result
+result_label = Label(text="0")
+result_label.grid(column=1, row=1, padx=5, pady=5)
 
-km_label = Label(text="km")
-km_label.grid(column=2, row=1, padx=10, pady=10)
+# Label for result unit
+result_unit_label = Label(text="Km")
+result_unit_label.grid(column=2, row=1, padx=5, pady=5)
 
-calculate_button = Button(text="Calculate", command=miles_to_km)
+# Button for triggering conversion
+calculate_button = Button(text="Calculate", command=convert)
 calculate_button.grid(column=1, row=2)
 
+# Button for toggling conversion mode
+toggle_button = Button(text="Toggle Conversion", command=toggle_conversion)
+toggle_button.grid(column=1, row=3)
 
 window.mainloop()
