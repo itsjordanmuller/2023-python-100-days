@@ -987,7 +987,11 @@ for number in range(1, 101):
 
 ### Projects (Day 14)
 
-#### [1. Higher or Lower Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-014/Projects/1-higher-or-lower.py)
+#### [1. Higher or Lower - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-014/Projects/1-higher-or-lower.py)
+
+![Higher or Lower - CLI Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-014/014-higher-or-lower-1.png)
+
+![Higher or Lower - CLI Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-014/014-higher-or-lower-2.png)
 
 ## Day 15
 
