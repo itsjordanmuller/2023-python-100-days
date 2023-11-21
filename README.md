@@ -1011,6 +1011,10 @@ for number in range(1, 101):
 
 #### [16. Coffee Machine Simulator v2 Upgrade - CLI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-016/Projects)
 
+![Coffee Machine Simulator v2 Upgrade - CLI Application - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-016/016-coffee-machine-v2-1.png)
+
+![Coffee Machine Simulator v2 Upgrade - CLI Application - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-016/016-coffee-machine-v2-2.png)
+
 ### Exercises (Day 16)
 
 #### [A. Object Oriented Programming](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-016/Exercises)
