@@ -1452,9 +1452,17 @@ Lastly, I created a new DataFrame from scratch using a dictionary. This new Data
 
 #### [26. NATO Alphabet Translator](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Projects/NATO%20Alphabet)
 
+![NATO Alphabet Translator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-nato-alphabet-1.png)
+
+![NATO Alphabet Translator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-nato-alphabet-2.png)
+
+![NATO Alphabet Translator - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-nato-alphabet-3.png)
+
 ### Exercises (Day 26)
 
 #### [A. List Comprehension](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/1-list-comprehension.py)
+
+![List Comprehension - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-list-comprehension.png)
 
 In this exercise, I learned about list comprehensions in Python, a concise way to create lists. The concept involves constructing a list by iterating over an iterable and optionally applying a condition or operation.
 
@@ -1470,6 +1478,8 @@ In this exercise, I learned about list comprehensions in Python, a concise way t
 
 #### [B. Squaring Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/2-squaring-numbers.py)
 
+![Squaring Numbers - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-squaring-numbers.png)
+
 In this exercise, I practiced using list comprehensions to square each number in a given list. The objective was to transform a list of numbers by squaring each element, all in a single line of code.
 
 The original list, `numbers`, contained a sequence of integers. To achieve the task, I wrote the following list comprehension: `squared_numbers = [num**2 for num in numbers]`. This line of code iterates over each element `num` in the `numbers` list and applies the squaring operation (`num**2`).
@@ -1478,6 +1488,8 @@ When printed, `squared_numbers` displayed the squared value of each number from 
 
 #### [C. Filter Even Numbers](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/3-filter-even-nums.py)
 
+![Filter Even Numbers - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-filter-even-nums.png)
+
 In this exercise, I focused on filtering elements in a list using a list comprehension in Python, specifically to extract even numbers from a given list.
 
 Given the list `numbers`, which contained a series of integers, I wrote a one-liner list comprehension to create a new list, `result`, containing only the even numbers from the original list. The code for this was `[num for num in numbers if num % 2 == 0]`. This expression iterates through each number in `numbers`, and includes it in `result` if it satisfies the condition `num % 2 == 0` (which checks if the number is even).
@@ -1485,6 +1497,8 @@ Given the list `numbers`, which contained a series of integers, I wrote a one-li
 Upon executing the code and printing `result`, the output was a list of all even numbers from the original `numbers` list.
 
 #### [D. Dictionary Comprehension](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/4-dict-comprehension.py)
+
+![Dictionary Comprehension - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-dict-comprehension.png)
 
 In this exercise, I learned about dictionary comprehensions, a powerful way to create and manipulate dictionaries dynamically. The task involved generating random scores for a list of students and then filtering those scores to identify students who passed.
 
@@ -1498,6 +1512,8 @@ In this exercise, I learned about dictionary comprehensions, a powerful way to c
 
 #### [E. Word Length Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/5-word-length-dict.py)
 
+![Word Length Dictionary - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-word-length-dict.png)
+
 In this exercise, I created a program to generate a dictionary that maps words in a sentence to their respective lengths. The task involved string manipulation and comprehension in Python.
 
 The program starts with a predefined sentence: "What is the Airspeed Velocity of an Unladen Swallow?". Using the `split()` method on this string, I broke it into a list of words, stored in `word_list`. This method splits a string into a list where each word is an item, based on spaces.
@@ -1507,6 +1523,8 @@ Next, I utilized a dictionary comprehension to create a dictionary, `result`, wh
 Finally, the program prints the `result` dictionary. This displays each word from the original sentence alongside the number of characters it contains.
 
 #### [F. Weather Dictionary](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/Exercises/6-weather-dict.py)
+
+![Weather Dictionary - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-weather-dict.png)
 
 In this exercise, I created a Python program to convert temperatures from Celsius to Fahrenheit for a weekly weather report. This task involved writing a function for the conversion and applying it to a dictionary using comprehension.
 
