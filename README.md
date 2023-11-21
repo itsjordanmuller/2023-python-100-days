@@ -1231,6 +1231,12 @@ Through this task, I learned how to make Python programs interactive using event
 
 #### [20. Snake Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-020/Projects)
 
+![Snake Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-020/020-snake-game-1.png)
+
+![Snake Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-020/020-snake-game-2.png)
+
+![Snake Game - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-020/020-snake-game-3.png)
+
 ## Day 21
 
 ### Projects (Day 21)
