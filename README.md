@@ -156,9 +156,23 @@ The final output was formatted using a Python f-string to neatly display the cal
 
 #### [3. Treasure Island - Choose Your Adventure CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Projects/treasure-island.py)
 
-![Treasure Island CLI Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-treasure-island-1.png)
+![Treasure Island - CLI Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-treasure-island-1.png)
 
-![Treasure Island CLI Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-treasure-island-2.png)
+> Ask user for a `direction`, depending on direction, offer the different options.
+
+In this Python exercise, I created a text-based adventure game named "Treasure Island." This task was an engaging blend of storytelling and programming, with a strong emphasis on conditional logic.
+
+The game begins with an impressive ASCII art display, setting a thematic tone for the adventure. The player is then introduced to their mission of finding treasure on the island.
+
+At each step of the game, the player is prompted to make choices, guiding the narrative forward. The initial decision involves choosing a direction, which leads to different scenarios and further choices. Each decision point is structured using nested `if` statements, allowing the story to branch out based on the player's input.
+
+![Treasure Island - CLI Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-treasure-island-2.png)
+
+> For certain directions, the program will ask for a `swim` input, or `door` if you get far enough...
+
+The adventure is filled with intriguing situations and choices, each with its own unique outcome. The design of these scenarios effectively demonstrates the use of conditional logic in programming. It also highlights the importance of user input handling and string manipulation in creating an interactive and engaging user experience.
+
+Overall, this exercise was a great practice in using Python to craft an interactive story, showcasing how decision-making structures can shape user-driven narratives in programming.
 
 ### Exercises (Day 3)
 
@@ -182,7 +196,11 @@ Finally, the total bill is calculated and displayed. If the user is not tall eno
 
 ![Odd or Even - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-odd-or-even-1.png)
 
+> Ask the user for a `number`, check if it's odd or even and then print the corresponding message, 4 is an even number
+
 ![Odd or Even - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-odd-or-even-2.png)
+
+> 7 is an odd number
 
 In this exercise, I focused on creating a simple program in Python to determine if a number is odd or even. The program begins by prompting the user to input a number, which is then converted to an integer using the `int()` function.
 
@@ -198,7 +216,11 @@ This exercise was a straightforward yet effective demonstration of using the mod
 
 ![BMI Calculator V2 Upgrade - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-bmi-calculator-v2-1.png)
 
+> Ask user for `height` and `weight`, then calculate and return `bmi` integer along with a message that places the BMI into a descriptive category, 1.77 meters tall and 71 kilograms = BMI of (23 - Normal Weight)
+
 ![BMI Calculator V2 Upgrade - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-bmi-calculator-v2-2.png)
+
+> 1.8 meters tall and 55 kilograms = BMI of (17 - Underweight)
 
 In this exercise, I progressed to an advanced version of the BMI (Body Mass Index) Calculator (version 2), enhancing the functionality to provide more detailed feedback based on the BMI value. Compared to version 1, this version includes conditional statements to categorize the BMI result into different health categories.
 
@@ -221,7 +243,11 @@ Key changes and learnings in this version include:
 
 ![Leap Year Checker - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-leap-year-1.png)
 
+> Ask the user for a `year`, check if it's a leap year or not and print the corresponding message, 1993 is not a leap year
+
 ![Leap Year Checker - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-leap-year-2.png)
+
+> 2024 is a leap year
 
 In this exercise, I developed a program in Python to determine whether a given year is a leap year. The program employs nested conditional statements to apply the rules that define a leap year.
 
@@ -245,7 +271,11 @@ This exercise was an excellent demonstration of how nested conditional statement
 
 ![Pizza Order Creator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-pizza-order-1.png)
 
+> Ask user for `size`, and whether they'd like to `add_pepperoni` or `extra_cheese` to their pizza and calculate a total, Large Pizza with Pepperoni and Extra Cheese is $29
+
 ![Pizza Order Creator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-pizza-order-2.png)
+
+> Small Pizza with Pepperoni and Regular Cheese is $17
 
 In this exercise, I created a simple pizza order calculator in Python to demonstrate conditional logic and basic arithmetic operations. The program simulates a pizza ordering process, calculating the total cost based on the customer's choices.
 
@@ -262,9 +292,19 @@ This exercise was a practical application of using `if-elif-else` statements to 
 
 #### [F. Love Calculator](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/Exercises/5-love-calculator.py)
 
+> DISCLAIMER: 
+> 
+> This program is not actually able to calculate the chances of a successful relationship, use with caution! 
+> 
+> I'm pretty sure this "algorithm" comes from a BuzzFeed article of some sort!
+
 ![Love Calculator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-love-calculator-1.png)
 
+> Ask for user's name (`name1`) and another name (`name2`), to return a `love_score, John and Jane return `love_score` of 12
+
 ![Love Calculator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-love-calculator-2.png)
+
+> Trevor and Lauren return `love_score` of 75
 
 In this exercise, I created a playful "Love Calculator" program in Python, which combines string manipulation, arithmetic operations, and conditional logic. The program calculates a "love score" based on the names of two individuals.
 
