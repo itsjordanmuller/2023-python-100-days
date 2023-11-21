@@ -1,29 +1,16 @@
-# TODO: Create a letter using starting_letter.txt
-# for each name in invited_names.txt
-# Replace the [name] placeholder with the actual name.
-# Save the letters in the folder "ReadyToSend".
-
-# Hint1: This method will help you: https://www.w3schools.com/python/ref_file_readlines.asp
-# Hint2: This method will also help you: https://www.w3schools.com/python/ref_string_replace.asp
-# Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
-
+# Read starting letter template
 with open("Input/Letters/starting_letter.txt") as file:
     starting_contents = file.read()
-    # print(starting_contents)
 
+# Read invited names and clean data
 with open("Input/Names/invited_names.txt") as file:
     name_contents = file.readlines()
-    names = []
-    for name in name_contents:
-        stripped_name = name.strip()
-        names.append(stripped_name)
-    print(names)
+    names = [name.strip() for name in name_contents]
 
+# Generate personalized letters for each name
 for name in names:
     personalized_letter = starting_contents.replace("[name]", name)
 
+    # Save personalized letters to files
     with open(f"Output/ReadyToSend/{name}.txt", mode="w") as file:
         file.write(personalized_letter)
-
-# with open("Output/ReadyToSend/test.txt", mode="w") as file:
-#     file.write("".join(contents))
