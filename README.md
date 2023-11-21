@@ -40,7 +40,7 @@ The script begins by welcoming the user and explaining what the program does. It
 
 ![Band Name Generator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/001-band-name-generator-2.png)
 
-> Combine home city/town and pet name to create band name `The San Francisco Scouts`
+> Concatenate `city` and `pet` name to create band name: **The San Francisco Scouts**
 
 After receiving this input, the program combines these two strings, adding an 's' to the end of the pet's name to craft a band name. It then displays this generated band name to the user in a friendly message.
 
@@ -92,6 +92,22 @@ The final output then reflected the swapped values, demonstrating successful var
 
 ![Tip Calculator - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/002-tip-calculator.png)
 
+> Ask user to input values for `total_bill`, `tip_input` and `num_people` to provide a `cost_per_person` when evenly split
+
+In this exercise, I built a "Tip Calculator" in Python. The program is designed to evenly split a restaurant bill, including a tip, among a group of people.
+
+The script starts by displaying a simple heading, "Tip Calculator". It then asks the user for the total bill amount, the percentage of the tip they wish to give, and the number of people splitting the bill. For the tip percentage, it offers the user common options of 10, 12, or 15 percent.
+
+I learned to perform the following tasks in this exercise:
+- Prompting the user for input and storing these inputs using the `input()` function.
+- Converting string inputs to floats for the bill and tip percentage, and to an integer for the number of people.
+- Calculating the tip by converting the percentage into a decimal and adding it to the total bill amount.
+- Dividing the total bill by the number of people to get the amount each person should pay.
+- Rounding the result to two decimal places for currency formatting.
+- Finally, I learned to print out the result in a user-friendly format using an f-string.
+
+Through this task, I gained a practical understanding of user input handling, type conversion, arithmetic calculations, and string formatting in Python. It showed me how to use Python to solve real-world problems, like splitting a restaurant bill.
+
 ### Exercises (Day 2)
 
 #### [A. Primitive Data Types](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/0-primitive-data-types.py)
@@ -114,6 +130,8 @@ This exercise taught me about string indexing, type conversion from strings to i
 
 ![BMI Calculator - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/002-bmi-calculator.png)
 
+> Ask user to input values for `height` and `weight` to return the `bmi` as an integer
+
 In this exercise, I developed a basic BMI (Body Mass Index) calculator in Python. The program begins by asking the user to input their height in meters and weight in kilograms.
 
 To calculate the BMI, I first converted the height and weight inputs from strings to floats using the `float()` function. Then, I applied the BMI formula, which is weight divided by height squared. Finally, I converted the resulting BMI value to an integer using the `int()` function for a cleaner output and printed the result.
@@ -123,6 +141,8 @@ This task was a practical application of input handling, type conversion, arithm
 #### [D. Life in Weeks](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/Exercises/3-life-in-weeks.py)
 
 ![Life in Weeks Calculator - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/002-life-in-weeks.png)
+
+> Ask user to input current `age` to calculate `years_remaining` in life and then print the `days_remaining`, `weeks_remaining`, and `months_remaining`
 
 In this exercise, I created a program to calculate the time a person has left in days, weeks, and months, assuming they live up to 90 years old. The user inputs their current age, and the program computes the remaining time.
 
