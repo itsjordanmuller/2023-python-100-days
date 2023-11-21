@@ -1330,6 +1330,20 @@ Through this task, I learned how slicing is a powerful tool for accessing parts 
 
 #### [23. Turtle Crossing (Frogger Game)](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-023/Projects)
 
+![Turtle Crossing (Frogger Game) - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-023/023-turtle-crossing-1.png)
+
+![Turtle Crossing (Frogger Game) - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-023/023-turtle-crossing-2.png)
+
+![Turtle Crossing (Frogger Game) - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-023/023-turtle-crossing-3.png)
+
+![Turtle Crossing (Frogger Game) - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-023/023-turtle-crossing-4.png)
+
+![Turtle Crossing (Frogger Game) - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-023/023-turtle-crossing-5.png)
+
+![Turtle Crossing (Frogger Game) - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-023/023-turtle-crossing-6.png)
+
+![Turtle Crossing (Frogger Game) - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-023/023-turtle-crossing-7.png)
+
 ## Day 24
 
 ### Projects (Day 24)
