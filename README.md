@@ -774,6 +774,8 @@ To test the function, I used the `input()` function to capture the user's first 
 
 #### [11. Blackjack - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-011/Projects/1-blackjack.py)
 
+![Blackjack - CLI Game - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-011/011-blackjack.png)
+
 ## Day 12
 
 ### Projects (Day 12)
