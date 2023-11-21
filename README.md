@@ -782,6 +782,10 @@ To test the function, I used the `input()` function to capture the user's first 
 
 #### [12. Number Guessing - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-012/Projects/2-guess-num-game.py)
 
+![Number Guessing - CLI Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-012/012-guess-num-game-1.png)
+
+![Number Guessing - CLI Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-012/012-guess-num-game-2.png)
+
 ### Exercises (Day 12)
 
 #### [A. Namespaces](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-012/Exercises/1-namespaces.py)
