@@ -1060,9 +1060,19 @@ another_variable = 12
 
 #### [17. Quiz/Trivia Application - CLI Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-017/Projects)
 
+![Quiz/Trivia Application - CLI Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-017/017-quiz-game-1.png)
+
+![Quiz/Trivia Application - CLI Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-017/017-quiz-game-2.png)
+
 ### Exercises (Day 17)
 
 #### [A. Classes](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-017/Exercises/classes.py)
+
+![Classes - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-017/017-classes-1.png)
+
+![Classes - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-017/017-classes-2.png)
+
+![Classes - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-017/017-classes-3.png)
 
 In this exercise, I explored the fundamental concepts of classes and objects in Python, specifically focusing on how to create and interact with class instances.
 
