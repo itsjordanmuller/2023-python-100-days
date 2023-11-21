@@ -1169,11 +1169,43 @@ Through this exercise, I learned how to use Turtle Graphics in Python for creati
 
 #### [19a. Etch-a-Sketch](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/Projects/1-etch-a-sketch.py)
 
+![Etch-a-Sketch - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-etch-a-sketch-1.png)
+
+![Etch-a-Sketch - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-etch-a-sketch-2.png)
+
+![Etch-a-Sketch - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-etch-a-sketch-3.png)
+
+![Etch-a-Sketch - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-etch-a-sketch-4.png)
+
 #### [19b. Turtle Race](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/Projects/2-turtle-race.py)
+
+![Turtle Race - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-turtle-race-1.png)
+
+![Turtle Race - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-turtle-race-2.png)
+
+![Turtle Race - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-turtle-race-3.png)
+
+![Turtle Race - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-turtle-race-4.png)
+
+![Turtle Race - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-turtle-race-5.png)
+
+![Turtle Race - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-turtle-race-6.png)
+
+![Turtle Race - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-turtle-race-7.png)
+
+![Turtle Race - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-turtle-race-8.png)
 
 ### Exercises (Day 19)
 
 #### [A. Event Listeners](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/Exercises/1-event-listeners.py)
+
+![Event Listeners - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-event-listeners-1.png)
+
+![Event Listeners - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-event-listeners-2.png)
+
+![Event Listeners - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-event-listeners-3.png)
+
+![Event Listeners - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-019/019-event-listeners-4.png)
 
 In this exercise, I explored the use of event listeners in Python, particularly within the context of the Turtle Graphics library. The primary focus was to understand how to respond to keyboard events and control the turtle using these inputs.
 
