@@ -629,7 +629,7 @@ Finally, I used a `for` loop to iterate over each key in the dictionary, printin
 
 #### [B. Grading Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/2-grading-program.py)
 
-![Grading Program](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-grading-program.png)
+![Grading Program - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-grading-program.png)
 
 In this exercise, I implemented a grading program in Python using dictionaries. The program assigned grades to students based on their scores, demonstrating the use of conditional statements and iterating through dictionary items.
 
@@ -661,7 +661,7 @@ Both methods showcase different ways of using nested structures in Python. The f
 
 #### [D. Travel Log](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/Exercises/4-travel-log.py)
 
-![Travel Log](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-travel-log.png)
+![Travel Log - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-009/009-travel-log.png)
 
 In this exercise, I worked on expanding a Python program that maintains a travel log using a list of dictionaries. The program demonstrates the use of functions for data manipulation within complex data structures.
 
@@ -680,6 +680,12 @@ This exercise demonstrates how functions can be used to manage and update comple
 ### Projects (Day 10)
 
 #### [10. CLI Calculator with Multiple Functions](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Projects/5-calculator.py)
+
+![CLI Calculator with Multiple Functions - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/010-calculator-1.png)
+
+![CLI Calculator with Multiple Functions - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/010-calculator-2.png)
+
+![CLI Calculator with Multiple Functions - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/010-calculator-3.png)
 
 ### Exercises (Day 10)
 
@@ -723,6 +729,10 @@ In this exercise, the `format_name` function is enhanced to handle multiple retu
 
 #### [C. Days in Month](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/3-days-in-month.py)
 
+![Days in Month - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/010-days-in-month-1.png)
+
+![Days in Month - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/010-days-in-month-2.png)
+
 This Python exercise consists of two functions: one to determine if a year is a leap year (`is_leap`), and another to find out the number of days in a given month of a specific year (`days_in_month`).
 
 - The user is prompted to enter a year and a month.
@@ -745,6 +755,10 @@ This Python exercise consists of two functions: one to determine if a year is a 
    - **Return Value:** Number of days in the specified month of the given year.
 
 #### [D. Docstrings](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/Exercises/4-docstrings.py)
+
+![Docstrings - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/010-docstrings-1.png)
+
+![Docstrings - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-010/010-docstrings-2.png)
 
 In this exercise, I learned about creating a function with **docstrings** and implementing conditional logic in Python. The task was to define a function named `format_name` that formats a first and last name into title case.
 
