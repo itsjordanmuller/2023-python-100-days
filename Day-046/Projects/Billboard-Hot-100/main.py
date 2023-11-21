@@ -43,6 +43,8 @@ def load_scraped_data(date_string, file_type="html"):
             return file.read()
 
 
+print("\nSpotify Playlist Creator\nBillboard Hot 100 for a Specific Date\n")
+
 year = input("Enter the year (e.g. 1999): ")
 month = input("Enter the month (01-12): ")
 day = input("Enter the day (01-31): ")
