@@ -157,7 +157,7 @@ This task was a practical application of input handling, type conversion, arithm
 
 > Ask user to input current `age` to calculate `years_remaining` in life and then print the `days_remaining`, `weeks_remaining`, and `months_remaining`
 >
-> 25 years of age currently leaves you with 780 months, AKA 3380 weeks or 23,725 days, depending on which you prefer
+> 25 years of age currently leaves you with 780 months, AKA 3,380 weeks or 23,725 days, depending on which you prefer
 
 In this exercise, I created a program to calculate the time a person has left in days, weeks, and months, assuming they live up to 90 years old. The user inputs their current age, and the program computes the remaining time.
 
