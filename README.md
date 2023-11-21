@@ -1574,9 +1574,27 @@ Through this exercise, I learned about data manipulation using Pandas, particula
 
 #### [27. Unit Converter App - (Miles to Kilometers)](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Projects/6-miles-km-converter.py)
 
+![Unit Converter App - (Miles to Kilometers) - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-miles-km-converter-1.png)
+
+![Unit Converter App - (Miles to Kilometers) - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-miles-km-converter-2.png)
+
+![Unit Converter App - (Miles to Kilometers) - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-miles-km-converter-3.png)
+
+![Unit Converter App - (Miles to Kilometers) - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-miles-km-converter-4.png)
+
 ### Exercises (Day 27)
 
 #### [A. Windows & Labels](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/1-windows-labels.py)
+
+![Windows & Labels - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-windows-labels-1.png)
+
+![Windows & Labels - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-windows-labels-2.png)
+
+![Windows & Labels - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-windows-labels-3.png)
+
+![Windows & Labels - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-windows-labels-4.png)
+
+![Windows & Labels - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-windows-labels-5.png)
 
 In this exercise, I created a basic Graphical User Interface (GUI) application using Python's Tkinter library. This program demonstrates the creation of a window, adding widgets like labels and buttons, and updating the label text dynamically based on user interaction.
 
@@ -1621,6 +1639,10 @@ In this exercise, I delved into the use of `**kwargs` in Python, which enables a
 - Finally, I printed the attributes of `my_car` to confirm that the class correctly assigns and stores the provided information.
 
 #### [D. Tkinter Widgets](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/Exercises/4-tkinter-widgets.py)
+
+![Tkinter Widgets - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-tkinter-widgets-1.png)
+
+![Tkinter Widgets - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-027/027-tkinter-widgets-2.png)
 
 In this exercise, I explored various widgets in Tkinter, a popular GUI toolkit in Python, to create an interactive window application. The exercise was a comprehensive introduction to basic GUI elements and their functionalities.
 
