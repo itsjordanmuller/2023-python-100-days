@@ -999,6 +999,12 @@ for number in range(1, 101):
 
 #### [15. Coffee Machine Simulator - CLI Application](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-015/Projects/1-coffee-machine.py)
 
+![Coffee Machine Simulator - CLI Application - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-015/015-coffee-machine-1.png)
+
+![Coffee Machine Simulator - CLI Application - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-015/015-coffee-machine-2.png)
+
+![Coffee Machine Simulator - CLI Application - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-015/015-coffee-machine-3.png)
+
 ## Day 16
 
 ### Projects (Day 16)
