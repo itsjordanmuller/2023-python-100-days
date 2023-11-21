@@ -1,6 +1,7 @@
 from turtle import Turtle
 import random
 
+# Constants for car properties
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
@@ -13,6 +14,7 @@ class CarManager:
         self.car_speed = STARTING_MOVE_DISTANCE
         self.difficulty = 0
 
+    # Create a new car with a chance based on difficulty
     def create_car(self):
         chance = random.randint(1, 10 - self.difficulty)
         if chance == 1:
@@ -24,15 +26,18 @@ class CarManager:
             new_car.goto(300, random.randint(-250, 250))
             self.cars.append(new_car)
 
+    # Move all cars across the screen
     def move_across(self):
         for car in self.cars:
             car.setx(car.xcor() - self.car_speed)
 
+    # Increase speed and difficulty when leveling up
     def level_up(self):
         self.car_speed += MOVE_INCREMENT
         if self.difficulty < MAX_DIFFICULTY:
             self.difficulty += 1
 
+    # Calculate boundaries of a car for collision detection
     def car_boundaries(self, car):
         left = car.xcor() - 20
         right = car.xcor() + 20
