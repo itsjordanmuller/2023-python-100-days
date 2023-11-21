@@ -1,0 +1,502 @@
+[
+    {
+        "place": 1,
+        "song": "Royals",
+        "artist": "Lorde"
+    },
+    {
+        "place": 2,
+        "song": "The Monster",
+        "artist": "Eminem Featuring Rihanna"
+    },
+    {
+        "place": 3,
+        "song": "Wrecking Ball",
+        "artist": "Miley Cyrus"
+    },
+    {
+        "place": 4,
+        "song": "Roar",
+        "artist": "Katy Perry"
+    },
+    {
+        "place": 5,
+        "song": "Wake Me Up!",
+        "artist": "Avicii"
+    },
+    {
+        "place": 6,
+        "song": "Hold On, We're Going Home",
+        "artist": "Drake Featuring Majid Jordan"
+    },
+    {
+        "place": 7,
+        "song": "Counting Stars",
+        "artist": "OneRepublic"
+    },
+    {
+        "place": 8,
+        "song": "Dope",
+        "artist": "Lady Gaga"
+    },
+    {
+        "place": 9,
+        "song": "Demons",
+        "artist": "Imagine Dragons"
+    },
+    {
+        "place": 10,
+        "song": "Applause",
+        "artist": "Lady Gaga"
+    },
+    {
+        "place": 11,
+        "song": "Story Of My Life",
+        "artist": "One Direction"
+    },
+    {
+        "place": 12,
+        "song": "Let Her Go",
+        "artist": "Passenger"
+    },
+    {
+        "place": 13,
+        "song": "Rap God",
+        "artist": "Eminem"
+    },
+    {
+        "place": 14,
+        "song": "Holy Grail",
+        "artist": "Jay Z Featuring Justin Timberlake"
+    },
+    {
+        "place": 15,
+        "song": "Timber",
+        "artist": "Pitbull Featuring Ke$ha"
+    },
+    {
+        "place": 16,
+        "song": "Say Something",
+        "artist": "A Great Big World & Christina Aguilera"
+    },
+    {
+        "place": 17,
+        "song": "23",
+        "artist": "Mike WiLL Made-It Featuring Miley Cyrus, Wiz Khalifa & Juicy J"
+    },
+    {
+        "place": 18,
+        "song": "Blurred Lines",
+        "artist": "Robin Thicke Featuring T.I. + Pharrell"
+    },
+    {
+        "place": 19,
+        "song": "Berzerk",
+        "artist": "Eminem"
+    },
+    {
+        "place": 20,
+        "song": "Safe And Sound",
+        "artist": "Capital Cities"
+    },
+    {
+        "place": 21,
+        "song": "Unconditionally",
+        "artist": "Katy Perry"
+    },
+    {
+        "place": 22,
+        "song": "Summertime Sadness",
+        "artist": "Lana Del Rey vs. Cedric Gervais"
+    },
+    {
+        "place": 23,
+        "song": "Radioactive",
+        "artist": "Imagine Dragons"
+    },
+    {
+        "place": 24,
+        "song": "My Hitta",
+        "artist": "YG Featuring Jeezy & Rich Homie Quan"
+    },
+    {
+        "place": 25,
+        "song": "Still Into You",
+        "artist": "Paramore"
+    },
+    {
+        "place": 26,
+        "song": "We Were Us",
+        "artist": "Keith Urban And Miranda Lambert"
+    },
+    {
+        "place": 27,
+        "song": "Love More",
+        "artist": "Chris Brown Featuring Nicki Minaj"
+    },
+    {
+        "place": 28,
+        "song": "Mine Would Be You",
+        "artist": "Blake Shelton"
+    },
+    {
+        "place": 29,
+        "song": "Sweater Weather",
+        "artist": "The Neighbourhood"
+    },
+    {
+        "place": 30,
+        "song": "That's My Kind Of Night",
+        "artist": "Luke Bryan"
+    },
+    {
+        "place": 31,
+        "song": "Survival",
+        "artist": "Eminem"
+    },
+    {
+        "place": 32,
+        "song": "Red",
+        "artist": "Taylor Swift"
+    },
+    {
+        "place": 33,
+        "song": "Slow Down",
+        "artist": "Selena Gomez"
+    },
+    {
+        "place": 34,
+        "song": "Stay The Night",
+        "artist": "Zedd Featuring Hayley Williams"
+    },
+    {
+        "place": 35,
+        "song": "Sail",
+        "artist": "AWOLNATION"
+    },
+    {
+        "place": 36,
+        "song": "Marry Me",
+        "artist": "Jason Derulo"
+    },
+    {
+        "place": 37,
+        "song": "Brave",
+        "artist": "Sara Bareilles"
+    },
+    {
+        "place": 38,
+        "song": "We Can't Stop",
+        "artist": "Miley Cyrus"
+    },
+    {
+        "place": 39,
+        "song": "White Walls",
+        "artist": "Macklemore & Ryan Lewis Featuring ScHoolboy Q & Hollis"
+    },
+    {
+        "place": 40,
+        "song": "Gorilla",
+        "artist": "Bruno Mars"
+    },
+    {
+        "place": 41,
+        "song": "Mirrors",
+        "artist": "Justin Timberlake"
+    },
+    {
+        "place": 42,
+        "song": "Southern Girl",
+        "artist": "Tim McGraw"
+    },
+    {
+        "place": 43,
+        "song": "TKO",
+        "artist": "Justin Timberlake"
+    },
+    {
+        "place": 44,
+        "song": "Gas Pedal",
+        "artist": "Sage The Gemini Featuring IamSu!"
+    },
+    {
+        "place": 45,
+        "song": "It Goes Like This",
+        "artist": "Thomas Rhett"
+    },
+    {
+        "place": 46,
+        "song": "Get Me Bodied",
+        "artist": "Beyonce"
+    },
+    {
+        "place": 47,
+        "song": "Stay",
+        "artist": "Florida Georgia Line"
+    },
+    {
+        "place": 48,
+        "song": "Do What U Want",
+        "artist": "Lady Gaga Featuring R. Kelly"
+    },
+    {
+        "place": 49,
+        "song": "It Won't Stop",
+        "artist": "Sevyn Streeter Featuring Chris Brown"
+    },
+    {
+        "place": 50,
+        "song": "Dark Horse",
+        "artist": "Katy Perry Featuring Juicy J"
+    },
+    {
+        "place": 51,
+        "song": "The Outsiders",
+        "artist": "Eric Church"
+    },
+    {
+        "place": 52,
+        "song": "All Me",
+        "artist": "Drake Featuring 2 Chainz & Big Sean"
+    },
+    {
+        "place": 53,
+        "song": "Bad Day",
+        "artist": "Justin Bieber"
+    },
+    {
+        "place": 54,
+        "song": "The Fox",
+        "artist": "Ylvis"
+    },
+    {
+        "place": 55,
+        "song": "Everything Has Changed",
+        "artist": "Taylor Swift Featuring Ed Sheeran"
+    },
+    {
+        "place": 56,
+        "song": "Aw Naw",
+        "artist": "Chris Young"
+    },
+    {
+        "place": 57,
+        "song": "Burn",
+        "artist": "Ellie Goulding"
+    },
+    {
+        "place": 58,
+        "song": "Sunny And 75",
+        "artist": "Joe Nichols"
+    },
+    {
+        "place": 59,
+        "song": "I Luv This Sh*t",
+        "artist": "August Alsina Featuring Trinidad James"
+    },
+    {
+        "place": 60,
+        "song": "Wasting All These Tears",
+        "artist": "Cassadee Pope"
+    },
+    {
+        "place": 61,
+        "song": "Drunk Last Night",
+        "artist": "Eli Young Band"
+    },
+    {
+        "place": 62,
+        "song": "Night Train",
+        "artist": "Jason Aldean"
+    },
+    {
+        "place": 63,
+        "song": "Beware",
+        "artist": "Big Sean Featuring Lil Wayne & Jhene Aiko"
+    },
+    {
+        "place": 64,
+        "song": "Work B**ch!",
+        "artist": "Britney Spears"
+    },
+    {
+        "place": 65,
+        "song": "Carolina",
+        "artist": "Parmalee"
+    },
+    {
+        "place": 66,
+        "song": "Pompeii",
+        "artist": "Bastille"
+    },
+    {
+        "place": 67,
+        "song": "Don't Let Me Be Lonely",
+        "artist": "The Band Perry"
+    },
+    {
+        "place": 68,
+        "song": "Red Nose",
+        "artist": "Sage The Gemini"
+    },
+    {
+        "place": 69,
+        "song": "Honest",
+        "artist": "Future"
+    },
+    {
+        "place": 70,
+        "song": "Whatever She's Got",
+        "artist": "David Nail"
+    },
+    {
+        "place": 71,
+        "song": "Tom Ford",
+        "artist": "JAY-Z"
+    },
+    {
+        "place": 72,
+        "song": "A Case Of You",
+        "artist": "James Wolpert"
+    },
+    {
+        "place": 73,
+        "song": "Type Of Way",
+        "artist": "Rich Homie Quan"
+    },
+    {
+        "place": 74,
+        "song": "Replay",
+        "artist": "Zendaya"
+    },
+    {
+        "place": 75,
+        "song": "Bounce It",
+        "artist": "Juicy J Featuring Wale & Trey Songz"
+    },
+    {
+        "place": 76,
+        "song": "Perfume",
+        "artist": "Britney Spears"
+    },
+    {
+        "place": 77,
+        "song": "Sweet Annie",
+        "artist": "Zac Brown Band"
+    },
+    {
+        "place": 78,
+        "song": "HeadBand",
+        "artist": "B.o.B Featuring 2 Chainz"
+    },
+    {
+        "place": 79,
+        "song": "Drink A Beer",
+        "artist": "Luke Bryan"
+    },
+    {
+        "place": 80,
+        "song": "What Now",
+        "artist": "Rihanna"
+    },
+    {
+        "place": 81,
+        "song": "Animals",
+        "artist": "Martin Garrix"
+    },
+    {
+        "place": 82,
+        "song": "Rough Water",
+        "artist": "Travie McCoy Featuring Jason Mraz"
+    },
+    {
+        "place": 83,
+        "song": "Friday Night",
+        "artist": "Eric Paslay"
+    },
+    {
+        "place": 84,
+        "song": "Chillin' It",
+        "artist": "Cole Swindell"
+    },
+    {
+        "place": 85,
+        "song": "Radio",
+        "artist": "Darius Rucker"
+    },
+    {
+        "place": 86,
+        "song": "Tennis Court",
+        "artist": "Lorde"
+    },
+    {
+        "place": 87,
+        "song": "Compass",
+        "artist": "Lady Antebellum"
+    },
+    {
+        "place": 88,
+        "song": "Team",
+        "artist": "Lorde"
+    },
+    {
+        "place": 89,
+        "song": "All Kinds Of Kinds",
+        "artist": "Miranda Lambert"
+    },
+    {
+        "place": 90,
+        "song": "Days Of Gold",
+        "artist": "Jake Owen"
+    },
+    {
+        "place": 91,
+        "song": "Everybody's Got Somebody But Me",
+        "artist": "Hunter Hayes Featuring Jason Mraz"
+    },
+    {
+        "place": 92,
+        "song": "Best Song Ever",
+        "artist": "One Direction"
+    },
+    {
+        "place": 93,
+        "song": "Right There",
+        "artist": "Ariana Grande Featuring Big Sean"
+    },
+    {
+        "place": 94,
+        "song": "Give It 2 U",
+        "artist": "Robin Thicke Featuring Kendrick Lamar"
+    },
+    {
+        "place": 95,
+        "song": "Collard Greens",
+        "artist": "ScHoolboy Q Featuring Kendrick Lamar"
+    },
+    {
+        "place": 96,
+        "song": "Darte Un Beso",
+        "artist": "Prince Royce"
+    },
+    {
+        "place": 97,
+        "song": "All Of Me",
+        "artist": "John Legend"
+    },
+    {
+        "place": 98,
+        "song": "Parking Lot Party",
+        "artist": "Lee Brice"
+    },
+    {
+        "place": 99,
+        "song": "Beautiful Pain",
+        "artist": "Eminem Featuring Sia"
+    },
+    {
+        "place": 100,
+        "song": "Let Me Go",
+        "artist": "Avril Lavigne Featuring Chad Kroeger"
+    }
+]

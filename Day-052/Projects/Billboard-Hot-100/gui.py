@@ -176,7 +176,7 @@ class GUI:
 
         self.search_songs_status.config(text="Searching for songs...", fg="orange")
 
-        self.search_songs_status.config(text=f"{len(songs)} songs found", fg="green")
+        self.search_songs_status.config(text="Songs found", fg="green")
 
     def create_playlist(self):
         year = self.year_entry.get()
