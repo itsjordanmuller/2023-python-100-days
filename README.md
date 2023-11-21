@@ -99,6 +99,11 @@ The final output then reflected the swapped values, demonstrating successful var
 ![Tip Calculator - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/002-tip-calculator.png)
 
 > Ask user to input values for `total_bill`, `tip_input` and `num_people` to provide a `cost_per_person` when evenly split
+>
+> Total Bill: $150
+> Tip Input: 12%
+> Number of People: 5
+> Split Amount: $33.60
 
 In this exercise, I built a "Tip Calculator" in Python. The program is designed to evenly split a restaurant bill, including a tip, among a group of people.
 
