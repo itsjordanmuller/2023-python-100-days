@@ -36,8 +36,10 @@
 #     print("File was closed")
 #     raise TypeError("This is an error that I made up")
 
-height = float(input("Height: "))
-weight = float(input("Weight: "))
+print("\nCatching Exceptions Exercise\n")
+
+height = float(input("Height (meters): "))
+weight = float(input("Weight (kilograms): "))
 
 if height > 3:
     raise ValueError("Height should not be over 3 meters")
