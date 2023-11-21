@@ -131,6 +131,8 @@ This exercise taught me about string indexing, type conversion from strings to i
 ![BMI Calculator - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-002/002-bmi-calculator.png)
 
 > Ask user to input values for `height` and `weight` to return the `bmi` as an integer
+>
+> 1.77 meters and 71 kilograms returns a BMI of 22
 
 In this exercise, I developed a basic BMI (Body Mass Index) calculator in Python. The program begins by asking the user to input their height in meters and weight in kilograms.
 
