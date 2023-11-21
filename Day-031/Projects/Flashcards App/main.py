@@ -1,9 +1,8 @@
-from tkinter import *
-from tkinter import messagebox
+import os
 import random
 import pandas
-import os
-
+from tkinter import *
+from tkinter import messagebox
 
 # CONSTANTS
 BACKGROUND_COLOR = "#B1DDC6"
@@ -12,7 +11,8 @@ FLIP_TIME = 3000
 
 # DATA SETUP
 df = pandas.read_csv("./data/french_words.csv")
-# print(df)
+
+# Create words_to_learn.csv if it doesn't exist
 if not os.path.exists("./data/words_to_learn.csv"):
     df.to_csv("./data/words_to_learn.csv", index=False)
 else:
@@ -22,21 +22,21 @@ else:
 def get_random_word():
     global df
 
+    # Check if all words learned and offer reset
     if df.empty:
         answer = messagebox.askokcancel(
             title="Reset Words",
-            message="Congrats!\nAll words learned!\nWould you like to reset the words?\nThis will add all of the words you've already learned back to the list, resetting your progress.",
+            message="Congrats! All words learned! Would you like to reset the words? This will reset your progress.",
         )
-        if answer:  # If user clicked 'Ok'
+        if answer:
             df = pandas.read_csv("./data/french_words.csv")
             df.to_csv("./data/words_to_learn.csv", index=False)
-            row = df.sample().iloc[0]
-            return row["French"], row["English"]
         else:
             return None, None
-    else:
-        row = df.sample().iloc[0]
-        return row["French"], row["English"]
+
+    # Return a random word
+    row = df.sample().iloc[0]
+    return row["French"], row["English"]
 
 
 # UI SETUP
@@ -49,12 +49,11 @@ card_front_img = PhotoImage(file="./images/card_front.png")
 card_back_img = PhotoImage(file="./images/card_back.png")
 right_img = PhotoImage(file="./images/right.png")
 wrong_img = PhotoImage(file="./images/wrong.png")
-
 canvas_img = canvas.create_image(400, 263, image=card_front_img)
 
+# Text elements on card
 title_text = canvas.create_text(400, 150, text="Language", font=("Arial", 30, "italic"))
 word_text = canvas.create_text(400, 263, text="Word", font=("Arial", 50, "bold"))
-
 canvas.grid(column=0, row=0, columnspan=2)
 
 
@@ -90,8 +89,11 @@ def change_word():
     if french_word is None and english_word is None:
         print("Congrats!\nAll words learned!")
         return
+    # Update card text
     canvas.itemconfig(title_text, text="French")
     canvas.itemconfig(word_text, text=french_word)
+
+    # Set timer to flip card
     after_event = window.after(FLIP_TIME, flip_card)
 
 
@@ -100,6 +102,7 @@ card_state = "front"
 
 def flip_card():
     global card_state, french_word, english_word
+    # Flip card and update text
     if card_state == "front":
         canvas.itemconfig(canvas_img, image=card_back_img)
         canvas.itemconfig(title_text, text="English", fill="white")
@@ -112,6 +115,7 @@ def flip_card():
         card_state = "front"
 
 
+# Button setup
 wrong_button = Button(
     window,
     image=wrong_img,
