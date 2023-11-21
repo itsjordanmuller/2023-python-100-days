@@ -1090,9 +1090,21 @@ Finally, I printed the details of both users to observe the changes in their `fo
 
 #### [18. Damien Hirst Spots Paintings with Turtle Graphics](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-018/Projects/spots)
 
+![Damien Hirst Spots Paintings with Turtle Graphics - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-damien-hirst-spots-1.png)
+
+![Damien Hirst Spots Paintings with Turtle Graphics - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-damien-hirst-spots-2.png)
+
+![Damien Hirst Spots Paintings with Turtle Graphics - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-damien-hirst-spots-3.png)
+
+![Damien Hirst Spots Paintings with Turtle Graphics - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-damien-hirst-spots-4.png)
+
 ### Exercises (Day 18)
 
 #### [A. Turtle Graphics Challenge](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/Exercises/1-turtle-challenge.py)
+
+![Turtle Graphics Challenge - Setup - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-1.png)
+
+![Turtle Graphics Challenge - Setup - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-2.png)
 
 In this exercise, I delved into the creative and graphical aspect of Python programming using the Turtle Graphics library. This exercise was divided into multiple challenges, each aimed at exploring different functionalities of the Turtle module.
 
@@ -1108,11 +1120,43 @@ In this exercise, I delved into the creative and graphical aspect of Python prog
 3. **Drawing Shapes Challenge:**
    - I have commented out this challenge. The idea was to use a loop to draw regular polygons with sides ranging from 3 to 10. The `calc_exterior_angles` function would be used to calculate the turning angle for each side of these polygons, and `random_color` would give each shape a unique color.
 
+![Turtle Graphics Challenge - Drawing Shapes - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-3.png)
+
+![Turtle Graphics Challenge - Drawing Shapes - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-4.png)
+
+![Turtle Graphics Challenge - Drawing Shapes - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-5.png)
+
+![Turtle Graphics Challenge - Drawing Shapes - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-6.png)
+
 4. **Random Walk Challenge:**
    - Also commented out, this challenge would have the turtle move randomly in straight lines, changing direction at random intervals. The direction changes would be multiples of 90 degrees, and each segment of the walk would be a different random color.
 
+![Turtle Graphics Challenge - Random Walk - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-7.png)
+
+![Turtle Graphics Challenge - Random Walk - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-8.png)
+
+![Turtle Graphics Challenge - Random Walk - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-9.png)
+
+![Turtle Graphics Challenge - Random Walk - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-10.png)
+
+![Turtle Graphics Challenge - Random Walk - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-11.png)
+
+![Turtle Graphics Challenge - Random Walk - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-12.png)
+
+![Turtle Graphics Challenge - Random Walk - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-13.png)
+
 5. **Spirograph Challenge:**
    - This was the main focus of my code. Here, I set the turtle's speed to 10 for smoother animation. I used a while loop to draw a series of overlapping circles, each slightly rotated from the last, creating a spirograph-like pattern. For each circle, I changed the turtle's color using `random_color` and rotated it slightly to the right before drawing the next circle.
+
+![Turtle Graphics Challenge - Spirograph - Image 14](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-14.png)
+
+![Turtle Graphics Challenge - Spirograph - Image 15](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-15.png)
+
+![Turtle Graphics Challenge - Spirograph - Image 16](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-16.png)
+
+![Turtle Graphics Challenge - Spirograph - Image 17](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-17.png)
+
+![Turtle Graphics Challenge - Spirograph - Image 18](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-018/018-turtle-challenge-18.png)
 
 6. **Screen Settings:**
    - I set the screen's color mode to 255 to accommodate RGB color values. The `screen.exitonclick()` command was used to keep the window open until a click event, allowing observation of the final drawing.
