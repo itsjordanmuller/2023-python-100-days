@@ -489,7 +489,40 @@ This exercise effectively demonstrates how to manipulate lists and use indexing 
 
 ![Password Generator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-password-generator-1.png)
 
+> Ask user for `num_letters`, `num_symbols` and `num_numbers` to create two passwords, the plain `simple_pass`, or a scrambled `complex_pass`
+>
+> 5 letters, 4 symbols and 3 numbers returns:
+> - Simple: qblQf$())276
+> - Scrambled: qQf(b716)$2)
+
 ![Password Generator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-password-generator-2.png)
+
+> 3 letters, 5 symbols and 7 numbers returns:
+> - Simple: vL0!)#+(4503919
+> - Scrambled: L+!(#10O)543v99
+
+In this exercise, I created a PyPassword Generator, a program that generates both simple and complex random passwords based on user input. The program uses Python's `random` module to select random characters from predefined lists of letters, numbers, and symbols.
+
+1. **Character Sets**: Defined lists for letters (both lowercase and uppercase), numbers, and symbols to be used in the password.
+
+2. **User Input**: Asked the user for the number of letters, symbols, and numbers they want in their password.
+
+3. **Password Construction**:
+    - Initialized an empty string for the password.
+    - Used a for loop to add the specified number of random letters, symbols, and numbers to the password. For each element, I used `random.randint` to select a random index from the corresponding list.
+    - Added spaces between each character for easy splitting later.
+
+4. **Generating Simple Password**:
+    - Split the password string into a list.
+    - Joined the list into a string without shuffling to create a simple password.
+
+5. **Generating Complex Password**:
+    - Shuffled the list using `random.shuffle` for a more secure, complex password.
+    - Joined the shuffled list into a string to form the final password.
+
+6. **Output**: Displayed both the simple and complex passwords.
+
+This task was a great exercise in using lists, loops, random selection, string manipulation, and basic user input handling in Python.
 
 ### Exercises (Day 5)
 
@@ -507,7 +540,13 @@ Overall, these examples served as an introduction to `for` loops in Python. They
 
 ![Average Height Calculator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-average-height-1.png)
 
+> Ask user for comma separated list of `student_heights`, return `average_height`
+>
+> Average Height = 150
+
 ![Average Height Calculator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-average-height-2.png)
+
+> Average Height = 165
 
 In this exercise, I created a program to calculate the average height from a list of student heights in Python, demonstrating basic data collection, type conversion, and arithmetic operations.
 
@@ -521,7 +560,13 @@ Finally, the average height is calculated by dividing the `total_height` by `stu
 
 ![High Score Checker - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-high-score-1.png)
 
+> Ask user for comma separated list of `student_scores`, return `high_score`
+>
+> High Score = 97
+
 ![High Score Checker - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-high-score-2.png)
+
+> High Score = 88
 
 In this Python exercise, I developed a program to find the highest score in a list of student scores. The exercise emphasized the use of loops, conditional statements, and handling user input.
 
@@ -545,7 +590,13 @@ After the loop completes, the program prints `total_number`, which by then conta
 
 ![FizzBuzz Challenge - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-fizz-buzz-1.png)
 
+> FizzBuzz prints numbers 1-100 labeling any integers divisible by three as `Fizz,` integers divisible by five as `Buzz` and integers divisible by both three and five as `FizzBuzz`
+>
+> Head of FizzBuzz Challenge Console Print: Values 1-40
+
 ![FizzBuzz Challenge - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-005/005-fizz-buzz-2.png)
+
+> Tail of FizzBuzz Challenge Console Print: Values 60-100
 
 In this exercise, I implemented the classic "FizzBuzz" program in Python, a common test used in programming interviews. The task was to print each number from 1 to 100, but for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz". This exercise highlighted the use of loops, conditional statements, and modulo operations.
 
