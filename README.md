@@ -1314,6 +1314,16 @@ Through this task, I learned how slicing is a powerful tool for accessing parts 
 
 #### [22. PONG Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-022/Projects)
 
+![PONG Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-022/022-pong-1.png)
+
+![PONG Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-022/022-pong-2.png)
+
+![PONG Game - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-022/022-pong-3.png)
+
+![PONG Game - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-022/022-pong-4.png)
+
+![PONG Game - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-022/022-pong-5.png)
+
 ## Day 23
 
 ### Projects (Day 23)
