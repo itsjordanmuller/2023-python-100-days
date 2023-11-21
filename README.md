@@ -32,7 +32,19 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 
 ![Band Name Generator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/001-band-name-generator-1.png)
 
+> Ask use to input `city` and `pet`
+
+In this exercise, I created an "Automatic Band Name Generator" using Python. This program is an enjoyable way to use simple string concatenation to generate creative names.
+
+The script begins by welcoming the user and explaining what the program does. It then prompts the user for two pieces of information: the name of the city or town they grew up in, and the name of a beloved pet.
+
 ![Band Name Generator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-001/001-band-name-generator-2.png)
+
+> Combine home city/town and pet name to create band name `The San Francisco Scouts`
+
+After receiving this input, the program combines these two strings, adding an 's' to the end of the pet's name to craft a band name. It then displays this generated band name to the user in a friendly message.
+
+This exercise taught me how to solicit user input, concatenate strings to form a new string, and display the result to the user.
 
 ### Exercises (Day 1)
 
