@@ -1392,9 +1392,27 @@ This task taught me how to handle files in Python, including creating, writing, 
 
 #### [25. United States Guessing Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Projects/US%20States%20Game)
 
+![United States Guessing Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-us-states-game-1.png)
+
+![United States Guessing Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-us-states-game-2.png)
+
+![United States Guessing Game - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-us-states-game-3.png)
+
+![United States Guessing Game - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-us-states-game-4.png)
+
+![United States Guessing Game - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-us-states-game-5.png)
+
+![United States Guessing Game - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-us-states-game-6.png)
+
+![United States Guessing Game - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-us-states-game-7.png)
+
 ### Exercises (Day 25)
 
 #### [A. Squirrel Census Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Exercises/Squirrel%20Census)
+
+![Squirrel Census Data Exploration - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-squirrel-census-1.png)
+
+![Squirrel Census Data Exploration - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-squirrel-census-2.png)
 
 In this Python exercise, I worked on exploring and processing data from the "2018 Central Park Squirrel Census" using the pandas library.
 
