@@ -1243,9 +1243,25 @@ Through this task, I learned how to make Python programs interactive using event
 
 #### [21. Snake Game v2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-021/Projects)
 
+![Snake Game v2 Upgrade - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-snake-game-v2-1.png)
+
+![Snake Game v2 Upgrade - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-snake-game-v2-2.png)
+
+![Snake Game v2 Upgrade - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-snake-game-v2-3.png)
+
+![Snake Game v2 Upgrade - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-snake-game-v2-4.png)
+
+![Snake Game v2 Upgrade - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-snake-game-v2-5.png)
+
 ### Exercises (Day 21)
 
 #### [A. Class Inheritance](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/Exercises/1-class-inheritance.py)
+
+![Class Inheritance - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-class-inheritance-1.png)
+
+![Class Inheritance - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-class-inheritance-2.png)
+
+![Class Inheritance - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-class-inheritance-3.png)
 
 In this exercise, I explored the concept of class inheritance in Python, which is a fundamental aspect of object-oriented programming. The task involved creating a base class `Animal` and a derived class `Fish` that inherits from `Animal`.
 
@@ -1270,6 +1286,12 @@ In this exercise, I explored the concept of class inheritance in Python, which i
 Through this exercise, I gained a deeper understanding of how inheritance allows a class to inherit attributes and methods from a parent class, how to override methods in the child class, and how to add new methods specific to the child class.
 
 #### [B. Slicing](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/Exercises/2-slicing.py)
+
+![Slicing - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-slicing-1.png)
+
+![Slicing - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-slicing-2.png)
+
+![Slicing - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-021/021-slicing-3.png)
 
 In this exercise, I delved into the concept of slicing in Python, which is a technique used to access a subset of elements from a list or a similar sequence type. I worked with a list named `piano_keys`, representing the keys of a piano.
 
