@@ -4,5 +4,11 @@
     "link": "https://www.amazon.com/Anker-Charging-MacBook-Galaxy-Charger/dp/B088NRLMPV/ref=sr_1_4?crid=3DNXYCLXAIEX7&keywords=USB+C&qid=1695843131&sprefix=usb+c%2Caps%2C183&sr=8-4",
     "desired_price": 11.5,
     "history": []
+  },
+  {
+    "item": "NVIDIA GeForce GPU",
+    "link": "https://exampleurl.com/",
+    "desired_price": 20.0,
+    "history": []
   }
 ]
