@@ -1,6 +1,7 @@
 import turtle
 import pandas
 
+# Set up the screen for the game
 screen = turtle.Screen()
 screen.title("US States Game")
 screen.setup(width=725, height=491)
@@ -8,27 +9,24 @@ image = "blank_states_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 
+# Initialize turtle for displaying state names
 state_turtle = turtle.Turtle()
 state_turtle.hideturtle()
 state_turtle.penup()
 
+# Load state data from CSV file
 data = pandas.read_csv("50_states.csv")
-# print(data["state"])
 
+# Create a DataFrame from the loaded data
 df = pandas.DataFrame(data)
-# print(df)
 
-# 1. Get a Guess and Convert to Title Case
-# 2. Check if Guess is Among the 50 States
-# 3. Write the Correct Guesses onto the Map
-# 4. Create a Loop to Allow the User to Keep Guessing
-# 5. Record the Correct Guesses in a List
-# 6. Keep Track of Score in Title of Prompt
-
+# List to store guessed states
 guessed_states = []
 
+# Flag to control the game loop
 game_is_on = True
 
+# Main game loop
 while game_is_on:
     answer_state = (
         screen.textinput(
@@ -37,10 +35,12 @@ while game_is_on:
         )
     ).title()
 
+    # Check if state already guessed
     if answer_state in guessed_states:
         print(f"You already guessed {answer_state}!")
         continue
 
+    # Validate and process the guessed state
     if answer_state in df["state"].values:
         guessed_states.append(answer_state)
         print(f"{answer_state} is a valid US state!")
@@ -48,6 +48,7 @@ while game_is_on:
         state_turtle.goto(int(state_row["x"]), int(state_row["y"]))
         state_turtle.write(answer_state, align="center", font=("Arial", 8, "normal"))
 
+        # Check if all states have been guessed
         if len(guessed_states) == 50:
             print("Congratulations! You've guessed all 50 states!")
             game_is_on = False
@@ -55,12 +56,5 @@ while game_is_on:
     else:
         print(f"{answer_state} is not a valid US state!")
 
-
-# def get_mouse_click_coor(x, y):
-#     print(x, y)
-
-
-# turtle.onscreenclick(get_mouse_click_coor)
-
-# turtle.mainloop()
+# Close the screen on click
 screen.exitonclick()
