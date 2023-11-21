@@ -1,11 +1,11 @@
 import json
 import random
+import pyperclip
 from tkinter import *
 from tkinter import messagebox
 
-import pyperclip
 
-# PASSWORD GENERATOR
+# LETTERS, NUMBERS & SYMBOLS FOR PASSWORD GENERATOR
 letters = [
     "a",
     "b",
@@ -65,20 +65,12 @@ symbols = ["!", "#", "$", "%", "&", "(", ")", "*", "+"]
 
 
 def gen_password():
+    """Randomly determine the number of letters, symbols, and numbers"""
     nr_letters = random.randint(8, 10)
     nr_symbols = random.randint(2, 4)
     nr_numbers = random.randint(2, 4)
 
     password_list = []
-
-    # for char in range(nr_letters):
-    #     password_list.append(random.choice(letters))
-
-    # for char in range(nr_symbols):
-    #     password_list += random.choice(symbols)
-
-    # for char in range(nr_numbers):
-    #     password_list += random.choice(numbers)
 
     password_letters = [random.choice(letters) for _ in range(nr_letters)]
     password_symbols = [random.choice(symbols) for _ in range(nr_symbols)]
@@ -101,6 +93,7 @@ def gen_password():
 
 # READ PASSWORD
 def read_data():
+    """Read password data from JSON file"""
     try:
         with open("data.json", "r") as file:
             data = json.load(file)
@@ -110,8 +103,10 @@ def read_data():
     except json.JSONDecodeError:
         messagebox.showinfo(title="Error", message="Error reading the data file.")
 
+
 # SEARCH PASSWORD
 def search_data():
+    """Search for password by website name"""
     website = website_entry.get()
     try:
         with open("data.json", "r") as file:
@@ -119,9 +114,15 @@ def search_data():
             if website in data:
                 email = data[website]["email/username"]
                 password = data[website]["password"]
-                messagebox.showinfo(title=website, message=f"Email/Username: {email}\nPassword: {password}")
+                messagebox.showinfo(
+                    title=website,
+                    message=f"Email/Username: {email}\nPassword: {password}",
+                )
             else:
-                messagebox.showerror(title="Error", message=f"No details for the website {website} found.")
+                messagebox.showerror(
+                    title="Error",
+                    message=f"No details for the website {website} found.",
+                )
     except FileNotFoundError:
         messagebox.showerror(title="Error", message="No Data File Found.")
     except json.JSONDecodeError:
@@ -130,6 +131,7 @@ def search_data():
 
 # SAVE PASSWORD
 def save_data():
+    """Save new password details to JSON file"""
     details = {
         "website": website_entry.get(),
         "email/username": user_email_entry.get(),
@@ -142,6 +144,7 @@ def save_data():
         }
     }
 
+    # Validate required fields
     missing_fields = [key for key, value in details.items() if not value]
 
     if missing_fields:
@@ -173,17 +176,9 @@ def save_data():
             data = {}
 
         data.update(new_data)
-        # is_ok = messagebox.askokcancel(
-        #     title=f"Save {details['website']} Password",
-        #     message=f"Here's the login details:\n\nEmail: {details['email/username']}\nPassword: {details['password']}\n\nIs it okay to save?",
-        # )
 
-        # if is_ok:
         with open("data.json", "w") as file:
             json.dump(data, file, indent=4)
-            # file.write(
-            #     f"{details['website']} | {details['email/username']} | {details['password']}\n"
-            # )
 
         website_entry.delete(0, END)
         password_entry.delete(0, END)
