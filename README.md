@@ -1350,7 +1350,25 @@ Through this task, I learned how slicing is a powerful tool for accessing parts 
 
 #### [24a. Mail Merge](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Mail%20Merge)
 
-#### [24b. Snake Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Snake%20Game)
+![Mail Merge - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-mail-merge-1.png)
+
+![Mail Merge - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-mail-merge-2.png)
+
+![Mail Merge - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-mail-merge-3.png)
+
+![Mail Merge - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-mail-merge-4.png)
+
+![Mail Merge - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-mail-merge-5.png)
+
+![Mail Merge - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-mail-merge-6.png)
+
+![Mail Merge - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-mail-merge-7.png)
+
+#### [24b. Snake Game v3 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Snake%20Game)
+
+![Snake Game v3 Upgrade - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-snake-game-v3-1.png)
+
+![Snake Game v3 Upgrade - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-snake-game-v3-2.png)
 
 ### Exercises (Day 24)
 
