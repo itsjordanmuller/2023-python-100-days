@@ -196,7 +196,9 @@ Finally, the total bill is calculated and displayed. If the user is not tall eno
 
 ![Odd or Even - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-odd-or-even-1.png)
 
-> Ask the user for a `number`, check if it's odd or even and then print the corresponding message, 4 is an even number
+> Ask the user for a `number`, check if it's odd or even and then print the corresponding message
+> 
+> 4 is an even number
 
 ![Odd or Even - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-odd-or-even-2.png)
 
@@ -216,7 +218,9 @@ This exercise was a straightforward yet effective demonstration of using the mod
 
 ![BMI Calculator V2 Upgrade - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-bmi-calculator-v2-1.png)
 
-> Ask user for `height` and `weight`, then calculate and return `bmi` integer along with a message that places the BMI into a descriptive category, 1.77 meters tall and 71 kilograms = BMI of (23 - Normal Weight)
+> Ask user for `height` and `weight`, then calculate and return `bmi` integer along with a message that places the BMI into a descriptive category
+> 
+> 1.77 meters tall and 71 kilograms = BMI of (23 - Normal Weight)
 
 ![BMI Calculator V2 Upgrade - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-bmi-calculator-v2-2.png)
 
@@ -243,7 +247,9 @@ Key changes and learnings in this version include:
 
 ![Leap Year Checker - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-leap-year-1.png)
 
-> Ask the user for a `year`, check if it's a leap year or not and print the corresponding message, 1993 is not a leap year
+> Ask the user for a `year`, check if it's a leap year or not and print the corresponding message
+> 
+> 1993 is not a leap year
 
 ![Leap Year Checker - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-leap-year-2.png)
 
@@ -271,7 +277,9 @@ This exercise was an excellent demonstration of how nested conditional statement
 
 ![Pizza Order Creator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-pizza-order-1.png)
 
-> Ask user for `size`, and whether they'd like to `add_pepperoni` or `extra_cheese` to their pizza and calculate a total, Large Pizza with Pepperoni and Extra Cheese is $29
+> Ask user for `size`, and whether they'd like to `add_pepperoni` or `extra_cheese` to their pizza and calculate a total
+> 
+> Large Pizza with Pepperoni and Extra Cheese is $29
 
 ![Pizza Order Creator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-pizza-order-2.png)
 
@@ -300,7 +308,9 @@ This exercise was a practical application of using `if-elif-else` statements to 
 
 ![Love Calculator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-love-calculator-1.png)
 
-> Ask for user's name (`name1`) and another name (`name2`), to return a `love_score, John and Jane return `love_score` of 12
+> Ask for user's name (`name1`) and another name (`name2`), to return a `love_score
+> 
+> John and Jane return `love_score` of 12
 
 ![Love Calculator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-003/003-love-calculator-2.png)
 
@@ -334,7 +344,23 @@ This exercise was a fun and creative way to apply various Python programming con
 
 ![Rock Paper Scissors - CLI Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-rock-paper-scissors-1.png)
 
+> Ask for `user_input` of either `rock`, `paper` or `scissors`, get random choice for `computer_input`, determine and display outcome of game with a message
+>
+> Scissors (Player) vs Rock (Computer) = Computer Wins
+
+In this exercise, I created a Rock Paper Scissors game in Python, incorporating basic control structures, user input, and random number generation.
+
+The program begins with ASCII art representations for Rock, Paper, and Scissors. I then created a list `rock_paper_scissors` containing these representations. The game starts by printing a welcome message and prompting the user to choose Rock, Paper, or Scissors, represented by numbers 1, 2, and 3, respectively.
+
 ![Rock Paper Scissors - CLI Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-rock-paper-scissors-2.png)
+
+> Paper (Player) vs Rock (Computer) = Player Wins
+
+After adjusting the user input for zero-based indexing, I used an `if` statement to check for invalid inputs (like numbers outside the range 0-2). For valid inputs, the program displays the user's choice using the ASCII art from the list.
+
+Next, the program generates a random choice for the computer using `random.randint(0, 2)`, and displays this choice similarly. The game's outcome is then determined by comparing the user's choice and the computer's choice, using a series of `if-elif` statements.
+
+Through this exercise, I learned to handle user input, implement conditional logic, and use lists and random number generation in Python. The game effectively demonstrated the application of these concepts in creating a simple interactive program.
 
 ### Exercises (Day 4)
 
@@ -367,7 +393,13 @@ This exercise provided a broad overview of different Python features, from rando
 
 ![Heads or Tails - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-heads-or-tails-1.png)
 
+> Uses `random` module to get a random value for a coin flip, display ASCII art for coin
+>
+> A flip of a coin shows tails
+
 ![Heads or Tails - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-heads-or-tails-2.png)
+
+> A flip of a coin shows heads
 
 In this exercise, I created a simple "Heads or Tails" program using Python's `random` module. This exercise demonstrates the use of random number generation and basic conditional logic.
 
@@ -378,14 +410,20 @@ The program works as follows:
 2. **Generate a Random Integer**: The program uses `random.randint(0, 1)` to generate a random integer that's either 0 or 1. This simulates the two possible outcomes of a coin flip.
 
 3. **Conditional Logic to Determine the Outcome**:
-   - An `if` statement checks the value of `face_value`. If it equals 0, the program prints "Tails". Otherwise, it prints "Heads".
+   - I used an `if` statement to check the generated value: if it's 0, the program prints the ASCII art for tails, and if it's 1, it prints the ASCII art for heads.
    - This binary choice effectively simulates the flipping of a coin.
 
 #### [C. Banker Roulette](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/Exercises/2-banker-roulette.py)
 
 ![Banker Roulette - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-banker-roulette-1.png)
 
+> Ask user for `names_string`: a comma separated list of names, return a random name from the list of split `names` with random number from length of list: `name_len`
+>
+> Francisco is the person who will pay for this meal out of 7 options
+
 ![Banker Roulette - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-banker-roulette-2.png)
+
+> Max is the person who will pay for this meal out of 6 options
 
 In the "Banker Roulette" exercise, I implemented a program in Python that randomly selects a person from a list to "buy the meal today." This exercise demonstrates string manipulation, list handling, and the use of the `random` module for generating random numbers.
 
@@ -410,7 +448,13 @@ The program's workflow is as follows:
 
 ![Treasure Map - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-treasure-map-1.png)
 
+> Ask user for `column_input` and `row_input` to plot an X on a grid map with top left corner being (1, 1)
+>
+> 2 and 3 places an X at (2, 3) - bottom center square
+
 ![Treasure Map - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-004/004-treasure-map-2.png)
+
+> 3 and 3 places an X at (3, 3) - bottom right square
 
 In the "Treasure Map" exercise, I developed a program in Python that simulates placing a treasure mark on a simple grid map. This exercise is a great example of using lists, indexing, and conditional logic in Python.
 
