@@ -821,6 +821,16 @@ This exercise was an insightful exploration of how Python handles variable scope
 
 #### [A. Beginner Debugging](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/Exercises/1-beginner-debugging.py)
 
+![Beginner Debugging - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/013-beginner-debugging-1.png)
+
+![Beginner Debugging - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/013-beginner-debugging-2.png)
+
+![Beginner Debugging - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/013-beginner-debugging-3.png)
+
+![Beginner Debugging - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/013-beginner-debugging-4.png)
+
+![Beginner Debugging - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-013/013-beginner-debugging-5.png)
+
 In this exercise, I delved into the basics of debugging in Python. It covered various debugging techniques and concepts, highlighting common issues that beginners might encounter.
 
 1. **Describe Problem**:
