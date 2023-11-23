@@ -2037,6 +2037,57 @@ Through this exercise, I learned how to integrate various aspects of Python prog
 
 #### [32. Calculator GUI App](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/Projects/Calculator-App/main.py)
 
+![Calculator GUI App - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-1.png)
+
+![Calculator GUI App - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-2.png)
+
+![Calculator GUI App - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-3.png)
+
+![Calculator GUI App - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-4.png)
+
+![Calculator GUI App - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-5.png)
+
+![Calculator GUI App - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-6.png)
+
+![Calculator GUI App - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-7.png)
+
+![Calculator GUI App - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-8.png)
+
+![Calculator GUI App - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-9.png)
+
+![Calculator GUI App - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-10.png)
+
+![Calculator GUI App - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-11.png)
+
+![Calculator GUI App - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-12.png)
+
+![Calculator GUI App - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-13.png)
+
+![Calculator GUI App - Image 14](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-14.png)
+
+![Calculator GUI App - Image 15](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/032-calculator-app-15.png)
+
+In this exercise, I built a basic calculator application named "EasyCalc" using Python and Tkinter for the graphical interface. This calculator allows users to perform basic arithmetic operations and displays the results in a user-friendly manner.
+
+1. **User Input Handling**: The `number_clicked` function captures the number clicked by the user and updates the current input. This allows users to input multi-digit numbers.
+
+2. **Operation Functions**: Separate functions (`handle_plus_button`, `handle_minus_button`, `handle_mul_button`, `handle_div_button`, `handle_mod_button`) handle the arithmetic operations. These functions store the current input and the respective operation symbol in `full_calculation` list and reset `current_input` for the next input.
+
+3. **Special Functions**:
+   - `handle_ac_button` clears all inputs and resets the application to its initial state.
+   - `handle_dec_button` adds a decimal point to the current input if not already present.
+   - `handle_pos_neg_button` toggles the current input between positive and negative.
+
+4. **Calculation and Display**: The `handle_equal_button` function combines the inputs and operations stored in `full_calculation` and evaluates the expression using Python's `eval` function. It then updates the display to show the result. Error handling is included to display an error message in case of an invalid calculation.
+
+5. **Dynamic Display Update**: The `update_display` function refreshes the calculator's display after each input or operation. It also dynamically adjusts the font size based on the length of the text to be displayed using the `dynamic_font_size` function.
+
+6. **UI Layout and Design**: The layout includes two main canvas areas for displaying the last calculation and the current result, operational buttons (like AC, ±, %, ÷, x, -, +, =), a decimal button, and number buttons (0-9). The design is inspired by a concept on Dribbble, featuring a clean and modern look.
+
+7. **Event Loop**: The Tkinter event loop (`mainloop()`) keeps the application running and responsive to user interactions.
+
+Through this exercise, I learned how to create a functional and visually appealing calculator application in Python. It involved implementing logic for arithmetic operations, managing user input, updating the GUI dynamically, and ensuring a user-friendly experience.
+
 ## Day 33
 
 ### Projects (Day 33)
