@@ -1530,7 +1530,7 @@ Through this task, I learned how slicing is a powerful tool for accessing parts 
 
 ### Projects (Day 24)
 
-#### [24a. Mail Merge](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Mail%20Merge)
+#### [24a. Mail Merge](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Mail-Merge)
 
 ![Mail Merge - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-mail-merge-1.png)
 
@@ -1546,7 +1546,7 @@ Through this task, I learned how slicing is a powerful tool for accessing parts 
 
 ![Mail Merge - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-mail-merge-7.png)
 
-#### [24b. Snake Game v3 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Snake%20Game)
+#### [24b. Snake Game v3 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-024/Projects/Snake-Game)
 
 ![Snake Game v3 Upgrade - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-024/024-snake-game-v3-1.png)
 
@@ -1572,7 +1572,7 @@ This task taught me how to handle files in Python, including creating, writing, 
 
 ### Projects (Day 25)
 
-#### [25. United States Guessing Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Projects/US%20States%20Game)
+#### [25. United States Guessing Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Projects/US-States-Game)
 
 ![United States Guessing Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-us-states-game-1.png)
 
@@ -1590,7 +1590,7 @@ This task taught me how to handle files in Python, including creating, writing, 
 
 ### Exercises (Day 25)
 
-#### [A. Squirrel Census Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Exercises/Squirrel%20Census)
+#### [A. Squirrel Census Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-025/Exercises/Squirrel-Census)
 
 ![Squirrel Census Data Exploration - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-025/025-squirrel-census-1.png)
 
@@ -1632,7 +1632,7 @@ Lastly, I created a new DataFrame from scratch using a dictionary. This new Data
 
 ### Projects (Day 26)
 
-#### [26. NATO Alphabet Translator](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Projects/NATO%20Alphabet)
+#### [26. NATO Alphabet Translator](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Projects/NATO-Alphabet)
 
 ![NATO Alphabet Translator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-026/026-nato-alphabet-1.png)
 
@@ -1720,7 +1720,7 @@ Finally, the program prints `weather_f`, displaying the days of the week with th
 
 This exercise demonstrated practical uses of functions, dictionary comprehensions, and the concept of iterating over key-value pairs in a dictionary. It also reinforced the application of mathematical formulas in programming.
 
-#### [G. Data Overlap Exercise](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Data%20Overlap%20Exercise)
+#### [G. Data Overlap Exercise](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Data-Overlap-Exercise)
 
 In this exercise, I worked on a Python program to find overlapping data between two files and then sort the results. The task involved file handling, set operations, list comprehension, and sorting.
 
@@ -1736,7 +1736,7 @@ Finally, the program prints the sorted list `result`, which contains the numbers
 
 This exercise showcased practical applications of file reading, data type conversion, set operations for finding intersections, and sorting techniques in Python. It illustrated how to efficiently process and compare data from different sources.
 
-#### [H. Pandas DataFrame Iterate](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Pandas%20DataFrame%20Iterate)
+#### [H. Pandas DataFrame Iterate](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-026/Exercises/Pandas-DataFrame-Iterate)
 
 In this exercise, I explored how to iterate over rows in a Pandas DataFrame in Python. This task was centered around creating a DataFrame from a dictionary and then using a loop to access and print specific data from it.
 
@@ -1873,13 +1873,13 @@ I gained a deeper understanding of how different layout managers affect the plac
 
 ### Projects (Day 28)
 
-#### [28. Pomodoro Timer](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-028/Projects/Pomodoro%20Timer)
+#### [28. Pomodoro Timer](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-028/Projects/Pomodoro-Timer)
 
 ## Day 29
 
 ### Projects (Day 29)
 
-#### [29. Password Manager](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-029/Projects/Password%20Manager)
+#### [29. Password Manager](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-029/Projects/Password-Manager)
 
 ## Day 30
 
@@ -1929,19 +1929,19 @@ In this exercise, I explored handling KeyError exceptions in Python, specificall
 
 ### Projects (Day 31)
 
-#### [31. Flashcards GUI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-031/Projects/Flashcards%20App)
+#### [31. Flashcards GUI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-031/Projects/Flashcards-App)
 
 ## Day 32
 
 ### Projects (Day 32)
 
-#### [32. Calculator GUI App](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/Projects/Calculator%20App/main.py)
+#### [32. Calculator GUI App](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-032/Projects/Calculator-App/main.py)
 
 ## Day 33
 
 ### Projects (Day 33)
 
-#### [33. Calculator GUI App v2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-033/Projects/Calculator%20App)
+#### [33. Calculator GUI App v2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-033/Projects/Calculator-App)
 
 ## Day 34
 
@@ -1965,7 +1965,7 @@ In this exercise, I explored handling KeyError exceptions in Python, specificall
 
 ### Projects (Day 37)
 
-#### [37. Habit Tracker App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-037/Projects/Habit%20Tracker%20App)
+#### [37. Habit Tracker App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-037/Projects/Habit-Tracker-App)
 
 ## Day 38
 
@@ -1977,23 +1977,23 @@ In this exercise, I explored handling KeyError exceptions in Python, specificall
 
 ### Projects (Day 39)
 
-#### [39. Rock Paper Scissors - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-039/Projects/Rock%20Paper%20Scissors%20App)
+#### [39. Rock Paper Scissors - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-039/Projects/Rock-Paper-Scissors-App)
 
 ## Day 40
 
 ### Projects (Day 40)
 
-#### [40. Rock Paper Scissors v2 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-040/Rock%20Paper%20Scissors%20App)
+#### [40. Rock Paper Scissors v2 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-040/Rock-Paper-Scissors-App)
 
 ## Day 41
 
 ### Projects (Day 41)
 
-#### [41. Introduction to HTML](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Projects/Introduction%20to%20HTML)
+#### [41. Introduction to HTML](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Projects/Introduction-to-HTML)
 
 ### Exercises (Day 41)
 
-#### [A. Heading Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Heading%20Element)
+#### [A. Heading Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Heading-Element)
 
 In this exercise, I explored the basics of HTML, particularly focusing on using heading elements to structure content. The HTML document starts with the standard `<!DOCTYPE html>` declaration and includes language, character encoding, and viewport meta tags in the `<head>` section, ensuring proper rendering and accessibility.
 
@@ -2003,7 +2003,7 @@ This structure not only provided a clear visual representation of the book's org
 
 Overall, this exercise was an effective introduction to HTML headings and their role in creating well-structured, accessible web content.
 
-#### [B. Paragraph Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Paragraph%20Element)
+#### [B. Paragraph Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Paragraph-Element)
 
 In this HTML exercise, I learned how to use paragraph elements to structure text content within a webpage. The HTML document begins with the standard declaration and includes essential meta tags in the `<head>` section, ensuring proper encoding and responsive design.
 
@@ -2013,7 +2013,7 @@ This exercise demonstrated the importance of the paragraph element in HTML for o
 
 Through this task, I gained practical experience in formatting text content on a webpage, understanding the role of paragraph elements in HTML, and the significance of clean, well-organized content structure for user experience and accessibility.
 
-#### [C. Void Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Void%20Elements)
+#### [C. Void Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Void-Elements)
 
 In this HTML exercise, I learned about void elements, which are special HTML elements that do not require a closing tag. The exercise focused on two such elements: `<br>` and `<hr>`.
 
@@ -2029,11 +2029,11 @@ Through this exercise, I gained a practical understanding of how void elements w
 
 ### Projects (Day 42)
 
-#### [42. Birthday Invite Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Projects/Birthday%20Invite%20Project)
+#### [42. Birthday Invite Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Projects/Birthday-Invite-Project)
 
 ### Exercises (Day 42)
 
-#### [A. Anchor Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Anchor%20Elements)
+#### [A. Anchor Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Anchor-Elements)
 
 In this exercise, I began to use anchor elements in HTML to create hyperlinks. The HTML document is structured with standard elements including the DOCTYPE declaration, meta tags for character encoding and viewport settings, and a meaningful title in the `<head>` section.
 
@@ -2056,7 +2056,7 @@ In this exercise, I learned about the basic structure of an HTML document, often
 
 4. **Body Section**: The `<body>` tag is where the content of the HTML document that will be visible to users is placed. In this boilerplate, the body is empty, serving as a placeholder for future content.
 
-#### [C. Image Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Image%20Elements)
+#### [C. Image Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Image-Elements)
 
 In this HTML exercise, I learned how to incorporate image elements into a webpage and use basic CSS for layout styling. The exercise focused on displaying two images, one of a kitten and one of a puppy, in a two-column layout.
 
@@ -2069,7 +2069,7 @@ In this HTML exercise, I learned how to incorporate image elements into a webpag
 
 This exercise was an excellent introduction to adding and styling images in HTML, demonstrating the use of the `<img>` tag and basic CSS. It highlighted the importance of responsive images in web design and provided practical experience in creating visually appealing and accessible web content.
 
-#### [D. List Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/List%20Elements)
+#### [D. List Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/List-Elements)
 
 In this HTML exercise, I learned how to create and format lists using unordered (`<ul>`) and ordered (`<ol>`) list elements. The exercise involved creating a web page for "Jordan's Cinnamon Roll Recipe," with sections for ingredients and instructions.
 
@@ -2079,7 +2079,7 @@ In this HTML exercise, I learned how to create and format lists using unordered 
 
 3. **Section Headings**: The document uses `<h1>`, `<h2>`, and `<h3>` tags for headings and subheadings, providing a clear structure and hierarchy to the content.
 
-#### [E. Nesting and Indentation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Nesting%20and%20Indentation)
+#### [E. Nesting and Indentation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Nesting-and-Indentation)
 
 In this exercise, I learned about nesting and indentation, two crucial aspects of writing clean, readable, and well-structured HTML code. The exercise involved creating a list with multiple levels of nested sub-lists, demonstrating how elements can be nested within each other to represent hierarchical relationships in content.
 
@@ -2095,11 +2095,11 @@ This exercise was essential in understanding how nesting and indentation work in
 
 ### Projects (Day 43)
 
-#### [43. Color Vocabulary Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Projects/Color%20Vocab%20Project)
+#### [43. Color Vocabulary Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Projects/Color-Vocab)
 
 ### Exercises (Day 43)
 
-#### [A. Adding CSS](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/Adding%20CSS)
+#### [A. Adding CSS](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/Adding-CSS)
 
 In this exercise, I explored the three primary methods of adding CSS to an HTML document: inline, internal, and external styling. Each method has its own use cases and benefits.
 
@@ -2120,7 +2120,7 @@ In this exercise, I explored the three primary methods of adding CSS to an HTML 
 
 This exercise was instrumental in understanding the different ways to apply CSS to HTML documents. It highlighted the importance of choosing the appropriate method based on the project's scope and the need for maintainability and scalability in web development. It also demonstrated how CSS enhances the visual presentation of web pages, making them more appealing and user-friendly.
 
-#### [B. CSS Selectors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/CSS%20Selectors)
+#### [B. CSS Selectors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/CSS-Selectors)
 
 In this exercise, I learned about different types of CSS selectors and how they are used to apply styles to HTML elements. The HTML document `index.html` provided the structure to demonstrate each selector type, and the corresponding CSS in `style.css` applied specific styles based on these selectors.
 
@@ -2148,11 +2148,11 @@ In this exercise, I learned about different types of CSS selectors and how they 
 
 ### Projects (Day 44)
 
-#### [44. Motivational Meme Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Projects/Motivation%20Meme%20Project)
+#### [44. Motivational Meme Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Projects/Motivation-Meme-Site)
 
 ### Exercises (Day 44)
 
-#### [A. CSS Box Model](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS%20Box%20Model)
+#### [A. CSS Box Model](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS-Box-Model)
 
 In this HTML and CSS exercise, I explored the CSS Box Model, a fundamental concept in web design that defines how different parts of a webpage's layout work together. The exercise involved creating three boxes with different styles to understand how padding, borders, and margins interact.
 
@@ -2172,7 +2172,7 @@ In this HTML and CSS exercise, I explored the CSS Box Model, a fundamental conce
 5. **Margin Adjustment**:
    - Margins were adjusted to ensure the corners of each box touched. The `.yellow` box was shifted to the right by setting its left margin to 260px, and the `.red` box was slightly shifted by setting its left margin to 40px.
 
-#### [B. CSS Colors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS%20Colors)
+#### [B. CSS Colors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS-Colors)
 
 In this exercise, I learned about applying different color styles using CSS. The exercise involved styling the background of the webpage and the text and background colors of headings (`<h1>` and `<h2>`).
 
@@ -2189,7 +2189,7 @@ These styles were directly applied within a `<style>` tag in the head of the HTM
 
 This exercise was particularly useful for understanding how to use CSS for coloring and how different color formats (like named colors, hex codes) can be applied in web design. It highlighted the importance of color in creating visually appealing and accessible web pages.
 
-#### [C. Font Properties](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/Font%20Properties)
+#### [C. Font Properties](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/Font-Properties)
 
 In these exercises, I learned about various font properties in CSS, how to apply them, and their effects on the appearance of text in a webpage. The exercises were divided into two parts: exploring different font sizes and experimenting with various font families.
 
@@ -2216,11 +2216,11 @@ I learned about the significance of choosing the right font size, weight, and fa
 
 ### Projects (Day 45)
 
-#### [45. 100 Movies You Must Watch](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Projects/100%20Movies%20You%20Must%20Watch)
+#### [45. 100 Movies You Must Watch](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Projects/100-Movies-You-Must-Watch)
 
 ### Exercises (Day 45)
 
-#### [A. Parsing HTML and Making Soup](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Parsing%20HTML%20and%20Making%20Soup)
+#### [A. Parsing HTML and Making Soup](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Parsing-HTML-Making-Soup)
 
 In this exercise, I explored web scraping in Python using the BeautifulSoup library and requests module. The exercise was divided into two main parts.
 
@@ -2239,7 +2239,7 @@ Several key functionalities of BeautifulSoup were demonstrated:
 
 Through this exercise, I learned how to scrape and parse web page data, manipulate HTML content, and extract specific information using BeautifulSoup's various methods. This is a foundational skill in web scraping, enabling the extraction of data from web pages for analysis or data gathering purposes.
 
-#### [B. Scraping a Live Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Scraping%20a%20Live%20Site)
+#### [B. Scraping a Live Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Scraping-a-Live-Site)
 
 In this exercise, I learned to scrape live website data using BeautifulSoup and requests in Python. The primary objective was to extract article titles and their corresponding links from the Hacker News website.
 
@@ -2261,19 +2261,19 @@ This exercise was an excellent practice in live web scraping, particularly in us
 
 ### Projects (Day 46)
 
-#### [46. Billboard Hot 100 Playlist Creator - CLI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-046/Projects/Billboard%20Hot%20100)
+#### [46. Billboard Hot 100 Playlist Creator - CLI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-046/Projects/Billboard-Hot-100)
 
 ## Day 47
 
 ### Projects (Day 47)
 
-#### [47. Amazon Price Tracker](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-047/Projects/Amazon%20Price%20Tracker)
+#### [47. Amazon Price Tracker](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-047/Projects/Amazon-Price-Tracker)
 
 ## Day 48
 
 ### Projects (Day 48)
 
-#### [48. Cookie Clicker Automation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-048/Projects/Cookie%20Clicker)
+#### [48. Cookie Clicker Automation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-048/Projects/Cookie-Clicker)
 
 ### Exercises (Day 48)
 
@@ -2303,25 +2303,25 @@ Through this exercise, I gained hands-on experience in using Selenium for web sc
 
 ### Projects (Day 49)
 
-#### [49. Color Madness Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-049/Projects/Color%20Madness)
+#### [49. Color Madness Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-049/Projects/Color-Madness)
 
 ## Day 50
 
 ### Projects (Day 50)
 
-#### [50. Billboard Hot 100 Playlist Creator v2 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-050/Projects/Billboard%20Hot%20100)
+#### [50. Billboard Hot 100 Playlist Creator v2 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-050/Projects/Billboard-Hot-100)
 
 ## Day 51
 
 ### Projects (Day 51)
 
-#### [51. Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-051/Projects/Billboard%20Hot%20100)
+#### [51. Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-051/Projects/Billboard-Hot-100)
 
 ## Day 52
 
 ### Projects (Day 52)
 
-#### [52. Billboard Hot 100 Playlist Creator v4 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-052/Projects/Billboard%20Hot%20100)
+#### [52. Billboard Hot 100 Playlist Creator v4 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-052/Projects/Billboard-Hot-100)
 
 ## Day 53
 
