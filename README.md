@@ -1875,6 +1875,34 @@ I gained a deeper understanding of how different layout managers affect the plac
 
 #### [28. Pomodoro Timer](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-028/Projects/Pomodoro-Timer)
 
+![Pomodoro Timer - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-028/028-pomodoro-timer-1.png)
+
+![Pomodoro Timer - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-028/028-pomodoro-timer-2.png)
+
+![Pomodoro Timer - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-028/028-pomodoro-timer-3.png)
+
+![Pomodoro Timer - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-028/028-pomodoro-timer-4.png)
+
+![Pomodoro Timer - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-028/028-pomodoro-timer-5.png)
+
+![Pomodoro Timer - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-028/028-pomodoro-timer-6.png)
+
+In this exercise, I created a Pomodoro timer using Python's Tkinter library, which is used for building graphical user interfaces. The Pomodoro technique is a time management method that involves working for a set period (usually 25 minutes), followed by a short break, and repeating this cycle with a longer break after four work periods.
+
+1. **Constants and Variables**: I defined constants for UI colors, timer settings, and initialized variables to keep track of repetitions and timer marks.
+
+2. **Countdown Mechanism**: The `timer_countdown` function manages the countdown. It converts the remaining time into a mm:ss format and updates the timer display. It uses a recursive approach to decrease the count every second, and when the count reaches zero, it starts the next timer phase.
+
+3. **Timer Control**: The `start_timer` function controls the flow of the Pomodoro cycles. It alternates between work and break phases, changing the timer label and colors accordingly. Every work cycle is followed by a short break and every four work cycles by a longer break, with visual marks (✓) added for each completed phase.
+
+4. **Reset Functionality**: The `reset_timer` function stops the current countdown and resets the timer and UI elements to their default state.
+
+5. **UI Setup**: The user interface is created using Tkinter widgets. It includes a timer label, a canvas to display a tomato image and the countdown, start and reset buttons, and a label to show progress marks.
+
+6. **Event Loop**: Finally, the Tkinter event loop (`mainloop()`) is called to keep the application running.
+
+This exercise demonstrated how to build an interactive GUI application in Python, integrating time-based functions, event handling, and UI customization. It provided practical experience in managing application state, updating UI elements in real-time, and implementing user-driven functionality such as starting and resetting the timer.
+
 ## Day 29
 
 ### Projects (Day 29)
