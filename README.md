@@ -2094,6 +2094,53 @@ Through this exercise, I learned how to create a functional and visually appeali
 
 #### [33. Calculator GUI App v2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-033/Projects/Calculator-App)
 
+![Calculator GUI App v2 Upgrade - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-1.png)
+
+![Calculator GUI App v2 Upgrade - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-2.png)
+
+![Calculator GUI App v2 Upgrade - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-3.png)
+
+![Calculator GUI App v2 Upgrade - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-4.png)
+
+![Calculator GUI App v2 Upgrade - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-5.png)
+
+![Calculator GUI App v2 Upgrade - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-6.png)
+
+![Calculator GUI App v2 Upgrade - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-7.png)
+
+![Calculator GUI App v2 Upgrade - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-8.png)
+
+![Calculator GUI App v2 Upgrade - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-9.png)
+
+![Calculator GUI App v2 Upgrade - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-10.png)
+
+![Calculator GUI App v2 Upgrade - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-11.png)
+
+![Calculator GUI App v2 Upgrade - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-033/033-calculator-app-v2-12.png)
+
+In this enhanced version of the EasyCalc calculator application, I incorporated several advanced features and functionalities, making it more versatile and user-friendly. This version includes theme cycling, expanded calculator view, and additional mathematical operations.
+
+1. **Theme Cycling**: The application now supports multiple color themes, which can be cycled through using a dedicated function, `cycle_theme`. Themes are defined in the `THEMES` dictionary, and the `apply_theme` function applies the selected theme colors to the calculator's UI elements. This feature adds a customizable and dynamic visual appeal to the application.
+
+2. **Expanded View**: I introduced an expandable calculator view, toggled by the `handle_expand_button`. When expanded, the calculator's width doubles, providing more space for additional features or future enhancements. The `fill_empty_spaces` and `remove_expanded_buttons` functions manage the appearance and removal of placeholder buttons in this expanded view.
+
+3. **Additional Mathematical Operations**:
+    - **Square Root**: The `handle_sqrt_button` calculates the square root of the current input.
+    - **Exponentiation**: The `handle_exp_button` squares the current input.
+    - **Factorial**: The `handle_fact_button` calculates the factorial of the current input.
+
+4. **Improved Operation Handling**: The `handle_operation` function has been generalized to handle different arithmetic operations, reducing repetitive code and enhancing maintainability.
+
+5. **Dynamic Canvas Size**: The `get_canvas_width` function dynamically determines the canvas width based on whether the calculator is in expanded mode or not. This ensures that the display text is always correctly aligned.
+
+6. **Keyboard Input Handling**: The application now responds to keyboard inputs, allowing users to interact with the calculator using their keyboard. The `on_key_press` function maps key presses to corresponding calculator functions, such as number entry, operations, and theme cycling.
+
+7. **UI Update and Refactoring**: The user interface has been updated to accommodate the new features. I refactored the button creation process into the `create_button` function for better code organization and readability.
+
+8. **Error Handling**: The application includes error handling for operations like square root and factorial to manage invalid inputs or calculations.
+
+Through this upgrade, the calculator application has become more powerful and user-friendly, offering a variety of functionalities and a customizable interface. This project demonstrates the adaptability and scalability of Python and Tkinter in creating sophisticated GUI applications.
+
 ## Day 34
 
 ### Projects (Day 34)
