@@ -2147,6 +2147,51 @@ Through this upgrade, the calculator application has become more powerful and us
 
 #### [34. Quizzler Quiz App - GUI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-034/Projects/Quizzler)
 
+![Quizzler Quiz GUI App - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-034/034-quizzler-app-1.png)
+
+![Quizzler Quiz GUI App - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-034/034-quizzler-app-2.png)
+
+![Quizzler Quiz GUI App - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-034/034-quizzler-app-3.png)
+
+![Quizzler Quiz GUI App - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-034/034-quizzler-app-4.png)
+
+![Quizzler Quiz GUI App - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-034/034-quizzler-app-5.png)
+
+In this exercise, I developed a "Quizzler" application using Python, which is an interactive quiz app with a graphical user interface (GUI). The application fetches quiz questions from the Open Trivia Database API and presents them to the user in a true/false format.
+
+Key components and functionalities:
+
+1. **Data Fetching and Parsing (`data.py`)**:
+    - Uses the `requests` library to fetch quiz questions from an online API.
+    - The parameters specify the number of questions (`amount`) and their type (`boolean`).
+    - The fetched data is parsed into a JSON format, and the relevant `question_data` is extracted.
+
+2. **Question Model (`question_model.py`)**:
+    - Defines a `Question` class to represent each quiz question, with attributes for the question text and the correct answer.
+
+3. **Quiz Logic (`quiz_brain.py`)**:
+    - Implements the `QuizBrain` class to manage the quiz logic.
+    - It tracks the current question number, the user's score, and the list of question objects.
+    - The `still_has_questions` method checks if there are more questions to be asked.
+    - The `next_question` method retrieves the next question and formats it for display.
+    - The `check_answer` method compares the user's answer to the correct answer and updates the score accordingly.
+
+4. **User Interface (`ui.py`)**:
+    - Builds the GUI for the quiz using Tkinter.
+    - Sets up a window with a title, score label, and a canvas to display questions.
+    - Includes 'True' and 'False' buttons for the user to submit their answers.
+    - The `get_next_question` method updates the display with the next question or shows the final score if the quiz is finished.
+    - The `true_pressed` and `false_pressed` methods handle button clicks and pass the user's answer to the quiz logic for validation.
+    - The `give_feedback` method provides visual feedback (changing the canvas color) based on whether the user's answer was correct or incorrect.
+
+5. **Main Application Flow (`main.py`)**:
+    - Constructs a list of `Question` objects from the `question_data`.
+    - Initializes the `QuizBrain` with the question bank.
+    - Creates the `QuizInterface` object, passing the `QuizBrain` instance to it.
+    - After the quiz completes, it prints the final score to the console.
+
+This project demonstrates the integration of various Python modules and concepts, such as API requests, object-oriented programming, and GUI development with Tkinter. The application offers a dynamic quiz experience, fetching different sets of questions each time it's run, and provides immediate feedback to users on their answers.
+
 ## Day 35
 
 ### Projects (Day 35)
