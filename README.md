@@ -2198,6 +2198,67 @@ This project demonstrates the integration of various Python modules and concepts
 
 #### [35. Quizzler Quiz App v2 Upgrade - GUI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-035/Projects/Quizzler)
 
+![Quizzler Quiz GUI App v2 Upgrade - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-1.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-2.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-3.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-4.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-5.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-6.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-7.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-8.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-9.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-10.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-11.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-12.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-13.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 14](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-14.png)
+
+![Quizzler Quiz GUI App v2 Upgrade - Image 15](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-035/035-quizzler-app-v2-15.png)
+
+In this upgraded version of the "Quizzler" application, I introduced new features to enhance user interactivity and quiz customization. The application now includes category selection and difficulty level options, making the quiz experience more diverse and tailored to the user's preferences.
+
+Key enhancements and functionalities:
+
+1. **Category Selection (`CategorySelector` in `ui.py`)**:
+    - A new class, `CategorySelector`, allows users to select a quiz category from a list fetched from the Open Trivia Database API.
+    - The user interface for category selection is created using Tkinter, featuring a dropdown menu to choose from various categories.
+    - The selected category ID is returned and used to fetch relevant quiz questions.
+
+2. **Difficulty Selection (`DifficultySelector` in `ui.py`)**:
+    - The `DifficultySelector` class lets users choose the difficulty level of the quiz questions (easy, medium, or hard).
+    - This selection is reflected in the API request to fetch questions of the selected difficulty.
+
+3. **Enhanced Data Fetching (`get_question_data` in `data.py`)**:
+    - The `get_question_data` function is now capable of fetching questions based on the chosen category and difficulty.
+    - If no questions are available for the selected category at the specified difficulty, the function iteratively checks for questions at lower difficulty levels.
+
+4. **Main Application Flow with User Choices (`main.py`)**:
+    - The application flow now starts with the difficulty and category selection.
+    - If no questions are available for the selected combination, the user is prompted to select a different category.
+    - Once a valid set of questions is fetched, the quiz proceeds as in the previous version.
+
+5. **Quiz Interface (`QuizInterface` in `ui.py`)**:
+    - The `QuizInterface` class remains the central part of the user interface, now starting after the user has made their selections.
+    - It handles question display, user responses, score updates, and provides visual feedback based on the correctness of the answers.
+
+6. **Improved Error Handling and User Feedback**:
+    - The application includes enhanced error handling and user feedback, particularly when dealing with unavailable question categories or difficulties.
+
+Through these upgrades, the Quizzler app has become more interactive and customizable. Users can now enjoy a more personalized quiz experience by selecting their preferred categories and difficulty levels. This project exemplifies the use of API integration, advanced GUI development with Tkinter, and logical structuring of an application to improve user experience and functionality.
+
 ## Day 36
 
 ### Projects (Day 36)
