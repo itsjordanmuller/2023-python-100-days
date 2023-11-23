@@ -1909,6 +1909,40 @@ This exercise demonstrated how to build an interactive GUI application in Python
 
 #### [29. Password Manager](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-029/Projects/Password-Manager)
 
+![Password Manager - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-029/029-password-manager-1.png)
+
+![Password Manager - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-029/029-password-manager-2.png)
+
+![Password Manager - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-029/029-password-manager-3.png)
+
+![Password Manager - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-029/029-password-manager-4.png)
+
+![Password Manager - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-029/029-password-manager-5.png)
+
+![Password Manager - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-029/029-password-manager-6.png)
+
+![Password Manager - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-029/029-password-manager-7.png)
+
+In this exercise, I developed a Password Manager application using Python, integrating the Tkinter library for the graphical user interface and JSON for data storage. The application includes features for generating random passwords, saving them, searching for existing entries, and displaying them in a user-friendly format.
+
+Key aspects of the program:
+
+1. **Password Generation**: The `gen_password` function creates a secure, random password. It combines a mix of letters, numbers, and symbols, ensuring a strong and unpredictable password. The generated password is then automatically copied to the clipboard for easy use.
+
+2. **Data Storage**: Passwords, along with associated website and email/username details, are stored in a JSON file. This allows for persistent storage of data between application uses.
+
+3. **Search Functionality**: The `search_data` function enables users to search for a password by entering the website name. If the website is found in the data file, it displays the associated email/username and password.
+
+4. **Saving Passwords**: The `save_data` function validates the input fields and then saves the new password entry to the JSON file. It ensures that all fields are filled before saving and updates the existing data file or creates a new one if it doesn't exist.
+
+5. **Error Handling**: The program includes error handling for situations like a missing data file or issues with reading the JSON file. It uses message boxes to inform the user of any issues encountered.
+
+6. **User Interface**: The GUI is built using Tkinter widgets, including labels, entry boxes, buttons, and a canvas to display an image. The layout is organized and user-friendly, making it easy for users to interact with the application.
+
+7. **Event Loop**: The Tkinter event loop (`mainloop()`) is used to keep the application running and responsive to user interactions.
+
+Through this exercise, I gained practical experience in building a complete application with Python, including aspects of GUI design, file handling, data storage, and application logic.
+
 ## Day 30
 
 ### Exercises (Day 30)
