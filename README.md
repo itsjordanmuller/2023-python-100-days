@@ -2159,8 +2159,6 @@ Through this upgrade, the calculator application has become more powerful and us
 
 In this exercise, I developed a "Quizzler" application using Python, which is an interactive quiz app with a graphical user interface (GUI). The application fetches quiz questions from the Open Trivia Database API and presents them to the user in a true/false format.
 
-Key components and functionalities:
-
 1. **Data Fetching and Parsing (`data.py`)**:
     - Uses the `requests` library to fetch quiz questions from an online API.
     - The parameters specify the number of questions (`amount`) and their type (`boolean`).
@@ -2230,8 +2228,6 @@ This project demonstrates the integration of various Python modules and concepts
 
 In this upgraded version of the "Quizzler" application, I introduced new features to enhance user interactivity and quiz customization. The application now includes category selection and difficulty level options, making the quiz experience more diverse and tailored to the user's preferences.
 
-Key enhancements and functionalities:
-
 1. **Category Selection (`CategorySelector` in `ui.py`)**:
     - A new class, `CategorySelector`, allows users to select a quiz category from a list fetched from the Open Trivia Database API.
     - The user interface for category selection is created using Tkinter, featuring a dropdown menu to choose from various categories.
@@ -2263,7 +2259,49 @@ Through these upgrades, the Quizzler app has become more interactive and customi
 
 ### Projects (Day 36)
 
-#### [36. Tic-Tac-Toe App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-036/Projects/Tic-Tac-Toe)
+#### [36. Tic-Tac-Toe GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-036/Projects/Tic-Tac-Toe)
+
+![Tic-Tac-Toe GUI App - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-036/036-tic-tac-toe-1.png)
+
+![Tic-Tac-Toe GUI App - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-036/036-tic-tac-toe-2.png)
+
+![Tic-Tac-Toe GUI App - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-036/036-tic-tac-toe-3.png)
+
+![Tic-Tac-Toe GUI App - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-036/036-tic-tac-toe-4.png)
+
+![Tic-Tac-Toe GUI App - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-036/036-tic-tac-toe-5.png)
+
+![Tic-Tac-Toe GUI App - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-036/036-tic-tac-toe-6.png)
+
+![Tic-Tac-Toe GUI App - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-036/036-tic-tac-toe-7.png)
+
+In this exercise, I developed a simple Tic-Tac-Toe game using Python and Tkinter. The application features a graphical user interface that allows two players to play the game by clicking on a grid to place their 'X' or 'O'.
+
+1. **User Interface (`ui.py`)**:
+    - The `UserInterface` class creates the main window for the game with a title "Tic-Tac-Toe".
+    - A 3x3 grid of canvases is created where players can click to place their 'X' or 'O'.
+    - The `turn_label` displays which player's turn it is ('X' or 'O') with corresponding background color changes.
+    - The game randomly decides who starts first.
+    - Images for 'X' and 'O' are loaded and resized to fit the canvas.
+
+2. **Game Interaction**:
+    - Players place an 'X' or 'O' by clicking left or right mouse buttons, respectively.
+    - The `place_x` and `place_o` methods handle these actions and update the canvas and the game state.
+    - After each move, the application checks if there is a winner using the `check_win` method.
+
+3. **Winning Logic (`check_win` method)**:
+    - The method checks all possible winning combinations (rows, columns, diagonals) to see if either player has won.
+    - If a player wins, the `end_game` method is called to update the UI and disable further moves.
+
+4. **Ending and Resetting the Game**:
+    - The `end_game` method changes the `turn_label` to show the winner and changes the background color to green.
+    - It unbinds click events to prevent further moves and displays a "REPLAY" button.
+    - The `reset_game` method is linked to the "REPLAY" button, which resets the game to its initial state for a new round.
+
+5. **Main Application Flow (`main.py`)**:
+    - The main script initializes the `UserInterface` class, thereby starting the game.
+
+Through this project, I learned how to build a basic interactive game using Tkinter, handle events, manage application state, and update the user interface based on game logic.
 
 ## Day 37
 
