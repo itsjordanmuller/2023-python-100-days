@@ -1949,6 +1949,8 @@ Through this exercise, I gained practical experience in building a complete appl
 
 #### [A. Catching Exceptions](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-030/Exercises/1-catching-exceptions.py)
 
+![Catching Exceptions - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-030/030-catching-exceptions.png)
+
 In this exercise, I learned about handling exceptions in Python, which are crucial for writing robust and error-resistant programs. The code snippets provided cover various common exceptions and demonstrate how to manage them effectively using `try`, `except`, `else`, and `finally` blocks.
 
 1. **FileNotFoundError**: When trying to read a file that doesn't exist (`a_file.txt`), I learned to catch this exception. If the file is not found, it's created and written to, preventing the program from crashing.
