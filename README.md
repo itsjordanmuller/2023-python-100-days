@@ -2309,6 +2309,62 @@ Through this project, I learned how to build a basic interactive game using Tkin
 
 #### [37. Habit Tracker App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-037/Projects/Habit-Tracker-App)
 
+![Habit Tracker App - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-1.png)
+
+![Habit Tracker App - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-2.png)
+
+![Habit Tracker App - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-3.png)
+
+![Habit Tracker App - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-4.png)
+
+![Habit Tracker App - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-5.png)
+
+![Habit Tracker App - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-6.png)
+
+![Habit Tracker App - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-7.png)
+
+![Habit Tracker App - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-8.png)
+
+![Habit Tracker App - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-9.png)
+
+![Habit Tracker App - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-10.png)
+
+![Habit Tracker App - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-11.png)
+
+![Habit Tracker App - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-12.png)
+
+![Habit Tracker App - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-037/037-habit-tracker-app-13.png)
+
+In this exercise, I developed a Habit Tracker application using Python, the Pixela API, and environment variables for secure token storage. The application allows users to track their daily habits by creating a graph on Pixela and updating it with their progress.
+
+1. **Environment Variable Loading**:
+    - The `dotenv` library is used to load environment variables from a `.env` file. This is crucial for securely storing and accessing sensitive information like the Pixela API token.
+
+2. **Pixela API Integration**:
+    - The Pixela API is used for creating a user account, generating graphs, and adding or updating "pixels" (data points) to track habits.
+
+3. **User Registration**:
+    - A user account is created on Pixela with a predefined username and token. The user agrees to the terms of service and confirms they are not a minor (`agreeTermsOfService` and `notMinor`).
+
+4. **Graph Creation and Configuration**:
+    - A graph is configured with specific settings like ID, name, unit of measurement, data type, and color. This graph is used to track the user's habit.
+
+5. **Adding and Updating Pixels**:
+    - The application can add a new pixel to the graph for the current date, representing the completion of a habit for that day.
+    - The user can also update the quantity for a specific date's pixel, allowing them to modify their habit tracking data.
+
+6. **Date Formatting**:
+    - The current date is formatted to match Pixela's required format (`%Y%m%d`) using Python's `datetime` module.
+
+7. **HTTP Requests**:
+    - The `requests` library is used to make HTTP requests to the Pixela API. This includes creating a user, creating and configuring a graph, adding a new pixel, updating an existing pixel, and deleting a pixel.
+    - Each request includes appropriate headers for authentication using the user's token.
+
+8. **Commented Requests**:
+    - Certain API request lines are commented out, indicating that they were likely used for testing purposes and are not part of the main application flow.
+
+This Habit Tracker application demonstrates practical use of external APIs, secure handling of sensitive data using environment variables, and HTTP request handling in Python. It provides a foundation for building a habit tracking tool that can be further extended with more features like different types of habits, visualization of progress, or integration with other services.
+
 ## Day 38
 
 ### Projects (Day 38)
