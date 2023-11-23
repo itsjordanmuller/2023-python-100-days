@@ -2369,7 +2369,65 @@ This Habit Tracker application demonstrates practical use of external APIs, secu
 
 ### Projects (Day 38)
 
-#### [38. Tic-Tac-Toe App v2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-038/Projects/Tic-Tac-Toe)
+#### [38. Tic-Tac-Toe GUI App v2 Upgrade](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-038/Projects/Tic-Tac-Toe)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-1.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-2.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-3.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-4.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-5.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-6.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-7.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-8.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-9.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-10.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-11.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-12.png)
+
+![Tic-Tac-Toe GUI App v2 Upgrade - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-038/038-tic-tac-toe-v2-13.png)
+
+In the upgraded version of the Tic-Tac-Toe game, I introduced several new features to enhance gameplay and user experience. These include score tracking, round management, and determining the overall winner of a series of games.
+
+1. **Score and Round Tracking**:
+    - The game now keeps track of scores for both 'X' and 'O' players, as well as the current round number.
+    - A new `score_canvas` is created at the top of the window to display the scores and round information.
+
+2. **Visual Enhancements for Score Display**:
+    - The score display includes stylized rectangles and texts to indicate players' scores and the current round number.
+    - Different colors are used to represent each player ('red' for 'X' and 'blue' for 'O').
+
+3. **Gameplay Mechanics**:
+    - The game still alternates turns between 'X' and 'O', with each player placing their mark by clicking the left or right mouse button.
+    - The `place_x` and `place_o` methods have been updated to check for a draw condition in addition to a win.
+
+4. **Win and Draw Handling**:
+    - When a player wins a round, the game updates the respective player's score and displays a 'Next Round' button.
+    - In case of a draw, the game also indicates this outcome and displays the 'Next Round' button.
+    - The `end_draw_game` method handles the draw scenario, similar to the `end_game` method for winning.
+
+5. **Next Round and Game Reset**:
+    - The `reset_game` method prepares the game for the next round by resetting the board and incrementing the round number.
+    - The scores are updated, and the game continues until one player wins two out of three rounds.
+
+6. **Determining the Overall Winner**:
+    - The `check_game_over` method checks if either player has won two rounds and ends the overall game if so.
+    - The `end_whole_game` method displays the overall winner and changes the 'Next Round' button to 'Restart Game'.
+
+7. **Restarting the Game**:
+    - The `restart_game` method resets the scores, round number, and the game board, allowing players to start a new series of games.
+
+Through these upgrades, the Tic-Tac-Toe game has become more interactive and engaging, offering a competitive series of rounds and clear tracking of scores and rounds.
 
 ## Day 39
 
