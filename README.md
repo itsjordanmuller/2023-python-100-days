@@ -1995,6 +1995,42 @@ In this exercise, I explored handling KeyError exceptions in Python, specificall
 
 #### [31. Flashcards GUI Application](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-031/Projects/Flashcards-App)
 
+![Flashcards GUI Application - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-031/031-flashcards-app-1.png)
+
+![Flashcards GUI Application - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-031/031-flashcards-app-2.png)
+
+![Flashcards GUI Application - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-031/031-flashcards-app-3.png)
+
+![Flashcards GUI Application - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-031/031-flashcards-app-4.png)
+
+![Flashcards GUI Application - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-031/031-flashcards-app-5.png)
+
+![Flashcards GUI Application - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-031/031-flashcards-app-6.png)
+
+![Flashcards GUI Application - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-031/031-flashcards-app-7.png)
+
+![Flashcards GUI Application - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-031/031-flashcards-app-8.png)
+
+In this exercise, I created a Flashcards GUI application for language learning using Python, Tkinter for the graphical interface, and Pandas for data handling. This application focuses on helping users learn French words by displaying them on flashcards and allowing them to indicate whether they know the word or not.
+
+1. **Data Setup**: The application uses a CSV file containing French words and their English translations. It checks if a separate file for words to learn exists, creating one if it doesn't, or loading it if it does.
+
+2. **Flashcard Functionality**: The main feature is the display of flashcards showing French words. After a set amount of time (defined by `FLIP_TIME`), the card flips to reveal the English translation. The user can then indicate whether they knew the word or not using the right (correct) or wrong (incorrect) buttons.
+
+3. **Interactive Buttons**: Two buttons are provided – one for indicating the word is known (right) and the other for unknown (wrong). Clicking the right button removes the word from the learning list, while the wrong button simply changes to the next word.
+
+4. **Word Management**: When a word is marked as known, the `remove_word_from_learn_list` function removes it from the DataFrame and updates the CSV file. This ensures that the user only sees words they are still learning.
+
+5. **Dynamic Content Update**: The `change_word` function randomly selects a new French word and updates the flashcard. It also manages the automatic flipping of the card to show the English translation after the set interval.
+
+6. **Card Flipping Animation**: The `flip_card` function updates the canvas to show the opposite side of the flashcard (French or English) along with the corresponding text.
+
+7. **User Interface**: The application has a simple and user-friendly interface, using a canvas to display flashcards and buttons with images for user interactions. The UI design is clean and conducive to focused learning.
+
+8. **Event Loop**: The Tkinter event loop (`mainloop()`) keeps the application running and responsive to user actions.
+
+Through this exercise, I learned how to integrate various aspects of Python programming, including GUI design, event handling, file operations with Pandas, and logic to create an interactive and educational application. This project highlights the versatility of Python in creating applications that are both functional and engaging for users.
+
 ## Day 32
 
 ### Projects (Day 32)
