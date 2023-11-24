@@ -3399,6 +3399,28 @@ In summary, BMI Calculator V3 was an insightful step into the world of GUI devel
 
 #### [54. Create Your Own Python Decorator](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Projects/Create%20Your%20Own%20Python%20Decorator)
 
+In this lesson, I created my own Python decorator to measure the execution time of different functions. Here's a summary of what I did and learned:
+
+1. **Understanding Decorators**: A decorator in Python is a function that extends the behavior of another function without explicitly modifying it. Decorators are a powerful feature in Python, allowing for clean and reusable code.
+
+2. **Setting Up the Decorator**: 
+   - I defined a decorator function `speed_calc_decorator` which takes another function as its argument.
+   - Inside the decorator, I defined an inner function `time_difference` that calculates the time before and after calling the passed function.
+
+3. **Measuring Execution Time**: 
+   - In `time_difference`, I used `time.time()` to get the current time in seconds before and after the execution of the function.
+   - I calculated the difference in these times, which gives the execution time of the function.
+
+4. **Displaying Results**: After executing the function, `time_difference` prints the name of the function and its execution time in seconds.
+
+5. **Applying the Decorator**:
+   - I applied the `speed_calc_decorator` to two functions, `fast_function` and `slow_function`, using the `@` syntax.
+   - Each of these functions performs a simple computation in a loop, with `slow_function` running a longer loop and expectedly taking more time.
+
+6. **Testing the Functions**: I called both `fast_function` and `slow_function` to see the decorator in action. The decorator effectively reported the execution time for each function, demonstrating the difference in their performance.
+
+Through this exercise, I learned how to write custom decorators in Python and use them to augment the functionality of other functions. This is particularly useful for adding common functionality (like logging, timing, or access control) to several functions in a consistent manner. This project was a practical introduction to advanced Python concepts like decorators, function wrappers, and timing code execution.
+
 ### Exercises (Day 54)
 
 #### [A. Introduction to Flask](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Exercises/Introduction%20to%20Flask)
