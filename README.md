@@ -2597,6 +2597,35 @@ Through this exercise, I gained a practical understanding of how void elements w
 
 ![Birthday Invite Project - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-042/042-birthday-invite-2.png)
 
+In this project, I created an HTML webpage for a birthday invitation. The goal was to design a simple yet engaging invitation that includes essential details about the birthday celebration.
+
+1. **Basic HTML Document Structure:**
+   - I used the `<!DOCTYPE html>` declaration to define the document as HTML5.
+   - The `<html lang="en">` tag specifies that the content is in English, which is helpful for accessibility and search engine optimization.
+
+2. **Head Section:**
+   - The `<meta charset="UTF-8" />` ensures proper encoding of the text.
+   - `<meta name="viewport" content="width=device-width, initial-scale=1.0" />` makes the webpage responsive to various screen sizes.
+   - The `<title>` tag sets "Birthday Invitation" as the page title.
+
+3. **Body Section:**
+   - I used `<h1>` and `<h2>` for the main headings, announcing the birthday and the date of the event.
+   - An image of a birthday cake, hosted externally, was embedded using the `<img>` tag, complete with an `alt` attribute for accessibility.
+   - A list (`<ul>`) with `<li>` items was used to inform guests about what to bring to the party.
+   - For the location, I provided a Google Maps link using the `<a>` tag, allowing guests to easily find the venue.
+
+**Accessibility and User Experience:**
+- **Alt Text for Image:** The alt text "A Birthday Cake with Lit Candles" describes the image, which is crucial for users who rely on screen readers.
+- **Clear Instructions:** The list format for what to bring and the direct link to the location make the invitation user-friendly and informative.
+
+**Learnings and Skills Applied:**
+- **HTML Syntax and Tags:** I practiced using different HTML tags appropriately to structure content.
+- **Embedding External Resources:** I learned how to embed external images and links into an HTML page.
+- **Accessibility Considerations:** The importance of alt attributes and clear, descriptive text was reinforced.
+- **Responsive Design Basics:** Using the viewport meta tag to ensure the invitation looks good on different devices.
+
+This project served as a practical exercise in creating a functional and aesthetically pleasing webpage using HTML. It combined basic web development skills with a focus on user experience and accessibility.
+
 ### Exercises (Day 42)
 
 #### [A. Anchor Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Anchor-Elements)
