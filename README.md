@@ -2903,6 +2903,14 @@ Through this exercise, I gained hands-on experience in using Selenium for web sc
 
 #### [50. Billboard Hot 100 Playlist Creator v2 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-050/Projects/Billboard-Hot-100)
 
+![Billboard Hot 100 Playlist Creator v2 Upgrade - GUI App - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-050/050-billboard-hot-100-v2-1.png)
+
+![Billboard Hot 100 Playlist Creator v2 Upgrade - GUI App - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-050/050-billboard-hot-100-v2-2.png)
+
+
+![Billboard Hot 100 Playlist Creator v2 Upgrade - GUI App - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-050/050-billboard-hot-100-v2-3.png)
+
+
 ## Day 51
 
 ### Projects (Day 51)
