@@ -3247,6 +3247,33 @@ This version provides a more organized and maintainable code structure while ret
 
 ![Billboard Hot 100 Playlist Creator v4 Upgrade - GUI App - Image 14](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-052/052-billboard-hot-100-v4-14.png)
 
+In this upgraded version (V4) of the Billboard Hot 100 playlist creator, several improvements and enhancements have been made to the graphical user interface (GUI) and code structure. Here's a summary of the key features and changes:
+
+**main.py**:
+1. **GUI Initialization**: The `GUI` class from the `gui.py` module is instantiated to create the graphical user interface.
+
+**gui.py**:
+1. **GUI Redesign**: The GUI has been redesigned for a more user-friendly experience with new features.
+2. **Date Selection**: Users can select a date using the calendar or manually input the year, month, and day.
+3. **Real-Time Date Updates**: The selected date is displayed in real-time as users interact with the calendar or input fields.
+4. **Date Validation**: Input fields have been enhanced with validation to ensure valid date entries.
+5. **Buttons and Status Labels**: Buttons for searching the date, searching songs, and creating a playlist have been added. Status labels provide feedback on the actions.
+6. **Entry Update Handling**: The `entry_updated` method updates the calendar and selected date label when an entry field is updated.
+7. **Initial Values**: The current date is set as the initial selected date, and year, month, and day entry fields are populated accordingly.
+8. **Improved Layout**: The layout and organization of elements have been improved for a cleaner look.
+
+**scrape.py**:
+1. **No Significant Changes**: The `Scraper` class, responsible for scraping Billboard Hot 100 data and creating Spotify playlists, remains largely unchanged from the previous version.
+
+**Summary**:
+- The GUI has been redesigned to provide a more intuitive date selection process.
+- Real-time date updates make it easier for users to visualize the selected date.
+- Input fields are validated to prevent invalid date entries.
+- Buttons and status labels provide clear feedback to the user during each step of the process.
+- The core functionality of scraping and playlist creation remains the same, encapsulated within the `Scraper` class.
+
+This upgraded version (V4) of the Billboard Hot 100 playlist creator offers an improved user interface and experience, making it more user-friendly and visually appealing.
+
 ## Day 53
 
 ### Projects (Day 53)
