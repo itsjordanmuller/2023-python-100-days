@@ -3183,6 +3183,36 @@ Overall, this upgraded version provides a visual interface for users to select a
 
 ![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-9.png)
 
+In this upgraded version (V3) of the Billboard Hot 100 playlist creator, the code structure has been further modularized and organized into separate files. Here's a summary of the main features and changes in the code:
+
+**main.py**:
+1. **GUI Initialization**:
+   - The `GUI` class from the `gui.py` module is imported and instantiated to create the graphical user interface.
+   
+**gui.py**:
+1. **GUI Class**:
+   - This class defines the graphical user interface for the application.
+   - It includes labels, entry fields, buttons, and status labels to interact with the user.
+   - Users can enter the year, month, and day, click buttons to perform actions, and receive status updates.
+   - The `search_date`, `search_songs`, and `create_playlist` methods are defined to handle user interactions and actions.
+
+**scrape.py**:
+1. **Scraper Class**:
+   - This class, named `Scraper`, is responsible for scraping Billboard Hot 100 data and creating Spotify playlists.
+   - It initializes the Spotify API with the provided credentials and stores scraped data.
+   - The `scrape` method retrieves Billboard data and saves it to a JSON file.
+   - The `create_playlist` method creates a Spotify playlist based on the scraped data.
+   - The `search_track` method searches for Spotify tracks based on song and artist names.
+   
+**Summary**:
+- The code has been modularized into separate files for better organization and readability.
+- The graphical user interface allows users to input a date, search for songs, and create playlists.
+- Status labels provide feedback to the user at each step of the process.
+- The core functionality of scraping and playlist creation is encapsulated within the `Scraper` class.
+- Spotify API credentials are loaded from environment variables.
+
+This version provides a more organized and maintainable code structure while retaining the functionality of the Billboard Hot 100 playlist creator with a graphical user interface.
+
 ## Day 52
 
 ### Projects (Day 52)
