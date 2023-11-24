@@ -2451,6 +2451,16 @@ Through these upgrades, the Tic-Tac-Toe game has become more interactive and eng
 
 ![Rock Paper Scissors - GUI App - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-039/039-rock-paper-scissors-8.png)
 
+In this exercise, I developed a graphical user interface (GUI) for a Rock Paper Scissors game using Python's Tkinter library, along with a basic game logic implementation.
+
+The `Game` class, defined in `game.py`, manages the game's core functionality. It keeps track of the player's and computer's scores and the possible choices ("rock", "paper", "scissors"). The class provides methods for the player's move, the computer's random move, calculating the result of a round, and retrieving the current scores.
+
+In `ui.py`, the `UserInterface` class creates and manages the GUI for the game. This class uses Tkinter to build the window, including buttons for the player's choices (rock, paper, scissors) and a canvas to display the scores and results. The images for the buttons are loaded and resized using the `PhotoImage` class. I set up the layout using the `Canvas` widget and added text and rectangles to create a visually appealing interface.
+
+The buttons for rock, paper, and scissors are linked to the `make_player_move` method, which in turn calls the `player_move` method from the `Game` class. This interaction triggers the game logic and updates the GUI with the results and updated scores. The method `update_game_canvas` displays the player's choice, the computer's choice, and the round result, while `update_score_canvas` updates the scores on the score canvas.
+
+Mouse-over effects on the buttons are achieved using the `bind` method, changing the text color when the mouse hovers over them.
+
 ## Day 40
 
 ### Projects (Day 40)
