@@ -3549,6 +3549,28 @@ The HTML structure of the resume is simple yet effective, using headings, paragr
 
 #### [57. Blog Site](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-057/Projects/Blog%20Site)
 
+In this lesson, I created a blog site using Flask, a micro web framework in Python, and enhanced it with HTML and CSS for styling. Here's a summary of what I did and learned:
+
+1. **Flask Application Setup**: I started by setting up a basic Flask application in `server.py`. This included importing Flask, rendering templates, and handling routes. Flask serves as the backend framework to handle web requests and serve HTML pages.
+
+2. **Data Retrieval**: I fetched blog post data from an external API using the `requests` library in Python. The data is stored in `all_posts`, which is a JSON object containing blog posts.
+
+3. **Routing**: Two main routes were created in the Flask app:
+   - The home route (`"/"`) renders `index.html`, displaying all blog posts.
+   - The blog post route (`"/posts/<id>"`) renders `post.html`, showing the details of a specific blog post based on its ID.
+
+4. **Templates with Jinja2**: Flask uses Jinja2 for templating. In `index.html`, I used a for loop (`{% for blogPost in posts %}`) to iterate over `all_posts` and display each post's title, subtitle, and a link to the full post. In `post.html`, I displayed the details of a single post using the `postID` variable passed from the Flask app.
+
+5. **HTML Structure**: Each HTML file has a basic structure with `head` and `body` sections. I included external links to the Raleway font and the CSS stylesheet.
+
+6. **CSS Styling**: In `styles.css`, I defined styles for the body, wrapper, card, and other elements to create a visually appealing layout. This included background colors, font styles, box shadows, and responsive widths.
+
+7. **Front-End Interactivity**: I implemented navigation between the home page and individual blog posts. Each blog post on the index page links to its detailed view through the `/posts/<id>` route.
+
+8. **Footer**: A fixed footer was added to both HTML templates, giving a consistent look across pages.
+
+Through this project, I gained hands-on experience in combining Flask with front-end technologies like HTML and CSS. I learned how to fetch and display data from an API, use Jinja2 templating effectively, and create a basic but functional web application layout. This exercise was a great way to understand how front-end and back-end technologies integrate to build dynamic websites.
+
 ### Exercises (Day 57)
 
 #### [A. Jinja Template Introduction](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-057/Exercises/Jinja%20Template%20Introduction)
