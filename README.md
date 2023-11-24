@@ -3646,6 +3646,26 @@ Through this exercise, I not only practiced implementing Bootstrap components bu
 
 #### [60. BMI Calculator v4 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-060/Projects/BMI%20Calculator%20GUI%20App)
 
+In the development of the BMI Calculator GUI App V4, I expanded on the foundational concepts of graphical user interface (GUI) design in Python, integrating interactive elements and backend logic for real-time calculations and display. This version showcases a significant leap in functionality compared to its predecessors.
+
+1. **Interactive GUI with Tkinter**: The major advancement in this version is the introduction of interactive elements. Users can now adjust their weight, height, and view their BMI calculation in real-time. Tkinter is used for all GUI components, demonstrating its versatility for creating dynamic interfaces.
+
+2. **BMI Calculation Integration**: The GUI is integrated with the BMI calculation logic from `calc.py`. This integration enables the application to calculate and display the BMI based on user input, illustrating how to connect frontend and backend in an application.
+
+3. **Real-Time User Input Handling**: The application allows users to modify their weight and height using interactive buttons. This is achieved through event bindings in Tkinter, where clicking on buttons triggers specific functions to increment or decrement the values.
+
+4. **Dynamic Content Update**: The BMI value and category, along with the corresponding colors, are updated dynamically based on user inputs. This not only provides immediate feedback to the user but also demonstrates effective use of Tkinter's canvas and text widgets for dynamic content management.
+
+5. **Conditional Logic for BMI Categories**: Like the previous version, V4 categorizes BMI results into health categories such as "Underweight," "Normal," "Overweight," and "Obese." This categorization is achieved using conditional logic in `calc.py`, which is then reflected in the GUI.
+
+6. **Color Coding for Health Categories**: Each BMI category is represented by a different color, enhancing the visual appeal and user experience. This introduces an additional layer of user interaction, as the color change provides a quick visual cue about the health category.
+
+7. **Event Bindings and Callbacks**: I learned about the importance of event handling in GUI applications. The buttons for incrementing and decrementing weight and height are bound to corresponding functions. This understanding is crucial for creating interactive applications.
+
+8. **Hover Effects for Enhanced UX**: To improve user experience, hover effects were added to the buttons, changing their colors when the mouse cursor is over them. This is a subtle yet effective way to make GUIs more intuitive and responsive.
+
+This project covers aspects of event handling, dynamic content updates, and integrating logical operations with a graphical interface, providing a robust understanding of building practical and interactive applications with Tkinter.
+
 ## Day 61
 
 ### Projects (Day 61)
