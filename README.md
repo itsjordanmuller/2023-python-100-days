@@ -2863,6 +2863,40 @@ Through this exercise, I gained hands-on experience in using Selenium for web sc
 
 #### [49. Color Madness Game](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-049/Projects/Color-Madness)
 
+![Color Madness Game - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-1.png)
+
+![Color Madness Game - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-2.png)
+
+![Color Madness Game - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-3.png)
+
+![Color Madness Game - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-4.png)
+
+![Color Madness Game - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-5.png)
+
+![Color Madness Game - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-6.png)
+
+![Color Madness Game - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-7.png)
+
+![Color Madness Game - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-8.png)
+
+![Color Madness Game - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-9.png)
+
+![Color Madness Game - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-10.png)
+
+![Color Madness Game - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-11.png)
+
+![Color Madness Game - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-12.png)
+
+![Color Madness Game - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-13.png)
+
+![Color Madness Game - Image 14](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-14.png)
+
+![Color Madness Game - Image 15](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-15.png)
+
+![Color Madness Game - Image 16](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-16.png)
+
+![Color Madness Game - Image 17](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-17.png)
+
 ## Day 50
 
 ### Projects (Day 50)
