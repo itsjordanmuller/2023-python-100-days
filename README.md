@@ -3583,6 +3583,29 @@ This was a practical introduction to web development with Flask and Jinja, highl
 
 #### [58. TinDog App Landing Page](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-058/Projects/TinDog%20Project)
 
+In this lesson, I created a landing page for a fictional app called "TinDog," which is a playful take on a dating app for dogs. Here's a summary of what I did and learned:
+
+1. **HTML Structure**: I started by setting up the basic HTML structure, defining the `DOCTYPE`, `html`, `head`, and `body` tags. I made sure to set the language attribute to English and included meta tags for character set and viewport settings for responsiveness.
+
+2. **Bootstrap Integration**: I integrated Bootstrap by linking to its CDN in the `head` section. This allowed me to utilize Bootstrap's grid system and pre-defined CSS classes for styling and layout, making the development process smoother and more efficient.
+
+3. **Custom CSS Styles**: I wrote custom CSS styles within a `<style>` tag. This included a gradient background for certain sections of the page, animation for the gradient, and styles for specific classes like `.icon-square` and `.circle-img`. These styles added visual appeal and distinctiveness to the page.
+
+4. **Web Page Sections**: The webpage was divided into several sections:
+   - **Title Section**: Featured a catchy headline, a download button, and an image, providing a clear and engaging introduction to the app.
+   - **Features Section**: Outlined the app's main features using Bootstrap's grid system for a clean layout, accompanied by icons and brief descriptions.
+   - **Testimonial Section**: Included a customer testimonial and an image to build trust and relatability.
+   - **Pricing Section**: Displayed different pricing plans in a card layout, making use of Bootstrap's card component.
+   - **Footer**: Contained navigational links and copyright information, structured using Bootstrap's grid system.
+
+5. **Responsive Design**: Throughout the development, I paid attention to making the page responsive. This involved using Bootstrap's responsive classes and ensuring that the custom styles also supported various screen sizes.
+
+6. **External Libraries**: Besides Bootstrap, I linked a Bootstrap JavaScript bundle at the end of the body for enabling interactive components.
+
+7. **Content and Imagery**: I learned the importance of content placement and imagery in making a web page visually appealing and user-friendly.
+
+Through this exercise, I honed my skills in HTML and CSS, learned to effectively use Bootstrap for layout and styling, and understood the principles of responsive web design. It was an engaging and practical project that combined creativity with technical skills.
+
 ### Exercises (Day 58)
 
 #### [A. Bootstrap Introduction](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-058/Exercises/Bootstrap%20Introduction)
