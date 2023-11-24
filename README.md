@@ -2796,6 +2796,31 @@ In this exercise, I learned about different types of CSS selectors and how they 
 
 ![Motivational Meme Website - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-044/044-motivational-meme-site.png)
 
+In the Motivational Meme Project, I created a simple yet visually striking webpage that displays a motivational meme. The project involved using HTML for the structure and external CSS for styling, with specific design requirements.
+
+
+1. **HTML Structure:**
+   - The HTML document begins with the `<!DOCTYPE html>` declaration and uses the `<html lang="en">` tag.
+   - In the `<head>`, I included meta tags for character encoding and responsiveness, the page title, and a link to the external CSS file.
+   - The `<body>` contains a `<div>` with the class `container`, which wraps an `<img>` tag for the meme image, an `<h1>` for the main text, and a `<p>` for the subtitle.
+
+2. **CSS Styling:**
+   - I imported the 'Libre Baskerville' font from Google Fonts using `@import url(...)`.
+   - Global margins were reset to zero for consistency across browsers (`* { margin: 0; }`).
+   - The body background was set to black with white text (`background-color: #000; color: #fff;`).
+   - The `.container` class styles the div to center its content using flexbox, with a top margin of 50px for spacing.
+   - The image received a 5px solid white border and was set to fill its container (`border: 5px solid #fff;`).
+   - The `<h1>` was styled with the 'Libre Baskerville' font, uppercase text, and specific margins and font size for visual impact.
+   - The paragraph's font size was set to enhance readability.
+
+- **HTML and CSS Integration:** I practiced integrating HTML and CSS to create a web design that meets specific aesthetic requirements.
+- **Font Importing and Usage:** I learned how to import and use a custom font from Google Fonts.
+- **Flexbox for Layout:** The use of flexbox for centering content demonstrated a fundamental skill in CSS layout techniques.
+- **CSS Properties and Selectors:** I employed various CSS properties (`text-transform`, `margin`, `border`, `font-family`, `background-color`, `color`) and selectors to style the webpage.
+- **Responsive Design Principles:** Although not extensively covered, the use of `meta viewport` tag hints at responsive design practices.
+
+This project was a hands-on exercise in creating a visually appealing webpage that conveys a simple message through a combination of text and imagery. It showcased how CSS can significantly enhance the presentation of HTML content.
+
 ### Exercises (Day 44)
 
 #### [A. CSS Box Model](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS-Box-Model)
