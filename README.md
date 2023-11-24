@@ -3114,6 +3114,50 @@ Through this exercise, I gained hands-on experience in using Selenium for web sc
 
 ![Billboard Hot 100 Playlist Creator v2 Upgrade - GUI App - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-050/050-billboard-hot-100-v2-3.png)
 
+In this upgraded version of the Billboard Hot 100 playlist creator, a graphical user interface (GUI) has been added using the `tkinter` library to provide a more user-friendly experience. Here's a summary of the main features and changes in the code:
+
+**main.py**:
+1. **UserInterface Class**:
+   - The `main.py` script now includes a `UserInterface` class that handles the GUI components.
+   - The class initializes the main window, sets its title, and configures its dimensions.
+   - It creates a header canvas for displaying the Billboard Hot 100 logo and title.
+   - It creates a calendar canvas for selecting the date.
+   - It includes instructions and a calendar widget for date selection.
+   - It updates a label to display the selected date.
+   - It binds the `<<CalendarSelected>>` event to a method that updates the selected date label.
+
+2. **Control Canvas**:
+   - The script creates a control canvas on the right side of the window.
+   - It includes buttons for searching songs and creating playlists.
+
+3. **Button Actions**:
+   - The "Search Songs" button is linked to a `search` method in the `UserInterface` class.
+   - The "Create Playlist" button is currently set to the same `search` method. However, it can be customized to create a playlist in the future.
+
+4. **Calendar Integration**:
+   - The selected date from the calendar is displayed in the GUI.
+   - When the "Search Songs" button is clicked, it currently prints "Searching for Songs, Please Wait..." to the console.
+
+**ui.py**:
+1. **User Interface Elements**:
+   - This script defines the structure and appearance of the user interface elements using `tkinter`.
+
+2. **Canvas Widgets**:
+   - It creates canvas widgets for displaying the Billboard logo, date selection, and control buttons.
+
+3. **Buttons**:
+   - It defines buttons for "Search Songs" and "Create Playlist." The "Create Playlist" button is currently commented out.
+
+4. **Event Handling**:
+   - The `on_date_selected` method updates the selected date label when a date is chosen in the calendar.
+
+5. **Update Selected Date Label**:
+   - The `update_selected_date_label` method sets the text of the selected date label based on the chosen date.
+
+6. **Search Method**:
+   - The `search` method is called when the "Search Songs" button is clicked. It currently prints a message to indicate that the search process has started.
+
+Overall, this upgraded version provides a visual interface for users to select a date and initiate the search for Billboard Hot 100 songs. The "Create Playlist" button can be further developed to create Spotify playlists based on the selected date and searched songs.
 
 ## Day 51
 
