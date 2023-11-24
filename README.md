@@ -3375,6 +3375,24 @@ This upgraded version (V4) of the Billboard Hot 100 playlist creator offers an i
 
 #### [53. BMI Calculator v3 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-053/Projects/BMI%20Calculator%20GUI%20App)
 
+In the development of the BMI Calculator V3, I further advanced my skills in creating interactive and user-friendly applications with Python, particularly using Tkinter for graphical user interface (GUI) design.
+
+1. **Graphical User Interface (GUI) with Tkinter**: Unlike previous versions, V3 features a full-fledged GUI. I used Tkinter to create various elements such as canvases for displaying information, and buttons for user interaction.
+
+2. **Layout and Design**: The application's layout includes multiple sections for displaying BMI, age, weight, height, and gender. Each section is created using a `Canvas` widget, and carefully placed using grid layout management in Tkinter. This helped me learn how to organize visual elements in a GUI effectively.
+
+3. **Static Display Elements**: This version showcases static elements like text and rectangles within the canvases. These elements display predefined information like "BMI CALCULATOR" or "BODY MASS INDEX", and are essential for guiding the user through the application.
+
+4. **Dynamic Content Representation**: The application includes placeholders for dynamic content, such as BMI value and health category, which are intended to be updated based on user input. This demonstrates the concept of dynamic content in GUI applications, even though the current version doesn't implement the functionality to update these values in real-time.
+
+5. **Stylized UI Components**: I learned to apply basic styling to the UI components, such as colors, fonts, and shapes, to make the interface more appealing and user-friendly. For instance, the use of different colors for text and backgrounds, and creating oval buttons for interactions.
+
+6. **Interactivity Foundations**: The application lays the foundation for interactivity, with elements like oval shapes in the `gender_canvas` and `height_canvas` that resemble buttons. This is a stepping stone towards making the application interactive in future iterations.
+
+7. **Understanding GUI Constraints**: While this version showcases the design aspect of a BMI calculator, it does not yet implement the interactive functionalities like taking user inputs and calculating BMI. This highlighted the importance of not just designing a GUI but also integrating backend logic for a fully functional application.
+
+In summary, BMI Calculator V3 was an insightful step into the world of GUI development with Python. It provided a hands-on experience in designing user interfaces with Tkinter, arranging and styling UI components, and setting up a framework for future interactive capabilities.
+
 ## Day 54
 
 ### Projects (Day 54)
