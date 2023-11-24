@@ -3778,6 +3778,41 @@ This project covers aspects of event handling, dynamic content updates, and inte
 
 #### [61. Flask WTForms](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-061/Projects/Flask%20WTForms)
 
+In this lesson, I implemented a simple web application using Flask and WTForms, which included a login functionality with basic validation. Here’s a summary of what I did and learned:
+
+1. **Using Flask and WTForms**:
+   - Flask is a micro web framework in Python used for web development.
+   - WTForms is a flexible forms validation and rendering library for Python web development. It integrates seamlessly with Flask through the Flask-WTF extension.
+
+2. **Creating a LoginForm Class**:
+   - I defined a `LoginForm` class inheriting from `FlaskForm`.
+   - The form included an email field, a password field, and a submit button.
+   - Custom validators for the email and password fields were added to check for the presence of an "@" and ".", and to ensure the password is at least 8 characters long, respectively.
+
+3. **Setting Up Flask Routes**:
+   - The `"/"` route renders the homepage (`index.html`).
+   - The `"/login"` route handles both displaying the login form and processing form data on submission.
+   - The `"/success"` and `"/denied"` routes render pages for successful and unsuccessful login attempts.
+
+4. **HTML Templates**:
+   - I used Jinja2 templating to create HTML templates for different routes.
+   - `base.html` serves as a base template including the Bootstrap CSS framework.
+   - `index.html`, `login.html`, `success.html`, and `denied.html` extend from `base.html` and represent different pages of the application.
+
+5. **Login Functionality**:
+   - In the `login` route, the form is instantiated and rendered in `login.html`.
+   - Upon form submission, the form data is validated.
+   - If the email and password match the hardcoded credentials ("test@example.com" and "password"), the user is redirected to the success page; otherwise, they are redirected to the denied page.
+
+6. **Environment Variables**:
+   - The Flask app configuration uses an environment variable for `SECRET_KEY` to maintain security, especially for form handling.
+
+7. **Front-End Design**:
+   - The use of Bootstrap enhances the UI with minimal custom styling.
+   - The login form provides feedback on validation errors directly on the form fields.
+
+Through this project, I gained experience in creating web forms with validation in Flask, understanding the flow of data in a Flask application, and using templates for rendering pages. This exercise demonstrated the practical application of Flask and WTForms in building web applications with user input and validation logic.
+
 ## Day 62
 
 ### Projects (Day 62)
