@@ -2917,6 +2917,24 @@ Through this exercise, I gained hands-on experience in using Selenium for web sc
 
 #### [51. Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-051/Projects/Billboard-Hot-100)
 
+![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-1.png)
+
+![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-2.png)
+
+![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-3.png)
+
+![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-4.png)
+
+![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-5.png)
+
+![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-6.png)
+
+![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-7.png)
+
+![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-8.png)
+
+![Billboard Hot 100 Playlist Creator v3 Upgrade - GUI App - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-051/051-billboard-hot-100-v3-9.png)
+
 ## Day 52
 
 ### Projects (Day 52)
