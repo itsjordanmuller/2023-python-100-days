@@ -2678,9 +2678,15 @@ In this exercise, I learned about different types of CSS selectors and how they 
 
 #### [44. Motivational Meme Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Projects/Motivation-Meme-Site)
 
+![Motivational Meme Website - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-044/044-motivational-meme-site.png)
+
 ### Exercises (Day 44)
 
 #### [A. CSS Box Model](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS-Box-Model)
+
+![CSS Box Model - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-044/044-css-box-model-1.png)
+
+![CSS Box Model - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-044/044-css-box-model-2.png)
 
 In this HTML and CSS exercise, I explored the CSS Box Model, a fundamental concept in web design that defines how different parts of a webpage's layout work together. The exercise involved creating three boxes with different styles to understand how padding, borders, and margins interact.
 
@@ -2702,6 +2708,8 @@ In this HTML and CSS exercise, I explored the CSS Box Model, a fundamental conce
 
 #### [B. CSS Colors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/CSS-Colors)
 
+![CSS Colors - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-044/044-css-colors.png)
+
 In this exercise, I learned about applying different color styles using CSS. The exercise involved styling the background of the webpage and the text and background colors of headings (`<h1>` and `<h2>`).
 
 1. **Webpage Background Color**:
@@ -2718,6 +2726,10 @@ These styles were directly applied within a `<style>` tag in the head of the HTM
 This exercise was particularly useful for understanding how to use CSS for coloring and how different color formats (like named colors, hex codes) can be applied in web design. It highlighted the importance of color in creating visually appealing and accessible web pages.
 
 #### [C. Font Properties](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-044/Exercises/Font-Properties)
+
+![Font Properties - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-044/044-font-properties-1.png)
+
+![Font Properties - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-044/044-font-properties-2.png)
 
 In these exercises, I learned about various font properties in CSS, how to apply them, and their effects on the appearance of text in a webpage. The exercises were divided into two parts: exploring different font sizes and experimenting with various font families.
 
