@@ -2481,9 +2481,13 @@ Through these upgrades, the Tic-Tac-Toe game has become more interactive and eng
 
 #### [41. Introduction to HTML](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Projects/Introduction-to-HTML)
 
+[Introduction to HTML - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-041/041-intro-to-html.png)
+
 ### Exercises (Day 41)
 
 #### [A. Heading Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Heading-Element)
+
+[Heading Elements - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-041/041-heading-element.png)
 
 In this exercise, I explored the basics of HTML, particularly focusing on using heading elements to structure content. The HTML document starts with the standard `<!DOCTYPE html>` declaration and includes language, character encoding, and viewport meta tags in the `<head>` section, ensuring proper rendering and accessibility.
 
@@ -2495,6 +2499,8 @@ Overall, this exercise was an effective introduction to HTML headings and their 
 
 #### [B. Paragraph Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Paragraph-Element)
 
+[Paragraph Elements - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-041/041-paragraph-element.png)
+
 In this HTML exercise, I learned how to use paragraph elements to structure text content within a webpage. The HTML document begins with the standard declaration and includes essential meta tags in the `<head>` section, ensuring proper encoding and responsive design.
 
 The key focus was on the `<p>` tag, used to define paragraphs in the `<body>` section. I created three distinct paragraphs, each enclosed in its own `<p>` element. These paragraphs contained a block of Lorem Ipsum text, a common placeholder text in the design and typesetting industry.
@@ -2504,6 +2510,8 @@ This exercise demonstrated the importance of the paragraph element in HTML for o
 Through this task, I gained practical experience in formatting text content on a webpage, understanding the role of paragraph elements in HTML, and the significance of clean, well-organized content structure for user experience and accessibility.
 
 #### [C. Void Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-041/Exercises/Void-Elements)
+
+![Void Elements - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-041/041-void-elements.png)
 
 In this HTML exercise, I learned about void elements, which are special HTML elements that do not require a closing tag. The exercise focused on two such elements: `<br>` and `<hr>`.
 
