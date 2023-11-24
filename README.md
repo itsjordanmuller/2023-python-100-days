@@ -2611,9 +2611,21 @@ This exercise was essential in understanding how nesting and indentation work in
 
 #### [43. Color Vocabulary Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Projects/Color-Vocab)
 
+![Color Vocabulary Project - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-043/043-adding-css-1.png)
+
+![Color Vocabulary Project - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-043/043-adding-css-2.png)
+
 ### Exercises (Day 43)
 
 #### [A. Adding CSS](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/Adding-CSS)
+
+![Adding CSS - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-043/043-adding-css-1.png)
+
+![Adding CSS - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-043/043-adding-css-2.png)
+
+![Adding CSS - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-043/043-adding-css-3.png)
+
+![Adding CSS - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-043/043-adding-css-4.png)
 
 In this exercise, I explored the three primary methods of adding CSS to an HTML document: inline, internal, and external styling. Each method has its own use cases and benefits.
 
@@ -2635,6 +2647,8 @@ In this exercise, I explored the three primary methods of adding CSS to an HTML 
 This exercise was instrumental in understanding the different ways to apply CSS to HTML documents. It highlighted the importance of choosing the appropriate method based on the project's scope and the need for maintainability and scalability in web development. It also demonstrated how CSS enhances the visual presentation of web pages, making them more appealing and user-friendly.
 
 #### [B. CSS Selectors](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/CSS-Selectors)
+
+![CSS Selectors - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-043/043-css-selectors.png)
 
 In this exercise, I learned about different types of CSS selectors and how they are used to apply styles to HTML elements. The HTML document `index.html` provided the structure to demonstrate each selector type, and the corresponding CSS in `style.css` applied specific styles based on these selectors.
 
