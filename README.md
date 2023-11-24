@@ -3031,6 +3031,43 @@ Overall, this script demonstrates web scraping, API integration (Spotify), file 
 
 #### [47. Amazon Price Tracker](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-047/Projects/Amazon-Price-Tracker)
 
+The code you provided is a Python script for an Amazon Price Tracker. This script allows users to track the prices of items on Amazon and perform various actions such as viewing tracked items, adding new items to track, modifying or removing tracked items, and exiting the program. Here's a breakdown of the key functionality and components of the code:
+
+1. **Data Directory and Items File**:
+   - The script defines a `DATA_DIR` variable to specify the directory where data related to tracked items will be stored.
+   - An `ITEMS_FILE` variable is defined to specify the path to the JSON file (`items.json`) where information about tracked items is stored.
+
+2. **Functions**:
+   - Several functions are defined in the script to handle different aspects of the price tracking process:
+     - `load_items()`: Loads tracked items from the `items.json` file, returning an empty list if the file does not exist.
+     - `save_items(items)`: Saves a list of tracked items to the `items.json` file.
+     - `add_item()`: Allows users to add a new item to track by providing the item's name, Amazon URL, and desired price.
+     - `view_items()`: Displays a list of tracked items and their details, allowing users to choose specific items to check their prices.
+     - `check_prices(selected_items)`: Retrieves and checks the current prices of selected items on Amazon, updating their price history and notifying users if the price drops to or below the desired price.
+     - `modify_item()`: Allows users to modify or delete an existing tracked item, including options to change the item's name, Amazon URL, desired price, or delete the item entirely.
+     - `exit_program()`: Exits the program with a farewell message.
+
+3. **Main Program Loop**:
+   - The script runs a while loop to continuously present the user with a menu of options.
+   - The user can select one of the following options:
+     1. View all items and check prices.
+     2. Add a new item to track.
+     3. Modify or remove an item.
+     4. Exit the program.
+
+4. **User Input and Actions**:
+   - The user's input is used to determine which action to perform.
+   - Based on the user's choice, the corresponding function is called to execute the selected action.
+
+5. **Data Storage**:
+   - Tracked items and their details are stored in a JSON file (`items.json`) in the specified data directory.
+   - The price history of each tracked item is updated when the prices are checked.
+
+6. **User Interface**:
+   - The script provides a simple command-line interface for user interaction.
+
+This script serves as a basic Amazon price tracking tool, allowing users to keep an eye on the prices of items they are interested in purchasing and receive notifications if the price drops to their desired level. Users can manage their tracked items and perform various actions to keep their tracking list up to date.
+
 ## Day 48
 
 ### Projects (Day 48)
