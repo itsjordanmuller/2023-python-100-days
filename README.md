@@ -3074,6 +3074,44 @@ This script serves as a basic Amazon price tracking tool, allowing users to keep
 
 #### [48. Cookie Clicker Automation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-048/Projects/Cookie-Clicker)
 
+The code you provided is for automating the Cookie Clicker game using Selenium, a web automation library for Python. Cookie Clicker is an incremental game where the player clicks on a big cookie to earn "cookies" and can use these cookies to purchase various upgrades and items. The script simulates clicking the cookie and purchasing items in an automated manner. Here's a breakdown of the code:
+
+1. **Import Statements**:
+   - The script imports the necessary modules, including `time`, `webdriver` from `selenium`, and `By` from `selenium.webdriver.common.by`.
+
+2. **Chrome WebDriver Configuration**:
+   - Chrome WebDriver is configured with some options. The `add_experimental_option("detach", True)` option is used to keep the Chrome window open even after the script finishes execution.
+
+3. **Web Page Access**:
+   - The script launches a Chrome browser using the WebDriver and navigates to the Cookie Clicker game's URL: "https://orteil.dashnet.org/experiments/cookie/".
+
+4. **Variables**:
+   - `cookie`: The script finds the HTML element with the ID "cookie," which represents the clickable cookie in the game.
+   - `money`: A variable to keep track of the in-game currency (cookies) earned.
+   - `milliseconds_between_clicks`: The time interval (in milliseconds) between each click on the cookie.
+
+5. **Main Loop**:
+   - The script enters an infinite loop using `while True`.
+
+6. **Cookie Clicking**:
+   - Within the loop, the script simulates clicking on the cookie element using `cookie.click()`.
+   - It then sleeps for a short duration (`milliseconds_between_clicks / 1000`) before the next click to control the clicking rate.
+
+7. **Purchase Items**:
+   - The script searches for store items that are available for purchase using the CSS selector `#store div:not(.grayed)`. These items are represented as HTML `div` elements that are not grayed out (i.e., they can be purchased).
+   - It attempts to click on each store item. If clicking the item fails (e.g., if the player doesn't have enough cookies), it prints an error message and continues to the next item.
+
+8. **Update Money**:
+   - The script finds the element with the ID "money" and extracts the player's current money (cookie count) as a floating-point number. It cleans up the extracted text by removing commas and splitting it to get the numerical value.
+
+9. **Final Output**:
+   - The script continuously loops, accumulating cookies and purchasing items as long as it runs. The final money (cookie count) is never printed because the script remains in the infinite loop.
+
+10. **Termination**:
+    - The script doesn't have a termination condition to exit the infinite loop. To stop the script, you would typically need to manually terminate the execution.
+
+Please note that the script is designed to continuously play the Cookie Clicker game until manually stopped, and it doesn't have a specific goal or termination condition. You can add a condition to exit the loop when a certain goal is reached, or you can manually stop the script when you're satisfied with the progress. Additionally, consider adding a delay between purchasing items to make it more realistic and efficient.
+
 ### Exercises (Day 48)
 
 #### [A. Selenium Basics](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-048/Exercises/Selenium%20Basics)
