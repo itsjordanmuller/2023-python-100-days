@@ -2758,6 +2758,10 @@ I learned about the significance of choosing the right font size, weight, and fa
 
 #### [45. 100 Movies You Must Watch](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Projects/100-Movies-You-Must-Watch)
 
+![100 Movies You Must Watch - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-045/045-100-movies-you-must-watch-1.png)
+
+![100 Movies You Must Watch - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-045/045-100-movies-you-must-watch-2.png)
+
 ### Exercises (Day 45)
 
 #### [A. Parsing HTML and Making Soup](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Parsing-HTML-Making-Soup)
