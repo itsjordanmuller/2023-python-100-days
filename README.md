@@ -3458,6 +3458,27 @@ Overall, this lesson introduced me to the versatility of functions in Python, sh
 
 #### [55. Higher or Lower Dynamic Routes/URLs](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-055/Projects/Higher%20or%20Lower%20URLs)
 
+In this lesson, I developed a simple web-based game using Flask that involves guessing a random number. Here's a summary of what I did and learned:
+
+1. **Flask Setup**: I started by setting up a Flask application, defining the necessary imports and initializing the Flask app instance. Flask serves as the backend to handle web requests.
+
+2. **Random Number Generation**: I used Python's `random` module to generate a random number between 0 and 9. This number is the target that users try to guess.
+
+3. **Creating Routes**:
+   - The root route (`"/"`) displays a message inviting the user to guess a number and includes an image for visual appeal.
+   - The dynamic route (`"/<int:guess>"`) takes the user's guess as a URL parameter. This route checks if the guess matches the randomly generated number and provides feedback accordingly.
+
+4. **Conditional Responses**: Depending on the user's guess, the dynamic route responds with:
+   - A success message and an image if the guess is correct.
+   - A message indicating the guess is too low with an accompanying image if the guess is lower than the target number.
+   - A message indicating the guess is too high with a different image if the guess is higher than the target number.
+
+5. **HTML Response**: The responses are structured in HTML, allowing the incorporation of styles and images directly in the Flask app's return statements.
+
+6. **Debug Mode**: The Flask app is run with `debug=True`, which is useful for development as it provides detailed error messages and auto-reloads the server upon code changes.
+
+Through this project, I learned about setting up and routing in a Flask application, dynamically handling URLs, and generating and using random numbers. This exercise also demonstrated how to provide interactive feedback to the user based on their input, enhancing the overall user experience. The project was a practical introduction to creating simple, interactive web applications with Flask.
+
 ### Exercises (Day 55)
 
 #### [A. Advanced Decorators](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-055/Exercises/Advanced%20Decorators)
