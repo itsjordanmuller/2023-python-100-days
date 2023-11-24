@@ -2457,6 +2457,24 @@ Through these upgrades, the Tic-Tac-Toe game has become more interactive and eng
 
 #### [40. Rock Paper Scissors v2 Upgrade - GUI App](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-040/Rock-Paper-Scissors-App)
 
+![Rock Paper Scissors v2 Upgrade - GUI App - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-1.png)
+
+![Rock Paper Scissors v2 Upgrade - GUI App - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-2.png)
+
+![Rock Paper Scissors v2 Upgrade - GUI App - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-3.png)
+
+![Rock Paper Scissors v2 Upgrade - GUI App - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-4.png)
+
+![Rock Paper Scissors v2 Upgrade - GUI App - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-5.png)
+
+![Rock Paper Scissors v2 Upgrade - GUI App - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-6.png)
+
+![Rock Paper Scissors v2 Upgrade - GUI App - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-7.png)
+
+![Rock Paper Scissors v2 Upgrade - GUI App - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-8.png)
+
+![Rock Paper Scissors v2 Upgrade - GUI App - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-9.png)
+
 ## Day 41
 
 ### Projects (Day 41)
