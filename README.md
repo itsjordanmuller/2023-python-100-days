@@ -2903,6 +2903,39 @@ I learned about the significance of choosing the right font size, weight, and fa
 
 ![100 Movies You Must Watch - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-045/045-100-movies-you-must-watch-2.png)
 
+In this exercise, I learned how to use Python to scrape movie titles from a web page and manipulate the data. Here's a summary of what was done:
+
+1. Imported necessary libraries:
+   - Imported `BeautifulSoup` from the `bs4` library to parse HTML.
+   - Imported `requests` to send HTTP requests and retrieve the web page's content.
+
+2. Sent a GET request to a web page:
+   - Used the `requests.get()` method to retrieve the content of a web page. The URL used was for a page listing 100 must-watch movies.
+
+3. Created a BeautifulSoup object:
+   - Used BeautifulSoup to parse the HTML content obtained from the web page.
+
+4. Selected HTML elements:
+   - Used the `soup.select()` method to select HTML elements that matched a specific CSS selector. The selector was `.article-title-description__text .title`, which targeted movie titles on the page.
+
+5. Extracted movie titles:
+   - Iterated through the selected HTML elements and extracted the text content of each movie title using `movie.getText()`.
+   - Appended each movie title to the `movie_texts` list.
+
+6. Wrote movie titles to a text file:
+   - Opened a file named "movies.txt" in append mode and wrote each movie title followed by a newline character.
+
+7. Read movie titles from the text file:
+   - Opened "movies.txt" in read mode and read the movie titles into the `movies` list using `f.readlines()`.
+
+8. Reordered movie titles:
+   - Reversed the order of movie titles in the `movies` list using slicing (`movies[::-1]`) to have them in reverse order.
+
+9. Wrote reordered movie titles to a new text file:
+   - Opened a new file named "reordered_movies.txt" in write mode and wrote the reversed movie titles to this file.
+
+Overall, this exercise demonstrated web scraping, HTML parsing, file handling, and data manipulation in Python. The end result is a text file containing the 100 must-watch movies in reverse order.
+
 ### Exercises (Day 45)
 
 #### [A. Parsing HTML and Making Soup](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-045/Exercises/Parsing-HTML-Making-Soup)
