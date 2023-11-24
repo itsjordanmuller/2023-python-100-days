@@ -3176,6 +3176,26 @@ Through this exercise, I gained hands-on experience in using Selenium for web sc
 
 ![Color Madness Game - Image 17](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-049/049-color-madness-17.png)
 
+In this exercise, I developed a "Color Madness" game using Python, involving concepts like GUI creation with Tkinter, working with colors and events, and data handling.
+
+The game features a user interface where players select the color that best describes the color shown in a circle. This interface is created using Tkinter, with different components like buttons and canvases for display and interaction.
+
+Key concepts covered include:
+
+1. **Tkinter for GUI:** I used the Tkinter library to create the game's graphical interface. This included setting up windows, canvases for drawing shapes (like the color circle), and buttons for user interaction.
+
+2. **Color Handling:** The `colors.py` module contains a dictionary mapping color names to their hexadecimal codes. I also wrote a function, `get_random_color()`, to generate random color codes. This was crucial for the game's functionality, as it provided the random colors displayed to the player.
+
+3. **Event Handling:** The game reacts to user inputs, like clicking buttons. Each button is linked to a function that logs the color choice and updates the game state. Special attention was given to the "Black" color button, changing its text color on mouse hover for better visibility.
+
+4. **Data Storage and Retrieval:** I implemented functions to save and load color choices made by players. This data is stored in a JSON file, allowing the game to remember past choices and use them for future color suggestions.
+
+5. **Color Comparison Logic:** The game includes a method to calculate the 'distance' between two colors. This is used to suggest two colors closest to the current one displayed in the game, helping guide the player's choices.
+
+6. **Dynamic UI Updates:** The game dynamically updates the color displayed in the circle and the color suggestions based on user interactions and internal logic.
+
+Through this project, I gained practical experience in building an interactive game with Python, handling colors and user events, working with external files for data storage, and dynamically updating the UI based on program logic and user inputs.
+
 ## Day 50
 
 ### Projects (Day 50)
