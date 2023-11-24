@@ -2485,6 +2485,24 @@ Mouse-over effects on the buttons are achieved using the `bind` method, changing
 
 ![Rock Paper Scissors v2 Upgrade - GUI App - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-040/040-rock-paper-scissors-v2-9.png)
 
+In this upgraded version of the Rock Paper Scissors game, I enhanced both the game logic and the user interface, adding new features and improving the overall user experience.
+
+**Enhancements in Game Logic (`game.py`):**
+1. **Reset Functionality:** I introduced a `reset` method in the `Game` class, which resets both the player's and the computer's scores to zero. This method is crucial for starting a new game after a game over scenario.
+
+**Enhancements in User Interface (`ui.py`):**
+1. **Visual Upgrades:** The UI has been visually enhanced with new colors and a round rectangle function, `round_rectangle`, which adds rounded rectangles to the canvas for a more polished look.
+2. **Game Over Mechanism:** I added a `game_over` method that is triggered when either the player or the computer reaches a score of 5. This method displays the winner, disables the choice buttons, and adds a "Replay" button.
+3. **Replay Functionality:** The "Replay" button is linked to a `reset_game` method that resets the game to its initial state, allowing for consecutive rounds of play without restarting the application.
+4. **Dynamic Result Display:** The `update_game_canvas` method now includes more dynamic elements, such as highlighting the winner's choice and displaying a detailed result string.
+5. **Improved Result String:** The `generate_result_string` method provides a more detailed description of the round's outcome, explaining which choice won over the other or if it was a draw.
+
+**Key Learnings and Skills Applied:**
+- **Advanced Tkinter Usage:** This version required a more sophisticated use of Tkinter widgets and methods, demonstrating an advanced level of GUI design.
+- **Game State Management:** Managing the state of the game, especially with the addition of a reset function and a game over mechanism, required careful planning and implementation.
+- **User Experience Design:** Attention to user experience was evident in the visual enhancements and the addition of clear game state messages and actions (like the "Replay" button).
+- **Dynamic Content Update:** The ability to update the canvas dynamically based on game state and results showed an understanding of real-time GUI updates in response to user interactions.
+
 ## Day 41
 
 ### Projects (Day 41)
