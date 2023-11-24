@@ -2708,6 +2708,29 @@ This exercise was essential in understanding how nesting and indentation work in
 
 ![Color Vocabulary Project - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-043/043-adding-css-2.png)
 
+In the Color Vocabulary Project, I created a webpage to teach the colors in Spanish and styled it using CSS. The project involved linking an external CSS stylesheet to an HTML document and applying specific styles to elements within that document.
+
+1. **HTML Structure:**
+   - The document starts with the standard `<!DOCTYPE html>` declaration and `<html lang="en">` tag.
+   - The `<head>` section includes a `<meta>` tag for character encoding, a `<title>` for the page, and a link to the external CSS file.
+   - The `<body>` contains `<h1>` and `<h2>` elements for headings and `<img>` tags for displaying images corresponding to each color.
+
+2. **External CSS Stylesheet:**
+   - I created a separate CSS file and linked it to the HTML using `<link rel="stylesheet" href="./style.css" />`.
+   - This separation of content (HTML) and presentation (CSS) is a best practice in web development.
+
+3. **CSS Styling:**
+   - Each color title (`<h2>` element with a class of `color-title`) received an individual color styling using its ID. For example, `h2#red { color: red; }` applies a red color to the text of the element with the ID `red`.
+   - The CSS rule `.color-title { font-weight: normal; }` sets the font weight of all elements with the class `color-title` to normal, overriding any default browser styles.
+   - For the images, I used the `img` selector to set a uniform width and height of 200px, ensuring consistency in the presentation of the images.
+
+**Learnings and Skills Applied:**
+- **CSS Selectors and Properties:** I practiced using different types of selectors (like element, class, and ID selectors) and properties (like `color`, `font-weight`, `width`, and `height`) to style the webpage.
+- **External Stylesheets:** I learned how to link and apply an external stylesheet, separating the presentation from the HTML content.
+- **Responsive Web Design Basics:** While this project did not delve deeply into responsiveness, setting specific sizes for images is a step towards understanding how elements are displayed on different devices.
+
+This project was a practical application of CSS to add styles to a webpage. It reinforced the importance of using CSS for styling while keeping the HTML for content and structure, adhering to the principles of web development best practices.
+
 ### Exercises (Day 43)
 
 #### [A. Adding CSS](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-043/Exercises/Adding-CSS)
