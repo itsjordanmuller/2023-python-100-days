@@ -3505,6 +3505,24 @@ Through this task, I continued to learn about Flask. Specifically expanding on: 
 
 #### [56. Name Card Website](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Projects/Name%20Card%20Website)
 
+In this lesson, I created a simple personal name card website using Flask, HTML, and CSS. Here's a summary of what I did and learned:
+
+1. **Flask Setup**: I started by setting up a Flask application in `server.py`. This script initializes the Flask app and defines a single route (`"/"`) that renders `index.html`. Flask serves as the backend framework to manage the web server.
+
+2. **HTML Structure**: In `index.html`, I created a structured layout for the name card. I included a header section with an avatar image, a name (Jordan Muller), and a brief description (New Grad - BS in Computer Science).
+
+3. **CSS and JavaScript Integration**: I linked the CSS and JavaScript files located in the `/static/assets/` directory. These files are crucial for styling and adding interactivity to the webpage. The CSS files are responsible for the visual design, while the JavaScript ensures compatibility with older browsers and removes the loading class once the page is fully loaded.
+
+4. **Design Aesthetics**: The HTML template uses a design from HTML5 UP, known for providing elegant and responsive website templates. I customized it to fit the personal branding and information of the individual, Jordan Muller.
+
+5. **Footer Content**: The footer includes social media icons for LinkedIn and GitHub, allowing visitors to connect with Jordan on these platforms. Additionally, there's a copyright notice and a credit to HTML5 UP for the design.
+
+6. **Responsive Design**: The website is designed to be responsive, ensuring it looks good on various devices. This is particularly important for a name card website, as it needs to be accessible and readable on all screen sizes.
+
+7. **Static Files Organization**: The static files like images, CSS, and JavaScript are well-organized in the `static/` directory. This organization is crucial for maintaining the website and for quick updates or changes in the future.
+
+Through this project, I learned how to create a personal name card website using Flask, how to integrate and customize a third-party HTML template, and the importance of a well-structured and organized project directory. This exercise was a great way to understand the basics of web development with Flask and front-end design principles.
+
 ### Exercises (Day 56)
 
 #### [A. Open Source Template](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-056/Exercises/Open%20Source%20Template)
