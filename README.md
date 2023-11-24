@@ -2529,9 +2529,15 @@ Through this exercise, I gained a practical understanding of how void elements w
 
 #### [42. Birthday Invite Project](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Projects/Birthday-Invite-Project)
 
+![Birthday Invite Project - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-042/042-birthday-invite-1.png)
+
+![Birthday Invite Project - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-042/042-birthday-invite-2.png)
+
 ### Exercises (Day 42)
 
 #### [A. Anchor Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Anchor-Elements)
+
+![Anchor Elements - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-042/042-anchor-elements.png)
 
 In this exercise, I began to use anchor elements in HTML to create hyperlinks. The HTML document is structured with standard elements including the DOCTYPE declaration, meta tags for character encoding and viewport settings, and a meaningful title in the `<head>` section.
 
@@ -2556,6 +2562,12 @@ In this exercise, I learned about the basic structure of an HTML document, often
 
 #### [C. Image Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Image-Elements)
 
+![Image Elements - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-042/042-image-elements-1.png)
+
+![Image Elements - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-042/042-image-elements-2.png)
+
+![Image Elements - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-042/042-image-elements-3.png)
+
 In this HTML exercise, I learned how to incorporate image elements into a webpage and use basic CSS for layout styling. The exercise focused on displaying two images, one of a kitten and one of a puppy, in a two-column layout.
 
 1. **Image Elements**: The `<img>` tag is used to embed images. Each image element has a `src` attribute specifying the URL of the image and an `alt` attribute providing alternative text for screen readers or in cases where the image cannot be displayed. For example, `<img src="URL" alt="Description">`.
@@ -2569,6 +2581,8 @@ This exercise was an excellent introduction to adding and styling images in HTML
 
 #### [D. List Elements](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/List-Elements)
 
+![List Elements - Image](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-042/042-list-elements.png)
+
 In this HTML exercise, I learned how to create and format lists using unordered (`<ul>`) and ordered (`<ol>`) list elements. The exercise involved creating a web page for "Jordan's Cinnamon Roll Recipe," with sections for ingredients and instructions.
 
 1. **Unordered Lists for Ingredients**: I used `<ul>` tags to create lists of ingredients for both the dough and the filling. Each ingredient is listed within a `<li>` (list item) tag. Unordered lists are typically used when the order of items is not important.
@@ -2578,6 +2592,8 @@ In this HTML exercise, I learned how to create and format lists using unordered 
 3. **Section Headings**: The document uses `<h1>`, `<h2>`, and `<h3>` tags for headings and subheadings, providing a clear structure and hierarchy to the content.
 
 #### [E. Nesting and Indentation](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-042/Exercises/Nesting-and-Indentation)
+
+![Nesting and Indentation](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-042/042-nesting-indentation.png)
 
 In this exercise, I learned about nesting and indentation, two crucial aspects of writing clean, readable, and well-structured HTML code. The exercise involved creating a list with multiple levels of nested sub-lists, demonstrating how elements can be nested within each other to represent hierarchical relationships in content.
 
