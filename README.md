@@ -30,6 +30,11 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 
 </div>
 
+## Section Overviews
+
+<details open>
+<summary>(Hide/Show) - Section Overviews 📑</summary>
+
 ## Day 1
 
 ### Projects (Day 1)
@@ -4096,6 +4101,8 @@ I might come back to this at some point to make a Git helper script/application 
 ## Day 99
 
 ## Day 100
+
+</details>
 
 ## Sources & Credits
 Guided Exercises by [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/)
