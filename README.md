@@ -28,6 +28,25 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 ![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)
 
+<details>
+<summary>(Show/Hide) - Overview of Tools & Tech 💻</summary>
+
+<div align="left">
+
+## Overview of Technologies
+
+| Technology | Overview | Release Year |
+| :--------: | -------- | :----------: |
+| [Python](https://www.python.org/) | A high-level, versatile programming language. It supports various programming paradigms such as procedural, object-oriented, and functional programming. Python is extensively used in web development, data analysis, AI, and scientific computing, creating efficient & readable code. | [1991](https://en.wikipedia.org/wiki/Python_(programming_language)) |
+| [HTML](https://www.w3.org/html/) | The standard language for creating web pages and applications. It provides the structure for web content, defining elements like headings, paragraphs, links, and images. | [1993](https://en.wikipedia.org/wiki/HTML) |
+| [JavaScript](https://tc39.es/ecma262/2023/) | A high-level, versatile programming language that enables interactive and dynamic content on web pages. It's a core technology of the World Wide Web, alongside HTML and CSS. | [1995](https://en.wikipedia.org/wiki/JavaScript) |
+| [CSS](https://www.w3.org/Style/CSS/Overview.en.html) | A stylesheet language used to describe the presentation of documents written in HTML. CSS enables the separation of content from design, allowing for flexibility in layout, colors, and fonts. | [1996](https://en.wikipedia.org/wiki/CSS) |
+| [JSON](https://www.json.org/json-en.html) | A lightweight data-interchange format that's easy for humans to read and write and easy for machines to parse and generate. JSON is completely language independent but uses conventions familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Python, etc. | [2001](https://en.wikipedia.org/wiki/JSON) |
+
+</div>
+
+</details>
+
 </div>
 
 ## Section Overviews
