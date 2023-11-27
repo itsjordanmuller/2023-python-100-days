@@ -4106,3 +4106,13 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Sources & Credits
 Guided Exercises by [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/)
+
+## Contact Information
+
+Please feel free to reach out if you have any suggestions or run into any issues with viewing this project. I'm always looking for feedback from other people! I'd be more than happy to answer any questions you may have as well as assist with getting the project working on your machine.<br/>
+
+Be sure to view the setup guide in the README, as well as any specific README files for that specific project as they contain more details and may already have the answer to your question(s)!
+
+[![Email Address](https://custom-icon-badges.demolab.com/badge/e--mail%20me-itsjordanmuller@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white)](mailto:itsjordanmuller@gmail.com)<br/>
+[![LinkedIn](https://img.shields.io/badge/connect%20on%20linkedin-@itsjordanmuller-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsjordanmuller)<br/>
+[![My Website](https://custom-icon-badges.demolab.com/badge/My%20Website-www.jordanmuller.com-210157?style=for-the-badge&logoColor=white&logo=globe)](https://www.linkedin.com/in/itsjordanmuller)
