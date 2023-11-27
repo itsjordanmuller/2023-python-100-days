@@ -4104,8 +4104,11 @@ I might come back to this at some point to make a Git helper script/application 
 
 </details>
 
-## Sources & Credits
-Guided Exercises by [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/)
+## Sources, Credits & Acknowledgments
+
+### Course Details
+
+[100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/) course by [Dr. Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) on [Udemy](https://www.udemy.com/)
 
 ## Contact Information
 
@@ -4116,3 +4119,11 @@ Be sure to view the setup guide in the README, as well as any specific README fi
 [![Email Address](https://custom-icon-badges.demolab.com/badge/e--mail%20me-itsjordanmuller@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white)](mailto:itsjordanmuller@gmail.com)<br/>
 [![LinkedIn](https://img.shields.io/badge/connect%20on%20linkedin-@itsjordanmuller-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsjordanmuller)<br/>
 [![My Website](https://custom-icon-badges.demolab.com/badge/My%20Website-www.jordanmuller.com-210157?style=for-the-badge&logoColor=white&logo=globe)](https://www.linkedin.com/in/itsjordanmuller)
+
+## License Information
+
+The content within this repository was created as part of a personal educational project, following the [100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/) course by [Dr. Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) on [Udemy](https://www.udemy.com/). This repository is intended for personal use only and serves as a record of my learning progress. This repository & the content within it are not intended for commercial use, distribution, or replication. All rights to the original course content and methodologies belong to the respective copyright holders.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+Copyright © 2023 Jordan Muller. All Rights Reserved.
