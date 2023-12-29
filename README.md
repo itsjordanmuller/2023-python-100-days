@@ -10,7 +10,6 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 [![Flask](https://img.shields.io/badge/Flask-000000.svg?style=for-the-badge&logo=Flask&logoColor=white)](https://jordanmuller.com/portfolio/tags/flask/)
 [![SQLite](https://img.shields.io/badge/SQLite-003B57.svg?style=for-the-badge&logo=SQLite&logoColor=white)](https://jordanmuller.com/portfolio/tags/sqlite/)
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00.svg?style=for-the-badge&logo=SQLAlchemy&logoColor=white)](https://jordanmuller.com/portfolio/tags/sql-alchemy/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3.svg?style=for-the-badge&logo=Bootstrap&logoColor=white)](https://jordanmuller.com/portfolio/tags/bootstrap/)
 [![Jinja](https://img.shields.io/badge/Jinja-B41717.svg?style=for-the-badge&logo=Jinja&logoColor=white)](https://jordanmuller.com/portfolio/tags/jinja/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-185A80.svg?style=for-the-badge)](https://jordanmuller.com/portfolio/tags/matplotlib/)
 [![NumPy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://jordanmuller.com/portfolio/tags/num-py/)
@@ -21,17 +20,18 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 [![SciPy](https://img.shields.io/badge/SciPy-8CAAE6.svg?style=for-the-badge&logo=SciPy&logoColor=white)](https://jordanmuller.com/portfolio/tags/sci-py/)
 [![Seaborn](https://img.shields.io/badge/Seaborn-78AAB7.svg?style=for-the-badge)](https://jordanmuller.com/portfolio/tags/seaborn/)
 [![Selenium](https://img.shields.io/badge/Selenium-43B02A.svg?style=for-the-badge&logo=Selenium&logoColor=white)](https://jordanmuller.com/portfolio/tags/selenium/)
-[![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)](https://jordanmuller.com/portfolio/tags/html/)
-[![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white)](https://jordanmuller.com/portfolio/tags/css/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)](https://jordanmuller.com/portfolio/tags/javascript/)
 
 <details>
 <summary>More Technologies 📀</summary>
 
+[![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)](https://jordanmuller.com/portfolio/tags/html/)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white)](https://jordanmuller.com/portfolio/tags/css/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)](https://jordanmuller.com/portfolio/tags/javascript/)
 [![.env](https://img.shields.io/badge/.ENV-ECD53F.svg?style=for-the-badge&logo=dotenv&logoColor=black)](https://jordanmuller.com/portfolio/tags/dotenv/)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25.svg?style=for-the-badge&logo=GNU-Bash&logoColor=white)](https://jordanmuller.com/portfolio/tags/bash/)
 [![Beautiful Soup](https://custom-icon-badges.demolab.com/badge/Beautiful%20Soup-ffffff.svg?style=for-the-badge&logoSource=feather&logo=browser&logoColor=black)](https://jordanmuller.com/portfolio/tags/beautiful-soup/)
 [![Black Formatter](https://img.shields.io/badge/Black-000000.svg?style=for-the-badge)](https://jordanmuller.com/portfolio/tags/black-formatter/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3.svg?style=for-the-badge&logo=Bootstrap&logoColor=white)](https://jordanmuller.com/portfolio/tags/bootstrap/)
 [![Colorgram](https://img.shields.io/badge/Colorgram-pink.svg?style=for-the-badge)](https://jordanmuller.com/portfolio/tags/colorgram/)
 [![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white)](https://jordanmuller.com/portfolio/tags/json/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)](https://jordanmuller.com/portfolio/tags/jupyter/)
