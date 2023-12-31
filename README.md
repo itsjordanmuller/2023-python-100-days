@@ -3489,9 +3489,13 @@ In summary, BMI Calculator V3 was an insightful step into the world of GUI devel
 
 #### [54. Create Your Own Python Decorator](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-054/Projects/Create%20Your%20Own%20Python%20Decorator)
 
+![Create Your Own Python Decorator - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-054/054-create-your-own-python-decorator-1.png)
+
 In this lesson, I created my own Python decorator to measure the execution time of different functions. Here's a summary of what I did and learned:
 
 1. **Understanding Decorators**: A decorator in Python is a function that extends the behavior of another function without explicitly modifying it. Decorators are a powerful feature in Python, allowing for clean and reusable code.
+
+![Create Your Own Python Decorator - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-054/054-create-your-own-python-decorator-2.png)
 
 2. **Setting Up the Decorator**: 
    - I defined a decorator function `speed_calc_decorator` which takes another function as its argument.
@@ -3502,6 +3506,8 @@ In this lesson, I created my own Python decorator to measure the execution time 
    - I calculated the difference in these times, which gives the execution time of the function.
 
 4. **Displaying Results**: After executing the function, `time_difference` prints the name of the function and its execution time in seconds.
+
+![Create Your Own Python Decorator - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-054/054-create-your-own-python-decorator-3.png)
 
 5. **Applying the Decorator**:
    - I applied the `speed_calc_decorator` to two functions, `fast_function` and `slow_function`, using the `@` syntax.
@@ -4047,11 +4053,23 @@ I might come back to this at some point to make a Git helper script/application 
 
 #### [71. Folder File Scanner](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-071/Projects/Folder%20File%20Scanner)
 
+![Folder and File Scanner - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-071/071-folder-file-scanner-1.png)
+
+![Folder and File Scanner - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-071/071-folder-file-scanner-2.png)
+
+![Folder and File Scanner - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-071/071-folder-file-scanner-3.png)
+
+![Folder and File Scanner - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-071/071-folder-file-scanner-4.png)
+
+![Folder and File Scanner - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-071/071-folder-file-scanner-5.png)
+
 ## Day 72
 
 ### Projects (Day 72)
 
 #### [72. College Major Salary Data Exploration](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-072/Projects/College%20Major%20Salary%20Data%20Exploration)
+
+![College Major Salary Data Exploration - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-072/072-college-major-salary-data-exploration-1.png)
 
 ## Day 73
 
@@ -4059,11 +4077,55 @@ I might come back to this at some point to make a Git helper script/application 
 
 #### [73. Programming Language Analysis](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-073/Projects/Programming%20Language%20Analysis)
 
+![Programming Language Analysis - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-1.png)
+
+![Programming Language Analysis - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-2.png)
+
+![Programming Language Analysis - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-3.png)
+
+![Programming Language Analysis - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-4.png)
+
+![Programming Language Analysis - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-5.png)
+
+![Programming Language Analysis - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-6.png)
+
+![Programming Language Analysis - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-7.png)
+
+![Programming Language Analysis - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-8.png)
+
+![Programming Language Analysis - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-9.png)
+
+![Programming Language Analysis - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-10.png)
+
+![Programming Language Analysis - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-11.png)
+
+![Programming Language Analysis - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-073/073-programming-language-analysis-12.png)
+
 ## Day 74
 
 ### Projects (Day 74)
 
 #### [74. LEGO Data Analysis](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-074/Projects/LEGO%20Data%20Analysis)
+
+![LEGO Data Analysis - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-1.png)
+
+![LEGO Data Analysis - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-2.png)
+
+![LEGO Data Analysis - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-3.png)
+
+![LEGO Data Analysis - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-4.png)
+
+![LEGO Data Analysis - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-5.png)
+
+![LEGO Data Analysis - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-6.png)
+
+![LEGO Data Analysis - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-7.png)
+
+![LEGO Data Analysis - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-8.png)
+
+![LEGO Data Analysis - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-9.png)
+
+![LEGO Data Analysis - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-074/074-lego-data-analysis-10.png)
 
 ## Day 75
 
@@ -4071,17 +4133,108 @@ I might come back to this at some point to make a Git helper script/application 
 
 #### [75. Google Trends Data Analysis](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-075/Projects/Google%20Trends%20Data%20Analysis)
 
+![Google Trends Data Analysis - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-1.png)
+
+![Google Trends Data Analysis - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-2.png)
+
+![Google Trends Data Analysis - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-3.png)
+
+![Google Trends Data Analysis - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-4.png)
+
+![Google Trends Data Analysis - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-5.png)
+
+![Google Trends Data Analysis - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-6.png)
+
+![Google Trends Data Analysis - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-7.png)
+
+![Google Trends Data Analysis - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-8.png)
+
+![Google Trends Data Analysis - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-9.png)
+
+![Google Trends Data Analysis - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-075/075-google-trends-data-analysis-10.png)
+
 ## Day 76
 
 ### Projects (Day 76)
 
 #### [76. Google Play Store App Analytics](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-076/Projects/Google%20Play%20Store%20App%20Analytics)
 
+![Google Play Store App Analytics - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-1.png)
+
+![Google Play Store App Analytics - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-2.png)
+
+![Google Play Store App Analytics - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-3.png)
+
+![Google Play Store App Analytics - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-4.png)
+
+![Google Play Store App Analytics - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-5.png)
+
+![Google Play Store App Analytics - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-6.png)
+
+![Google Play Store App Analytics - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-7.png)
+
+![Google Play Store App Analytics - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-8.png)
+
+![Google Play Store App Analytics - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-9.png)
+
+![Google Play Store App Analytics - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-10.png)
+
+![Google Play Store App Analytics - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-11.png)
+
+![Google Play Store App Analytics - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-12.png)
+
+![Google Play Store App Analytics - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-13.png)
+
+![Google Play Store App Analytics - Image 14](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-14.png)
+
+![Google Play Store App Analytics - Image 15](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-15.png)
+
+![Google Play Store App Analytics - Image 16](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-16.png)
+
+![Google Play Store App Analytics - Image 17](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-17.png)
+
+![Google Play Store App Analytics - Image 18](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-18.png)
+
+![Google Play Store App Analytics - Image 19](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-19.png)
+
+![Google Play Store App Analytics - Image 20](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-20.png)
+
+![Google Play Store App Analytics - Image 21](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-21.png)
+
+![Google Play Store App Analytics - Image 22](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-22.png)
+
+![Google Play Store App Analytics - Image 23](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-076/076-google-play-store-app-analytics-23.png)
+
 ## Day 77
 
 ### Projects (Day 77)
 
 #### [77. NumPy & N-Dimensional Arrays](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-077/Projects/NumPy%20and%20N-Dimensional%20Arrays)
+![NumPy and N-Dimensional Arrays - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-1.png)
+
+![NumPy and N-Dimensional Arrays - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-2.png)
+
+![NumPy and N-Dimensional Arrays - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-3.png)
+
+![NumPy and N-Dimensional Arrays - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-4.png)
+
+![NumPy and N-Dimensional Arrays - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-5.png)
+
+![NumPy and N-Dimensional Arrays - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-6.png)
+
+![NumPy and N-Dimensional Arrays - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-7.png)
+
+![NumPy and N-Dimensional Arrays - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-8.png)
+
+![NumPy and N-Dimensional Arrays - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-9.png)
+
+![NumPy and N-Dimensional Arrays - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-10.png)
+
+![NumPy and N-Dimensional Arrays - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-11.png)
+
+![NumPy and N-Dimensional Arrays - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-12.png)
+
+![NumPy and N-Dimensional Arrays - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-077/077-numpy-and-n-dimensional-arrays-13.png)
 
 ## Day 78
 
@@ -4089,11 +4242,78 @@ I might come back to this at some point to make a Git helper script/application 
 
 #### [78. Linear Regressions & Seaborn](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-078/Projects/Linear%20Regressions%20and%20Seaborn)
 
+![Linear Regressions and Seaborn - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-1.png)
+
+![Linear Regressions and Seaborn - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-2.png)
+
+![Linear Regressions and Seaborn - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-3.png)
+
+![Linear Regressions and Seaborn - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-4.png)
+
+![Linear Regressions and Seaborn - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-5.png)
+
+![Linear Regressions and Seaborn - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-6.png)
+
+![Linear Regressions and Seaborn - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-7.png)
+
+![Linear Regressions and Seaborn - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-8.png)
+
+![Linear Regressions and Seaborn - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-9.png)
+
+![Linear Regressions and Seaborn - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-10.png)
+
+![Linear Regressions and Seaborn - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-078/078-linear-regressions-and-seaborn-11.png)
+
 ## Day 79
 
 ### Projects (Day 79)
 
 #### [79. Nobel Prize Analysis](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-079/Projects/Nobel%20Prize%20Analysis)
+![Nobel Prize Analysis - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-1.png)
+
+![Nobel Prize Analysis - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-2.png)
+
+![Nobel Prize Analysis - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-3.png)
+
+![Nobel Prize Analysis - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-4.png)
+
+![Nobel Prize Analysis - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-5.png)
+
+![Nobel Prize Analysis - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-6.png)
+
+![Nobel Prize Analysis - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-7.png)
+
+![Nobel Prize Analysis - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-8.png)
+
+![Nobel Prize Analysis - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-9.png)
+
+![Nobel Prize Analysis - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-10.png)
+
+![Nobel Prize Analysis - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-11.png)
+
+![Nobel Prize Analysis - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-12.png)
+
+![Nobel Prize Analysis - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-13.png)
+
+![Nobel Prize Analysis - Image 14](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-14.png)
+
+![Nobel Prize Analysis - Image 15](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-15.png)
+
+![Nobel Prize Analysis - Image 16](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-16.png)
+
+![Nobel Prize Analysis - Image 17](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-17.png)
+
+![Nobel Prize Analysis - Image 18](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-18.png)
+
+![Nobel Prize Analysis - Image 19](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-19.png)
+
+![Nobel Prize Analysis - Image 20](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-20.png)
+
+![Nobel Prize Analysis - Image 21](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-21.png)
+
+![Nobel Prize Analysis - Image 22](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-22.png)
+
+![Nobel Prize Analysis - Image 23](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-079/079-nobel-prize-analysis-23.png)
 
 ## Day 80
 
@@ -4101,11 +4321,99 @@ I might come back to this at some point to make a Git helper script/application 
 
 #### [80. Distributions and t-Tests](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-080/Projects/Distributions%20and%20t-Tests)
 
+![Distributions and t-tests - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-1.png)
+
+![Distributions and t-tests - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-2.png)
+
+![Distributions and t-tests - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-3.png)
+
+![Distributions and t-tests - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-4.png)
+
+![Distributions and t-tests - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-5.png)
+
+![Distributions and t-tests - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-6.png)
+
+![Distributions and t-tests - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-7.png)
+
+![Distributions and t-tests - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-8.png)
+
+![Distributions and t-tests - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-9.png)
+
+![Distributions and t-tests - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-10.png)
+
+![Distributions and t-tests - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-11.png)
+
+![Distributions and t-tests - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-12.png)
+
+![Distributions and t-tests - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-13.png)
+
+![Distributions and t-tests - Image 14](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-080/080-distributions-and-t-tests-14.png)
+
 ## Day 81
 
 ### Projects (Day 81)
 
 #### [81. Predict House Prices](https://github.com/itsjordanmuller/2023-python-100-days/tree/main/Day-081/Projects/Predict%20House%20Prices)
+
+![Predict House Prices - Image 1](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-1.png)
+
+![Predict House Prices - Image 2](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-2.png)
+
+![Predict House Prices - Image 3](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-3.png)
+
+![Predict House Prices - Image 4](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-4.png)
+
+![Predict House Prices - Image 5](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-5.png)
+
+![Predict House Prices - Image 6](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-6.png)
+
+![Predict House Prices - Image 7](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-7.png)
+
+![Predict House Prices - Image 8](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-8.png)
+
+![Predict House Prices - Image 9](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-9.png)
+
+![Predict House Prices - Image 10](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-10.png)
+
+![Predict House Prices - Image 11](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-11.png)
+
+![Predict House Prices - Image 12](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-12.png)
+
+![Predict House Prices - Image 13](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-13.png)
+
+![Predict House Prices - Image 14](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-14.png)
+
+![Predict House Prices - Image 15](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-15.png)
+
+![Predict House Prices - Image 16](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-16.png)
+
+![Predict House Prices - Image 17](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-17.png)
+
+![Predict House Prices - Image 18](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-18.png)
+
+![Predict House Prices - Image 19](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-19.png)
+
+![Predict House Prices - Image 20](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-20.png)
+
+![Predict House Prices - Image 21](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-21.png)
+
+![Predict House Prices - Image 22](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-22.png)
+
+![Predict House Prices - Image 23](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-23.png)
+
+![Predict House Prices - Image 24](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-24.png)
+
+![Predict House Prices - Image 25](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-25.png)
+
+![Predict House Prices - Image 26](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-26.png)
+
+![Predict House Prices - Image 27](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-27.png)
+
+![Predict House Prices - Image 28](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-28.png)
+
+![Predict House Prices - Image 29](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-29.png)
+
+![Predict House Prices - Image 30](https://github.com/itsjordanmuller/2023-python-100-days/blob/main/Day-081/081-predict-house-prices-30.png)
 
 ## Day 82
 
