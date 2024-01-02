@@ -4637,7 +4637,7 @@ The content within this repository was created as part of a personal educational
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
-Copyright © 2024 Jordan Muller. All Rights Reserved.
+Copyright © 2024 <a href="https://jordanmuller.com/">Jordan Muller</a>. All Rights Reserved.
 
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
