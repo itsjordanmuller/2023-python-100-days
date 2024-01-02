@@ -1,10 +1,11 @@
+<a id="top"></a>
 <div align="center">
 
-# 100 Days of Python
+<h1>100 Days of Python</h1>
 
 <a href="https://jordanmuller.com/portfolio/100-days-python/"><img src="https://custom-icon-badges.demolab.com/badge/100%20Days%20of%20Python-282A36.svg?style=for-the-badge&logo=python&logoColor=F7D754" width="100%"/></a>
 
-Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matplotlib, Plotly, scikit-learn, SQLite, SQLAlchemy, Environment Variables, PyPi, Virtual Environments, ESLint, Prettier, Black Formatter, Visual Studio Code, Git & GitHub
+<p>Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matplotlib, Plotly, scikit-learn, SQLite, SQLAlchemy, Environment Variables, PyPi, Virtual Environments, ESLint, Prettier, Black Formatter, Visual Studio Code, Git & GitHub</p>
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://jordanmuller.com/portfolio/tags/python/)
 [![Flask](https://img.shields.io/badge/Flask-000000.svg?style=for-the-badge&logo=Flask&logoColor=white)](https://jordanmuller.com/portfolio/tags/flask/)
@@ -22,7 +23,7 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 [![Selenium](https://img.shields.io/badge/Selenium-43B02A.svg?style=for-the-badge&logo=Selenium&logoColor=white)](https://jordanmuller.com/portfolio/tags/selenium/)
 
 <details>
-<summary>More Technologies 📀</summary>
+<summary>More Technologies 📀</summary><br>
 
 [![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)](https://jordanmuller.com/portfolio/tags/html/)
 [![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white)](https://jordanmuller.com/portfolio/tags/css/)
@@ -58,7 +59,7 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 
 <div align="left">
 
-## Overview of Technologies
+<h2>Overview of Technologies</h2>
 
 | **Technology** | **Overview** | **Release Year** |
 |:---:|:---:|:---:|
@@ -107,12 +108,91 @@ Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matpl
 
 </details>
 
+<hr>
+
+<!-- GRADIENT BADGES -->
+
+<!-- <h2>Main Sections & Projects</h2> -->
+
+<!-- <a href="https://github.com/itsjordanmuller/2023-python-100-days/blob/main/SECTIONS.md"><img src="https://custom-icon-badges.demolab.com/badge/Sections-f8f8f2.svg?logo=bookmark&logoColor=000000" alt="Sections" width="30%" /></a> 
+<a href="https://github.com/itsjordanmuller/2023-python-100-days/blob/main/PROJECTS.md"><img src="https://custom-icon-badges.demolab.com/badge/Projects-f8f8f2.svg?logo=star-fill&logoColor=000000" alt="Projects" width="30%" /></a><br/>
+
+[![{SECTION NAME}](https://custom-icon-badges.demolab.com/badge/{SECTION STRING}-{COLOR}.svg?logo={LOGO}&logoColor=000000)]({LINK TO GITHUB REPO SECTION/SUBFOLDER}) -->
+
 </div>
 
-## Section Overviews
+<details open><summary><h2>Table of Contents 🗃️</h2></summary><blockquote>
+
+📖 <a href="#about-section"><strong>About The Project</strong></h3></a>
+
+🖼️ <a href="#gallery-section"><strong>Image Gallery</strong></a>
+
+🛠️ <a href="#setup-section"><strong>Setup Instructions</strong></a>
+
+💡 <a href="#usage-section"><strong>Usage, Tips & Notes</strong></a>
+
+<details open><summary>🔍 <a href="#overview-section"><strong>Pages & Sections</strong></a></summary><blockquote>
+
+<!-- * Day 1 -->
+<!--   - Sub-Point 1 -->
+
+</blockquote>
+</details>
 
 <details open>
-<summary>(Hide/Show) - Section Overviews 📑</summary>
+<summary>🌟 <a href="#acknowledgements-section"><strong>Acknowledgements</strong></a></summary>
+<blockquote>
+
+- 💌 <a href="#special-thanks">Special Thanks</a>
+
+</blockquote>
+</details>
+
+📬 <a href="#contact-section"><strong>Contact Information</strong></a>
+
+📜 <a href="#license-section"><strong>License Information</strong></a>
+
+🔗 <a href="#resources-section"><strong>Resources & Citations</strong></a>
+
+</blockquote></details>
+
+<hr>
+
+<a id="about-section"></a>
+<details open>
+<summary><h2>📖 About The Project</h2></summary>
+<div align="right"><a href="#top">(back to top)</a></div>
+<hr>
+
+</details>
+
+<a id="gallery-section"></a>
+<details open>
+<summary><h2>🖼️ Image Gallery</h2></summary>
+<div align="right"><a href="#top">(back to top)</a></div>
+<hr>
+
+</details>
+
+<a id="setup-section"></a>
+<details>
+<summary><h2>🛠️ Setup Instructions</h2></summary>
+<div align="right"><a href="#top">(back to top)</a></div>
+<hr>
+
+</details>
+
+<a id="usage-section"></a>
+<details>
+<summary><h2>💡 Usage, Tips & Notes</h2></summary>
+<div align="right"><a href="#top">(back to top)</a></div>
+<hr>
+
+</details>
+
+<a id="overview-section"></a>
+<details open>
+<summary><h2>🔍 Sections & Projects</h2></summary>
 
 ## Day 1
 
@@ -4489,28 +4569,87 @@ I might come back to this at some point to make a Git helper script/application 
 
 ## Day 100
 
+<div align="right"><a href="#top">(back to top)</a></div>
+<hr>
+
 </details>
 
-## Sources, Credits & Acknowledgments
+<a id="acknowledgements-section"></a>
+<details open>
+<summary><h2>🌟 Acknowledgements</h2></summary>
 
-### Course Details
+<a id="special-thanks"></a>
 
-[100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/) course by [Dr. Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) on [Udemy](https://www.udemy.com/)
+<div align="left">
 
-## Contact Information
+<h3>💌 Special Thanks</h3>
 
-Please feel free to reach out if you have any suggestions or run into any issues with viewing this project. I'm always looking for feedback from other people! I'd be more than happy to answer any questions you may have as well as assist with getting the project working on your machine.<br/>
+<blockquote>
+<p>Dear Dr. Angela Yu,</p>
+<p>I want to express my deepest appreciation for your course, "100 Days of Code: The Complete Python Pro Bootcamp for 2023." Your unique approach to teaching Python and its applications has been both inspiring and transformative for me.</p>
+<p>Your detailed explanations and practical exercises have made learning complex topics enjoyable and effective. The way you incorporated topics like Environment Variables, PyPi, and Virtual Environments was particularly enlightening, offering me insights into the real-world application of Python.</p>
+<p>The depth and breadth of knowledge you have shared through this course have not only improved my programming abilities but also significantly boosted my confidence in tackling advanced coding challenges. Your passion for teaching and commitment to student success is evident in every lesson and has made a lasting impact on my skills & attitude as a developer.</p>
+<p>Thank you for your dedication to creating such a comprehensive and engaging learning experience. Your course has been a pivotal part of my coding journey, and I am truly grateful for all the knowledge and expertise you have shared.</p>
+<p>Sincerely,<br><strong><em>Jordan Muller</em></strong></p>
+</blockquote>
 
-Be sure to view the setup guide in the README, as well as any specific README files for that specific project as they contain more details and may already have the answer to your question(s)!
+</div>
 
-[![Email Address](https://custom-icon-badges.demolab.com/badge/e--mail%20me-itsjordanmuller@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white)](mailto:itsjordanmuller@gmail.com)<br/>
-[![LinkedIn](https://img.shields.io/badge/connect%20on%20linkedin-@itsjordanmuller-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsjordanmuller)<br/>
-[![My Website](https://custom-icon-badges.demolab.com/badge/My%20Website-www.jordanmuller.com-210157?style=for-the-badge&logoColor=white&logo=globe)](https://www.linkedin.com/in/itsjordanmuller)
+<div align="right"><a href="#top">(back to top)</a></div>
+<hr>
 
-## License Information
+</details>
+
+<a id="contact-section"></a>
+<details open>
+<summary><h2>📬 Contact Information</h2></summary>
+
+<div align="center">
+
+<blockquote>
+<img src="https://github.com/itsjordanmuller.png" width="160px"/><br>
+<em>If you have questions/feedback, I would love to hear from you. Thanks for stopping by!<br>- <strong>Jordan Muller</strong></em>
+
+</blockquote>
+
+[![LinkedIn](https://img.shields.io/badge/connect%20on%20linkedin-@itsjordanmuller-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsjordanmuller)
+[![Email Address](https://custom-icon-badges.demolab.com/badge/e--mail%20me-itsjordanmuller@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white)](mailto:itsjordanmuller@gmail.com)
+[![Portfolio Website](https://custom-icon-badges.demolab.com/badge/Portfolio%20Website-www.jordanmuller.com-a61168?style=for-the-badge&logoColor=white&logo=globe)](https://jordanmuller.com/)
+
+</div>
+
+Please feel free to reach out if you have any suggestions or run into any issues with viewing this project.<br>
+
+I am always looking for feedback from other people! I'd be more than happy to answer any questions you may have as well as assist with getting the project working on your machine.<br>
+
+Be sure to view the <a href="#setup-section"><strong><em>Setup Instructions</em></strong></a> in the README, as well as any specific README files for that specific project as they contain more details and may already have the answer to your question(s)!
+
+<div align="right"><a href="#top">(back to top)</a></div>
+<hr>
+
+</details>
+
+<a id="license-section"></a>
+<details open>
+<summary><h2>📜 License Information</h2></summary>
 
 The content within this repository was created as part of a personal educational project, following the [100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/) course by [Dr. Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) on [Udemy](https://www.udemy.com/). This repository is intended for personal use only and serves as a record of my learning progress. This repository & the content within it are not intended for commercial use, distribution, or replication. All rights to the original course content and methodologies belong to the respective copyright holders.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
-Copyright © 2023 Jordan Muller. All Rights Reserved.
+Copyright © 2024 Jordan Muller. All Rights Reserved.
+
+<div align="right"><a href="#top">(back to top)</a></div>
+<hr>
+
+</details>
+
+<a id="resources-section"></a>
+<details open>
+<summary><h2>🔗 Resources & Citations</h2></summary>
+
+[100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/) course by [Dr. Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) on [Udemy](https://www.udemy.com/)
+
+</details>
+
+<div align="right"><a href="#top">(back to top)</a></div>
