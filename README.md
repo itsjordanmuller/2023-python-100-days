@@ -125,19 +125,16 @@
 
 📖 <a href="#about-section"><strong>About The Project</strong></h3></a>
 
-🖼️ <a href="#gallery-section"><strong>Image Gallery</strong></a>
+💡 <a href="#usage-section"><strong>Usage Guide</strong></a>
 
 🛠️ <a href="#setup-section"><strong>Setup Instructions</strong></a>
 
-💡 <a href="#usage-section"><strong>Usage, Tips & Notes</strong></a>
-
-<details open><summary>🔍 <a href="#overview-section"><strong>Pages & Sections</strong></a></summary><blockquote>
-
-<!-- * Day 1 -->
-<!--   - Sub-Point 1 -->
+<details open><summary>🔍 <a href="#overview-section"><strong>Sections & Projects</strong></a></summary><blockquote>
 
 </blockquote>
 </details>
+
+📬 <a href="#contact-section"><strong>Contact Information</strong></a>
 
 <details open>
 <summary>🌟 <a href="#acknowledgements-section"><strong>Acknowledgements</strong></a></summary>
@@ -148,11 +145,9 @@
 </blockquote>
 </details>
 
-📬 <a href="#contact-section"><strong>Contact Information</strong></a>
+🔗 <a href="#resources-section"><strong>Links & Citations</strong></a>
 
 📜 <a href="#license-section"><strong>License Information</strong></a>
-
-🔗 <a href="#resources-section"><strong>Resources & Citations</strong></a>
 
 </blockquote></details>
 
@@ -160,31 +155,373 @@
 
 <a id="about-section"></a>
 <details open>
-<summary><h2>📖 About The Project</h2></summary>
-<div align="right"><a href="#top">(back to top)</a></div>
-<hr>
+<summary align="center"><h2>📖 About The Project</h2></summary>
 
-</details>
+<!-- <h3>📂 Project Introduction</h3>
+<blockquote>
+<p></p>
+</blockquote> -->
 
-<a id="gallery-section"></a>
-<details open>
-<summary><h2>🖼️ Image Gallery</h2></summary>
-<div align="right"><a href="#top">(back to top)</a></div>
-<hr>
+<!-- <h3>⛳ Learning Objectives & Goals</h3>
+<blockquote>
+<p></p>
+</blockquote> -->
 
-</details>
+<!-- <h3>🗓️ Project Timeline</h3>
+<blockquote>
+<p></p>
+</blockquote> -->
 
-<a id="setup-section"></a>
-<details>
-<summary><h2>🛠️ Setup Instructions</h2></summary>
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 </details>
 
 <a id="usage-section"></a>
+<details open>
+<summary align="center"><h2>💡 Usage Guide</h2></summary>
+
+<details open>
+<summary><h3>🚀 Getting Started</h3></summary>
+
+<h4>Looking for Live Demos? 🌐</h4>
+
+<blockquote>
+  <p>If you're eager to simply see the results of this project, most, if not all of the projects have a Live Demo associated with them. I have linked them all in the overview for each specific project/section. To view these live demos, simply follow the links provided with each project. You'll see them alongside buttons that look like this:</p>
+
+<div align="center">
+  <table >
+    <thead align="center">
+      <tr>
+        <td>
+        <a href="https://github.com/itsjordanmuller/2023-python-100-days/tree/main/001-Expanding-Cards"><img src="https://custom-icon-badges.demolab.com/badge/Directory-F6E481.svg?style=for-the-badge&logo=file-submodule&logoColor=black"/></a>
+        </td>
+        <td>
+        <a href="https://github.com/itsjordanmuller/2023-python-100-days/tree/main"><img src="https://custom-icon-badges.demolab.com/badge/Live%20Demo-FF3333.svg?style=for-the-badge&logoSource=feather&logo=browser&logoColor=white"/></a>
+        </td>
+        <td>
+        <a href="https://jordanmuller.com/portfolio/50-projects-50-days-html-css-js/"><img src="https://custom-icon-badges.demolab.com/badge/Portfolio-a61168.svg?style=for-the-badge&logo=briefcase&logoColor=white"/></a>
+        </td>
+      </tr>
+    </thead>
+    <tbody align="center">
+      <tr>
+        <td>
+          <a href="https://github.com/itsjordanmuller/2023-python-100-days/tree/main/001-Expanding-Cards">Go to Directory</a>
+        </td>
+        <td>
+          <a href="https://github.com/itsjordanmuller/2023-python-100-days/tree/main">Live Demo</a>
+        </td>
+        <td>
+          <a href="https://jordanmuller.com/portfolio/50-projects-50-days-html-css-js/">Open on Portfolio</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <p>Click the button/link and you should be taken to the Live Demo for that specific project. Please note that some projects don't have a Live Demo, and if that's the case there will not be a button/link. I'm hoping to get all of the projects on the internet at some point in the near future, so check back soon and you might find a link!</p>
+</blockquote>
+
+<h4>Want to View the Projects on Your Local Machine? 💻</h4>
+
+<blockquote>
+  <p>I have provided detailed instructions for how to clone/download this repository to your local machine in the Setup Instructions section. In that section, you should find everything you need to be able to get these projects running and working on your own machine. Please note that a few of the projects use external APIs that include verification, so you will need to setup your own accounts/API keys for those services.</p>
+  <p>If you plan on running the code on your local machine, be sure to check the specific project you're trying to run to see if it needs any additional information or setup for the connections to the API to work. In most cases, I will try to include a `.env.example` file. You will need to open this file, and read the instructions inside to obtain your own API key. Once that's done, you'll need to make sure you've renamed the file from `.env.example` to `.env` only.</p>
+  <p>If you want to avoid setting up environment variables, check to see if the project has a Live Demo associated with it. For all of the projects that I have hosted on the internet, you'll be able to use them without any API configuration required. This is often a simpler way of viewing more complicated projects, since everything will already be running for you to view, use & explore.</p>
+</blockquote>
+<hr>
+<table>
+  <thead>
+    <tr>
+      <th>
+        <h4>Just Hoping to Learn More About Programming? 📚</h4>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <blockquote>
+          <p>I have provided a variety of resources and guides throughout this README for new developers. From the absolute basics, to specific videos and guides that helped me get unstuck in certain situations, I tried to include every single resource I ended up utilizing over the course of my journey.</p>
+          <p>We are so lucky to live in a time where almost all of this information is available for free on the internet. The only thing I paid for was the course itself, which can be purchased for about $20 on sale at <a href="https://www.udemy.com/">Udemy</a>. Besides that, I was able to complete the project with a low-spec <a href="https://www.amazon.com/dp/B0842X4BNF">Lenovo Thinkpad T480</a> I purchased for just under $300. It's proven to be a perfect machine for development & running <a href="https://kubuntu.org/">Kubuntu Linux</a>.</p>
+        </blockquote>
+        <br>
+        <strong><em>A full list of tech, tools, and other links & resources can be found towards the bottom of this README in the <a href="#resources-section">Links & Citations</a> section.</em></strong>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
+<!-- <details open>
+<summary><h3>✴️ Features</h3></summary><blockquote>
+a
+b
+c
+
+<details open>
+<summary><h4>Building Features ✳️</h4></summary><blockquote>
+a
+b
+c
+</blockquote>
+</details>
+
+</blockquote>
+</details> -->
+
+<!-- <details open>
+<summary><h3>🎛️ Configuration Options</h3></summary><blockquote>
+a
+b
+c
+</blockquote>
+</details> -->
+
+<details open>
+<summary><h3>💾 Installation</h3></summary><blockquote>
+For detailed installation instructions, please refer to the <a href="#setup-section">Setup Instructions</a> section below.
+</blockquote>
+</details>
+
+<div align="right"><a href="#top">(back to top)</a></div>
+<hr>
+
+</details>
+
+<a id="setup-section"></a>
+<details open>
+<summary align="center"><h2>🛠️ Setup Instructions</h2></summary>
+
+<details open>
+<summary><h3>📋 Prerequisites</h3></summary><blockquote>
+
+<details open>
+<summary><h4>Required Software 💽</h4></summary>
+
+<table>
+<tbody>
+<tr>
+<td>
+
+To be able to clone/download & view these projects, or to start learning <strong>Python</strong> as well as programming in general, you'll need a few essential tools. At a minimum, you should have a basic text editor/integrated development environment, a web browser, and an internet connection.
+
+I used the following:
+
+- **Text Editor/IDE:** I use [Visual Studio Code](https://code.visualstudio.com/) as my main integrated development environment. VS Code can be customized to work with just about any technology, making it a great choice for a general all-purpose IDE, it also has a large and helpful community for support.
+- **Web Browser:** I prefer to use [Google Chrome](https://www.google.com/chrome/) for their comprehensive set of [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/). While most if not all of the tools are available in other browsers/Developer Tools such as [Firefox DevTools](https://firefox-source-docs.mozilla.org/devtools-user/index.html), [Safari Web Inspector](https://webkit.org/web-inspector/), and [Edge DevTools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/landing/), I am most familiar & comfortable with the layout of Chrome.
+- **Internet Connection:** Aim to have at least 2-3 Mbps or more to speed up development, especially if you'll be downloading large files or loading video/image based resources. Most libraries and a variety of public places can have high-speed Wi-Fi available for visitors free-of-charge.
+
+Based on the fact that you're reading this right now, you probably already have a browser & internet connection!
+
+[Windows](https://www.microsoft.com/en-us/windows), [macOS](https://www.apple.com/macos/), and most [Linux distributions](https://en.wikipedia.org/wiki/Linux_distribution) should include a text editor by default, which in this case should be more than enough to view and edit HTML, CSS & JavaScript files.
+
+For those using mobile devices, I advise switching to a laptop or desktop for a more streamlined experience. While mobile development is feasible on Android or iOS, the ease of a full-sized computer, keyboard, and mouse is unmatched. Visual Studio Code is accessible via most browsers on any device, however, you would still need to serve/host it from another machine. For optimal functionality, a personal computer remains the best choice.
+
+</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<details open>
+<summary><h4>System Requirements 🖥️</h4></summary>
+
+<table>
+<tbody>
+<tr>
+<td>
+
+System requirements for these projects can vary due to the fact that they use different amounts of client-side processing power and resources. In general, a recent operating system like [Windows](https://www.microsoft.com/en-us/windows), [macOS](https://www.apple.com/macos/), or a popular [Linux distribution](https://en.wikipedia.org/wiki/Linux_distribution) usually suffices. Modern computers, especially those purchased in the last few years, should meet these needs adequately.
+
+Performance will heavily rely on your specific hardware setup, including processor speed, RAM capacity, storage type, and graphics card quality. The operating system choice and its configuration also play a significant role in speed.
+
+To give you a practical example, I personally used a [Lenovo Thinkpad T480](https://www.amazon.com/dp/B0842X4BNF) for the entirety of my recent projects. This laptop, has been great for a variety of daily tasks, including programming.
+
+The computer I used for the entire project features the following specifications:
+
+- **Operating System:** [Kubuntu Linux 22.04](https://cdimage.ubuntu.com/kubuntu/releases/22.04/release/)
+- **Processor:** 8th Gen Intel Core Duo i5-8350U
+- **RAM:** 16GB DDR4 RAM
+- **Storage:** 512GB SSD of data
+- **Graphics:** Intel UHD Graphics 620
+- **Display:** 14.0" Screen with FHD 1920x1080 resolution.
+
+This configuration was more than sufficient for both my project and other tasks. Interestingly, working on a less powerful laptop has its advantages, such as highlighting inefficient code that consumes excessive resources.
+
+If you're unsure, I recommend testing your setup with the intended software. Should you encounter any errors, feel free to reach out for assistance. Your feedback can also help in making projects more adaptable to diverse hardware, operating systems, and browsers.
+
+</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+</blockquote>
+
+</details>
+
+<details open>
+<summary><h3>📦 Installation Guide</h3></summary><blockquote>
+
+<details open>
+<summary><h4>Download/Clone This Repo ⬇️</h4></summary>
+
+<table>
+<tbody>
+<tr>
+<td>
+
+Below you will find various methods that are available to download/clone this repository. 
+
+Feel free to use whichever option you are most comfortable & familiar with. You can also read GitHub's guide on [downloading source code archives](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives) & [cloning repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+
+| 💡 Download Method Details | 
+|:--|
+
+<blockquote>
+
 <details>
-<summary><h2>💡 Usage, Tips & Notes</h2></summary>
+<summary><em>Clone with SSH ★</em></summary><blockquote>
+
+1. **Ensure SSH Key Setup**: Before you can clone with SSH, make sure you have an SSH key set up and added to your GitHub account. If you haven't done this, refer to GitHub's documentation on setting up a new SSH key.
+2. **Copy SSH URL**: Navigate to the repository on GitHub. Click the 'Code' button and switch to the 'SSH' tab in the dropdown menu. Click the clipboard icon to copy the SSH URL.
+3. **Open Terminal or Command Prompt**: Open your terminal or command prompt. Navigate to the directory where you want the cloned repository to be placed.
+4. **Run Clone Command**: Type `git clone` followed by the copied SSH URL. For this project, that's:
+   ```
+   git clone git@github.com:itsjordanmuller/2023-python-100-days.git
+   ```
+5. **Access Cloned Repository**: Once the cloning process is complete, you will have a local copy of the repository. Navigate into the newly created directory to access the repository files.
+
+Note: Cloning with SSH is secure and allows for easy repository updates without repeatedly entering credentials.
+
+</blockquote>
+</details>
+
+<details>
+<summary><em>Download ZIP File</em></summary><blockquote>
+
+1. **Navigate to the Repository**: Open your web browser and go to the main page of the repository.
+2. **Find the 'Code' Button**: On the repository's main page, locate the 'Code' button. This is usually found near the top right, just above the file list.
+3. **Download ZIP Option**: Click on the 'Code' button. A dropdown menu will appear. Select the 'Download ZIP' option from this menu.
+4. **Save the ZIP File**: Choose a location on your computer where you want to save the ZIP file and confirm the download.
+5. **Extract Files**: Once the download is complete, navigate to the downloaded file. Right-click on the ZIP file and select 'Extract All...' or use your preferred extraction tool. Choose where you want the extracted folder to be placed.
+6. **Access Repository Contents**: Open the extracted folder to access the contents of the repository.
+Note: Downloading a ZIP file is a great way to get a copy of the repository without using Git commands.
+
+</blockquote>
+</details>
+
+<details>
+<summary><em>Clone with HTTPS</em></summary><blockquote>
+
+1. **Copy HTTPS URL**: Go to the GitHub page of the repository. Click on the 'Code' button. Under the dropdown menu, select the 'HTTPS' tab and click the clipboard icon to copy the HTTPS URL.
+2. **Open Terminal or Command Prompt**: Access your terminal (Linux/Mac) or command prompt (Windows). Navigate to the directory where you want the repository to be cloned.
+3. **Execute Clone Command**: Type `git clone` followed by the copied HTTPS URL. In this case:
+   ```
+   git clone https://github.com/itsjordanmuller/2023-python-100-days.git
+   ```
+4. **Enter GitHub Credentials**: If prompted, enter your GitHub username and password. This step is usually required the first time you use HTTPS to clone a repository.
+5. **Access Cloned Repository**: After the cloning process completes, a local copy of the repository will be created. Navigate into the directory that was just created to start working with the files.
+Note: HTTPS cloning is straightforward but may require you to enter your GitHub credentials more frequently compared to SSH.
+
+</blockquote>
+</details>
+
+<details>
+<summary><em>Clone with GitHub CLI</em></summary><blockquote>
+
+The GitHub CLI (`gh`) provides a convenient way to interact with GitHub from your command line. Here’s how to use `gh` to clone the repository `itsjordanmuller/2023-python-100-days`:
+
+1. **Install GitHub CLI**: If you haven't already, you need to install the GitHub CLI. You can find installation instructions on the [official GitHub CLI page](https://cli.github.com/).
+
+2. **Authenticate GitHub CLI**: Open your terminal and authenticate the GitHub CLI using the command `gh auth login`. Follow the prompts to complete the authentication process.
+
+3. **Clone the Repository**: To clone this repository, use the following command:
+   ```
+   gh repo clone itsjordanmuller/2023-python-100-days
+   ```
+   This command will clone the repository into a new directory named `2023-python-100-days` in your current working directory.
+
+4. **Navigate to the Repository**: Once the cloning process is complete, navigate into the repository directory with:
+   ```
+   cd 2023-python-100-days
+   ```
+
+5. **Start Working**: You now have a local copy of the repository and can begin working on it.
+
+Note: The GitHub CLI streamlines various GitHub operations and is particularly useful for those who prefer command-line tools.
+
+</blockquote>
+</details>
+
+</blockquote>
+
+<hr>
+
+★ When I have the option, I personally prefer to use the `Clone with SSH` method. Alternatively, `Download ZIP File` can be a quick and easy way to simply download the files without a terminal or Git. 
+
+</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<!-- <details open>
+<summary><h4>How to Pull New Changes 🔄</h4></summary><blockquote>
+
+</blockquote>
+</details> -->
+
+<!-- <details open>
+<summary><h4>Dependencies ⛓️</h4></summary><blockquote>
+
+</blockquote>
+</details> -->
+
+<!-- <details open>
+<summary><h4>Virtual Environments Setup 🏝️</h4></summary><blockquote>
+
+</blockquote>
+</details>
+
+<details open>
+<summary><h4>Installing Required Packages 📦</h4></summary><blockquote>
+
+</blockquote>
+</details> -->
+
+</details>
+
+<details open>
+<summary><h3>⚙️ Configuration</h3></summary><blockquote>
+
+<details open>
+<summary><h4>API Keys/Environment Variables 🔐</h4></summary><blockquote>
+
+</blockquote>
+</details>
+
+<!-- <details open>
+<summary><h4>External Services 📡</h4></summary><blockquote>
+
+</blockquote>
+</details>
+
+<details open>
+<summary><h4>Database Setups & Connections 💽</h4></summary><blockquote>
+
+</blockquote>
+</details> -->
+
+</blockquote>
+
+</details>
+
+</blockquote>
+
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
@@ -192,7 +529,7 @@
 
 <a id="overview-section"></a>
 <details open>
-<summary><h2>🔍 Sections & Projects</h2></summary>
+<summary align="center"><h2>🔍 Sections & Projects</h2></summary>
 
 ## Day 1
 
@@ -4576,7 +4913,7 @@ I might come back to this at some point to make a Git helper script/application 
 
 <a id="acknowledgements-section"></a>
 <details open>
-<summary><h2>🌟 Acknowledgements</h2></summary>
+<summary align="center"><h2>🌟 Acknowledgements</h2></summary>
 
 <a id="special-thanks"></a>
 
@@ -4602,7 +4939,7 @@ I might come back to this at some point to make a Git helper script/application 
 
 <a id="contact-section"></a>
 <details open>
-<summary><h2>📬 Contact Information</h2></summary>
+<summary align="center"><h2>📬 Contact Information</h2></summary>
 
 <div align="center">
 
@@ -4629,27 +4966,42 @@ Be sure to view the <a href="#setup-section"><strong><em>Setup Instructions</em>
 
 </details>
 
-<a id="license-section"></a>
+<a id="resources-section"></a>
 <details open>
-<summary><h2>📜 License Information</h2></summary>
+<summary align="center"><h2>🔗 Links & Citations</h2></summary>
 
-The content within this repository was created as part of a personal educational project, following the [100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/) course by [Dr. Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) on [Udemy](https://www.udemy.com/). This repository is intended for personal use only and serves as a record of my learning progress. This repository & the content within it are not intended for commercial use, distribution, or replication. All rights to the original course content and methodologies belong to the respective copyright holders.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-
-Copyright © 2024 <a href="https://jordanmuller.com/">Jordan Muller</a>. All Rights Reserved.
+[100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/) course by [Dr. Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) on [Udemy](https://www.udemy.com/)
 
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
 
 </details>
 
-<a id="resources-section"></a>
+<a id="license-section"></a>
 <details open>
-<summary><h2>🔗 Resources & Citations</h2></summary>
+<summary align="center"><h2>📜 License Information</h2></summary>
 
-[100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/) course by [Dr. Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) on [Udemy](https://www.udemy.com/)
-
-</details>
+<table>
+  <thead>
+    <tr>
+      <th>
+        <a href="https://github.com/itsjordanmuller/2023-python-100-days/blob/main/LICENSE.md">LICENSE.md</a>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <blockquote>
+          <p>The content within this repository was created as part of a personal educational project, following the <a href="https://www.udemy.com/course/100-days-of-code/">100 Days of Code: The Complete Python Pro Bootcamp for 2023</a> course by <a href="https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/">Dr. Angela Yu</a> on <a href="https://www.udemy.com/">Udemy</a>. This repository is intended for personal use only and serves as a record of my learning progress. This repository & the content within it are not intended for commercial use, distribution, or replication. All rights to the original course content and methodologies belong to the respective copyright holders.</p>
+          <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</p>
+          <p>Copyright © 2024 <a href="https://jordanmuller.com/">Jordan Muller</a>. All Rights Reserved.</p>
+        </blockquote>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <div align="right"><a href="#top">(back to top)</a></div>
+
+</details>
