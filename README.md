@@ -157,20 +157,21 @@
 <details open>
 <summary align="center"><h2>📖 About The Project</h2></summary>
 
-<!-- <h3>📂 Project Introduction</h3>
+<h3>📂 Project Introduction</h3>
 <blockquote>
-<p></p>
-</blockquote> -->
+<p>In 2023, I started the <a href="https://www.udemy.com/course/100-days-of-code/"><strong>100 Days of Code: The Complete Python Pro Bootcamp for 2023</strong></a>, led by Dr. Angela Yu. This intensive course was a deep dive into Python, offering a unique blend of building 100 projects over 100 days. It covered a vast range of topics from web and app development to data science and machine learning. The hands-on approach of the course meant that every day was a new opportunity to develop practical skills and apply Python in various real-world scenarios, such as game development, web scraping, and data analysis.</p>
+</blockquote>
 
-<!-- <h3>⛳ Learning Objectives & Goals</h3>
+<h3>⛳ Learning Objectives & Goals</h3>
 <blockquote>
-<p></p>
-</blockquote> -->
+<p>My goal in joining this course was to gain a comprehensive and practical understanding of Python. I aimed to learn not just the syntax, but also how to apply Python in diverse areas like automation, building websites, and data science. Mastering tools like Selenium, Flask, Pandas, and NumPy was also part of my learning objectives. By the end of the course, I was looking to not only be proficient in Python but also have a portfolio of 100 projects, showcasing my skills in various aspects of Python programming.
+</p>
+</blockquote>
 
-<!-- <h3>🗓️ Project Timeline</h3>
+<h3>🗓️ Project Timeline</h3>
 <blockquote>
-<p></p>
-</blockquote> -->
+<p>I started this Python journey on August 12th, 2023. The course was structured to learn and build a project each day, dedicating an hour daily. Starting with foundational Python concepts, I quickly moved on to more complex applications, including web development, automation, and data science. This steady progression allowed me to reinforce learning with practical implementation, ensuring a deep understanding of Python and its real-world applications. By the end of the 100 days, I had not only mastered Python but also created a diverse range of projects, from games like Blackjack and Pong to a fully fledged blog website.</p>
+</blockquote>
 
 <div align="right"><a href="#top">(back to top)</a></div>
 <hr>
