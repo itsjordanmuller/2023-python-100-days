@@ -147,7 +147,7 @@
 
 🔗 <a href="#resources-section"><strong>Links & Citations</strong></a>
 
-📜 <a href="#license-section"><strong>License Information</strong></a>
+📜 <a href="#license-section"><strong>License Details</strong></a>
 
 </blockquote></details>
 
@@ -4980,7 +4980,7 @@ Be sure to view the <a href="#setup-section"><strong><em>Setup Instructions</em>
 
 <a id="license-section"></a>
 <details open>
-<summary align="center"><h2>📜 License Information</h2></summary>
+<summary align="center"><h2>📜 License Details</h2></summary>
 
 <table>
   <thead>
