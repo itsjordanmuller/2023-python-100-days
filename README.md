@@ -5,7 +5,7 @@
 
 <a href="https://jordanmuller.com/portfolio/100-days-python/"><img src="https://custom-icon-badges.demolab.com/badge/100%20Days%20of%20Python-282A36.svg?style=for-the-badge&logo=python&logoColor=F7D754" width="100%"/></a>
 
-<p>Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matplotlib, Plotly, scikit-learn, SQLite, SQLAlchemy, Environment Variables, PyPi, Virtual Environments, Prettier, Black Formatter, Visual Studio Code, Git & GitHub</p>
+<p>100 Days of Python Lessons, Exercises & Projects. A Self-Paced Learning Sandbox for Python with NumPy, Pandas, Jupyter, Flask, matplotlib, Plotly, scikit-learn, SQLite, SQLAlchemy, Environment Variables, PyPi, Virtual Environments, Prettier, Black Formatter, Visual Studio Code, Git & GitHub</p>
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://jordanmuller.com/portfolio/tags/python/)
 [![Flask](https://img.shields.io/badge/Flask-000000.svg?style=for-the-badge&logo=Flask&logoColor=white)](https://jordanmuller.com/portfolio/tags/flask/)
